@@ -1,0 +1,25 @@
+# WH40K 10e platform - Python dependencies
+#
+# Install:   py -m pip install -r requirements.txt
+# Or:        py -m pip install --user -r requirements.txt   (no admin needed)
+#
+# Tested on Python 3.9.2 (Windows). Should work on 3.9+ since the codebase
+# uses `from __future__ import annotations` for PEP 604 union syntax.
+
+# --- Runtime (required for the Flask app) -----------------------------------
+
+Flask>=3.0          # web framework
+Pillow>=10.0        # image upload validation + thumbnail resize
+
+# Werkzeug, Jinja2, MarkupSafe, itsdangerous, click, blinker are pulled in
+# automatically as Flask dependencies.
+
+# --- Stdlib only ------------------------------------------------------------
+# The KB build pipeline (kb/build_kb.py, kb/extract_sources.py,
+# kb/archive_sources.py) uses only Python standard library:
+#   sqlite3, xml.etree.ElementTree, gzip, hashlib, pathlib, json, re, ...
+
+# --- Optional tools (uncomment if you want them) ----------------------------
+
+# sqlite-web>=0.6     # browse the .db file in a browser on port 8080
+#                     # usage:  sqlite_web kb/wh40k.db -p 8080
