@@ -1,0 +1,2797 @@
+{
+  "id": "1b6d-dc06-5db9-c7d1",
+  "name": "Imperium - Imperial Knights - Library",
+  "is_library": true,
+  "revision": "40",
+  "source_file": "Imperium - Imperial Knights - Library.cat",
+  "categories": [
+    {
+      "id": "534d-ffcf-fc01-7eac",
+      "name": "Canis Rex"
+    },
+    {
+      "id": "72cd-6281-73a-e0fc",
+      "name": "Warglaive"
+    },
+    {
+      "id": "dd27-74f3-9b5b-7908",
+      "name": "Sir Hekhtur"
+    },
+    {
+      "id": "df5-4bc-4d9b-dfa5",
+      "name": "Helverin"
+    },
+    {
+      "id": "ee56-d74b-4f77-44ee",
+      "name": "Knight Paladin"
+    },
+    {
+      "id": "d8e0-2c9e-39b5-dc95",
+      "name": "Knight Errant"
+    },
+    {
+      "id": "36a1-9a32-7db1-dda7",
+      "name": "Knight Gallant"
+    },
+    {
+      "id": "7eb2-636a-be6d-5927",
+      "name": "Knight Warden"
+    },
+    {
+      "id": "11e-ade1-cf6c-f59b",
+      "name": "Knight Crusader"
+    },
+    {
+      "id": "9de5-3a7e-1b8a-63a8",
+      "name": "Knight Preceptor"
+    },
+    {
+      "id": "2617-d8a7-87fd-59b2",
+      "name": "Knight Castellan"
+    },
+    {
+      "id": "c738-6273-23f4-51e5",
+      "name": "Knight Valiant"
+    },
+    {
+      "id": "5a04-db4c-d29a-7b35",
+      "name": "Knight Asterius"
+    },
+    {
+      "id": "9268-e2f7-7df-ab15",
+      "name": "Knight Porphyrion"
+    },
+    {
+      "id": "9bed-3ae9-81d7-9bb4",
+      "name": "Knight Lancer"
+    },
+    {
+      "id": "869c-9d9e-5aa6-93bd",
+      "name": "Knight Castigator"
+    },
+    {
+      "id": "3de8-a9ae-d1e2-2e5",
+      "name": "Knight Acheron"
+    },
+    {
+      "id": "a4e7-7d02-686a-153f",
+      "name": "Knight Atrapos"
+    },
+    {
+      "id": "3222-2af3-6a7e-5258",
+      "name": "Knight Magaera"
+    },
+    {
+      "id": "19ac-e6bb-1dd9-490f",
+      "name": "Knight Styrix"
+    },
+    {
+      "id": "f9af-3a72-6e97-1a32",
+      "name": "Moirax"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "55fb-9c91-1a4f-3037",
+      "name": "Canis Rex",
+      "type": "unit",
+      "points": 450,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "84c0-f59d-901a-e94f",
+          "name": "Canis Rex",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "5+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "f1aa-b2e0-2fa8-4c39",
+              "kind": "fixed",
+              "name": "Chainbreaker las-impulsor",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f1aa-b2e0-2fa8-4c39:f1aa-b2e0-2fa8-4c39",
+                  "name": "Chainbreaker las-impulsor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "822a-223f-fbd-21e0",
+                      "name": "➤ Chainbreaker las-impulsor - high intensity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Blast, Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "433f-6684-ff4f-23b7",
+                      "name": "➤ Chainbreaker las-impulsor - low intensity",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "70b4-8523-6b7c-1b0a",
+              "kind": "fixed",
+              "name": "Freedom's Hand",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "70b4-8523-6b7c-1b0a:70b4-8523-6b7c-1b0a",
+                  "name": "Freedom's Hand",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "74ec-e144-10c4-7ece",
+                      "name": "➤ Freedom's Hand - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "9",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "51c7-ad78-6365-91ee",
+                      "name": "➤ Freedom's Hand - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "43a9-66c5-ec02-baa9",
+              "kind": "fixed",
+              "name": "Chainbreaker multi-laser",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "43a9-66c5-ec02-baa9:43a9-66c5-ec02-baa9",
+                  "name": "Chainbreaker multi-laser",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "95dd-25ae-f5e0-f3f8",
+                      "name": "Chainbreaker multi-laser",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41b-81a0-ca89-75c1",
+          "name": "Sir Hekhtur",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "4+",
+            "w": "3",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b74a-d992-b5eb-23ff",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b74a-d992-b5eb-23ff:b74a-d992-b5eb-23ff",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6038-ef92-cb43-2288",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e8b4-ffab-1b5c-d2a0",
+              "kind": "fixed",
+              "name": "Hekhtur's pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e8b4-ffab-1b5c-d2a0:e8b4-ffab-1b5c-d2a0",
+                  "name": "Hekhtur's pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7bf3-8655-62ac-6f0d",
+                      "name": "Hekhtur's pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7f8-ef35-95d5-6fc7",
+          "name": "Chainbreaker",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack, an unmodified successful Hit roll of 5+ scores a Critical Hit."
+        },
+        {
+          "id": "b927-9dc2-5b23-19dd",
+          "name": "Legendary Freeblade",
+          "type": "Abilities",
+          "description": "Once per turn, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+        },
+        {
+          "id": "15a9-48ef-5f10-106",
+          "name": "Using Sir Hekhtur",
+          "type": "Abilities",
+          "description": "When your Canis Rex model is destroyed, Sir Hekhtur is treated as a model disembarking from a destroyed TRANSPORT – set him up within 3\" of your Canis Rex model before it is removed. Sir Hekhtur then uses the profile, wargear, abilities and keywords shown on this side of the card, but cannot be selected as the target of any of your Stratagems other than Core Stratagems. Your Canis Rex unit is not considered to be destroyed until Sir Hekhtur is also destroyed."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5bbd-c5d3-58d7-e391",
+      "name": "Armiger Warglaive",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Warglaive",
+          "target_id": "72cd-6281-73a-e0fc",
+          "primary": false
+        },
+        {
+          "name": "Armiger",
+          "target_id": "4c40-ab9-54af-d290",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5bbd-c5d3-58d7-e391",
+          "name": "Armiger Warglaive",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "f385-ed99-7337-140a",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f385-ed99-7337-140a:f120-b686-d22f-e700",
+                  "name": "Reaper chain-cleaver",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3a79-406d-aaa7-ed6c",
+                      "name": "➤ Reaper chain-cleaver - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "5e11-8d35-b7a7-ba38",
+                      "name": "➤ Reaper chain-cleaver - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "f385-ed99-7337-140a:b2b4-a523-8dc5-ca7c",
+                  "name": "Thermal spear",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "38d-4520-1309-4074",
+                      "name": "Thermal spear",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4bac-5c2a-5e23-d586",
+          "name": "Impetuous Glory",
+          "type": "Abilities",
+          "description": "Each time this model makes a Charge move, until the end of the turn, melee weapons equipped by this model have the [SUSTAINED HITS 1] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7314-3c4a-36ab-a594",
+      "name": "Armiger Helverin",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Helverin",
+          "target_id": "df5-4bc-4d9b-dfa5",
+          "primary": false
+        },
+        {
+          "name": "Armiger",
+          "target_id": "4c40-ab9-54af-d290",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7314-3c4a-36ab-a594",
+          "name": "Armiger Helverin",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "d481-1806-2a6e-bbcb",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d481-1806-2a6e-bbcb:d0c7-36d4-2d50-f975",
+                  "name": "Armiger autocannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3d6c-b927-b515-c0d8",
+                      "name": "Armiger autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1d28-343b-c471-4427",
+          "name": "Skyfire Protocols",
+          "type": "Abilities",
+          "description": "While this model is either wholly within your deployment zone or within range of an objective marker you control, its Armiger autocannons have the [ANTI-FLY 2+] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8441-8356-5e7c-69ee",
+      "name": "Knight Paladin",
+      "type": "model",
+      "points": 405,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Paladin",
+          "target_id": "ee56-d74b-4f77-44ee",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8441-8356-5e7c-69ee",
+          "name": "Knight Paladin",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "f6b3-c1e3-d5db-633c",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f6b3-c1e3-d5db-633c:93c3-d64f-2d6e-ea",
+                  "name": "Questoris heavy stubber",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "19b5-e47a-9e29-d6db",
+                      "name": "Questoris heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c8eb-db13-de01-b988",
+          "name": "Seasoned Noble",
+          "type": "Abilities",
+          "description": "Once per phase, you can re-roll one Hit roll, one Wound roll or one saving throw made for this model."
+        },
+        {
+          "id": "813e-e1e-3766-c3f8",
+          "name": "Paladin’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, its weapons have the [LETHAL HITS] and [LANCE] abilities."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9efd-ec72-353f-4b23",
+      "name": "Knight Errant",
+      "type": "model",
+      "points": 390,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Errant",
+          "target_id": "d8e0-2c9e-39b5-dc95",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9efd-ec72-353f-4b23",
+          "name": "Knight Errant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "be43-2d11-65f8-aedb",
+          "name": "Aggressive Assault",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack against the closest eligible target, add 1 to the Hit roll."
+        },
+        {
+          "id": "23cf-33c7-9f58-d57a",
+          "name": "Errant's Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, you can re-roll Advance rolls made for that model and its ranged weapons have the [ASSAULT] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "eb4-4a67-11e9-3cb8",
+      "name": "Knight Gallant",
+      "type": "model",
+      "points": 380,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Gallant",
+          "target_id": "36a1-9a32-7db1-dda7",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "eb4-4a67-11e9-3cb8",
+          "name": "Knight Gallant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "b47c-205e-38ec-c89d",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b47c-205e-38ec-c89d:528-89bb-c0a5-99e7",
+                  "name": "Reaper chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a8ae-6973-4131-ab78",
+                      "name": "➤ Reaper chainsword - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "18",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "17bb-6ba0-56b1-3d3",
+                      "name": "➤ Reaper chainsword - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "b47c-205e-38ec-c89d:78c6-6f21-6c74-ebc6",
+                  "name": "Thunderstrike gauntlet",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cea7-7bb7-44c4-89d4",
+                      "name": "➤ Thunderstrike gauntlet - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "f123-9d4-e554-1559",
+                      "name": "➤ Thunderstrike gauntlet - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "aa56-4384-8f12-cc31",
+          "name": "Martial Pride",
+          "type": "Abilities",
+          "description": "Each time a melee attack targets this model, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "1d35-f0ed-8ef8-a52d",
+          "name": "Gallant's Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, you can re-roll Charge rolls made for that model and each time that model makes a melee attack, you can re-roll the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c609-c87e-f9dd-5006",
+      "name": "Knight Warden",
+      "type": "model",
+      "points": 450,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Warden",
+          "target_id": "7eb2-636a-be6d-5927",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c609-c87e-f9dd-5006",
+          "name": "Knight Warden",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "51ae-c850-5c2a-761f",
+          "name": "Thin Their Ranks",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets an enemy unit (excluding MONSTERS and VEHICLES), that attack has the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "61b5-1d00-e20d-2e1d",
+          "name": "Warden's Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, each time an attack is allocated to that model, subtract 1 from the Damage characteristic of that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1e27-a6de-3840-a050",
+      "name": "Knight Crusader",
+      "type": "model",
+      "points": 445,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Crusader",
+          "target_id": "11e-ade1-cf6c-f59b",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1e27-a6de-3840-a050",
+          "name": "Knight Crusader",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "8282-f19b-cc15-9fcd",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8282-f19b-cc15-9fcd:313a-c82b-6271-d85d",
+                  "name": "Titanic feet",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6fcb-f784-14c1-7f92",
+                      "name": "Titanic feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f3ec-bea-7d9f-df98",
+          "name": "Punishing Salvoes",
+          "type": "Abilities",
+          "description": "In your Movement phase, if this model Remains Stationary, until the start of your next Movement phase, this model’s ranged weapons have the [SUSTAINED HITS 1] ability."
+        },
+        {
+          "id": "11c1-4782-61b6-4b98",
+          "name": "Crusader's Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, each time that model makes a ranged attack, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ebd9-7175-3f0c-72a9",
+      "name": "Knight Preceptor",
+      "type": "model",
+      "points": 405,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Preceptor",
+          "target_id": "9de5-3a7e-1b8a-63a8",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ebd9-7175-3f0c-72a9",
+          "name": "Knight Preceptor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "15a7-ea20-568f-d8e9",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "15a7-ea20-568f-d8e9:e1a0-435d-be85-5e07",
+                  "name": "Las-impulsor",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "118d-63f7-70a3-629a",
+                      "name": "➤ Las-impulsor - high intensity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "6205-84d2-cab4-8894",
+                      "name": "➤ Las-impulsor - low intensity",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e11c-1932-dd04-c55f",
+          "name": "Exemplar of the Code",
+          "type": "Abilities",
+          "description": "At the start of the battle, select one unit from your opponent’s army. Each time this model makes an attack that targets that unit, you can re-roll the Hit roll."
+        },
+        {
+          "id": "36a7-a0c0-ff14-14a7",
+          "name": "Mentor (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, improve that model’s Leadership characteristic by 1 and improve that model’s Objective Control characteristic by 2."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6e36-f85-1c3b-8bf3",
+      "name": "Knight Castellan",
+      "type": "model",
+      "points": 480,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Castellan",
+          "target_id": "2617-d8a7-87fd-59b2",
+          "primary": false
+        },
+        {
+          "name": "Dominus",
+          "target_id": "af4c-b971-a31c-669c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6e36-f85-1c3b-8bf3",
+          "name": "Knight Castellan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "be21-7bd6-270a-2986",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "be21-7bd6-270a-2986:18d7-565e-a1b7-4040",
+                  "name": "Plasma decimator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d8eb-d595-9bdc-3cf",
+                      "name": "➤ Plasma decimator - standard",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "71f5-dc3a-6019-34af",
+                      "name": "➤ Plasma decimator - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "be21-7bd6-270a-2986:4a7e-57b0-1b1a-b226",
+                  "name": "Volcano lance",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8057-e9f4-1d1-41f0",
+                      "name": "Volcano lance",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "18",
+                      "ap": "-5",
+                      "d": "D6+8",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3b9-a66e-f6ac-8aeb",
+          "name": "Ion Aegis (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly ARMIGER model is within 6\" of this model, that ARMIGER models has the Benefits of Cover."
+        },
+        {
+          "id": "1b2e-aac4-ebfe-3c7",
+          "name": "Titan Hunter",
+          "type": "Abilities",
+          "description": "Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, re-roll a Damage roll of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8fb9-50b2-adc6-161a",
+      "name": "Knight Valiant",
+      "type": "model",
+      "points": 480,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Valiant",
+          "target_id": "c738-6273-23f4-51e5",
+          "primary": false
+        },
+        {
+          "name": "Dominus",
+          "target_id": "af4c-b971-a31c-669c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8fb9-50b2-adc6-161a",
+          "name": "Knight Valiant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "e16f-cf11-5348-c413",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e16f-cf11-5348-c413:be5c-af2b-86d3-da18",
+                  "name": "Conflagration cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "feeb-790a-99d5-67fc",
+                      "name": "Conflagration cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3D6",
+                      "bs_ws": "N/A",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "e16f-cf11-5348-c413:9a45-74ba-e166-9692",
+                  "name": "Thundercoil harpoon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2fc1-856c-bd08-2f05",
+                      "name": "Thundercoil harpoon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "24",
+                      "ap": "-6",
+                      "d": "12",
+                      "keywords": "Anti-Monster 4+, Anti-Vehicle 4+, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "527e-c53f-32af-f316",
+          "name": "Ion Aegis (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly ARMIGER model is within 6\" of this model, that ARMIGER models has the Benefits of Cover."
+        },
+        {
+          "id": "c930-deaf-6267-1e1e",
+          "name": "Overwhelming Firestorm",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by this model this phase. That unit must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f8d0-fdf2-2e5e-3b74",
+      "name": "Acastus Knight Asterius",
+      "type": "model",
+      "points": 765,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Asterius",
+          "target_id": "5a04-db4c-d29a-7b35",
+          "primary": false
+        },
+        {
+          "name": "Acastus",
+          "target_id": "f76f-29c1-de9-74c2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f8d0-fdf2-2e5e-3b74",
+          "name": "Acastus Knight Asterius",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "ae22-428f-72e0-c023",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ae22-428f-72e0-c023:4287-98aa-9723-71c5",
+                  "name": "Twin conversion beam cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "575d-daf8-e4c9-7e55",
+                      "name": "Twin conversion beam cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-2",
+                      "d": "6",
+                      "keywords": "Conversion, Twin-linked, Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "ae22-428f-72e0-c023:3104-b624-a035-82f5",
+                  "name": "Asterius volkite culverin",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1a75-a944-d240-6743",
+                      "name": "Asterius volkite culverin",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "ae22-428f-72e0-c023:6a9c-1e8b-698b-5640",
+                  "name": "Karacnos mortar battery",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7bef-2b4a-7e72-86d4",
+                      "name": "Karacnos mortar battery",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 2+, Blast, Ignores Cover, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8107-cbfe-4bc2-99e1",
+          "name": "Sunderer of Fortresses",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristics of that attack by 1. If that attack targets a FORTIFICATION, improve the Strength and Damage characteristics of that attack by 2 instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "61c9-8baf-22b4-5d84",
+      "name": "Acastus Knight Porphyrion",
+      "type": "model",
+      "points": 710,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Acastus",
+          "target_id": "f76f-29c1-de9-74c2",
+          "primary": false
+        },
+        {
+          "name": "Knight Porphyrion",
+          "target_id": "9268-e2f7-7df-ab15",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "61c9-8baf-22b4-5d84",
+          "name": "Acastus Knight Porphyrion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "27a6-c33d-73bf-a9c1",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "27a6-c33d-73bf-a9c1:1d9a-57f1-78bd-f342",
+                  "name": "Twin magna lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6f32-c97f-e3e-8dc0",
+                      "name": "Twin magna lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "18",
+                      "ap": "-4",
+                      "d": "D6+6",
+                      "keywords": "Blast, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "565-616f-548a-b9ab",
+          "name": "Bastion of Firepower",
+          "type": "Abilities",
+          "description": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9ee-e289-bc6c-d943",
+      "name": "Cerastus Knight Lancer",
+      "type": "model",
+      "points": 430,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Knight Lancer",
+          "target_id": "9bed-3ae9-81d7-9bb4",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "481c-3b2e-5c99-c248",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9ee-e289-bc6c-d943",
+          "name": "Cerastus Knight Lancer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "06f6-593b-da31-c245",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "06f6-593b-da31-c245:58f8-dd4e-bb8f-f357",
+                  "name": "Cerastus shock lance",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "96f2-c13b-cf32-6785",
+                      "name": "➤ Cerastus shock lance - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "Lance"
+                    },
+                    {
+                      "profile_id": "c77-ff4f-7801-5bc9",
+                      "name": "Cerastus shock lance",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Assault, Sustained Hits 2"
+                    },
+                    {
+                      "profile_id": "11a0-34b2-1f4b-854",
+                      "name": "➤ Cerastus shock lance - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "52a2-a465-3ebb-80b9",
+          "name": "Shock Charge",
+          "type": "Abilities",
+          "description": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+        },
+        {
+          "id": "dfe3-cb31-d3a4-b603",
+          "name": "Invulnerable Save (4+)",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "3d59-83f8-e0ee-c0a3",
+          "name": "Lancer’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, it is eligible to declare a charge in a turn in which it Advanced."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1654-5c17-474e-2d84",
+      "name": "Cerastus Knight Castigator",
+      "type": "model",
+      "points": 465,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "481c-3b2e-5c99-c248",
+          "primary": false
+        },
+        {
+          "name": "Knight Castigator",
+          "target_id": "869c-9d9e-5aa6-93bd",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1654-5c17-474e-2d84",
+          "name": "Cerastus Knight Castigator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "7c69-3191-a6cd-991f",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7c69-3191-a6cd-991f:ae5a-5dc6-9a19-d40",
+                  "name": "Castigator bolt cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "68fa-efa8-4959-bdc6",
+                      "name": "Castigator bolt cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "18",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "7c69-3191-a6cd-991f:c4b7-de58-e772-4156",
+                  "name": "Tempest warblade",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5fbe-9cfd-dbf8-6752",
+                      "name": "➤ Tempest warblade - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "79af-f718-ea61-3240",
+                      "name": "➤ Tempest warblade - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1cd4-b9f4-4c51-c589",
+          "name": "Storm of Bolts",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "bf07-1fc3-a51f-b9f2",
+          "name": "Castigator’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, its ranged weapons have the [SUSTAINED HITS 1] ability and the Armour Penetration characteristic of its ranged weapons is improved by 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "11d3-167b-6dff-a4c2",
+      "name": "Cerastus Knight Acheron",
+      "type": "model",
+      "points": 425,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "481c-3b2e-5c99-c248",
+          "primary": false
+        },
+        {
+          "name": "Knight Acheron",
+          "target_id": "3de8-a9ae-d1e2-2e5",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "11d3-167b-6dff-a4c2",
+          "name": "Cerastus Knight Acheron",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "677e-430a-8715-57ac",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "677e-430a-8715-57ac:e2aa-5218-7371-8066",
+                  "name": "Twin heavy bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c2bd-d1fa-d106-19ec",
+                      "name": "Twin heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "677e-430a-8715-57ac:c7a9-11d4-625d-2787",
+                  "name": "Acheron flame cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "20a7-a693-187c-3cff",
+                      "name": "Acheron flame cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Torrent, Ignores Cover"
+                    }
+                  ]
+                },
+                {
+                  "id": "677e-430a-8715-57ac:1bbe-fc7c-926e-4181",
+                  "name": "Reaper chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3267-9d45-fb27-929d",
+                      "name": "➤ Reaper chainfist - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "ae19-5f40-8f99-8d1b",
+                      "name": "➤ Reaper chainfist - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4ba0-261-d552-3e71",
+          "name": "Searing Flames",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+        },
+        {
+          "id": "7afa-5443-53e3-5707",
+          "name": "Cerastus Knight Acheron",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks only."
+        },
+        {
+          "id": "30be-bd04-b903-2d25",
+          "name": "Acheron’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, at the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test, subtracting 1 from the result when they do."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "37a7-d156-1e4c-8fe1",
+      "name": "Cerastus Knight Atrapos",
+      "type": "model",
+      "points": 425,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "481c-3b2e-5c99-c248",
+          "primary": false
+        },
+        {
+          "name": "Knight Atrapos",
+          "target_id": "a4e7-7d02-686a-153f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "37a7-d156-1e4c-8fe1",
+          "name": "Cerastus Knight Atrapos",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "edbf-1c79-2b7f-f834",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "edbf-1c79-2b7f-f834:73e9-498e-2d97-e18",
+                  "name": "Atrapos lascutter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8f72-a428-9ee4-acb2",
+                      "name": "➤ Atrapos lascutter - high intensity (melee)",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "7dcf-78c3-82e1-b6fa",
+                      "name": "➤ Atrapos lascutter - low intensity (melee)",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "8729-3dcc-8ed7-752a",
+                      "name": "➤ Atrapos lascutter - high intensity (ranged)",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "c9f0-76bb-4602-e4f7",
+                      "name": "➤ Atrapos lascutter - low intensity (ranged)",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "edbf-1c79-2b7f-f834:406-60ac-f728-9c6d",
+                  "name": "Graviton singularity cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4312-4668-8ce2-3045",
+                      "name": "➤ Graviton singularity cannon - singularity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+1",
+                      "keywords": "Blast, Devastating Wounds, Hazardous"
+                    },
+                    {
+                      "profile_id": "2f4-5b32-a9b5-7abc",
+                      "name": "➤ Graviton singularity cannon - contained",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1d21-3b48-6cd2-d5f5",
+          "name": "Macro-extinction Protocols",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING, add 1 to the Wound roll as well."
+        },
+        {
+          "id": "ebf4-d0b5-fbb-7c37",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "5216-4a0b-633c-64a",
+          "name": "Atrapos’ Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, each time that model makes an attack that targets a TITANIC or TOWERING model, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "adfa-19fc-7337-7350",
+      "name": "Questoris Knight Magaera",
+      "type": "model",
+      "points": 425,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        },
+        {
+          "name": "Knight Magaera",
+          "target_id": "3222-2af3-6a7e-5258",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "adfa-19fc-7337-7350",
+          "name": "Questoris Knight Magaera",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "+6",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "d619-677b-ec45-00c0",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d619-677b-ec45-00c0:6da8-51ad-1ce1-cd25",
+                  "name": "Phased plasma-fusil",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ea44-b29b-859c-45ac",
+                      "name": "Phased plasma-fusil",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "d619-677b-ec45-00c0:2708-f76a-56f1-f55e",
+                  "name": "Lightning cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e803-b7a9-6d6b-85cf",
+                      "name": "Lightning cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c150-a93b-f867-adf4",
+          "name": "Repair Auto-simulacra",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, this model regains up to D3 lost wounds."
+        },
+        {
+          "id": "7d8a-f415-6917-e65",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "473-3f8d-7861-5a6d",
+          "name": "Magaera’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, ranged weapons equipped by that model have the [IGNORES COVER] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f8f3-a438-1212-93e8",
+      "name": "Questoris Knight Styrix",
+      "type": "model",
+      "points": 430,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Questoris",
+          "target_id": "e4d6-1a77-132b-f39d",
+          "primary": false
+        },
+        {
+          "name": "Knight Styrix",
+          "target_id": "19ac-e6bb-1dd9-490f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f8f3-a438-1212-93e8",
+          "name": "Questoris Knight Styrix",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "356a-e3f4-1a31-8237",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "356a-e3f4-1a31-8237:1f25-f0ec-aeea-b440",
+                  "name": "Graviton crusher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "63a2-7ba2-3845-f2de",
+                      "name": "Graviton crusher",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 2+, Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "356a-e3f4-1a31-8237:b689-ef77-3687-fa10",
+                  "name": "Volkite chierovile",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8e62-813d-11cb-9310",
+                      "name": "Volkite chierovile",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "9",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "0",
+                      "d": "3",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d859-1de8-1fdc-8927",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "fc84-51b3-4be7-c687",
+          "name": "Grav-pinned",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Advance and Charge rolls made for that unit."
+        },
+        {
+          "id": "e1f3-aeae-379b-1e02",
+          "name": "Styrix’s Duty (Bondsman)",
+          "type": "Abilities",
+          "description": "While a model is affected by this ability, ranged weapons equipped by that model have the [IGNORES COVER] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e3dd-7e90-140a-b3ab",
+      "name": "Armiger Moirax",
+      "type": "model",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Knights",
+          "target_id": "b5e4-3253-c157-54fd",
+          "primary": false
+        },
+        {
+          "name": "Armiger",
+          "target_id": "4c40-ab9-54af-d290",
+          "primary": false
+        },
+        {
+          "name": "Moirax",
+          "target_id": "f9af-3a72-6e97-1a32",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e3dd-7e90-140a-b3ab",
+          "name": "Armiger Moirax",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7c4e-84cb-7fa5-362b",
+          "name": "Protection Protocols",
+          "type": "Abilities",
+          "description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "e424-58f3-8e79-19a6",
+      "name": "Noble Lance"
+    },
+    {
+      "id": "9a4a-a4c8-a16a-c969",
+      "name": "Questor Forgepact"
+    }
+  ],
+  "enhancements": []
+}

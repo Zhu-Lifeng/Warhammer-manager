@@ -1,0 +1,3638 @@
+{
+  "id": "3bdf-a114-5035-c6ac",
+  "name": "Xenos - Genestealer Cults",
+  "is_library": false,
+  "revision": "70",
+  "source_file": "Genestealer Cults.cat",
+  "categories": [
+    {
+      "id": "e919-694c-97ac-c174",
+      "name": "Aberrants"
+    },
+    {
+      "id": "7cc8-a037-cc71-6377",
+      "name": "Abominant"
+    },
+    {
+      "id": "5c24-4529-89d6-8139",
+      "name": "Achilles Ridgerunners"
+    },
+    {
+      "id": "855e-3f1b-c88f-c02c",
+      "name": "Acolyte Hybrids"
+    },
+    {
+      "id": "9777-55d5-ffae-c07",
+      "name": "Acolyte Iconward"
+    },
+    {
+      "id": "5c5f-d483-11e3-3f12",
+      "name": "Atalan Jackals"
+    },
+    {
+      "id": "b72b-ca20-1fe1-c23b",
+      "name": "Biophagus"
+    },
+    {
+      "id": "e90-a1ac-e276-9652",
+      "name": "Clamavus"
+    },
+    {
+      "id": "d059-fcf6-93f4-3da6",
+      "name": "Goliath Rockgrinder"
+    },
+    {
+      "id": "c45f-f232-3ef0-3ab7",
+      "name": "Goliath Truck"
+    },
+    {
+      "id": "d117-9319-7f52-f4c3",
+      "name": "Hybrid Metamorphs"
+    },
+    {
+      "id": "d1ae-4000-bdd2-333b",
+      "name": "Jackal Alphus"
+    },
+    {
+      "id": "33d4-a80e-ecc-e821",
+      "name": "Kelermorph"
+    },
+    {
+      "id": "dfde-688d-75b8-77bb",
+      "name": "Locus"
+    },
+    {
+      "id": "46a5-442b-8c19-355c",
+      "name": "Magus"
+    },
+    {
+      "id": "9ffe-1e2a-b828-b7af",
+      "name": "Neophyte Hybrids"
+    },
+    {
+      "id": "8b0d-31c9-98a2-8430",
+      "name": "Nexos"
+    },
+    {
+      "id": "94ba-162-6050-a30e",
+      "name": "Patriarch"
+    },
+    {
+      "id": "3253-f6f5-2121-8a2f",
+      "name": "Primus"
+    },
+    {
+      "id": "6d9c-2e39-be0b-aee9",
+      "name": "Purestrain Genestealers"
+    },
+    {
+      "id": "5455-1687-f81e-b3c5",
+      "name": "Reductus Saboteur"
+    },
+    {
+      "id": "7eca-eb86-84bd-c846",
+      "name": "Sanctus"
+    },
+    {
+      "id": "69e2-145c-5eca-393",
+      "name": "Tectonic Fragdrill"
+    },
+    {
+      "id": "2c56-6d8a-3aca-5441",
+      "name": "Benefictus"
+    },
+    {
+      "id": "944c-247a-211b-316a",
+      "name": "Acolyte Hybrids with Hand Flamers"
+    },
+    {
+      "id": "a9ae-c8a3-b089-2a27",
+      "name": "Acolyte Hybrids with Autopistols"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "f51d-bc51-f301-9dee",
+      "name": "Aberrants",
+      "type": "unit",
+      "points": 135,
+      "keywords": [
+        {
+          "name": "Aberrants",
+          "target_id": "e919-694c-97ac-c174",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6dfd-e638-c220-1d1",
+          "name": "Aberrant Hypermorph",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7eb1-b82f-97ef-03f1",
+              "kind": "fixed",
+              "name": "Aberrant weapons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7eb1-b82f-97ef-03f1:bc32-897c-b823-1667",
+                  "name": "Aberrant weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ef0-f84e-8161-3d4d",
+                      "name": "Aberrant weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2b64-79c0-e6b5-53e9",
+          "name": "Aberrant",
+          "min_count": 4,
+          "max_count": 9,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f653-d9d2-af8a-da47",
+              "kind": "fixed",
+              "name": "Aberrant weapons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f653-d9d2-af8a-da47:bc32-897c-b823-1667",
+                  "name": "Aberrant weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ef0-f84e-8161-3d4d",
+                      "name": "Aberrant weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cc70-2470-1cb3-952c",
+          "name": "Feel No Pain 5+",
+          "type": "Abilities",
+          "description": "This unit has a 5+ Feel No Pain"
+        },
+        {
+          "id": "ae25-dce3-9c2e-2e38",
+          "name": "Hulking Bodyguards",
+          "type": "Abilities",
+          "description": "While a CHARACTER is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 300,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "97b1-4873-9fcb-5cb8",
+      "name": "Abominant",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Abominant",
+          "target_id": "7cc8-a037-cc71-6377",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "97b1-4873-9fcb-5cb8",
+          "name": "Abominant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1446-72b9-3078-4317",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "1446-72b9-3078-4317:71f0-2cb-e23c-c022",
+                  "name": "Power sledgehammer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b66e-6bd8-3b37-819e",
+                      "name": "Power sledgehammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8030-1b98-3c3c-4afb",
+          "name": "Feel No Pain 5+",
+          "type": "Abilities",
+          "description": "This model has a 5+ Feel No Pain"
+        },
+        {
+          "id": "48f2-fdac-e0bf-b520",
+          "name": "The Chosen One",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+ do not remove the destroyed model from play, it can fight after the attacking model's unit has finished making it's attacks and is then removed from play."
+        },
+        {
+          "id": "c0d7-d922-8f79-8fca",
+          "name": "Regenerating Gene-mass",
+          "type": "Abilities",
+          "description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+        },
+        {
+          "id": "f802-ed9a-9cb0-7aef",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- ABERRANTS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "cf71-a12a-2730-c40b",
+      "name": "Achilles Ridgerunners",
+      "type": "unit",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Achilles Ridgerunners",
+          "target_id": "5c24-4529-89d6-8139",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "71c2-cc66-9aac-181e",
+          "name": "Achilles Ridgerunner",
+          "min_count": 1,
+          "max_count": 2,
+          "stats": {
+            "m": "12\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "8",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "1d2a-dcb9-d666-68ec",
+              "kind": "fixed",
+              "name": "Twin heavy stubber",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1d2a-dcb9-d666-68ec:1d2a-dcb9-d666-68ec",
+                  "name": "Twin heavy stubber",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "de2a-3439-ed47-c77c",
+                      "name": "Twin heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Twin-linked, Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "75c9-67d6-fa86-7854",
+              "kind": "fixed",
+              "name": "Armoured hull",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "75c9-67d6-fa86-7854:75c9-67d6-fa86-7854",
+                  "name": "Armoured hull",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "178-e832-5837-5f5",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8263-4c12-faea-3210",
+              "kind": "choice",
+              "name": "Heavy Mining Laser",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8263-4c12-faea-3210:4dfd-1554-a484-439d",
+                  "name": "Achilles missile launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "445c-216b-baa5-214",
+                      "name": "Achilles missile launcher",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8263-4c12-faea-3210:1f1a-1975-8221-4f33",
+                  "name": "Heavy mortar",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ea6f-9f30-3a62-379",
+                      "name": "Heavy mortar",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "672c-fcd1-2183-179c",
+          "name": "Crossfire",
+          "type": "Abilities",
+          "description": "in your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly GENESTEALER CULTS unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn."
+        },
+        {
+          "id": "c727-a3d8-fceb-6ebd",
+          "name": "Flare Launcher",
+          "type": "Abilities",
+          "description": "The bearer’s unit has the SMOKE keyword and you can target it with the Smokescreen Stratagem for 0CP."
+        },
+        {
+          "id": "8fb4-84bc-9a15-e4f4",
+          "name": "Spotter",
+          "type": "Abilities",
+          "description": "The bearer’s ranged weapons have a Ballistic Skill characteristic of 3+."
+        },
+        {
+          "id": "2e08-718b-1740-8ca4",
+          "name": "Survey Augur",
+          "type": "Abilities",
+          "description": "Each time the bearer’s unit has shot, select one enemy unit that was hit by one or more attacks made by the bearer this phase. Until the end of the phase, each time a friendly GENESTEALER CULTS model makes an attack against that unit, that attack has the [IGNORES COVER] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a197-f6c3-5d4a-5326",
+      "name": "Acolyte Hybrids with Hand Flamers",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Acolyte Hybrids",
+          "target_id": "855e-3f1b-c88f-c02c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Acolyte Hybrids with Hand Flamers",
+          "target_id": "944c-247a-211b-316a",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "429b-8985-6cfb-8970",
+          "name": "Industrialised Destruction",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, re-roll a Wound Roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 140,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "e367-b2cb-d22a-b17c",
+      "name": "Acolyte Iconward",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Acolyte Iconward",
+          "target_id": "9777-55d5-ffae-c07",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e367-b2cb-d22a-b17c",
+          "name": "Acolyte Iconward",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e486-a530-769f-f805",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e486-a530-769f-f805:f435-efc3-2e04-3b25",
+                  "name": "Cult claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "306c-7337-c97b-cd9c",
+                      "name": "Cult claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1245-caf-5f2d-9ef7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+        },
+        {
+          "id": "847c-923b-69ef-55ac",
+          "name": "Nexus of Devotion",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the HYBRID METAMORPHS keyword, models in that unit have the Feel No Pain 4+ ability instead."
+        },
+        {
+          "id": "2099-bcaf-e5f1-ebcf",
+          "name": "Summon the Cult",
+          "type": "Abilities",
+          "description": "Once per battle, when you have to remove a Cult Ambush marker because your opponent has moved too close to it, if one or more models from your army with this ability are on the battlefield, you can use this ability. If you do, instead of removing that marker, you can place it anywhere on the battlefield that is within 12\" of a model from your army with this ability and more than 9\" horizontally away from all enemy units (if this is not possible, this ability is not considered to have been used and that marker is removed as normal)."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3a81-2b84-bf4c-4f85",
+      "name": "Atalan Jackals",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Atalan Jackals",
+          "target_id": "5c5f-d483-11e3-3f12",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9de3-2a5c-beea-72ae",
+          "name": "Atalan Jackal w/ Grenade launcher",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ad32-587a-4f40-d461",
+              "kind": "fixed",
+              "name": "Grenade launcher",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ad32-587a-4f40-d461:dba3-6506-4103-2088",
+                  "name": "Grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4a9d-f7f6-4026-5273",
+                      "name": "➤ Grenade launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "f16-d4b5-befc-8fd7",
+                      "name": "➤ Grenade launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5c5a-d00e-8e18-6154",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5c5a-d00e-8e18-6154:431d-a26e-89f8-bf06",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8911-336d-cca6-af31",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c981-ff67-9a33-386b",
+          "name": "Atalan Jackal",
+          "min_count": 1,
+          "max_count": 8,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3549-67da-fbbe-4712",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "3549-67da-fbbe-4712:431d-a26e-89f8-bf06",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8911-336d-cca6-af31",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "250e-bd99-8e6e-e58a",
+              "kind": "fixed",
+              "name": "Atalan small arms",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "250e-bd99-8e6e-e58a:17cd-6ea6-d3e9-c53c",
+                  "name": "Atalan small arms",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d08f-8ebe-d4b9-38e",
+                      "name": "Atalan small arms",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e824-edab-18c6-3347",
+          "name": "Atalan Jackal w/ Atalan power weapon",
+          "min_count": null,
+          "max_count": 4,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "623c-7963-a4e6-33a6",
+              "kind": "fixed",
+              "name": "Atalan small arms",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "623c-7963-a4e6-33a6:17cd-6ea6-d3e9-c53c",
+                  "name": "Atalan small arms",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d08f-8ebe-d4b9-38e",
+                      "name": "Atalan small arms",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8d66-a459-a02d-c59e",
+              "kind": "fixed",
+              "name": "Atalan power weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8d66-a459-a02d-c59e:595a-e1c5-7280-6da3",
+                  "name": "Atalan power weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ab5-695a-fbe9-39e1",
+                      "name": "Atalan power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8c22-aa37-99f0-8e69",
+          "name": "Atalan Jackal w/ Grenade launcher & power weapon",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5c16-3ee6-3bcc-f1db",
+              "kind": "fixed",
+              "name": "Grenade launcher",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5c16-3ee6-3bcc-f1db:dba3-6506-4103-2088",
+                  "name": "Grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4a9d-f7f6-4026-5273",
+                      "name": "➤ Grenade launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "f16-d4b5-befc-8fd7",
+                      "name": "➤ Grenade launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6d4f-32f7-d589-ce35",
+              "kind": "fixed",
+              "name": "Atalan power weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6d4f-32f7-d589-ce35:595a-e1c5-7280-6da3",
+                  "name": "Atalan power weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ab5-695a-fbe9-39e1",
+                      "name": "Atalan power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "de61-4088-f84c-24a5",
+          "name": "Atalan Wolfquad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f308-2ed-9bcc-ee78",
+              "kind": "choice",
+              "name": "Heavy Stubber",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f308-2ed-9bcc-ee78:17f0-d036-dc8d-3399",
+                  "name": "Mining laser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "32fb-3f61-367c-fb71",
+                      "name": "Mining laser",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "f308-2ed-9bcc-ee78:726f-abd3-9be7-f1d5",
+                  "name": "Atalan incinerator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1aa5-8d88-59da-bac3",
+                      "name": "Atalan incinerator",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e984-5312-f445-a326",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e984-5312-f445-a326:431d-a26e-89f8-bf06",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8911-336d-cca6-af31",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "aa6f-4c12-f64-dadd",
+              "kind": "fixed",
+              "name": "Atalan small arms",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "aa6f-4c12-f64-dadd:17cd-6ea6-d3e9-c53c",
+                  "name": "Atalan small arms",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d08f-8ebe-d4b9-38e",
+                      "name": "Atalan small arms",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1537-7cfd-9fd9-f69d",
+          "name": "Outrider Gangs",
+          "type": "Abilities",
+          "description": "Each time you use the Cult Ambush ability to set this unit back up on the battlefield, in addition to the normal rules, all of its models must be set up wholly within 9\" of a battlefield edge and at least one of its models must be touching one of your Cult Ambush markers (that marker is then removed from the battlefield). If this cannot be done, this unit cannot be set back up."
+        },
+        {
+          "id": "a1b0-4124-e468-17a3",
+          "name": "Demolition Run",
+          "type": "Abilities",
+          "description": "Once per battle round, in your Movement phase, when this unit ends a Normal, Advance, or Fall Back move, you can select one enemy unit within 6\" of and visible to this unit and roll one D6 for each ATALAN JACKALS model in this unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds.)"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "725f-8a41-dc78-52f5",
+      "name": "Biophagus",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Biophagus",
+          "target_id": "b72b-ca20-1fe1-c23b",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "725f-8a41-dc78-52f5",
+          "name": "Biophagus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "a0be-2cf7-65f0-bb12",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "a0be-2cf7-65f0-bb12:8ad6-a883-ef50-724d",
+                  "name": "Injector goad",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "edfe-2777-1f40-6577",
+                      "name": "Injector goad",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "D3",
+                      "keywords": "Anti-infantry 2+"
+                    }
+                  ]
+                },
+                {
+                  "id": "a0be-2cf7-65f0-bb12:69c1-e060-aad6-b16f",
+                  "name": "Chemical vials",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fed6-9d76-7552-4547",
+                      "name": "Chemical vials",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "1",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-Infantry 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cb83-5005-32d4-8f79",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ABERRANTS\n\n- ACOLYTE HYBRIDS WITH AUTOPISTOLS\n- ACOLYTE HYBRIDS WITH HANDFLAMERS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\n\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        },
+        {
+          "id": "34ba-2f78-5a6c-efcf",
+          "name": "Twisted Science",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "5f87-984b-e0e0-2125",
+          "name": "Biological Warfare",
+          "type": "Abilities",
+          "description": "Once per battle, when this model’s unit is selected to fight, this model can use this ability. If it does, until the end of the phase, improve the Attacks and Damage characteristics of its injector goad by 3."
+        },
+        {
+          "id": "dd6f-370e-baf4-2c5f",
+          "name": "Alchemicus Familiar",
+          "type": "Abilities",
+          "description": "Once per battle, when the bearer’s unit is selected to fight, the bearer can use its alchemicus familiar. If it does, until the end of the phase, each time a model in the bearer's unit makes an attack that targets an INFANTRY unit, add 1 to the Wound roll"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5543-973a-cd2e-c941",
+      "name": "Clamavus",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Clamavus",
+          "target_id": "e90-a1ac-e276-9652",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "5543-973a-cd2e-c941",
+          "name": "Clamavus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d56a-1384-fab3-2f3d",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        },
+        {
+          "id": "ebfc-acb-d5c5-a4c4",
+          "name": "Voice of New Truths",
+          "type": "Abilities",
+          "description": "In your Command phase, one model from your army with this ability can use it, if it does, select one enemy unit with 18\" of it, that enemy unit must take a Battle-shock test."
+        },
+        {
+          "id": "d109-cec8-e513-fab1",
+          "name": "Scrambler Array",
+          "type": "Abilities",
+          "description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5ac1-3adb-212a-5e02",
+      "name": "Goliath Rockgrinder",
+      "type": "model",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Goliath Rockgrinder",
+          "target_id": "d059-fcf6-93f4-3da6",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5ac1-3adb-212a-5e02",
+          "name": "Goliath Rockgrinder",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "712c-4f8e-e5da-a60a",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "712c-4f8e-e5da-a60a:c51c-b3b4-bd8e-e6b7",
+                  "name": "Drilldozer blade",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7c06-64d8-4853-e9b4",
+                      "name": "Drilldozer blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "71f5-5ca9-3279-9545",
+          "name": "Grinding Line-breaker",
+          "type": "Abilities",
+          "description": "Each time an enemy unit (excluding MONSTER and VEHICLES) that is within Engagement Range of this model Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests."
+        }
+      ],
+      "transport": [
+        {
+          "id": "ae9f-1465-7a41-c32c",
+          "name": "Transport",
+          "capacity": "This model has a transport capacity of 6 GENESTEALER CULTS INFANTRY models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1d1-f0d2-b810-12fe",
+      "name": "Goliath Truck",
+      "type": "model",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Goliath Truck",
+          "target_id": "c45f-f232-3ef0-3ab7",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1d1-f0d2-b810-12fe",
+          "name": "Goliath Truck",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "7d50-e19c-87d1-ab23",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7d50-e19c-87d1-ab23:7788-d2c-400e-8de5",
+                  "name": "Twin autocannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2642-fac7-9b97-b7ea",
+                      "name": "Twin autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "7d50-e19c-87d1-ab23:cce7-12c5-6cd8-2b23",
+                  "name": "Goliath wheels",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "401b-35f7-f024-6616",
+                      "name": "Goliath wheels",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2db9-a2a5-7c0d-4600",
+          "name": "Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "483a-4cb-6beb-2e2d",
+          "name": "Transport",
+          "capacity": "This model has a transport capacity of 12 GENESTEALER CULTS INFANTRY models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8a84-a8fd-977e-9118",
+      "name": "Hybrid Metamorphs",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Hybrid Metamorphs",
+          "target_id": "d117-9319-7f52-f4c3",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f1f8-5747-2ee6-e1b3",
+          "name": "Metamorph Leader",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "48e4-6ac9-4879-b5eb",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "48e4-6ac9-4879-b5eb:e596-c885-a0c9-69e0",
+                  "name": "Leader's Bio-weapons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fed4-54c0-b413-c29b",
+                      "name": "Leader's Bio-weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1d1-7a6-c41f-1e86",
+          "name": "Brood Surge",
+          "type": "Abilities",
+          "description": "Each time an enemy unit is selected to shoot, after that unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Brood Surge move. To do so, roll one D6: this unit can be moved a number of inches up to the result, but it must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT). When doing so those models can be within Engagement Range of that enemy unit.\n\nIf, at the start of the battle, no model in this unit is equipped with a hand flamer, each time this unit makes a Brood Surge move, it can be moved up to 6\" instead of up to D6\". A unit cannot make a Brood Surge move while it is Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "6426-ca59-402a-d399",
+      "name": "Jackal Alphus",
+      "type": "model",
+      "points": 55,
+      "keywords": [
+        {
+          "name": "Jackal Alphus",
+          "target_id": "d1ae-4000-bdd2-333b",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6426-ca59-402a-d399",
+          "name": "Jackal Alphus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "5",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "c2eb-6b4f-baa8-2682",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c2eb-6b4f-baa8-2682:453d-665e-6444-3cb4",
+                  "name": "Cult sniper rifle",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7c50-83ef-33e4-d8d9",
+                      "name": "Cult sniper rifle",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Heavy, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "40f3-ad42-a70c-c4db",
+          "name": "Priority Target",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack with its cult sniper rifle that targets an enemy unit, if it scores a hit, until the end of the phase, each time another GENESTEALER CULTS model from your army makes a ranged attack that targets that enemy unit, re-roll a Hit roll of 1."
+        },
+        {
+          "id": "db66-29d9-d077-57d3",
+          "name": "Master Outrider",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model’s unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6\" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge."
+        },
+        {
+          "id": "b275-f9bb-f86b-25a0",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ATALAN JACKALS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5e0e-11d9-181d-3481",
+      "name": "Kelermorph",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Kelermorph",
+          "target_id": "33d4-a80e-ecc-e821",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5e0e-11d9-181d-3481",
+          "name": "Kelermorph",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d88f-a775-1505-2a92",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d88f-a775-1505-2a92:1e06-5ae5-de48-a087",
+                  "name": "Liberator autostubs",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bac9-74d5-2c59-4718",
+                      "name": "Liberator autostubs",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f872-566b-d324-828f",
+          "name": "Hypersensory Abilities",
+          "type": "Abilities",
+          "description": "Once per turn, in your opponent's Movement phase, when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this model, if this unit is not within Engagement Range of one or more enemy units, it can shoot at that unit as if it were your Shooting phase, and then make a Normal move of up to D6\" (it cannot embark within a TRANSPORT as part of this move)"
+        },
+        {
+          "id": "38a1-4506-e19e-bdf7",
+          "name": "Heroic Fusillade",
+          "type": "Abilities",
+          "description": "Once per turn, after one model from your army with this ability has shot, you can select one INFANTRY unit hit by one or more of those attacks. That unit must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "51e8-dac1-561a-aaa9",
+      "name": "Locus",
+      "type": "model",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Locus",
+          "target_id": "dfde-688d-75b8-77bb",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "51e8-dac1-561a-aaa9",
+          "name": "Locus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "baa4-c950-29d3-e35e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "baa4-c950-29d3-e35e:f714-7a9d-ed44-a83",
+                  "name": "Locus blades",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "944e-4471-ae45-cad4",
+                      "name": "Locus blades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2636-f3df-1f73-f2d0",
+          "name": "Sudden Assault",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Fights First ability"
+        },
+        {
+          "id": "afa4-c009-a8fa-5484",
+          "name": "Bodyguard",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, other Character models attached to that unit have the Feel No Pain 4+ ability"
+        },
+        {
+          "id": "019b-ee79-bb93-84da",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4f4-2157-2cb5-8bb",
+      "name": "Magus",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Magus",
+          "target_id": "46a5-442b-8c19-355c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "4f4-2157-2cb5-8bb",
+          "name": "Magus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "df31-1906-987b-a355",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "df31-1906-987b-a355:5f9d-aaaa-81b4-3192",
+                  "name": "Magus stave",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "93e8-179c-3878-14d3",
+                      "name": "Magus stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6032-de57-f8f6-e3d8",
+          "name": "Psychic Familiar",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any of your opponent’s Shooting phases, this model can use its psychic familiar. If it does, until the end of the phase, add 6\" to the range of its Mind Control ability."
+        },
+        {
+          "id": "72c3-6768-b2e4-cbcc",
+          "name": "Mind Control (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of your opponent’s Shooting phase, one PSYKER model from your army with this ability can use it. If used, select one enemy unit within 18\" of and visible to that PSYKER model and roll one D6: on a 1, that PSYKER model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll; on a 6, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll and subtract 1 from the Wound Roll."
+        },
+        {
+          "id": "6861-b91-d08f-8f28",
+          "name": "Spiritual Leader",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, you can select one friendly GENESTELERS CULTS unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked."
+        },
+        {
+          "id": "885a-e13e-44aa-1265",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b5d2-8681-6bba-f05b",
+      "name": "Neophyte Hybrids",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Neophyte Hybrids",
+          "target_id": "9ffe-1e2a-b828-b7af",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "8261-d629-33d4-b642",
+          "name": "Neophyte Hybrid w/ Hybrid Firearm",
+          "min_count": null,
+          "max_count": null,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "4f18-89f6-c8b1-73d7",
+              "kind": "fixed",
+              "name": "Hybrid firearm",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4f18-89f6-c8b1-73d7:d4c5-b426-bb28-1ec3",
+                  "name": "Hybrid firearm",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7106-25dc-1730-e554",
+                      "name": "Hybrid firearm",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "623b-a7d8-ba8b-f818",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "623b-a7d8-ba8b-f818:c213-e6c4-7183-4041",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "431-cdd3-d765-3c47",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "68c1-f787-32d3-dc8a",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "68c1-f787-32d3-dc8a:bbd0-8492-5969-be14",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9325-faf2-aba7-20a1",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "28b1-9012-8502-dfc5",
+          "name": "Neophyte Hybrid w/ Hybrid Firearm & Cult Icon",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f15f-5e1a-e5f0-8cb3",
+              "kind": "fixed",
+              "name": "Hybrid firearm",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f15f-5e1a-e5f0-8cb3:d4c5-b426-bb28-1ec3",
+                  "name": "Hybrid firearm",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7106-25dc-1730-e554",
+                      "name": "Hybrid firearm",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "27fe-a180-b5d0-1aa7",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "27fe-a180-b5d0-1aa7:c213-e6c4-7183-4041",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "431-cdd3-d765-3c47",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9154-9661-ce07-ecf7",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9154-9661-ce07-ecf7:bbd0-8492-5969-be14",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9325-faf2-aba7-20a1",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ab27-9a21-6d9c-ae53",
+          "name": "Neophyte Hybrid w/ Heavy Weapon",
+          "min_count": null,
+          "max_count": null,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "5c0d-5bb7-1ded-b8e2",
+              "kind": "choice",
+              "name": "Heavy Weapon Selection",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5c0d-5bb7-1ded-b8e2:9e21-6f04-5705-6543",
+                  "name": "Mining Laser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5868-96cd-cdcc-2943",
+                      "name": "Mining Laser",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "5+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "5c0d-5bb7-1ded-b8e2:6398-16e6-57f8-ba3c",
+                  "name": "Seismic Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8e40-1ced-3c41-9851",
+                      "name": "Seismic Cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Heavy, Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fdc8-34ac-2ec6-eed4",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "fdc8-34ac-2ec6-eed4:bbd0-8492-5969-be14",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9325-faf2-aba7-20a1",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "234-9381-39ca-b9a",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "234-9381-39ca-b9a:c213-e6c4-7183-4041",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "431-cdd3-d765-3c47",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9346-d64d-f46-e19f",
+          "name": "Neophyte Hybrid w/ Special Weapon",
+          "min_count": null,
+          "max_count": null,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "b755-8c54-5db9-14c4",
+              "kind": "choice",
+              "name": "Special Weapon Selection",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b755-8c54-5db9-14c4:35af-1e2b-ca02-6936",
+                  "name": "Flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "de59-6c4-4556-6c0e",
+                      "name": "Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "b755-8c54-5db9-14c4:7710-1a0c-dc5f-f945",
+                  "name": "Webber",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9311-dec4-b9c3-a03",
+                      "name": "Webber",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f2fd-99c7-b1c3-ff33",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f2fd-99c7-b1c3-ff33:c213-e6c4-7183-4041",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "431-cdd3-d765-3c47",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2866-7b53-3590-481e",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2866-7b53-3590-481e:bbd0-8492-5969-be14",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9325-faf2-aba7-20a1",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4306-733d-48c5-5584",
+          "name": "Neophyte Leader",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "6d6e-d153-ade2-2a2e",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6d6e-d153-ade2-2a2e:40a8-15a8-d353-6862",
+                  "name": "Autopistol, anointed pistol and power weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "535f-b966-6118-9040",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6d6e-d153-ade2-2a2e:2208-229b-eb3e-1d14",
+                  "name": "Autopistol, anointed pistol and chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a96c-7c07-976b-409a",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4ed9-34a-7356-a80c",
+          "name": "Cult Icon",
+          "type": "Abilities",
+          "description": "In the Command phase, you can return up to 3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to D3+3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped with by returned models that were shot before they were destroyed are still considered to have been shot."
+        },
+        {
+          "id": "12fe-1624-b6ac-9f68",
+          "name": "A Plan Generations in the Making",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or and of any turn."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 145,
+          "condition_text": "> 10 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 10,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "55c7-90e0-419-44f9",
+      "name": "Nexos",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Nexos",
+          "target_id": "8b0d-31c9-98a2-8430",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "55c7-90e0-419-44f9",
+          "name": "Nexos",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "968c-f493-12fa-f01e",
+          "name": "Battlefield Analysis",
+          "type": "Abilities",
+          "description": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+        },
+        {
+          "id": "7d54-f68a-b935-acd3",
+          "name": "Cult Infiltration",
+          "type": "Abilities",
+          "description": "At the start of each player’s Command phase, if this model is on the battlefield, you can select one of your Cult Ambush markers that is on the battlefield and has not been moved this turn and move it up to 6\""
+        },
+        {
+          "id": "22cf-2616-94aa-2362",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2a91-a18e-bd08-fa66",
+      "name": "Patriarch",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Patriarch",
+          "target_id": "94ba-162-6050-a30e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2a91-a18e-bd08-fa66",
+          "name": "Patriarch",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "20db-477f-cbfc-883a",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "20db-477f-cbfc-883a:c047-fec8-749f-de49",
+                  "name": "Patriarch's claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c278-de9c-2e37-e207",
+                      "name": "Patriarch's claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4930-970b-9e3d-863",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- PURESTRAIN GENESTEALERS"
+        },
+        {
+          "id": "2ce2-73a5-1981-bdb2",
+          "name": "Might From Beyond",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "bef7-52f2-442f-210e",
+          "name": "Cosmic Horror (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle-shock test."
+        },
+        {
+          "id": "7174-ac6-70bb-b118",
+          "name": "Psychic Familiar",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of the Fight phase, this model can use its psychic familiar. If it does, until the end of the phase, add 6\" to the range of its Cosmic Horror ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "30e9-42fa-3a6e-e8ef",
+      "name": "Primus",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Primus",
+          "target_id": "3253-f6f5-2121-8a2f",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "30e9-42fa-3a6e-e8ef",
+          "name": "Primus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2d52-8723-e4d4-b33e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2d52-8723-e4d4-b33e:7f2c-edb8-5208-83a5",
+                  "name": "Toxin injector claw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9227-ef76-b50c-9d5b",
+                      "name": "Toxin injector claw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "D3",
+                      "keywords": "Anti-infantry 2+, Extra Attacks"
+                    }
+                  ]
+                },
+                {
+                  "id": "2d52-8723-e4d4-b33e:2337-ead7-99a4-72ab",
+                  "name": "Scoped needle pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ce5a-fb79-1f2c-2072",
+                      "name": "Scoped needle pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "1",
+                      "ap": "0",
+                      "d": "D3",
+                      "keywords": "Anti-infantry 2+, Ignores Cover, Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "2d52-8723-e4d4-b33e:9b0d-6cb-c1c7-22b2",
+                  "name": "Cult bonesword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3ec6-dbec-6225-1525",
+                      "name": "Cult bonesword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6a64-5c0f-6b5f-15e2",
+          "name": "Cult Demagogue",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+        },
+        {
+          "id": "769-3c2c-947e-3320",
+          "name": "Decoys and Misdirection",
+          "type": "Abilities",
+          "description": "If your army includes one or more models with this ability, after both players have deployed their armies, select up to three GENESTEALER CULTS units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves."
+        },
+        {
+          "id": "9d2d-6794-da30-7155",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "965b-496a-3a1b-22a8",
+      "name": "Purestrain Genestealers",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Purestrain Genestealers",
+          "target_id": "6d9c-2e39-be0b-aee9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "73e6-806f-feaa-5849",
+          "name": "Purestrain Genestealer",
+          "min_count": 5,
+          "max_count": 10,
+          "stats": {
+            "m": "8\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5b49-67fd-cdc8-1bf0",
+              "kind": "fixed",
+              "name": "Cult claws and talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5b49-67fd-cdc8-1bf0:5b49-67fd-cdc8-1bf0",
+                  "name": "Cult claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e003-7345-6bc7-d6eb",
+                      "name": "Cult claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fc5c-3afb-c339-8f9c",
+          "name": "Swift and Deadly",
+          "type": "Abilities",
+          "description": "This unit is eligible to declare a charge in a turn in which it Advanced."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "4565-bd65-9e8b-284d",
+      "name": "Reductus Saboteur",
+      "type": "model",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Reductus Saboteur",
+          "target_id": "5455-1687-f81e-b3c5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4565-bd65-9e8b-284d",
+          "name": "Reductus Saboteur",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6b1f-4c60-116f-8632",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6b1f-4c60-116f-8632:a61e-34d9-11c6-7766",
+                  "name": "Demolition charges",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "590e-793b-1fd6-1c03",
+                      "name": "Demolition charges",
+                      "weapon_type": "Ranged",
+                      "range": "8\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Assault, Blast, One Shot"
+                    }
+                  ]
+                },
+                {
+                  "id": "6b1f-4c60-116f-8632:e1fd-13a4-18de-34cd",
+                  "name": "Remote explosives",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3f43-593e-ccc3-659b",
+                      "name": "Remote explosives",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "aeea-7c47-8219-2ff6",
+          "name": "Primed and Ready",
+          "type": "Abilities",
+          "description": "In your Shooting phase, you can select one model from your army with this ability as the target of the Grenade Stratagem for 0CP, provided that model has not already been the target of that Stratagem this phase."
+        },
+        {
+          "id": "bb22-5863-886b-44a4",
+          "name": "Planted Explosives",
+          "type": "Abilities",
+          "description": "Once per battle, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, this model can use its Reductus mine. If it does, roll one D6: on a 2+, that enemy unit suffers D3+3 mortal wounds. Only one model from your army with this ability can use it in the same battle round."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3d6c-357e-3c09-813c",
+      "name": "Sanctus",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Sanctus",
+          "target_id": "7eca-eb86-84bd-c846",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3d6c-357e-3c09-813c",
+          "name": "Sanctus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2501-e015-c9cf-b5c7",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2501-e015-c9cf-b5c7:567e-ca3e-365e-4c6a",
+                  "name": "Sanctus bio-dagger",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d31b-223f-3659-fdb8",
+                      "name": "Sanctus bio-dagger",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "3",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-infantry 3+, Precision"
+                    }
+                  ]
+                },
+                {
+                  "id": "2501-e015-c9cf-b5c7:7d45-4735-62d9-9c89",
+                  "name": "Cult sniper rifle and close combat weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "85d6-5734-14b3-2203",
+                      "name": "Cult sniper rifle",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Anti-Psyker 2+, Heavy, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1df6-fdd-a680-5df9",
+          "name": "Creeping Shadow",
+          "type": "Abilities",
+          "description": "If this model is equipped with a cult sniper rifle, once per turn when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\""
+        },
+        {
+          "id": "bf22-284-978-cf1a",
+          "name": "Psychic Spoor",
+          "type": "Abilities",
+          "description": "At the start of the first battle round, select one enemy unit to be this model’s prey. Each time this model makes an attack that targets its prey, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        },
+        {
+          "id": "df3b-ad7f-4065-3cf7",
+          "name": "Cloaked Assassin",
+          "type": "Abilities",
+          "description": "If this model is equipped with a Sanctus Bio-dagger, enemy units cannot use the Fire Overwatch Stratagem to shoot at this model."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4c63-309e-88e3-7d17",
+      "name": "Tectonic Fragdrill [Legends]",
+      "type": "model",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Tectonic Fragdrill",
+          "target_id": "69e2-145c-5eca-393",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4c63-309e-88e3-7d17",
+          "name": "Tectonic Fragdrill [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "11",
+            "sv": "3+",
+            "w": "14",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "7b23-ca7e-dfd3-7b99",
+              "kind": "fixed",
+              "name": "Fragdrill",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7b23-ca7e-dfd3-7b99:7b23-ca7e-dfd3-7b99",
+                  "name": "Fragdrill",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f0d6-aa12-25b-d7d8",
+                      "name": "Fragdrill",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "6+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "439c-779d-72b2-ec8e",
+          "name": "Tectonic Fragdrill",
+          "type": "Abilities",
+          "description": "Friendly GENESTEALER CULT INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION."
+        },
+        {
+          "id": "f0da-56d5-172e-d9e2",
+          "name": "Underground Egress",
+          "type": "Abilities",
+          "description": "Each time one of your Cult Ambush markers is removed as the result of an enemy unit ending any kind of move within 9\" of it, you can instead move that marker so that it is wholly within 9\" of this FORTIFICATION and more than 9\" horizontally away from all enemy units (if this is not possible, that marker is removed as normal)."
+        },
+        {
+          "id": "3e27-a26c-5625-4074",
+          "name": "Manufactorum Cover",
+          "type": "Abilities",
+          "description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack."
+        },
+        {
+          "id": "1a45-e2e6-ef40-b0c5",
+          "name": "Fortification",
+          "type": "Abilities",
+          "description": "While an enemy unit is only within Engagement Range of one or more FORTIFICATION from your army:\n■ That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n■ Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "908a-9fd8-2270-8dbd",
+      "name": "Benefictus",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Benefictus",
+          "target_id": "2c56-6d8a-3aca-5441",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "908a-9fd8-2270-8dbd",
+          "name": "Benefictus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d742-1992-2bcb-4b20",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d742-1992-2bcb-4b20:425d-10f4-8799-2b1c",
+                  "name": "Psionic cascade",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "844c-5d6b-52cd-5ef2",
+                      "name": "➤ Psionic cascade - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Ignores Cover, Psychic"
+                    },
+                    {
+                      "profile_id": "dda5-a2f5-2921-b3cc",
+                      "name": "➤ Psionic cascade - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Hazardous, Ignores Cover, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "0e29-d01b-76c9-2cb7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+        },
+        {
+          "id": "fca1-d488-3625-d230",
+          "name": "Bio-horror Disruption (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "5847-7994-39c6-20a2",
+          "name": "Psionic Shield (Psychic)",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 4+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "04cc-6196-1755-ad58",
+      "name": "Acolyte Hybrids with Autopistols",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Acolyte Hybrids",
+          "target_id": "855e-3f1b-c88f-c02c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Genestealer Cults",
+          "target_id": "226b-cf1e-353a-ae7f",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Acolyte Hybrids with Autopistols",
+          "target_id": "a9ae-c8a3-b089-2a27",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "ecc9-8238-d25d-6ce9",
+          "name": "Claimed for the Cult",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, roll one D6 for each objective marker that you control that has one or more units from your army with this ability within range of it. If one or more of the results is a 4+, you gain 1CP."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 130,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "id": "0a79-5968-68f0-56b5",
+      "name": "Host of Ascension"
+    },
+    {
+      "id": "536a-b3ea-7597-81bb",
+      "name": "Xenocreed Congregation"
+    },
+    {
+      "id": "ff11-0fa4-2950-380e",
+      "name": "Biosanctic Broodsurge"
+    },
+    {
+      "id": "59e2-4fec-2b00-b1e8",
+      "name": "Outlander Claw"
+    },
+    {
+      "id": "0a59-1d64-257c-04fb",
+      "name": "Brood Brothers Auxilia"
+    },
+    {
+      "id": "cb2f-554e-1162-75d5",
+      "name": "Final Day"
+    }
+  ],
+  "enhancements": []
+}

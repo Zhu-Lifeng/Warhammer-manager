@@ -1,0 +1,2153 @@
+{
+  "id": "36d3-36bc-68dd-40ac",
+  "name": "Imperium - Adeptus Astartes - Black Templars",
+  "is_library": false,
+  "revision": "28",
+  "source_file": "Imperium - Black Templars.cat",
+  "categories": [
+    {
+      "id": "a4ce-23d9-7110-8609",
+      "name": "Chaplain Grimaldus"
+    },
+    {
+      "id": "4ac7-7ebd-3206-7f22",
+      "name": "High Marshal Helbrecht"
+    },
+    {
+      "id": "fd20-61a5-ca24-e3ee",
+      "name": "Primaris Crusader Squad"
+    },
+    {
+      "id": "698d-99fc-408b-91ec",
+      "name": "Primaris Sword Brethren"
+    },
+    {
+      "id": "1ba5-20a1-4dd6-9a4f",
+      "name": "The Emperor's Champion"
+    },
+    {
+      "id": "9e2c-48af-8c2b-ea68",
+      "name": "Crusader Squad"
+    },
+    {
+      "id": "c9ce-476b-65bd-4e81",
+      "name": "Castellan"
+    },
+    {
+      "id": "2f85-11ec-263f-b1dc",
+      "name": "Marshal"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "8165-e372-4fd6-3274",
+      "name": "Chaplain Grimaldus",
+      "type": "unit",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8165-e372-4fd6-3274",
+          "name": "Chaplain Grimaldus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3",
+            "w": "4",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6c29-b6fd-c8bb-4aad",
+              "kind": "fixed",
+              "name": "Chaplain Grimaldus",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6c29-b6fd-c8bb-4aad:6c29-b6fd-c8bb-4aad",
+                  "name": "Chaplain Grimaldus",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "283e-2aaa-390b-d7a8",
+                      "name": "Artificer Crozius",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "84d8-bf12-1aa8-a21c",
+                      "name": "➤ Plasma Pistol - Supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    },
+                    {
+                      "profile_id": "5a7f-a6fe-4efc-5a7d",
+                      "name": "➤ Plasma Pistol - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "50c1-549e-fb56-414f",
+              "kind": "fixed",
+              "name": "Cenobyte Servitor",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "50c1-549e-fb56-414f:50c1-549e-fb56-414f",
+                  "name": "Cenobyte Servitor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1d38-e7de-aae0-1f0e",
+                      "name": "Close Combat Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a5bc-5224-a2e5-6173",
+          "name": "Litanies of the Devout",
+          "type": "Abilities",
+          "description": "While Chaplain Grimaldus is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Hit roll."
+        },
+        {
+          "id": "2e00-2ac9-9892-856",
+          "name": "Temple Relics",
+          "type": "Abilities",
+          "description": "In your Command phase, if this unit contains one or more Cenobyte Servitor models, select one Relics of the Emperor Ascendant ability (see left). Until the start of your next Command phase, this unit’s Chaplain Grimaldus model has that ability."
+        },
+        {
+          "id": "daaa-6a55-7d03-a728",
+          "name": "Relics of the Emperor Asdendant",
+          "type": "Abilities",
+          "description": "Banner of Fallen Crusaders: This unit is eligible to declare a charge in a turn in which it Advanced or Fell Back.\n\n\nRemnant of the Fallen Temple: Models in this unit have the Feel No Pain 5+ ability.\n\n\nSceptre of Anointing: Improve the Armour Penetration characteristic of melee weapons equipped by models in this unit by 1."
+        },
+        {
+          "id": "77d4-dfb9-b00-6384",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "da8a-de9f-1fe7-2513",
+      "name": "High Marshal Helbrecht",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "High Marshal Helbrecht",
+          "target_id": "4ac7-7ebd-3206-7f22",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "da8a-de9f-1fe7-2513",
+          "name": "High Marshal Helbrecht",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "5+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "1632-a7c0-75a3-4d21",
+              "kind": "fixed",
+              "name": "Sword of the High Marshals",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1632-a7c0-75a3-4d21:1632-a7c0-75a3-4d21",
+                  "name": "Sword of the High Marshals",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c3e-6082-7fab-f709",
+                      "name": "➤ Sword of the High Marshals - One Handed",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "f42f-4480-b003-9f57",
+                      "name": "➤ Sword of the High Marshals - Two Handed",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bf75-495d-d02e-9298",
+              "kind": "fixed",
+              "name": "Ferocity",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bf75-495d-d02e-9298:bf75-495d-d02e-9298",
+                  "name": "Ferocity",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "679c-4453-866f-c5bd",
+                      "name": "Ferocity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-infantry 4+, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "89a6-52b4-cba8-4f11",
+          "name": "Crusade of Wrath",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by models in that unit and each time an attack is  made with such a weapon, a successful unmodified Hit roll of 5+ scores a Critical Hit."
+        },
+        {
+          "id": "6e7f-e156-fc38-c2a4",
+          "name": "High Marshal",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model’s unit and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+        },
+        {
+          "id": "298-2fa3-345c-5083",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8bbe-e7fc-44b7-ed94",
+      "name": "Primaris Crusader Squad",
+      "type": "unit",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Primaris Crusader Squad",
+          "target_id": "fd20-61a5-ca24-e3ee",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "49a9-1a03-6520-3a64",
+          "name": "Primaris Sword Brother",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "e44c-bf3-ea20-e98c",
+              "kind": "fixed",
+              "name": "Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e44c-bf3-ea20-e98c:e44c-bf3-ea20-e98c",
+                  "name": "Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "30be-21e3-e63e-e0d3",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "747-523d-b30c-f8e",
+          "name": "Primaris Initiate w/Bolt Rifle",
+          "min_count": null,
+          "max_count": 11,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "95a-584e-9cd9-b799",
+          "name": "Primaris Initiate w/Chainsword & Heavy Bolt Pistol",
+          "min_count": null,
+          "max_count": 11,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "78e6-1e4-33f8-36c7",
+          "name": "Primaris Initiate w/Power Fist & Heavy Bolt Pistol",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "81cc-3eb1-a384-ca9f",
+          "name": "Primaris Initiate w/Pyreblaster",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "20c1-28a2-f3fe-590a",
+              "kind": "fixed",
+              "name": "Pyreblaster",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "20c1-28a2-f3fe-590a:20c1-28a2-f3fe-590a",
+                  "name": "Pyreblaster",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e95b-9a08-e0a0-c3f1",
+                      "name": "Pyreblaster",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dd70-8ed8-309c-1bf",
+          "name": "Primaris Neophyte w/Firearm",
+          "min_count": null,
+          "max_count": 8,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "cbdf-607e-32f5-964e",
+              "kind": "fixed",
+              "name": "Neophyte Firearm",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cbdf-607e-32f5-964e:cbdf-607e-32f5-964e",
+                  "name": "Neophyte Firearm",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6b66-6f8e-2809-dfea",
+                      "name": "Neophyte Firearm",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9455-ced-8432-d4e8",
+          "name": "Primaris Neophyte w/Astartes Chainsword",
+          "min_count": null,
+          "max_count": 8,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "eb4a-e30-3fd1-5dec",
+          "name": "Righteous Zeal",
+          "type": "Abilities",
+          "description": "You can re-roll Advance and Charge rolls made for this unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 320,
+          "condition_text": "≥ 11 Primaris Crusaders",
+          "condition_type": "atLeast",
+          "condition_value": 11,
+          "target_name": "Primaris Crusaders",
+          "scope_id": "6fc8-d787-7895-ec66"
+        }
+      ]
+    },
+    {
+      "id": "206c-6b4d-4aaa-7e79",
+      "name": "Primaris Sword Brethren",
+      "type": "unit",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Primaris Sword Brethren",
+          "target_id": "698d-99fc-408b-91ec",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b3a3-f1ea-c706-bc9",
+          "name": "Primaris Sword Brother",
+          "min_count": 4,
+          "max_count": 9,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "27b1-12c8-e1f3-ff1c",
+              "kind": "choice",
+              "name": "Melee Option",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "27b1-12c8-e1f3-ff1c:a4ba-650f-f99a-afcd",
+                  "name": "Thunder Hammer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4dbf-b3ea-afac-a26d",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1670-a0fb-4425-2abc",
+          "name": "Sword Brother Castellan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1450-d0f-8e3a-f5cd",
+              "kind": "choice",
+              "name": "Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1450-d0f-8e3a-f5cd:217f-ad82-99d4-5211",
+                  "name": "Combi-weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6e5d-2e83-9941-7ae0",
+                      "name": "Combi-weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b34b-a7c0-6717-8754",
+              "kind": "choice",
+              "name": "Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b34b-a7c0-6717-8754:928e-b4dd-8f99-2b5b",
+                  "name": "Master-crafted Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fa94-31f6-b8de-f4c2",
+                      "name": "Master-crafted Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3378-f713-ff02-3d7c",
+          "name": "Primaris Sword Brother w/Twin Lightning Claws",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "17b9-2882-1ca3-8a73",
+          "name": "Vow Sworn Bladesman",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, you can select one of the following effects to apply to melee weapons equipped by models in this unit until the end of the phase:\n\n\n■ Add 1 to the Attacks characteristic of those weapons.\n■ Add 1 to the Damage characteristic of those weapons."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 300,
+          "condition_text": "≥ 6 Primaris Sword Brethren",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Primaris Sword Brethren",
+          "scope_id": "93d5-a2f6-533-694f"
+        }
+      ]
+    },
+    {
+      "id": "ca2f-f408-c1bd-b87f",
+      "name": "The Emperor's Champion",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "The Emperor's Champion",
+          "target_id": "1ba5-20a1-4dd6-9a4f",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ca2f-f408-c1bd-b87f",
+          "name": "The Emperor's Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "9b84-fb40-64b2-6738",
+              "kind": "fixed",
+              "name": "Black Sword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9b84-fb40-64b2-6738:9b84-fb40-64b2-6738",
+                  "name": "Black Sword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c473-2abf-cc0c-c6d3",
+                      "name": "➤ Black Sword - Strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Precision"
+                    },
+                    {
+                      "profile_id": "7295-10de-849b-dfa",
+                      "name": "➤ Black Sword - Sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5fd9-3afc-fe70-7413",
+          "name": "Skillful Parry",
+          "type": "Abilities",
+          "description": "Once per phase, when a melee attack is allocated to this model and the saving throw is failed, you can change the Damage characteristic of that attack to 0."
+        },
+        {
+          "id": "fe37-8476-e585-39ac",
+          "name": "Sigismund's Heir",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack that targets a Character unit, add 1 to the Wound roll"
+        },
+        {
+          "id": "bf68-f429-d743-b6eb",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2da2-ad08-6057-5a1c",
+      "name": "Crusader Squad",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Crusader Squad",
+          "target_id": "9e2c-48af-8c2b-ea68",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "70b9-da75-964e-bd31",
+          "name": "Neophyte w/Combat Knife",
+          "min_count": null,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "9e66-e5eb-554-b436",
+              "kind": "fixed",
+              "name": "Combat Knife",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9e66-e5eb-554-b436:9e66-e5eb-554-b436",
+                  "name": "Combat Knife",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "404-2bdc-5618-d439",
+                      "name": "Combat Knife",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7c7-2f36-db28-b9a9",
+          "name": "Neophyte w/Astartes Shotgun",
+          "min_count": null,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "4b0d-2ea6-e87e-3b4b",
+              "kind": "fixed",
+              "name": "Astartes Shotgun",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4b0d-2ea6-e87e-3b4b:4b0d-2ea6-e87e-3b4b",
+                  "name": "Astartes Shotgun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "290e-7a78-ba7c-64ec",
+                      "name": "Astartes Shotgun",
+                      "weapon_type": "Ranged",
+                      "range": "18",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c93d-dc5a-9d7c-895d",
+          "name": "Neophyte w/Boltgun",
+          "min_count": null,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "9c32-3649-fecb-f0e5",
+          "name": "Initiate w/Astartes Chainsword",
+          "min_count": null,
+          "max_count": 9,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "3b4-4de2-f42d-c47a",
+              "kind": "fixed",
+              "name": "Astartes Chainsword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3b4-4de2-f42d-c47a:3b4-4de2-f42d-c47a",
+                  "name": "Astartes Chainsword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "de05-3620-4282-d49f",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2f6-3946-52df-35f5",
+          "name": "Initiate w/Boltgun",
+          "min_count": null,
+          "max_count": 9,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "91ac-edc7-b6b0-a0cb",
+          "name": "Initiate w/Heavy",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "12dc-5d6c-abcf-1fd",
+          "name": "Initiate w/Special",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        },
+        {
+          "id": "40e4-11f1-529f-441d",
+          "name": "Sword Brother",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "b806-7ea8-aa66-bb49",
+              "kind": "fixed",
+              "name": "Twin Lightning Claws",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b806-7ea8-aa66-bb49:b806-7ea8-aa66-bb49",
+                  "name": "Twin Lightning Claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e6ed-2c2a-e207-7707",
+                      "name": "Twin Lightning Claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cd1-fab4-d757-7265",
+              "kind": "fixed",
+              "name": "Close Combat Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cd1-fab4-d757-7265:cd1-fab4-d757-7265",
+                  "name": "Close Combat Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5889-8fde-c70a-5495",
+                      "name": "Close Combat Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "92ba-31e2-640d-3ba3",
+              "kind": "choice",
+              "name": "Weapon Option 2",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "92ba-31e2-640d-3ba3:62f4-10d1-8d22-b116",
+                  "name": "Astartes Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cb3c-930b-4835-30c9",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1e7e-4aca-4c83-4e2d",
+          "name": "Righteous Zeal",
+          "type": "Abilities",
+          "description": "You can re-roll Advance and Charge rolls made for this unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "≥ 6 Initiates",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Initiates",
+          "scope_id": "6413-eee8-56ef-f697"
+        },
+        {
+          "points": 135,
+          "condition_text": "≥ 1 Neophytes 且 < 6 Initiates 且 < 6 Neophytes",
+          "condition_type": "atLeast",
+          "condition_value": 1,
+          "target_name": "Neophytes",
+          "scope_id": "8a26-cdbf-3480-3ec7"
+        },
+        {
+          "points": 290,
+          "condition_text": "≥ 6 Initiates 且 ≥ 6 Neophytes",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Initiates",
+          "scope_id": "6413-eee8-56ef-f697"
+        }
+      ]
+    },
+    {
+      "id": "7dec-dc3d-c40a-8ce",
+      "name": "Black Templars Gladiator Lancer",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Gladiator Lancer",
+          "target_id": "ec5d-5626-6109-81d5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7dec-dc3d-c40a-8ce",
+          "name": "Black Templars Gladiator Lancer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "b5ce-e38c-f9de-3e51",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b5ce-e38c-f9de-3e51:d3b4-b33-8c3d-a82f",
+                  "name": "Lancer Laser Destroyer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fc93-530e-f627-6cdf",
+                      "name": "Lancer Laser Destroyer",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "D6+3",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6e41-bf9f-317c-e83f",
+          "name": "Aquilon Optics",
+          "type": "Abilities",
+          "description": "Each time this model is selected to shoot, you can re-roll one Hit roll, you can re-roll one Wound roll and you can re-roll one Damage roll when resolving its attacks"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bfb6-4320-74cf-bbda",
+      "name": "Black Templars Gladiator Reaper",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Gladiator Reaper",
+          "target_id": "7206-48bb-8b09-ab6",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bfb6-4320-74cf-bbda",
+          "name": "Black Templars Gladiator Reaper",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "f2cc-7c61-3446-e6c1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f2cc-7c61-3446-e6c1:93e-fbbe-7176-a34e",
+                  "name": "Tempest Bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4dd0-ab3d-784d-3be1",
+                      "name": "Tempest Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Rapid Fire 4"
+                    }
+                  ]
+                },
+                {
+                  "id": "f2cc-7c61-3446-e6c1:ae4d-5d5c-a3ad-e214",
+                  "name": "Twin Heavy Onslaught Gatling Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d43b-4208-d398-1437",
+                      "name": "Twin Heavy Onslaught Gatling Cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5fba-bcd5-68e4-d3d8",
+          "name": "Rotating Death",
+          "type": "Abilities",
+          "description": "This model’s twin heavy onslaught gatling cannon has the [SUSTAINED HITS 2] ability when targeting Infantry units."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5704-ffe4-4a53-8789",
+      "name": "Black Templars Gladiator Valiant",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Gladiator Valiant",
+          "target_id": "b8fa-ddca-2491-5351",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5704-ffe4-4a53-8789",
+          "name": "Black Templars Gladiator Valiant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "4e12-0e6e-622d-3914",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4e12-0e6e-622d-3914:fcc4-35-43e6-576f",
+                  "name": "Multi-melta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6479-577-8f6a-fa9",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "4e12-0e6e-622d-3914:613d-95b2-7336-31e2",
+                  "name": "Twin Las-talon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "14c1-fd5b-29e4-133a",
+                      "name": "Twin Las-talon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5a51-6971-8406-6bd7",
+          "name": "Ferocious Assault",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack with its twin las-talon that targets the closest eligible Monster or fVehicle unit, add 1 to the Hit roll"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fa27-4bc1-72c9-894f",
+      "name": "Black Templars Impulsor",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Impulsor",
+          "target_id": "7476-fb8e-bd5a-cfbe",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fa27-4bc1-72c9-894f",
+          "name": "Black Templars Impulsor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "81d0-6092-93e0-d602",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 7 TACTICUS or PHOBOS INFANTRY models. It cannot transport JUMP PACK models."
+        },
+        {
+          "id": "5acc-d822-413-23b4",
+          "name": "Assault Vehicle",
+          "type": "Abilities",
+          "description": "Units can disembark from this Transport after it has Advanced. Units that do so count as having made a Normal move, and cannot declare a charge that turn."
+        },
+        {
+          "id": "bff6-bd1-230f-5cb0",
+          "name": "Orbital Comms Array [Aura]",
+          "type": "Abilities",
+          "description": "While a friendly Adeptus Astartes unit is within 6\" of the bearer, each time you target that unit with a Stratagem, roll one D6: on a 5+, you gain 1CP"
+        },
+        {
+          "id": "32cb-25c5-f0e7-9a98",
+          "name": "Shield Dome",
+          "type": "Abilities",
+          "description": "The bearer has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c3e8-3cde-8b39-4b19",
+      "name": "Black Templars Repulsor",
+      "type": "model",
+      "points": 190,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Repulsor",
+          "target_id": "6f4f-95b8-5802-55b6",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c3e8-3cde-8b39-4b19",
+          "name": "Black Templars Repulsor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "3555-4938-c643-e6eb",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "3555-4938-c643-e6eb:f89e-84da-7185-b2f3",
+                  "name": "Hunter-slayer Missile",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6bc2-8044-ff31-1a72",
+                      "name": "Hunter-slayer Missile",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Indirect Fire, One Shot"
+                    }
+                  ]
+                },
+                {
+                  "id": "3555-4938-c643-e6eb:7bb6-db9a-7ad3-9eb8",
+                  "name": "Repulsor Defensive Array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8c3d-de18-1398-f188",
+                      "name": "Repulsor Defensive Array",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "18",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "30b7-f838-af91-b9ee",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 14 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+        },
+        {
+          "id": "302a-8708-2da5-e44",
+          "name": "Emergency Combat Embarkation",
+          "type": "Abilities",
+          "description": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one Adeptus Astartes unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this Transport, it can embark within this Transport. The charging unit can then select new targets for its charge."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a344-192f-aae2-16e5",
+      "name": "Black Templars Repulsor Executioner",
+      "type": "model",
+      "points": 230,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Repulsor Executioner",
+          "target_id": "cca9-5590-14a6-19e8",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a344-192f-aae2-16e5",
+          "name": "Black Templars Repulsor Executioner",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "f91e-17de-860c-18ac",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f91e-17de-860c-18ac:9528-b267-9534-8c58",
+                  "name": "Repulsor Executioner Defensive Array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9c9e-a2b8-bdbe-faf6",
+                      "name": "Repulsor Executioner Defensive Array",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "10",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fb6-c336-8334-c5ae",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 7 Adeptus Astartes Infantry models. Each Jump Pack, Wulfen, Gravis or Terminator model takes up the space of 2 models and each Centurion model takes up the space of 3 models."
+        },
+        {
+          "id": "7d94-8e40-fde1-8179",
+          "name": "Executioner",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a unit that is Below Half-strength, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f151-e676-d3b8-200c",
+      "name": "Castellan",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Lieutenant",
+          "target_id": "9c1a-42ff-a418-11d1",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f151-e676-d3b8-200c",
+          "name": "Castellan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "460a-dc67-e3db-b6a6",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad\n\nYou can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "68dd-5f49-4f17-cd84",
+      "name": "Marshal",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Black Templars",
+          "target_id": "9249-acae-2882-d95",
+          "primary": false
+        },
+        {
+          "name": "Marshal",
+          "target_id": "2f85-11ec-263f-b1dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68dd-5f49-4f17-cd84",
+          "name": "Marshal",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "53da-64b0-4e7d-3c2b",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "53da-64b0-4e7d-3c2b:5b0b-9cc5-4b5-3f9c",
+                  "name": "Master-crafted Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "646c-a341-f427-32bf",
+                      "name": "Master-crafted Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7985-3a9a-2b9e-6c17",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

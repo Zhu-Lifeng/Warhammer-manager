@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Configure {{ unit.datasheet_name }} — {{ army.name }}{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('army_view', army_id=army.id) }}">← Back to {{ army.name }}</a></p>
+
+<h1>Configure: {{ unit.datasheet_name }}</h1>
+<p class="muted">{{ army.name }} · {{ army.faction_name }}</p>
+
+{% set any_choice = namespace(found=false) %}
+{% for m in schema %}{% if m.choice_slots %}{% set any_choice.found = true %}{% endif %}{% endfor %}
+
+{% if not tiers and not any_choice.found %}
+  <p class="muted">No configurable options for this unit (no loadout choices, no size tiers).</p>
+  <p><a class="btn" href="{{ url_for('army_view', army_id=army.id) }}">Back</a></p>
+{% else %}
+
+<form method="post">
+
+  {% if tiers %}
+    <div class="card" style="margin-bottom:1rem;">
+      <h3 style="margin-top:0;">Unit size (expansion)</h3>
+      <p class="muted" style="font-size:0.85rem; margin:0.2rem 0 0.6rem;">
+        Choose how many models this unit has. Tiers above base size change the unit cost.
+      </p>
+      <label style="display:block; padding:0.4rem 0.5rem; margin:0.25rem 0; background:#0c0e12; border-radius:4px; cursor:pointer;">
+        <input type="radio" name="tier" value="base"
+               {% if unit.tier_points is none %}checked{% endif %}>
+        <b>Base size</b>
+        {% if base_points is not none %}
+          <span style="color:#ffb84d;">— {{ base_points }} pts</span>
+        {% endif %}
+      </label>
+      {% for t in tiers %}
+        <label style="display:block; padding:0.4rem 0.5rem; margin:0.25rem 0; background:#0c0e12; border-radius:4px; cursor:pointer;">
+          <input type="radio" name="tier" value="{{ t.id }}"
+                 {% if unit.tier_label == t.condition_text %}checked{% endif %}>
+          <b>Expanded — {{ t.condition_text }}</b>
+          <span style="color:#ffb84d;">— {{ t.effective_points }} pts</span>
+          {% if t.overridden %}
+            <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ t.points }}">edit</span>
+          {% endif %}
+        </label>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if any_choice.found %}
+    {% for m in schema %}
+      {% if m.choice_slots %}
+        <div class="card" style="margin-bottom:1rem;">
+          <h3 style="margin-top:0;">
+            {{ m.model.name }}
+            {% if m.model.min_count is not none and m.model.max_count is not none %}
+              {% if m.model.min_count == m.model.max_count %}
+                <span class="muted" style="font-weight:normal;">× {{ m.model.min_count }}</span>
+              {% else %}
+                <span class="muted" style="font-weight:normal;">× {{ m.model.min_count }}–{{ m.model.max_count }}</span>
+              {% endif %}
+            {% endif %}
+          </h3>
+
+          {% for s in m.choice_slots %}
+            <div style="margin:0.8rem 0; padding-left:0.6rem; border-left:2px solid #5a4d1f;">
+              <div><b>{{ s.slot.slot_name }}</b>
+                {% if s.slot.min_select or s.slot.max_select %}
+                  <span class="muted" style="font-size:0.85rem;">
+                    (pick {% if s.slot.min_select == s.slot.max_select %}{{ s.slot.min_select }}{% else %}{{ s.slot.min_select or 0 }}-{{ s.slot.max_select or '?' }}{% endif %})
+                  </span>
+                {% endif %}
+              </div>
+              {% set selected = current.get(s.slot.id) %}
+              {% set has_selection = selected is not none %}
+              {% for o in s.options %}
+                <label style="display:block; padding:0.4rem 0.5rem; margin:0.3rem 0; background:#0c0e12; border-radius:4px; cursor:pointer;">
+                  <input type="radio" name="slot_{{ s.slot.id }}" value="{{ o.row.id }}"
+                    {% if (has_selection and selected == o.row.id) or (not has_selection and o.row.is_default) %}checked{% endif %}>
+                  <b>{{ o.row.name }}</b>
+                  {% if o.row.is_default %}<span class="badge status-done" style="font-size:0.7rem;">★ default</span>{% endif %}
+                  {% if o.weapons %}
+                    <div class="muted" style="font-size:0.8rem; margin-left:1.5rem; margin-top:0.2rem;">
+                      {% for w in o.weapons %}
+                        <span title="{{ w.range_ or '-' }} · A{{ w.a or '-' }} · S{{ w.s }} · AP{{ w.ap }} · D{{ w.d }}{% if w.keywords %} · {{ w.keywords }}{% endif %}">
+                          {{ w.name }} ({{ 'Ranged' if w.weapon_type == 'Ranged' else 'Melee' }})
+                        </span>{% if not loop.last %} + {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </label>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  <button type="submit">Save</button>
+  <a href="{{ url_for('army_view', army_id=army.id) }}" class="btn btn-ghost">Cancel</a>
+</form>
+
+{% endif %}
+{% endblock %}

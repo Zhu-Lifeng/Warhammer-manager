@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block title %}{{ m.custom_name or m.datasheet_name }} — Model{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('models_list') }}">← Back</a></p>
+<h1>
+  {{ m.custom_name or m.datasheet_name }}
+  <span class="badge status-{{ m.status }}">{{ status_map.get(m.status, m.status) }}</span>
+</h1>
+<p class="muted">
+  Unit: <a href="{{ url_for('query_unit', datasheet_id=m.datasheet_id, **{'from': 'model:' ~ m.id}) }}">{{ m.datasheet_name }}</a>
+  {% if model_type_row %} → <b style="color:#ffb84d;">{{ model_type_row.name }}</b>{% endif %}
+  {% if m.faction_name %} — {{ m.faction_name }}{% endif %}
+  · Created {{ m.created_at | dt }}
+  {% if m.updated_at and m.updated_at != m.created_at %} · Updated {{ m.updated_at | dt }}{% endif %}
+</p>
+
+{% if loadout_summary %}
+<div class="section">
+  <h2>Current loadout</h2>
+  <ul>
+    {% for s in loadout_summary %}
+      <li>{{ s.slot_name }}: <span style="color:#ffb84d">{{ s.option_name }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if imgs %}
+<div class="section">
+  <h2>Images ({{ imgs|length }})</h2>
+  <div class="image-grid">
+    {% for img in imgs %}
+      <figure>
+        <a href="{{ url_for('static', filename='uploads/' ~ img.filename) }}" target="_blank">
+          <img src="{{ url_for('static', filename='uploads/' ~ img.filename) }}" alt="">
+        </a>
+        <form method="post" action="{{ url_for('model_image_delete', model_id=m.id, image_id=img.id) }}" onsubmit="return confirm('Delete this image?');">
+          <button type="submit" class="btn-small btn-ghost">×</button>
+        </form>
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="section">
+  <h2>Edit</h2>
+  <form method="post" enctype="multipart/form-data" action="{{ url_for('model_edit', model_id=m.id) }}" class="panel">
+    <div class="form-grid">
+      <div>
+        <label>Custom name</label>
+        <input type="text" name="custom_name" value="{{ m.custom_name or '' }}">
+      </div>
+      <div>
+        <label>Paint status</label>
+        <select name="status">
+          {% for v, label in status_options %}
+            <option value="{{ v }}" {% if v == m.status %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div style="grid-column:1/-1;">
+        <label>Notes</label>
+        <textarea name="notes">{{ m.notes or '' }}</textarea>
+      </div>
+      <div style="grid-column:1/-1;">
+        <label>Add images</label>
+        <input type="file" name="images" accept="image/*" multiple>
+      </div>
+    </div>
+
+    {% if schema %}
+      {% set has_choices = namespace(found=false) %}
+      {% for me in schema %}{% if me.choice_slots %}{% set has_choices.found = true %}{% endif %}{% endfor %}
+
+      {% if schema|length > 1 or has_choices.found %}
+        <div class="section">
+          <h3>Model type / loadout</h3>
+
+          {% if schema|length > 1 %}
+            <div class="card" style="margin-bottom:0.6rem;">
+              <b>Which model type?</b>
+              <div style="margin-top:0.4rem;">
+              {% for me in schema %}
+                {% set mr = me.model %}
+                <label style="display:inline-block; margin-right:1rem; padding:0.3rem 0.5rem; background:#0c0e12; border-radius:3px; cursor:pointer;">
+                  <input type="radio" name="model_type_id" value="{{ mr.id }}" class="mt-radio"
+                    data-target="model-slots-{{ mr.id }}"
+                    {% if mr.id == m.model_type_id %}checked{% elif not m.model_type_id and loop.first %}checked{% endif %}>
+                  {{ mr.name }}
+                  {% if mr.min_count is not none and mr.max_count is not none and mr.min_count != mr.max_count %}
+                    <span class="muted">({{ mr.min_count }}-{{ mr.max_count }})</span>
+                  {% endif %}
+                </label>
+              {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <input type="hidden" name="model_type_id" value="{{ schema[0].model.id }}">
+          {% endif %}
+
+          {% for me in schema %}
+            {% if me.choice_slots %}
+              {% set mr = me.model %}
+              {% set is_active = (mr.id == m.model_type_id) or (not m.model_type_id and loop.first) %}
+              <div id="model-slots-{{ mr.id }}" class="card mt-slots"
+                   style="margin-bottom:0.6rem; {{ '' if is_active else 'display:none;' }}">
+                <b>{{ mr.name }} loadout</b>
+                {% for se in me.choice_slots %}
+                  {% set s = se.slot %}
+                  <div style="margin:0.5rem 0; padding-left:0.6rem; border-left:2px solid #5a4d1f;">
+                    <div><b>{{ s.slot_name }}</b>
+                      {% if s.min_select or s.max_select %}
+                        <span class="muted" style="font-size:0.85rem;">
+                          (pick {% if s.min_select == s.max_select %}{{ s.min_select }}{% else %}{{ s.min_select or 0 }}-{{ s.max_select or '?' }}{% endif %})
+                        </span>
+                      {% endif %}
+                    </div>
+                    {% set picked = current.get(s.id) %}
+                    {% for o in se.options %}
+                      <label style="display:block; padding:0.3rem 0.5rem; margin:0.2rem 0; background:#0c0e12; border-radius:3px; cursor:pointer;">
+                        <input type="radio" name="slot_{{ s.id }}" value="{{ o.row.id }}"
+                          {% if (picked and picked == o.row.id) or (not picked and o.row.is_default) %}checked{% endif %}>
+                        <b>{{ o.row.name }}</b>
+                        {% if o.row.is_default %}<span class="badge status-done" style="font-size:0.7rem;">★ default</span>{% endif %}
+                        {% if o.weapons %}
+                          <div class="muted" style="font-size:0.8rem; margin-left:1.5rem;">
+                            {% for w in o.weapons %}{{ w.name }} ({{ 'Ranged' if w.weapon_type == 'Ranged' else 'Melee' }}){% if not loop.last %} + {% endif %}{% endfor %}
+                          </div>
+                        {% endif %}
+                      </label>
+                    {% endfor %}
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <button type="submit">Save</button>
+  </form>
+</div>
+
+<div class="section">
+  <form method="post" action="{{ url_for('model_delete', model_id=m.id) }}" onsubmit="return confirm('Delete this model?');">
+    <button type="submit" class="btn btn-ghost">Delete this model</button>
+  </form>
+</div>
+
+<script>
+document.querySelectorAll('.mt-radio').forEach(r => {
+  r.addEventListener('change', () => {
+    document.querySelectorAll('.mt-slots').forEach(el => el.style.display = 'none');
+    const target = document.getElementById(r.dataset.target);
+    if (target) target.style.display = 'block';
+  });
+});
+</script>
+{% endblock %}

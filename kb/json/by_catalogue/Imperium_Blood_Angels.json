@@ -1,0 +1,3558 @@
+{
+  "id": "4ef9-15ce-e3e6-36de",
+  "name": "Imperium - Adeptus Astartes - Blood Angels",
+  "is_library": false,
+  "revision": "42",
+  "source_file": "Imperium - Blood Angels.cat",
+  "categories": [
+    {
+      "id": "da64-bc59-71f9-96e8",
+      "name": "Astorath"
+    },
+    {
+      "id": "6305-2974-3890-6ba0",
+      "name": "Baal Predator"
+    },
+    {
+      "id": "3ab-66f3-c313-f621",
+      "name": "Brother Corbulo"
+    },
+    {
+      "id": "8739-4fc4-25e3-5bac",
+      "name": "Tycho"
+    },
+    {
+      "id": "4254-134e-b56f-a5bd",
+      "name": "Tycho the Lost"
+    },
+    {
+      "id": "369e-b2c9-4637-8cba",
+      "name": "Chief Librarian Mephiston"
+    },
+    {
+      "id": "742d-f2f8-2cec-67b3",
+      "name": "Commander Dante"
+    },
+    {
+      "id": "d7bd-dd9-4492-cf9a",
+      "name": "Death Company Dreadnought"
+    },
+    {
+      "id": "18d-e753-9859-b059",
+      "name": "Death Company Intercessors"
+    },
+    {
+      "id": "caed-a62d-2318-dda1",
+      "name": "Death Company Marines"
+    },
+    {
+      "id": "bd17-5cbb-7db8-e23a",
+      "name": "Death Company Marines with Jump Packs"
+    },
+    {
+      "id": "2ee1-97ca-5a76-906a",
+      "name": "Furioso Dreadnought"
+    },
+    {
+      "id": "9276-a8c8-908a-463d",
+      "name": "Gabriel Seth"
+    },
+    {
+      "id": "3763-9e4f-abed-718d",
+      "name": "Lemartes"
+    },
+    {
+      "id": "68e9-6942-27d7-bb11",
+      "name": "Librarian Dreadnought"
+    },
+    {
+      "id": "d30a-a7c5-389a-e78",
+      "name": "Sanguinary Guard"
+    },
+    {
+      "id": "d2c6-5062-e0b8-9e20",
+      "name": "Sanguinary Priest with Jump Pack"
+    },
+    {
+      "id": "8f39-9585-fc72-ba71",
+      "name": "The Sanguinor"
+    },
+    {
+      "id": "1e3d-c738-8087-792c",
+      "name": "Death Company"
+    },
+    {
+      "id": "3055-9a0b-b062-5f31",
+      "name": "Death Company Marines with Bolt Rifles"
+    },
+    {
+      "id": "f06c-dfec-c720-57f1",
+      "name": "Pistol replacement"
+    },
+    {
+      "id": "d57c-d980-bdae-2999",
+      "name": "Death Company Marines with Boltguns"
+    },
+    {
+      "id": "f884-eba8-9896-a544",
+      "name": "Death Company Marines with Boltguns and Jump Packs"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "f943-72c8-581c-e6f2",
+      "name": "Astorath",
+      "type": "model",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Chaplain",
+          "target_id": "1fb1-3603-a4bd-485",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Astorath",
+          "target_id": "da64-bc59-71f9-96e8",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f943-72c8-581c-e6f2",
+          "name": "Astorath",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8522-5c3c-15e7-4d78",
+              "kind": "fixed",
+              "name": "The Executioner's Axe",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8522-5c3c-15e7-4d78:8522-5c3c-15e7-4d78",
+                  "name": "The Executioner's Axe",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d655-eefd-e172-20ae",
+                      "name": "The Executioner's Axe",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c5e1-99a6-a51e-251e",
+          "name": "Redeemer of the Lost",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "2cc0-3a51-cd4f-429e",
+          "name": "Mass of Doom",
+          "type": "Abilities",
+          "description": "Each time this model’s unit makes a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "7ee0-8183-ece2-25c9",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n\n■ Death Company Marines with Jump Packs"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "640-9969-d5b9-875c",
+      "name": "Baal Predator",
+      "type": "model",
+      "points": 135,
+      "keywords": [
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Baal Predator",
+          "target_id": "6305-2974-3890-6ba0",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "640-9969-d5b9-875c",
+          "name": "Baal Predator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "acf-498-6031-bf2f",
+          "name": "Overcharged Engines",
+          "type": "Abilities",
+          "description": "You can re-roll Advance rolls made for this model."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8d87-ee8a-6af4-3715",
+      "name": "Brother Corbulo [Legends]",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Sanguinary Priest",
+          "target_id": "561f-8606-9555-b3ba",
+          "primary": false
+        },
+        {
+          "name": "Brother Corbulo",
+          "target_id": "3ab-66f3-c313-f621",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8d87-ee8a-6af4-3715",
+          "name": "Brother Corbulo [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "94a-71ca-6563-21f8",
+              "kind": "fixed",
+              "name": "Heaven's Teeth",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "94a-71ca-6563-21f8:94a-71ca-6563-21f8",
+                  "name": "Heaven's Teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ae01-73c6-5ee7-62e4",
+                      "name": "Heaven's Teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "997a-75ae-da4b-a534",
+          "name": "Sanguinary Priest",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+        },
+        {
+          "id": "ba5c-785b-b694-3943",
+          "name": "The Red Grail",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit."
+        },
+        {
+          "id": "1a2a-a768-270-a49b",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n■ Devastator Squad\n■ Tactical Squad\n■ Vanguard Veteran Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ae0a-e23c-2184-7c65",
+      "name": "Captain Tycho [Legends]",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Tycho",
+          "target_id": "8739-4fc4-25e3-5bac",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ae0a-e23c-2184-7c65",
+          "name": "Captain Tycho [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bf48-f849-7321-dc2c",
+              "kind": "fixed",
+              "name": "Blood Song",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bf48-f849-7321-dc2c:bf48-f849-7321-dc2c",
+                  "name": "Blood Song",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5e7e-cc35-d119-b999",
+                      "name": "Blood Song",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Melta 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4fb-9343-58b7-4ca5",
+              "kind": "fixed",
+              "name": "Dead Man's Hand",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4fb-9343-58b7-4ca5:4fb-9343-58b7-4ca5",
+                  "name": "Dead Man's Hand",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d17e-779a-e3ef-fee",
+                      "name": "Dead Man's Hand",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f81-2576-e3dd-1a7",
+          "name": "Gifted Commander",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time that unit is selected to shoot, select one of the following abilities to apply to ranged weapons equipped by models in that unit until the end of the phase:\n\n\n■ [ASSAULT]\n■ [HEAVY]\n■ [RAPID FIRE 1]"
+        },
+        {
+          "id": "4941-ff7-a233-6730",
+          "name": "Embittered",
+          "type": "Abilities",
+          "description": "The first time an attack is allocated to this model, after the attacking unit has finished making its attacks, until the end of the battle, change the Attacks characteristic of this model’s Dead Man’s Hand to 12"
+        },
+        {
+          "id": "9a2c-4043-5435-40ea",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n■ Company Heroes\n■ Tactical Squad\n■ Vanguard Veteran Squad"
+        },
+        {
+          "id": "a116-17c9-deb4-9f1d",
+          "name": "Tycho",
+          "type": "Abilities",
+          "description": "Your army cannot contain both Captain Tycho and Tycho the Lost."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8577-8a5d-75f6-a630",
+      "name": "Tycho the Lost [Legends]",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Tycho the Lost",
+          "target_id": "4254-134e-b56f-a5bd",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8577-8a5d-75f6-a630",
+          "name": "Tycho the Lost [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "fdba-3636-8266-9a20",
+              "kind": "fixed",
+              "name": "Blood Song",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fdba-3636-8266-9a20:bf48-f849-7321-dc2c",
+                  "name": "Blood Song",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5e7e-cc35-d119-b999",
+                      "name": "Blood Song",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Melta 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "81f1-eab2-7dde-45d1",
+              "kind": "fixed",
+              "name": "Dead Man's Hand",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "81f1-eab2-7dde-45d1:4fb-9343-58b7-4ca5",
+                  "name": "Dead Man's Hand",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d17e-779a-e3ef-fee",
+                      "name": "Dead Man's Hand",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5fd1-7d5a-c19a-64db",
+          "name": "Forlorn Hero",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, that unit is  eligible to declare a charge in a turn in which it Advanced"
+        },
+        {
+          "id": "6d90-b55-d2b0-6522",
+          "name": "Death Visions of Sanguinius",
+          "type": "Abilities",
+          "description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord: on a 2-3, that enemy unit suffers 3 mortal wounds; on a 4-5, that enemy unit suffers D3+3 mortal wounds; on a 6+, that enemy unit suffers D6+3 mortal wounds."
+        },
+        {
+          "id": "601e-dad9-348b-4ceb",
+          "name": "Tycho",
+          "type": "Abilities",
+          "description": "Your army cannot contain both Captain Tycho and Tycho the Lost."
+        },
+        {
+          "id": "a92c-5b74-19ab-ab59",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n\n■ Death Company Marines"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ab35-2c36-9389-d1d5",
+      "name": "Chief Librarian Mephiston",
+      "type": "model",
+      "points": 135,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Chief Librarian Mephiston",
+          "target_id": "369e-b2c9-4637-8cba",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ab35-2c36-9389-d1d5",
+          "name": "Chief Librarian Mephiston",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "7\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3dd1-b096-64dd-5861",
+              "kind": "fixed",
+              "name": "Plasma Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3dd1-b096-64dd-5861:3dd1-b096-64dd-5861",
+                  "name": "Plasma Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "791a-41a4-d0da-c9a4",
+                      "name": "➤ Plasma Pistol - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "2519-8ac-a043-f87a",
+                      "name": "➤ Plasma Pistol - Supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3e81-bf38-a34e-8750",
+              "kind": "fixed",
+              "name": "Fury of the Ancients",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3e81-bf38-a34e-8750:3e81-bf38-a34e-8750",
+                  "name": "Fury of the Ancients",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "eb07-22b3-d1eb-7552",
+                      "name": "➤ Fury of the Ancients - Witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Pistol, Psychic, Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "9fcd-a0d8-4804-c08a",
+                      "name": "➤ Fury of the Ancients - Focused Witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Hazardous, Pistol, Psychic, Sustained Hits 3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6b1d-168e-4014-2289",
+              "kind": "fixed",
+              "name": "Vitarus",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6b1d-168e-4014-2289:6b1d-168e-4014-2289",
+                  "name": "Vitarus",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3da4-7876-bd83-6904",
+                      "name": "Vitarus",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "D3",
+                      "keywords": "Lethal Hits, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f775-5667-be0b-35bc",
+          "name": "The Quickening [Psychic]",
+          "type": "Abilities",
+          "description": "This model is eligible to declare a charge in a turn which it Advanced."
+        },
+        {
+          "id": "b48f-aef0-7aa9-3500",
+          "name": "Transfixing Gaze [Aura, Psychic]",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back, it must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+        },
+        {
+          "id": "b2e5-6730-a3c2-8011",
+          "name": "Invulnerable Save 5+",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7323-ebf-9afe-7e7a",
+      "name": "Commander Dante",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        },
+        {
+          "name": "Commander Dante",
+          "target_id": "742d-f2f8-2cec-67b3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7323-ebf-9afe-7e7a",
+          "name": "Commander Dante",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bb14-e5bb-e2b3-8e8f",
+              "kind": "fixed",
+              "name": "Perdition",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bb14-e5bb-e2b3-8e8f:bb14-e5bb-e2b3-8e8f",
+                  "name": "Perdition",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8a9c-58f8-e882-c7d",
+                      "name": "Perdition",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2, Pistol, Sustained Hits D3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5520-c4aa-4543-7961",
+              "kind": "fixed",
+              "name": "The Axe Mortalis",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5520-c4aa-4543-7961:5520-c4aa-4543-7961",
+                  "name": "The Axe Mortalis",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "49e5-830e-9a2d-1b9a",
+                      "name": "The Axe Mortalis",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "edcb-c05a-9bcb-12c7",
+          "name": "Death Mask of Sanguinius",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle-shock test, subtracting 1 from that test when they do"
+        },
+        {
+          "id": "56e5-d5ec-38c6-e113",
+          "name": "Lord Regent of the Imperium Nihilus",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit and each time a model in that unit makes an attack, add 1 to the Hit roll."
+        },
+        {
+          "id": "b139-df4f-7162-cce8",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Sanguinary Guard\n■ Vanguard Veteran Squad with Jump Packs\n■ Assault Intercessors with Jump Packs"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e7ee-e70-bd87-7c5c",
+      "name": "Death Company Dreadnought with Magna-Grapple [Legends]",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Death Company Dreadnought",
+          "target_id": "d7bd-dd9-4492-cf9a",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "a820-cf8-f29d-7b06",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e7ee-e70-bd87-7c5c",
+          "name": "Death Company Dreadnought with Magna-Grapple [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2933-487d-d513-21d9",
+          "name": "Frenzied Reprisal",
+          "type": "Abilities",
+          "description": "Each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot as if it were your Shooting phase or fight as if it were the Fight phase."
+        },
+        {
+          "id": "bdca-ea55-dd4a-8d3f",
+          "name": "Magna-grapple",
+          "type": "Abilities",
+          "description": "Add 2 to Charge rolls made for the bearer if one or more of the targets of that charge is a MOSNTER or VEHICLE unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bb83-db85-6ce1-9a61",
+      "name": "Death Company Intercessors",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company Intercessors",
+          "target_id": "18d-e753-9859-b059",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bb83-db85-6ce1-9a61",
+          "name": "Death Company Intercessors",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "c5e8-f7eb-fc26-4125",
+              "kind": "fixed",
+              "name": "Astartes Grenade Launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c5e8-f7eb-fc26-4125:c5e8-f7eb-fc26-4125",
+                  "name": "Astartes Grenade Launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a331-e139-5bed-c95a",
+                      "name": "➤ Astartes Grenade Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "95b1-575a-6a11-2500",
+                      "name": "➤ Astartes Grenade Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "≥ 6 Death Company Intercessors",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Death Company Intercessors",
+          "scope_id": "4519-b054-bbd5-2a26"
+        }
+      ]
+    },
+    {
+      "id": "6562-9dcd-afea-d4ae",
+      "name": "Death Company Marines with Boltguns [Legends]",
+      "type": "unit",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Death Company Marines with Boltguns",
+          "target_id": "d57c-d980-bdae-2999",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6562-9dcd-afea-d4ae",
+          "name": "Death Company Marines with Boltguns [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d39b-8861-f88d-b9ac",
+              "kind": "choice",
+              "name": "Death Company Marines",
+              "min_select": 5,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "d39b-8861-f88d-b9ac:27fb-dae-85c5-9467",
+                  "name": "Death Company Marine",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "87c-ab92-6476-cc20",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5b90-43fc-7d4c-513e",
+          "name": "An Honourable Death in Combat",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, that attack has the [SUSTAINED HITS 1] ability if this unit is below its Starting Strength, or the [SUSTAINED HITS 2] ability if this unit is Below Half-strength."
+        },
+        {
+          "id": "40bf-8f05-f081-8fe0",
+          "name": "Attached Leader",
+          "type": "Abilities",
+          "description": "If a Chaplain model from your army with the Leader ability can be attached to a Tactical Squad, it can be attached to this unit instead.\n\n\nIf a Character unit from your army with the Leader ability can be attached to a Death Company Marines unit, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 250,
+          "condition_text": "≥ 6 Death Company Marines",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Death Company Marines",
+          "scope_id": "d39b-8861-f88d-b9ac"
+        }
+      ]
+    },
+    {
+      "id": "65f6-18df-f6df-7e39",
+      "name": "Death Company Marines with Jump Packs",
+      "type": "unit",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company Marines with Jump Packs",
+          "target_id": "bd17-5cbb-7db8-e23a",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "65f6-18df-f6df-7e39",
+          "name": "Death Company Marines with Jump Packs",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "38dc-f876-6405-8f17",
+              "kind": "choice",
+              "name": "Death Company Marines",
+              "min_select": 5,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "38dc-f876-6405-8f17:b23e-8c93-e120-a322",
+                  "name": "Death Company Marine w/ alternate weapons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6d8d-2d40-5226-505d",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6353-b576-82ad-a3fb",
+          "name": "Savage Fury",
+          "type": "Abilities",
+          "description": "You can re-roll Charge rolls made for this unit."
+        },
+        {
+          "id": "fa3d-61ea-538d-3a98",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Chaplain model from your army with the Leader ability can be attached to Assault Intercessors with Jump Packs, it can be attached to this unit instead"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 240,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "c954-8157-25fd-5f99",
+      "name": "Furioso Dreadnought [Legends]",
+      "type": "model",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Furioso Dreadnought",
+          "target_id": "2ee1-97ca-5a76-906a",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "a820-cf8-f29d-7b06",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c954-8157-25fd-5f99",
+          "name": "Furioso Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8cf6-e018-6131-88d1",
+          "name": "Wrathful Rampage",
+          "type": "Abilities",
+          "description": "Each time this model is selected to fight, you can select one enemy unit within Engagement Range  of it and roll one D6, adding 2 to the result if this model made a Charge move this turn: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers 3 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "462-f17c-3bb-16a",
+      "name": "Gabriel Seth [Legends]",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Gabriel Seth",
+          "target_id": "9276-a8c8-908a-463d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "462-f17c-3bb-16a",
+          "name": "Gabriel Seth [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3a7e-2683-ec4d-fbd2",
+              "kind": "fixed",
+              "name": "Blood Reaver",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3a7e-2683-ec4d-fbd2:3a7e-2683-ec4d-fbd2",
+                  "name": "Blood Reaver",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4915-f290-da68-c417",
+                      "name": "Blood Reaver",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "82e7-b329-1f35-91e7",
+          "name": "Lord of Slaughter",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, that unit is eligible to declare a charge in a turn in which it Advanced"
+        },
+        {
+          "id": "6ff5-66f5-8a9f-2834",
+          "name": "Whirlwind of Rage",
+          "type": "Abilities",
+          "description": "Each time this model fights, until that fight is resolved, add 1 to the Attacks characteristic of this model’s Blood Reaver for every 5 enemy models within 6\" of this model."
+        },
+        {
+          "id": "4be3-3742-bb89-5787",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Tactical Squad\n■ Vanguard Veteran Squad\n■ Assault Intercessor Squad\n■ Company Heroes\n■ Sternguard Veteran Squad\n■ Bladeguard Veteran Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "cbc2-18c9-45b6-6327",
+      "name": "Lemartes",
+      "type": "model",
+      "points": 110,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Chaplain",
+          "target_id": "1fb1-3603-a4bd-485",
+          "primary": false
+        },
+        {
+          "name": "Lemartes",
+          "target_id": "3763-9e4f-abed-718d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "cbc2-18c9-45b6-6327",
+          "name": "Lemartes",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "9fdf-98cb-7bce-cbd8",
+              "kind": "fixed",
+              "name": "The Blood Crozius",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9fdf-98cb-7bce-cbd8:9fdf-98cb-7bce-cbd8",
+                  "name": "The Blood Crozius",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "13fa-271d-cece-f0b6",
+                      "name": "The Blood Crozius",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fad2-1dd5-584d-e9f8",
+              "kind": "fixed",
+              "name": "Absolver Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fad2-1dd5-584d-e9f8:fad2-1dd5-584d-e9f8",
+                  "name": "Absolver Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2cbf-d021-e04e-31e4",
+                      "name": "Absolvor Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e07d-ca56-c77-2dce",
+          "name": "Guardian of the Lost",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack."
+        },
+        {
+          "id": "3863-f078-be63-9230",
+          "name": "Fury Unbound",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "b59a-25b8-9dc3-3f25",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n\n■ Death Company Marines with Jump Packs"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b6e0-b465-801c-24c8",
+      "name": "Librarian Dreadnought [Legends]",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Librarian Dreadnought",
+          "target_id": "68e9-6942-27d7-bb11",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "a820-cf8-f29d-7b06",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b6e0-b465-801c-24c8",
+          "name": "Librarian Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "9638-3047-f105-5df9",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9638-3047-f105-5df9:4696-c920-6fe4-d64b",
+                  "name": "Blood Lance",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ce86-2fd-47ac-9cd0",
+                      "name": "➤ Blood Lance - Focused Witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+3",
+                      "keywords": "Hazardous, Psychic, Sustained Hits D3"
+                    },
+                    {
+                      "profile_id": "5716-d7bc-4013-faa5",
+                      "name": "➤ Blood Lance - Witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Psychic, Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "9638-3047-f105-5df9:e26d-6206-fd7a-2bd7",
+                  "name": "Furioso Fist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "77db-77a8-6dee-8fc9",
+                      "name": "Furioso Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "9638-3047-f105-5df9:80e5-4fdc-eb6f-71a9",
+                  "name": "Furioso Force Halberd",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8e87-15ec-2605-c312",
+                      "name": "Furioso Force Halberd",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "D6+3",
+                      "keywords": "Extra Attacks, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "701b-9655-4af1-e452",
+          "name": "Shield of Sanguinius (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While a friendly Adeptus Astartes unit is within 6\" of this model, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks."
+        },
+        {
+          "id": "78af-53ce-b84c-2b1e",
+          "name": "Wings of Sanguinius (Psychic)",
+          "type": "Abilities",
+          "description": "Once per turn, at the end of your Movement phase, one Psyker from your army with this ability can use it. If it does, roll one D6: on a 1, that Psyker suffers D3 mortal wounds; on a 2+, select one friendly Adeptus Astartes Infantry unit within 12\" of that Psyker and remove the selected unit from the battlefield, then set it up again anywhere on the battlefield that is more than 9\"\nhorizontally away from all enemy models."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "25e4-ead-faac-2531",
+      "name": "Sanguinary Guard",
+      "type": "unit",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Sanguinary Guard",
+          "target_id": "d30a-a7c5-389a-e78",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8e33-50a5-d053-ee15",
+          "name": "Sanguinary Guard",
+          "min_count": null,
+          "max_count": 6,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6ddc-8f45-ecd6-1db6",
+              "kind": "choice",
+              "name": "Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6ddc-8f45-ecd6-1db6:8776-3451-c6e-aa6c",
+                  "name": "Encarmine Blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5315-e49c-146b-c157",
+                      "name": "Encarmine Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6ddc-8f45-ecd6-1db6:e116-2740-11c0-34ed",
+                  "name": "Encarmine Spear",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "46c8-05c2-743b-b8a5",
+                      "name": "Encarmine Spear",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lance"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7713-28f3-c9d1-4da1",
+              "kind": "choice",
+              "name": "Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7713-28f3-c9d1-4da1:f64-f4db-cee7-c077",
+                  "name": "Angelus Boltgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "13c6-39cb-bc57-3ee0",
+                      "name": "Angelus Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5a4f-9341-88c9-9038",
+          "name": "Angelic Visage",
+          "type": "Abilities",
+          "description": "Each time a melee attack targets this unit, subtract 1 from the Hit roll"
+        },
+        {
+          "id": "48cf-9858-89c4-f598",
+          "name": "Heirs of Azkaellon",
+          "type": "Abilities",
+          "description": "While a Character model is leading this unit, each time a melee attack targets this unit, subtract 1 from the Wound roll."
+        },
+        {
+          "id": "62ff-e5e0-9783-7024",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Captain model from your army with the Leader ability can be attached to Assault Intercessors with Jump Packs, it can be attached to this unit instead."
+        },
+        {
+          "id": "a344-31d1-3cec-1aa4",
+          "name": "Sanguinary Banner",
+          "type": "Abilities",
+          "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 260,
+          "condition_text": "≥ 4 Sanguinary Guard",
+          "condition_type": "atLeast",
+          "condition_value": 4,
+          "target_name": "Sanguinary Guard",
+          "scope_id": "b36d-e83-6a91-e2b4"
+        }
+      ]
+    },
+    {
+      "id": "f80-be5-d17c-db23",
+      "name": "Sanguinary Priest",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sanguinary Priest",
+          "target_id": "561f-8606-9555-b3ba",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f80-be5-d17c-db23",
+          "name": "Sanguinary Priest",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5822-0202-5c34-4f93",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5822-0202-5c34-4f93:a846-7d7e-bb9d-3120",
+                  "name": "Astartes Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ff37-5cda-b6d2-f6d4",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bb06-73be-d05e-4541",
+          "name": "Sanguinary Priest",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+        },
+        {
+          "id": "2271-e1ab-2fb9-93c5",
+          "name": "Blood Chalice",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+        },
+        {
+          "id": "5d3b-5258-5aad-75ca",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Desolation Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n\n■ Devastator Squad\n■ Tactical Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n\nYou can attach this model to one of the above units, even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "29f1-bb28-6424-6d14",
+      "name": "The Sanguinor",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "The Sanguinor",
+          "target_id": "8f39-9585-fc72-ba71",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "29f1-bb28-6424-6d14",
+          "name": "The Sanguinor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b37d-bd5a-db3e-28e7",
+              "kind": "fixed",
+              "name": "Encarmine Broadsword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b37d-bd5a-db3e-28e7:b37d-bd5a-db3e-28e7",
+                  "name": "Encarmine Broadsword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "65a-5211-e46e-2a8f",
+                      "name": "Encarmine Broadsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a3b2-4a68-fe8f-f5fa",
+          "name": "Aura of Fervour (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adeptus Astartes unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit"
+        },
+        {
+          "id": "9c8e-d8c0-5604-60f0",
+          "name": "Miraculous Savior",
+          "type": "Abilities",
+          "description": "Once per battle, at the end of your opponent’s Charge phase, if this model is still in Reserves, you can select one enemy unit  that made a Charge move this phase. Set this model up on the battlefield within Engagement Range of that enemy unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fa13-ba8a-8711-87b6",
+      "name": "Sanguinary Priest with Jump Pack [Legends]",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Sanguinary Priest with Jump Pack",
+          "target_id": "d2c6-5062-e0b8-9e20",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fa13-ba8a-8711-87b6",
+          "name": "Sanguinary Priest with Jump Pack [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8469-1244-dd3b-f2c7",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8469-1244-dd3b-f2c7:9302-dfb0-4440-6401",
+                  "name": "Astartes Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "30c8-dbcd-c7c7-d911",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a752-2aba-3ea3-4da8",
+          "name": "Sanguinary Priest",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+        },
+        {
+          "id": "4652-4462-711c-484c",
+          "name": "Blood Chalice",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+        },
+        {
+          "id": "c994-11e8-ea71-2324",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump packs\n■ Assault Intercessors with Jump Packs\n\nYou can attach this model to one of the above units, even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3621-b460-722-8954",
+      "name": "Sanguinary Priest on Bike [Legends]",
+      "type": "model",
+      "points": 135,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sanguinary Priest",
+          "target_id": "561f-8606-9555-b3ba",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3621-b460-722-8954",
+          "name": "Sanguinary Priest on Bike [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2445-e8cc-6cb1-80f4",
+          "name": "Blood Chalice",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+        },
+        {
+          "id": "4a66-2580-e1a0-b4c2",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Bike Squad\n■ Outrider Squad"
+        },
+        {
+          "id": "76a3-866c-256-fa24",
+          "name": "Sanguinary Priest",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "829b-da42-2d62-6daf",
+      "name": "Blood Angels Captain",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "829b-da42-2d62-6daf",
+          "name": "Blood Angels Captain",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a4a8-f68b-1cd2-e2e7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Company Heroes\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4743-6dc9-fda7-0a8c",
+      "name": "Death Company Captain",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4743-6dc9-fda7-0a8c",
+          "name": "Death Company Captain",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e43a-2cb2-b4ba-684d",
+              "kind": "choice",
+              "name": "Melee",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e43a-2cb2-b4ba-684d:d0e5-641b-1c3d-b6be",
+                  "name": "Master-crafted Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e8db-6fb3-ff75-f784",
+                      "name": "Master-crafted Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "7",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b949-afe2-a88b-65ed",
+              "kind": "choice",
+              "name": "Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b949-afe2-a88b-65ed:3303-543b-9da9-2254",
+                  "name": "Heavy Bolt Pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "87ae-2329-48ed-fb7d",
+                      "name": "Heavy Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d95d-9ac9-252e-b1fa",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Death Company Marines\n■ Death Company Marines with Bolt Rifles"
+        },
+        {
+          "id": "064b-d740-a982-6678",
+          "name": "Forlorn Hero",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, unless that unit starts the battle embarked within a Transport, models in that unit have the Scouts 6\" ability"
+        },
+        {
+          "id": "b276-0bcd-8baf-3c14",
+          "name": "Death Vision of Sanguinius",
+          "type": "Abilities",
+          "description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
+        },
+        {
+          "id": "b870-b3ce-57a6-7655",
+          "name": "Black Rage",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack, you can re-roll the Hit roll. While this model's unit is not within 12\" of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2574-a949-ae3f-58c2",
+      "name": "Death Company Captain with Jump Pack",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2574-a949-ae3f-58c2",
+          "name": "Death Company Captain with Jump Pack",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ba8a-8301-0e1c-8ab7",
+              "kind": "choice",
+              "name": "Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ba8a-8301-0e1c-8ab7:7f25-57df-7ed0-df5c",
+                  "name": "Heavy Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "960d-da5a-6963-cf83",
+                      "name": "Heavy Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "165c-259e-fbfe-4298",
+          "name": "Death Vision of Sanguinius",
+          "type": "Abilities",
+          "description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
+        },
+        {
+          "id": "2569-0de4-1748-b6da",
+          "name": "Lost to Fury",
+          "type": "Abilities",
+          "description": "When this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability"
+        },
+        {
+          "id": "38fc-ca21-107e-ed79",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Death Company Marines with Jump Packs"
+        },
+        {
+          "id": "9a02-63f7-a140-1526",
+          "name": "Black Rage",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack, you can re-roll the Hit roll. While this model's unit is not within 12\" of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4aab-3ca5-0435-ed5e",
+      "name": "Death Company Marines with Bolt Rifles",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company Marines with Bolt Rifles",
+          "target_id": "3055-9a0b-b062-5f31",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4aab-3ca5-0435-ed5e",
+          "name": "Death Company Marines with Bolt Rifles",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b757-9e7a-b59f-f51b",
+              "kind": "fixed",
+              "name": "Astartes Grenade Launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b757-9e7a-b59f-f51b:b757-9e7a-b59f-f51b",
+                  "name": "Astartes Grenade Launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b350-6211-ebf5-94d1",
+                      "name": "➤ Astartes Grenade Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "96d5-dcdc-6eba-dfc6",
+                      "name": "➤ Astartes Grenade Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2ed1-aba1-feec-a885",
+              "kind": "choice",
+              "name": "Death Company Marines",
+              "min_select": 5,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "2ed1-aba1-feec-a885:a62f-40e5-dc37-5fb8",
+                  "name": "Death Company Marine w/ alternate weapons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cc95-5b45-a417-a70d",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "c018-a904-2473-3658",
+                      "name": "Close Combat Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "d5c4-1cfd-559f-77f0",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "465a-8c97-c0d9-865e",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "f983-e976-63ef-aa4a",
+                      "name": "Bolt Rifle",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Assault, Heavy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8a7a-18df-3d39-6e3d",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Chaplain model from your army with the Leader ability can be attached to Intercessor Squad, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "≥ 6 Death Company Marines",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Death Company Marines",
+          "scope_id": "2ed1-aba1-feec-a885"
+        }
+      ]
+    },
+    {
+      "id": "3825-ac3a-75ec-fa0d",
+      "name": "Death Company Marines",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Death Company Marines",
+          "target_id": "caed-a62d-2318-dda1",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3825-ac3a-75ec-fa0d",
+          "name": "Death Company Marines",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "edee-48a2-1e8a-2539",
+              "kind": "choice",
+              "name": "Death Company Marines",
+              "min_select": 5,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "edee-48a2-1e8a-2539:ac37-ff8c-03e1-afe1",
+                  "name": "Death Company Marine w/ alternate weapons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "953a-4af0-c692-02ca",
+                      "name": "Heavy Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "cb64-11b5-c45a-b0fc",
+                      "name": "Astartes Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "b64e-5d06-ef65-5bdf",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e4bd-d365-f2b5-26d1",
+          "name": "An Honourable Death in Combat",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, that attack has the [SUSTAINED HITS 1] ability if this unit is below its Starting Strength, or the [SUSTAINED HITS 2] ability if this unit is Below Half-strength."
+        },
+        {
+          "id": "2c20-3899-13f8-e9c5",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Chaplain model from your army with the Leader ability can be attached to Assault Intercessor Squad, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "3b6e-cc3e-c2a4-0cbd",
+      "name": "Death Company Dreadnought",
+      "type": "model",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "c97c-376-e2e0-1dd2",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Death Company Dreadnought",
+          "target_id": "d7bd-dd9-4492-cf9a",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3b6e-cc3e-c2a4-0cbd",
+          "name": "Death Company Dreadnought",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "2+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "973b-a866-fedb-54d7",
+          "name": "Driven by Fury",
+          "type": "Abilities",
+          "description": "In your opponent's Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase."
+        },
+        {
+          "id": "eadd-9d93-1829-14d1",
+          "name": "Black Rage",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack, you can re-roll the Hit roll. While this model's unit is not within 12\" of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bcfe-f4fb-5c44-652d",
+      "name": "Death Company Marines with Boltguns and Jump Packs [Legends]",
+      "type": "unit",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Blood Angels",
+          "target_id": "62ac-ef42-27b4-ae7",
+          "primary": false
+        },
+        {
+          "name": "Death Company",
+          "target_id": "1e3d-c738-8087-792c",
+          "primary": false
+        },
+        {
+          "name": "Death Company Marines with Boltguns and Jump Packs",
+          "target_id": "f884-eba8-9896-a544",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bcfe-f4fb-5c44-652d",
+          "name": "Death Company Marines with Boltguns and Jump Packs [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "777d-46c5-4e03-bc34",
+              "kind": "choice",
+              "name": "Death Company Marines",
+              "min_select": 5,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "777d-46c5-4e03-bc34:7db1-301d-38d4-2d57",
+                  "name": "Death Company Marine",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5f75-ea4b-ed52-c860",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1d96-649b-fed0-e796",
+          "name": "Beserk Fury",
+          "type": "Abilities",
+          "description": "You can re-roll Charge rolls made for this unit"
+        },
+        {
+          "id": "8c1b-2833-573d-bae7",
+          "name": "Attached Leader",
+          "type": "Abilities",
+          "description": "If a Chaplain model from your army with the Leader ability can be attached to Assault Intercessors with Jump Packs or an Assault Squad with Jump Packs, it can be attached to this unit instead.\n\n\nIf a Character unit from your army with the Leader ability can be attached to a Death Company Marines with Jump Packs unit, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 280,
+          "condition_text": "≥ 6 Death Company Marines",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "Death Company Marines",
+          "scope_id": "777d-46c5-4e03-bc34"
+        }
+      ]
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

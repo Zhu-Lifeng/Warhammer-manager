@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}Register model — WH40K 10e{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('models_list') }}">← Back</a></p>
+<h1>Register a new model</h1>
+
+<form method="post" enctype="multipart/form-data" class="panel">
+  <div class="form-grid">
+    <div>
+      <label>Faction (filter units)</label>
+      <select id="faction-picker">
+        <option value="">-- Choose faction --</option>
+        {% for c in factions %}
+          <option value="{{ c.id }}">{{ c.name }} ({{ c.n_datasheets }})</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Search unit</label>
+      <input type="text" id="datasheet-search" placeholder="Type unit name…">
+    </div>
+    <div style="grid-column:1/-1;">
+      <label>Pick datasheet *</label>
+      <select name="datasheet_id" id="datasheet-select" required>
+        <option value="">-- Choose faction or search first --</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Custom name (optional)</label>
+      <input type="text" name="custom_name" placeholder="e.g. Captain Alaric">
+    </div>
+    <div>
+      <label>Paint status</label>
+      <select name="status">
+        {% for v, label in status_options %}
+          <option value="{{ v }}">{{ label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div style="grid-column:1/-1;">
+      <label>Notes</label>
+      <textarea name="notes" placeholder="Color scheme, base theme, collection notes…"></textarea>
+    </div>
+    <div style="grid-column:1/-1;">
+      <label>Upload images (multiple OK — jpg/png/webp/gif)</label>
+      <input type="file" name="images" accept="image/*" multiple>
+    </div>
+  </div>
+
+  <div id="loadout-area" style="margin-top:1rem;"></div>
+
+  <button type="submit">Register</button>
+</form>
+
+<script>
+(function () {
+  const factionEl = document.getElementById('faction-picker');
+  const searchEl  = document.getElementById('datasheet-search');
+  const selectEl  = document.getElementById('datasheet-select');
+  const loadoutEl = document.getElementById('loadout-area');
+  const preselect = {{ preselect_ds | tojson }};
+  let debounceTimer = null;
+
+  async function reload() {
+    const params = new URLSearchParams();
+    if (factionEl.value) params.set('catalogue', factionEl.value);
+    if (searchEl.value)  params.set('q', searchEl.value);
+    if (!params.toString() && !preselect) {
+      selectEl.innerHTML = '<option value="">-- Choose faction or search first --</option>';
+      loadoutEl.innerHTML = '';
+      return;
+    }
+    const resp = await fetch('/api/datasheets?' + params.toString());
+    const data = await resp.json();
+    let html = '<option value="">-- Choose --</option>';
+    for (const item of data.items) {
+      const ptsPart = item.points != null ? ` (${item.points} pts)` : '';
+      html += `<option value="${item.id}">${item.name} — ${item.catalogue_name}${ptsPart}</option>`;
+    }
+    selectEl.innerHTML = html;
+    if (preselect) {
+      selectEl.value = preselect;
+      loadLoadout(preselect);
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  async function loadLoadout(dsId) {
+    loadoutEl.innerHTML = '';
+    if (!dsId) return;
+    const resp = await fetch('/api/datasheet/' + dsId + '/loadout');
+    const data = await resp.json();
+    if (!data.models || data.models.length === 0) return;
+
+    let html = '<div class="section"><h2>Model type + loadout</h2>';
+
+    const hasMultiple = data.models.length > 1;
+    if (hasMultiple) {
+      html += '<div class="card" style="margin-bottom:0.8rem;"><b>Which model type?</b><div style="margin-top:0.4rem;">';
+      data.models.forEach((m, i) => {
+        const range = (m.min_count != null && m.max_count != null && m.min_count !== m.max_count)
+          ? ` (${m.min_count}-${m.max_count})` : '';
+        html += `<label style="display:inline-block; margin-right:1rem; padding:0.3rem 0.5rem; background:#0c0e12; border-radius:3px; cursor:pointer;">
+          <input type="radio" name="model_type_id" value="${escapeHtml(m.id)}" ${i === 0 ? 'checked' : ''} data-model-id="${escapeHtml(m.id)}">
+          ${escapeHtml(m.name)}${range}
+        </label>`;
+      });
+      html += '</div></div>';
+    } else {
+      html += `<input type="hidden" name="model_type_id" value="${escapeHtml(data.models[0].id)}">`;
+    }
+
+    data.models.forEach((m, i) => {
+      if (!m.choice_slots || m.choice_slots.length === 0) return;
+      const showInitially = (i === 0);
+      html += `<div data-model-slots="${escapeHtml(m.id)}" class="card" style="margin-bottom:0.8rem; display:${showInitially ? 'block' : 'none'};">`;
+      html += `<h3 style="margin-top:0;">${escapeHtml(m.name)} loadout</h3>`;
+      for (const s of m.choice_slots) {
+        html += `<div style="margin:0.6rem 0; padding-left:0.6rem; border-left:2px solid #5a4d1f;">
+          <b>${escapeHtml(s.name)}</b>`;
+        if (s.min_select || s.max_select) {
+          const rng = (s.min_select === s.max_select)
+            ? s.min_select
+            : `${s.min_select || 0}-${s.max_select || '?'}`;
+          html += ` <span class="muted" style="font-size:0.85rem;">(pick ${rng})</span>`;
+        }
+        for (const o of s.options) {
+          const ws = o.weapons.map(w => `${escapeHtml(w.name)} (${w.type === 'Ranged' ? 'Ranged' : 'Melee'})`).join(' + ');
+          html += `<label style="display:block; padding:0.35rem 0.5rem; margin:0.25rem 0; background:#0c0e12; border-radius:4px; cursor:pointer;">
+            <input type="radio" name="slot_${escapeHtml(s.id)}" value="${escapeHtml(o.id)}" ${o.is_default ? 'checked' : ''}>
+            <b>${escapeHtml(o.name)}</b>${o.is_default ? ' <span class="badge status-done" style="font-size:0.7rem;">★ default</span>' : ''}
+            ${ws ? `<div class="muted" style="font-size:0.8rem; margin-left:1.5rem;">${ws}</div>` : ''}
+          </label>`;
+        }
+        html += `</div>`;
+      }
+      html += `</div>`;
+    });
+
+    html += '</div>';
+    loadoutEl.innerHTML = html;
+
+    loadoutEl.querySelectorAll('input[name="model_type_id"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        loadoutEl.querySelectorAll('[data-model-slots]').forEach(el => {
+          el.style.display = (el.getAttribute('data-model-slots') === radio.value) ? 'block' : 'none';
+        });
+      });
+    });
+  }
+
+  factionEl.addEventListener('change', reload);
+  searchEl.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(reload, 250);
+  });
+  selectEl.addEventListener('change', () => loadLoadout(selectEl.value));
+  if (preselect) reload();
+})();
+</script>
+{% endblock %}

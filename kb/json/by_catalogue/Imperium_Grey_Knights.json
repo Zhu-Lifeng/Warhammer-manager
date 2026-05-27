@@ -1,0 +1,3501 @@
+{
+  "id": "50c4-3e83-fe54-97c4",
+  "name": "Imperium - Grey Knights",
+  "is_library": false,
+  "revision": "48",
+  "source_file": "Imperium - Grey Knights.cat",
+  "categories": [
+    {
+      "id": "71ac-a100-1ec8-14e9",
+      "name": "Brother-Captain"
+    },
+    {
+      "id": "9e54-c14b-9ec9-e387",
+      "name": "Brother-Captain Stern"
+    },
+    {
+      "id": "c427-b327-40a0-a401",
+      "name": "Brotherhood Champion"
+    },
+    {
+      "id": "ebf4-5ffe-19e7-c6c7",
+      "name": "Brotherhood Chaplain"
+    },
+    {
+      "id": "bd80-12a6-cd23-96c9",
+      "name": "Brotherhood Librarian"
+    },
+    {
+      "id": "c352-657f-d2cc-adcf",
+      "name": "Brotherhood Techmarine"
+    },
+    {
+      "id": "cddf-ac1-4a0d-8e48",
+      "name": "Brotherhood Terminator Squad"
+    },
+    {
+      "id": "de95-1b68-44cf-7ca9",
+      "name": "Castellan Crowe"
+    },
+    {
+      "id": "ce31-227c-65ca-e27e",
+      "name": "Grand Master"
+    },
+    {
+      "id": "a738-1a96-db57-ba6f",
+      "name": "Grand Master in Nemesis Dreadknight"
+    },
+    {
+      "id": "472c-f807-880-b6",
+      "name": "Grand Master Voldus"
+    },
+    {
+      "id": "adfb-534b-3eb7-2781",
+      "name": "Grey Knights Land Raider"
+    },
+    {
+      "id": "4a04-1f1b-8ffb-b183",
+      "name": "Grey Knights Land Raider Crusader"
+    },
+    {
+      "id": "51dd-461e-1657-1017",
+      "name": "Grey Knights Land Raider Redeemer"
+    },
+    {
+      "id": "88ad-5f29-ba09-9427",
+      "name": "Grey Knights Razorback"
+    },
+    {
+      "id": "5ced-f445-91c2-a55e",
+      "name": "Grey Knights Rhino"
+    },
+    {
+      "id": "82f-4771-c58e-1755",
+      "name": "Grey Knights Stormhawk Interceptor"
+    },
+    {
+      "id": "54b8-5bba-f749-e5ef",
+      "name": "Grey Knights Stormraven Gunship"
+    },
+    {
+      "id": "99eb-b003-79ba-7d46",
+      "name": "Grey Knights Stormtalon Gunship"
+    },
+    {
+      "id": "f580-2968-19f3-1320",
+      "name": "Grey Knights Thunderhawk Gunship"
+    },
+    {
+      "id": "33d4-b50a-18e8-16e8",
+      "name": "Grey Knights Venerable Dreadnought"
+    },
+    {
+      "id": "b7d3-6b00-c657-ebd7",
+      "name": "Interceptor Squad"
+    },
+    {
+      "id": "77b6-bfe8-648b-9fb4",
+      "name": "Kaldor Draigo"
+    },
+    {
+      "id": "3741-4bcf-f67e-1942",
+      "name": "Land Raider Banisher"
+    },
+    {
+      "id": "8083-7b7a-c9d7-fd31",
+      "name": "Nemesis Dreadknight"
+    },
+    {
+      "id": "9020-9fb5-8ef8-5ad4",
+      "name": "Paladin Squad"
+    },
+    {
+      "id": "8084-5bdd-7c6-bae4",
+      "name": "Purgation Squad"
+    },
+    {
+      "id": "67f8-444-b8b7-ad0",
+      "name": "Purifier Squad"
+    },
+    {
+      "id": "5bc8-a8b7-1c69-9043",
+      "name": "Servitors"
+    },
+    {
+      "id": "103f-a8cd-8c1f-24df",
+      "name": "Strike Squad"
+    },
+    {
+      "id": "4c57-a2d1-fe45-4ec1",
+      "name": "Grey Knights Dreadnought [Legends]"
+    },
+    {
+      "id": "6ee2-b8d8-f50b-67e3",
+      "name": "Grey Knights Relic Razorback [Legends]"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "dce9-6eb4-fa33-e869",
+      "name": "Brother-Captain",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Brother-Captain",
+          "target_id": "71ac-a100-1ec8-14e9",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "dce9-6eb4-fa33-e869",
+          "name": "Brother-Captain",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e1f9-80b5-6bc7-21f3",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        },
+        {
+          "id": "3f64-f896-c54f-7fea",
+          "name": "Empyric Amplification (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, Psychic weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+        },
+        {
+          "id": "53db-1bc6-da94-f8e9",
+          "name": "Focused Mind (Psychic)",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack with a Psychic weapon, you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "aec2-ded6-fa0-3b75",
+      "name": "Brother-Captain Stern",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Brother-Captain Stern",
+          "target_id": "9e54-c14b-9ec9-e387",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "aec2-ded6-fa0-3b75",
+          "name": "Brother-Captain Stern",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1b42-d922-74f0-c474",
+              "kind": "fixed",
+              "name": "Nemesis force sword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1b42-d922-74f0-c474:1b42-d922-74f0-c474",
+                  "name": "Nemesis force sword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7fff-ba8f-94c-dac",
+                      "name": "Nemesis force sword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "442f-f233-5a42-7006",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "442f-f233-5a42-7006:18c1-d4b5-0ff0-4808",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d032-863c-420d-d110",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7359-1f53-a51b-fb40",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        },
+        {
+          "id": "24f5-4ea1-bbc0-fc59",
+          "name": "Exemplar of the Silvered Host",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a melee attack, on a Critical Wound, the target suffers 1 mortal wound in addition to any normal damage."
+        },
+        {
+          "id": "186a-f980-321d-d883",
+          "name": "Strands of Fate (Psychic)",
+          "type": "Abilities",
+          "description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2c81-4e74-8707-3117",
+      "name": "Brotherhood Champion",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Brotherhood Champion",
+          "target_id": "c427-b327-40a0-a401",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2c81-4e74-8707-3117",
+          "name": "Brotherhood Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "fd28-638b-3f01-c9dd",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "fd28-638b-3f01-c9dd:e4f1-7c06-108f-dda3",
+                  "name": "Nemesis force weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "dc6c-486b-c19-71a1",
+                      "name": "Nemesis force weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Precision, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6201-69fa-9b1f-ef80",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Purgation Squad\n■ Strike Squad"
+        },
+        {
+          "id": "4020-4496-e5f3-62fd",
+          "name": "Ethereal Castigation (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Fights First ability."
+        },
+        {
+          "id": "cc8f-6b40-8152-671f",
+          "name": "Martial Fury",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b9b1-d698-1e98-da45",
+      "name": "Brotherhood Chaplain",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Brotherhood Chaplain",
+          "target_id": "ebf4-5ffe-19e7-c6c7",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "b9b1-d698-1e98-da45",
+          "name": "Brotherhood Chaplain",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "5",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4356-a861-7b88-b04f",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4356-a861-7b88-b04f:4e88-c580-e5fa-ae6c",
+                  "name": "Crozius arcanum",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5fa9-c9b2-336e-6d3c",
+                      "name": "Crozius arcanum",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "82-db07-19c0-1f1b",
+          "name": "Words of Power (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+        },
+        {
+          "id": "8d73-2ecd-2b3c-3f18",
+          "name": "Dread Bearing (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test"
+        },
+        {
+          "id": "82ae-190e-a811-610",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5412-1f01-b7cc-bf12",
+      "name": "Brotherhood Librarian",
+      "type": "model",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Brotherhood Librarian",
+          "target_id": "bd80-12a6-cd23-96c9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5412-1f01-b7cc-bf12",
+          "name": "Brotherhood Librarian",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2842-f787-02f4-f899",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2842-f787-02f4-f899:fffe-abc5-ac4f-6eda",
+                  "name": "Nemesis force weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8404-b7bc-4d0f-6136",
+                      "name": "Nemesis force weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                },
+                {
+                  "id": "2842-f787-02f4-f899:3aa5-b3f3-8ec2-8559",
+                  "name": "Purge Soul",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3820-e568-e53-96f2",
+                      "name": "➤ Purge Soul - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Psychic"
+                    },
+                    {
+                      "profile_id": "65d8-79ca-e784-b480",
+                      "name": "➤ Purge Soul - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Precision, Psychic, Hazardous"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f49c-a3e0-29e8-7304",
+          "name": "Vortex of Doom (Psychic)",
+          "type": "Abilities",
+          "description": "In your Shooting phase, you can select one enemy unit within 18\" of and visible to this Psyker (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12\" of this Psyker). If you do, roll one D6: on a 1, this Psyker’s unit suffers D6 mortal wounds; on a 2-5, that enemy unit suffers 2D3 mortal wounds; on a 6, that enemy unit suffers 2D6 mortal wounds."
+        },
+        {
+          "id": "3dec-ee8c-120d-4010",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- BROTHERHOOD TERMINATOR SQUAD\n- PALADIN SQUAD"
+        },
+        {
+          "id": "9d41-eb97-8f61-fb85",
+          "name": "Sanctic Hood",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f667-5267-f241-37",
+      "name": "Brotherhood Techmarine",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Brotherhood Techmarine",
+          "target_id": "c352-657f-d2cc-adcf",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f667-5267-f241-37",
+          "name": "Brotherhood Techmarine",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6308-65e2-d4e5-3ce8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6308-65e2-d4e5-3ce8:78d0-de33-2a42-edef",
+                  "name": "Flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "462e-af68-3725-10ef",
+                      "name": "Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "6308-65e2-d4e5-3ce8:aa5-cfe9-83d9-250a",
+                  "name": "Omnissian power axe",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "59d5-7666-1edf-125e",
+                      "name": "Omnissian power axe",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6308-65e2-d4e5-3ce8:3549-7e11-cc13-6991",
+                  "name": "Plasma cutter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cf76-7725-98e1-d456",
+                      "name": "➤ Plasma cutter - standard",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Extra Attacks"
+                    },
+                    {
+                      "profile_id": "3bd0-22d0-6cad-cbbd",
+                      "name": "➤ Plasma cutter - supercharge",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Extra Attacks, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "6308-65e2-d4e5-3ce8:56a2-d965-8a31-8eec",
+                  "name": "Servo-arms",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8f56-9025-c58b-b16",
+                      "name": "Servo-arms",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a0a4-1a94-df1f-ef4f",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Servitors\n■ Strike Squad"
+        },
+        {
+          "id": "877c-7676-7032-ecd3",
+          "name": "Awaken the Machine Spirit",
+          "type": "Abilities",
+          "description": "In your Command phase, you can select one friendly GREY KNIGHTS VEHICLE model within 6\" of this model. Until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll."
+        },
+        {
+          "id": "f298-3658-77a2-5851",
+          "name": "Omnissiah’s Blessing",
+          "type": "Abilities",
+          "description": "In your Command phase, you can select one friendly Grey Knights Vehicle model within 3\" of this model. That Vehicle model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
+        },
+        {
+          "id": "7750-f512-8316-e851",
+          "name": "Techmarine",
+          "type": "Abilities",
+          "description": "While this model is within 3\" of one or more friendly Grey Knights Vehicle units, unless it is leading a unit, this model has the Lone Operative ability"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a037-a89c-f59f-8b1e",
+      "name": "Brotherhood Terminator Squad",
+      "type": "unit",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Brotherhood Terminator Squad",
+          "target_id": "cddf-ac1-4a0d-8e48",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a037-a89c-f59f-8b1e",
+          "name": "Brotherhood Terminator Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3ebb-9bbe-208-ac9c",
+          "name": "Hammerhand (Psychic)",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "1e79-d50f-92b3-4ce4",
+          "name": "Ancient's Banner",
+          "type": "Abilities",
+          "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+        },
+        {
+          "id": "97ca-b4cb-c700-e6c2",
+          "name": "Narthecium",
+          "type": "Abilities",
+          "description": "In your Command phase, you can return 1 destroyed model (excluding Characters) to the bearer’s unit"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 420,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9ddb-760d-8cf7-1c8a",
+      "name": "Castellan Crowe",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Castellan Crowe",
+          "target_id": "de95-1b68-44cf-7ca9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9ddb-760d-8cf7-1c8a",
+          "name": "Castellan Crowe",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ba75-d1eb-5347-28b3",
+              "kind": "fixed",
+              "name": "Purifying Flame",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ba75-d1eb-5347-28b3:ba75-d1eb-5347-28b3",
+                  "name": "Purifying Flame",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "73f3-22f9-3831-441a",
+                      "name": "Purifying Flame",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 2+, Ignores Cover, Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9bcc-8f6e-67ea-6c75",
+              "kind": "fixed",
+              "name": "Black Blade of Antwyr",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9bcc-8f6e-67ea-6c75:9bcc-8f6e-67ea-6c75",
+                  "name": "Black Blade of Antwyr",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dae1-9183-96d9-6ccd",
+                      "name": "Black Blade of Antwyr",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "41bb-9ed0-8f75-a111",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "41bb-9ed0-8f75-a111:18c1-d4b5-0ff0-4808",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d032-863c-420d-d110",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3cd-1880-37fe-4cfc",
+          "name": "Champion of the Order of Purifiers (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to the Attacks characteristic of that unit’s Purifying Flame."
+        },
+        {
+          "id": "7414-1762-a008-9828",
+          "name": "Foresight of the Prognosticars (Psychic)",
+          "type": "Abilities",
+          "description": "Once per turn, the first time a saving throw is failed for this model, change the Damage characteristic of that attack to 0"
+        },
+        {
+          "id": "722a-9e45-fe18-94aa",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n■ Purifier Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1a56-706b-a8f1-631a",
+      "name": "Grand Master",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Grand Master",
+          "target_id": "ce31-227c-65ca-e27e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1a56-706b-a8f1-631a",
+          "name": "Grand Master",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5edd-f343-28c5-7b2c",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5edd-f343-28c5-7b2c:1cca-ad4-74e7-cd9e",
+                  "name": "Nemesis force weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "182b-3191-8fa-53e1",
+                      "name": "Nemesis force weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f271-762e-61ae-367f",
+          "name": "Might of Purity (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, you can ignore any or all modifiers to the characteristics of models in that unit and to any roll or test made for models in that unit (excluding modifiers to saving throws)."
+        },
+        {
+          "id": "cb03-8115-df85-19ac",
+          "name": "Master Strategist",
+          "type": "Abilities",
+          "description": "Once per battle, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+        },
+        {
+          "id": "ecd8-2298-e581-30d1",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3625-f9f1-122b-bf9d",
+      "name": "Grand Master in Nemesis Dreadknight",
+      "type": "model",
+      "points": 210,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grand Master in Nemesis Dreadknight",
+          "target_id": "a738-1a96-db57-ba6f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3625-f9f1-122b-bf9d",
+          "name": "Grand Master in Nemesis Dreadknight",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "8",
+            "sv": "2+",
+            "w": "13",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1ee5-63a2-6c01-e628",
+          "name": "Surge of Wrath (Psychic)",
+          "type": "Abilities",
+          "description": "Once per battle round, in the Fight phase, one model from your army with this ability can use it before resolving its attacks. If it does, until the end of the phase, each time that model makes an attack that targets a Monster or Vehicle unit, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll."
+        },
+        {
+          "id": "dce-9e37-9f2-5687",
+          "name": "Heroism’s Favour",
+          "type": "Abilities",
+          "description": "Each time you target this model with a Stratagem, it only costs 1CP to use, even if the CP cost is higher"
+        },
+        {
+          "id": "abf6-e340-d8e8-5486",
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7256-bb3a-3e79-31fe",
+      "name": "Grand Master Voldus",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Grand Master Voldus",
+          "target_id": "472c-f807-880-b6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7256-bb3a-3e79-31fe",
+          "name": "Grand Master Voldus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6b5f-a7fc-2a1b-b24e",
+              "kind": "fixed",
+              "name": "Malleus Argyrum",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6b5f-a7fc-2a1b-b24e:6b5f-a7fc-2a1b-b24e",
+                  "name": "Malleus Argyrum",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9c20-33ed-5139-f2df",
+                      "name": "Malleus Argyrum",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "baaa-e77f-fc3c-0baf",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "baaa-e77f-fc3c-0baf:18c1-d4b5-0ff0-4808",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d032-863c-420d-d110",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b513-f80c-9d48-db05",
+          "name": "Sanctuary (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "bf8c-be10-e632-646d",
+          "name": "Hammer Aflame (Psychic)",
+          "type": "Abilities",
+          "description": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model’s unit and roll one D6, adding 2 to the result if that unit has the Daemon keyword: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds."
+        },
+        {
+          "id": "3de3-b31e-7c05-aba8",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "512d-b972-911e-4cac",
+      "name": "Grey Knights Land Raider",
+      "type": "model",
+      "points": 240,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grey Knights Land Raider",
+          "target_id": "adfb-534b-3eb7-2781",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "512d-b972-911e-4cac",
+          "name": "Grey Knights Land Raider",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "5a74-a429-f0b7-e62f",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5a74-a429-f0b7-e62f:ff0-5d7d-c73b-9c5f",
+                  "name": "Godhammer lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "da8a-8a15-3669-95d0",
+                      "name": "Godhammer lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c1d5-950b-12b6-7201",
+          "name": "Assault Ramp",
+          "type": "Abilities",
+          "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        },
+        {
+          "id": "e6a-44ad-c190-51c5",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "511a-e5a0-5e4f-89e4",
+          "name": "Grey Knights Land Raider",
+          "capacity": "This model has a transport capacity of 12 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4c63-cca-8d26-6330",
+      "name": "Grey Knights Land Raider Crusader",
+      "type": "model",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Grey Knights Land Raider Crusader",
+          "target_id": "4a04-1f1b-8ffb-b183",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4c63-cca-8d26-6330",
+          "name": "Grey Knights Land Raider Crusader",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c059-84a-5bf2-dcbf",
+          "name": "Assault Ramp",
+          "type": "Abilities",
+          "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        },
+        {
+          "id": "cfb3-a59a-4eb1-1079",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "4c37-b59b-e445-d686",
+          "name": "Grey Knights Land Raider Crusader",
+          "capacity": "This model has a transport capacity of 16 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ada7-eb0b-c920-d77f",
+      "name": "Grey Knights Land Raider Redeemer",
+      "type": "model",
+      "points": 285,
+      "keywords": [
+        {
+          "name": "Grey Knights Land Raider Redeemer",
+          "target_id": "51dd-461e-1657-1017",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ada7-eb0b-c920-d77f",
+          "name": "Grey Knights Land Raider Redeemer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "088e-b038-29cd-7878",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "088e-b038-29cd-7878:47d2-bdb6-a769-cd0f",
+                  "name": "Flamestorm cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f1a0-8910-1680-5177",
+                      "name": "Flamestorm cannon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "35e9-caef-a97f-a190",
+          "name": "Assault Ramp",
+          "type": "Abilities",
+          "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        },
+        {
+          "id": "df47-ae30-f628-3d25",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "203b-c2a4-cba0-ee49",
+          "name": "Grey Knights Land Raider Redeemer",
+          "capacity": "This model has a transport capacity of 14 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "841f-98b-fbf3-c8ee",
+      "name": "Grey Knights Razorback",
+      "type": "model",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Grey Knights Razorback",
+          "target_id": "88ad-5f29-ba09-9427",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "841f-98b-fbf3-c8ee",
+          "name": "Grey Knights Razorback",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b9fd-80d9-a165-1812",
+          "name": "Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll"
+        }
+      ],
+      "transport": [
+        {
+          "id": "69f9-2b19-561e-aeb5",
+          "name": "Grey Knights Razorback",
+          "capacity": "This model has a transport capacity of 6 Grey Knights Infantry models. It cannot transport Terminator models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5ffd-f698-a1bb-fba7",
+      "name": "Grey Knights Rhino",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Grey Knights Rhino",
+          "target_id": "5ced-f445-91c2-a55e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Rhino",
+          "target_id": "50a2-5557-84bb-ca4d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5ffd-f698-a1bb-fba7",
+          "name": "Grey Knights Rhino",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3355-18b8-ee22-87f9",
+          "name": "Self Repair",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, this model regains 1 lost wound."
+        }
+      ],
+      "transport": [
+        {
+          "id": "4b87-568-feeb-bc57",
+          "name": "Grey Knights Rhino",
+          "capacity": "This model has a transport capacity of 12 Grey Knights Infantry models. It cannot transport Terminator models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fa-e288-2107-d22e",
+      "name": "Grey Knights Stormhawk Interceptor",
+      "type": "model",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Grey Knights Stormhawk Interceptor",
+          "target_id": "82f-4771-c58e-1755",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fa-e288-2107-d22e",
+          "name": "Grey Knights Stormhawk Interceptor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f531-b188-9179-2f5a",
+          "name": "Interceptor",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that can Fly, add 1 to the Hit roll"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2efe-459b-9562-e7a9",
+      "name": "Grey Knights Stormraven Gunship",
+      "type": "model",
+      "points": 280,
+      "keywords": [
+        {
+          "name": "Grey Knights Stormraven Gunship",
+          "target_id": "54b8-5bba-f749-e5ef",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2efe-459b-9562-e7a9",
+          "name": "Grey Knights Stormraven Gunship",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "8bd1-6cc6-d8c5-9227",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8bd1-6cc6-d8c5-9227:844e-7897-1c78-259c",
+                  "name": "Armoured hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5be8-aca2-f4ed-8327",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8bd1-6cc6-d8c5-9227:b2ea-93b8-8009-b652",
+                  "name": "Stormstrike missile launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6340-bb29-ab5e-a0c9",
+                      "name": "Stormstrike missile launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6+2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c534-53bb-4d73-23d2",
+          "name": "Armoured Resilience",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack"
+        },
+        {
+          "id": "5d24-6acb-2ed-b67",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "146c-72b7-bd76-e9ba",
+          "name": "Grey Knights Stormraven Gunship",
+          "capacity": "This model has a transport capacity of 12 Grey Knights Infantry models and 1 Grey Knights Venerable Dreadnought model. Each Terminator model takes up the space of 2 models"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "84ac-b9ea-921f-9082",
+      "name": "Grey Knights Stormtalon Gunship",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Grey Knights Stormtalon Gunship",
+          "target_id": "99eb-b003-79ba-7d46",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "84ac-b9ea-921f-9082",
+          "name": "Grey Knights Stormtalon Gunship",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "133a-43b1-cad3-95d6",
+          "name": "Strafing Run",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that cannot Fly, add 1 to the Hit roll"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bd43-b303-66e0-4c10",
+      "name": "Grey Knights Venerable Dreadnought",
+      "type": "model",
+      "points": 155,
+      "keywords": [
+        {
+          "name": "Grey Knights Venerable Dreadnought",
+          "target_id": "33d4-b50a-18e8-16e8",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bd43-b303-66e0-4c10",
+          "name": "Grey Knights Venerable Dreadnought",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9b3c-49ee-2ca0-7bcf",
+          "name": "Wisdom of the Ancients (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Grey Knights Infantry unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d9f7-71b7-8e67-7f44",
+      "name": "Interceptor Squad",
+      "type": "unit",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Interceptor Squad",
+          "target_id": "b7d3-6b00-c657-ebd7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d9f7-71b7-8e67-7f44",
+          "name": "Interceptor Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8d05-c69c-2572-99ba",
+          "name": "Personal Teleporters",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\" as if it were your Movement phase. If it does, until the end of the turn, this unit is not eligible to declare a charge"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 250,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "7a19-5235-692b-320d",
+      "name": "Kaldor Draigo",
+      "type": "model",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Kaldor Draigo",
+          "target_id": "77b6-bfe8-648b-9fb4",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7a19-5235-692b-320d",
+          "name": "Kaldor Draigo",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8804-9b5d-14e7-5e2d",
+              "kind": "fixed",
+              "name": "Scourging",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8804-9b5d-14e7-5e2d:8804-9b5d-14e7-5e2d",
+                  "name": "Scourging",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2874-4a20-ee8c-ed97",
+                      "name": "Scourging",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Daemon 2+, Ignores Cover, Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b9fb-d4e1-34ae-d02f",
+              "kind": "fixed",
+              "name": "The Titansword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b9fb-d4e1-34ae-d02f:b9fb-d4e1-34ae-d02f",
+                  "name": "The Titansword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "232a-4043-3ee0-f92",
+                      "name": "The Titansword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-4",
+                      "d": "3",
+                      "keywords": "Anti-Daemon 2+, Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7361-0173-8ee3-a5cc",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7361-0173-8ee3-a5cc:18c1-d4b5-0ff0-4808",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d032-863c-420d-d110",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cf12-2ea5-6834-5031",
+          "name": "Untouchable Purity",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds"
+        },
+        {
+          "id": "c3e8-c9b9-519a-6552",
+          "name": "One With the Warp (Psychic)",
+          "type": "Abilities",
+          "description": "Once per battle, when this model’s unit declares a charge in the same turn it was set up on the battlefield using the Deep Strike or Teleport Assault ability, add 3 to the Charge roll."
+        },
+        {
+          "id": "d668-10b1-f5d9-9bd0",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+        },
+        {
+          "id": "a802-75b0-2e06-2487",
+          "name": "Supreme Commander",
+          "type": "Abilities",
+          "description": "If this model is in your army, it must be your WARLORD."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5458-a458-c51d-c4e9",
+      "name": "Nemesis Dreadknight",
+      "type": "model",
+      "points": 210,
+      "keywords": [
+        {
+          "name": "Nemesis Dreadknight",
+          "target_id": "8083-7b7a-c9d7-fd31",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5458-a458-c51d-c4e9",
+          "name": "Nemesis Dreadknight",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "8",
+            "sv": "2+",
+            "w": "13",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c53f-7fdc-438d-5dcd",
+          "name": "Empyric Reprisal (Psychic)",
+          "type": "Abilities",
+          "description": "This model is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back."
+        },
+        {
+          "id": "6980-2489-73f9-24ed",
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6528-4634-c2cf-2840",
+      "name": "Paladin Squad",
+      "type": "unit",
+      "points": 215,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Paladin Squad",
+          "target_id": "9020-9fb5-8ef8-5ad4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6528-4634-c2cf-2840",
+          "name": "Paladin Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "935d-fb65-54d-274f",
+          "name": "Inner Fortitude (Psychic)",
+          "type": "Abilities",
+          "description": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll"
+        },
+        {
+          "id": "b14b-6903-19ca-ea38",
+          "name": "Ancient's Banner",
+          "type": "Abilities",
+          "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 450,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "e8ad-bd40-5952-6859",
+      "name": "Purgation Squad",
+      "type": "unit",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Purgation Squad",
+          "target_id": "8084-5bdd-7c6-bae4",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e8ad-bd40-5952-6859",
+          "name": "Purgation Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6515-217f-6031-85ce",
+          "name": "Astral Aim (Psychic)",
+          "type": "Abilities",
+          "description": "In your Shooting phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability, provided the target of that weapon is visible to one or more other friendly Grey Knights Psyker units"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 240,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "8865-df22-1629-bf02",
+      "name": "Purifier Squad",
+      "type": "unit",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Purifier Squad",
+          "target_id": "67f8-444-b8b7-ad0",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "8865-df22-1629-bf02",
+          "name": "Purifier Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f2c4-c894-81d4-d126",
+          "name": "Sanctity of Purpose",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 250,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "35ed-7890-6c56-18b7",
+      "name": "Servitors",
+      "type": "unit",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Servitors",
+          "target_id": "5bc8-a8b7-1c69-9043",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "35ed-7890-6c56-18b7",
+          "name": "Servitors",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "aa0e-aa31-d253-7c03",
+              "kind": "choice",
+              "name": "4 Servitors",
+              "min_select": 4,
+              "max_select": 4,
+              "options": [
+                {
+                  "id": "aa0e-aa31-d253-7c03:54c6-2506-f109-dd",
+                  "name": "Servitor with servo-arm",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d0b3-ac83-269a-4623",
+                      "name": "Servo-arm",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "5+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa0e-aa31-d253-7c03:89c9-ccee-d41e-7489",
+                  "name": "Servitor with heavy bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "beeb-ce7d-c08a-2f6b",
+                      "name": "Heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Heavy, Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa0e-aa31-d253-7c03:51b4-7283-dda-f124",
+                  "name": "Servitor with multi-melta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "543e-7730-cfbd-b972",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Heavy, Melta 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa0e-aa31-d253-7c03:40ff-1eb6-2299-f733",
+                  "name": "Servitor with plasma cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8167-f21b-fd1e-c595",
+                      "name": "➤ Plasma cannon - standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast, Heavy"
+                    },
+                    {
+                      "profile_id": "788-1910-4e77-6a62",
+                      "name": "➤ Plasma cannon - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Blast, Hazardous, Heavy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "290c-4f4a-2c2d-a095",
+          "name": "Invulnerable Save (6+)",
+          "type": "Abilities",
+          "description": "This unit has a 6+ Invulnerable Save"
+        },
+        {
+          "id": "685-c0a5-139e-a916",
+          "name": "Mindlock",
+          "type": "Abilities",
+          "description": "While a BROTHERHOOD TECHMARINE model is leading this unit, improve the Ballistic Skill and Weapon Skill characteristics of ranged and melee weapons equipped by Servitor models in this unit by 1"
+        },
+        {
+          "id": "ae16-1ed-ea16-9713",
+          "name": "Retinue",
+          "type": "Abilities",
+          "description": "While a BROTHERHOOD TECHMARINE model is leading this unit, models in this unit have the Deep Strike and Teleport Assault abilities"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d81f-c9ac-e338-ba37",
+      "name": "Strike Squad",
+      "type": "unit",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Strike Squad",
+          "target_id": "103f-a8cd-8c1f-24df",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d81f-c9ac-e338-ba37",
+          "name": "Strike Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "38d6-858d-42f5-c38d",
+              "kind": "choice",
+              "name": "4-9 Grey Knights",
+              "min_select": 4,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "38d6-858d-42f5-c38d:b953-5c1a-5d31-192f",
+                  "name": "Grey Knight with Heavy Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "70d8-dc2d-387c-91ac",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e301-c532-9ade-1060",
+          "name": "Sanctifying Ritual (Psychic)",
+          "type": "Abilities",
+          "description": "If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under you control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 240,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "8989-2fd2-4d29-e795",
+      "name": "Grey Knights Thunderhawk Gunship",
+      "type": "model",
+      "points": 805,
+      "keywords": [
+        {
+          "name": "Grey Knights Thunderhawk Gunship",
+          "target_id": "f580-2968-19f3-1320",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8989-2fd2-4d29-e795",
+          "name": "Grey Knights Thunderhawk Gunship",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "5e35-1f8a-eeaf-145f",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5e35-1f8a-eeaf-145f:a62e-6c83-e169-20ec",
+                  "name": "Lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fdc6-4762-3739-adb6",
+                      "name": "Lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "dae-a965-1e6d-d79a",
+          "name": "Damaged: 1-10 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "86b2-1076-cbe6-c46b",
+          "name": "Aerial Assault",
+          "type": "Abilities",
+          "description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn"
+        },
+        {
+          "id": "66fc-3811-9adc-d285",
+          "name": "Thunderhawk Cluster Bombs",
+          "type": "Abilities",
+          "description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+        }
+      ],
+      "transport": [
+        {
+          "id": "9978-7aa5-9a2c-6eb5",
+          "name": "Grey Knights Thunderhawk Gunship",
+          "capacity": "This model has a transport capacity of 30 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "69d-a656-fde3-6c3e",
+      "name": "Land Raider Banisher",
+      "type": "model",
+      "points": 255,
+      "keywords": [
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Land Raider Banisher",
+          "target_id": "3741-4bcf-f67e-1942",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "69d-a656-fde3-6c3e",
+          "name": "Land Raider Banisher",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "0bd3-d668-c79c-9036",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "0bd3-d668-c79c-9036:88e0-4fa-8acc-7b7c",
+                  "name": "Twin psycannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bd0d-bf5-b1f7-108e",
+                      "name": "Twin psycannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Psychic, Sustained Hits 1, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a6c4-1b00-1dba-8808",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "4749-41d6-2cbd-4b70",
+          "name": "Assault Ramp",
+          "type": "Abilities",
+          "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        },
+        {
+          "id": "11a-f6f2-ef6e-1aed",
+          "name": "Land Raider Banisher",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 12 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "28d0-5a52-501a-441d",
+      "name": "Grey Knights Dreadnought [Legends]",
+      "type": "model",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Grey Knights Dreadnought [Legends]",
+          "target_id": "4c57-a2d1-fe45-4ec1",
+          "primary": false
+        },
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "28d0-5a52-501a-441d",
+          "name": "Grey Knights Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ddd3-a2ef-d91d-d153",
+          "name": "Wisdom of the Ancients (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Grey Knights Infantry unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "54f0-4b3f-3abe-081b",
+      "name": "Grey Knights Relic Razorback [Legends]",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Faction: Grey Knights",
+          "target_id": "d564-3284-bf44-b873",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grey Knights Relic Razorback [Legends]",
+          "target_id": "6ee2-b8d8-f50b-67e3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "54f0-4b3f-3abe-081b",
+          "name": "Grey Knights Relic Razorback [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8a33-f995-5228-9577",
+          "name": "Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll"
+        }
+      ],
+      "transport": [
+        {
+          "id": "3077-f5ae-54e0-d123",
+          "name": "Transport",
+          "capacity": "This model has a transport capacity of 6 Grey Knights Infantry models. It cannot transport Terminator models."
+        }
+      ],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "bcb7-c2a7-e7fb-3aae",
+      "name": "Teleport Strike Force"
+    },
+    {
+      "id": "ce9d-e896-d9bc-767c",
+      "name": "Warpbane Task Force"
+    }
+  ],
+  "enhancements": []
+}

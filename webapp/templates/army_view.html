@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}{{ army.name }} — Army{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('army_list') }}">← Back to armies</a></p>
+<h1>{{ army.name }} <span class="muted" style="font-size:1rem;">— {{ army.faction_name }}</span></h1>
+{% if army.notes %}<p class="muted">{{ army.notes }}</p>{% endif %}
+
+<div class="layout-split">
+  <div>
+    <div class="section">
+      <h2>Selected units — total <span style="color:#ffb84d">{{ total }} pts</span></h2>
+      {% if units %}
+        <div class="table-wrap">
+        <table class="compact">
+          <thead><tr><th>Unit / loadout</th><th>Pts</th><th>Qty</th><th class="right">Subtotal</th><th></th></tr></thead>
+          <tbody>
+            {% for u in units %}
+              <tr>
+                <td>
+                  <a href="{{ url_for('query_unit', datasheet_id=u.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ u.datasheet_name }}</a>
+                  {% if u.is_expanded %}
+                    <span class="badge" style="background:#1f3a5a; color:#cfe1ff; font-size:0.65rem;" title="{{ u.tier_label }}">expanded</span>
+                  {% endif %}
+                  {% if u.tier_label or u.loadout_summary %}
+                    <ul class="muted" style="margin:0.25rem 0 0; padding-left:1rem; font-size:0.8rem;">
+                      {% if u.tier_label %}
+                        <li>Size: <span style="color:#ffb84d">{{ u.tier_label }}</span></li>
+                      {% endif %}
+                      {% for s in u.loadout_summary %}
+                        <li>{{ s.model_name }} · {{ s.slot_name }}: <span style="color:#ffb84d">{{ s.option_name }}</span></li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </td>
+                <td>
+                  {{ u.effective_points if u.effective_points is not none else '-' }}
+                  {% if u.overridden %}
+                    <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ u.points if not u.is_expanded else u.tier_points }}">edit</span>
+                  {% endif %}
+                </td>
+                <td>×{{ u.count }}</td>
+                <td class="right">{{ (u.effective_points or 0) * u.count }}</td>
+                <td style="white-space:nowrap;">
+                  <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}" class="btn btn-ghost btn-small">Configure</a>
+                  <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
+                    <button type="submit" class="btn btn-ghost btn-small">Remove</button>
+                  </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        </div>
+      {% else %}
+        <p class="muted">Pick a unit from the list on the right to add it.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div>
+    <div class="section">
+      <h2>Available units</h2>
+      <form method="get" style="margin-bottom:0.6rem;">
+        <label>Filter by keyword:
+          <select name="keyword" onchange="this.form.submit()">
+            <option value="">All</option>
+            {% for k in faction_keywords %}
+              <option value="{{ k }}" {% if k == filter_keyword %}selected{% endif %}>{{ k }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        {% if filter_keyword %}<a href="{{ url_for('army_view', army_id=army.id) }}" class="btn btn-ghost btn-small">Clear</a>{% endif %}
+      </form>
+
+      {% if available %}
+        <div class="table-wrap">
+        <table class="compact">
+          <thead><tr><th>Unit</th><th>Pts</th><th></th></tr></thead>
+          <tbody>
+            {% for d in available %}
+              <tr>
+                <td><a href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a></td>
+                <td>
+                  {{ d.effective_points if d.effective_points is not none else '-' }}
+                  {% if d.overridden %}
+                    <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ d.points }}">edit</span>
+                  {% endif %}
+                </td>
+                <td>
+                  <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" style="display:inline">
+                    <input type="hidden" name="datasheet_id" value="{{ d.id }}">
+                    <input type="number" name="count" value="1" min="1" max="20" style="width:3.5rem;">
+                    <button type="submit" class="btn-small">+ Add</button>
+                  </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        </div>
+      {% else %}
+        <p class="muted">No units in this catalogue.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <form method="post" action="{{ url_for('army_delete', army_id=army.id) }}" onsubmit="return confirm('Delete the entire army?');">
+    <button type="submit" class="btn btn-ghost">Delete this army</button>
+  </form>
+</div>
+{% endblock %}

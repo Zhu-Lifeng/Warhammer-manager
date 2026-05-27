@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Home — WH40K 10e Platform{% endblock %}
+{% block body %}
+<h1>WH40K 10th Ed — Local Visualization Platform</h1>
+<p class="muted">Built on BSData community data (10.6.0). Three modules: <a href="{{ url_for('query_search') }}">Unit Search</a> · <a href="{{ url_for('army_list') }}">Army Builder</a> · <a href="{{ url_for('models_list') }}">My Models</a></p>
+
+<div class="cards">
+  <div class="card">
+    <h3>Data scale</h3>
+    <div class="stat">{{ n_units }}</div>
+    <div class="muted">datasheets</div>
+  </div>
+  <div class="card">
+    <h3>Factions / chapters</h3>
+    <div class="stat">{{ n_factions }}</div>
+    <div class="muted">catalogues available</div>
+  </div>
+  <div class="card">
+    <h3>My armies</h3>
+    <div class="stat">{{ n_armies }}</div>
+    <div class="muted"><a href="{{ url_for('army_new') }}">+ Create new</a></div>
+  </div>
+  <div class="card">
+    <h3>My models</h3>
+    <div class="stat">{{ n_models }}</div>
+    <div class="muted"><a href="{{ url_for('model_new') }}">+ Register one</a></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Usage tips</h2>
+  <ul>
+    <li><b>Search</b> — filter by faction, keyword (INFANTRY / CHARACTER / VEHICLE …), T/W/points range, weapon name in any combination.</li>
+    <li><b>Army builder</b> — pick a catalogue (faction data source), freely combine units from it, total points and size tiers update automatically.</li>
+    <li><b>My models</b> — each model is bound to a datasheet; supports paint status, notes, multiple image uploads, model-type and per-slot loadout choices.</li>
+  </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,3456 @@
+{
+  "id": "8106-aad2-918a-9ac",
+  "name": "Chaos - Chaos Knights Library",
+  "is_library": true,
+  "revision": "26",
+  "source_file": "Chaos - Chaos Knights Library.cat",
+  "categories": [
+    {
+      "id": "99dc-0f47-85e2-75da",
+      "name": "War Dog"
+    },
+    {
+      "id": "370b-1eb7-eac6-491c",
+      "name": "Executioner"
+    },
+    {
+      "id": "27fa-0f87-9be4-5db1",
+      "name": "Stalker"
+    },
+    {
+      "id": "7177-ef6b-50ae-82e2",
+      "name": "Karnivore"
+    },
+    {
+      "id": "8364-7dd6-fadc-a5d2",
+      "name": "Brigand"
+    },
+    {
+      "id": "f8a3-f5fa-4e85-cc47",
+      "name": "Huntsman"
+    },
+    {
+      "id": "f2d9-b5e8-4183-cb0b",
+      "name": "Abhorrent"
+    },
+    {
+      "id": "8eb7-f737-7228-1ba4",
+      "name": "Knight Despoiler"
+    },
+    {
+      "id": "552f-2667-65a7-f914",
+      "name": "Knight Tyrant"
+    },
+    {
+      "id": "7e37-1f00-4c53-1379",
+      "name": "Knight Desecrator"
+    },
+    {
+      "id": "d97b-d8fc-e1ac-0d8c",
+      "name": "Knight Rampager"
+    },
+    {
+      "id": "9d18-ceff-963a-cc29",
+      "name": "Knight Abominant"
+    },
+    {
+      "id": "4ba6-5e16-28e6-835a",
+      "name": "Acastus"
+    },
+    {
+      "id": "1ae4-6e5e-c5b3-37fa",
+      "name": "Knight Asterius"
+    },
+    {
+      "id": "ecea-92b8-f73b-4b95",
+      "name": "Knight Porphyrion"
+    },
+    {
+      "id": "b6d3-1a49-8a2a-b157",
+      "name": "Cerastus"
+    },
+    {
+      "id": "4aae-167f-1680-f405",
+      "name": "Knight Lancer"
+    },
+    {
+      "id": "2a12-3d53-7288-3c2b",
+      "name": "Knight Castigator"
+    },
+    {
+      "id": "584e-5840-20b0-1646",
+      "name": "Knight Acheron"
+    },
+    {
+      "id": "6a6d-8f73-3f79-59c9",
+      "name": "Knight Atrapos"
+    },
+    {
+      "id": "bacd-8441-eba2-f27",
+      "name": "Knight Magaera"
+    },
+    {
+      "id": "c220-ff0a-f567-33ec",
+      "name": "Knight Styrix"
+    },
+    {
+      "id": "47a1-f548-3346-b0df",
+      "name": "Moirax"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "8df0-fc3c-8ced-ffce",
+      "name": "War Dog Executioner",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Executioner",
+          "target_id": "370b-1eb7-eac6-491c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8df0-fc3c-8ced-ffce",
+          "name": "War Dog Executioner",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "7193-1dfe-7721-ecbd",
+              "kind": "fixed",
+              "name": "War Dog autocannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "7193-1dfe-7721-ecbd:7193-1dfe-7721-ecbd",
+                  "name": "War Dog autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ffca-811e-9ca8-4222",
+                      "name": "War Dog autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "df42-5d71-b03d-14d3",
+              "kind": "fixed",
+              "name": "Armoured feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "df42-5d71-b03d-14d3:6638-278a-5331-d1ff",
+                  "name": "Armoured feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "432a-109c-aeaa-84d2",
+                      "name": "Armoured feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7e36-46d2-4914-c4af",
+          "name": "Executioner",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a unit Below Half-strength, add 1 to the Hit roll."
+        },
+        {
+          "id": "1d7c-736f-d076-8966",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bbc6-c0ed-24e8-86b7",
+      "name": "War Dog Stalker",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Stalker",
+          "target_id": "27fa-0f87-9be4-5db1",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "bbc6-c0ed-24e8-86b7",
+          "name": "War Dog Stalker",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "56bf-6bad-83b7-3a78",
+          "name": "Stalker",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll."
+        },
+        {
+          "id": "84cb-de00-c868-b4e9",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e96b-ac98-7fd2-a155",
+      "name": "War Dog Karnivore",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Karnivore",
+          "target_id": "7177-ef6b-50ae-82e2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e96b-ac98-7fd2-a155",
+          "name": "War Dog Karnivore",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "1f2c-4f33-7df1-3df2",
+              "kind": "fixed",
+              "name": "Reaper chaintalon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "1f2c-4f33-7df1-3df2:34bd-d83f-3753-d642",
+                  "name": "Reaper chaintalon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cb63-4c38-2886-64ee",
+                      "name": "➤ Reaper chaintalon - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "28e3-9284-5a98-daa7",
+                      "name": "➤ Reaper chaintalon - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b6f6-7990-1e22-44d0",
+              "kind": "fixed",
+              "name": "Slaughterclaw",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b6f6-7990-1e22-44d0:c4a1-e0b1-20c1-7092",
+                  "name": "Slaughterclaw",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "509e-6a22-be2b-c499",
+                      "name": "Slaughterclaw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "dec4-f0af-5aee-9e79",
+          "name": "Karnivore",
+          "type": "Abilities",
+          "description": "You can re-roll Charge rolls made for this model."
+        },
+        {
+          "id": "7616-9c14-acc8-dd08",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "753d-4e02-eda3-4809",
+      "name": "War Dog Brigand",
+      "type": "model",
+      "points": 165,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Brigand",
+          "target_id": "8364-7dd6-fadc-a5d2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "753d-4e02-eda3-4809",
+          "name": "War Dog Brigand",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "8e53-240c-6aee-d942",
+              "kind": "fixed",
+              "name": "Daemonbreath spear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8e53-240c-6aee-d942:0b63-2988-ec78-7913",
+                  "name": "Daemonbreath spear",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cae9-9335-5429-9523",
+                      "name": "Daemonbreath spear",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cf74-09ac-84ee-31d8",
+              "kind": "fixed",
+              "name": "Avenger chaincannon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "cf74-09ac-84ee-31d8:a30d-6752-d912-315e",
+                  "name": "Avenger chaincannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2ba6-4ed1-9dbe-cece",
+                      "name": "Avenger chaincannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "151e-e8b6-67f1-ec9f",
+              "kind": "fixed",
+              "name": "Armoured feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "151e-e8b6-67f1-ec9f:6638-278a-5331-d1ff",
+                  "name": "Armoured feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "432a-109c-aeaa-84d2",
+                      "name": "Armoured feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "34ad-4a93-4309-03bd",
+          "name": "Brigand",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets the closest eligible enemy unit, improve the Armour Penetration characteristic of that attack by 1."
+        },
+        {
+          "id": "3b7b-2e72-7d21-e0d2",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6e6d-7950-ce6d-4cd4",
+      "name": "War Dog Huntsman",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Huntsman",
+          "target_id": "f8a3-f5fa-4e85-cc47",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6e6d-7950-ce6d-4cd4",
+          "name": "War Dog Huntsman",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "82fd-bd3c-02de-de75",
+              "kind": "fixed",
+              "name": "Daemonbreath spear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "82fd-bd3c-02de-de75:0b63-2988-ec78-7913",
+                  "name": "Daemonbreath spear",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cae9-9335-5429-9523",
+                      "name": "Daemonbreath spear",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bb34-3b2a-0479-6932",
+              "kind": "fixed",
+              "name": "Reaper chaintalon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "bb34-3b2a-0479-6932:34bd-d83f-3753-d642",
+                  "name": "Reaper chaintalon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cb63-4c38-2886-64ee",
+                      "name": "➤ Reaper chaintalon - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "28e3-9284-5a98-daa7",
+                      "name": "➤ Reaper chaintalon - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6e59-6cc9-5270-3482",
+          "name": "Huntsman",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack against a MONSTER or VEHICLE unit, re-roll a Wound roll of 1 and re-roll a Damage roll of 1."
+        },
+        {
+          "id": "ab12-2587-aec2-3a51",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "0119-8c04-435e-c782",
+      "name": "Knight Despoiler",
+      "type": "model",
+      "points": 400,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Knight Despoiler",
+          "target_id": "8eb7-f737-7228-1ba4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "0119-8c04-435e-c782",
+          "name": "Knight Despoiler",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "3f41-4b71-a07b-506a",
+              "kind": "fixed",
+              "name": "Titanic feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3f41-4b71-a07b-506a:3f41-4b71-a07b-506a",
+                  "name": "Titanic feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c9d8-2338-850e-45c6",
+                      "name": "Titanic feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a0e0-55f7-a696-ae65",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "246f-e1c4-6335-20d1",
+          "name": "Dread Dominion (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG is within 9\" of this model, each time that WAR DOG takes a Battle-shock test, add 1 to that test."
+        },
+        {
+          "id": "8d65-776a-67a4-e925",
+          "name": "Seething Hatred",
+          "type": "Abilities",
+          "description": "Each time this model is selected to shoot or fight, you can re-roll one Hit roll or you can re-roll one Wound roll when resolving those attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7a51-8f1f-7290-d9d2",
+      "name": "Knight Desecrator",
+      "type": "model",
+      "points": 400,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Knight Desecrator",
+          "target_id": "7e37-1f00-4c53-1379",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7a51-8f1f-7290-d9d2",
+          "name": "Knight Desecrator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "d6a1-5530-317a-4686",
+              "kind": "fixed",
+              "name": "Desecrator laser destructor",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d6a1-5530-317a-4686:d6a1-5530-317a-4686",
+                  "name": "Desecrator laser destructor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "54d1-9fb5-ea42-08c6",
+                      "name": "Desecrator laser destructor",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "18",
+                      "ap": "-4",
+                      "d": "D6+3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2b80-b811-01a8-1562",
+              "kind": "fixed",
+              "name": "Diabolus heavy stubber",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2b80-b811-01a8-1562:2b80-b811-01a8-1562",
+                  "name": "Diabolus heavy stubber",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ffc0-0726-99fb-fc11",
+                      "name": "Diabolus heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1167-4392-80a2-401e",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "fe14-c4c9-0210-2cd0",
+          "name": "Taskmaster (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 9\" of this model, each time that WAR DOG model makes a ranged attack, re-roll a Hit roll of 1."
+        },
+        {
+          "id": "dd85-4783-c495-ca01",
+          "name": "Obsessive Ruthlessness",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack against a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "61e0-e55b-1926-44df",
+      "name": "Knight Rampager",
+      "type": "model",
+      "points": 380,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Knight Rampager",
+          "target_id": "d97b-d8fc-e1ac-0d8c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "61e0-e55b-1926-44df",
+          "name": "Knight Rampager",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "e420-9e00-9c96-ce4a",
+              "kind": "fixed",
+              "name": "Reaper chainsword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e420-9e00-9c96-ce4a:e420-9e00-9c96-ce4a",
+                  "name": "Reaper chainsword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "815-bc92-c750-fde7",
+                      "name": "➤ Reaper chainsword - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "c9aa-1054-c816-8c79",
+                      "name": "➤ Reaper chainsword - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "18",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fe5b-e66a-4aa7-62e",
+              "kind": "fixed",
+              "name": "Warpstrike claw",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fe5b-e66a-4aa7-62e:fe5b-e66a-4aa7-62e",
+                  "name": "Warpstrike claw",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8a66-42f3-470-2067",
+                      "name": "➤ Warpstrike claw - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "5c72-6f33-e9c8-5d0f",
+                      "name": "➤ Warpstrike claw - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c49a-b329-1c9d-5a1b",
+              "kind": "fixed",
+              "name": "Diabolus heavy stubber",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c49a-b329-1c9d-5a1b:dfe8-cea0-8d16-db95",
+                  "name": "Diabolus heavy stubber",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a4fb-4101-1b27-d2db",
+                      "name": "Diabolus heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c2f6-d175-4cc9-dc7f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "0e4f-8cca-c666-dbf8",
+          "name": "Frenzied Rampage (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 9\" of this model, each time that WAR DOG model makes a melee attack, re-roll a Hit roll of 1."
+        },
+        {
+          "id": "eb59-fb5e-62ca-e829",
+          "name": "Bloodlust",
+          "type": "Abilities",
+          "description": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [SUSTAINED HITS 1] ability. In addition, once per battle, this model is eligible to declare a charge in a turn in which it Advanced."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a78d-828b-302b-1bec",
+      "name": "Knight Abominant",
+      "type": "model",
+      "points": 365,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Knight Abominant",
+          "target_id": "9d18-ceff-963a-cc29",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a78d-828b-302b-1bec",
+          "name": "Knight Abominant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "7f9d-c996-4304-d9ab",
+              "kind": "fixed",
+              "name": "Volkite combustor",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7f9d-c996-4304-d9ab:7f9d-c996-4304-d9ab",
+                  "name": "Volkite combustor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "19b7-9d13-3590-27dc",
+                      "name": "Volkite combustor",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "9",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "0",
+                      "d": "3",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f738-4e10-b894-f056",
+              "kind": "fixed",
+              "name": "Electroscourge",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f738-4e10-b894-f056:f738-4e10-b894-f056",
+                  "name": "Electroscourge",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "90db-08d8-a005-310e",
+                      "name": "Electroscourge",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "9",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bd23-9709-8dba-312e",
+              "kind": "fixed",
+              "name": "Balemace",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bd23-9709-8dba-312e:bd23-9709-8dba-312e",
+                  "name": "Balemace",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "76d6-265c-e9e8-cada",
+                      "name": "Balemace",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9de4-70d2-6508-ef37",
+              "kind": "fixed",
+              "name": "Diabolus heavy stubber",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9de4-70d2-6508-ef37:dfe8-cea0-8d16-db95",
+                  "name": "Diabolus heavy stubber",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a4fb-4101-1b27-d2db",
+                      "name": "Diabolus heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4e9b-b002-b008-6077",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "9552-ae5b-6be2-775d",
+          "name": "Vortex Terrors (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of your Shooting phase, select one enemy unit within 12\" of this model. That enemy unit must take a Battle-shock test."
+        },
+        {
+          "id": "cac0-b733-e4cf-d88e",
+          "name": "Warp Storms (Psychic)",
+          "type": "Abilities",
+          "description": "At the end of your Movement phase, roll one D6 for each enemy unit within 9\" of this model: on a 3+, that enemy unit suffers D3 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "87ea-c7bd-6df0-f056",
+      "name": "Knight Tyrant",
+      "type": "model",
+      "points": 480,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Knight Tyrant",
+          "target_id": "552f-2667-65a7-f914",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "87ea-c7bd-6df0-f056",
+          "name": "Knight Tyrant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "65a3-e04c-fa08-2a01",
+              "kind": "fixed",
+              "name": "Twin daemonbreath meltagun",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "65a3-e04c-fa08-2a01:65a3-e04c-fa08-2a01",
+                  "name": "Twin daemonbreath meltagun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "83a6-06f5-e131-7bca",
+                      "name": "Twin daemonbreath meltagun",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "52fe-84a1-27cf-c9ce",
+              "kind": "fixed",
+              "name": "Titanic feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "52fe-84a1-27cf-c9ce:52fe-84a1-27cf-c9ce",
+                  "name": "Titanic feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6e62-ed67-6e74-1fa2",
+                      "name": "Titanic feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "53aa-af3d-5b81-5df6",
+              "kind": "choice",
+              "name": "Main weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "53aa-af3d-5b81-5df6:0d51-1b09-1511-86e4",
+                  "name": "Brimstone volcano lance and ectoplasma decimator",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ac0-abd4-dd0c-686d",
+                      "name": "Brimstone volcano lance",
+                      "weapon_type": "Ranged",
+                      "range": "60\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-5",
+                      "d": "D6+8",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "d476-28a4-cb23-c7c4",
+                      "name": "Ectoplasma decimator - standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "8c11-0e26-88a7-d38d",
+                      "name": "Ectoplasma decimator - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "53aa-af3d-5b81-5df6:0d33-ceef-2c1f-e440",
+                  "name": "Darkflame cannon and warpshock harpoon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2d1d-031f-52c9-5773",
+                      "name": "Darkflame cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3D6",
+                      "bs_ws": "N/A",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Torrent, Ignores Cover"
+                    },
+                    {
+                      "profile_id": "2ebf-53ac-3034-47a1",
+                      "name": "Warpshock harpoon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "24",
+                      "ap": "-6",
+                      "d": "12",
+                      "keywords": "Anti-MONSTER 4+, Anti-VEHICLE 4+, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "87a6-3ff2-cea4-2c34",
+          "name": "Infernal Aegis (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 6\" of this model, that WAR DOG model has the Benefit of Cover."
+        },
+        {
+          "id": "fc0a-7d42-111d-44a3",
+          "name": "Bastion of Corruption",
+          "type": "Abilities",
+          "description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model."
+        },
+        {
+          "id": "f7fe-ed4a-bdc7-3f9",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e289-ad32-c78a-e055",
+      "name": "Chaos Acastus Knight Asterius",
+      "type": "model",
+      "points": 765,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Acastus",
+          "target_id": "4ba6-5e16-28e6-835a",
+          "primary": false
+        },
+        {
+          "name": "Knight Asterius",
+          "target_id": "1ae4-6e5e-c5b3-37fa",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e289-ad32-c78a-e055",
+          "name": "Chaos Acastus Knight Asterius",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "a895-55eb-d2ea-6b87",
+              "kind": "fixed",
+              "name": "Asterius volkite culverin",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "a895-55eb-d2ea-6b87:a895-55eb-d2ea-6b87",
+                  "name": "Asterius volkite culverin",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8ef2-44e8-d00c-ebe6",
+                      "name": "Asterius volkite culverin",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "506b-fe3c-9d9f-1d55",
+              "kind": "fixed",
+              "name": "Karacnos mortar battery",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "506b-fe3c-9d9f-1d55:506b-fe3c-9d9f-1d55",
+                  "name": "Karacnos mortar battery",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b377-6e1c-4b6d-2681",
+                      "name": "Karacnos mortar battery",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Anti-INFANTRY 2+, Blast, Ignores Cover, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1e7e-f373-3db1-a768",
+              "kind": "fixed",
+              "name": "Twin conversion beam cannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "1e7e-f373-3db1-a768:1e7e-f373-3db1-a768",
+                  "name": "Twin conversion beam cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7322-a1c5-255-ed8b",
+                      "name": "Twin conversion beam cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-2",
+                      "d": "6",
+                      "keywords": "Conversion, Twin-linked, Sustained Hits D3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f107-bee9-8aaa-8945",
+              "kind": "fixed",
+              "name": "Titanic feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f107-bee9-8aaa-8945:28a-8545-4104-4ffa",
+                  "name": "Titanic feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9ce8-7e93-8963-59e3",
+                      "name": "Titanic feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6a7a-a366-3b41-378c",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "a74b-9224-a762-2be2",
+          "name": "Sunderer of Fortresses",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristics of that attack by 1 (if that attack targets a FORTIFICATION, improve the Strength and Damage characteristics of that attack by 2 instead)."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fe77-6f85-5ddb-65bf",
+      "name": "Chaos Acastus Knight Porphyrion",
+      "type": "model",
+      "points": 700,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Acastus",
+          "target_id": "4ba6-5e16-28e6-835a",
+          "primary": false
+        },
+        {
+          "name": "Knight Porphyrion",
+          "target_id": "ecea-92b8-f73b-4b95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fe77-6f85-5ddb-65bf",
+          "name": "Chaos Acastus Knight Porphyrion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "ab22-ae06-7c8c-48c5",
+              "kind": "fixed",
+              "name": "Twin magna lascannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "ab22-ae06-7c8c-48c5:ab22-ae06-7c8c-48c5",
+                  "name": "Twin magna lascannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f407-c2ad-122e-228c",
+                      "name": "Twin magna lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "18",
+                      "ap": "-4",
+                      "d": "D6+6",
+                      "keywords": "Blast, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b24c-86fa-7e04-48a7",
+              "kind": "choice",
+              "name": "Shoulder weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "b24c-86fa-7e04-48a7:ba14-8cac-6b19-4318",
+                  "name": "Acastus autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cdca-553e-e7d3-8d78",
+                      "name": "Acastus autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "b24c-86fa-7e04-48a7:1561-195a-c202-2f45",
+                  "name": "Lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "dd25-aaba-f173-ab3a",
+                      "name": "Lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3a86-44ef-e8e8-b7a0",
+              "kind": "choice",
+              "name": "Carapace weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3a86-44ef-e8e8-b7a0:2bd3-2771-a737-adee",
+                  "name": "Acastus ironstorm missile pod",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4588-c0e0-6cd-ae7",
+                      "name": "Acastus ironstorm missile pod",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Heavy, Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "3a86-44ef-e8e8-b7a0:e5d0-2359-8a2a-3601",
+                  "name": "Helios defence missiles",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "998b-6509-2f9c-8f2d",
+                      "name": "Helios defence missiles",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Anti-FLY 2+, Heavy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dffa-b61a-4edc-4c24",
+              "kind": "fixed",
+              "name": "Titanic feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "dffa-b61a-4edc-4c24:28a-8545-4104-4ffa",
+                  "name": "Titanic feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9ce8-7e93-8963-59e3",
+                      "name": "Titanic feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "eb6a-d569-aa17-af1d",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "e9ae-3e4d-a77b-c5d2",
+          "name": "Bastion of Firepower",
+          "type": "Abilities",
+          "description": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4175-82c6-8e96-bef8",
+      "name": "Chaos Cerastus Knight Lancer",
+      "type": "model",
+      "points": 420,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "b6d3-1a49-8a2a-b157",
+          "primary": false
+        },
+        {
+          "name": "Knight Lancer",
+          "target_id": "4aae-167f-1680-f405",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4175-82c6-8e96-bef8",
+          "name": "Chaos Cerastus Knight Lancer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "545a-eead-e216-5939",
+              "kind": "fixed",
+              "name": "Cerastus shock lance",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "545a-eead-e216-5939:545a-eead-e216-5939",
+                  "name": "Cerastus shock lance",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8c6d-af66-a0aa-cea6",
+                      "name": "Cerastus shock lance",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Assault, Sustained Hits 2"
+                    },
+                    {
+                      "profile_id": "da4d-3a50-d9a6-bb1d",
+                      "name": "➤ Cerastus shock lance - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "Lance"
+                    },
+                    {
+                      "profile_id": "a0a8-3a3-bfce-777a",
+                      "name": "➤ Cerastus shock lance - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7a6d-3d1c-ae76-3455",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "5053-d4f1-9f6-a113",
+          "name": "Shock Charge",
+          "type": "Abilities",
+          "description": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+        },
+        {
+          "id": "d211-dc16-2bb6-90f7",
+          "name": "Dark Fervour (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [ASSAULT] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b6e5-911b-93f-476",
+      "name": "Chaos Cerastus Knight Castigator",
+      "type": "model",
+      "points": 445,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "b6d3-1a49-8a2a-b157",
+          "primary": false
+        },
+        {
+          "name": "Knight Castigator",
+          "target_id": "2a12-3d53-7288-3c2b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b6e5-911b-93f-476",
+          "name": "Chaos Cerastus Knight Castigator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "8860-55c6-5ee9-227b",
+              "kind": "fixed",
+              "name": "Castigator bolt cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8860-55c6-5ee9-227b:8860-55c6-5ee9-227b",
+                  "name": "Castigator bolt cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "94c3-ace-1f3c-87ee",
+                      "name": "Castigator bolt cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "18",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fb4f-9321-e4de-99da",
+              "kind": "fixed",
+              "name": "Tempest warblade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fb4f-9321-e4de-99da:fb4f-9321-e4de-99da",
+                  "name": "Tempest warblade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7ab9-95e4-95f3-6736",
+                      "name": "➤ Tempest warblade - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "e651-a733-cc20-c647",
+                      "name": "➤ Tempest warblade - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "84bf-4183-5e68-5768",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "8ee2-d7a7-c821-24fa",
+          "name": "Storm of Bolts",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "75f4-754b-632e-ccb7",
+          "name": "Offerings for the Dark Gods (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [SUSTAINED HITS 1] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ec6e-d1d6-f7c6-d008",
+      "name": "Chaos Cerastus Knight Acheron",
+      "type": "model",
+      "points": 420,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "b6d3-1a49-8a2a-b157",
+          "primary": false
+        },
+        {
+          "name": "Knight Acheron",
+          "target_id": "584e-5840-20b0-1646",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ec6e-d1d6-f7c6-d008",
+          "name": "Chaos Cerastus Knight Acheron",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "eab7-2fd-1641-4f4",
+              "kind": "fixed",
+              "name": "Acheron flame cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "eab7-2fd-1641-4f4:eab7-2fd-1641-4f4",
+                  "name": "Acheron flame cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a166-c3be-78c2-5dd9",
+                      "name": "Acheron flame cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6423-b7ff-a468-7e6a",
+              "kind": "fixed",
+              "name": "Twin heavy bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6423-b7ff-a468-7e6a:6423-b7ff-a468-7e6a",
+                  "name": "Twin heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a701-7b9a-ff40-af1f",
+                      "name": "Twin heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3_",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b4e0-25f1-54a4-4308",
+              "kind": "fixed",
+              "name": "Reaper chainfist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b4e0-25f1-54a4-4308:b4e0-25f1-54a4-4308",
+                  "name": "Reaper chainfist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1787-669c-9ba8-465f",
+                      "name": "➤ Reaper chainfist - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "59dc-5722-7844-79a6",
+                      "name": "➤ Reaper chainfist - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c10-a72e-ec49-7995",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "87e2-fd19-7923-c24",
+          "name": "Searing Flames",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+        },
+        {
+          "id": "fba5-f8cf-a268-d9d7",
+          "name": "Unrestrained Terror (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 6\" of this model, it is affected by this ability. At the start of the Fight phase, each enemy unit within Engagement Range of one or more WAR DOG units affected by this ability must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8b1d-9029-f9e1-42d9",
+      "name": "Chaos Cerastus Knight Atrapos",
+      "type": "model",
+      "points": 420,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Cerastus",
+          "target_id": "b6d3-1a49-8a2a-b157",
+          "primary": false
+        },
+        {
+          "name": "Knight Atrapos",
+          "target_id": "6a6d-8f73-3f79-59c9",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8b1d-9029-f9e1-42d9",
+          "name": "Chaos Cerastus Knight Atrapos",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "25",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "f57d-be6e-77e4-bfe3",
+              "kind": "fixed",
+              "name": "Atrapos lascutter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f57d-be6e-77e4-bfe3:f57d-be6e-77e4-bfe3",
+                  "name": "Atrapos lascutter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b582-f54d-7ba2-17b5",
+                      "name": "➤ Atrapos lascutter - low intensity",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "4e9-f5e5-9f32-520e",
+                      "name": "➤ Atrapos lascutter - low intensity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "1105-7920-ddf8-4cae",
+                      "name": "➤ Atrapos lascutter - high intensity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "2f08-1615-1fe4-5531",
+                      "name": "➤ Atrapos lascutter - high intensity",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7546-5742-581c-9e8b",
+              "kind": "fixed",
+              "name": "Graviton singularity cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7546-5742-581c-9e8b:7546-5742-581c-9e8b",
+                  "name": "Graviton singularity cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "458a-6dc-7607-2669",
+                      "name": "➤ Graviton singularity cannon - contained",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "6b03-8129-9435-adbb",
+                      "name": "➤ Graviton singularity cannon - singularity",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+1",
+                      "keywords": "Blast, Devastating Wounds, Hazardous"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f71c-3753-d130-cfe2",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "c0a2-6cfb-3e11-6316",
+          "name": "Macro-extinction Protocols",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING, add 1 to the Wound roll as well."
+        },
+        {
+          "id": "c43b-6529-75b4-457a",
+          "name": "Consumed with Hunger (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WAR DOG model is within 6\" of this model, each time that WAR DOG model makes an attack that targets a TITANIC or TOWERING unit, you can re-roll the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2d0e-5b83-b678-56dc",
+      "name": "Chaos Questoris Knight Magaera",
+      "type": "model",
+      "points": 435,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Knight Magaera",
+          "target_id": "bacd-8441-eba2-f27",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2d0e-5b83-b678-56dc",
+          "name": "Chaos Questoris Knight Magaera",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "7152-d126-5030-8aaa",
+              "kind": "fixed",
+              "name": "Lightning cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7152-d126-5030-8aaa:7152-d126-5030-8aaa",
+                  "name": "Lightning cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c59e-7343-2e7-6d7f",
+                      "name": "Lightning cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "49da-529d-d89f-71e3",
+              "kind": "fixed",
+              "name": "Phased plasma-fusil",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "49da-529d-d89f-71e3:49da-529d-d89f-71e3",
+                  "name": "Phased plasma-fusil",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dee7-d73f-44d4-9bda",
+                      "name": "Phased plasma-fusil",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ee33-43a7-5c5-dfe1",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ee33-43a7-5c5-dfe1:c4f1-17d8-3504-d457",
+                  "name": "Hekaton siege claw and twin rad cleanser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c53-7ad0-5caa-3ea6",
+                      "name": "➤ Hekaton siege claw - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "852d-d0b2-871f-59d7",
+                      "name": "➤ Hekaton siege claw - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "98ba-a2b8-b11-bfc5",
+                      "name": "Twin rad cleanser",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ca52-f026-f24-eed8",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "1174-f573-83eb-2521",
+          "name": "Repair Auto-simulacra",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, this model regains up to D3 lost wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "106c-4bdf-79a4-1c70",
+      "name": "Chaos Questoris Knight Styrix",
+      "type": "model",
+      "points": 430,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Abhorrent",
+          "target_id": "f2d9-b5e8-4183-cb0b",
+          "primary": false
+        },
+        {
+          "name": "Knight Styrix",
+          "target_id": "c220-ff0a-f567-33ec",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "106c-4bdf-79a4-1c70",
+          "name": "Chaos Questoris Knight Styrix",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "22",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "b2f6-fda6-d756-f8e4",
+              "kind": "fixed",
+              "name": "Graviton crusher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b2f6-fda6-d756-f8e4:b2f6-fda6-d756-f8e4",
+                  "name": "Graviton crusher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bbc9-ae78-78d3-a91b",
+                      "name": "Graviton crusher",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-VEHICLE 2+, Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bb21-f914-ecd0-f2b8",
+              "kind": "fixed",
+              "name": "Volkite chierovile",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bb21-f914-ecd0-f2b8:bb21-f914-ecd0-f2b8",
+                  "name": "Volkite chierovile",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2554-21b4-d8e0-1b20",
+                      "name": "Volkite chierovile",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "9",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "0",
+                      "d": "3",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7dc7-e65c-64c-fff3",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7dc7-e65c-64c-fff3:90c2-1fd3-9c30-9bd6",
+                  "name": "Hekaton siege claw and twin rad cleanser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7e38-7a9c-7d64-cd8",
+                      "name": "➤ Hekaton siege claw - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "19cc-6025-f8d6-b91",
+                      "name": "➤ Hekaton siege claw - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "2506-2225-4443-9c7f",
+                      "name": "Twin rad cleanser",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6a34-1ef2-5069-91c7",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "2f08-fd49-520d-c001",
+          "name": "Grav-pinned",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Advance and Charge rolls made for that unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ae7c-3679-a88-6895",
+      "name": "War Dog Moirax",
+      "type": "model",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Faction: Chaos Knights",
+          "target_id": "bb67-f191-6562-acc7",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "War Dog",
+          "target_id": "99dc-0f47-85e2-75da",
+          "primary": false
+        },
+        {
+          "name": "Moirax",
+          "target_id": "47a1-f548-3346-b0df",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ae7c-3679-a88-6895",
+          "name": "War Dog Moirax",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "f9a1-251a-ee9f-707f",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "f9a1-251a-ee9f-707f:82bb-5188-3701-a846",
+                  "name": "Volkite veuglaire",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2b0c-2aed-a612-c979",
+                      "name": "Volkite veuglaire",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "f9a1-251a-ee9f-707f:cf3a-bab9-317c-17d6",
+                  "name": "Conversion beam cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e57-c0ec-4b65-d00c",
+                      "name": "Conversion beam cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Conversion, Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "f9a1-251a-ee9f-707f:6721-d47f-74bf-6ffc",
+                  "name": "Graviton pulsar",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3558-5e50-322f-9ee6",
+                      "name": "Graviton pulsar",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-VEHICLE 2+, Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "f9a1-251a-ee9f-707f:3909-f5fb-f7d7-8f",
+                  "name": "Lightning lock",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "70e1-fd77-4d20-ef15",
+                      "name": "Lightning lock",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "f9a1-251a-ee9f-707f:e9ea-196b-4d4d-83b1",
+                  "name": "Siege claw and rad cleanser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "97aa-6682-f52e-376f",
+                      "name": "Siege claw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "5721-8708-9e4f-d38b",
+                      "name": "Siege claw and rad cleanser",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a67b-c001-46f-8ae3",
+              "kind": "fixed",
+              "name": "Armoured feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a67b-c001-46f-8ae3:6638-278a-5331-d1ff",
+                  "name": "Armoured feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "432a-109c-aeaa-84d2",
+                      "name": "Armoured feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9155-86e3-7298-9c35",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks."
+        },
+        {
+          "id": "5f6b-e13c-2fb2-fdf7",
+          "name": "Protection Protocols",
+          "type": "Abilities",
+          "description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem\nthis phase."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "603e-6bcd-927f-cb70",
+      "name": "Traitoris Lance"
+    },
+    {
+      "id": "7fe8-de91-8976-e705",
+      "name": "Iconoclast Fiefdom"
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "ffa9-e86a-6f79-c949",
+      "name": "Lord of Dread",
+      "points": 15,
+      "description": "CHAOS KNIGHTS model only. At the start of the Fight phase, you can select one enemy unit within Engagement Range of the bearer; that enemy unit must take a Battle-shock test."
+    },
+    {
+      "id": "e0b6-0e8d-ba3e-cfcf",
+      "name": "Profane Altar",
+      "points": 20,
+      "description": "Each time the bearer makes a Dark Sacrifice, the maximum number of models are destroyed in the selected DAMNED unit (i.e. 3 if the unit’s Leadership test is passed, or 6 if it is failed) but, until the end of the phase, the bearer’s weapons have both [LETHAL HITS] and [SUSTAINED HITS 1]."
+    },
+    {
+      "id": "d1ba-fbad-1b6b-3567",
+      "name": "The Traitor's Mark",
+      "points": 30,
+      "description": "CHAOS KNIGHTS model only. In your Movement phase, select one enemy unit within 12\" of the bearer. That enemy unit must take a Battle‑shock test."
+    },
+    {
+      "id": "6e61-530c-d0b5-486c",
+      "name": "Panoply of the Cursed Knights",
+      "points": 40,
+      "description": "CHAOS KNIGHTS model only. Each time an attack is made against the bearer, subtract 1 from the Armour Penetration  characteristic of that attack."
+    },
+    {
+      "id": "c186-769a-41a4-21d7",
+      "name": "Aura of Terror",
+      "points": 25,
+      "description": "CHAOS KNIGHTS model only. If you control an objective marker at the end of your Command phase, and the bearer is within range of that objective marker, that objective marker is said to be Tainted and remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase. In addition, while an objective marker is Tainted and under your control, that objective marker has the Despair Dread ability as if it was a CHAOS KNIGHTS model from your army (so subtract 1 from Battle-shock and Leadership tests taken for enemy units within 12\" of it)."
+    },
+    {
+      "id": "80fb-b674-d736-1ca7",
+      "name": "Pave The Way",
+      "points": 15,
+      "description": "At the start of the Declare Battle Formations step, you can select up to three DAMNED units from your army. The selected units have the Scouts 6\" ability."
+    },
+    {
+      "id": "654b-0d6d-9895-ab98",
+      "name": "Tyrant's Banner",
+      "points": 5,
+      "description": "Each time the bearer makes a Dark Sacrifice, select one visible friendly DAMNED unit to take a Leadership test instead of a friendly DAMNED unit within 6\"."
+    },
+    {
+      "id": "06cd-7848-7124-ca3c",
+      "name": "Diabolical Resilience",
+      "points": 35,
+      "description": "The bearer has the Feel No Pain 6+ ability and you can ignore any or all modifiers to its Move characteristic and/or to any Advance or Charge rolls made for it."
+    }
+  ]
+}

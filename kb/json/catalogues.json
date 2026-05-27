@@ -1,0 +1,407 @@
+[
+  {
+    "id": "dfcf-1214-b57-2205",
+    "name": "Aeldari - Aeldari Library",
+    "is_library": true,
+    "revision": "78",
+    "source_file": "Aeldari - Aeldari Library.cat",
+    "datasheet_count": 120,
+    "json_file": "by_catalogue/Aeldari_Aeldari_Library.json"
+  },
+  {
+    "id": "34a5-8c7e-f468-82d1",
+    "name": "Xenos - Aeldari",
+    "is_library": false,
+    "revision": "6",
+    "source_file": "Aeldari - Craftworlds.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Aeldari_Craftworlds.json"
+  },
+  {
+    "id": "38de-521f-1ce0-44a0",
+    "name": "Xenos - Drukhari",
+    "is_library": false,
+    "revision": "6",
+    "source_file": "Aeldari - Drukhari.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Aeldari_Drukhari.json"
+  },
+  {
+    "id": "1f1-47f9-a3a4-9bfb",
+    "name": "Aeldari - Ynnari",
+    "is_library": true,
+    "revision": "10",
+    "source_file": "Aeldari - Ynnari.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Aeldari_Ynnari.json"
+  },
+  {
+    "id": "b45c-af22-788a-dfd6",
+    "name": "Chaos - Daemons Library",
+    "is_library": true,
+    "revision": "46",
+    "source_file": "Chaos - Chaos Daemons Library.cat",
+    "datasheet_count": 68,
+    "json_file": "by_catalogue/Chaos_Chaos_Daemons_Library.json"
+  },
+  {
+    "id": "d265-877b-e03d-30ca",
+    "name": "Chaos - Chaos Daemons",
+    "is_library": false,
+    "revision": "8",
+    "source_file": "Chaos - Chaos Daemons.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Chaos_Chaos_Daemons.json"
+  },
+  {
+    "id": "8106-aad2-918a-9ac",
+    "name": "Chaos - Chaos Knights Library",
+    "is_library": true,
+    "revision": "26",
+    "source_file": "Chaos - Chaos Knights Library.cat",
+    "datasheet_count": 19,
+    "json_file": "by_catalogue/Chaos_Chaos_Knights_Library.json"
+  },
+  {
+    "id": "46d8-abc8-ef3a-9f85",
+    "name": "Chaos - Chaos Knights",
+    "is_library": false,
+    "revision": "7",
+    "source_file": "Chaos - Chaos Knights.cat",
+    "datasheet_count": 17,
+    "json_file": "by_catalogue/Chaos_Chaos_Knights.json"
+  },
+  {
+    "id": "c8da-e875-58f7-f6d6",
+    "name": "Chaos - Chaos Space Marines",
+    "is_library": false,
+    "revision": "90",
+    "source_file": "Chaos - Chaos Space Marines.cat",
+    "datasheet_count": 78,
+    "json_file": "by_catalogue/Chaos_Chaos_Space_Marines.json"
+  },
+  {
+    "id": "5108-f98-63c2-53cb",
+    "name": "Chaos - Death Guard",
+    "is_library": false,
+    "revision": "45",
+    "source_file": "Chaos - Death Guard.cat",
+    "datasheet_count": 39,
+    "json_file": "by_catalogue/Chaos_Death_Guard.json"
+  },
+  {
+    "id": "1069-10ff-3ba9-873b",
+    "name": "Chaos - Thousand Sons",
+    "is_library": false,
+    "revision": "40",
+    "source_file": "Chaos - Thousand Sons.cat",
+    "datasheet_count": 32,
+    "json_file": "by_catalogue/Chaos_Thousand_Sons.json"
+  },
+  {
+    "id": "880c-c7e-4a43-a0c1",
+    "name": "Chaos - Titanicus Traitoris",
+    "is_library": false,
+    "revision": "4",
+    "source_file": "Chaos - Titanicus Traitoris.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Chaos_Titanicus_Traitoris.json"
+  },
+  {
+    "id": "df9a-59b2-f464-59ad",
+    "name": "Chaos - World Eaters",
+    "is_library": false,
+    "revision": "39",
+    "source_file": "Chaos - World Eaters.cat",
+    "datasheet_count": 26,
+    "json_file": "by_catalogue/Chaos_World_Eaters.json"
+  },
+  {
+    "id": "3bdf-a114-5035-c6ac",
+    "name": "Xenos - Genestealer Cults",
+    "is_library": false,
+    "revision": "70",
+    "source_file": "Genestealer Cults.cat",
+    "datasheet_count": 25,
+    "json_file": "by_catalogue/Genestealer_Cults.json"
+  },
+  {
+    "id": "b39e-4401-8f3e-fdf7",
+    "name": "Imperium - Adepta Sororitas",
+    "is_library": false,
+    "revision": "54",
+    "source_file": "Imperium - Adepta Sororitas.cat",
+    "datasheet_count": 40,
+    "json_file": "by_catalogue/Imperium_Adepta_Sororitas.json"
+  },
+  {
+    "id": "1f19-6509-d906-ca10",
+    "name": "Imperium - Adeptus Custodes",
+    "is_library": false,
+    "revision": "57",
+    "source_file": "Imperium - Adeptus Custodes.cat",
+    "datasheet_count": 31,
+    "json_file": "by_catalogue/Imperium_Adeptus_Custodes.json"
+  },
+  {
+    "id": "77b9-2f66-3f9b-5cf3",
+    "name": "Imperium - Adeptus Mechanicus",
+    "is_library": false,
+    "revision": "59",
+    "source_file": "Imperium - Adeptus Mechanicus.cat",
+    "datasheet_count": 34,
+    "json_file": "by_catalogue/Imperium_Adeptus_Mechanicus.json"
+  },
+  {
+    "id": "bdc0-c0d-72d7-87e2",
+    "name": "Imperium - Adeptus Titanicus",
+    "is_library": false,
+    "revision": "3",
+    "source_file": "Imperium - Adeptus Titanicus.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Imperium_Adeptus_Titanicus.json"
+  },
+  {
+    "id": "b00-cd86-4b4c-97ba",
+    "name": "Imperium - Agents of the Imperium",
+    "is_library": false,
+    "revision": "62",
+    "source_file": "Imperium - Agents of the Imperium.cat",
+    "datasheet_count": 44,
+    "json_file": "by_catalogue/Imperium_Agents_of_the_Imperium.json"
+  },
+  {
+    "id": "5a44-f048-114b-e3ff",
+    "name": "Imperium - Astra Militarum - Library",
+    "is_library": true,
+    "revision": "114",
+    "source_file": "Imperium - Astra Militarum - Library.cat",
+    "datasheet_count": 136,
+    "json_file": "by_catalogue/Imperium_Astra_Militarum_Library.json"
+  },
+  {
+    "id": "b0ae-12a5-c84-ea45",
+    "name": "Imperium - Astra Militarum",
+    "is_library": false,
+    "revision": "18",
+    "source_file": "Imperium - Astra Militarum.cat",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Imperium_Astra_Militarum.json"
+  },
+  {
+    "id": "36d3-36bc-68dd-40ac",
+    "name": "Imperium - Adeptus Astartes - Black Templars",
+    "is_library": false,
+    "revision": "28",
+    "source_file": "Imperium - Black Templars.cat",
+    "datasheet_count": 14,
+    "json_file": "by_catalogue/Imperium_Black_Templars.json"
+  },
+  {
+    "id": "4ef9-15ce-e3e6-36de",
+    "name": "Imperium - Adeptus Astartes - Blood Angels",
+    "is_library": false,
+    "revision": "42",
+    "source_file": "Imperium - Blood Angels.cat",
+    "datasheet_count": 27,
+    "json_file": "by_catalogue/Imperium_Blood_Angels.json"
+  },
+  {
+    "id": "470a-6daa-9014-12df",
+    "name": "Imperium - Adeptus Astartes - Dark Angels",
+    "is_library": false,
+    "revision": "38",
+    "source_file": "Imperium - Dark Angels.cat",
+    "datasheet_count": 19,
+    "json_file": "by_catalogue/Imperium_Dark_Angels.json"
+  },
+  {
+    "id": "f89b-84e0-6e3b-f1e2",
+    "name": "Imperium - Adeptus Astartes - Deathwatch",
+    "is_library": false,
+    "revision": "42",
+    "source_file": "Imperium - Deathwatch.cat",
+    "datasheet_count": 10,
+    "json_file": "by_catalogue/Imperium_Deathwatch.json"
+  },
+  {
+    "id": "50c4-3e83-fe54-97c4",
+    "name": "Imperium - Grey Knights",
+    "is_library": false,
+    "revision": "48",
+    "source_file": "Imperium - Grey Knights.cat",
+    "datasheet_count": 32,
+    "json_file": "by_catalogue/Imperium_Grey_Knights.json"
+  },
+  {
+    "id": "5d6e-fd3-330a-11dd",
+    "name": "Imperium - Adeptus Astartes - Imperial Fists",
+    "is_library": false,
+    "revision": "9",
+    "source_file": "Imperium - Imperial Fists.cat",
+    "datasheet_count": 3,
+    "json_file": "by_catalogue/Imperium_Imperial_Fists.json"
+  },
+  {
+    "id": "1b6d-dc06-5db9-c7d1",
+    "name": "Imperium - Imperial Knights - Library",
+    "is_library": true,
+    "revision": "40",
+    "source_file": "Imperium - Imperial Knights - Library.cat",
+    "datasheet_count": 20,
+    "json_file": "by_catalogue/Imperium_Imperial_Knights_Library.json"
+  },
+  {
+    "id": "25dd-7aa0-6bf4-f2d5",
+    "name": "Imperium - Imperial Knights",
+    "is_library": false,
+    "revision": "9",
+    "source_file": "Imperium - Imperial Knights.cat",
+    "datasheet_count": 5,
+    "json_file": "by_catalogue/Imperium_Imperial_Knights.json"
+  },
+  {
+    "id": "f27e-18c0-b73e-748e",
+    "name": "Imperium - Adeptus Astartes - Iron Hands",
+    "is_library": false,
+    "revision": "8",
+    "source_file": "Imperium - Iron Hands.cat",
+    "datasheet_count": 1,
+    "json_file": "by_catalogue/Imperium_Iron_Hands.json"
+  },
+  {
+    "id": "6e59-e1ee-47ad-6ce5",
+    "name": "Imperium - Adeptus Astartes - Raven Guard",
+    "is_library": false,
+    "revision": "8",
+    "source_file": "Imperium - Raven Guard.cat",
+    "datasheet_count": 1,
+    "json_file": "by_catalogue/Imperium_Raven_Guard.json"
+  },
+  {
+    "id": "2261-79a5-19d9-1668",
+    "name": "Imperium - Adeptus Astartes - Salamanders",
+    "is_library": false,
+    "revision": "12",
+    "source_file": "Imperium - Salamanders.cat",
+    "datasheet_count": 2,
+    "json_file": "by_catalogue/Imperium_Salamanders.json"
+  },
+  {
+    "id": "e0af-67df-9d63-8fb7",
+    "name": "Imperium - Space Marines",
+    "is_library": false,
+    "revision": "98",
+    "source_file": "Imperium - Space Marines.cat",
+    "datasheet_count": 125,
+    "json_file": "by_catalogue/Imperium_Space_Marines.json"
+  },
+  {
+    "id": "94bb-3284-ee14-57a1",
+    "name": "Imperium - Adeptus Astartes - Space Wolves",
+    "is_library": false,
+    "revision": "34",
+    "source_file": "Imperium - Space Wolves.cat",
+    "datasheet_count": 36,
+    "json_file": "by_catalogue/Imperium_Space_Wolves.json"
+  },
+  {
+    "id": "4029-9237-e8db-af55",
+    "name": "Imperium - Adeptus Astartes - Ultramarines",
+    "is_library": false,
+    "revision": "28",
+    "source_file": "Imperium - Ultramarines.cat",
+    "datasheet_count": 11,
+    "json_file": "by_catalogue/Imperium_Ultramarines.json"
+  },
+  {
+    "id": "67c1-fc13-f9a1-cbbf",
+    "name": "Imperium - Adeptus Astartes - White Scars",
+    "is_library": false,
+    "revision": "10",
+    "source_file": "Imperium - White Scars.cat",
+    "datasheet_count": 1,
+    "json_file": "by_catalogue/Imperium_White_Scars.json"
+  },
+  {
+    "id": "f616-3f08-ee8e-3349",
+    "name": "Xenos - Leagues of Votann",
+    "is_library": false,
+    "revision": "29",
+    "source_file": "Leagues of Votann.cat",
+    "datasheet_count": 13,
+    "json_file": "by_catalogue/Leagues_of_Votann.json"
+  },
+  {
+    "id": "ac3b-689c-4ad4-70cb",
+    "name": "Library - Astartes Heresy Legends",
+    "is_library": true,
+    "revision": "7",
+    "source_file": "Library - Astartes Heresy Legends.cat",
+    "datasheet_count": 37,
+    "json_file": "by_catalogue/Library_Astartes_Heresy_Legends.json"
+  },
+  {
+    "id": "7481-280e-b55e-7867",
+    "name": "Library - Titans",
+    "is_library": true,
+    "revision": "3",
+    "source_file": "Library - Titans.cat",
+    "datasheet_count": 4,
+    "json_file": "by_catalogue/Library_Titans.json"
+  },
+  {
+    "id": "b654-a18a-ea1-3bf2",
+    "name": "Xenos - Necrons",
+    "is_library": false,
+    "revision": "56",
+    "source_file": "Necrons.cat",
+    "datasheet_count": 59,
+    "json_file": "by_catalogue/Necrons.json"
+  },
+  {
+    "id": "a55f-b7b3-6c65-a05f",
+    "name": "Xenos - Orks",
+    "is_library": false,
+    "revision": "92",
+    "source_file": "Orks.cat",
+    "datasheet_count": 93,
+    "json_file": "by_catalogue/Orks.json"
+  },
+  {
+    "id": "d81a-61dd-6d27-a3ce",
+    "name": "Xenos - T'au Empire",
+    "is_library": false,
+    "revision": "99",
+    "source_file": "T'au Empire.cat",
+    "datasheet_count": 62,
+    "json_file": "by_catalogue/T_au_Empire.json"
+  },
+  {
+    "id": "b984-7317-81cc-20f",
+    "name": "Xenos - Tyranids",
+    "is_library": false,
+    "revision": "81",
+    "source_file": "Tyranids.cat",
+    "datasheet_count": 54,
+    "json_file": "by_catalogue/Tyranids.json"
+  },
+  {
+    "id": "581a-46b9-5b86-44b7",
+    "name": "Unaligned Forces",
+    "is_library": true,
+    "revision": "10",
+    "source_file": "Unaligned Forces.cat",
+    "datasheet_count": 20,
+    "json_file": "by_catalogue/Unaligned_Forces.json"
+  },
+  {
+    "id": "sys-352e-adc2-7639-d6a9",
+    "name": "Warhammer 40,000 10th Edition",
+    "is_library": false,
+    "revision": "36",
+    "source_file": "Warhammer 40,000.gst",
+    "datasheet_count": 0,
+    "json_file": "by_catalogue/Warhammer_40_000.json"
+  }
+]

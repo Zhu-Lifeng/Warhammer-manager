@@ -1,0 +1,6445 @@
+{
+  "id": "b984-7317-81cc-20f",
+  "name": "Xenos - Tyranids",
+  "is_library": false,
+  "revision": "81",
+  "source_file": "Tyranids.cat",
+  "categories": [
+    {
+      "id": "4129-a453-686a-d38a",
+      "name": "Synapse"
+    },
+    {
+      "id": "4f10-fe01-4b80-8d6b",
+      "name": "Winged Hive Tyrant"
+    },
+    {
+      "id": "101a-751-2ee4-c46e",
+      "name": "Hive Tyrant"
+    },
+    {
+      "id": "dc7d-ba0f-e6e-8599",
+      "name": "The Swarmlord"
+    },
+    {
+      "id": "f75-65-2121-87b5",
+      "name": "Broodlord"
+    },
+    {
+      "id": "d5b9-2986-70fe-f755",
+      "name": "Winged Tyranid Prime"
+    },
+    {
+      "id": "d3d8-a902-1064-9f78",
+      "name": "Old One Eye"
+    },
+    {
+      "id": "d2fb-227e-99b7-6b4e",
+      "name": "Tervigon"
+    },
+    {
+      "id": "5c1a-a178-5951-d42",
+      "name": "Tyranid Warriors with Ranged Bio-weapons"
+    },
+    {
+      "id": "fb3c-c529-4e6c-2251",
+      "name": "Tyranid Warriors with Melee Bio-weapons"
+    },
+    {
+      "id": "c5eb-961b-14b1-ae50",
+      "name": "Endless Multitude"
+    },
+    {
+      "id": "b054-c3e8-d71d-1a7e",
+      "name": "Termagants"
+    },
+    {
+      "id": "2b2c-c30e-6d51-a4cc",
+      "name": "Hormagaunts"
+    },
+    {
+      "id": "9c11-60f5-4859-9099",
+      "name": "Gargoyles"
+    },
+    {
+      "id": "0a83-07b1-7b88-6a46",
+      "name": "Toxicrene"
+    },
+    {
+      "id": "9655-9e08-b63f-c29e",
+      "name": "Tyrant Guard"
+    },
+    {
+      "id": "2917-4769-ded1-a00c",
+      "name": "Neurotyrant"
+    },
+    {
+      "id": "1ff-bd00-eca8-bff7",
+      "name": "Lictor"
+    },
+    {
+      "id": "6467-972f-c95c-d414",
+      "name": "Deathleaper"
+    },
+    {
+      "id": "a132-e812-3392-f9ef",
+      "name": "Malceptor"
+    },
+    {
+      "id": "7420-596c-147a-5799",
+      "name": "Pyrovores"
+    },
+    {
+      "id": "aee4-5cb5-329b-bb3e",
+      "name": "Haruspex"
+    },
+    {
+      "id": "c84f-d7e4-d853-88f3",
+      "name": "Venomthropes"
+    },
+    {
+      "id": "cdd2-3183-20ad-6126",
+      "name": "Von Ryan's Leapers"
+    },
+    {
+      "id": "50be-2da9-b98b-2a55",
+      "name": "Neurogaunts"
+    },
+    {
+      "id": "7214-3728-6fad-2681",
+      "name": "Zoanthropes"
+    },
+    {
+      "id": "472-dea9-70ef-a8e4",
+      "name": "Ripper Swarm"
+    },
+    {
+      "id": "6646-3625-4f52-f47c",
+      "name": "Parasite of Mortrex"
+    },
+    {
+      "id": "c729-fe17-f963-16b2",
+      "name": "Mawloc"
+    },
+    {
+      "id": "c3a7-fdae-a434-6eff",
+      "name": "Trygon"
+    },
+    {
+      "id": "fda1-7891-2955-69e0",
+      "name": "Mucolid Spores"
+    },
+    {
+      "id": "51f8-b488-5f21-c390",
+      "name": "Spore Mines"
+    },
+    {
+      "id": "d52d-1fd6-4cbf-cba1",
+      "name": "Exocrine"
+    },
+    {
+      "id": "cf46-6271-340e-cf05",
+      "name": "Biovore"
+    },
+    {
+      "id": "2070-d263-505a-48cc",
+      "name": "Carnifexes"
+    },
+    {
+      "id": "d5ed-53bc-4ad3-85ba",
+      "name": "Screamer-killer"
+    },
+    {
+      "id": "156f-46c9-de79-247",
+      "name": "Hive Guard"
+    },
+    {
+      "id": "a97-e5ad-de9a-d5c6",
+      "name": "Tyrannofex"
+    },
+    {
+      "id": "6438-b712-55f4-c84c",
+      "name": "Tyrannocyte"
+    },
+    {
+      "id": "875d-4ae3-cc07-44c0",
+      "name": "Hive Crone"
+    },
+    {
+      "id": "cc05-aeb3-b2d6-3732",
+      "name": "Harpy"
+    },
+    {
+      "id": "37-442e-b3d4-98aa",
+      "name": "Sporocyst"
+    },
+    {
+      "id": "ad6-e3cd-6f94-3f77",
+      "name": "Psychophage"
+    },
+    {
+      "id": "a80e-ff32-72b3-9ba3",
+      "name": "Barbgaunts"
+    },
+    {
+      "id": "4c30-3dbf-b2b7-3a7",
+      "name": "Barbed Hierodule"
+    },
+    {
+      "id": "88c0-f898-8500-5639",
+      "name": "Scythed Hierodule"
+    },
+    {
+      "id": "7dcc-519b-45b-526b",
+      "name": "Harridan"
+    },
+    {
+      "id": "c34e-980-ae84-3ff7",
+      "name": "Hierophant"
+    },
+    {
+      "id": "64ce-d746-b778-34d8",
+      "name": "Genestealers"
+    },
+    {
+      "id": "1785-c8af-b343-a1a6",
+      "name": "Raveners"
+    },
+    {
+      "id": "1da8-4ebe-f196-6f46",
+      "name": "Dimachaeron"
+    },
+    {
+      "id": "617e-a830-65fe-7b64",
+      "name": "Sky-slasher Swarms"
+    },
+    {
+      "id": "a634-9edf-3a8-b3f1",
+      "name": "Malanthrope"
+    },
+    {
+      "id": "5ff0-d52d-e2b8-9de",
+      "name": "Vanguard Invader"
+    },
+    {
+      "id": "de12-e6b6-16c1-47b0",
+      "name": "Neurolictor"
+    },
+    {
+      "id": "50ee-d05c-da9c-eda2",
+      "name": "Norn Emissary"
+    },
+    {
+      "id": "2982-bf74-9aa7-a7a7",
+      "name": "Norn Assimilator"
+    },
+    {
+      "id": "8258-a58e-7cf0-a2c3",
+      "name": "Harvester"
+    },
+    {
+      "id": "e3d4-6430-ea62-8d6d",
+      "name": "Tyranid Warriors"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "fa68-fcb9-38c-cd0f",
+      "name": "Winged Hive Tyrant",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Winged Hive Tyrant",
+          "target_id": "4f10-fe01-4b80-8d6b",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        },
+        {
+          "name": "Hive Tyrant",
+          "target_id": "101a-751-2ee4-c46e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fa68-fcb9-38c-cd0f",
+          "name": "Winged Hive Tyrant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "c80c-048b-a074-27b5",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c80c-048b-a074-27b5:f65e-95a4-be9d-282f",
+                  "name": "Tyrant talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "84d0-f0bf-85c5-2266",
+                      "name": "Tyrant talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fee7-90a8-24a2-79ef",
+          "name": "Paroxysm (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, you can select one enemy unit within 12\" of and visible to this model and roll one D6: on a 1, this Psyker suffers D3 mortal wounds; on a 2+, until the end of the phase, subtract 1 from the Attacks characteristic of weapons equipped by models in that unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3e96-8098-3401-77af",
+      "name": "Hive Tyrant",
+      "type": "model",
+      "points": 225,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Hive Tyrant",
+          "target_id": "101a-751-2ee4-c46e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3e96-8098-3401-77af",
+          "name": "Hive Tyrant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c13f-316a-bbdf-74fd",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- TYRANT GUARD"
+        },
+        {
+          "id": "d038-2f3d-1c4a-a15",
+          "name": "Onslaught (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While a friendly TYRANIDS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [ASSAULT] and [LETHAL HITS] abilities."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "cd6d-87b3-125a-f372",
+      "name": "Tervigon",
+      "type": "model",
+      "points": 175,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Tervigon",
+          "target_id": "d2fb-227e-99b7-6b4e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "cd6d-87b3-125a-f372",
+          "name": "Tervigon",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "5"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3ae7-6f89-23de-3cca",
+          "name": "Spawn Termagants",
+          "type": "Abilities",
+          "description": "In your Command phase, you can select one friendly TERMAGANTS unit within 6\" of this model and return up to D3+3 destroyed TERMAGANT models to that unit. A TERMAGANTS unit cannot be selected for this ability more than once per phase."
+        },
+        {
+          "id": "7697-fdc6-4658-3f1c",
+          "name": "Brood Progenitor (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While a friendly TERMAGANTS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "13f7-1a3-eff-7393",
+      "name": "The Swarmlord",
+      "type": "model",
+      "points": 240,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "The Swarmlord",
+          "target_id": "dc7d-ba0f-e6e-8599",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Hive Tyrant",
+          "target_id": "101a-751-2ee4-c46e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "13f7-1a3-eff-7393",
+          "name": "The Swarmlord",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "1f5f-0dd9-929e-3555",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "1f5f-0dd9-929e-3555:7a17-4fb0-c0f5-e22",
+                  "name": "Bone Sabres",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "805b-1a65-6cb6-c4ed",
+                      "name": "Bone Sabres",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "1f5f-0dd9-929e-3555:a30-4bad-cef5-5e55",
+                  "name": "Synaptic Pulse",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8053-6497-fe27-f886",
+                      "name": "Synaptic Pulse",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Psychic, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ba65-9542-51dd-8200",
+          "name": "Hive Commander",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP"
+        },
+        {
+          "id": "4b18-f7de-620b-3b73",
+          "name": "Malign Presence (Aura)",
+          "type": "Abilities",
+          "description": "If this model is your Warlord, each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP."
+        },
+        {
+          "id": "b3b4-4208-4997-9506",
+          "name": "Domination of the Hive Mind (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly TYRANIDS unit is within 9\" of this model, that unit is within your army’s Synapse Range."
+        },
+        {
+          "id": "99ef-a339-35c2-ec3",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n■ TYRANT GUARD"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b86a-b38a-380c-483d",
+      "name": "Broodlord",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Broodlord",
+          "target_id": "f75-65-2121-87b5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b86a-b38a-380c-483d",
+          "name": "Broodlord",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "6",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e8c1-46cb-507f-3ddb",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e8c1-46cb-507f-3ddb:9aef-ce2-edd5-bfb4",
+                  "name": "Broodlord Claws and Talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6801-34d9-56f1-c07c",
+                      "name": "Broodlord Claws and Talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a5e1-ca7f-aaef-7fda",
+          "name": "Vicious Insight",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "75d5-d9e0-5f01-60bf",
+          "name": "Hypnotic Gaze (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "78d5-4fce-3f26-7817",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- GENESTEALERS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "507d-5ea4-6ef1-bf66",
+      "name": "Winged Tyranid Prime",
+      "type": "model",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Winged Tyranid Prime",
+          "target_id": "d5b9-2986-70fe-f755",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "507d-5ea4-6ef1-bf66",
+          "name": "Winged Tyranid Prime",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "6",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e2d6-8046-4b2f-2395",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e2d6-8046-4b2f-2395:db71-7634-2513-687c",
+                  "name": "Prime talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4433-3a45-4860-4896",
+                      "name": "Prime talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a4ec-5941-e494-6ed0",
+          "name": "Alpha Warrior",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+        },
+        {
+          "id": "5689-b058-225b-88d9",
+          "name": "Death Blow",
+          "type": "Abilities",
+          "description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "bdac-5b09-9843-5aed",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- GARGOYLES\n- TYRANID WARRIORS WITH MELEE BIO-WEAPONS\n- TYRANID WARRIORS WITH RANGED BIO-WEAPONS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9184-9ab6-9238-f558",
+      "name": "Old One Eye",
+      "type": "model",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Old One Eye",
+          "target_id": "d3d8-a902-1064-9f78",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9184-9ab6-9238-f558",
+          "name": "Old One Eye",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "9",
+            "ld": "8+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "f1fb-e2b5-7cde-8777",
+              "kind": "fixed",
+              "name": "Old One Eye’s claws and talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f1fb-e2b5-7cde-8777:f1fb-e2b5-7cde-8777",
+                  "name": "Old One Eye’s claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a13-aa24-d11d-a26e",
+                      "name": "➤ Old One Eye’s claws and talons - Strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "ef6b-9e3a-2362-9c88",
+                      "name": "➤ Old One Eye’s claws and talons - Sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3125-a7a9-2716-8a9f",
+          "name": "Alpha Leader",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+        },
+        {
+          "id": "2c91-cffe-25ce-bd74",
+          "name": "Unstoppable Monster",
+          "type": "Abilities",
+          "description": "At the start of each player’s Command phase, this model regains up to D3 lost wounds."
+        },
+        {
+          "id": "e546-54e1-550a-a1d9",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- CARNIFEXES"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a125-b6fb-2945-56a",
+      "name": "Tyranid Warriors with Ranged Bio-Weapons",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Tyranid Warriors with Ranged Bio-weapons",
+          "target_id": "5c1a-a178-5951-d42",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a125-b6fb-2945-56a",
+          "name": "Tyranid Warriors with Ranged Bio-Weapons",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "334d-297-9ce7-a555",
+          "name": "Adaptable Predators",
+          "type": "Abilities",
+          "description": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 130,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "5815-871c-9260-287a",
+      "name": "Tyranid Warriors with Melee Bio-Weapons",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Tyranid Warriors with Melee Bio-weapons",
+          "target_id": "fb3c-c529-4e6c-2251",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Tyranid Warriors",
+          "target_id": "e3d4-6430-ea62-8d6d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c72e-ae7c-a135-5ad",
+          "name": "Tyranid Prime",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "b35-3a56-6366-f7ff",
+              "kind": "fixed",
+              "name": "Tyranid Warrior claws and talons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b35-3a56-6366-f7ff:cce-e9cd-6bac-df4d",
+                  "name": "Tyranid Warrior claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e570-43e5-4d25-1262",
+                      "name": "Tyranid Warrior claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b06f-f43f-b770-da19",
+          "name": "Tyranid Warrior",
+          "min_count": 2,
+          "max_count": 5,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ebd5-18b7-cbbe-42e4",
+              "kind": "fixed",
+              "name": "Tyranid Warrior claws and talons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ebd5-18b7-cbbe-42e4:cce-e9cd-6bac-df4d",
+                  "name": "Tyranid Warrior claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e570-43e5-4d25-1262",
+                      "name": "Tyranid Warrior claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1be5-8ccf-3d43-2b32",
+          "name": "Adaptive Instincts",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, select one of the following:\n- Aggression Imperative: Until the end of the phase, each time a model in this unit makes a melee attack, re-roll a Hit roll of 1.\n- Bioregeneration: Until the end of the phase, each time a saving throw if made for a model in this unit, re-roll a saving throw of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "359c-db2c-681a-8d62",
+      "name": "Termagants",
+      "type": "unit",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Endless Multitude",
+          "target_id": "c5eb-961b-14b1-ae50",
+          "primary": false
+        },
+        {
+          "name": "Termagants",
+          "target_id": "b054-c3e8-d71d-1a7e",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "c28c-89a4-5758-10b7",
+          "name": "Skulking Horrors",
+          "type": "Abilities",
+          "description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6\"."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 120,
+          "condition_text": "> 10 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 10,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "f15b-9f9c-9bf0-8160",
+      "name": "Hormagaunts",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Endless Multitude",
+          "target_id": "c5eb-961b-14b1-ae50",
+          "primary": false
+        },
+        {
+          "name": "Hormagaunts",
+          "target_id": "2b2c-c30e-6d51-a4cc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8e0b-d72a-535a-996b",
+          "name": "Hormagaunts",
+          "min_count": 10,
+          "max_count": 20,
+          "stats": {
+            "m": "10\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "a661-6877-04db-c7e0",
+              "kind": "fixed",
+              "name": "Hormagaunt talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a661-6877-04db-c7e0:a661-6877-04db-c7e0",
+                  "name": "Hormagaunt talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "04cd-d08d-bbb9-4e5c",
+                      "name": "Hormagaunt talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4b14-20d3-145b-5ff8",
+          "name": "Bounding Leap",
+          "type": "Abilities",
+          "description": "This unit is eligible to declare a charge in a turn in which it Advanced."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 130,
+          "condition_text": "≥ 11 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 11,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9ce8-7a63-15c3-0347",
+      "name": "Gargoyles",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Gargoyles",
+          "target_id": "9c11-60f5-4859-9099",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Endless Multitude",
+          "target_id": "c5eb-961b-14b1-ae50",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "28f8-9249-bb94-4e30",
+          "name": "Gargoyles",
+          "min_count": 10,
+          "max_count": 20,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "a20f-00ab-689b-03d2",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "a20f-00ab-689b-03d2:d2fe-d8db-74c8-4e51",
+                  "name": "Blinding venom",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a6d6-0e98-847e-f85c",
+                      "name": "Blinding venom",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "a20f-00ab-689b-03d2:fce9-8c80-4731-4af6",
+                  "name": "Fleshborer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4639-581b-c704-f11e",
+                      "name": "Fleshborer",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c1f2-5d1a-e044-fba8",
+          "name": "Winged Swarm",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 170,
+          "condition_text": "> 10 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 10,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "30d0-521c-1d45-f57b",
+      "name": "Toxicrene",
+      "type": "model",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Toxicrene",
+          "target_id": "0a83-07b1-7b88-6a46",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "30d0-521c-1d45-f57b",
+          "name": "Toxicrene",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "11",
+            "sv": "3+",
+            "w": "14",
+            "ld": "8+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "b126-4346-3347-0a32",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b126-4346-3347-0a32:b702-ef60-5d60-bd40",
+                  "name": "Massive toxic lashes",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4062-e3f6-6f04-bf73",
+                      "name": "Massive toxic lashes",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-infantry 2+"
+                    },
+                    {
+                      "profile_id": "d25f-0272-1bc8-8ebd",
+                      "name": "Massive toxic lashes",
+                      "weapon_type": "Ranged",
+                      "range": "9\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-infantry 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "097a-e5ac-6ab9-4d1d",
+          "name": "Grasping Tendrils",
+          "type": "Abilities",
+          "description": "Each time an enemy unit (excluding Titanic units) within Engagement Range of one or more units from your army with this ability is selected to Fall Back, you can roll one D6: on a 3+, that enemy unit must Remain Stationary instead."
+        },
+        {
+          "id": "a599-0bf5-3022-ecc6",
+          "name": "Hypertoxic Miasma (Aura)",
+          "type": "Abilities",
+          "description": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1645-5407-92c8-1441",
+      "name": "Tyrant Guard",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Tyrant Guard",
+          "target_id": "9655-9e08-b63f-c29e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a827-afc9-ca29-b723",
+          "name": "Tyrant Guard",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "4",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e5a9-917b-142e-a188",
+              "kind": "choice",
+              "name": "Wargear Options",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e5a9-917b-142e-a188:72c5-1443-529a-59ad",
+                  "name": "Scything talons and rending claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f6b4-8462-fb38-4e2a",
+                      "name": "Scything talons and rending claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "e5a9-917b-142e-a188:a6ee-80cb-5346-3c2a",
+                  "name": "Bone cleaver, lash whip and rending claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b171-091a-3e1b-c0bb",
+                      "name": "Bone cleaver, lash whip and rending claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "e5a9-917b-142e-a188:9df1-6186-c28e-d432",
+                  "name": "Crushing claws and rending claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7460-28af-583b-86f6",
+                      "name": "Crushing claws and rending claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f47f-6b2a-77db-863e",
+          "name": "Guardian Organism",
+          "type": "Abilities",
+          "description": "While a CHARACTER model is leading this unit, that Character has the Feel No Pain 5+ ability"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "1ae1-ed96-5100-eda5",
+      "name": "Neurotyrant",
+      "type": "model",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Neurotyrant",
+          "target_id": "2917-4769-ded1-a00c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1ae1-ed96-5100-eda5",
+          "name": "Neurotyrant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "8",
+            "sv": "4+",
+            "w": "9",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "5047-9813-85c1-7f93",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5047-9813-85c1-7f93:dffc-982b-5793-3695",
+                  "name": "Neurotyrant claws and lashes",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6191-9a03-aeb7-85ab",
+                      "name": "Neurotyrant claws and lashes",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "5047-9813-85c1-7f93:4b19-26b8-1f71-2768",
+                  "name": "Psychic scream",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f1ff-ebef-ac02-b60b",
+                      "name": "Psychic scream",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Psychic, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3431-c2fc-bb66-b5f3",
+          "name": "Node Lash (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll. If the target is Battle-shocked, add 1 to the Wound roll as well."
+        },
+        {
+          "id": "0f27-7f4d-4bd3-43f1",
+          "name": "Psychic Terror (Psychic)",
+          "type": "Abilities",
+          "description": "If one or more Neurotyrants from your army are on the battlefield when you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result."
+        },
+        {
+          "id": "808e-ed23-9487-8b66",
+          "name": "Synaptic Relays",
+          "type": "Abilities",
+          "description": "In your Command phase, you can select up to two friendly Tyranids units within 18\" of this model’s unit. Until the start of your next Command phase, the selected units are always considered to be within Synapse Range of your army."
+        },
+        {
+          "id": "f6b2-d409-9b06-a66b",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- NEUROGAUNT\n- TYRANT GUARD\n- ZOANTHROPES"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "da44-72c9-7a27-48aa",
+      "name": "Lictor",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Lictor",
+          "target_id": "1ff-bd00-eca8-bff7",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "da44-72c9-7a27-48aa",
+          "name": "Lictor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "6",
+            "sv": "4+",
+            "w": "6",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5e16-936-6e44-955c",
+          "name": "Pheromone Trail",
+          "type": "Abilities",
+          "description": "Once per battle round, you can target one model with this ability with the Rapid Ingress Stratagem for 0CP."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bc36-92fe-ecc6-58b3",
+      "name": "Deathleaper",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Deathleaper",
+          "target_id": "6467-972f-c95c-d414",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bc36-92fe-ecc6-58b3",
+          "name": "Deathleaper",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "7",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "a0fb-e513-2877-7b1a",
+              "kind": "fixed",
+              "name": "Lictor claws and talons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "a0fb-e513-2877-7b1a:dc9f-b3bb-9b44-cb92",
+                  "name": "Lictor claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1c99-99eb-f966-66d4",
+                      "name": "Lictor claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5bd7-b7c-42a4-3055",
+          "name": "Fear of the Unseen (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test."
+        },
+        {
+          "id": "e3fa-da84-9809-3099",
+          "name": "Hunter Organism",
+          "type": "Abilities",
+          "description": "This model cannot be your Warlord"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2c2d-a2f9-61a8-a6c6",
+      "name": "Maleceptor",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Malceptor",
+          "target_id": "a132-e812-3392-f9ef",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2c2d-a2f9-61a8-a6c6",
+          "name": "Maleceptor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "11",
+            "sv": "3+",
+            "w": "14",
+            "ld": "7+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "67cc-62f6-e1a5-52b9",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "67cc-62f6-e1a5-52b9:4b96-d104-c37f-f697",
+                  "name": "Massive scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2fcd-a4a0-387-a542",
+                      "name": "➤ Massive scything talons - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "cc52-927c-8aac-e637",
+                      "name": "➤ Massive scything talons - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "67cc-62f6-e1a5-52b9:8124-9c22-8028-433c",
+                  "name": "Psychic overload",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "22aa-3a34-8d0-8463",
+                      "name": "Psychic overload",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Blast, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a372-8f4-cc33-ec1c",
+          "name": "Encephalic Diffusion (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, each time a model in that unit makes an attack, subtract 1 from the Hit roll, and, if that enemy unit is Below Half-strength, subtract 1 from the Wound roll as well."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d2c6-bd0b-3205-3319",
+      "name": "Pyrovores",
+      "type": "unit",
+      "points": 40,
+      "keywords": [
+        {
+          "name": "Pyrovores",
+          "target_id": "7420-596c-147a-5799",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Harvester",
+          "target_id": "8258-a58e-7cf0-a2c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c543-2551-1f2a-bcec",
+          "name": "Pyrovore",
+          "min_count": 1,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "5",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "68e6-6c48-4d98-7faa",
+              "kind": "fixed",
+              "name": "Flamespurt",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "68e6-6c48-4d98-7faa:68e6-6c48-4d98-7faa",
+                  "name": "Flamespurt",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "26fa-1896-4afd-c0ad",
+                      "name": "Flamespurt",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+1",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f240-f609-9abf-cf17",
+              "kind": "fixed",
+              "name": "Chitin-barbed limbs",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f240-f609-9abf-cf17:1fff-0a90-a8dd-28b5",
+                  "name": "Chitin-barbed limbs",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "092e-ed0a-fbf0-1891",
+                      "name": "Chitin-barbed limbs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f6a1-151a-9d0d-37d2",
+          "name": "Burning Spray",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 70,
+          "condition_text": "= 2 个模型",
+          "condition_type": "equalTo",
+          "condition_value": 2,
+          "target_name": "",
+          "scope_id": "model"
+        },
+        {
+          "points": 105,
+          "condition_text": "= 3 个模型",
+          "condition_type": "equalTo",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "6249-358f-27d7-ef60",
+      "name": "Haruspex",
+      "type": "model",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Haruspex",
+          "target_id": "aee4-5cb5-329b-bb3e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Harvester",
+          "target_id": "8258-a58e-7cf0-a2c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6249-358f-27d7-ef60",
+          "name": "Haruspex",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "11",
+            "sv": "3+",
+            "w": "14",
+            "ld": "8+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "ffe5-dca0-d7ed-14f0",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ffe5-dca0-d7ed-14f0:3bf9-a705-9145-dbb9",
+                  "name": "Grasping tongue",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1e44-6df5-7f11-6a24",
+                      "name": "Grasping tongue",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "Precision"
+                    }
+                  ]
+                },
+                {
+                  "id": "ffe5-dca0-d7ed-14f0:e240-8306-941-b848",
+                  "name": "Ravenous maw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ddd5-70eb-2592-b89d",
+                      "name": "Ravenous maw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "14",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "ffe5-dca0-d7ed-14f0:7a6c-1971-6ffb-70b5",
+                  "name": "Shovelling claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2ab5-e71c-ae6f-b47a",
+                      "name": "Shovelling claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bad8-3f0b-a255-140",
+          "name": "Grisly Spectacle",
+          "type": "Abilities",
+          "description": "Each time this model is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, each enemy unit within 6\" of this model must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b563-c6d3-d0e5-1b78",
+      "name": "Venomthropes",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Venomthropes",
+          "target_id": "c84f-d7e4-d853-88f3",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "748a-fa63-aef9-f2ce",
+          "name": "Venomthrope",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "3",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "32f5-1c15-ec16-130d",
+              "kind": "fixed",
+              "name": "Toxic lashes",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "32f5-1c15-ec16-130d:32f5-1c15-ec16-130d",
+                  "name": "Toxic lashes",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f0c2-ad6-68bc-deac",
+                      "name": "Toxic lashes",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a29d-56f5-8a83-57d0",
+          "name": "Foul Spores (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly TYRANIDS unit is within 6\" of this unit, each time a ranged attack targets that unit, models in that unit have the Benefit of Cover against that attack. In addition, while a friendly TYRANIDS unit (excluding MONSTERS) is within 6\" of this unit, models in that unit have the Stealth ability"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 140,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9bd8-ac8c-2d3b-79f6",
+      "name": "Von Ryan's Leapers",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Von Ryan's Leapers",
+          "target_id": "cdd2-3183-20ad-6126",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e439-47c1-afed-50c4",
+          "name": "Von Ryan's Leaper",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "10\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "3",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "9c0-44a0-4bf3-5e14",
+              "kind": "fixed",
+              "name": "Leaper's talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9c0-44a0-4bf3-5e14:9c0-44a0-4bf3-5e14",
+                  "name": "Leaper's talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "74d3-4e3e-f6f-229c",
+                      "name": "Leaper's talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8fab-3b8c-1342-cfed",
+          "name": "Pouncing Leap",
+          "type": "Abilities",
+          "description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 140,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "8ccc-3f27-7e4e-da81",
+      "name": "Neurogaunts",
+      "type": "unit",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Neurogaunts",
+          "target_id": "50be-2da9-b98b-2a55",
+          "primary": false
+        },
+        {
+          "name": "Endless Multitude",
+          "target_id": "c5eb-961b-14b1-ae50",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8488-2efe-825f-a403",
+          "name": "Neurogaunt Nodebeast",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d4c2-7942-62d1-d363",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d4c2-7942-62d1-d363:65d0-a5c5-919a-6444",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "91e1-805d-3ff3-dfb0",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a998-39ce-f312-129",
+          "name": "Neurogaunt",
+          "min_count": 10,
+          "max_count": 20,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3993-54b-9847-68a9",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "3993-54b-9847-68a9:65d0-a5c5-919a-6444",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "91e1-805d-3ff3-dfb0",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3a53-28b0-3c8e-6108",
+          "name": "Neurocytes",
+          "type": "Abilities",
+          "description": "While this unit is within Synapse Range of your army, it has the SYNAPSE keyword."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 90,
+          "condition_text": "> 11 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 11,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "b622-a22-a04f-6303",
+      "name": "Zoanthropes",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Zoanthropes",
+          "target_id": "7214-3728-6fad-2681",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f187-5924-8ec5-1c33",
+          "name": "Neurothrope",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "05ca-b84d-58da-8ca5",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "05ca-b84d-58da-8ca5:17d8-5d01-251a-db1a",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7fa8-d847-7497-3e8d",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "18ff-97a0-ea63-a7ba",
+              "kind": "fixed",
+              "name": "Warp blast",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "18ff-97a0-ea63-a7ba:817c-d737-2949-c4d8",
+                  "name": "Warp blast",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "446d-70d4-b5b0-72bd",
+                      "name": "➤ Warp blast - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Blast, Psychic"
+                    },
+                    {
+                      "profile_id": "ae02-36fa-3f0f-11d5",
+                      "name": "➤ Warp blast - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Lethal Hits, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7060-1133-6c23-c028",
+          "name": "Zoanthrope",
+          "min_count": 2,
+          "max_count": 5,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d20c-6991-a206-68e3",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d20c-6991-a206-68e3:17d8-5d01-251a-db1a",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7fa8-d847-7497-3e8d",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6245-571a-b34f-5b62",
+              "kind": "fixed",
+              "name": "Warp blast",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6245-571a-b34f-5b62:817c-d737-2949-c4d8",
+                  "name": "Warp blast",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "446d-70d4-b5b0-72bd",
+                      "name": "➤ Warp blast - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Blast, Psychic"
+                    },
+                    {
+                      "profile_id": "ae02-36fa-3f0f-11d5",
+                      "name": "➤ Warp blast - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Lethal Hits, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "36f5-a5b7-9e6-9f40",
+          "name": "Spirit Leech (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this unit, if it contains a Neurothrope, each time that enemy unit fails a Battle-shock test, it suffers D3 mortal wounds and one model in this unit regains up to D3 lost wounds."
+        },
+        {
+          "id": "6356-2345-a0cf-9555",
+          "name": "Warp Field (Aura, Psychic)",
+          "type": "Abilities",
+          "description": "While a friendly TYRANIDS unit is within 6\" of this unit, models in that unit have a 6+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 200,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "1de2-b57b-aa0a-1f0d",
+      "name": "Ripper Swarms",
+      "type": "unit",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Ripper Swarm",
+          "target_id": "472-dea9-70ef-a8e4",
+          "primary": false
+        },
+        {
+          "name": "Swarm",
+          "target_id": "b00b-5bae-444f-964e",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Harvester",
+          "target_id": "8258-a58e-7cf0-a2c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7242-c911-e611-551e",
+          "name": "Ripper Swarm",
+          "min_count": 1,
+          "max_count": 3,
+          "stats": {
+            "m": "6\"",
+            "t": "2",
+            "sv": "6+",
+            "w": "4",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "f5e3-ad89-8888-4bd4",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f5e3-ad89-8888-4bd4:f5e3-ad89-8888-4bd4",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "82ab-174c-7668-94",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "5+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cb7d-94a7-d02c-7aae",
+              "kind": "choice",
+              "name": "Spinemaw",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cb7d-94a7-d02c-7aae:3849-e3e0-4d2d-a259",
+                  "name": "Spinemaw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ab41-fe74-24c7-1b48",
+                      "name": "Spinemaw",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "4",
+                      "bs_ws": "5+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "533-9226-7e51-ee0",
+          "name": "Chitinous Horrors (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within Engagement Range of this unit, halve the Objective Control characteristic of models in that enemy unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 40,
+          "condition_text": "= 2 个模型",
+          "condition_type": "equalTo",
+          "condition_value": 2,
+          "target_name": "",
+          "scope_id": "model"
+        },
+        {
+          "points": 25,
+          "condition_text": "= 1 个模型",
+          "condition_type": "equalTo",
+          "condition_value": 1,
+          "target_name": "",
+          "scope_id": "model"
+        },
+        {
+          "points": 50,
+          "condition_text": "= 3 个模型",
+          "condition_type": "equalTo",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "d213-efd8-a2b4-42d2",
+      "name": "Parasite of Mortrex",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Parasite of Mortrex",
+          "target_id": "6646-3625-4f52-f47c",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d213-efd8-a2b4-42d2",
+          "name": "Parasite of Mortrex",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "5",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2f89-f83d-ba02-03ec",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2f89-f83d-ba02-03ec:7507-3bc1-f275-ea8c",
+                  "name": "Barbed ovipositor",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b266-1a27-3790-923b",
+                      "name": "Barbed ovipositor",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "3",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Anti-infantry 3+, Extra Attacks"
+                    }
+                  ]
+                },
+                {
+                  "id": "2f89-f83d-ba02-03ec:cc5-9a66-ab15-c652",
+                  "name": "Clawed limbs",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ba43-6e87-cdf9-9c3a",
+                      "name": "Clawed limbs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e63a-3205-566f-57d8",
+          "name": "Parasitic Infection",
+          "type": "Abilities",
+          "description": "Each time an INFANTRY model is destroyed by an attack made with this model’s barbed ovipositor, after this model has finished making its attacks, you can add one new RIPPER SWARMS unit to your army consisting of D3 models and set it up within 3\" of this model. If you do, that RIPPER SWARMS unit can be set up within Engagement Range of the destroyed model’s unit (but not within Engagement Range of any other enemy units)."
+        },
+        {
+          "id": "738b-7257-a0b0-6cda",
+          "name": "It Itches!",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. That enemy unit must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2bbb-d811-15f7-1a81",
+      "name": "Mawloc",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Mawloc",
+          "target_id": "c729-fe17-f963-16b2",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2bbb-d811-15f7-1a81",
+          "name": "Mawloc",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "8+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "5727-6e31-5a14-93c8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5727-6e31-5a14-93c8:4894-10b5-80f-264a",
+                  "name": "Distendible jaw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "77f-c6c2-7eb2-2499",
+                      "name": "Distendible jaw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "3",
+                      "keywords": "Anti-infantry 4+, Devastating Wounds, Extra Attacks"
+                    }
+                  ]
+                },
+                {
+                  "id": "5727-6e31-5a14-93c8:1559-94b3-7320-7aac",
+                  "name": "Mawloc scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "48dd-9bd0-ba5e-9fe0",
+                      "name": "Mawloc scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "16",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5b71-bc6f-68c5-a06a",
+          "name": "Terror from the Deep",
+          "type": "Abilities",
+          "description": "Each time this unit is set up on the battlefield using the Deep Strike ability, roll one D6 for each enemy unit within 12\" of this model: on a 2-4, that unit suffers D3 mortal wounds; on a 5+, that unit suffers 3 mortal wounds and must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "56db-d7c-b349-677f",
+      "name": "Trygon",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Trygon",
+          "target_id": "c3a7-fdae-a434-6eff",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "56db-d7c-b349-677f",
+          "name": "Trygon",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "8+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "9f03-2e94-3fba-6cb1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9f03-2e94-3fba-6cb1:e35-764a-e9e2-7f18",
+                  "name": "Bio-electric pulse",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5302-f4ac-62fb-6dcd",
+                      "name": "Bio-electric pulse",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "9f03-2e94-3fba-6cb1:267a-5d9e-9d76-668c",
+                  "name": "Trygon scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "67cc-622e-5cec-cb41",
+                      "name": "Trygon scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ca9b-8e0-47fa-32ed",
+          "name": "Subterranean Tunnels",
+          "type": "Abilities",
+          "description": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can use a subterranean tunnel. If it does, this model can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "707a-9de8-f75b-41c5",
+      "name": "Mucolid Spores",
+      "type": "unit",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Mucolid Spores",
+          "target_id": "fda1-7891-2955-69e0",
+          "primary": false
+        },
+        {
+          "name": "Beast",
+          "target_id": "4c3e-9310-a516-3590",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "65ba-c344-5752-c9c8",
+          "name": "Mucolid Spore",
+          "min_count": 1,
+          "max_count": 2,
+          "stats": {
+            "m": "4\"",
+            "t": "4",
+            "sv": "7+",
+            "w": "3",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c590-436d-4fd-ef26",
+      "name": "Spore Mines",
+      "type": "unit",
+      "points": 55,
+      "keywords": [
+        {
+          "name": "Spore Mines",
+          "target_id": "51f8-b488-5f21-c390",
+          "primary": false
+        },
+        {
+          "name": "Beast",
+          "target_id": "4c3e-9310-a516-3590",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "87c5-11aa-cc19-ea0c",
+          "name": "Spore Mine",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "4\"",
+            "t": "1",
+            "sv": "7+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6050-289d-eb2b-989a",
+          "name": "Floating Death",
+          "type": "Abilities",
+          "description": "Each time this unit or an enemy unit ends a move, for each model in this unit that is within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers 1 mortal wound; on a 6, that enemy unit suffers D3 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 110,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "bbfd-5b01-5bd3-a28b",
+      "name": "Exocrine",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Exocrine",
+          "target_id": "d52d-1fd6-4cbf-cba1",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bbfd-5b01-5bd3-a28b",
+          "name": "Exocrine",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "8+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "b131-1a1e-f4ca-2be1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b131-1a1e-f4ca-2be1:d8a9-d590-f7b2-2641",
+                  "name": "Bio-plasmic cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "40ef-55d3-bc9-5683",
+                      "name": "Bio-plasmic cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast, Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "b131-1a1e-f4ca-2be1:b01f-ec72-5e16-7143",
+                  "name": "Powerful limbs",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "652b-c68e-7028-5e62",
+                      "name": "Powerful limbs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e00d-271e-a667-e79f",
+          "name": "Symbiotic Targeting",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly TYRANIDS model makes an attack that targets that unit, re-roll a Hit roll of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3f2c-85ec-d83c-4a2f",
+      "name": "Biovores",
+      "type": "unit",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Biovore",
+          "target_id": "cf46-6271-340e-cf05",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "dd57-9c1f-d425-6711",
+          "name": "Biovore",
+          "min_count": 1,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "5",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "39f7-5f74-eed8-f03a",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "39f7-5f74-eed8-f03a:2d4b-61bd-f1f3-c32b",
+                  "name": "Spore mine launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "546-16e8-e8c5-24c8",
+                      "name": "Spore mine launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Devastating Wounds, Heavy, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "487e-7acf-a416-11a0",
+          "name": "Seed Spore Mines",
+          "type": "Abilities",
+          "description": "Once per turn, in your Shooting Phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with its ranged weapons. If it does, you can add one new SPORE MINES unit to your army and set it up anywhere on the battlefield that is wholly within 48\" of this unit and more than 9\" horizontally away from all enemy units. That SPORE MINES unit contains 1 model for each model in this unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9efd-5564-f0f5-21ea",
+      "name": "Carnifexes",
+      "type": "unit",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Carnifexes",
+          "target_id": "2070-d263-505a-48cc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "92a2-7511-1173-a696",
+          "name": "Carnifex",
+          "min_count": 1,
+          "max_count": 2,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "8+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "e20b-fe9a-bafc-94eb",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e20b-fe9a-bafc-94eb:4829-620d-abdf-1ac0",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5ec-2d5f-be85-c1d4",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c938-60e9-2b21-17fb",
+          "name": "Blistering Assault",
+          "type": "Abilities",
+          "description": "Each time an enemy unit is selected to shoot, after that unit has shot, if any models from this unit lost one or more wounds as a result of those attacks, this unit can make a Blistering Assault move. If it does, roll one D6, adding 2 to the result: each model in this unit can be moved a distance in inches up to the result, but this unit must finish that move as close as possible to the closest enemy unit. When doing so, those models can be moved within Engagement Range of that enemy unit. Each unit can only make one Blistering Assault move per phase."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8e53-d4a-a69f-e71d",
+      "name": "Screamer-killer",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Screamer-killer",
+          "target_id": "d5ed-53bc-4ad3-85ba",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8e53-d4a-a69f-e71d",
+          "name": "Screamer-killer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "10",
+            "ld": "8+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "7d21-8bb7-6acb-c15d",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7d21-8bb7-6acb-c15d:e02b-2fde-1ec3-28a1",
+                  "name": "Bio-plasmic scream",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8d0d-36cd-1ed0-fbb8",
+                      "name": "Bio-plasmic scream",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Assault, Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "7d21-8bb7-6acb-c15d:fee7-2e3-58da-53b6",
+                  "name": "Screamer-killer talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7492-4e75-30e6-8c14",
+                      "name": "Screamer-killer talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9989-4ee6-2244-2805",
+          "name": "Death Scream",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 from that test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ac7a-2560-c083-45b8",
+      "name": "Hive Guard",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Hive Guard",
+          "target_id": "156f-46c9-de79-247",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a5c7-5590-b4b6-88ea",
+          "name": "Hive Guard w/ shockcannon",
+          "min_count": null,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "4",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ceec-6d00-844a-4ab3",
+              "kind": "fixed",
+              "name": "Shockcannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ceec-6d00-844a-4ab3:ceec-6d00-844a-4ab3",
+                  "name": "Shockcannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "45f-9c9d-ae1-c93",
+                      "name": "Shockcannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Anti-Vehicle 2+"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f87a-2f63-ecac-f6d9",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f87a-2f63-ecac-f6d9:ec4e-9de3-f419-cf2a",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4cef-23d4-e266-6a8e",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "82a7-bcb5-bc33-2c1a",
+          "name": "Hive Guard w/ impaler cannon",
+          "min_count": null,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "4",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "491a-3dbd-e4c0-8d45",
+              "kind": "fixed",
+              "name": "Impaler cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "491a-3dbd-e4c0-8d45:491a-3dbd-e4c0-8d45",
+                  "name": "Impaler cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4296-8153-4146-2d5d",
+                      "name": "Impaler cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Heavy, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "87d6-494c-2688-acf2",
+              "kind": "fixed",
+              "name": "Chitinous claws and teeth",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "87d6-494c-2688-acf2:ec4e-9de3-f419-cf2a",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4cef-23d4-e266-6a8e",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a0c-34d4-cdc0-6e62",
+          "name": "Defensive Stance",
+          "type": "Abilities",
+          "description": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if this unit is within range of an objective marker that you control."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 200,
+          "condition_text": "≥ 4 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 4,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "1705-379b-330d-36d4",
+      "name": "Tyrannofex",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Tyrannofex",
+          "target_id": "a97-e5ad-de9a-d5c6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1705-379b-330d-36d4",
+          "name": "Tyrannofex",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "8+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "4161-f1f7-9e10-f1b1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4161-f1f7-9e10-f1b1:a87e-4f8-a6f7-15de",
+                  "name": "Powerful limbs",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bf87-80b8-ef8f-9514",
+                      "name": "Powerful limbs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9a87-bb69-19da-2528",
+          "name": "Resilient Organism",
+          "type": "Abilities",
+          "description": "Once per battle, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fada-677a-f6a4-cd12",
+      "name": "Tyrannocyte",
+      "type": "model",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Tyrannocyte",
+          "target_id": "6438-b712-55f4-c84c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fada-677a-f6a4-cd12",
+          "name": "Tyrannocyte",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "8+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "d1e2-bf6f-8c22-f7fb",
+              "kind": "fixed",
+              "name": "Tyrannocyte Bio-weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d1e2-bf6f-8c22-f7fb:d1e2-bf6f-8c22-f7fb",
+                  "name": "Tyrannocyte Bio-weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "97d8-b44e-edaf-2f93",
+                      "name": "Tyrannocyte Bio-weapons",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "5",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3748-a7ee-58fb-140e",
+              "kind": "fixed",
+              "name": "Flensing Whips",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3748-a7ee-58fb-140e:3748-a7ee-58fb-140e",
+                  "name": "Flensing Whips",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3751-5833-40ca-73b8",
+                      "name": "Flensing Whips",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ceb3-c557-c854-8883",
+          "name": "Aerial Seeding",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it."
+        }
+      ],
+      "transport": [
+        {
+          "id": "c21b-12cd-b9a6-4e19",
+          "name": "Tyrannocyte",
+          "capacity": "This model has a transport capacity of 20 TYRANIDS INFANTRY models, or 1 TYRANIDS MONSTER model with a Wounds characteristic of 12 or less. Each INFANTRY model with a Wounds characteristic of more than 1 takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "93aa-dd13-de9d-402b",
+      "name": "Hive Crone",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Hive Crone",
+          "target_id": "875d-4ae3-cc07-44c0",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "93aa-dd13-de9d-402b",
+          "name": "Hive Crone",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "12",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "1a28-55fd-9fb3-f36c",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "1a28-55fd-9fb3-f36c:6a88-a923-1bdc-52",
+                  "name": "Drool cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5be8-54a0-e5d0-3e7f",
+                      "name": "Drool cannon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "1a28-55fd-9fb3-f36c:aec6-60b3-14e1-f778",
+                  "name": "Tentaclids",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8089-203-7e0c-cea5",
+                      "name": "Tentaclids",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Anti-vehicle 4+, Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "1a28-55fd-9fb3-f36c:ac83-180d-b9e4-1f4d",
+                  "name": "Thorax spur",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f838-af93-4c1a-1c1a",
+                      "name": "Thorax spur",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Anti-fly 2+, Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "aaf-ca1a-79f3-94c3",
+          "name": "Airborne Predator",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c679-b06a-750b-e7f7",
+      "name": "Harpy",
+      "type": "model",
+      "points": 215,
+      "keywords": [
+        {
+          "name": "Harpy",
+          "target_id": "cc05-aeb3-b2d6-3732",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c679-b06a-750b-e7f7",
+          "name": "Harpy",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "12",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ad40-62a4-c6ff-6036",
+          "name": "Spore Mine Cysts",
+          "type": "Abilities",
+          "description": "Each time this model ends a Normal move, you can do one of the following:\n- Select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.\n- Add a new SPORE MINES unit containing D3 models to your army and set it up anywhere on the battlefield that is within 6\" of this model and more than 9\" horizontally away from all enemy units. You cannot select this option for more than one model per turn."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2cdd-3bf1-55e0-7641",
+      "name": "Sporocyst",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Sporocyst",
+          "target_id": "37-442e-b3d4-98aa",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2cdd-3bf1-55e0-7641",
+          "name": "Sporocyst",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "10",
+            "sv": "3+",
+            "w": "10",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "f314-63c5-1a8c-0031",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f314-63c5-1a8c-0031:12e6-c37b-5d71-7eaf",
+                  "name": "Flensing whips",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5683-1921-e10d-612",
+                      "name": "Flensing whips",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "f314-63c5-1a8c-0031:f341-b48f-4d59-8e51",
+                  "name": "Sporocyst bio-weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1be7-213b-cf9b-dbff",
+                      "name": "Sporocyst bio-weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "10",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Hive Defences"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1fbb-7493-b68-98a3",
+          "name": "Seed Mucolids",
+          "type": "Abilities",
+          "description": "Once per turn, in your shooting phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with it's ranged weapons. If it does, you can add one new MUCOLID SPORES containing 1 model to your army and set it up anywhere on the battlefield that is wholly within 18\" of this model and more than 9\" horizontally away from all enemy units."
+        },
+        {
+          "id": "d8c3-9917-c6c8-7b77",
+          "name": "Hive Defences",
+          "type": "Abilities",
+          "description": "You can target this model with the Fire Overwatch stratagem for 0CP, and can do so even if you have already targeted a different unit with that stratagem this turn. This model can only be targeted with that Stratagem once per turn"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b6ac-f091-a018-dab2",
+      "name": "Psychophage",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Psychophage",
+          "target_id": "ad6-e3cd-6f94-3f77",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Harvester",
+          "target_id": "8258-a58e-7cf0-a2c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b6ac-f091-a018-dab2",
+          "name": "Psychophage",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "8+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "c997-d7b8-8824-8240",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c997-d7b8-8824-8240:56f9-bb79-7be0-dbf2",
+                  "name": "Psycholastic torrent",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "208d-6af9-f50c-f4f2",
+                      "name": "Psycholastic torrent",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "c997-d7b8-8824-8240:9edf-e542-77fa-e4c2",
+                  "name": "Talons and betentacled maw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1e16-7665-679d-7462",
+                      "name": "Talons and betentacled maw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "D6+1",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-psyker 4+, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5171-dc2c-e7b0-2d4",
+          "name": "Bio-stimulus (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Tyranids unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability."
+        },
+        {
+          "id": "34b3-35ff-995a-560d",
+          "name": "Feeding Frenzy",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half strength, add 1 to the Wound roll as well."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6de-ccee-11b4-be3e",
+      "name": "Barbgaunts",
+      "type": "unit",
+      "points": 55,
+      "keywords": [
+        {
+          "name": "Barbgaunts",
+          "target_id": "a80e-ff32-72b3-9ba3",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f7c9-d70f-96b5-b5e9",
+          "name": "Barbgaunt",
+          "min_count": 5,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "fff2-8891-5793-2c14",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "fff2-8891-5793-2c14:ca62-b3d7-75d-82fc",
+                  "name": "Barblauncher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b6d3-ee60-19f1-2405",
+                      "name": "Barblauncher",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "fff2-8891-5793-2c14:1829-f7ce-8e8f-20be",
+                  "name": "Chitinous claws and teeth",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "66bb-a883-6588-9477",
+                      "name": "Chitinous claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1c11-4ca1-8dae-1971",
+          "name": "Disruption Bombardment",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, select one enemy INFANTRY unit hit by one or more of those attacks. Until the end of your opponent’s next turn, that enemy unit is disrupted. While a unit is disrupted, subtract 2 from its Move characteristic, and subtract 2 from Advance and Charge rolls made for it."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 110,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "afd0-a0ca-68c3-d912",
+      "name": "Barbed Hierodule [Legends]",
+      "type": "model",
+      "points": 340,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Barbed Hierodule",
+          "target_id": "4c30-3dbf-b2b7-3a7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "afd0-a0ca-68c3-d912",
+          "name": "Barbed Hierodule [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "8+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "46d4-7d73-9670-faea",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "46d4-7d73-9670-faea:ede9-d3c1-fdbd-1483",
+                  "name": "Bio-cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "581d-3649-e097-b6e5",
+                      "name": "Bio-cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "46d4-7d73-9670-faea:ae36-f62b-6df6-edac",
+                  "name": "Hierodule scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "18f4-4462-750-11fb",
+                      "name": "Hierodule scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D3+3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a1bc-d961-dde5-52c4",
+          "name": "Overgrown Barbs",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Titanic units) that was hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "218c-639e-22e0-59ce",
+      "name": "Scythed Hierodule [Legends]",
+      "type": "model",
+      "points": 330,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Scythed Hierodule",
+          "target_id": "88c0-f898-8500-5639",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "218c-639e-22e0-59ce",
+          "name": "Scythed Hierodule [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "8+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "e3a5-cfcc-e0e5-9377",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e3a5-cfcc-e0e5-9377:5b9d-94da-8fcb-16d1",
+                  "name": "Bio-acid spray",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6125-bd5f-4e70-554e",
+                      "name": "Bio-acid spray",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "e3a5-cfcc-e0e5-9377:fd4c-4550-3b90-4608",
+                  "name": "Hierodule scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "956e-76a1-b1ce-4526",
+                      "name": "Hierodule scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D3+3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4510-7130-a4d1-7da2",
+          "name": "Irresistible Force",
+          "type": "Abilities",
+          "description": "This model is eligible to declare a charge in a turn in which it Fell Back."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9b5c-3b5a-1f80-9a74",
+      "name": "Harridan",
+      "type": "model",
+      "points": 610,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Harridan",
+          "target_id": "7dcc-519b-45b-526b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9b5c-3b5a-1f80-9a74",
+          "name": "Harridan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "30",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "8654-c0fe-6078-edf0",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8654-c0fe-6078-edf0:bec7-6187-c720-9d70",
+                  "name": "Dire bio-cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fbb-c2d0-d589-6f5",
+                      "name": "Dire bio-cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+6",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "8654-c0fe-6078-edf0:aca-e888-a5af-389e",
+                  "name": "Gargantuan scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3f65-cba6-88b4-5ca",
+                      "name": "Gargantuan scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6db6-76da-f8c0-7bfb",
+          "name": "Damaged: 1-10 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "ffbc-add5-8823-38f1",
+          "name": "Frenzied Metabolism",
+          "type": "Abilities",
+          "description": "Each time this model is selected to shoot, you can use this ability. If you do, until the end of the phase, each time this model makes an attack, add 1 to the Wound roll. After resolving those attacks, roll one D6: on a 2+, this model suffers D3 mortal wounds."
+        }
+      ],
+      "transport": [
+        {
+          "id": "f7ae-d1e5-c7e4-386f",
+          "name": "Harridan",
+          "capacity": "This model has a transport capacity of 20 GARGOYLES models and 1 WINGED TYRANID PRIME model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fbc0-3a2b-1d7d-23d9",
+      "name": "Hierophant",
+      "type": "model",
+      "points": 810,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Hierophant",
+          "target_id": "c34e-980-ae84-3ff7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fbc0-3a2b-1d7d-23d9",
+          "name": "Hierophant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "14",
+            "sv": "2+",
+            "w": "30",
+            "ld": "8+",
+            "oc": "12"
+          },
+          "loadout": [
+            {
+              "id": "5188-9813-6123-44d3",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5188-9813-6123-44d3:56dc-ab08-2e4f-2c38",
+                  "name": "Bio-plasma torrent",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "db9f-40a6-82da-befd",
+                      "name": "Bio-plasma torrent",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "3D6",
+                      "bs_ws": "N/A",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Assault, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "5188-9813-6123-44d3:344c-f9e4-3661-6315",
+                  "name": "Dire bio-cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6141-7651-2d71-6f22",
+                      "name": "Dire bio-cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+6",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "5188-9813-6123-44d3:733f-4e53-5615-d1a9",
+                  "name": "Lashwhip pods",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "43ad-d7e-d788-e5bf",
+                      "name": "Lashwhip pods",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                },
+                {
+                  "id": "5188-9813-6123-44d3:acb7-b003-2b0d-1d2",
+                  "name": "Titanic scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "728d-c54f-c1c4-2b3c",
+                      "name": "Titanic scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e1fc-f768-9ec6-be50",
+          "name": "Damaged: 1-10 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "cda-47a4-2046-4c2c",
+          "name": "Apex-beast",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a unit that is Battle-shocked, add 1 to the Hit roll."
+        },
+        {
+          "id": "9746-a65-6ca-1ead",
+          "name": "Stalking Forward",
+          "type": "Abilities",
+          "description": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there."
+        }
+      ],
+      "transport": [
+        {
+          "id": "eff-a90a-8077-bb0d",
+          "name": "Hierophant",
+          "capacity": "This model has a transport capacity of 20 TYRANIDS INFANTRY models. Each model with a Wounds characteristic of more than 1 takes up the space of 3 models. This model cannot transport models that can FLY."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "853e-48b8-4cc5-3704",
+      "name": "Genestealers",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Genestealers",
+          "target_id": "64ce-d746-b778-34d8",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "714f-4383-3e36-f861",
+          "name": "Genestealer",
+          "min_count": 5,
+          "max_count": 10,
+          "stats": {
+            "m": "8\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d61a-921a-7e77-4c1c",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d61a-921a-7e77-4c1c:cb6a-cdcf-23b3-d0f8",
+                  "name": "Genestealers claws and talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "53b5-899c-4c1e-53a3",
+                      "name": "Genestealers claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "96f0-f77f-527d-7554",
+          "name": "Vanguard Predator",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target is within range of one or more objective markers, re-roll a Wound roll 1 as well."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "3f5-f7d6-1ce8-e6b9",
+      "name": "Raveners",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Raveners",
+          "target_id": "1785-c8af-b343-a1a6",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "79c8-bd29-5655-57c7",
+          "name": "Ravener",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "10\"",
+            "t": "5",
+            "sv": "5+",
+            "w": "3",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ad4d-e5d1-8ffb-da22",
+              "kind": "fixed",
+              "name": "Ravener claws and talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ad4d-e5d1-8ffb-da22:ad4d-e5d1-8ffb-da22",
+                  "name": "Ravener claws and talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2154-199f-cf6e-a6bb",
+                      "name": "Ravener claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "7",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bdae-eb3c-eabc-8b6e",
+              "kind": "choice",
+              "name": "Thoracic Bio-weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bdae-eb3c-eabc-8b6e:f172-9c1d-1619-ecd5",
+                  "name": "Thoracic bio-weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8c6-7839-21c1-8a95",
+                      "name": "Thoracic bio-weapon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e078-a1cc-7896-7443",
+          "name": "Death From Below",
+          "type": "Abilities",
+          "description": "At the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+        },
+        {
+          "id": "9471-6aaa-1e10-2894",
+          "name": "Armoured thorax",
+          "type": "Abilities",
+          "description": "The bearer has a save characteristic of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "≥ 4 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 4,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "78ca-3743-c254-4404",
+      "name": "Dimachaeron [Legends]",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Dimachaeron",
+          "target_id": "1da8-4ebe-f196-6f46",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "78ca-3743-c254-4404",
+          "name": "Dimachaeron [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "5626-da26-d75a-27c8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5626-da26-d75a-27c8:53c7-e0f7-810f-91fd",
+                  "name": "Massive scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "37c7-f6d8-bc0e-bcb9",
+                      "name": "Massive scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "3",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a205-6bf5-658a-a9c6",
+          "name": "Digestion Spine",
+          "type": "Abilities",
+          "description": "Each time this model fights, after it has resolved its attacks, if one or more enemy models (excluding Vehicle models) were destroyed as the result of those attacks, this model regains up to D3 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f46f-9d2b-1f97-aaf6",
+      "name": "Sky-slasher Swarms [Legends]",
+      "type": "unit",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Swarm",
+          "target_id": "b00b-5bae-444f-964e",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Sky-slasher Swarms",
+          "target_id": "617e-a830-65fe-7b64",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f46f-9d2b-1f97-aaf6",
+          "name": "Sky-slasher Swarms [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "2",
+            "sv": "6+",
+            "w": "4",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "79a8-a85b-17d6-2b49",
+              "kind": "choice",
+              "name": "3 Sky-slasher Swarms",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "79a8-a85b-17d6-2b49:7713-6f3f-720e-3b85",
+                  "name": "Sky-slasher swarm",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c08a-b36-9f24-ee67",
+                      "name": "Claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "5+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "79a8-a85b-17d6-2b49:ff74-cd51-db21-72a8",
+                  "name": "Sky-slasher swarm w/ spinemaws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e54c-283d-776c-4f26",
+                      "name": "Claws and teeth",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "5+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "4c22-1f53-df3b-d3e0",
+                      "name": "Spinemaws",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "4",
+                      "bs_ws": "5+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b9cf-6189-5e16-a81a",
+          "name": "Chitinous Horrors",
+          "type": "Abilities",
+          "description": "While an enemy unit is within Engagement Range of one or more units with this ability, halve the Objective Control characteristic of models in that enemy unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c17f-f55f-a3cb-530b",
+      "name": "Malanthrope [Legends]",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c17f-f55f-a3cb-530b",
+          "name": "Malanthrope [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "bc79-777d-25d1-713e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "bc79-777d-25d1-713e:1c55-4070-a339-59a1",
+                  "name": "Grasping tail",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7e94-a8c3-6036-305d",
+                      "name": "Grasping tail",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "31d0-c053-ceb2-e8eb",
+          "name": "Enhanced Toxic Miasma",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, the range of that unit's Foul Spores Aura ability is increased to 9\"."
+        },
+        {
+          "id": "bdf3-1395-2a52-e255",
+          "name": "Prey Adaptation",
+          "type": "Abilities",
+          "description": "Each time this model's unit is selected to fight, select one of the following abilities to apply to all melee weapons equipped by models in that unit until the end of the phase:\n■[SUSTAINED HITS 1] \n■[LANCE] \n■[LETHAL HITS]"
+        },
+        {
+          "id": "4f4b-61cc-6bb1-1c97",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit: \n■ VENOMTHROPES"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "642f-9302-4fdc-ab68",
+      "name": "Neurolictor",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Neurolictor",
+          "target_id": "de12-e6b6-16c1-47b0",
+          "primary": false
+        },
+        {
+          "name": "Vanguard Invader",
+          "target_id": "5ff0-d52d-e2b8-9de",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "642f-9302-4fdc-ab68",
+          "name": "Neurolictor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "7",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e9a2-14cd-8730-04c5",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e9a2-14cd-8730-04c5:60e7-ac95-974c-fd76",
+                  "name": "Piercing claws and talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "10fd-5ae9-79e8-cbd1",
+                      "name": "Piercing claws and talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d06d-869e-b2-ff95",
+          "name": "Feeder Tendrils",
+          "type": "Abilities",
+          "description": "Each time this model destroys an enemy CHARACTER model, you gain 1CP"
+        },
+        {
+          "id": "e348-1799-4ccc-f1e3",
+          "name": "Neural Disruption",
+          "type": "Abilities",
+          "description": "In your Command phase, select one enemy unit within 12\" of this model. That unit must take a Battle-shock test"
+        },
+        {
+          "id": "f420-4c72-dafd-6998",
+          "name": "Psychological Saboteur (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is with 12\" of this model, if that unit is Battle-shocked:\n\n- Each time a model in that unit makes an attack, subtract 1 from the Hit roll\n- Each time a friendly TYRANIDS model makes an attack that targets that unit, add 1 to the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6a9b-8e2f-edac-fa2d",
+      "name": "Norn Assimilator",
+      "type": "model",
+      "points": 275,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Norn Assimilator",
+          "target_id": "2982-bf74-9aa7-a7a7",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Harvester",
+          "target_id": "8258-a58e-7cf0-a2c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6a9b-8e2f-edac-fa2d",
+          "name": "Norn Assimilator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "c150-1fb3-c5a5-f88a",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c150-1fb3-c5a5-f88a:59a4-4504-cb52-93b1",
+                  "name": "Monstrous scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d4b2-885d-1138-ee11",
+                      "name": "Monstrous scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "c150-1fb3-c5a5-f88a:50f3-6a18-bc71-2a59",
+                  "name": "Toxinjecter harpoon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c174-a05a-1240-f935",
+                      "name": "Toxinjecter Harpoon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Extra Attacks"
+                    },
+                    {
+                      "profile_id": "ffca-3eb5-e42f-f935",
+                      "name": "Toxinjecter Harpoon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Harpooned"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b8e7-5d35-cbdb-fc5f",
+          "name": "Singular Purpose",
+          "type": "Abilities",
+          "description": "At the start of the First battle round, select one of the following: \n\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n\n\n-Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15."
+        },
+        {
+          "id": "5808-f5eb-b2d5-65d7",
+          "name": "Harpoon Barbs",
+          "type": "Abilities",
+          "description": "Once per turn, when an enemy unit within Engagement Range of this unit is chosen to Fall Back, roll one D6; on a 2+, that unit suffers D6 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5720-2873-8c2c-edc3",
+      "name": "Norn Emissary",
+      "type": "model",
+      "points": 260,
+      "keywords": [
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Great Devourer",
+          "target_id": "7850-cc5a-c191-b80d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Tyranids",
+          "target_id": "d1d8-6ae0-1be7-e9e",
+          "primary": false
+        },
+        {
+          "name": "Synapse",
+          "target_id": "4129-a453-686a-d38a",
+          "primary": false
+        },
+        {
+          "name": "Norn Emissary",
+          "target_id": "50ee-d05c-da9c-eda2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5720-2873-8c2c-edc3",
+          "name": "Norn Emissary",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "01fd-78c3-652f-ddc1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "01fd-78c3-652f-ddc1:d7b3-df20-933-63b7",
+                  "name": "Monstrous rending claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ee40-6-e50c-1761",
+                      "name": "Monstrous rending claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                },
+                {
+                  "id": "01fd-78c3-652f-ddc1:dc69-1094-613-6daf",
+                  "name": "Monstrous scything talons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3682-2b85-bde3-4113",
+                      "name": "Monstrous scything talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "01fd-78c3-652f-ddc1:c102-d98b-dc50-5b53",
+                  "name": "Psychic tendril",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6874-7f26-f287-75b2",
+                      "name": "➤ Psychic tendril - neuroparasite",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Precision, Psychic"
+                    },
+                    {
+                      "profile_id": "b22f-1012-772-79bb",
+                      "name": "➤ Psychic tendril - neurolance",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Melta 2, Psychic"
+                    },
+                    {
+                      "profile_id": "34f1-b5d9-74bb-5d1e",
+                      "name": "➤ Psychic tendril - neuroblast",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "286e-4c57-b171-2344",
+          "name": "Singular Purpose",
+          "type": "Abilities",
+          "description": "At the start of the first battle round, select one of the following: \n\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n\n-Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15."
+        },
+        {
+          "id": "365e-a0cc-81f6-c188",
+          "name": "Unnatural Resistance",
+          "type": "Abilities",
+          "description": "This model has the Feel No Pain 4+ ability against Mortal Wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "c2fe-bf23-bf24-aa43",
+      "name": "Invasion Fleet"
+    },
+    {
+      "id": "bba-65f6-a4d1-66ae",
+      "name": "Assimilation Swarm"
+    },
+    {
+      "id": "850e-bee1-4845-820d",
+      "name": "Crusher Stampede"
+    },
+    {
+      "id": "16ff-a068-4c31-285a",
+      "name": "Synaptic Nexus"
+    },
+    {
+      "id": "4cd9-313f-cd9b-c85a",
+      "name": "Unending Swarm"
+    },
+    {
+      "id": "f773-f91c-2999-c7e1",
+      "name": "Vanguard Onslaught"
+    },
+    {
+      "id": "7416-b7cc-fdbf-5bf0",
+      "name": "Warrior Bioform Onslaught"
+    }
+  ],
+  "enhancements": []
+}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Search — WH40K 10e{% endblock %}
+{% block body %}
+<h1>Unit search</h1>
+
+<form method="get" action="{{ url_for('query_search') }}" class="panel">
+  <div class="form-grid">
+    <div>
+      <label>Name contains</label>
+      <input type="text" name="name" value="{{ f.name or '' }}" placeholder="e.g. Captain">
+    </div>
+    <div>
+      <label>Faction / catalogue</label>
+      <select name="catalogue">
+        <option value="">All</option>
+        {% for c in factions %}
+          <option value="{{ c.id }}" {% if f.catalogue == c.id %}selected{% endif %}>
+            {{ c.name }} ({{ c.n_datasheets }})
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Keyword</label>
+      <select name="keyword">
+        <option value="">Any</option>
+        {% for k in keywords %}
+          <option value="{{ k }}" {% if f.keyword == k %}selected{% endif %}>{{ k }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Weapon name contains</label>
+      <input type="text" name="weapon" value="{{ f.weapon or '' }}" placeholder="e.g. lascannon">
+    </div>
+    <div>
+      <label>Toughness (T) range</label>
+      <input type="number" name="t_min" value="{{ f.t_min if f.t_min is not none else '' }}" placeholder="min">
+      <input type="number" name="t_max" value="{{ f.t_max if f.t_max is not none else '' }}" placeholder="max">
+    </div>
+    <div>
+      <label>Wounds (W) ≥</label>
+      <input type="number" name="w_min" value="{{ f.w_min if f.w_min is not none else '' }}">
+    </div>
+    <div>
+      <label>Points range</label>
+      <input type="number" name="pts_min" value="{{ f.pts_min if f.pts_min is not none else '' }}" placeholder="min">
+      <input type="number" name="pts_max" value="{{ f.pts_max if f.pts_max is not none else '' }}" placeholder="max">
+    </div>
+  </div>
+  <button type="submit">Search</button>
+  <a href="{{ url_for('query_search') }}" class="btn btn-ghost">Clear</a>
+</form>
+
+{% if has_filter %}
+  <div class="section">
+    <h2>Results ({{ results|length }}{% if results|length == 500 %}+, truncated{% endif %})</h2>
+    {% if results %}
+      <div class="table-wrap">
+      <table class="compact">
+        <thead>
+          <tr><th>Name</th><th>Faction</th><th>M</th><th>T</th><th>SV</th><th>W</th><th class="right">Pts</th></tr>
+        </thead>
+        <tbody>
+          {% for r in results %}
+            <tr>
+              <td><a href="{{ url_for('query_unit', datasheet_id=r.id) }}">{{ r.name }}</a></td>
+              <td class="muted">{{ r.catalogue_name }}</td>
+              <td>{{ r.m or '-' }}</td>
+              <td>{{ r.t or '-' }}</td>
+              <td>{{ r.sv or '-' }}</td>
+              <td>{{ r.w or '-' }}</td>
+              <td class="right">
+                {% if r.effective_points is not none %}{{ r.effective_points }}{% else %}-{% endif %}
+                {% if r.overridden %}<span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;">edit</span>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="muted">No matching units.</p>
+    {% endif %}
+  </div>
+{% else %}
+  <p class="muted">Enter at least one filter criterion.</p>
+{% endif %}
+{% endblock %}

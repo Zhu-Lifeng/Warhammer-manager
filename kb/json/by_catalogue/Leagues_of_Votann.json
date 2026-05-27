@@ -1,0 +1,2705 @@
+{
+  "id": "f616-3f08-ee8e-3349",
+  "name": "Xenos - Leagues of Votann",
+  "is_library": false,
+  "revision": "29",
+  "source_file": "Leagues of Votann.cat",
+  "categories": [
+    {
+      "id": "5a53-ae58-e0d9-0616",
+      "name": "Hearthkyn Warriors"
+    },
+    {
+      "id": "a360-cb11-e139-55df",
+      "name": "Ûthar the Destined"
+    },
+    {
+      "id": "ef5e-c660-d7fb-5b4b",
+      "name": "Kâhl"
+    },
+    {
+      "id": "bdab-20b8-9690-34e9",
+      "name": "Exo-armour"
+    },
+    {
+      "id": "4466-22a5-1999-f933",
+      "name": "Einhyr Champion"
+    },
+    {
+      "id": "73a4-b8d3-ec74-8604",
+      "name": "Grimnyr"
+    },
+    {
+      "id": "6da3-60ef-f488-dca3",
+      "name": "Brôkhyr Iron-master"
+    },
+    {
+      "id": "5070-c08d-0fa7-0f9d",
+      "name": "Einhyr Hearthguard"
+    },
+    {
+      "id": "e28c-95f8-3f06-0afa",
+      "name": "Cthonian Beserks"
+    },
+    {
+      "id": "8b60-36d5-35a8-8a69",
+      "name": "Hernkyn Pioneers"
+    },
+    {
+      "id": "f588-a5fe-c979-292a",
+      "name": "Sagitaur"
+    },
+    {
+      "id": "0b9d-34c5-f0bf-ee60",
+      "name": "Brôkhyr Thunderkyn"
+    },
+    {
+      "id": "03e8-e347-349b-ee99",
+      "name": "Exo-frame"
+    },
+    {
+      "id": "0e53-5249-cf3f-c10f",
+      "name": "Hekaton Land Fortress"
+    },
+    {
+      "id": "5b17-69c0-77f9-d2f4",
+      "name": "Hernkyn Yaegirs"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "2e6e-95a1-60ad-7b1c",
+      "name": "Ûthar the Destined",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Ûthar the Destined",
+          "target_id": "a360-cb11-e139-55df",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2e6e-95a1-60ad-7b1c",
+          "name": "Ûthar the Destined",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "677d-60c2-7663-aa31",
+              "kind": "fixed",
+              "name": "Blade of the Ancestors",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "677d-60c2-7663-aa31:677d-60c2-7663-aa31",
+                  "name": "Blade of the Ancestors",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c9bf-6d2c-fe20-57f3",
+                      "name": "Blade of the Ancestors",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3bf6-c34e-49fe-5966",
+              "kind": "fixed",
+              "name": "Volkanite disintegrator",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "3bf6-c34e-49fe-5966:c675-e98e-8cfd-c5b4",
+                  "name": "Volkanite disintegrator",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4417-06a1-f1bd-6ce5",
+                      "name": "Volkanite disintegrator",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a768-f399-5214-dfff",
+          "name": "Ancestral Fortune",
+          "type": "Abilities",
+          "description": "Once per turn, you can change one Hit roll or one Wound roll made for this model to an unmodified 6."
+        },
+        {
+          "id": "05a7-66fb-ebb6-4ff9",
+          "name": "The Destined",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to this model, change the Damage characteristic of that attack to 1."
+        },
+        {
+          "id": "e940-64a8-ba9a-42bc",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- Einhyr Hearthguard\n- Hearthkyn Warriors"
+        },
+        {
+          "id": "4179-42b7-04ba-4430",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ba4f-c3f9-6925-af0c",
+      "name": "Hearthkyn Warriors",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Hearthkyn Warriors",
+          "target_id": "5a53-ae58-e0d9-0616",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ba4f-c3f9-6925-af0c",
+          "name": "Hearthkyn Warriors",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "4782-445d-730e-6b69",
+              "kind": "fixed",
+              "name": "Hearthkyn Warrior",
+              "min_select": 9,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "4782-445d-730e-6b69:4782-445d-730e-6b69",
+                  "name": "Hearthkyn Warrior",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "aa24-6c5a-3215-963a",
+                      "name": "Autoch-pattern bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "71e0-9c15-455b-6196",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "1047-6f67-3b43-c1ec",
+                      "name": "Ion blaster",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "0a2d-f2d9-9e20-d12c",
+                      "name": "Autoch-pattern bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a6be-cc47-2ad2-1889",
+              "kind": "fixed",
+              "name": "Theyn",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a6be-cc47-2ad2-1889:a6be-cc47-2ad2-1889",
+                  "name": "Theyn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6493-21dc-2083-02e0",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "d23e-d5ed-7719-e55b",
+                      "name": "Autoch-pattern bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "aad2-ad0c-0b5d-6f5c",
+                      "name": "Kin melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "e529-efab-e376-3063",
+                      "name": "Ion blaster",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "c9fa-75b9-1653-c0c3",
+                      "name": "Autoch-pattern bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "da4a-736e-1715-b2a6",
+                      "name": "Etacarn plasma pistol",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "e45e-1da1-114d-d3e6",
+                      "name": "Ion pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3d4a-9d09-be51-1a5f",
+              "kind": "fixed",
+              "name": "Hearthkyn Warrior w/ heavy weapon",
+              "min_select": null,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "3d4a-9d09-be51-1a5f:3d4a-9d09-be51-1a5f",
+                  "name": "Hearthkyn Warrior w/ heavy weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c782-ab60-bcf3-5e50",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "ac91-d742-d827-efb0",
+                      "name": "Autoch-pattern bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "28a9-2493-6b48-efb0",
+                      "name": "HYLas auto rifle",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Assault, Rapid Fire 3"
+                    },
+                    {
+                      "profile_id": "eeea-f4e8-272a-bc1e",
+                      "name": "HYLas rotary cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "5+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Heavy, Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "b22f-3a16-3fa8-9e82",
+                      "name": "Etacarn plasma beamer",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits D3"
+                    },
+                    {
+                      "profile_id": "f36a-ee45-45ab-5147",
+                      "name": "Magna-rail rifle",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "5+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D3+3",
+                      "keywords": "Devastating Wounds, Heavy"
+                    },
+                    {
+                      "profile_id": "1e8e-c2a2-ee10-5824",
+                      "name": "Kin melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "183b-a8a1-b9eb-2dd5",
+          "name": "Luck Has, Need Keeps, Toil Earns",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        },
+        {
+          "id": "12c6-8f73-775f-fd8e",
+          "name": "Medipack",
+          "type": "Abilities",
+          "description": "Models in the bearer’s unit have the Feel No Pain 6+ ability."
+        },
+        {
+          "id": "3d63-7696-2f18-cb4d",
+          "name": "Comms array",
+          "type": "Abilities",
+          "description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+        },
+        {
+          "id": "c4a7-2dc7-b53e-5886",
+          "name": "Pan spectral scanner",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1b00-2abb-718f-def6",
+      "name": "Kâhl",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Kâhl",
+          "target_id": "ef5e-c660-d7fb-5b4b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1b00-2abb-718f-def6",
+          "name": "Kâhl",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5fd9-0b10-8ba6-5b5e",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5fd9-0b10-8ba6-5b5e:d3c6-b12e-a1d6-be7b",
+                  "name": "Mass gauntlet",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e0a8-13fc-8b4c-f116",
+                      "name": "Mass gauntlet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "5fd9-0b10-8ba6-5b5e:e03d-99af-36d8-3789",
+                  "name": "Forgewrought plasma axe",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8c13-298f-b445-8a6a",
+                      "name": "Forgewrought plasma axe",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2769-d6d8-29c8-7689",
+          "name": "Kindred Hero",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "7139-216a-b740-0af3",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- EINHYR HEARTHGUARD\n- HEARTHKYN WARRIORS"
+        },
+        {
+          "id": "8124-e1cf-eaa3-675a",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2cc6-e2bf-635f-1260",
+      "name": "Einhyr Champion",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Exo-armour",
+          "target_id": "bdab-20b8-9690-34e9",
+          "primary": false
+        },
+        {
+          "name": "Einhyr Champion",
+          "target_id": "4466-22a5-1999-f933",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2cc6-e2bf-635f-1260",
+          "name": "Einhyr Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "aab6-e41b-da7f-10ed",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "aab6-e41b-da7f-10ed:d302-52a9-ef8a-d430",
+                  "name": "Mass hammer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "afc9-caae-2b68-5ef1",
+                      "name": "Mass hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "aab6-e41b-da7f-10ed:ac4f-c500-41ba-07cf",
+                  "name": "Darkstar axe",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "0337-ed2f-e579-4e50",
+                      "name": "Darkstar axe",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "00ac-a3ae-c23e-c0d6",
+              "kind": "fixed",
+              "name": "Autoch-pattern combi-bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "00ac-a3ae-c23e-c0d6:6a0b-0a93-2494-57f9",
+                  "name": "Autoch-pattern combi-bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ffa-1afc-8bea-83c4",
+                      "name": "Autoch-pattern combi-bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a732-854e-79cd-0b70",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- EINHYR HEARTHGUARD"
+        },
+        {
+          "id": "cce9-1dea-2bfb-0600",
+          "name": "Exemplar of the Einhyr",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, you can re-roll Charge rolls made for that unit."
+        },
+        {
+          "id": "666a-1075-30da-e3d6",
+          "name": "Mass Driver Accelerators",
+          "type": "Abilities",
+          "description": "Each time this model ends a Charge move, you can select one enemy unit within Engagement Range of this unit and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d3a3-2d20-bd7e-6778",
+      "name": "Grimnyr",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Grimnyr",
+          "target_id": "73a4-b8d3-ec74-8604",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6e98-3c8a-32e3-e9f1",
+          "name": "Grimnyr",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b834-a21b-b88c-b267",
+              "kind": "fixed",
+              "name": "Ancestral ward stave",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b834-a21b-b88c-b267:b834-a21b-b88c-b267",
+                  "name": "Ancestral ward stave",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bba0-9a1e-e6f2-5fda",
+                      "name": "Ancestral ward stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ffcf-690c-5fc4-a7bb",
+              "kind": "fixed",
+              "name": "Ancestral Wrath",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ffcf-690c-5fc4-a7bb:ffcf-690c-5fc4-a7bb",
+                  "name": "Ancestral Wrath",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7f34-b139-ef92-1436",
+                      "name": "➤ Ancestral Wrath - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    },
+                    {
+                      "profile_id": "5833-d0a9-60c3-0f5a",
+                      "name": "➤ Ancestral Wrath - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Hazardous, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dd28-bb7a-0c2a-4a5f",
+          "name": "CORV",
+          "min_count": 2,
+          "max_count": 2,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "1",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bfa6-9975-6fdc-d5c6",
+              "kind": "fixed",
+              "name": "Autoch-pattern bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bfa6-9975-6fdc-d5c6:bfa6-9975-6fdc-d5c6",
+                  "name": "Autoch-pattern bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "81b3-47f1-6d38-51ff",
+                      "name": "Autoch-pattern bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "116e-d7d8-401d-236c",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "116e-d7d8-401d-236c:116e-d7d8-401d-236c",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b217-9a60-3b17-869b",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "63d6-d6ef-a1e8-b3ac",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- HEARTHKYN WARRIORS"
+        },
+        {
+          "id": "c223-388d-3253-dd39",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 4+ invulnerable save."
+        },
+        {
+          "id": "467f-6b90-9fac-e6bc",
+          "name": "Fortify (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, improve the Toughness characteristic of models in that unit by 1."
+        },
+        {
+          "id": "fed0-9336-a1da-52b5",
+          "name": "Grimnyr's Regard",
+          "type": "Abilities",
+          "description": "Once per battle, after this model’s unit fails a Battle-shock test, this model can use this ability. If it does, that unit is no longer Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8f33-5601-3707-78f4",
+      "name": "Brôkhyr Iron-master",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Brôkhyr Iron-master",
+          "target_id": "6da3-60ef-f488-dca3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8834-b1d1-02b8-b4c1",
+          "name": "Brôkhyr Iron-master",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "0206-aa8c-5d20-9fc5",
+              "kind": "fixed",
+              "name": "Graviton rifle",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0206-aa8c-5d20-9fc5:0206-aa8c-5d20-9fc5",
+                  "name": "Graviton rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "240d-9434-804f-0224",
+                      "name": "Graviton rifle",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Anti-VEHICLE 2+"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a8af-1a28-e453-65d7",
+              "kind": "fixed",
+              "name": "Graviton hammer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a8af-1a28-e453-65d7:a8af-1a28-e453-65d7",
+                  "name": "Graviton hammer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6965-474f-8385-d97e",
+                      "name": "Graviton hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Anti-VEHICLE 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "635b-8cdf-312f-2858",
+          "name": "Ironkyn Assistant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d201-9e74-72f6-9b2c",
+              "kind": "fixed",
+              "name": "Las-beam cutter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d201-9e74-72f6-9b2c:d201-9e74-72f6-9b2c",
+                  "name": "Las-beam cutter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4f7a-43fc-9fdb-c622",
+                      "name": "Las-beam cutter",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "87d6-434d-8e05-b7b8",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "87d6-434d-8e05-b7b8:87d6-434d-8e05-b7b8",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "29fc-c6ae-1ad4-6a69",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7d45-a4fc-84b4-87b0",
+          "name": "E-COG",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6d87-904b-e7b7-c26c",
+              "kind": "fixed",
+              "name": "Autoch-pattern bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6d87-904b-e7b7-c26c:6d87-904b-e7b7-c26c",
+                  "name": "Autoch-pattern bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3215-7d2a-573d-dbc8",
+                      "name": "Autoch-pattern bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3b2c-4950-f35b-f75c",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3b2c-4950-f35b-f75c:3b2c-4950-f35b-f75c",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e38e-f268-e499-a496",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "0b60-64ba-dab2-aba2",
+          "name": "Multi-spectral visor",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a ranged attack, add 1 to the Hit roll."
+        },
+        {
+          "id": "5313-7669-e6a9-5577",
+          "name": "Brôkhyr's Guild",
+          "type": "Abilities",
+          "description": "At the end of your Movement phase, this unit can repair one friendly LEAGUES OF VOTANN VEHICLE or EXO-FRAME model within 3\" of it. That model regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkyn Assistant. Each model can only be repaired once per turn."
+        },
+        {
+          "id": "7d15-f4e4-387a-f14d",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- HEARTHKYN WARRIORS\n- BRÔKHYR THUNDERKYN"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "09d3-6357-7888-00d9",
+      "name": "Einhyr Hearthguard",
+      "type": "unit",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Exo-armour",
+          "target_id": "bdab-20b8-9690-34e9",
+          "primary": false
+        },
+        {
+          "name": "Einhyr Hearthguard",
+          "target_id": "5070-c08d-0fa7-0f9d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "35b8-185c-c7f5-78ad",
+          "name": "Hesyr",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7d63-69eb-f909-ef5c",
+              "kind": "fixed",
+              "name": "Exo-armour grenade launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7d63-69eb-f909-ef5c:7d63-69eb-f909-ef5c",
+                  "name": "Exo-armour grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a304-241f-99a7-a25e",
+                      "name": "Exo-armour grenade launcher",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2d48-f92f-50fa-df9f",
+              "kind": "choice",
+              "name": "Ranged weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2d48-f92f-50fa-df9f:8619-9766-108e-f579",
+                  "name": "EtaCarn plasma gun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e492-d6ee-0f43-d25c",
+                      "name": "EtaCarn plasma gun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "2d48-f92f-50fa-df9f:ee96-471c-ef12-d689",
+                  "name": "Volkanite disintegrator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7719-4e90-1159-c873",
+                      "name": "Volkanite disintegrator",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6be0-87e2-a6a6-4d89",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6be0-87e2-a6a6-4d89:4af9-1fdc-54b3-617a",
+                  "name": "Concussion gauntlet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5976-f4e8-a531-171b",
+                      "name": "Concussion gauntlet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6be0-87e2-a6a6-4d89:e5aa-490d-0302-1725",
+                  "name": "Plasma blade gauntlet",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8da5-d8bc-482d-40b8",
+                      "name": "Plasma blade gauntlet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6be0-87e2-a6a6-4d89:65c7-0826-fdc5-4c70",
+                  "name": "Concussion hammer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cf96-2e05-c068-8786",
+                      "name": "Concussion hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ea2c-e140-de98-d555",
+          "name": "Einhyr Hearthguard",
+          "min_count": null,
+          "max_count": null,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f20b-a6da-5664-311a",
+              "kind": "fixed",
+              "name": "Exo-armour grenade launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f20b-a6da-5664-311a:f20b-a6da-5664-311a",
+                  "name": "Exo-armour grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ead-2661-5e20-b7a7",
+                      "name": "Exo-armour grenade launcher",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ccb3-8ee6-568d-eee9",
+              "kind": "choice",
+              "name": "Ranged weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ccb3-8ee6-568d-eee9:58c5-35f8-3823-bf60",
+                  "name": "EtaCarn plasma gun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4c66-e6ad-ab81-625e",
+                      "name": "EtaCarn plasma gun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "ccb3-8ee6-568d-eee9:0263-c056-d80a-2192",
+                  "name": "Volkanite disintegrator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cfee-7156-f665-8803",
+                      "name": "Volkanite disintegrator",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d243-2501-7db6-ba08",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d243-2501-7db6-ba08:62a4-5af9-8d4d-9d0d",
+                  "name": "Concussion gauntlet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5eea-db94-ce5d-9775",
+                      "name": "Concussion gauntlet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "d243-2501-7db6-ba08:b37a-91d6-b8b2-f879",
+                  "name": "Plasma blade gauntlet",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "dc04-dad0-f6e1-4bfe",
+                      "name": "Plasma blade gauntlet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "91da-72d3-657b-ee7c",
+          "name": "Oathband Bodyguard",
+          "type": "Abilities",
+          "description": "While a CHARACTER is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the Wound roll."
+        },
+        {
+          "id": "80e8-8ec7-90b9-1310",
+          "name": "Teleport crest",
+          "type": "Abilities",
+          "description": "Models in the bearer's unit have the Deep Strike ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 320,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "415a-e6f6-d17f-d700",
+      "name": "Cthonian Beserks",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Cthonian Beserks",
+          "target_id": "e28c-95f8-3f06-0afa",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "87b1-0d4c-e5ea-a5bd",
+          "name": "Beserk",
+          "min_count": 3,
+          "max_count": 10,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "6+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": []
+        },
+        {
+          "id": "2de1-61b9-615d-4056",
+          "name": "Beserk w/ mole grenade launcher",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "6+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8a21-fee6-f357-b914",
+              "kind": "fixed",
+              "name": "Mole grenade launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8a21-fee6-f357-b914:8a21-fee6-f357-b914",
+                  "name": "Mole grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b33d-4770-45ec-de79",
+                      "name": "Mole grenade launcher",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "668c-fdea-d78d-76da",
+          "name": "Cyberstimms",
+          "type": "Abilities",
+          "description": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "6b1b-5b1b-e5de-f7c2",
+          "name": "Subterranean Explosives",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES) that was hit by one or more of this unit’s mole grenade launchers this phase and roll one D6. On a 4+, until the end of your opponent’s next turn, that enemy unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.\n\nDesigner’s Note: While a unit is shaken, place a Mole Grenade token next to that unit as a reminder."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 200,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9086-5272-398b-bbce",
+      "name": "Hernkyn Pioneers",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Hernkyn Pioneers",
+          "target_id": "8b60-36d5-35a8-8a69",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9086-5272-398b-bbce",
+          "name": "Hernkyn Pioneers",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "6",
+            "sv": "4+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "6016-5c68-b821-0070",
+              "kind": "choice",
+              "name": "3 - 6 Pioneers",
+              "min_select": 3,
+              "max_select": 6,
+              "options": [
+                {
+                  "id": "6016-5c68-b821-0070:3e7b-703d-cac6-99f3",
+                  "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6a5e-2895-e858-2f97",
+                      "name": "HYLas rotary cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "6016-5c68-b821-0070:eaa9-46b5-aaf2-2495",
+                  "name": "Hernkyn Pioneer w/ ion beamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "97dc-36f5-75b3-cf66",
+                      "name": "Ion beamer",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Sustained Hits D3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "0a56-b381-c3ac-12bd",
+          "name": "Outflanking Mag-Riders",
+          "type": "Abilities",
+          "description": "At the end of your opponent’s turn, if this unit is within 6\" of any battlefield edge and is not within Engagement Range of any enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves."
+        },
+        {
+          "id": "5594-0175-2fab-78d0",
+          "name": "Comms array",
+          "type": "Abilities",
+          "description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+        },
+        {
+          "id": "2687-9d88-fa31-78e4",
+          "name": "Pan-spectral scanner",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
+        },
+        {
+          "id": "d4a7-4825-c105-69da",
+          "name": "Rollbar searchlight",
+          "type": "Abilities",
+          "description": "Each time a model in the bearer’s unit makes an attack that targets a unit that contains one or more models with the Stealth ability, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 180,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9655-8367-7467-9e6e",
+      "name": "Sagitaur",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Sagitaur",
+          "target_id": "f588-a5fe-c979-292a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9655-8367-7467-9e6e",
+          "name": "Sagitaur",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "9",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "97ff-6dbb-8293-7243",
+              "kind": "fixed",
+              "name": "Armoured wheels",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "97ff-6dbb-8293-7243:97ff-6dbb-8293-7243",
+                  "name": "Armoured wheels",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f818-73c9-d2cc-39ce",
+                      "name": "Armoured wheels",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "acc4-06bc-93c2-f53b",
+              "kind": "choice",
+              "name": "Turret weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "acc4-06bc-93c2-f53b:091e-06fa-a39a-1d8f",
+                  "name": "HYLas beam cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "11ea-f90f-5b03-d2e8",
+                      "name": "HYLas beam cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "acc4-06bc-93c2-f53b:deaa-766c-aaeb-4e0b",
+                  "name": "L7 missile launcher and Sagitaur missile launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6cc8-24f5-2d3e-9378",
+                      "name": "Sagitaur missile launcher",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "31fe-11c-4b19-fbea",
+              "kind": "fixed",
+              "name": "Twin bolt cannon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "31fe-11c-4b19-fbea:43cd-5e9f-e550-83e0",
+                  "name": "Twin bolt cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a63c-aa6e-395c-714d",
+                      "name": "Twin bolt cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1cd2-5315-3e03-56d2",
+          "name": "Blistering Advance",
+          "type": "Abilities",
+          "description": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn."
+        }
+      ],
+      "transport": [
+        {
+          "id": "c622-c5a6-391f-e9ec",
+          "name": "Sagitaur",
+          "capacity": "This model has a transport capacity of 6 LEAGUES OF VOTANN INFANTRY models. It cannot transport EXO-ARMOUR or EXO-FRAME models.\nAt the start of the Declare Battle Formations step, you can select one Hearthkyn Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ea1b-99f6-c398-06b1",
+      "name": "Brôkhyr Thunderkyn",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Exo-frame",
+          "target_id": "03e8-e347-349b-ee99",
+          "primary": false
+        },
+        {
+          "name": "Brôkhyr Thunderkyn",
+          "target_id": "0b9d-34c5-f0bf-ee60",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ea1b-99f6-c398-06b1",
+          "name": "Brôkhyr Thunderkyn",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5a3d-3f3e-69db-816c",
+              "kind": "fixed",
+              "name": "Brôkhyr Thunderkyn",
+              "min_select": 3,
+              "max_select": 6,
+              "options": [
+                {
+                  "id": "5a3d-3f3e-69db-816c:5a3d-3f3e-69db-816c",
+                  "name": "Brôkhyr Thunderkyn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "863e-30fc-eb12-8635",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "8cfa-d659-fdcb-a831",
+                      "name": "Bolt cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "818e-6326-0d21-0966",
+                      "name": "Graviton blast cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-VEHICLE 2+, Blast"
+                    },
+                    {
+                      "profile_id": "3f35-c2d8-a449-f13b",
+                      "name": "SP conversion beamer",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Conversion, Sustained Hits D3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a40d-50a1-cd02-32c0",
+          "name": "Oathband Covering Fire",
+          "type": "Abilities",
+          "description": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ when resolving that Stratagem."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "a110-e538-4e85-159b",
+      "name": "Hekaton Land Fortress",
+      "type": "model",
+      "points": 225,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Hekaton Land Fortress",
+          "target_id": "0e53-5249-cf3f-c10f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a110-e538-4e85-159b",
+          "name": "Hekaton Land Fortress",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "8376-0494-75e0-8ea2",
+              "kind": "fixed",
+              "name": "Armoured wheels",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8376-0494-75e0-8ea2:8376-0494-75e0-8ea2",
+                  "name": "Armoured wheels",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "09b1-bd9a-ed25-2246",
+                      "name": "Armoured wheels",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ed73-88aa-f7af-8490",
+              "kind": "choice",
+              "name": "Sponson weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "ed73-88aa-f7af-8490:c84b-96c6-419b-fa92",
+                  "name": "Twin ion beamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9152-b960-78dd-8109",
+                      "name": "Twin ion beamer",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Sustained Hits D3, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7eb4-5fc8-e729-ca88",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7eb4-5fc8-e729-ca88:3c12-5387-4d1a-cf2b",
+                  "name": "Hekaton warhead",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3ddb-569b-3ddd-8305",
+                      "name": "Hekaton warhead",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire, One Shot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8bd8-ce25-04fb-0707",
+              "kind": "choice",
+              "name": "Main weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8bd8-ce25-04fb-0707:6a5d-d311-99dc-aa34",
+                  "name": "SP heavy conversion beamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "0397-a3eb-649a-14b6",
+                      "name": "SP heavy conversion beamer",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "4",
+                      "keywords": "Conversion, Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "8bd8-ce25-04fb-0707:d4d5-abd4-b267-340f",
+                  "name": "Heavy magna-rail cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2d95-32eb-6471-6cb3",
+                      "name": "Heavy magna-rail cannon",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "18",
+                      "ap": "-4",
+                      "d": "D6+6",
+                      "keywords": "Devastating Wounds, Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "8bd8-ce25-04fb-0707:542-3f3e-969b-c932",
+                  "name": "Cyclic ion cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a10-ca7f-c2be-80fb",
+                      "name": "Cyclic ion cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e8c-7ce2-bb36-a36a",
+              "kind": "fixed",
+              "name": "MATR autocannon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e8c-7ce2-bb36-a36a:8d16-a849-dd95-997f",
+                  "name": "MATR autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2a2a-566e-9f4a-dff7",
+                      "name": "MATR autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "caa1-a6c2-f241-ef7a",
+          "name": "Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+        },
+        {
+          "id": "390f-db57-a56d-a66c",
+          "name": "Damaged: 1-5 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "ebd6-d270-d7ee-bd1d",
+          "name": "Pan spectral scanner",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability."
+        }
+      ],
+      "transport": [
+        {
+          "id": "9d9a-6673-cbb2-ec72",
+          "name": "Hekaton Land Fortress",
+          "capacity": "This model has a transport capacity of 12 LEAGUES OF VOTANN INFANTRY models. Each EXO-ARMOUR model takes up the space of 2 models and each EXO-FRAME model takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5b0b-c18d-1470-44bb",
+      "name": "Hernkyn Yaegirs",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Faction: Leagues of Votann",
+          "target_id": "8474-765-16a9-f00d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Hernkyn Yaegirs",
+          "target_id": "5b17-69c0-77f9-d2f4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5b0b-c18d-1470-44bb",
+          "name": "Hernkyn Yaegirs",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "5",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "712c-437b-174b-a4bf",
+              "kind": "fixed",
+              "name": "Hernkyn Yaegir",
+              "min_select": 10,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "712c-437b-174b-a4bf:712c-437b-174b-a4bf",
+                  "name": "Hernkyn Yaegir",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3f7c-d169-5dcf-0730",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "6a99-914d-8a59-c3a7",
+                      "name": "Bolt revolver",
+                      "weapon_type": "Ranged",
+                      "range": "9\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "d4ac-44dc-688e-74fe",
+                      "name": "Bolt revolver and plasma knife",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "323e-6769-3837-7e7f",
+                      "name": "Bolt shotgun",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9b47-a19c-ade4-75fa",
+              "kind": "fixed",
+              "name": "Hernkyn Yaegir w/ magna-coil rifle",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9b47-a19c-ade4-75fa:9b47-a19c-ade4-75fa",
+                  "name": "Hernkyn Yaegir w/ magna-coil rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d236-eb8c-63b9-6eb8",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "d67d-b081-373e-6616",
+                      "name": "Magna-coil rifle",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4ba2-a404-9610-744a",
+              "kind": "fixed",
+              "name": "Hernkyn Yaegir w/ APM launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4ba2-a404-9610-744a:4ba2-a404-9610-744a",
+                  "name": "Hernkyn Yaegir w/ APM launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5f1e-d6c6-5141-dd80",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "2b67-4391-b76f-f551",
+                      "name": "APM launcher",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Anti-MONSTER 3+, Anti-VEHICLE 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9b20-7d92-1649-148f",
+          "name": "Pragmatic Hunters",
+          "type": "Abilities",
+          "description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6\"."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "8103-5cc7-c12e-efc5",
+      "name": "Oathband"
+    },
+    {
+      "id": "1077-70a1-0570-5685",
+      "name": "Hearthband"
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "4bb0-a28e-2f27-e332",
+      "name": "A Long List",
+      "points": 15,
+      "description": "LEAGUES OF VOTANN model only. Each time the bearer’s unit destroys an enemy unit, if that enemy unit has one or more Judgement tokens, you can select one other enemy unit that is visible to the bearer. That other unit gains one Judgement token."
+    },
+    {
+      "id": "dc6c-e67b-cada-188a",
+      "name": "Appraising Glare",
+      "points": 20,
+      "description": "LEAGUES OF VOTANN model only. In your Command phase, you can select one objective marker your opponent controls. Until the start of your next Command phase, while an enemy unit is within range of that objective marker, it counts as having one more Judgement token than it actually has (to a maximum of 2)."
+    },
+    {
+      "id": "8be4-a0be-9a63-183c",
+      "name": "Grim Demeanour",
+      "points": 20,
+      "description": "LEAGUES OF VOTANN model only. You can re-roll Battle-shock tests taken for the bearer’s unit, and models in that unit can ignore any or all modifiers to their characteristics and/or to any rolls or tests made for them (excluding modifiers to saving throws)."
+    },
+    {
+      "id": "69b9-f4ed-6370-e85e",
+      "name": "Wayfarer's Grace",
+      "points": 25,
+      "description": "LEAGUES OF VOTANN model only. The first time the bearer is destroyed, after placing a Judgement token next to the unit that destroyed it, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+    },
+    {
+      "id": "7d25-b49e-85d4-d20a",
+      "name": "Bastion Shield",
+      "points": 25,
+      "description": "Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1."
+    },
+    {
+      "id": "0af8-8b93-2b39-2559",
+      "name": "High Kâhl",
+      "points": 30,
+      "description": "Each time a model in the bearer’s unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    },
+    {
+      "id": "ef91-2506-ac67-5a93",
+      "name": "Ironskein",
+      "points": 10,
+      "description": "Add 2 to the bearer’s Wounds characteristic."
+    },
+    {
+      "id": "2697-5d0d-5125-1bfb",
+      "name": "Quake Multigenerator",
+      "points": 15,
+      "description": "In your Shooting phase, after the bearer has shot, select one enemy unit (excluding TITANIC units) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    }
+  ]
+}

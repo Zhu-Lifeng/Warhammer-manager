@@ -1,0 +1,3875 @@
+{
+  "id": "f89b-84e0-6e3b-f1e2",
+  "name": "Imperium - Adeptus Astartes - Deathwatch",
+  "is_library": false,
+  "revision": "42",
+  "source_file": "Imperium - Deathwatch.cat",
+  "categories": [
+    {
+      "id": "6e-71bd-2538-d468",
+      "name": "Watch Master"
+    },
+    {
+      "id": "76e-a320-40ba-2a3",
+      "name": "Watch Captain Artemis"
+    },
+    {
+      "id": "b9d0-ad1e-b2c9-c2b9",
+      "name": "Corvus Blackstar"
+    },
+    {
+      "id": "73ac-907a-3014-e457",
+      "name": "Kill Team Cassius"
+    },
+    {
+      "id": "81b0-a893-4fb7-c298",
+      "name": "Kill Team"
+    },
+    {
+      "id": "bea7-7dc2-73b-b964",
+      "name": "Veteran Bike Squad"
+    },
+    {
+      "id": "8311-8645-4ce3-8b3",
+      "name": "Deathwatch Terminator Squad"
+    },
+    {
+      "id": "88ab-39b-e7ba-770e",
+      "name": "Deathwatch Veterans"
+    },
+    {
+      "id": "ae46-3df5-4feb-8e53",
+      "name": "Proteus Kill Team"
+    },
+    {
+      "id": "a2bb-b582-9f57-27f5",
+      "name": "Fortis Kill Team"
+    },
+    {
+      "id": "6acb-612b-3fe6-9061",
+      "name": "Indomitor Kill Team"
+    },
+    {
+      "id": "2de5-9b49-eb99-3e9f",
+      "name": "Spectrus Kill Team"
+    },
+    {
+      "id": "883d-54fa-524d-0db3",
+      "name": "Tacticus"
+    },
+    {
+      "id": "e645-90aa-28ec-671d",
+      "name": "Gravis"
+    },
+    {
+      "id": "a6b1-cfcf-c1a1-71bf",
+      "name": "Phobos"
+    },
+    {
+      "id": "15df-a532-a570-461e",
+      "name": "Deathwatch"
+    },
+    {
+      "id": "df23-f48a-60b1-480d",
+      "name": "Ordo Xenos"
+    },
+    {
+      "id": "b917-6755-58fc-bba0",
+      "name": "Deathwatch Kill Team"
+    },
+    {
+      "id": "ecbb-2557-ffeb-7a49",
+      "name": "Watch Sergeant loadout"
+    },
+    {
+      "id": "4082-03bb-1ab3-a93b",
+      "name": "Talonstrike Kill Team"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "f7c3-45d2-a7ac-d8bc",
+      "name": "Watch Master",
+      "type": "model",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Watch Master",
+          "target_id": "6e-71bd-2538-d468",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f7c3-45d2-a7ac-d8bc",
+          "name": "Watch Master",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "120e-64f3-6f97-9417",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "120e-64f3-6f97-9417:c478-d73-a7ff-6aef",
+                  "name": "Vigil spear",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d1f3-99a9-d3b9-20d1",
+                      "name": "Vigil spear",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "af24-5cc3-6b6a-b66b",
+                      "name": "Vigil spear",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Lance"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "17f1-675b-5c2b-d950",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "e78f-da76-e79d-304a",
+          "name": "Strategic Knowledge",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back."
+        },
+        {
+          "id": "d4de-4cfa-ee54-d422",
+          "name": "Watch Master",
+          "type": "Abilities",
+          "description": "Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+        },
+        {
+          "id": "6240-ce76-8480-ccfe",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- DEATHWATCH VETERANS\n- FORTIS KILL TEAM"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3d7c-2de-31ea-b028",
+      "name": "Watch Captain Artemis",
+      "type": "model",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Watch Captain Artemis",
+          "target_id": "76e-a320-40ba-2a3",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3d7c-2de-31ea-b028",
+          "name": "Watch Captain Artemis",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "76ca-f0fb-310-285a",
+              "kind": "fixed",
+              "name": "Hellfire Extremis",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "76ca-f0fb-310-285a:76ca-f0fb-310-285a",
+                  "name": "Hellfire Extremis",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f250-8a64-779a-ca3a",
+                      "name": "Hellfire Extremis",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7c1e-5549-391f-bdbd",
+              "kind": "fixed",
+              "name": "Master-crafted power weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7c1e-5549-391f-bdbd:7c1e-5549-391f-bdbd",
+                  "name": "Master-crafted power weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f25c-9d73-6855-c35a",
+                      "name": "Master-crafted power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9ddf-5d21-3000-5854",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "c481-d4ab-58f1-858d",
+          "name": "Tactical Instinct",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "14e1-8336-a9b2-40c3",
+          "name": "Unstoppable Champion",
+          "type": "Abilities",
+          "description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 1 wound remaining."
+        },
+        {
+          "id": "8863-f9da-9fe5-8262",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units: \n- DEATHWATCH VETERANS\n- FORTIS KILL TEAM"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d861-972b-54f9-bdfa",
+      "name": "Corvus Blackstar",
+      "type": "model",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Corvus Blackstar",
+          "target_id": "b9d0-ad1e-b2c9-c2b9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d861-972b-54f9-bdfa",
+          "name": "Corvus Blackstar",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "663f-d79b-25fd-b52f",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "663f-d79b-25fd-b52f:f483-c541-62c8-5a49",
+                  "name": "Armoured hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cb83-410b-8dfc-9961",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "663f-d79b-25fd-b52f:39fd-529-fe62-955e",
+                  "name": "Hurricane bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "85c5-d77a-762-df62",
+                      "name": "Hurricane bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 6, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2424-fdd-d5c0-1d78",
+          "name": "Blackstar Cluster Launcher",
+          "type": "Abilities",
+          "description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 5+, that unit suffers 1 mortal wound."
+        },
+        {
+          "id": "4edc-8524-49f5-884a",
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "4d9c-b69c-4685-27b7",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 12 ADEPTUS ASTARTES INFANTRY or KILL TEAM models. Each JUMP PACK, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+        },
+        {
+          "id": "ebf-db45-9aa0-a5d5",
+          "name": "Auspex Array",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability."
+        },
+        {
+          "id": "697e-3cd8-8c0e-e354",
+          "name": "Infernum Halo-launcher",
+          "type": "Abilities",
+          "description": "The bearer has the SMOKE keyword."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4042-67ce-8d45-ed33",
+      "name": "Kill Team Cassius [Legends]",
+      "type": "unit",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Kill Team",
+          "target_id": "81b0-a893-4fb7-c298",
+          "primary": false
+        },
+        {
+          "name": "Kill Team Cassius",
+          "target_id": "73ac-907a-3014-e457",
+          "primary": false
+        },
+        {
+          "name": "Deathwatch",
+          "target_id": "15df-a532-a570-461e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Agents of the Imperium",
+          "target_id": "5128-90b-e4a5-dcbd",
+          "primary": false
+        },
+        {
+          "name": "Ordo Xenos",
+          "target_id": "df23-f48a-60b1-480d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "92eb-83bc-dcff-9386",
+          "name": "Chaplain Cassius",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "5+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "9d6-495a-ec17-7924",
+              "kind": "fixed",
+              "name": "Artificer crozius",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9d6-495a-ec17-7924:9d6-495a-ec17-7924",
+                  "name": "Artificer crozius",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "762a-41e3-a2bc-8dd5",
+                      "name": "Artificer crozius",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2b37-916-99ee-476",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2b37-916-99ee-476:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fe0a-b5eb-1e1a-21bc",
+          "name": "Vael Donatus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "38e3-8907-cd67-f400",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "38e3-8907-cd67-f400:38e3-8907-cd67-f400",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3c4a-9c7f-777b-5b24",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b49f-9294-c1fa-50bd",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "b49f-9294-c1fa-50bd:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "42b6-2535-b18c-7257",
+              "kind": "fixed",
+              "name": "Boltgun",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "42b6-2535-b18c-7257:4d-5d79-b348-19ee",
+                  "name": "Boltgun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a52-b080-e77f-d369",
+                      "name": "Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "743c-f14-a2c2-a12c",
+          "name": "Zameon Gydrael",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "66e4-8d81-84ca-134b",
+              "kind": "fixed",
+              "name": "Long Vigil ranged weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "66e4-8d81-84ca-134b:9be1-2f4b-22b5-6780",
+                  "name": "Long Vigil ranged weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "39ea-2182-61e3-c303",
+                      "name": "Long Vigil ranged weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f2-6829-dc15-9244",
+              "kind": "fixed",
+              "name": "Long Vigil melee weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f2-6829-dc15-9244:e3f6-2750-6e07-a27",
+                  "name": "Long Vigil melee weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e57b-128f-695c-c42f",
+                      "name": "Long Vigil melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "572c-d3a3-e597-94a3",
+          "name": "Rodricus Grytt",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "a41e-6ed3-538-1a22",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a41e-6ed3-538-1a22:a41e-6ed3-538-1a22",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a0a1-bc45-4ea8-5de7",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "25bb-751f-5e1a-d283",
+              "kind": "fixed",
+              "name": "Frag cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "25bb-751f-5e1a-d283:25bb-751f-5e1a-d283",
+                  "name": "Frag cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6001-82d7-a43b-beb4",
+                      "name": "Frag cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Heavy, Rapid Fire D3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ce65-70f7-7adf-a89e",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ce65-70f7-7adf-a89e:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "16d6-b842-a1d1-2d77",
+          "name": "Antor Delassio",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ddf1-b29-b2f-b63d",
+              "kind": "fixed",
+              "name": "Long Vigil ranged weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ddf1-b29-b2f-b63d:9be1-2f4b-22b5-6780",
+                  "name": "Long Vigil ranged weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "39ea-2182-61e3-c303",
+                      "name": "Long Vigil ranged weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4675-9389-6e09-c14",
+              "kind": "fixed",
+              "name": "Long Vigil melee weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4675-9389-6e09-c14:e3f6-2750-6e07-a27",
+                  "name": "Long Vigil melee weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e57b-128f-695c-c42f",
+                      "name": "Long Vigil melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9636-f9b-1bbf-14b9",
+          "name": "Edryc Setorax",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "e102-1304-5c21-e122",
+              "kind": "fixed",
+              "name": "Twin lightning claws",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e102-1304-5c21-e122:e102-1304-5c21-e122",
+                  "name": "Twin lightning claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "991-c41b-7d4c-ac72",
+                      "name": "Twin lightning claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "16b6-4055-1e55-27d5",
+          "name": "Jensus Natorian",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "c48b-daed-df-20b",
+              "kind": "fixed",
+              "name": "Psychic Cleanse",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c48b-daed-df-20b:c48b-daed-df-20b",
+                  "name": "Psychic Cleanse",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ed52-578f-6e11-809d",
+                      "name": "Psychic Cleanse",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f536-dd2f-14d1-24c5",
+              "kind": "fixed",
+              "name": "Force weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f536-dd2f-14d1-24c5:f536-dd2f-14d1-24c5",
+                  "name": "Force weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2b58-3fd3-3211-6da2",
+                      "name": "Force weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-3",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "664e-a3fa-d859-9b99",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "664e-a3fa-d859-9b99:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b42a-2552-4350-e1d1",
+          "name": "Drenn Redblade",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f613-3b42-82c4-a006",
+              "kind": "fixed",
+              "name": "Boltgun",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f613-3b42-82c4-a006:4d-5d79-b348-19ee",
+                  "name": "Boltgun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a52-b080-e77f-d369",
+                      "name": "Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d161-9ed3-4fdb-a6f7",
+              "kind": "fixed",
+              "name": "Long Vigil melee weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d161-9ed3-4fdb-a6f7:e3f6-2750-6e07-a27",
+                  "name": "Long Vigil melee weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e57b-128f-695c-c42f",
+                      "name": "Long Vigil melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7e27-9914-e88-5858",
+          "name": "Garran Branatar",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ad82-8000-8d9d-8fa8",
+              "kind": "fixed",
+              "name": "Heavy Flamer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ad82-8000-8d9d-8fa8:ad82-8000-8d9d-8fa8",
+                  "name": "Heavy Flamer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f6d4-6a8f-9eab-fc4a",
+                      "name": "Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7828-f96a-2087-d351",
+              "kind": "fixed",
+              "name": "Power fist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7828-f96a-2087-d351:7828-f96a-2087-d351",
+                  "name": "Power fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "87f-efba-9858-45bc",
+                      "name": "Power fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "790-9718-c595-7f5",
+              "kind": "fixed",
+              "name": "Long Vigil ranged weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "790-9718-c595-7f5:9be1-2f4b-22b5-6780",
+                  "name": "Long Vigil ranged weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "39ea-2182-61e3-c303",
+                      "name": "Long Vigil ranged weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3722-72d6-5151-5003",
+          "name": "Ennox Sorrlock",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "9a78-2788-8706-cfba",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9a78-2788-8706-cfba:9a78-2788-8706-cfba",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cea2-c4c5-a7fb-ec5b",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "81d9-ba6d-95f5-5714",
+              "kind": "fixed",
+              "name": "Long Vigil ranged weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "81d9-ba6d-95f5-5714:9be1-2f4b-22b5-6780",
+                  "name": "Long Vigil ranged weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "39ea-2182-61e3-c303",
+                      "name": "Long Vigil ranged weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cd4a-d623-f7b6-b8e6",
+          "name": "Jetek Suberei",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "eb83-8a1f-796b-5756",
+              "kind": "fixed",
+              "name": "Deathwatch twin boltgun",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "eb83-8a1f-796b-5756:eb83-8a1f-796b-5756",
+                  "name": "Deathwatch twin boltgun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "19d9-7128-75c6-fa69",
+                      "name": "Deathwatch twin boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "31bd-2750-5dfe-306c",
+              "kind": "fixed",
+              "name": "Long Vigil melee weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "31bd-2750-5dfe-306c:e3f6-2750-6e07-a27",
+                  "name": "Long Vigil melee weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e57b-128f-695c-c42f",
+                      "name": "Long Vigil melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4019-5ac3-1808-fb5b",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Chaplain Cassius has a 4+ invulnerable save."
+        },
+        {
+          "id": "cb89-cc1a-5e19-2bf1",
+          "name": "Jump Pack",
+          "type": "Abilities",
+          "description": "The bearer has a Move characteristic of 12\" and can move over models and terrain as if they were not there."
+        },
+        {
+          "id": "4b39-2ba4-2741-5275",
+          "name": "Jump Pack",
+          "type": "Abilities",
+          "description": "The bearer has a Move characteristic of 12\" and can move over models and terrain as if they were not there."
+        },
+        {
+          "id": "b490-9584-430a-7495",
+          "name": "Psychic Hood",
+          "type": "Abilities",
+          "description": "Models in the bearer’s unit have the Feel No Pain 4+ ability against Psychic Attacks."
+        },
+        {
+          "id": "f12-38da-600-43e8",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Garran Branatar has a 4+ invulnerable save."
+        },
+        {
+          "id": "762-8fda-bc0e-6e5f",
+          "name": "Catechism of Death",
+          "type": "Abilities",
+          "description": "While this unit contains Chaplain Cassius, melee weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "685b-a006-c655-4250",
+          "name": "Unflinching",
+          "type": "Abilities",
+          "description": "You can re-roll Battle-shock tests for this unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "390e-706b-a059-378b",
+      "name": "Deathwatch Terminator Squad",
+      "type": "unit",
+      "points": 190,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Deathwatch Terminator Squad",
+          "target_id": "8311-8645-4ce3-8b3",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Deathwatch",
+          "target_id": "15df-a532-a570-461e",
+          "primary": false
+        },
+        {
+          "name": "Kill Team",
+          "target_id": "81b0-a893-4fb7-c298",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "45fa-9a7-8352-362e",
+          "name": "Deathwatch Terminator",
+          "min_count": 1,
+          "max_count": 9,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ead7-caae-cc7e-f148",
+              "kind": "choice",
+              "name": "Terminator Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ead7-caae-cc7e-f148:245b-cbdd-7915-e0",
+                  "name": "Storm Bolter & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fd0c-f6e3-f81-179c",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "ead7-caae-cc7e-f148:e4f8-fbc-9a32-24b2",
+                  "name": "Twin Lightning Claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "be2b-679e-bf2e-b757",
+                      "name": "Twin Lightning Claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "ead7-caae-cc7e-f148:6d89-f8ad-8cac-18b4",
+                  "name": "Thunder Hammer & Storm Shield",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "663d-7f7d-1e20-7c2b",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "ead7-caae-cc7e-f148:745c-a89b-7d0f-3065",
+                  "name": "Storm Bolter & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9ba4-fd5d-776e-a9d8",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "259f-d98e-e052-ec64",
+          "name": "Deathwatch Terminator w/ Heavy Weapon",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b9fb-4e47-ec43-c1fb",
+              "kind": "choice",
+              "name": "Terminator Heavy Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:80c0-420b-9d0c-6581",
+                  "name": "Assault Cannon & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a69d-646f-8acf-14c",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:afe6-4342-76d7-7126",
+                  "name": "Assault Cannon & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "57d8-18ad-c7cc-f9dd",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:3dfd-61d0-51ce-d9d3",
+                  "name": "Heavy Flamer & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "81fe-a78d-ebae-e118",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:56a9-4150-f61a-cfb0",
+                  "name": "Heavy Flamer & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f392-8810-dbef-eac7",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:153b-96b7-6156-6ace",
+                  "name": "Plasma Cannon & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "18f4-4c76-c214-e5e0",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:7a5-e256-10d4-14f0",
+                  "name": "Plasma Cannon & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9060-a4fd-7c-80d0",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:510-6f07-8f6b-818b",
+                  "name": "Cyclone Missile Launcher, Storm Bolter & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "de5b-9560-f0b9-c48f",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "b9fb-4e47-ec43-c1fb:7d33-edd5-7937-e331",
+                  "name": "Cyclone Missile Launcher, Storm Bolter & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2454-7122-33f9-3b9b",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4595-7ad2-617a-c07d",
+          "name": "Deathwatch Terminator Sergeant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "52a3-786b-962d-44c3",
+              "kind": "choice",
+              "name": "Terminator Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "52a3-786b-962d-44c3:3b41-ef3b-efd7-6784",
+                  "name": "Storm Bolter & Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "0d68-122d-8526-301d",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "52a3-786b-962d-44c3:2987-27df-6bb5-62cc",
+                  "name": "Twin Lightning Claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "444d-4e8d-0f41-1849",
+                      "name": "Twin Lightning Claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "52a3-786b-962d-44c3:f831-6dfb-6b1b-8112",
+                  "name": "Thunder Hammer & Storm Shield",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "690f-4f3d-056a-23c0",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "52a3-786b-962d-44c3:7adb-f0b7-a934-18ad",
+                  "name": "Storm Bolter & Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8573-3307-c57c-7003",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8+",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c729-b51b-629d-5df9",
+          "name": "Terminatus Assault",
+          "type": "Abilities",
+          "description": "You can re-roll Charge rolls made for this unit. Each time this unit ends a Charge move, each enemy unit within Engagement Range of this unit must take a Battle-shock test. If that enemy unit does not have the IMPERIUM or CHAOS keywords, subtract 1 from that test."
+        },
+        {
+          "id": "72d-cf90-8721-2810",
+          "name": "Teleport Homer",
+          "type": "Abilities",
+          "description": "At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" of that token and not within 9\" of any enemy models. That token is then removed."
+        },
+        {
+          "id": "f1f4-4cb5-6192-b88b",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 4+ invulnerable save."
+        },
+        {
+          "id": "79ca-a242-bf33-a426",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER unit from your army with the Leader ability can be attached to a TERMINATOR SQUAD, it can be attached to this unit instead."
+        },
+        {
+          "id": "bf19-5277-300b-d864",
+          "name": "Storm Shield",
+          "type": "Abilities",
+          "description": "The bearer has a Wounds characteristic of 4."
+        },
+        {
+          "id": "bc91-0a58-f624-c158",
+          "name": "Storm Shield",
+          "type": "Abilities",
+          "description": "The bearer has a Wounds characteristic of 4."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 350,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "a077-e1c9-f8f0-d38",
+      "name": "Fortis Kill Team",
+      "type": "unit",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fortis Kill Team",
+          "target_id": "a2bb-b582-9f57-27f5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Kill Team",
+          "target_id": "81b0-a893-4fb7-c298",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4962-be6c-d809-e206",
+          "name": "Kill Team Sergeant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "514c-5b0d-824e-2572",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "514c-5b0d-824e-2572:dd2b-2731-b885-d0ae",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "42d9-9278-e25c-7a3f",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cd92-208e-7559-9c9b",
+          "name": "Fortis Doctrines",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that attack targets a unit that is Below Half-strength, add 1 to the Hit roll and add 1 to the Wound roll instead."
+        },
+        {
+          "id": "a226-1a6e-44f-6113",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER from your army with the Leader ability can be attached to an INTERCESSOR SQUAD, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6cb-912c-c43-210b",
+      "name": "Indomitor Kill Team",
+      "type": "unit",
+      "points": 270,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Indomitor Kill Team",
+          "target_id": "6acb-612b-3fe6-9061",
+          "primary": false
+        },
+        {
+          "name": "Deathwatch",
+          "target_id": "15df-a532-a570-461e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d171-7d41-4be1-3382",
+          "name": "Kill Team Heavy Intercessor w/ melta rifle",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3d5e-e20d-8e00-5b3d",
+              "kind": "fixed",
+              "name": "Melta rifle",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3d5e-e20d-8e00-5b3d:3d5e-e20d-8e00-5b3d",
+                  "name": "Melta rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e2fa-94aa-b18b-5443",
+                      "name": "Melta rifle",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Heavy, Melta 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ae82-6562-497e-de55",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ae82-6562-497e-de55:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c01f-c15f-c04e-dedb",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c01f-c15f-c04e-dedb:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a666-891-4187-a82",
+          "name": "Kill Team Heavy Intercessor w/ multi-melta",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e80b-803e-b6a-c02e",
+              "kind": "fixed",
+              "name": "Multi-melta",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e80b-803e-b6a-c02e:e80b-803e-b6a-c02e",
+                  "name": "Multi-melta",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "be7f-d1d2-ffaf-f499",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Heavy, Melta 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ff42-27b7-67c-e679",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ff42-27b7-67c-e679:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "59aa-3a9-f9f9-5847",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "59aa-3a9-f9f9-5847:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "31bd-dd30-6128-356e",
+          "name": "Kill Team Heavy Intercessor w/ power fists & auto boltstorm gauntlets",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "65e9-cc14-1fc1-267f",
+              "kind": "fixed",
+              "name": "Auto boltstorm gauntlets",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "65e9-cc14-1fc1-267f:65e9-cc14-1fc1-267f",
+                  "name": "Auto boltstorm gauntlets",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5be5-bda3-d931-b3cb",
+                      "name": "Auto boltstorm gauntlets",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9592-92a8-cd44-dcc0",
+              "kind": "fixed",
+              "name": "Twin power fists",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9592-92a8-cd44-dcc0:9592-92a8-cd44-dcc0",
+                  "name": "Twin power fists",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "09a6-8358-2593-150b",
+                      "name": "Twin power fists",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "97f7-c580-0448-de11",
+              "kind": "fixed",
+              "name": "Fragstorm grenade launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "97f7-c580-0448-de11:97f7-c580-0448-de11",
+                  "name": "Fragstorm grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "81d0-dc45-510f-2782",
+                      "name": "Fragstorm grenade launcher",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0d9b-e508-49a1-0b5f",
+          "name": "Kill Team Heavy Intercessor w/ power fists & flamestorm gauntlets",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5633-82d7-6f6a-317a",
+              "kind": "fixed",
+              "name": "Flamestorm gauntlets",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5633-82d7-6f6a-317a:5633-82d7-6f6a-317a",
+                  "name": "Flamestorm gauntlets",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "567f-9ebe-d264-bbc5",
+                      "name": "Flamestorm gauntlets",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+1",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5e96-4ab9-4531-8073",
+              "kind": "fixed",
+              "name": "Twin power fists",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5e96-4ab9-4531-8073:5e96-4ab9-4531-8073",
+                  "name": "Twin power fists",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9589-a0c0-1e08-519e",
+                      "name": "Twin power fists",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "84f7-2150-fe04-4f8b",
+          "name": "Kill Team Heavy Intercessor",
+          "min_count": 2,
+          "max_count": 10,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "5654-5bdd-c713-10c0",
+              "kind": "fixed",
+              "name": "Deathwatch heavy bolt rifle",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5654-5bdd-c713-10c0:5654-5bdd-c713-10c0",
+                  "name": "Deathwatch heavy bolt rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "706c-da54-2d65-4603",
+                      "name": "Deathwatch heavy bolt rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Assault, Heavy, Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7a47-2296-2512-45e6",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7a47-2296-2512-45e6:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f120-9b9e-1f3f-779e",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f120-9b9e-1f3f-779e:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "83ce-4339-bfd5-7635",
+          "name": "Kill Team Heavy Intercessor w/ heavy bolter",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "46ee-696e-8631-b41e",
+              "kind": "fixed",
+              "name": "Deathwatch heavy bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "46ee-696e-8631-b41e:46ee-696e-8631-b41e",
+                  "name": "Deathwatch heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8dbf-1436-3106-296a",
+                      "name": "Deathwatch heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Assault, Heavy, Lethal Hits, Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ff70-fa6d-3525-c08a",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ff70-fa6d-3525-c08a:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3de7-1ff5-5d02-8e55",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "3de7-1ff5-5d02-8e55:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f8b6-3181-7e49-fb57",
+          "name": "Indomitor Doctrines",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, or makes a melee attack in a turn in which it made a Charge move, improve the Strength characteristic of that attack by 2."
+        },
+        {
+          "id": "b8a4-e32-bbbb-4e78",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER unit from your army can be attached to a HEAVY INTERCESSOR SQUAD, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2544-5189-7806-30f3",
+      "name": "Spectrus Kill Team",
+      "type": "unit",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Spectrus Kill Team",
+          "target_id": "2de5-9b49-eb99-3e9f",
+          "primary": false
+        },
+        {
+          "name": "Kill Team",
+          "target_id": "81b0-a893-4fb7-c298",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        },
+        {
+          "name": "Phobos",
+          "target_id": "7295-ed65-8ff4-7a5f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a39b-9d32-c3ee-a14f",
+          "name": "Kill Team Infiltrator",
+          "min_count": 3,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7ce0-d222-824c-1713",
+              "kind": "fixed",
+              "name": "Deathwatch marksman bolt carbine",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7ce0-d222-824c-1713:7ce0-d222-824c-1713",
+                  "name": "Deathwatch marksman bolt carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "70e2-227f-7fe-f661",
+                      "name": "Deathwatch marksman bolt carbine",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Heavy, Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ac01-79aa-e24f-38e",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ac01-79aa-e24f-38e:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "268d-9fbb-9eb-ce9a",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "268d-9fbb-9eb-ce9a:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "477e-f891-4b7c-e003",
+          "name": "Kill Team Infiltrator w/ occulus bolt carbine",
+          "min_count": null,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bd3-53d3-d134-ab8f",
+              "kind": "fixed",
+              "name": "Deathwatch occulus bolt carbine",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bd3-53d3-d134-ab8f:bd3-53d3-d134-ab8f",
+                  "name": "Deathwatch occulus bolt carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a612-8000-b81-e736",
+                      "name": "Deathwatch occulus bolt carbine",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Assault, Ignores Cover, Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3087-465d-c1b5-8ac3",
+              "kind": "fixed",
+              "name": "Paired combat blades",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3087-465d-c1b5-8ac3:3087-465d-c1b5-8ac3",
+                  "name": "Paired combat blades",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4956-af00-f27d-a58b",
+                      "name": "Paired combat blades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "684b-9e41-83a2-7221",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "684b-9e41-83a2-7221:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f1f0-4d9d-cb87-72cc",
+          "name": "Kill Team Infiltrator w/ wargear",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "eaaa-a55e-ee06-4295",
+              "kind": "fixed",
+              "name": "Deathwatch marksman bolt carbine",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "eaaa-a55e-ee06-4295:eaaa-a55e-ee06-4295",
+                  "name": "Deathwatch marksman bolt carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "64ad-a661-43fb-f2de",
+                      "name": "Deathwatch marksman bolt carbine",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Heavy, Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f24f-1446-d7a3-2403",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f24f-1446-d7a3-2403:e957-5634-ec98-9d3d",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "935d-8919-f468-49b5",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1b51-6403-1ff1-62db",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "1b51-6403-1ff1-62db:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1ed9-356c-5051-e11d",
+          "name": "Kill Team Infiltrator w/ combat knife",
+          "min_count": null,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "984b-5c36-a50f-0a21",
+              "kind": "fixed",
+              "name": "Special-issue bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "984b-5c36-a50f-0a21:984b-5c36-a50f-0a21",
+                  "name": "Special-issue bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2772-9ad4-7ad9-7e4c",
+                      "name": "Special-issue bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Pistol, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2277-c2cf-4759-1a25",
+              "kind": "fixed",
+              "name": "Combat knife",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2277-c2cf-4759-1a25:2277-c2cf-4759-1a25",
+                  "name": "Combat knife",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a4e9-7a48-816f-f437",
+                      "name": "Combat knife",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9a84-da58-e70a-f057",
+          "name": "Kill Team Infiltrator w/ bolt carbine",
+          "min_count": null,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2bf6-dfb9-fea9-7a94",
+              "kind": "fixed",
+              "name": "Special-issue bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2bf6-dfb9-fea9-7a94:2bf6-dfb9-fea9-7a94",
+                  "name": "Special-issue bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e1ab-6cb7-25ff-3ae9",
+                      "name": "Special-issue bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Pistol, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1b2b-2c12-fa9e-a9ed",
+              "kind": "fixed",
+              "name": "Deathwatch bolt carbine",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1b2b-2c12-fa9e-a9ed:1b2b-2c12-fa9e-a9ed",
+                  "name": "Deathwatch bolt carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f97d-f908-b6d2-220b",
+                      "name": "Deathwatch Bolt carbine",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Lethal Hits, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ce9e-c337-14da-f625",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ce9e-c337-14da-f625:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b55d-e297-921b-9915",
+          "name": "Kill Team Infiltrator w/ instigator bolt carbine",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4f5b-2465-8b5f-66b8",
+              "kind": "fixed",
+              "name": "Instigator bolt carbine",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4f5b-2465-8b5f-66b8:4f5b-2465-8b5f-66b8",
+                  "name": "Instigator bolt carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "af00-9cba-2f76-8b15",
+                      "name": "Instigator bolt carbine",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "adac-6eb5-5e8f-0221",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "adac-6eb5-5e8f-0221:dd2b-2731-b885-d0ae",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "42d9-9278-e25c-7a3f",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e353-61ef-fc68-0eea",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "e353-61ef-fc68-0eea:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e0ff-56bb-613d-802f",
+          "name": "Kill Team Infiltrator w/ las fusil",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "c45f-9902-18c9-9acd",
+              "kind": "fixed",
+              "name": "Las fusil",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c45f-9902-18c9-9acd:c45f-9902-18c9-9acd",
+                  "name": "Las fusil",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "83ec-b686-c98e-cbad",
+                      "name": "Las fusil",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "26fe-f6b9-75dc-887c",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "26fe-f6b9-75dc-887c:dd2b-2731-b885-d0ae",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "42d9-9278-e25c-7a3f",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ea41-9ea9-6e08-5b20",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ea41-9ea9-6e08-5b20:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ca58-2c6d-1b85-bc76",
+          "name": "Kill Team Infiltrator w/ bolt sniper rifle",
+          "min_count": null,
+          "max_count": 3,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "a0dc-70d3-af1f-f83b",
+              "kind": "fixed",
+              "name": "Bolt sniper rifle",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a0dc-70d3-af1f-f83b:a0dc-70d3-af1f-f83b",
+                  "name": "Bolt sniper rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "482f-8359-6be6-4028",
+                      "name": "Bolt sniper rifle",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Heavy, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8ce3-531b-4210-e200",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8ce3-531b-4210-e200:dd2b-2731-b885-d0ae",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "42d9-9278-e25c-7a3f",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2194-64e8-3592-4dc0",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "2194-64e8-3592-4dc0:2078-20a8-181f-a708",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c869-6a2e-6dcc-7780",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e966-dcf9-893d-a8f8",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER from your army with the Leader ability can be attached to an INFILTRATOR SQUAD, it can be attached to this unit instead. \nIf this unit has a Leader unit attached to it during the Declare Battle Formations step, that Leader unit gains the Infiltrators and Scouts 6\" abilities."
+        },
+        {
+          "id": "afc0-1ac-ce23-3a4f",
+          "name": "Spectrus Doctrines",
+          "type": "Abilities",
+          "description": "At the end of your opponent’s turn, if this unit is more than 6\" away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves."
+        },
+        {
+          "id": "716b-0a19-8e77-b53f",
+          "name": "Helix Gauntlet",
+          "type": "Abilities",
+          "description": "Models in the bearer’s unit have the Feel No Pain 6+ ability."
+        },
+        {
+          "id": "ccbb-aa23-747f-8529",
+          "name": "Infiltrator Comms Array",
+          "type": "Abilities",
+          "description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+        },
+        {
+          "id": "c1da-c076-7de5-5ee6",
+          "name": "Instigator Bolt Carbine",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after the bearer’s unit has shot, the bearer’s unit can make a Normal move. If it does, until the end of the turn, the bearer’s unit is not eligible to declare a charge."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "66ab-476a-134e-ec7b",
+      "name": "Deathwatch Veterans",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Ordo Xenos",
+          "target_id": "df23-f48a-60b1-480d",
+          "primary": false
+        },
+        {
+          "name": "Retinue",
+          "target_id": "cc77-a53-fca8-f48e",
+          "primary": false
+        },
+        {
+          "name": "Deathwatch Kill Team",
+          "target_id": "b917-6755-58fc-bba0",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "079c-c14f-83f1-25a6",
+          "name": "Death to the Alien",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the IMPERIUM or CHAOS keywords, you can re-roll the Hit roll instead."
+        },
+        {
+          "id": "e7f7-7d78-25b1-f510",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER unit from your army with the Leader ability can be attached to a STERNGUARD VETERAN SQUAD, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 200,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "c679-f252-32b1-ebcc",
+      "name": "Talonstrike Kill Team",
+      "type": "unit",
+      "points": 290,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Deathwatch",
+          "target_id": "d39c-9989-db7f-d815",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Kill Team",
+          "target_id": "81b0-a893-4fb7-c298",
+          "primary": false
+        },
+        {
+          "name": "Talonstrike Kill Team",
+          "target_id": "4082-03bb-1ab3-a93b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68d2-9aaa-f6cb-f4dc",
+          "name": "Kill Team Sergeant w/ Jump Pack",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        },
+        {
+          "id": "13c9-7b74-3736-15b4",
+          "name": "Intercessor w/ heavy bolt pistol and Jump Pack",
+          "min_count": 4,
+          "max_count": 9,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        },
+        {
+          "id": "d773-5ee0-d647-efaa",
+          "name": "Heavy Intercessor w/ Jump Pack",
+          "min_count": null,
+          "max_count": 5,
+          "stats": {
+            "m": "10\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8f98-cd7a-d86a-f163",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8f98-cd7a-d86a-f163:8d1c-e6d8-5d46-6a3a",
+                  "name": "Assault bolters",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "aae9-d039-e99b-9311",
+                      "name": "Assault bolters",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Assault, Pistol, Sustained Hits 2, Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "8f98-cd7a-d86a-f163:af8e-9b8b-a106-2f1b",
+                  "name": "Plasma exterminators",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "169d-4868-32b9-da04",
+                      "name": "➤ Plasma exterminators - standard",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Assault, Pistol, Twin-linked"
+                    },
+                    {
+                      "profile_id": "8a99-68d4-cfb7-b72e",
+                      "name": "➤ Plasma exterminators - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Assault, Hazardous, Pistol, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cd78-e267-5f72-a2a2",
+          "name": "Intercessor w/ plasma pistol and Jump Pack",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ac7d-0b1f-2179-2998",
+              "kind": "fixed",
+              "name": "Plasma pistol",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ac7d-0b1f-2179-2998:2902-b665-48b6-bb09",
+                  "name": "Plasma pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c4be-29a8-52c7-949",
+                      "name": "➤ Plasma pistol - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "4aed-ac70-60c-ae7b",
+                      "name": "➤ Plasma pistol - Supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "088e-3c36-f4e3-6140",
+          "name": "Talonstrike Doctrines",
+          "type": "Abilities",
+          "description": "Each time this unit is set up on the battlefield, until the end of the turn:\n- Improve the Armour Penetration characteristic of weapons equipped by models in this unit by 1. \n- Melee weapons equipped by models in this unit have the [LANCE] ability."
+        },
+        {
+          "id": "de67-fb7c-d2b3-c29d",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a CHARACTER unit from your army with the Leader ability can be attached to an ASSAULT INTERCESSORS WITH JUMP PACKS unit, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

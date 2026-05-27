@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}My models — WH40K 10e{% endblock %}
+{% block body %}
+<h1>My models <span class="muted" style="font-size:1rem;">({{ models|length }}{% if total != (models|length) %} / {{ total }}{% endif %})</span></h1>
+<p><a href="{{ url_for('model_new') }}" class="btn">+ Register model</a></p>
+
+{% set has_filter = f.faction or f.keyword or f.status or f.q %}
+
+<form method="get" class="panel" style="margin-bottom:1rem;">
+  <div class="form-grid">
+    <div>
+      <label>Search</label>
+      <input type="text" name="q" value="{{ f.q or '' }}" placeholder="custom or datasheet name">
+    </div>
+    <div>
+      <label>Faction</label>
+      <select name="faction">
+        <option value="">All</option>
+        {% for fn in factions %}
+          <option value="{{ fn }}" {% if f.faction == fn %}selected{% endif %}>{{ fn }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Keyword</label>
+      <select name="keyword">
+        <option value="">Any</option>
+        {% for k in keywords %}
+          <option value="{{ k }}" {% if f.keyword == k %}selected{% endif %}>{{ k }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Status</label>
+      <select name="status">
+        <option value="">Any</option>
+        {% for v, label in status_options %}
+          <option value="{{ v }}" {% if f.status == v %}selected{% endif %}>{{ label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <button type="submit">Filter</button>
+  {% if has_filter %}
+    <a href="{{ url_for('models_list') }}" class="btn btn-ghost">Clear</a>
+  {% endif %}
+</form>
+
+{% if models %}
+  <div class="image-grid">
+    {% for m in models %}
+      <figure>
+        <a href="{{ url_for('model_detail', model_id=m.id) }}">
+        {% if m.cover %}
+          <img src="{{ url_for('static', filename='uploads/' ~ m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
+        {% else %}
+          <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>no image</text></svg>" alt="no image">
+        {% endif %}
+        </a>
+        <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
+          <div><b>{{ m.custom_name or m.datasheet_name }}</b></div>
+          <div class="muted" style="font-size:0.8rem;">{{ m.datasheet_name }}</div>
+          {% if m.faction_name %}
+            <div class="muted" style="font-size:0.75rem;">{{ m.faction_name }}</div>
+          {% endif %}
+          <div style="margin-top:0.3rem;">
+            <span class="badge status-{{ m.status }}">{{ status_map.get(m.status, m.status) }}</span>
+            {% if m.n_images %}<span class="muted" style="font-size:0.75rem;"> · {{ m.n_images }} img</span>{% endif %}
+          </div>
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+{% else %}
+  {% if has_filter %}
+    <p class="muted">No models match the current filter.</p>
+  {% else %}
+    <p class="muted">No models registered yet.</p>
+  {% endif %}
+{% endif %}
+{% endblock %}

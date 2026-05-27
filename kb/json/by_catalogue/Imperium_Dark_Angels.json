@@ -1,0 +1,4897 @@
+{
+  "id": "470a-6daa-9014-12df",
+  "name": "Imperium - Adeptus Astartes - Dark Angels",
+  "is_library": false,
+  "revision": "38",
+  "source_file": "Imperium - Dark Angels.cat",
+  "categories": [
+    {
+      "id": "b567-3588-1d37-26e9",
+      "name": "Azrael"
+    },
+    {
+      "id": "bd38-6889-130a-b51e",
+      "name": "Belial"
+    },
+    {
+      "id": "abb9-c850-5b55-6809",
+      "name": "Sammael"
+    },
+    {
+      "id": "2afc-d6d3-e731-8a83",
+      "name": "Ezekiel"
+    },
+    {
+      "id": "2690-2ccf-683d-74e3",
+      "name": "Asmodai"
+    },
+    {
+      "id": "42a0-db93-ff81-d939",
+      "name": "Lion El'Jonson"
+    },
+    {
+      "id": "286f-ba94-2fa3-2606",
+      "name": "Lazarus"
+    },
+    {
+      "id": "2595-2fac-49c4-64ea",
+      "name": "Nephilim Jetfighter"
+    },
+    {
+      "id": "7f34-c3ed-cc4b-a273",
+      "name": "Dark Talon"
+    },
+    {
+      "id": "e74d-4be2-7d3e-d993",
+      "name": "Land Speeder Vengeance"
+    },
+    {
+      "id": "294a-2f23-e0ce-386c",
+      "name": "Darkshroud"
+    },
+    {
+      "id": "1d42-6a24-1842-b424",
+      "name": "Ravenwing Black Knights"
+    },
+    {
+      "id": "ee13-ff16-80a1-5e3e",
+      "name": "Ravenwing Command Squad"
+    },
+    {
+      "id": "8c-33f-ebc7-f623",
+      "name": "Deathwing Knights"
+    },
+    {
+      "id": "5bd9-7a8f-e83e-2021",
+      "name": "Deathwing Terminator Squad"
+    },
+    {
+      "id": "3d65-6753-15a5-47ba",
+      "name": "Inner Circle Companions"
+    },
+    {
+      "id": "4b4e-689a-d721-df70",
+      "name": "Ravenwing Talonmaster"
+    },
+    {
+      "id": "1869-8b16-3b2a-713e",
+      "name": "Deathwing Strikemaster"
+    },
+    {
+      "id": "c45c-a930-eb7c-f67f",
+      "name": "Deathwing Command Squad"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "81bd-ce4e-229f-a88",
+      "name": "Azrael",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Azrael",
+          "target_id": "b567-3588-1d37-26e9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "81bd-ce4e-229f-a88",
+          "name": "Azrael",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b4a7-5f8-b8d1-f3d7",
+              "kind": "fixed",
+              "name": "Lion's Wrath",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b4a7-5f8-b8d1-f3d7:b4a7-5f8-b8d1-f3d7",
+                  "name": "Lion's Wrath",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ed7-47f8-c-d88c",
+                      "name": "Lion's Wrath",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5846-a08b-2bb7-ec5a",
+              "kind": "fixed",
+              "name": "The Sword of Secrets",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "5846-a08b-2bb7-ec5a:5846-a08b-2bb7-ec5a",
+                  "name": "The Sword of Secrets",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "60b6-cc33-a89e-8430",
+                      "name": "The Sword of Secrets",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-4",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "419d-1edd-9c5d-dff7",
+          "name": "Supreme Grand Master",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+        },
+        {
+          "id": "5cab-d147-af7c-b68c",
+          "name": "Masterful Tactician",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP."
+        },
+        {
+          "id": "3bab-46d5-38a4-e70f",
+          "name": "The Lion Helm",
+          "type": "Abilities",
+          "description": "Models in the bearer’s unit have a 4+ invulnerable save. In addition, once per battle, in any phase, the bearer can summon a Watcher in the Dark. When it does, until the end of the phase, models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds."
+        },
+        {
+          "id": "a1d2-31fe-75da-858c",
+          "name": "Invulnerable save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "c42f-33c4-62d9-93d9",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bf62-244b-f9db-6cf",
+      "name": "Belial",
+      "type": "model",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Belial",
+          "target_id": "bd38-6889-130a-b51e",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bf62-244b-f9db-6cf",
+          "name": "Belial",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4333-4e21-ec79-e05d",
+              "kind": "fixed",
+              "name": "Master-crafted storm bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4333-4e21-ec79-e05d:4333-4e21-ec79-e05d",
+                  "name": "Master-crafted storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "31d4-9fb6-a699-1174",
+                      "name": "Master-crafted storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Precision, Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1914-5431-ff58-3bc0",
+              "kind": "fixed",
+              "name": "The Sword of Silence",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1914-5431-ff58-3bc0:1914-5431-ff58-3bc0",
+                  "name": "The Sword of Silence",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "32a8-dd80-651-3378",
+                      "name": "The Sword of Silence",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5c8e-e7f9-5ded-2a58",
+          "name": "Grand Master of the Deathwing",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, if a Critical Hit is scored, that attack has the [PRECISION] ability."
+        },
+        {
+          "id": "1f47-7e55-2cae-535c",
+          "name": "Strikes of Retribution",
+          "type": "Abilities",
+          "description": "Each time a melee attack is allocated to this model, after the attacking model’s unit has finished making its attacks, roll one D6 (to a maximum of six D6 per attacking unit): for each 4+, the attacking unit suffers 1 mortal wound."
+        },
+        {
+          "id": "ec73-66f5-f92a-addf",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "ea5f-a72d-372f-69f",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units:\n■ Deathwing Knights\n■ Deathwing Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8f4b-c343-bef5-6779",
+      "name": "Sammael",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Sammael",
+          "target_id": "abb9-c850-5b55-6809",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8f4b-c343-bef5-6779",
+          "name": "Sammael",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "31a7-cee5-c20b-1965",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "31a7-cee5-c20b-1965:31a7-cee5-c20b-1965",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c2f0-8273-a3f0-43eb",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bfbe-ac79-2a43-5d81",
+              "kind": "fixed",
+              "name": "Master-crafted plasma cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bfbe-ac79-2a43-5d81:bfbe-ac79-2a43-5d81",
+                  "name": "Master-crafted plasma cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ffde-95ee-4df6-6dea",
+                      "name": "Master-crafted plasma cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "96b6-fc33-d163-4e2c",
+              "kind": "fixed",
+              "name": "Twin storm bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "96b6-fc33-d163-4e2c:96b6-fc33-d163-4e2c",
+                  "name": "Twin storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "45dc-cbf3-fcfa-8039",
+                      "name": "Twin storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "af43-f417-3d3-66a6",
+              "kind": "fixed",
+              "name": "The Raven Sword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "af43-f417-3d3-66a6:af43-f417-3d3-66a6",
+                  "name": "The Raven Sword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "60ca-a584-144d-3077",
+                      "name": "The Raven Sword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cb53-58b7-a95a-b21c",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Outrider Squad\n■ Ravenwing Black Knights"
+        },
+        {
+          "id": "9d2d-43a7-1561-e57",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "8858-35c5-7be5-9f0a",
+          "name": "Grand Master of the Ravenwing",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead."
+        },
+        {
+          "id": "226-2678-90ed-5d5",
+          "name": "Cut Off Their Escape",
+          "type": "Abilities",
+          "description": "Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of this model’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "38c9-66a1-fe60-46af",
+      "name": "Ezekiel",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Ezekiel",
+          "target_id": "2afc-d6d3-e731-8a83",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Librarian",
+          "target_id": "2c02-e616-7038-bcd7",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "38c9-66a1-fe60-46af",
+          "name": "Ezekiel",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "da5e-dda8-cb14-4560",
+              "kind": "fixed",
+              "name": "The Deliverer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "da5e-dda8-cb14-4560:da5e-dda8-cb14-4560",
+                  "name": "The Deliverer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fd5a-72db-5bc8-7025",
+                      "name": "The Deliverer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Pistol, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "753f-d443-e1a-73a8",
+              "kind": "fixed",
+              "name": "Mind Wipe",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "753f-d443-e1a-73a8:753f-d443-e1a-73a8",
+                  "name": "Mind Wipe",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fc03-30cd-58b6-788f",
+                      "name": "➤ Mind Wipe - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Devastating Wounds, Precision, Psychic"
+                    },
+                    {
+                      "profile_id": "fdaf-6291-16d1-6051",
+                      "name": "➤ Mind Wipe - focussed witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d54d-a3b1-1814-e7ca",
+              "kind": "fixed",
+              "name": "Traitor's Bane",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d54d-a3b1-1814-e7ca:d54d-a3b1-1814-e7ca",
+                  "name": "Traitor's Bane",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a896-5701-6c4a-7753",
+                      "name": "Traitor's Bane",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Anti-Chaos 2+, Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6fdb-c01c-b297-170f",
+          "name": "Invulnerable save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "f048-48f8-8dc0-3001",
+          "name": "Engulfing Fear [Psychic]",
+          "type": "Abilities",
+          "description": "In your Shooting phase, you can select one enemy unit within 18\" of this model. That enemy unit must take a Battle-shock test."
+        },
+        {
+          "id": "b91e-a6de-9238-9ee1",
+          "name": "Book of Salvation",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. When this model is destroyed, each friendly Adeptus Astartes unit within 6\" of this model must take a Battle-shock test."
+        },
+        {
+          "id": "cf97-b93c-c35-1e55",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veterans Squad\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9bf9-1e30-e4b4-939c",
+      "name": "Asmodai",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Asmodai",
+          "target_id": "2690-2ccf-683d-74e3",
+          "primary": false
+        },
+        {
+          "name": "Chaplain",
+          "target_id": "1fb1-3603-a4bd-485",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9bf9-1e30-e4b4-939c",
+          "name": "Asmodai",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "5+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "713c-b312-58f3-5bdf",
+              "kind": "fixed",
+              "name": "Heavy Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "713c-b312-58f3-5bdf:713c-b312-58f3-5bdf",
+                  "name": "Heavy Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4f30-1743-64e9-4e82",
+                      "name": "Heavy Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d373-91c9-3d89-e893",
+              "kind": "fixed",
+              "name": "Crozius Arcanum and Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d373-91c9-3d89-e893:d373-91c9-3d89-e893",
+                  "name": "Crozius Arcanum and Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ff3-d79b-5a5c-5e2f",
+                      "name": "➤ Crozius Arcanum and Power Weapon - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "48ef-c02b-cfa4-9797",
+                      "name": "➤ Crozius Arcanum and Power Weapon - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bc71-ac50-79a-7ce8",
+          "name": "Invulnerable save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "cb36-69d9-6027-34d7",
+          "name": "Exemplar of Hate",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Hit roll."
+        },
+        {
+          "id": "4483-333d-1b7-1499",
+          "name": "Feared Interrogator",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, each enemy Character unit within 6\" of this model must take a Battle-shock test, subtracting 1 from that test when they do. In addition, each time this model destroys an enemy Character model with a melee attack, you gain 1CP."
+        },
+        {
+          "id": "3b91-c4c6-818d-4442",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "15d3-ebc7-d28b-daf4",
+      "name": "Lion El'Jonson",
+      "type": "model",
+      "points": 315,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Primarch",
+          "target_id": "6474-0ce3-6b5a-120c",
+          "primary": false
+        },
+        {
+          "name": "Lion El'Jonson",
+          "target_id": "42a0-db93-ff81-d939",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "15d3-ebc7-d28b-daf4",
+          "name": "Lion El'Jonson",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "10",
+            "ld": "5+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "e177-275c-4a06-3e5d",
+              "kind": "fixed",
+              "name": "Arma Luminis",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e177-275c-4a06-3e5d:e177-275c-4a06-3e5d",
+                  "name": "Arma Luminis",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f6e1-fa37-f674-3966",
+                      "name": "➤ Arma Luminis - bolt",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "708a-4618-fdfd-8775",
+                      "name": "➤ Arma Luminis - plasma",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b81d-c41a-4951-ffe",
+              "kind": "fixed",
+              "name": "Fealty",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b81d-c41a-4951-ffe:b81d-c41a-4951-ffe",
+                  "name": "Fealty",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9008-3db1-12b7-6d88",
+                      "name": "➤ Fealty - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "12",
+                      "ap": "-4",
+                      "d": "4",
+                      "keywords": "Lethal Hits"
+                    },
+                    {
+                      "profile_id": "246b-3626-72d1-6262",
+                      "name": "➤ Fealty - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "16",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d7-26f-1f5c-5d7b",
+          "name": "Primarch of the First Legion",
+          "type": "Abilities",
+          "description": "In your Command phase, select one Primarch of the First Legion abilities (see left). Until the start of your next Command phase, this model has that ability."
+        },
+        {
+          "id": "b8af-d4a-e67e-5308",
+          "name": "All Secrets Revealed",
+          "type": "Primarch of the First Legion",
+          "description": ""
+        },
+        {
+          "id": "5e13-be29-6e38-997d",
+          "name": "Martial Exemplar [Aura]",
+          "type": "Primarch of the First Legion",
+          "description": ""
+        },
+        {
+          "id": "e162-ac51-433-7cc6",
+          "name": "No Hiding From the Watchers [Aura]",
+          "type": "Primarch of the First Legion",
+          "description": ""
+        },
+        {
+          "id": "525f-c5d8-d135-e7a1",
+          "name": "The Emperor's Shield",
+          "type": "Abilities",
+          "description": "Each time a melee attack is allocated to this model, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks."
+        },
+        {
+          "id": "330c-47ba-cddb-1910",
+          "name": "Dark Angels Bodyguard",
+          "type": "Abilities",
+          "description": "While this model is within 3\" of one or more friendly Adeptus Astartes Infantry units, this model has the Lone Operative ability."
+        },
+        {
+          "id": "e25a-6293-2852-6904",
+          "name": "Invulnerable save",
+          "type": "Abilities",
+          "description": "3+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4b0d-45ff-fab3-7472",
+      "name": "Lazarus",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Lazarus",
+          "target_id": "286f-ba94-2fa3-2606",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4b0d-45ff-fab3-7472",
+          "name": "Lazarus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3ad9-2652-f5e1-faa9",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3ad9-2652-f5e1-faa9:3ad9-2652-f5e1-faa9",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3976-6698-3fe3-201c",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "35f3-3981-8b17-9826",
+              "kind": "fixed",
+              "name": "Enmity’s Edge",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "35f3-3981-8b17-9826:35f3-3981-8b17-9826",
+                  "name": "Enmity’s Edge",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7814-635d-622a-c628",
+                      "name": "Enmity’s Edge",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Anti-Psyker 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d624-cd8c-e5fa-4603",
+          "name": "Intractable Will",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "c2a8-5405-6d21-f044",
+          "name": "The Spiritshield Helm",
+          "type": "Abilities",
+          "description": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+        },
+        {
+          "id": "620b-a55b-f7f1-5e58",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "a74d-6e5a-52a3-8a29",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4f36-6609-efac-baa6",
+      "name": "Nephilim Jetfighter",
+      "type": "model",
+      "points": 195,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Nephilim Jetfighter",
+          "target_id": "2595-2fac-49c4-64ea",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4f36-6609-efac-baa6",
+          "name": "Nephilim Jetfighter",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "9cf8-53f5-bc7c-2d4e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9cf8-53f5-bc7c-2d4e:ac7-5c12-7450-c36d",
+                  "name": "Armoured hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bf08-990c-3aeb-d59a",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "9cf8-53f5-bc7c-2d4e:b920-723e-9b06-3467",
+                  "name": "Blacksword missiles",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "80f7-1a8d-b7ae-e553",
+                      "name": "Blacksword missiles",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Anti-Fly 2+"
+                    }
+                  ]
+                },
+                {
+                  "id": "9cf8-53f5-bc7c-2d4e:1a17-51e4-81e0-2614",
+                  "name": "Twin heavy bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8971-1042-724e-7ee1",
+                      "name": "Twin heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8639-6848-43d7-63e7",
+          "name": "Lightning-fast Manoeuvres",
+          "type": "Abilities",
+          "description": "Each time a ranged attack targets this model, subtract 1 from the Hit roll. If that attack was made by a model that can Fly, subtract 1 from the Wound roll as well."
+        },
+        {
+          "id": "2cff-f9b1-965c-5e8d",
+          "name": "DAMAGED: 1-3 WOUNDS REMAINING",
+          "type": "Abilities",
+          "description": "While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "ad17-d6b0-ea21-926c",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9b3d-e812-4248-522",
+      "name": "Ravenwing Dark Talon",
+      "type": "model",
+      "points": 210,
+      "keywords": [
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Dark Talon",
+          "target_id": "7f34-c3ed-cc4b-a273",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9b3d-e812-4248-522",
+          "name": "Ravenwing Dark Talon",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "ac56-4978-755a-a3c7",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ac56-4978-755a-a3c7:9a9f-9447-f5be-e51d",
+                  "name": "Armoured Hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2bf-8f35-b42-c432",
+                      "name": "Armoured Hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "ac56-4978-755a-a3c7:5cc2-1306-6dcb-935f",
+                  "name": "Hurricane bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "61b-8473-2e5a-ff5e",
+                      "name": "Hurricane bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 6, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "ac56-4978-755a-a3c7:15a1-984e-37a-892a",
+                  "name": "Rift cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "96ce-acc2-fe8d-f7e1",
+                      "name": "Rift cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D3+1",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "3",
+                      "keywords": "Blast, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a723-ca6b-c9a1-a4d3",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        },
+        {
+          "id": "4821-326d-103b-a38c",
+          "name": "Stasis Bomb",
+          "type": "Abilities",
+          "description": "Once per battle, one model from your army with this ability can use it after it ends a Normal move. If it does, you can select one enemy unit (excluding Aircraft) that model moved over this phase. That unit suffers D3 mortal wounds and you must roll one D6: on a 1-3, that unit cannot Advance or Fall Back in your opponent’s next Movement phase; on a 4-6, that unit must Remain Stationary in your opponent’s next Movement phase. Each model can only use this ability once per battle."
+        },
+        {
+          "id": "c8eb-9594-8256-8c40",
+          "name": "DAMAGED: 1-3 WOUNDS REMAINING",
+          "type": "Abilities",
+          "description": "While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b4a0-d2fe-a988-f28b",
+      "name": "Land Speeder Vengeance",
+      "type": "model",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Land Speeder Vengeance",
+          "target_id": "e74d-4be2-7d3e-d993",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b4a0-d2fe-a988-f28b",
+          "name": "Land Speeder Vengeance",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "dcbf-7b5c-9de0-5ea2",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "dcbf-7b5c-9de0-5ea2:b095-d588-7f75-2f48",
+                  "name": "Close Combat Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "abe1-b957-d3a5-bbee",
+                      "name": "Close Combat Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "dcbf-7b5c-9de0-5ea2:88a9-a163-855e-7301",
+                  "name": "Plasma storm battery",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7850-13a-cdea-60ed",
+                      "name": "➤ Plasma storm battery - standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast, Twin-Linked"
+                    },
+                    {
+                      "profile_id": "d5f0-93ae-7ea9-ebd3",
+                      "name": "➤ Plasma storm battery - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Blast, Hazardous, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d5a4-e1a8-3c7d-8301",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        },
+        {
+          "id": "63a-27da-15f5-31d0",
+          "name": "Storm of Vengeance",
+          "type": "Abilities",
+          "description": "Once per turn, in your opponent’s Shooting phase, when another friendly Adeptus Astartes unit within 6\" of this model is destroyed, one model with this ability can use it. If it does, after the attacking unit has finished making its attacks, that model can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target)."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "152b-a271-df2b-21a9",
+      "name": "Ravenwing Darkshroud",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Darkshroud",
+          "target_id": "294a-2f23-e0ce-386c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "152b-a271-df2b-21a9",
+          "name": "Ravenwing Darkshroud",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "4150-1a2b-522f-2417",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4150-1a2b-522f-2417:6670-a3c1-dc23-3622",
+                  "name": "Close Combat Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8a4-9f54-dfa5-55a1",
+                      "name": "Close Combat Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d3d4-3de9-f046-c527",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        },
+        {
+          "id": "a79a-fb98-5a0b-66ca",
+          "name": "Icon of Old Caliban (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adeptus Astartes unit is within 6\" of this model, models in that unit have the Stealth ability and each time a ranged attack targets that unit, that unit has the Benefit of Cover against that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "212d-f302-aaaf-5c12",
+      "name": "Ravenwing Black Knights",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing Black Knights",
+          "target_id": "1d42-6a24-1842-b424",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4c15-1de7-973d-4c5",
+          "name": "Ravenwing Huntmaster",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ad62-9b44-f968-ec50",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ad62-9b44-f968-ec50:ad62-9b44-f968-ec50",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b783-3f35-aa03-4da4",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3f4b-8252-eebe-ad39",
+              "kind": "fixed",
+              "name": "Black Knight combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3f4b-8252-eebe-ad39:3f4b-8252-eebe-ad39",
+                  "name": "Black Knight combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c7d-99ea-da7-2f6b",
+                      "name": "Black Knight combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "32ea-3ee1-305a-1b02",
+              "kind": "fixed",
+              "name": "Plasma talon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "32ea-3ee1-305a-1b02:32ea-3ee1-305a-1b02",
+                  "name": "Plasma talon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e485-a67b-e15a-d4f0",
+                      "name": "➤ Plasma talon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "d6d6-4b62-66a9-a657",
+                      "name": "➤ Plasma talon - Supercharged",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b25b-5cf6-a398-dd27",
+          "name": "Ravenwing Black Knight",
+          "min_count": 2,
+          "max_count": 5,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "89ed-d59b-4611-564d",
+              "kind": "fixed",
+              "name": "Plasma talon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "89ed-d59b-4611-564d:89ed-d59b-4611-564d",
+                  "name": "Plasma talon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5b8e-4321-9c5c-32db",
+                      "name": "➤ Plasma talon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "f294-f08f-abd5-c4f4",
+                      "name": "➤ Plasma talon - Supercharged",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "384-dc5f-6b8c-626b",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "384-dc5f-6b8c-626b:384-dc5f-6b8c-626b",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bd60-6355-a5af-e3f0",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3d7f-5231-1429-b4b6",
+              "kind": "fixed",
+              "name": "Black Knight combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3d7f-5231-1429-b4b6:3d7f-5231-1429-b4b6",
+                  "name": "Black Knight combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "43b2-e79d-c236-67ca",
+                      "name": "Black Knight combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5b52-4d5d-a5cf-67c6",
+          "name": "Ravenwing Black Knight w/ Grenade Launcher",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "2ee9-ec5-85e5-815e",
+              "kind": "fixed",
+              "name": "Black Knight combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2ee9-ec5-85e5-815e:2ee9-ec5-85e5-815e",
+                  "name": "Black Knight combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "41f0-a240-7532-30a9",
+                      "name": "Black Knight combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1633-f85a-264a-9591",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1633-f85a-264a-9591:1633-f85a-264a-9591",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "426c-ca25-a4e6-5873",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f03f-d10-1106-9add",
+              "kind": "fixed",
+              "name": "Astartes grenade launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f03f-d10-1106-9add:f03f-d10-1106-9add",
+                  "name": "Astartes grenade launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "38e2-f1-41b1-7107",
+                      "name": "➤ Astartes grenade launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "973b-3f94-971-5c56",
+                      "name": "➤ Astartes grenade launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9aa9-7a1a-e930-a53b",
+          "name": "Knights of Caliban",
+          "type": "Abilities",
+          "description": "Each time this unit is selected to fight, if it made a Charge move this turn, until the end of the phase, melee weapons equipped by models in this unit have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities."
+        },
+        {
+          "id": "d659-103f-7990-1d94",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Character unit from your army with the Leader ability can be attached to an Outrider Squad, it can be attached to this unit instead."
+        },
+        {
+          "id": "6dc4-94d0-448b-6476",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 180,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "e87d-f173-88b9-aa84",
+      "name": "Ravenwing Command Squad",
+      "type": "unit",
+      "points": 120,
+      "keywords": [
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing Command Squad",
+          "target_id": "ee13-ff16-80a1-5e3e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "b342-4005-baec-3598",
+          "name": "Ravenwing Ancient",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "7883-4ff1-4189-8ec6",
+              "kind": "fixed",
+              "name": "Black Knight combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7883-4ff1-4189-8ec6:7883-4ff1-4189-8ec6",
+                  "name": "Black Knight combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5483-b88f-5dc1-3777",
+                      "name": "Black Knight combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d330-eb86-bcd1-fdc4",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d330-eb86-bcd1-fdc4:d330-eb86-bcd1-fdc4",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e500-d2cb-5d89-8411",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6545-a196-d075-bf4e",
+              "kind": "choice",
+              "name": "Plasma Talon Replacement",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6545-a196-d075-bf4e:5808-cc1b-5f33-c7a7",
+                  "name": "Plasma talon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a184-f7f6-8a19-e8d3",
+                      "name": "➤ Plasma talon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "f907-5556-9f43-dce2",
+                      "name": "➤ Plasma talon - Supercharged",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "6545-a196-d075-bf4e:686a-80de-1e7b-2d28",
+                  "name": "Astartes Grenade Launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e147-1104-6c40-afa5",
+                      "name": "➤ Astartes Grenade Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "8f48-d526-9f28-717e",
+                      "name": "➤ Astartes Grenade Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d445-3ac1-64d5-fd4a",
+          "name": "Ravenwing Apothecary",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "48b6-4280-25f4-a306",
+              "kind": "fixed",
+              "name": "Black Knight combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "48b6-4280-25f4-a306:48b6-4280-25f4-a306",
+                  "name": "Black Knight combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "54d8-c911-9b17-fc32",
+                      "name": "Black Knight combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3977-665d-ed2-21c9",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3977-665d-ed2-21c9:3977-665d-ed2-21c9",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "556f-5a12-7e74-2dbd",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3771-6c3c-4035-70fa",
+              "kind": "choice",
+              "name": "Plasma Talon Replacement",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3771-6c3c-4035-70fa:c839-8a8a-5a0b-a5c4",
+                  "name": "Plasma talon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bb05-5686-b444-cf6e",
+                      "name": "➤ Plasma talon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "fe3a-98be-7394-70f6",
+                      "name": "➤ Plasma talon - Supercharged",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "3771-6c3c-4035-70fa:44-7aa4-6b87-8b1b",
+                  "name": "Astartes Grenade Launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ac13-979f-45f0-421d",
+                      "name": "➤ Astartes Grenade Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "5e63-a186-e3d7-7a9a",
+                      "name": "➤ Astartes Grenade Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f227-6107-836d-3fee",
+          "name": "Ravenwing Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "5",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ef39-2ca8-0396-efc9",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ef39-2ca8-0396-efc9:fec0-bee1-3d8a-53c6",
+                  "name": "Bolt Pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d4dd-3b18-adba-7fbc",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "ef39-2ca8-0396-efc9:1206-2cfc-cfae-7c9e",
+                  "name": "Master-crafted power weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ad4-d6c8-b8b9-7902",
+                      "name": "Master-crafted power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d06d-eddc-33f1-f9cc",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units:\n■ Outrider Squad\n■ Ravenwing Black Knights"
+        },
+        {
+          "id": "c39d-ac76-63a5-a8fe",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        },
+        {
+          "id": "db8f-9d86-59e8-b9eb",
+          "name": "Narthecium",
+          "type": "Abilities",
+          "description": "While this unit contains a Ravenwing Apothecary, in your Command phase, you can return 1 destroyed model (excluding Character and Invader ATV models) to this unit."
+        },
+        {
+          "id": "1d4c-173b-98d2-9ffd",
+          "name": "Astartes Banner",
+          "type": "Abilities",
+          "description": "While this unit contains a Ravenwing Ancient, add 1 to the Objective Control characteristic of models in this unit."
+        },
+        {
+          "id": "7ec7-12bc-d4f1-8221",
+          "name": "Honour or Death",
+          "type": "Abilities",
+          "description": "While this unit contains a Ravenwing Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic Intervention Stratagem for 0CP."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a6cc-9a65-dbf1-71b0",
+      "name": "Deathwing Knights",
+      "type": "unit",
+      "points": 250,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Deathwing Knights",
+          "target_id": "8c-33f-ebc7-f623",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "20cc-2680-4131-5b03",
+          "name": "Deathwing Knight",
+          "min_count": 4,
+          "max_count": 4,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7e6f-ec47-3c0a-4639",
+              "kind": "choice",
+              "name": "Unit Weapon Options",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7e6f-ec47-3c0a-4639:fb0b-108e-fa29-f212",
+                  "name": "Mace of absolution",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2b08-cb35-f1e5-93e2",
+                      "name": "Mace of absolution",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Monster 4+, Anti-Vehicle 4+"
+                    }
+                  ]
+                },
+                {
+                  "id": "7e6f-ec47-3c0a-4639:5ba5-37c5-3832-f697",
+                  "name": "Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "754c-1c40-61be-665b",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d332-e963-4e2e-35df",
+          "name": "Knight Master",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e259-c15b-19f6-e269",
+              "kind": "choice",
+              "name": "Master Weapon Option",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e259-c15b-19f6-e269:eb18-22be-ad2a-64a2",
+                  "name": "Great Weapon of the Unforgiven",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1011-2c75-98ea-8655",
+                      "name": "Great Weapon of the Unforgiven",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "e259-c15b-19f6-e269:d95d-d5b6-86ce-ba49",
+                  "name": "Relic Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4ac-e29c-cb25-4af6",
+                      "name": "Relic Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fdbb-e7fe-2049-9899",
+          "name": "Watcher in the Dark",
+          "type": "Abilities",
+          "description": "Once per battle, in any phase, just after a mortal wound is allocated to an Adeptus Astartes model in this unit, this unit can summon a Watcher in the Dark. When it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability against mortal wounds."
+        },
+        {
+          "id": "eae2-b4fb-2b33-c0e2",
+          "name": "Inner Circle",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack."
+        },
+        {
+          "id": "d132-7f85-a199-1620",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "2227-baf0-132f-549f",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Character unit from your army with the Leader ability can be attached to a Terminator Squad, it can be attached to this unit instead."
+        },
+        {
+          "id": "8834-8084-f9d3-227d",
+          "name": "Teleport Homer",
+          "type": "Abilities",
+          "description": "At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" horizontally of that token and not within 9\" horizontally of any enemy models. That token is then removed."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6135-d842-8e61-889d",
+      "name": "Deathwing Terminator Squad",
+      "type": "unit",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Deathwing Terminator Squad",
+          "target_id": "5bd9-7a8f-e83e-2021",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c9d2-663-3baa-10f6",
+          "name": "Deathwing Sergeant",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b020-937c-7e52-775a",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b020-937c-7e52-775a:b020-937c-7e52-775a",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8ed0-1812-d4d3-a5a4",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b588-73d0-7498-de2",
+              "kind": "fixed",
+              "name": "Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b588-73d0-7498-de2:b588-73d0-7498-de2",
+                  "name": "Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ff3c-a4ca-4cf9-933f",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3396-82fa-d409-6b73",
+          "name": "Deathwing Terminator",
+          "min_count": null,
+          "max_count": 9,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e93d-de1f-b759-4c0b",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e93d-de1f-b759-4c0b:e93d-de1f-b759-4c0b",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7043-50a3-6c34-38c1",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c716-bdaf-a92a-4093",
+              "kind": "fixed",
+              "name": "Power Fist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c716-bdaf-a92a-4093:c716-bdaf-a92a-4093",
+                  "name": "Power Fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3e61-d087-a7a6-f65e",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c0d3-2410-24e2-ca36",
+          "name": "Deathwing Terminator w/ Chainfist",
+          "min_count": null,
+          "max_count": 9,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b178-215e-97e7-c81d",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b178-215e-97e7-c81d:b178-215e-97e7-c81d",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5c41-1424-8f95-a925",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d0b6-8300-650a-694a",
+              "kind": "fixed",
+              "name": "Chainfist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d0b6-8300-650a-694a:d0b6-8300-650a-694a",
+                  "name": "Chainfist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d654-621d-e919-c0cb",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5e6d-5b97-f4b5-7cd9",
+          "name": "Deathwing Terminator w/ Heavy Weapon",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "263b-cdd4-4c43-5d67",
+              "kind": "choice",
+              "name": "Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "263b-cdd4-4c43-5d67:8d41-a5bb-150b-1230",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e33c-f6bc-f86c-8c80",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "263b-cdd4-4c43-5d67:50f2-afb8-8442-ae4d",
+                  "name": "Assault Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ddf1-bf0f-6edd-5b0",
+                      "name": "Assault Cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "263b-cdd4-4c43-5d67:1edc-7fbe-76e3-9dc1",
+                  "name": "Heavy Flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9b1b-78fa-b96d-6b44",
+                      "name": "Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "263b-cdd4-4c43-5d67:cd38-c420-3543-f09a",
+                  "name": "Plasma Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "72d8-338c-4104-e88e",
+                      "name": "➤ Plasma Cannon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "6683-af6e-8767-9fa",
+                      "name": "➤ Plasma Cannon - Supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "263b-cdd4-4c43-5d67:7b9-373e-2355-4be",
+                  "name": "Cyclone Missile Launcher & Storm Bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a351-11e6-5e32-d335",
+                      "name": "➤ Cyclone Missile Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "2658-7286-d5c-46c3",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    },
+                    {
+                      "profile_id": "df5a-4b50-2627-c8c7",
+                      "name": "➤ Cyclone Missile Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fba4-75c7-84da-bcb4",
+              "kind": "choice",
+              "name": "Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fba4-75c7-84da-bcb4:bef-1df5-dd8b-93fe",
+                  "name": "Power Fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "517f-5fe8-68a1-504b",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "fba4-75c7-84da-bcb4:5f78-8439-35f4-89e",
+                  "name": "Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8576-bb1c-1e3e-b6",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ec7e-6604-2b93-4c95",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 4+ invulnerable save."
+        },
+        {
+          "id": "f2cb-8211-7899-158a",
+          "name": "Deathwing",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or to the Hit roll.\nIn addition, each time a model in this unit makes an attack that targets your Oath of Moment target (see Codex: Space Marines), add 1 to the Hit roll."
+        },
+        {
+          "id": "96ec-4242-df64-6aee",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Character unit from your army with the Leader ability can be attached to a Terminator Squad, it can be attached to this unit instead."
+        },
+        {
+          "id": "f474-41aa-a575-50e8",
+          "name": "Teleport Homer",
+          "type": "Abilities",
+          "description": "At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" horizontally of that token and not within 9\" horizontally of any enemy models. That token is then removed."
+        },
+        {
+          "id": "c387-d84-4d0c-5ce0",
+          "name": "Watcher in the Dark",
+          "type": "Abilities",
+          "description": "Once per battle, in any phase, just after a mortal wound is allocated to an Adeptus Astartes model in this unit, this unit can summon a Watcher in the Dark. When it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability against mortal wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 360,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "f34-e2f9-c98e-1916",
+      "name": "Inner Circle Companions",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        },
+        {
+          "name": "Inner Circle Companions",
+          "target_id": "3d65-6753-15a5-47ba",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8c40-80cc-bf40-ca6d",
+          "name": "Inner Circle Companion",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "8efc-6055-f8c9-3433",
+              "kind": "fixed",
+              "name": "Heavy Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8efc-6055-f8c9-3433:8efc-6055-f8c9-3433",
+                  "name": "Heavy Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "153c-2179-8394-daa7",
+                      "name": "Heavy Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "56d6-6d22-6418-9cf8",
+              "kind": "fixed",
+              "name": "Calibanite Greatsword",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "56d6-6d22-6418-9cf8:56d6-6d22-6418-9cf8",
+                  "name": "Calibanite Greatsword",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b18b-ef78-357-e4f2",
+                      "name": "➤ Calibanite Greatsword - Strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    },
+                    {
+                      "profile_id": "45b5-9b55-6f1e-fab9",
+                      "name": "➤ Calibanite Greatsword - Sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8d97-2572-c781-4135",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Character unit from your army with the Leader ability can be attached to a Sternguard Veteran Squad, it can be attached to this unit instead."
+        },
+        {
+          "id": "7a96-3999-3c95-cfa8",
+          "name": "Braziers of Judgement",
+          "type": "Abilities",
+          "description": "While a Character model is leading this unit, each time an attack targets this unit, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "884d-4284-89ea-32d5",
+          "name": "Emnity for the Unworthy",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack that targets a Character unit, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 180,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "a2b6-e35-67a8-d76e",
+      "name": "Ravenwing Talonmaster [Legends]",
+      "type": "model",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing",
+          "target_id": "e9c7-1590-1bda-bf7f",
+          "primary": false
+        },
+        {
+          "name": "Ravenwing Talonmaster",
+          "target_id": "4b4e-689a-d721-df70",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a2b6-e35-67a8-d76e",
+          "name": "Ravenwing Talonmaster [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "16\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "c441-1cf5-cd6c-8a96",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c441-1cf5-cd6c-8a96:71f5-3060-d9dd-8781",
+                  "name": "Twin Heavy Bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "aa71-5c8a-f2b2-b7f3",
+                      "name": "Twin Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "c441-1cf5-cd6c-8a96:6d45-e72d-e603-54fb",
+                  "name": "Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9554-b077-d524-92dd",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "c441-1cf5-cd6c-8a96:6e8-b09b-677d-fe62",
+                  "name": "Twin Assault Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "162d-853b-7528-11a9",
+                      "name": "Twin Assault Cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9b3-3b90-f48c-380e",
+          "name": "Talonmaster",
+          "type": "Abilities",
+          "description": "While this model is within 3\" of one or more other friendly Adeptus Astartes Mounted or Adeptus Astartes Fly Vehicle units, this model has the Lone Operative ability."
+        },
+        {
+          "id": "e40d-a580-8e1f-cd2a",
+          "name": "Nowhere To Hide",
+          "type": "Abilities",
+          "description": "While a friendly Adeptus Astartes Mounted or Adeptus Astartes Fly Vehicle unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability."
+        },
+        {
+          "id": "fdde-d4a-774c-9306",
+          "name": "Master of Manoeuvre",
+          "type": "Abilities",
+          "description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, this model can make a Normal move of up to 6\"."
+        },
+        {
+          "id": "1431-e0c7-d73-19e5",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "5+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ebd0-6939-6305-6d16",
+      "name": "Deathwing Strikemaster [Legends]",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        },
+        {
+          "name": "Deathwing Strikemaster",
+          "target_id": "1869-8b16-3b2a-713e",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Lieutenant",
+          "target_id": "9c1a-42ff-a418-11d1",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ebd0-6939-6305-6d16",
+          "name": "Deathwing Strikemaster [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8cdf-2dca-4db1-f05e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": 1,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "8cdf-2dca-4db1-f05e:74b-52b5-15c4-e122",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "11d6-1d3b-eb6e-fba1",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:e047-7043-fe62-a3c7",
+                  "name": "Master-crafted Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2392-56c8-e3ec-849a",
+                      "name": "Master-crafted Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:f937-57eb-bd72-9e9f",
+                  "name": "Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4069-d3d6-adb2-7cf1",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:6bd-a743-ab87-97b0",
+                  "name": "Mace of Absolution",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "df38-45ec-63b7-7e80",
+                      "name": "Mace of Absolution",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:2de9-28d5-6d8e-6547",
+                  "name": "Power Fist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "83bf-ca21-217e-ae7c",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:1b4a-7492-7e90-8975",
+                  "name": "Thunder Hammer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e50b-6f87-32f8-5cc9",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "8cdf-2dca-4db1-f05e:8b66-a100-8e36-14d3",
+                  "name": "Twin Lightning Claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cd6a-d1a0-c653-3a41",
+                      "name": "Twin Lightning Claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5590-9cab-7109-3da",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "8b71-718c-ef18-4939",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units:\n■ Deathwing Command Squad\n■ Deathwing Terminator Squad\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+        },
+        {
+          "id": "7f5f-f0c0-a920-3b8",
+          "name": "Tactical Precision",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "7634-2d39-6144-eece",
+          "name": "Vanquish the Foe",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Hit roll and add 1 to the Wound roll."
+        },
+        {
+          "id": "ee22-6e5c-3330-8c9e",
+          "name": "Storm Shield",
+          "type": "Abilities",
+          "description": "The bearer has a Wounds characteristic of 6."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "48fb-ebd6-dd17-729b",
+      "name": "Deathwing Command Squad [Legends]",
+      "type": "unit",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Deathwing",
+          "target_id": "e21f-8e64-c5d-7df0",
+          "primary": false
+        },
+        {
+          "name": "Deathwing Command Squad",
+          "target_id": "c45c-a930-eb7c-f67f",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Faction: Dark Angels",
+          "target_id": "aab1-4f05-fabe-5ba5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "83cb-e380-e3a7-320e",
+          "name": "Deathwing Ancient",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "46cd-f996-cf6e-65e4",
+              "kind": "fixed",
+              "name": "Power Fist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "46cd-f996-cf6e-65e4:46cd-f996-cf6e-65e4",
+                  "name": "Power Fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3e48-dff6-e740-f487",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f48a-5a4e-5283-d853",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f48a-5a4e-5283-d853:f48a-5a4e-5283-d853",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4e2e-5437-b6d-9b97",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e67c-9a1e-3fbf-ebde",
+          "name": "Deathwing Apothecary",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f075-82ff-9056-dbb",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f075-82ff-9056-dbb:f075-82ff-9056-dbb",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "34d8-e518-2943-88d6",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "221e-546f-153d-32f9",
+              "kind": "fixed",
+              "name": "Chainfist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "221e-546f-153d-32f9:221e-546f-153d-32f9",
+                  "name": "Chainfist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dcfc-ab95-c8c-7749",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b540-bfbf-f5bf-3fa8",
+          "name": "Deathwing Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "170d-aed2-5d92-2a57",
+              "kind": "fixed",
+              "name": "Halberd of Caliban",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "170d-aed2-5d92-2a57:170d-aed2-5d92-2a57",
+                  "name": "Halberd of Caliban",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6c9e-4930-6ce4-8755",
+                      "name": "Halberd of Caliban",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3897-8ee2-1345-3319",
+          "name": "Deathwing Command Terminator",
+          "min_count": null,
+          "max_count": 7,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1353-db14-f9fd-791e",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1353-db14-f9fd-791e:1353-db14-f9fd-791e",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "56d5-6177-8e22-91ce",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "35ef-1032-e7a4-49d9",
+              "kind": "fixed",
+              "name": "Power Fist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "35ef-1032-e7a4-49d9:35ef-1032-e7a4-49d9",
+                  "name": "Power Fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4371-2cb4-eb90-626a",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ffc1-7bdd-dcf-ed1d",
+          "name": "Deathwing Terminator w/ Chainfist",
+          "min_count": null,
+          "max_count": 7,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "53b9-3ba1-d62e-2d48",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "53b9-3ba1-d62e-2d48:53b9-3ba1-d62e-2d48",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8870-e9bb-dca6-8c40",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "182e-fc47-f05f-a8de",
+              "kind": "fixed",
+              "name": "Chainfist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "182e-fc47-f05f-a8de:182e-fc47-f05f-a8de",
+                  "name": "Chainfist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d5b0-7b3d-61b-e5ea",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e071-2ee4-6341-a477",
+          "name": "Deathwing Terminator w/ Heavy Weapon",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "aa80-402e-3076-bf8d",
+              "kind": "choice",
+              "name": "Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "aa80-402e-3076-bf8d:6399-da3e-f8d0-2dd0",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bba4-7c3a-7a51-3428",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa80-402e-3076-bf8d:66d8-6c56-dbb1-96bc",
+                  "name": "Assault Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3f62-65a9-8a6e-577",
+                      "name": "Assault Cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa80-402e-3076-bf8d:ac33-2cbe-8571-a30f",
+                  "name": "Heavy Flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cf5f-4260-25e8-3946",
+                      "name": "Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa80-402e-3076-bf8d:2717-d780-da7-ad9a",
+                  "name": "Plasma Cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cde-1d43-4beb-3551",
+                      "name": "➤ Plasma Cannon - Standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "de8e-c6ca-a8c1-237d",
+                      "name": "➤ Plasma Cannon - Supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "aa80-402e-3076-bf8d:ea88-80d2-4da7-a69a",
+                  "name": "Cyclone Missile Launcher & Storm Bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7bda-669b-7a7e-95a7",
+                      "name": "➤ Cyclone Missile Launcher - Frag",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "946d-44a9-7e-20f8",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "9947-658f-c466-f771",
+                      "name": "➤ Cyclone Missile Launcher - Krak",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8d7b-581-aff8-e416",
+              "kind": "choice",
+              "name": "Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8d7b-581-aff8-e416:a0ce-6249-a8f9-8266",
+                  "name": "Power Fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4f2a-abc6-91d9-7e28",
+                      "name": "Power Fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8d7b-581-aff8-e416:ef63-4feb-9458-a76a",
+                  "name": "Chainfist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6a0d-a375-33f3-2a5a",
+                      "name": "Chainfist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Vehicle 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bb37-3df9-79fc-b803",
+          "name": "Deathwing Command Terminator w/ Power Weapon",
+          "min_count": null,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "e78e-6566-85fa-a510",
+              "kind": "fixed",
+              "name": "Storm Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e78e-6566-85fa-a510:e78e-6566-85fa-a510",
+                  "name": "Storm Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "381f-fd89-14a3-78cf",
+                      "name": "Storm Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f79-507-720-4bc0",
+              "kind": "fixed",
+              "name": "Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f79-507-720-4bc0:f79-507-720-4bc0",
+                  "name": "Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9c87-3ded-4e44-7856",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aa7b-1361-4675-2db7",
+          "name": "Deathwing Command Terminator w/ Twin Claws",
+          "min_count": null,
+          "max_count": 7,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "437d-7d2-614a-fe8f",
+              "kind": "fixed",
+              "name": "Twin Lightning Claws",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "437d-7d2-614a-fe8f:437d-7d2-614a-fe8f",
+                  "name": "Twin Lightning Claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b58-a3b5-4b1-7a68",
+                      "name": "Twin Lightning Claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bcaf-2b03-9b57-809d",
+          "name": "Deathwing Command Terminator w/ Hammer & Shield",
+          "min_count": null,
+          "max_count": 7,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ae8d-5277-3fb2-9f01",
+              "kind": "fixed",
+              "name": "Thunder Hammer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ae8d-5277-3fb2-9f01:ae8d-5277-3fb2-9f01",
+                  "name": "Thunder Hammer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dfe2-fd66-d867-d84c",
+                      "name": "Thunder Hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bc44-b10b-3107-ebc5",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "3aaa-cca1-0253-cf09",
+          "name": "Astartes Banner",
+          "type": "Abilities",
+          "description": "While this unit contains an Ancient, add 1 to the Objective Control characteristic of its models."
+        },
+        {
+          "id": "e339-e028-18a0-cf5",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "6e99-dde5-9838-f044",
+          "name": "Narthecium",
+          "type": "Abilities",
+          "description": "While this unit contains an Apothecary, in your Command phase, you can return 1 destroyed model (excluding Character models) to this unit."
+        },
+        {
+          "id": "2228-7d63-d2e1-4fd1",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "4bab-cba8-e78d-0883",
+          "name": "Honour or Death",
+          "type": "Abilities",
+          "description": "While this unit contains a Company Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic Intervention Stratagem for 0CP."
+        },
+        {
+          "id": "e3f4-63cd-2e93-5b39",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "bdc0-8858-a4ff-d453",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "a820-4887-9d8b-83c5",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "6202-b8dd-36f6-f014",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "9425-5edf-1e03-9fad",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "a54b-4249-dc93-3933",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "4+"
+        },
+        {
+          "id": "3fd6-f123-4dd9-18d3",
+          "name": "Storm Shield",
+          "type": "Abilities",
+          "description": "The bearer has a Wounds characteristic of 4."
+        },
+        {
+          "id": "7a52-1ecc-80ec-c0a6",
+          "name": "Watcher in the Dark",
+          "type": "Abilities",
+          "description": "Once per battle, in any phase, just after a mortal wound is allocated to an Adeptus Astartes model in this unit, this unit can summon a Watcher in the Dark. When it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability against mortal wounds."
+        },
+        {
+          "id": "7c39-9f3d-53d1-4dfc",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a Character unit from your army with the Leader ability can be attached to a Terminator Squad, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 400,
+          "condition_text": "> 5 Deathwing Command Squad Members",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "Deathwing Command Squad Members",
+          "scope_id": "bfe0-e0c8-773b-e03b"
+        }
+      ]
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

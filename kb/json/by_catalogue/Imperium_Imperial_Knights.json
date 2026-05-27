@@ -1,0 +1,1025 @@
+{
+  "id": "25dd-7aa0-6bf4-f2d5",
+  "name": "Imperium - Imperial Knights",
+  "is_library": false,
+  "revision": "9",
+  "source_file": "Imperium - Imperial Knights.cat",
+  "categories": [],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "d4f6-8e25-12ad-c35b",
+      "name": "Tech-Priest Dominus",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Dominus",
+          "target_id": "c39d-5908-6bc1-8212",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Mechanicus",
+          "target_id": "5418-f86b-6e76-c5a",
+          "primary": false
+        },
+        {
+          "name": "Tech-Priest",
+          "target_id": "59a9-b5cc-7c11-aaad",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Cult Mechanicus",
+          "target_id": "6d46-7883-e5d1-45ee",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d4f6-8e25-12ad-c35b",
+          "name": "Tech-Priest Dominus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "14e8-a3d6-abca-2801",
+              "kind": "fixed",
+              "name": "Omnissian axe",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "14e8-a3d6-abca-2801:14e8-a3d6-abca-2801",
+                  "name": "Omnissian axe",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "38b4-61ea-4e59-f9d8",
+                      "name": "Omnissian axe",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0d37-abcf-788e-bfe0",
+              "kind": "choice",
+              "name": "Replace macrostubber",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0d37-abcf-788e-bfe0:4cd1-ca4d-a740-0943",
+                  "name": "Macrostubber",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ed2e-d181-fc2d-f070",
+                      "name": "Macrostubber",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "0d37-abcf-788e-bfe0:462d-774b-181d-5065",
+                  "name": "Phosphor serpenta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "0f09-1d95-292e-aae6",
+                      "name": "Phosphor serpenta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "eb28-2d38-2419-e859",
+              "kind": "choice",
+              "name": "Replace volkite blaster",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "eb28-2d38-2419-e859:acc5-db06-4508-03b8",
+                  "name": "Eradication ray",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9cee-2d84-8481-f30a",
+                      "name": "➤ Eradication ray - dissipated",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "113e-5a62-df12-df0d",
+                      "name": "➤ Eradication ray - focused",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "eb28-2d38-2419-e859:85f2-9ddf-4e82-0e81",
+                  "name": "Volkite blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "99c1-eff0-b701-9e8e",
+                      "name": "Volkite blaster",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9de3-1a89-e6f7-5bf7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+        },
+        {
+          "id": "f51c-0ae1-ec4b-76f4",
+          "name": "Lord of the Machine Cult",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the Electro-Priests keyword, models in that unit have the Feel No Pain 4+ ability instead"
+        },
+        {
+          "id": "3558-8333-dff4-ee55",
+          "name": "Data-spike",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, you can select one enemy Vehicle unit within Engagement Range of this model’s unit and roll one D6: on a 4+, that enemy unit suffers D6 mortal wounds and, until the end of the phase, the Weapon Skill characteristic of melee weapons equipped by that enemy unit is worsened by 1."
+        },
+        {
+          "id": "5d73-b543-c403-f60e",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fb26-0bef-3409-297a",
+      "name": "Tech-Priest Manipulus",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Manipulus",
+          "target_id": "63f-669c-2b61-cb04",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Mechanicus",
+          "target_id": "5418-f86b-6e76-c5a",
+          "primary": false
+        },
+        {
+          "name": "Tech-Priest",
+          "target_id": "59a9-b5cc-7c11-aaad",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Cult Mechanicus",
+          "target_id": "6d46-7883-e5d1-45ee",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fb26-0bef-3409-297a",
+          "name": "Tech-Priest Manipulus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d477-d619-3a0a-f6cb",
+              "kind": "fixed",
+              "name": "Omnissian staff",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d477-d619-3a0a-f6cb:d477-d619-3a0a-f6cb",
+                  "name": "Omnissian staff",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "df1b-f00a-d26d-b20a",
+                      "name": "Omnissian staff",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e846-6ae2-cca8-17b1",
+              "kind": "choice",
+              "name": "Replace magnarail lance",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e846-6ae2-cca8-17b1:6e4b-12a4-f336-2864",
+                  "name": "Magnarail lance",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7b84-ee46-69e1-a541",
+                      "name": "Magnarail lance",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "e846-6ae2-cca8-17b1:3b7d-84a9-eb96-84df",
+                  "name": "Transonic cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "13db-8df1-2198-7ece",
+                      "name": "Transonic cannon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "01b2-cb0d-056c-f9b7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+        },
+        {
+          "id": "0da0-0e79-b247-d871",
+          "name": "Galvanic Field",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "026b-89ab-242f-4ce7",
+          "name": "Defend the Divine Work",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the  end of the phase, all models in this model’s unit have a 4+ invulnerable save."
+        },
+        {
+          "id": "ea53-1cc0-7b85-3e5c",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ee6b-bc44-745c-a538",
+      "name": "Skitarii Marshal",
+      "type": "model",
+      "points": 35,
+      "keywords": [
+        {
+          "name": "Marshal",
+          "target_id": "58c1-8e13-6d05-ee24",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Mechanicus",
+          "target_id": "5418-f86b-6e76-c5a",
+          "primary": false
+        },
+        {
+          "name": "Skitarii",
+          "target_id": "2a4e-9018-d675-74f1",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "ee6b-bc44-745c-a538",
+          "name": "Skitarii Marshal",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "4+",
+            "w": "3",
+            "ld": "6",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2abf-bc03-dfce-124a",
+              "kind": "fixed",
+              "name": "Control stave",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2abf-bc03-dfce-124a:2abf-bc03-dfce-124a",
+                  "name": "Control stave",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c144-d194-a36a-778a",
+                      "name": "Control stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f0ea-37bc-7365-f3e1",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+        },
+        {
+          "id": "9210-0249-e88d-261c",
+          "name": "Control Edict",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+        },
+        {
+          "id": "bd6e-81d3-6f5c-713e",
+          "name": "Servo-skull Uplink",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, you can select one friendly SKITARII unit that is Battle-shocked and within 6\" of this model. That unit is no longer Battle-shocked."
+        },
+        {
+          "id": "d3e1-4a3f-40b7-1fd5",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ab81-7a24-dce1-68c7",
+      "name": "Skitarii Rangers",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Rangers",
+          "target_id": "bdec-fa84-45c0-24dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Mechanicus",
+          "target_id": "5418-f86b-6e76-c5a",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Skitarii",
+          "target_id": "2a4e-9018-d675-74f1",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "ab81-7a24-dce1-68c7",
+          "name": "Skitarii Rangers",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "4+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "c210-40a6-a4f8-db67",
+              "kind": "fixed",
+              "name": "Skitarii Ranger Alpha",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c210-40a6-a4f8-db67:c210-40a6-a4f8-db67",
+                  "name": "Skitarii Ranger Alpha",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2f70-d9e8-a2ea-289e",
+                      "name": "Galvanic rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "0b0a-2ae9-6bc9-c284",
+                      "name": "Alpha combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7bb0-fd01-595f-8b27",
+              "kind": "choice",
+              "name": "9 Skitarii Rangers",
+              "min_select": 9,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "7bb0-fd01-595f-8b27:9262-f3ba-a2e6-e491",
+                  "name": "Skitarii Ranger w/ transuranic arquebus",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8401-20ba-fc79-bf54",
+                      "name": "Transuranic arquebus",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Heavy, Precision"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bb0-fd01-595f-8b27:0272-2a9f-673a-2699",
+                  "name": "Skitarii Ranger w/ arc rifle",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "11bd-cbcb-3298-eabf",
+                      "name": "Arc rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bb0-fd01-595f-8b27:77fe-793a-3f6f-4852",
+                  "name": "Skitarii Ranger w/ plasma caliver",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1534-a10c-b366-9a87",
+                      "name": "➤ Plasma caliver -  supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous"
+                    },
+                    {
+                      "profile_id": "4dd6-f2bb-2dae-3c50",
+                      "name": "➤ Plasma caliver - standard",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bb0-fd01-595f-8b27:24cf-359c-a3a3-5f95",
+                  "name": "Skitarii Ranger w/ galvanic rifle",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4517-b420-bd6d-ac48",
+                      "name": "Galvanic rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bb0-fd01-595f-8b27:76d9-38c7-1948-16c4",
+                  "name": "Skitarii Ranger w/ data-tether",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ba17-aeb7-ba71-a70b",
+                      "name": "Galvanic rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bb0-fd01-595f-8b27:cac5-9887-dab8-9059",
+                  "name": "Skitarii Ranger w/ omnispex",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bb06-2db7-7609-a683",
+                      "name": "Galvanic rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bf59-b5b6-9744-521e",
+          "name": "Objective Scouted",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        },
+        {
+          "id": "c8ef-52fc-629c-015a",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "Models in this unit have a 5+ invulnerable save."
+        },
+        {
+          "id": "2a3a-0570-2867-dbc3",
+          "name": "Enhanced data-tether",
+          "type": "Abilities",
+          "description": "Each time you select the bearer’s unit\nas the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+        },
+        {
+          "id": "1904-2d2b-fa2d-41b9",
+          "name": "Omnispex",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f30e-0114-4bc9-1b84",
+      "name": "Skitarii Vanguard",
+      "type": "unit",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Vanguard",
+          "target_id": "44d2-dd77-4da9-7f22",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Mechanicus",
+          "target_id": "5418-f86b-6e76-c5a",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Skitarii",
+          "target_id": "2a4e-9018-d675-74f1",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "f30e-0114-4bc9-1b84",
+          "name": "Skitarii Vanguard",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "4+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "906f-6c7f-7f94-b8fc",
+              "kind": "fixed",
+              "name": "Skitarii Vanguard Alpha",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "906f-6c7f-7f94-b8fc:906f-6c7f-7f94-b8fc",
+                  "name": "Skitarii Vanguard Alpha",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d6d2-5f01-be2a-0794",
+                      "name": "Radium carbine",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+"
+                    },
+                    {
+                      "profile_id": "305a-fb42-9838-d7c4",
+                      "name": "Alpha combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1350-afe4-8dd1-e4f5",
+              "kind": "choice",
+              "name": "Skitarii Vanguard",
+              "min_select": 9,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "1350-afe4-8dd1-e4f5:3a1a-103e-401f-7fb8",
+                  "name": "Skitarii Vanguard w/ transuranic arquebus",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "475b-b910-3bd0-b35e",
+                      "name": "Transuranic arquebus",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Heavy, Precision"
+                    }
+                  ]
+                },
+                {
+                  "id": "1350-afe4-8dd1-e4f5:014e-3e7e-dd25-428c",
+                  "name": "Skitarii Vanguard w/ arc rifle",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4ed4-a579-baab-77df",
+                      "name": "Arc rifle",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "1350-afe4-8dd1-e4f5:f474-ac76-9273-e3d3",
+                  "name": "Skitarii Vanguard w/ plasma caliver",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2a25-1165-8a65-dd53",
+                      "name": "➤ Plasma caliver -  supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous"
+                    },
+                    {
+                      "profile_id": "ddff-5c58-96d2-8100",
+                      "name": "➤ Plasma caliver - standard",
+                      "weapon_type": "Ranged",
+                      "range": "30\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "1350-afe4-8dd1-e4f5:c2ed-9fd2-3193-1ef8",
+                  "name": "Skitarii Vanguard w/ radium carbine",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d7fd-7d83-50fb-ee80",
+                      "name": "Radium carbine",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+"
+                    }
+                  ]
+                },
+                {
+                  "id": "1350-afe4-8dd1-e4f5:dd08-f73f-fe6b-71b0",
+                  "name": "Skitarii Vanguard w/ data-tether",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "356f-4750-542f-2492",
+                      "name": "Radium carbine",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+"
+                    }
+                  ]
+                },
+                {
+                  "id": "1350-afe4-8dd1-e4f5:8dc4-2240-4e02-ceb0",
+                  "name": "Skitarii Vanguard w/ omnispex",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b598-68bc-d485-b190",
+                      "name": "Radium carbine",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f769-9cee-b87c-1637",
+          "name": "Rad-saturation (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit (excluding Vehicle units) is within 3\" of this unit, subtract 1 from the Objective Control characteristic of models in that unit."
+        },
+        {
+          "id": "d13f-ebd1-8a5a-b621",
+          "name": "Invulnerable Save (5+)",
+          "type": "Abilities",
+          "description": "Models in this unit have a 5+ invulnerable save."
+        },
+        {
+          "id": "30be-d988-da96-062a",
+          "name": "Enhanced data-tether",
+          "type": "Abilities",
+          "description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+        },
+        {
+          "id": "7d7e-7c82-7b84-4616",
+          "name": "Omnispex",
+          "type": "Abilities",
+          "description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

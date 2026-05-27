@@ -1,0 +1,145 @@
+{
+  "id": "67c1-fc13-f9a1-cbbf",
+  "name": "Imperium - Adeptus Astartes - White Scars",
+  "is_library": false,
+  "revision": "10",
+  "source_file": "Imperium - White Scars.cat",
+  "categories": [
+    {
+      "id": "ecaf-d9ca-6ab0-8dcb",
+      "name": "Kor'sarro Khan"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "63f3-6aeb-c9ed-abfc",
+      "name": "Kor'sarro Khan",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: White Scars",
+          "target_id": "5c0e-2250-dd3a-1df9",
+          "primary": false
+        },
+        {
+          "name": "Kor'sarro Khan",
+          "target_id": "ecaf-d9ca-6ab0-8dcb",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "63f3-6aeb-c9ed-abfc",
+          "name": "Kor'sarro Khan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1d9c-e037-5d69-4b67",
+              "kind": "fixed",
+              "name": "Moonfang",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1d9c-e037-5d69-4b67:1d9c-e037-5d69-4b67",
+                  "name": "Moonfang",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "51-8dfa-ba16-7fbe",
+                      "name": "Moonfang",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "143-1a21-8afb-16c4",
+          "name": "For the Khan!",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability."
+        },
+        {
+          "id": "bbb5-617e-a254-8463",
+          "name": "Trophy Taker",
+          "type": "Abilities",
+          "description": "Each time this model destroys an enemy Character model, you gain 1CP"
+        },
+        {
+          "id": "90b4-a746-de9b-2df2",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Company Heroes"
+        },
+        {
+          "id": "8ecf-92ea-ef03-4b0b",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

@@ -1,0 +1,341 @@
+{
+  "id": "sys-352e-adc2-7639-d6a9",
+  "name": "Warhammer 40,000 10th Edition",
+  "is_library": false,
+  "revision": "36",
+  "source_file": "Warhammer 40,000.gst",
+  "categories": [
+    {
+      "id": "9cfd-1c32-585f-7d5c",
+      "name": "Character"
+    },
+    {
+      "id": "4f3a-f0f7-6647-348d",
+      "name": "Epic Hero"
+    },
+    {
+      "id": "cf47-a0d7-7207-29dc",
+      "name": "Infantry"
+    },
+    {
+      "id": "9693-cf84-fe69-37a9",
+      "name": "Monster"
+    },
+    {
+      "id": "e338-111e-d0c6-b687",
+      "name": "Battleline"
+    },
+    {
+      "id": "ba07-411c-2832-1f79",
+      "name": "Dedicated Transport"
+    },
+    {
+      "id": "14a0-40c9-2748-ae6e",
+      "name": "Mounted"
+    },
+    {
+      "id": "2d7f-1892-2fd0-e29c",
+      "name": "Captain"
+    },
+    {
+      "id": "5a61-81ac-eb7c-a87e",
+      "name": "Grenades"
+    },
+    {
+      "id": "aff3-d6a3-2a95-9dc",
+      "name": "Imperium"
+    },
+    {
+      "id": "4ac9-fd30-1e3d-b249",
+      "name": "Configuration"
+    },
+    {
+      "id": "1160-70ae-a862-b1a8",
+      "name": "Unit"
+    },
+    {
+      "id": "c619-2086-bbcf-69c9",
+      "name": "Fly"
+    },
+    {
+      "id": "6df-937-16bc-8c1a",
+      "name": "Smoke"
+    },
+    {
+      "id": "13bf-2bee-3ae0-b414",
+      "name": "Psyker"
+    },
+    {
+      "id": "dbd4-63-af05-998",
+      "name": "Vehicle"
+    },
+    {
+      "id": "6dda-e157-334d-e93a",
+      "name": "Walker"
+    },
+    {
+      "id": "75e8-57c4-40e3-1817",
+      "name": "Transport"
+    },
+    {
+      "id": "63f1-e6e8-f6f6-a4f0",
+      "name": "Aircraft"
+    },
+    {
+      "id": "19d7-9c74-2140-5851",
+      "name": "Fortification"
+    },
+    {
+      "id": "d666-e2c9-b6cc-5716",
+      "name": "Towering"
+    },
+    {
+      "id": "5929-ad51-d006-e008",
+      "name": "Titanic"
+    },
+    {
+      "id": "4c3e-9310-a516-3590",
+      "name": "Beast"
+    },
+    {
+      "id": "4c00-2578-faf5-6918",
+      "name": "Chaos"
+    },
+    {
+      "id": "bb67-f191-6562-acc7",
+      "name": "Faction: Chaos Knights"
+    },
+    {
+      "id": "d1d8-6ae0-1be7-e9e",
+      "name": "Faction: Tyranids"
+    },
+    {
+      "id": "1015-db48-a2fa-c7da",
+      "name": "Faction: Drukhari"
+    },
+    {
+      "id": "4378-1827-4988-be4e",
+      "name": "Faction: Asuryani"
+    },
+    {
+      "id": "fa45-57e-930e-602b",
+      "name": "Faction: Astra Militarum"
+    },
+    {
+      "id": "b5e4-3253-c157-54fd",
+      "name": "Faction: Imperial Knights"
+    },
+    {
+      "id": "1e42-dfae-cbdd-207d",
+      "name": "Faction: Heretic Astartes"
+    },
+    {
+      "id": "fd71-afa6-b13b-7fda",
+      "name": "Faction: Adepta Sororitas"
+    },
+    {
+      "id": "ee0-cf31-4fb5-6b26",
+      "name": "Faction: Necrons"
+    },
+    {
+      "id": "571f-ec3a-a5a2-751a",
+      "name": "Faction: Legiones Daemonica"
+    },
+    {
+      "id": "b2a9-ede5-7a83-4da8",
+      "name": "Slaanesh"
+    },
+    {
+      "id": "ed0d-8e2a-225c-2340",
+      "name": "Nurgle"
+    },
+    {
+      "id": "4bd-5ee0-f179-2fc5",
+      "name": "Khorne"
+    },
+    {
+      "id": "b188-114f-6ba5-79a1",
+      "name": "Tzeentch"
+    },
+    {
+      "id": "6e7-40c-58d9-e402",
+      "name": "Faction: Adeptus Astartes"
+    },
+    {
+      "id": "5418-f86b-6e76-c5a",
+      "name": "Faction: Adeptus Mechanicus"
+    },
+    {
+      "id": "226b-cf1e-353a-ae7f",
+      "name": "Faction: Genestealer Cults"
+    },
+    {
+      "id": "bd1d-c1a5-6ca2-c791",
+      "name": "Faction: World Eaters"
+    },
+    {
+      "id": "8474-765-16a9-f00d",
+      "name": "Faction: Leagues of Votann"
+    },
+    {
+      "id": "9888-ddb2-a141-6037",
+      "name": "Faction: Death Guard"
+    },
+    {
+      "id": "3d58-2655-391e-ecc",
+      "name": "Faction: T'au Empire"
+    },
+    {
+      "id": "eea5-aeaf-bbf0-d5ee",
+      "name": "Faction: Adeptus Custodes"
+    },
+    {
+      "id": "56cc-5f43-2403-8da0",
+      "name": "Faction: Orks"
+    },
+    {
+      "id": "7002-1fbb-7571-e8e7",
+      "name": "Faction: Thousand Sons"
+    },
+    {
+      "id": "d564-3284-bf44-b873",
+      "name": "Faction: Grey Knights"
+    },
+    {
+      "id": "5128-90b-e4a5-dcbd",
+      "name": "Faction: Agents of the Imperium"
+    },
+    {
+      "id": "aab1-4f05-fabe-5ba5",
+      "name": "Faction: Dark Angels"
+    },
+    {
+      "id": "65e4-13-4fa8-b36c",
+      "name": "Faction: Salamanders"
+    },
+    {
+      "id": "d39c-9989-db7f-d815",
+      "name": "Faction: Deathwatch"
+    },
+    {
+      "id": "62ac-ef42-27b4-ae7",
+      "name": "Faction: Blood Angels"
+    },
+    {
+      "id": "1a2d-2f00-c054-4dcb",
+      "name": "Faction: Ultramarines"
+    },
+    {
+      "id": "a0d9-c115-2a-8330",
+      "name": "Faction: Space Wolves"
+    },
+    {
+      "id": "9249-acae-2882-d95",
+      "name": "Faction: Black Templars"
+    },
+    {
+      "id": "84b7-7194-3b84-1b0c",
+      "name": "Faction: Raven Guard"
+    },
+    {
+      "id": "b88e-1b0c-b79f-5cdf",
+      "name": "Faction: Iron Hands"
+    },
+    {
+      "id": "97aa-d0e4-71c7-96c3",
+      "name": "Faction: Imperial Fists"
+    },
+    {
+      "id": "5c0e-2250-dd3a-1df9",
+      "name": "Faction: White Scars"
+    },
+    {
+      "id": "5c0e-4c31-d51b-e470",
+      "name": "Warlord"
+    },
+    {
+      "id": "9c0e-7e25-4580-e439",
+      "name": "Daemon"
+    },
+    {
+      "id": "6474-0ce3-6b5a-120c",
+      "name": "Primarch"
+    },
+    {
+      "id": "4f09-0141-6c70-6c5a",
+      "name": "Daemon Prince"
+    },
+    {
+      "id": "b00b-5bae-444f-964e",
+      "name": "Swarm"
+    },
+    {
+      "id": "2471-e2e0-3f55-d6cb",
+      "name": "Drone"
+    },
+    {
+      "id": "7850-cc5a-c191-b80d",
+      "name": "Great Devourer"
+    },
+    {
+      "id": "cc77-a53-fca8-f48e",
+      "name": "Retinue"
+    },
+    {
+      "id": "740a-892c-8958-defa",
+      "name": "Terminator"
+    },
+    {
+      "id": "50a2-5557-84bb-ca4d",
+      "name": "Rhino"
+    },
+    {
+      "id": "dda2-bb0a-215e-ad9c",
+      "name": "Jump Pack"
+    },
+    {
+      "id": "4c40-ab9-54af-d290",
+      "name": "Armiger"
+    },
+    {
+      "id": "e4d6-1a77-132b-f39d",
+      "name": "Questoris"
+    },
+    {
+      "id": "af4c-b971-a31c-669c",
+      "name": "Dominus"
+    },
+    {
+      "id": "887b-ab87-92a2-20f5",
+      "name": "Allied Units"
+    },
+    {
+      "id": "f76f-29c1-de9-74c2",
+      "name": "Acastus"
+    },
+    {
+      "id": "481c-3b2e-5c99-c248",
+      "name": "Cerastus"
+    },
+    {
+      "id": "8cab-448d-37b7-32bc",
+      "name": "Artillery"
+    },
+    {
+      "id": "ac7e-be7b-eb02-4752",
+      "name": "Order of Battle"
+    },
+    {
+      "id": "a5a2-d0c0-0349-d226",
+      "name": "Faction: Harlequins"
+    },
+    {
+      "id": "9a21-190a-9d31-35d2",
+      "name": "Faction: Ynnari"
+    }
+  ],
+  "rules": [],
+  "datasheets": [],
+  "detachments": [],
+  "enhancements": []
+}

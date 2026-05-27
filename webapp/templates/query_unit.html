@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block title %}{{ ds.name }} — Search{% endblock %}
+{% block body %}
+<p><a href="{{ back_href }}">{{ back_label }}</a></p>
+
+<h1>{{ ds.name }}
+  {% if effective_points is not none %}
+    <span class="muted" style="font-size:1rem;">— {{ effective_points }} pts</span>
+    {% if override %}
+      <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.7rem;">edited</span>
+    {% endif %}
+  {% endif %}
+</h1>
+<p class="muted">{{ ds.catalogue_name }}</p>
+
+<div class="section">
+  <h2>Unit size / expansion pricing{% if not pricing_tiers %} <span class="muted" style="font-size:0.85rem;">— single tier</span>{% endif %}</h2>
+  <div class="table-wrap">
+  <table class="compact" style="max-width:680px;">
+    <thead><tr><th>Condition</th><th class="right">Points</th><th>Edit</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Base size</td>
+        <td class="right">
+          <b>{{ effective_points if effective_points is not none else '-' }}</b> pts
+          {% if override %}
+            <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ ds.points }}">edit</span>
+          {% endif %}
+        </td>
+        <td>
+          <form method="post" action="{{ url_for('edit_points', datasheet_id=ds.id) }}" style="display:flex; gap:0.3rem; align-items:center;">
+            <input type="number" name="points" min="0" max="9999" style="width:5rem; min-height:32px;"
+                   value="{{ override.points if override else '' }}"
+                   placeholder="orig {{ ds.points if ds.points is not none else '-' }}">
+            <button type="submit" class="btn-small">Save</button>
+          </form>
+        </td>
+      </tr>
+      {% for t in pricing_tiers %}
+        <tr>
+          <td>{{ t.condition_text }}</td>
+          <td class="right">
+            <b>{{ t.effective_points }}</b> pts
+            {% if t.overridden %}
+              <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ t.points }}">edit</span>
+            {% endif %}
+          </td>
+          <td>
+            <form method="post" action="{{ url_for('edit_tier_points', datasheet_id=ds.id) }}" style="display:flex; gap:0.3rem; align-items:center;">
+              <input type="hidden" name="condition_text" value="{{ t.condition_text }}">
+              <input type="number" name="points" min="0" max="9999" style="width:5rem; min-height:32px;"
+                     value="{{ t.override.points if t.override else '' }}"
+                     placeholder="orig {{ t.points }}">
+              <button type="submit" class="btn-small">Save</button>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="muted" style="font-size:0.85rem; margin-top:0.3rem;">
+    Type a new points value and Save to override BSData; leave empty and Save to revert.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Keywords</h2>
+  {% for k in keywords %}
+    <span class="kw-tag {{ 'primary' if k.is_primary else '' }}">{{ k.category_name }}</span>
+  {% endfor %}
+</div>
+
+{% if transport %}
+<div class="section">
+  <h2>Transport capacity</h2>
+  {% for t in transport %}<p>{{ t.capacity }}</p>{% endfor %}
+</div>
+{% endif %}
+
+<div class="section">
+  <h2>Composition ({{ models|length }} model type{{ 's' if models|length != 1 else '' }})</h2>
+  {% for m in models %}
+    {% set row = m.row %}
+    <div class="card" style="margin-bottom:1rem;">
+      <h3 style="margin-top:0;">
+        {{ row.name }}
+        {% if row.min_count is not none and row.max_count is not none %}
+          {% if row.min_count == row.max_count %}
+            <span class="muted" style="font-weight:normal;">× {{ row.min_count }}</span>
+          {% else %}
+            <span class="muted" style="font-weight:normal;">× {{ row.min_count }}–{{ row.max_count }}</span>
+          {% endif %}
+        {% endif %}
+      </h3>
+
+      <div class="stat-line">
+        <div class="stat-cell"><span class="label">M</span><span class="val">{{ row.m or '-' }}</span></div>
+        <div class="stat-cell"><span class="label">T</span><span class="val">{{ row.t or '-' }}</span></div>
+        <div class="stat-cell"><span class="label">SV</span><span class="val">{{ row.sv or '-' }}</span></div>
+        <div class="stat-cell"><span class="label">W</span><span class="val">{{ row.w or '-' }}</span></div>
+        <div class="stat-cell"><span class="label">LD</span><span class="val">{{ row.ld or '-' }}</span></div>
+        <div class="stat-cell"><span class="label">OC</span><span class="val">{{ row.oc or '-' }}</span></div>
+      </div>
+
+      {% if m.slots %}
+        <h4 style="margin:1rem 0 0.3rem; color:#aaa;">Weapons / equipment</h4>
+        {% for slot in m.slots %}
+          {% set s = slot.row %}
+          <div style="margin:0.5rem 0; padding-left:0.6rem; border-left:2px solid {{ '#1f4d2c' if s.kind == 'fixed' else '#5a4d1f' }};">
+            <div>
+              {% if s.kind == 'fixed' %}
+                <span class="badge" style="background:#1f4d2c; color:#d0ffdc;">fixed</span>
+              {% else %}
+                <span class="badge" style="background:#5a4d1f; color:#fff2c0;">option</span>
+              {% endif %}
+              <b>{{ s.slot_name }}</b>
+              {% if s.kind == 'choice' and (s.min_select or s.max_select) %}
+                <span class="muted" style="font-size:0.85rem;">
+                  (pick {% if s.min_select == s.max_select %}{{ s.min_select }}{% else %}{{ s.min_select or 0 }}-{{ s.max_select or '?' }}{% endif %})
+                </span>
+              {% endif %}
+            </div>
+
+            {% if s.kind == 'choice' or slot.options|length > 1 %}
+              <ul style="margin:0.3rem 0 0.5rem; padding-left:1.2rem;">
+                {% for opt in slot.options %}
+                  <li>
+                    {{ opt.row.name }}
+                    {% if opt.row.is_default %}<span class="badge status-done" style="font-size:0.7rem;">★ default</span>{% endif %}
+                    {% if opt.weapons and opt.weapons|length > 0 %}
+                      {% set first_w = opt.weapons[0] %}
+                      {% if opt.weapons|length > 1 or first_w.name != opt.row.name %}
+                        <div class="muted" style="font-size:0.85rem; margin-left:0.5rem;">
+                          {% for w in opt.weapons %}{{ w.name }}{% if not loop.last %} + {% endif %}{% endfor %}
+                        </div>
+                      {% endif %}
+                    {% endif %}
+
+                    {% if opt.weapons %}
+                      <div class="table-wrap" style="margin-top:0.3rem;">
+                      <table class="compact" style="background:#0c0e12;">
+                        <thead>
+                          <tr><th>Weapon</th><th>Type</th><th>Range</th><th>A</th><th>BS/WS</th><th>S</th><th>AP</th><th>D</th><th>Keywords</th></tr>
+                        </thead>
+                        <tbody>
+                          {% for w in opt.weapons %}
+                            <tr>
+                              <td>{{ w.name }}</td>
+                              <td>{{ 'Ranged' if w.weapon_type == 'Ranged' else 'Melee' }}</td>
+                              <td>{{ w.range_ or '-' }}</td>
+                              <td>{{ w.a or '-' }}</td>
+                              <td>{{ w.bs_ws or '-' }}</td>
+                              <td>{{ w.s or '-' }}</td>
+                              <td>{{ w.ap or '-' }}</td>
+                              <td>{{ w.d or '-' }}</td>
+                              <td class="muted">{{ w.keywords or '-' }}</td>
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      </div>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              {# Fixed slot, single option — render the weapon table inline #}
+              {% set opt = slot.options[0] %}
+              <div class="table-wrap" style="margin-top:0.3rem;">
+              <table class="compact" style="background:#0c0e12;">
+                <thead>
+                  <tr><th>Weapon</th><th>Type</th><th>Range</th><th>A</th><th>BS/WS</th><th>S</th><th>AP</th><th>D</th><th>Keywords</th></tr>
+                </thead>
+                <tbody>
+                  {% for w in opt.weapons %}
+                    <tr>
+                      <td>{{ w.name }}</td>
+                      <td>{{ 'Ranged' if w.weapon_type == 'Ranged' else 'Melee' }}</td>
+                      <td>{{ w.range_ or '-' }}</td>
+                      <td>{{ w.a or '-' }}</td>
+                      <td>{{ w.bs_ws or '-' }}</td>
+                      <td>{{ w.s or '-' }}</td>
+                      <td>{{ w.ap or '-' }}</td>
+                      <td>{{ w.d or '-' }}</td>
+                      <td class="muted">{{ w.keywords or '-' }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="muted" style="font-size:0.85rem;">No weapon data for this model.</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% if abilities %}
+<div class="section">
+  <h2>Abilities</h2>
+  {% for a in abilities %}
+    <div class="card" style="margin-bottom:0.6rem;">
+      <h3>{{ a.name }} <span class="muted" style="font-weight:normal;font-size:0.8rem;">[{{ a.ability_type }}]</span></h3>
+      <div>{{ a.description | nl2br }}</div>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="section">
+  <a class="btn" href="{{ url_for('model_new', ds=ds.id) }}">+ Register a model for this unit</a>
+</div>
+{% endblock %}

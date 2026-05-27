@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}WH40K 10e Platform{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <span class="brand">WH40K 10e</span>
+  <nav>
+    {% set ep = request.endpoint or '' %}
+    <a href="{{ url_for('index') }}" class="{{ 'active' if ep == 'index' else '' }}">Home</a>
+    <a href="{{ url_for('query_search') }}" class="{{ 'active' if ep.startswith('query') else '' }}">Search</a>
+    <a href="{{ url_for('army_list') }}" class="{{ 'active' if ep.startswith('army') else '' }}">Armies</a>
+    <a href="{{ url_for('models_list') }}" class="{{ 'active' if ep.startswith('model') else '' }}">My Models</a>
+  </nav>
+</header>
+<main>
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% if msgs %}
+      <ul class="flashes">
+        {% for cat, msg in msgs %}<li class="{{ cat }}">{{ msg }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</main>
+</body>
+</html>
