@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Admin · New weapon{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p><a href="{{ url_for('admin_weapons') }}">← All weapons</a></p>
+<h1>Create a new weapon profile</h1>
+
+<form method="post" action="{{ url_for('admin_weapon_new') }}" class="panel" style="max-width:720px;">
+  <div class="form-grid">
+    <label>Name <input type="text" name="name" required autofocus></label>
+    <label>Owner datasheet (optional)
+      <input type="text" name="datasheet_id" list="ds-list" placeholder="Type to search">
+      <datalist id="ds-list">
+        {% for d in datasheets %}
+          <option value="{{ d.id }}" label="{{ d.name }} ({{ d.cat_name }})">{{ d.name }} ({{ d.cat_name }})</option>
+        {% endfor %}
+      </datalist>
+    </label>
+    <label>Weapon type <input type="text" name="weapon_type" placeholder="Ranged / Melee"></label>
+    <label>Range <input type="text" name="range_"></label>
+    <label>A (attacks) <input type="text" name="a"></label>
+    <label>BS / WS <input type="text" name="bs_ws"></label>
+    <label>S (strength) <input type="text" name="s"></label>
+    <label>AP <input type="text" name="ap"></label>
+    <label>D (damage) <input type="text" name="d"></label>
+    <label style="grid-column: 1 / -1;">Keywords <input type="text" name="keywords" style="width:100%;"></label>
+  </div>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Create</button>
+    <a href="{{ url_for('admin_weapons') }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+{% endblock %}

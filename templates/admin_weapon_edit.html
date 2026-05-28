@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Admin · {{ w.name }}{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p><a href="{{ url_for('admin_weapons') }}">← All weapons</a></p>
+<h1>Edit weapon · {{ w.name }}</h1>
+<p class="muted">
+  Profile id <code>{{ w.profile_id }}</code>
+  {% if ds %} · belongs to <a href="{{ url_for('admin_unit_edit', datasheet_id=ds.id) }}">{{ ds.name }}</a>{% endif %}
+</p>
+
+<form method="post" action="{{ url_for('admin_weapon_edit', profile_id=w.profile_id) }}" class="panel" style="max-width:720px;">
+  <div class="form-grid">
+    <label>Name <input type="text" name="w_name" value="{{ w.name or '' }}" required></label>
+    <label>Weapon type <input type="text" name="w_weapon_type" value="{{ w.weapon_type or '' }}" placeholder="Ranged / Melee"></label>
+    <label>Range <input type="text" name="w_range_" value="{{ w.range_ or '' }}"></label>
+    <label>A (attacks) <input type="text" name="w_a" value="{{ w.a or '' }}"></label>
+    <label>BS / WS <input type="text" name="w_bs_ws" value="{{ w.bs_ws or '' }}"></label>
+    <label>S (strength) <input type="text" name="w_s" value="{{ w.s or '' }}"></label>
+    <label>AP <input type="text" name="w_ap" value="{{ w.ap or '' }}"></label>
+    <label>D (damage) <input type="text" name="w_d" value="{{ w.d or '' }}"></label>
+    <label style="grid-column: 1 / -1;">Keywords
+      <input type="text" name="w_keywords" value="{{ w.keywords or '' }}" style="width:100%;">
+    </label>
+  </div>
+  <p class="muted" style="font-size:0.85rem;">All numeric-looking values are stored as text so you can enter dice (e.g. <code>D6</code>, <code>2D3+1</code>) or modifiers (<code>+1</code>).</p>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Save</button>
+    <a href="{{ url_for('admin_weapons') }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+
+<div class="section" style="border-top:1px solid #5a1f1f; padding-top:1rem;">
+  <h2 style="color:#ff7777;">Danger zone</h2>
+  <p class="muted">Deletes this profile and removes it from every loadout option that referenced it.</p>
+  <form method="post" action="{{ url_for('admin_weapon_delete', profile_id=w.profile_id) }}"
+        onsubmit="return confirm('Permanently delete weapon {{ w.name|e }}?');">
+    <button type="submit" class="btn-ghost" style="color:#ff7777; border-color:#5a1f1f;">Delete weapon</button>
+  </form>
+</div>
+{% endblock %}

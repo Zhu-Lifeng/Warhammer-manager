@@ -1,0 +1,8 @@
+{# Partial: secondary nav for admin pages. Include with `{% include "_admin_nav.html" %}`. #}
+{% set adm_ep = request.endpoint or '' %}
+<nav class="admin-nav">
+  <a href="{{ url_for('admin_home') }}" class="{{ 'active' if adm_ep == 'admin_home' else '' }}">Overview</a>
+  <a href="{{ url_for('admin_users') }}" class="{{ 'active' if adm_ep.startswith('admin_users') or adm_ep in ('admin_reset_password','admin_set_role') else '' }}">Users</a>
+  <a href="{{ url_for('admin_units') }}" class="{{ 'active' if adm_ep in ('admin_units','admin_unit_edit') else '' }}">Units</a>
+  <a href="{{ url_for('admin_weapons') }}" class="{{ 'active' if adm_ep in ('admin_weapons','admin_weapon_edit') else '' }}">Weapons</a>
+</nav>

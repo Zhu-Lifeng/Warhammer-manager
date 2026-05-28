@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% block title %}Admin · {{ ds.name }}{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p><a href="{{ url_for('admin_units') }}">← All units</a> · <a href="{{ url_for('query_unit', datasheet_id=ds.id) }}">View public page →</a></p>
+<h1>Edit unit · {{ ds.name }}</h1>
+<p class="muted">{{ ds.catalogue_name }} · entry type {{ ds.entry_type or '-' }} · id <code>{{ ds.id }}</code></p>
+
+{# ---------- Datasheet attrs + per-model stat grid (single form) ---------- #}
+<form method="post" action="{{ url_for('admin_unit_edit', datasheet_id=ds.id) }}">
+  <div class="section">
+    <h2>Datasheet</h2>
+    <div class="panel form-grid" style="max-width:540px;">
+      <label>Name
+        <input type="text" name="ds_name" required value="{{ ds.name }}">
+      </label>
+      <label>Base points
+        <input type="number" name="ds_points" min="0" max="9999"
+               value="{{ ds.points if ds.points is not none else '' }}"
+               placeholder="(no base points)">
+      </label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Model types ({{ models | length }})</h2>
+    {% if models %}
+    <div class="table-wrap">
+    <table class="compact">
+      <thead>
+        <tr>
+          <th>Name</th>
+          {% for f in unit_model_fields %}{% if f != 'name' %}<th>{{ f | upper }}</th>{% endif %}{% endfor %}
+          <th>Loadout</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for m in models %}
+        <tr>
+          <td><input type="text" name="m_{{ m.id }}_name" value="{{ m.name or '' }}" style="width:11rem;" form="unit-edit-form"></td>
+          {% for f in unit_model_fields %}{% if f != 'name' %}
+            <td><input type="text" name="m_{{ m.id }}_{{ f }}" value="{{ m[f] if m[f] is not none else '' }}" style="width:4rem;" form="unit-edit-form"></td>
+          {% endif %}{% endfor %}
+          <td><a href="{{ url_for('admin_model_loadout', datasheet_id=ds.id, model_id=m.id) }}" class="btn-small">Edit slots →</a></td>
+          <td></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    <p class="muted" style="font-size:0.85rem;">M/T/SV/W/LD/OC values are free text (e.g. "6&quot;", "3+", "2D6"). Save below to commit changes.</p>
+    {% else %}
+    <p class="muted">No model types yet.</p>
+    {% endif %}
+  </div>
+
+  {% if tiers %}
+  <div class="section">
+    <h2>Pricing tiers</h2>
+    <div class="table-wrap">
+    <table class="compact" style="max-width:520px;">
+      <thead><tr><th>Condition</th><th>Points</th></tr></thead>
+      <tbody>
+      {% for t in tiers %}
+        <tr>
+          <td>{{ t.condition_text }}</td>
+          <td><input type="number" name="tier_{{ t.id }}_points" min="0" max="9999" value="{{ t.points if t.points is not none else '' }}" style="width:5rem;"></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="section">
+    <button type="submit" class="btn">Save datasheet / models / tiers</button>
+    <a href="{{ url_for('admin_units') }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+{# Trick: form="unit-edit-form" on inputs above lets us hoist them out of the
+   inline table cells if a future refactor moves them, while still posting to
+   the same handler. The id below matches. #}
+<form id="unit-edit-form" method="post" action="{{ url_for('admin_unit_edit', datasheet_id=ds.id) }}" style="display:none;"></form>
+
+{# ---------- Add a new model type (separate POST) ---------- #}
+<div class="section">
+  <h2>Add a model type</h2>
+  <form method="post" action="{{ url_for('admin_model_new', datasheet_id=ds.id) }}" class="panel" style="max-width:540px;">
+    <div class="row">
+      <input type="text" name="name" required placeholder="e.g. Sergeant" style="flex:1;">
+      <button type="submit" class="btn">+ Add model type</button>
+    </div>
+  </form>
+  {% if models %}
+  <details style="margin-top:0.5rem;">
+    <summary class="muted">Delete a model type…</summary>
+    <ul style="margin-top:0.5rem;">
+    {% for m in models %}
+      <li style="margin-bottom:0.3rem;">
+        <form method="post" action="{{ url_for('admin_model_delete', datasheet_id=ds.id, model_id=m.id) }}" style="display:inline;" onsubmit="return confirm('Delete model type \'{{ m.name|e }}\' and its loadout?');">
+          <button type="submit" class="btn-small btn-ghost">Delete “{{ m.name }}”</button>
+        </form>
+      </li>
+    {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</div>
+
+{# ---------- Abilities ---------- #}
+<div class="section">
+  <h2>Abilities ({{ abilities | length }})</h2>
+  {% for a in abilities %}
+    <form method="post" action="{{ url_for('admin_ability_edit', profile_id=a.profile_id) }}" class="panel" style="margin-bottom:0.5rem;">
+      <div class="row">
+        <input type="text" name="name" value="{{ a.name or '' }}" required style="flex:2;">
+        <input type="text" name="ability_type" value="{{ a.ability_type or '' }}" placeholder="type (e.g. Core)" style="flex:1;">
+      </div>
+      <textarea name="description" rows="2" placeholder="Description" style="width:100%; margin-top:0.4rem;">{{ a.description or '' }}</textarea>
+      <div class="row" style="margin-top:0.4rem;">
+        <button type="submit" class="btn-small">Save</button>
+        <button type="submit" formaction="{{ url_for('admin_ability_delete', profile_id=a.profile_id) }}" formmethod="post" class="btn-small btn-ghost"
+                onclick="return confirm('Delete ability {{ a.name|e }}?');">Delete</button>
+      </div>
+    </form>
+  {% endfor %}
+  <form method="post" action="{{ url_for('admin_ability_new', datasheet_id=ds.id) }}" class="panel">
+    <div class="row">
+      <input type="text" name="name" placeholder="New ability name" required style="flex:2;">
+      <input type="text" name="ability_type" placeholder="type" style="flex:1;">
+    </div>
+    <textarea name="description" rows="2" placeholder="Description (optional)" style="width:100%; margin-top:0.4rem;"></textarea>
+    <div class="row" style="margin-top:0.4rem;">
+      <button type="submit" class="btn">+ Add ability</button>
+    </div>
+  </form>
+</div>
+
+{# ---------- Keywords ---------- #}
+<div class="section">
+  <h2>Keywords ({{ keywords | length }})</h2>
+  {% if keywords %}
+  <ul style="display:flex; flex-wrap:wrap; gap:0.4rem; padding:0; list-style:none;">
+    {% for k in keywords %}
+      <li>
+        <form method="post" action="{{ url_for('admin_keyword_delete', datasheet_id=ds.id, category_id=k.category_id) }}" style="display:inline-flex; align-items:center; gap:0.25rem; background:#1c1f26; padding:0.25rem 0.5rem; border-radius:3px;"
+              onsubmit="return confirm('Remove keyword {{ k.category_name|e }}?');">
+          <span class="kw-tag {{ 'primary' if k.is_primary else '' }}" style="margin:0;">{{ k.category_name }}</span>
+          <button type="submit" class="btn-small btn-ghost" style="padding:0 0.3rem;">×</button>
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <form method="post" action="{{ url_for('admin_keyword_new', datasheet_id=ds.id) }}" class="panel" style="max-width:540px; margin-top:0.5rem;">
+    <div class="row">
+      <input type="text" name="category_name" placeholder="Keyword (e.g. INFANTRY)" required style="flex:1;">
+      <label style="display:flex; align-items:center; gap:0.3rem;">
+        <input type="checkbox" name="is_primary" value="1"> primary
+      </label>
+      <button type="submit" class="btn">+ Add</button>
+    </div>
+  </form>
+</div>
+
+{# ---------- Transport ---------- #}
+<div class="section">
+  <h2>Transport ({{ transport | length }})</h2>
+  {% for t in transport %}
+    <form method="post" action="{{ url_for('admin_transport_edit', profile_id=t.profile_id) }}" class="panel" style="margin-bottom:0.4rem;">
+      <div class="row">
+        <input type="text" name="capacity" value="{{ t.capacity or '' }}" required style="flex:1;">
+        <button type="submit" class="btn-small">Save</button>
+        <button type="submit" formaction="{{ url_for('admin_transport_delete', profile_id=t.profile_id) }}" class="btn-small btn-ghost"
+                onclick="return confirm('Delete transport entry?');">Delete</button>
+      </div>
+    </form>
+  {% endfor %}
+  <form method="post" action="{{ url_for('admin_transport_new', datasheet_id=ds.id) }}" class="panel" style="max-width:540px;">
+    <div class="row">
+      <input type="text" name="capacity" placeholder="e.g. 10 INFANTRY models" required style="flex:1;">
+      <button type="submit" class="btn">+ Add</button>
+    </div>
+  </form>
+</div>
+
+{# ---------- Danger zone ---------- #}
+<div class="section" style="border-top:1px solid #5a1f1f; padding-top:1rem;">
+  <h2 style="color:#ff7777;">Danger zone</h2>
+  <p class="muted">Deletes the datasheet, all its model types, loadout, abilities, keywords, transport, pricing tiers, and weapons owned by it. Armies and personal models that referenced this datasheet will be left with dangling references.</p>
+  <form method="post" action="{{ url_for('admin_unit_delete', datasheet_id=ds.id) }}"
+        onsubmit="return confirm('Permanently delete {{ ds.name|e }} and EVERYTHING attached to it?\\n\\nThis cannot be undone.');">
+    <button type="submit" class="btn-ghost" style="color:#ff7777; border-color:#5a1f1f;">Delete {{ ds.name }} forever</button>
+  </form>
+</div>
+{% endblock %}

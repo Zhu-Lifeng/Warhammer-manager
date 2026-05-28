@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Admin · Weapons{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<h1>Weapons</h1>
+<p><a href="{{ url_for('admin_weapon_new') }}" class="btn">+ New weapon</a></p>
+
+<form method="get" class="panel">
+  <div class="row">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by weapon name…">
+    <input type="text" name="datasheet" value="{{ datasheet_id }}" placeholder="Datasheet id (optional)">
+    <button type="submit" class="btn">Filter</button>
+    {% if q or datasheet_id %}<a href="{{ url_for('admin_weapons') }}" class="btn-ghost">Clear</a>{% endif %}
+  </div>
+</form>
+
+<p class="muted">{{ rows | length }} profile(s){% if rows | length == 500 %} (showing first 500){% endif %}.</p>
+
+<table class="table">
+  <thead>
+    <tr><th>Owner unit</th><th>Weapon</th><th>Type</th><th>Range</th><th>A</th><th>BS/WS</th><th>S</th><th>AP</th><th>D</th><th></th></tr>
+  </thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td class="muted">{{ r.ds_name or '-' }}</td>
+      <td><b>{{ r.name }}</b></td>
+      <td class="muted">{{ r.weapon_type or '-' }}</td>
+      <td>{{ r.range_ or '-' }}</td>
+      <td>{{ r.a or '-' }}</td>
+      <td>{{ r.bs_ws or '-' }}</td>
+      <td>{{ r.s or '-' }}</td>
+      <td>{{ r.ap or '-' }}</td>
+      <td>{{ r.d or '-' }}</td>
+      <td><a href="{{ url_for('admin_weapon_edit', profile_id=r.profile_id) }}" class="btn-small">Edit</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

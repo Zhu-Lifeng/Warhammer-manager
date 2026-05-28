@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<h1>Admin overview</h1>
+<p class="muted">Direct edits to datasheets, weapons, and unit models. Changes apply globally and are reflected immediately in army totals.</p>
+
+<div class="cards">
+  <div class="card"><h3>Users</h3><div class="stat">{{ counts.users }}</div><div class="muted"><a href="{{ url_for('admin_users') }}">Manage →</a></div></div>
+  <div class="card"><h3>Datasheets</h3><div class="stat">{{ counts.datasheets }}</div><div class="muted"><a href="{{ url_for('admin_units') }}">Edit units →</a></div></div>
+  <div class="card"><h3>Weapons</h3><div class="stat">{{ counts.weapons }}</div><div class="muted"><a href="{{ url_for('admin_weapons') }}">Edit weapons →</a></div></div>
+  <div class="card"><h3>Model types</h3><div class="stat">{{ counts.unit_models }}</div><div class="muted">via Units</div></div>
+</div>
+
+<div class="section">
+  <h2>What's editable right now</h2>
+  <ul>
+    <li><b>Datasheet</b>: name, base points</li>
+    <li><b>Unit models</b> (per composition row): name, M / T / SV / W / LD / OC, min/max count</li>
+    <li><b>Pricing tiers</b>: points</li>
+    <li><b>Weapons</b>: every profile attribute (Range / A / BS-WS / S / AP / D / type / keywords)</li>
+  </ul>
+  <p class="muted">Not yet editable in this UI: composition membership, loadout slots/options, abilities, keywords, transport. Coming in a later phase.</p>
+</div>
+{% endblock %}

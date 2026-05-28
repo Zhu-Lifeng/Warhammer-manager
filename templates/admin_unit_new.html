@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Admin · New datasheet{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p><a href="{{ url_for('admin_units') }}">← All units</a></p>
+<h1>Create a new datasheet</h1>
+<p class="muted">After it's created you'll land on the edit page to add model types, weapons, abilities, etc.</p>
+
+<form method="post" action="{{ url_for('admin_unit_new') }}" class="panel" style="max-width:540px;">
+  <div class="form-grid">
+    <label>Name <input type="text" name="name" required autofocus></label>
+    <label>Faction (catalogue)
+      <select name="catalogue_id" required>
+        <option value="">— Select —</option>
+        {% for f in factions %}
+          <option value="{{ f.id }}">{{ f.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Entry type <input type="text" name="entry_type" placeholder="Optional (e.g. model, unit)"></label>
+    <label>Base points <input type="number" name="points" min="0" max="9999" placeholder="Optional"></label>
+  </div>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Create</button>
+    <a href="{{ url_for('admin_units') }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+{% endblock %}

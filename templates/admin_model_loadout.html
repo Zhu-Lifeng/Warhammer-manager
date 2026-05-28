@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Admin · Loadout · {{ model.name or 'model' }}{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p>
+  <a href="{{ url_for('admin_units') }}">All units</a> ·
+  <a href="{{ url_for('admin_unit_edit', datasheet_id=ds.id) }}">← {{ ds.name }}</a>
+</p>
+<h1>Loadout · {{ model.name or 'model' }}</h1>
+<p class="muted">Slots → Options → Weapons. Slots tagged <span class="badge" style="background:#1f4d2c; color:#d0ffdc;">fixed</span> mean the model always has the listed equipment; <span class="badge" style="background:#5a4d1f; color:#fff2c0;">choice</span> means the player picks between options.</p>
+
+<datalist id="weapon-picker">
+  {% for w in weapon_choices %}
+    <option value="{{ w.profile_id }}" label="{{ w.name }}">{{ w.name }}</option>
+  {% endfor %}
+</datalist>
+
+{% for slot in slots %}
+  {% set s = slot.row %}
+  <div class="section">
+    <form method="post" action="{{ url_for('admin_slot_edit', slot_id=s.id) }}" class="panel">
+      <div class="row">
+        <input type="text" name="slot_name" value="{{ s.slot_name or '' }}" style="flex:2;">
+        <select name="kind">
+          <option value="choice" {% if s.kind == 'choice' %}selected{% endif %}>choice</option>
+          <option value="fixed" {% if s.kind == 'fixed' %}selected{% endif %}>fixed</option>
+        </select>
+        <label>min <input type="number" name="min_select" value="{{ s.min_select if s.min_select is not none else 1 }}" min="0" style="width:4rem;"></label>
+        <label>max <input type="number" name="max_select" value="{{ s.max_select if s.max_select is not none else 1 }}" min="0" style="width:4rem;"></label>
+        <button type="submit" class="btn-small">Save slot</button>
+        <button type="submit" formaction="{{ url_for('admin_slot_delete', slot_id=s.id) }}" class="btn-small btn-ghost"
+                onclick="return confirm('Delete slot \'{{ s.slot_name|e }}\' and all its options?');">Delete slot</button>
+      </div>
+    </form>
+
+    {% for opt in slot.options %}
+      {% set o = opt.row %}
+      <div class="panel" style="margin:0.5rem 0 0.5rem 1.5rem; border-left:2px solid {% if o.is_default %}#1f4d2c{% else %}#2a2d35{% endif %};">
+        <form method="post" action="{{ url_for('admin_option_edit', option_id=o.id) }}">
+          <div class="row">
+            <input type="text" name="name" value="{{ o.name or '' }}" required style="flex:2;">
+            <label style="display:flex; align-items:center; gap:0.3rem;">
+              <input type="checkbox" name="is_default" value="1" {% if o.is_default %}checked{% endif %}> default
+            </label>
+            <button type="submit" class="btn-small">Save</button>
+            <button type="submit" formaction="{{ url_for('admin_option_delete', option_id=o.id) }}" class="btn-small btn-ghost"
+                    onclick="return confirm('Delete option \'{{ o.name|e }}\'?');">Delete</button>
+          </div>
+        </form>
+
+        <div style="margin-top:0.4rem;">
+          <b class="muted" style="font-size:0.85rem;">Weapons in this option ({{ opt.weapons | length }}):</b>
+          {% if opt.weapons %}
+          <ul style="margin:0.3rem 0; padding-left:1rem;">
+          {% for w in opt.weapons %}
+            <li style="display:flex; align-items:center; gap:0.4rem; margin:0.2rem 0;">
+              <span>{{ w.name }} <span class="muted" style="font-size:0.75rem;">[{{ w.weapon_type or '?' }}]</span></span>
+              <form method="post" action="{{ url_for('admin_option_weapon_remove', option_id=o.id, weapon_profile_id=w.profile_id) }}" style="display:inline;">
+                <button type="submit" class="btn-small btn-ghost" style="padding:0 0.4rem;">remove</button>
+              </form>
+              <a href="{{ url_for('admin_weapon_edit', profile_id=w.profile_id) }}" class="muted" style="font-size:0.75rem;">edit profile →</a>
+            </li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+          <form method="post" action="{{ url_for('admin_option_weapon_add', option_id=o.id) }}" style="margin-top:0.3rem;">
+            <div class="row">
+              <input type="text" name="weapon_profile_id" list="weapon-picker" placeholder="Type weapon name (autocomplete)…" required style="flex:1;">
+              <button type="submit" class="btn-small">+ Add weapon</button>
+            </div>
+            <p class="muted" style="font-size:0.75rem; margin:0.2rem 0 0;">The autocomplete inserts the weapon's profile id; if you know it you can paste it directly.</p>
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+
+    <form method="post" action="{{ url_for('admin_option_new', slot_id=s.id) }}" style="margin-left:1.5rem;">
+      <div class="row">
+        <input type="text" name="name" placeholder="New option name" required style="flex:1;">
+        <label style="display:flex; align-items:center; gap:0.3rem;">
+          <input type="checkbox" name="is_default" value="1"> default
+        </label>
+        <button type="submit" class="btn">+ Add option</button>
+      </div>
+    </form>
+  </div>
+{% endfor %}
+
+{# Add a new slot #}
+<div class="section">
+  <h2>Add a slot</h2>
+  <form method="post" action="{{ url_for('admin_slot_new', datasheet_id=ds.id, model_id=model.id) }}" class="panel">
+    <div class="row">
+      <input type="text" name="slot_name" placeholder="Slot name (e.g. Pistol)" required style="flex:2;">
+      <select name="kind">
+        <option value="choice" selected>choice</option>
+        <option value="fixed">fixed</option>
+      </select>
+      <label>min <input type="number" name="min_select" value="1" min="0" style="width:4rem;"></label>
+      <label>max <input type="number" name="max_select" value="1" min="0" style="width:4rem;"></label>
+      <button type="submit" class="btn">+ Add slot</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

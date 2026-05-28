@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Admin · Units{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<h1>Units</h1>
+<p><a href="{{ url_for('admin_unit_new') }}" class="btn">+ New datasheet</a></p>
+
+<form method="get" class="panel">
+  <div class="row">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by name…">
+    <select name="catalogue">
+      <option value="">All factions</option>
+      {% for f in factions %}
+        <option value="{{ f.id }}" {% if f.id == catalogue_id %}selected{% endif %}>{{ f.name }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit" class="btn">Filter</button>
+    {% if q or catalogue_id %}<a href="{{ url_for('admin_units') }}" class="btn-ghost">Clear</a>{% endif %}
+  </div>
+</form>
+
+<p class="muted">{{ rows | length }} result(s){% if rows | length == 500 %} (showing first 500){% endif %}.</p>
+
+<table class="table">
+  <thead><tr><th>Faction</th><th>Name</th><th>Type</th><th>Points</th><th></th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td class="muted">{{ r.catalogue_name }}</td>
+      <td><b>{{ r.name }}</b></td>
+      <td class="muted">{{ r.entry_type or '-' }}</td>
+      <td>{{ r.points if r.points is not none else '-' }}</td>
+      <td>
+        <a href="{{ url_for('admin_unit_edit', datasheet_id=r.id) }}" class="btn-small">Edit</a>
+        <a href="{{ url_for('query_unit', datasheet_id=r.id) }}" class="btn-small btn-ghost">View →</a>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
