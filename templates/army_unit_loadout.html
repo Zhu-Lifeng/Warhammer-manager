@@ -35,10 +35,7 @@
           <input type="radio" name="tier" value="{{ t.id }}"
                  {% if unit.tier_label == t.condition_text %}checked{% endif %}>
           <b>Expanded — {{ t.condition_text }}</b>
-          <span style="color:#ffb84d;">— {{ t.effective_points }} pts</span>
-          {% if t.overridden %}
-            <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ t.points }}">edit</span>
-          {% endif %}
+          <span style="color:#ffb84d;">— {{ t.points }} pts</span>
         </label>
       {% endfor %}
     </div>

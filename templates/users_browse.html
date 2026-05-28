@@ -2,19 +2,19 @@
 {% block title %}Browse Players{% endblock %}
 {% block body %}
 <h1>Browse Players</h1>
-<p class="muted">下面这些账号已公开他们的军表和模型库存。</p>
+<p class="muted">These accounts have made their armies and model inventories public.</p>
 
 <form method="get" action="{{ url_for('users_browse') }}" class="panel">
   <div class="row">
-    <input type="text" name="q" value="{{ q }}" placeholder="按用户名搜索…" autofocus>
-    <button type="submit" class="btn">搜索</button>
-    {% if q %}<a href="{{ url_for('users_browse') }}" class="btn-ghost">清除</a>{% endif %}
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by username…" autofocus>
+    <button type="submit" class="btn">Search</button>
+    {% if q %}<a href="{{ url_for('users_browse') }}" class="btn-ghost">Clear</a>{% endif %}
   </div>
 </form>
 
 {% if users %}
 <table class="table">
-  <thead><tr><th>用户名</th><th>注册时间</th><th>军表</th><th>模型</th><th></th></tr></thead>
+  <thead><tr><th>Username</th><th>Joined</th><th>Armies</th><th>Models</th><th></th></tr></thead>
   <tbody>
   {% for u in users %}
     <tr>
@@ -22,12 +22,12 @@
       <td class="muted">{{ u.created_at | dt }}</td>
       <td>{{ u.n_armies }}</td>
       <td>{{ u.n_models }}</td>
-      <td><a href="{{ url_for('public_profile', username=u.username) }}" class="btn-small">查看 →</a></td>
+      <td><a href="{{ url_for('public_profile', username=u.username) }}" class="btn-small">View →</a></td>
     </tr>
   {% endfor %}
   </tbody>
 </table>
 {% else %}
-<p class="muted">{% if q %}没有匹配 "{{ q }}" 的公开账号。{% else %}还没有公开账号——成为第一个？去 <a href="{{ url_for('profile') }}">Profile</a> 开启公开。{% endif %}</p>
+<p class="muted">{% if q %}No public accounts match "{{ q }}".{% else %}No public accounts yet — be the first by enabling public visibility on your <a href="{{ url_for('profile') }}">profile</a>.{% endif %}</p>
 {% endif %}
 {% endblock %}

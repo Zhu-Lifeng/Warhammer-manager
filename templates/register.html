@@ -1,27 +1,27 @@
 {% extends "base.html" %}
-{% block title %}注册{% endblock %}
+{% block title %}Register{% endblock %}
 {% block body %}
-<h1>注册</h1>
+<h1>Register</h1>
 {% if is_bootstrap %}
 <div class="panel" style="background:#2b2417; border:1px solid #b88a3a; margin-bottom:1rem;">
-  <b>你是首位注册用户</b>——将自动获得 <span class="badge">admin</span> 权限，并接管系统里已有的全部军表和模型。
+  <b>You are the first user.</b> Your account will automatically be granted the <span class="badge">admin</span> role and will take over all armies and models already on this server.
 </div>
 {% endif %}
 <form method="post" action="{{ url_for('register') }}" class="panel" style="max-width:400px;">
   <div class="form-grid">
-    <label>用户名 <span class="muted">(3–32 位，字母/数字/_-.)</span>
+    <label>Username <span class="muted">(3–32 chars: letters, digits, _ - .)</span>
       <input type="text" name="username" required autofocus autocomplete="username" pattern="[A-Za-z0-9_.\-]{3,32}">
     </label>
-    <label>密码 <span class="muted">(至少 8 位)</span>
+    <label>Password <span class="muted">(at least 8 characters)</span>
       <input type="password" name="password" required minlength="8" autocomplete="new-password">
     </label>
-    <label>确认密码
+    <label>Confirm password
       <input type="password" name="confirm" required minlength="8" autocomplete="new-password">
     </label>
   </div>
   <div class="row" style="margin-top:0.8rem;">
-    <button type="submit" class="btn">注册</button>
-    <a href="{{ url_for('login') }}" class="btn-ghost">已有账号？登录</a>
+    <button type="submit" class="btn">Register</button>
+    <a href="{{ url_for('login') }}" class="btn-ghost">Already have an account? Log in</a>
   </div>
 </form>
 {% endblock %}

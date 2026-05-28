@@ -4,11 +4,11 @@
 <p><a href="{{ back_href }}">{{ back_label }}</a></p>
 
 <h1>{{ ds.name }}
-  {% if effective_points is not none %}
-    <span class="muted" style="font-size:1rem;">— {{ effective_points }} pts</span>
-    {% if override %}
-      <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.7rem;">edited</span>
-    {% endif %}
+  {% if ds.points is not none %}
+    <span class="muted" style="font-size:1rem;">— {{ ds.points }} pts</span>
+  {% endif %}
+  {% if me and me.role == 'admin' %}
+    <a href="{{ url_for('admin_unit_edit', datasheet_id=ds.id) }}" class="btn-small" style="font-size:0.7rem; vertical-align:middle;">Edit in admin →</a>
   {% endif %}
 </h1>
 <p class="muted">{{ ds.catalogue_name }}</p>
@@ -17,55 +17,21 @@
   <h2>Unit size / expansion pricing{% if not pricing_tiers %} <span class="muted" style="font-size:0.85rem;">— single tier</span>{% endif %}</h2>
   <div class="table-wrap">
   <table class="compact" style="max-width:680px;">
-    <thead><tr><th>Condition</th><th class="right">Points</th><th>Edit</th></tr></thead>
+    <thead><tr><th>Condition</th><th class="right">Points</th></tr></thead>
     <tbody>
       <tr>
         <td>Base size</td>
-        <td class="right">
-          <b>{{ effective_points if effective_points is not none else '-' }}</b> pts
-          {% if override %}
-            <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ ds.points }}">edit</span>
-          {% endif %}
-        </td>
-        <td>
-          {% if me and me.role == 'admin' %}
-          <form method="post" action="{{ url_for('edit_points', datasheet_id=ds.id) }}" style="display:flex; gap:0.3rem; align-items:center;">
-            <input type="number" name="points" min="0" max="9999" style="width:5rem; min-height:32px;"
-                   value="{{ override.points if override else '' }}"
-                   placeholder="orig {{ ds.points if ds.points is not none else '-' }}">
-            <button type="submit" class="btn-small">Save</button>
-          </form>
-          {% else %}<span class="muted">仅管理员可改</span>{% endif %}
-        </td>
+        <td class="right"><b>{{ ds.points if ds.points is not none else '-' }}</b> pts</td>
       </tr>
       {% for t in pricing_tiers %}
         <tr>
           <td>{{ t.condition_text }}</td>
-          <td class="right">
-            <b>{{ t.effective_points }}</b> pts
-            {% if t.overridden %}
-              <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ t.points }}">edit</span>
-            {% endif %}
-          </td>
-          <td>
-            {% if me and me.role == 'admin' %}
-            <form method="post" action="{{ url_for('edit_tier_points', datasheet_id=ds.id) }}" style="display:flex; gap:0.3rem; align-items:center;">
-              <input type="hidden" name="condition_text" value="{{ t.condition_text }}">
-              <input type="number" name="points" min="0" max="9999" style="width:5rem; min-height:32px;"
-                     value="{{ t.override.points if t.override else '' }}"
-                     placeholder="orig {{ t.points }}">
-              <button type="submit" class="btn-small">Save</button>
-            </form>
-            {% else %}<span class="muted">—</span>{% endif %}
-          </td>
+          <td class="right"><b>{{ t.points }}</b> pts</td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
   </div>
-  <p class="muted" style="font-size:0.85rem; margin-top:0.3rem;">
-    Type a new points value and Save to override BSData; leave empty and Save to revert.
-  </p>
 </div>
 
 <div class="section">

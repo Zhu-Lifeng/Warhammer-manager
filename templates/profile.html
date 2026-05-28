@@ -2,44 +2,44 @@
 {% block title %}{{ me.username }} — Profile{% endblock %}
 {% block body %}
 <h1>{{ me.username }}{% if me.role == 'admin' %} <span class="badge">admin</span>{% endif %}</h1>
-<p class="muted">注册于 {{ me.created_at | dt }} · 当前可见性：
-  <b>{% if me.is_public %}公开{% else %}私人{% endif %}</b>
+<p class="muted">Joined {{ me.created_at | dt }} · visibility:
+  <b>{% if me.is_public %}public{% else %}private{% endif %}</b>
 </p>
 
 <div class="cards">
-  <div class="card"><h3>军表</h3><div class="stat">{{ n_armies }}</div></div>
-  <div class="card"><h3>模型</h3><div class="stat">{{ n_models }}</div></div>
+  <div class="card"><h3>Armies</h3><div class="stat">{{ n_armies }}</div></div>
+  <div class="card"><h3>Models</h3><div class="stat">{{ n_models }}</div></div>
 </div>
 
 <div class="section">
-  <h2>账号可见性</h2>
+  <h2>Account visibility</h2>
   <form method="post" action="{{ url_for('profile') }}" class="panel">
     <input type="hidden" name="action" value="visibility">
-    <p class="muted">公开账号会出现在 <a href="{{ url_for('users_browse') }}">Browse Players</a> 页，其他用户可以搜索并查看你的军表和模型清单（只读）。点数覆盖始终全局生效，与可见性无关。</p>
+    <p class="muted">A public account appears on the <a href="{{ url_for('users_browse') }}">Browse Players</a> page so others can find you by name and view your armies and model inventory (read-only). Point overrides are always global and not affected by this setting.</p>
     <label class="row">
       <input type="checkbox" name="is_public" value="1" {% if me.is_public %}checked{% endif %}>
-      <span>设为公开账号</span>
+      <span>Make my profile public</span>
     </label>
     <div class="row" style="margin-top:0.8rem;">
-      <button type="submit" class="btn">保存</button>
+      <button type="submit" class="btn">Save</button>
       {% if me.is_public %}
-      <a href="{{ url_for('public_profile', username=me.username) }}" class="btn-ghost">预览公开档案 →</a>
+      <a href="{{ url_for('public_profile', username=me.username) }}" class="btn-ghost">Preview public profile →</a>
       {% endif %}
     </div>
   </form>
 </div>
 
 <div class="section">
-  <h2>修改密码</h2>
+  <h2>Change password</h2>
   <form method="post" action="{{ url_for('profile') }}" class="panel" style="max-width:400px;">
     <input type="hidden" name="action" value="password">
     <div class="form-grid">
-      <label>旧密码 <input type="password" name="old_password" required autocomplete="current-password"></label>
-      <label>新密码 (至少 8 位) <input type="password" name="new_password" required minlength="8" autocomplete="new-password"></label>
-      <label>确认新密码 <input type="password" name="confirm_password" required minlength="8" autocomplete="new-password"></label>
+      <label>Current password <input type="password" name="old_password" required autocomplete="current-password"></label>
+      <label>New password (at least 8 chars) <input type="password" name="new_password" required minlength="8" autocomplete="new-password"></label>
+      <label>Confirm new password <input type="password" name="confirm_password" required minlength="8" autocomplete="new-password"></label>
     </div>
     <div class="row" style="margin-top:0.8rem;">
-      <button type="submit" class="btn">更新密码</button>
+      <button type="submit" class="btn">Update password</button>
     </div>
   </form>
 </div>

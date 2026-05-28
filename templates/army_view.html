@@ -34,9 +34,6 @@
                 </td>
                 <td>
                   {{ u.effective_points if u.effective_points is not none else '-' }}
-                  {% if u.overridden %}
-                    <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ u.points if not u.is_expanded else u.tier_points }}">edit</span>
-                  {% endif %}
                 </td>
                 <td>×{{ u.count }}</td>
                 <td class="right">{{ (u.effective_points or 0) * u.count }}</td>
@@ -81,10 +78,7 @@
               <tr>
                 <td><a href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a></td>
                 <td>
-                  {{ d.effective_points if d.effective_points is not none else '-' }}
-                  {% if d.overridden %}
-                    <span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;" title="orig {{ d.points }}">edit</span>
-                  {% endif %}
+                  {{ d.points if d.points is not none else '-' }}
                 </td>
                 <td>
                   <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" style="display:inline">

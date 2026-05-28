@@ -60,6 +60,23 @@ header.top .user-menu a {
 header.top .user-menu a:hover { background: #2a2d35; text-decoration: none; }
 header.top .user-menu a.active { background: #c33; color: #fff; }
 
+nav.admin-nav {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2a2d35;
+  flex-wrap: wrap;
+}
+nav.admin-nav a {
+  color: #d0d0d0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+nav.admin-nav a:hover { background: #2a2d35; text-decoration: none; }
+nav.admin-nav a.active { background: #5a4d1f; color: #fff2c0; }
+
 main {
   max-width: 1280px;
   margin: 1.2rem auto;

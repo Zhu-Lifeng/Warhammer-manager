@@ -1,12 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Admin · 用户管理{% endblock %}
+{% block title %}Admin · Users{% endblock %}
 {% block body %}
-<h1>用户管理</h1>
-<p class="muted">{{ users | length }} 个账号。点数覆盖（datasheet / tier）由全体管理员共同维护，对所有用户生效。</p>
+{% include "_admin_nav.html" %}
+<h1>User management</h1>
+<p class="muted">{{ users | length }} account(s). Point overrides (datasheet / tier) are maintained by all admins together and apply globally.</p>
 
 <table class="table">
   <thead>
-    <tr><th>用户名</th><th>角色</th><th>可见性</th><th>军表</th><th>模型</th><th>注册</th><th>操作</th></tr>
+    <tr><th>Username</th><th>Role</th><th>Visibility</th><th>Armies</th><th>Models</th><th>Joined</th><th>Actions</th></tr>
   </thead>
   <tbody>
   {% for u in users %}
@@ -14,7 +15,7 @@
       <td>
         <b>{{ u.username }}</b>
         {% if u.is_public %}
-          · <a href="{{ url_for('public_profile', username=u.username) }}">公开档案 →</a>
+          · <a href="{{ url_for('public_profile', username=u.username) }}">public profile →</a>
         {% endif %}
       </td>
       <td>
@@ -24,23 +25,23 @@
           user
         {% endif %}
       </td>
-      <td>{% if u.is_public %}公开{% else %}私人{% endif %}</td>
+      <td>{% if u.is_public %}public{% else %}private{% endif %}</td>
       <td>{{ u.n_armies }}</td>
       <td>{{ u.n_models }}</td>
       <td class="muted">{{ u.created_at | dt }}</td>
       <td>
         <details>
-          <summary class="btn-small">重置密码</summary>
+          <summary class="btn-small">Reset password</summary>
           <form method="post" action="{{ url_for('admin_reset_password', user_id=u.id) }}" style="margin-top:0.4rem;">
-            <input type="password" name="new_password" required minlength="8" placeholder="新密码 (至少 8 位)">
-            <button type="submit" class="btn-small">确定</button>
+            <input type="password" name="new_password" required minlength="8" placeholder="New password (8+ chars)">
+            <button type="submit" class="btn-small">Apply</button>
           </form>
         </details>
         <form method="post" action="{{ url_for('admin_set_role', user_id=u.id) }}" style="display:inline; margin-left:0.4rem;"
-              onsubmit="return confirm('确认切换角色？');">
+              onsubmit="return confirm('Change this user\'s role?');">
           <input type="hidden" name="role" value="{% if u.role == 'admin' %}user{% else %}admin{% endif %}">
           <button type="submit" class="btn-small btn-ghost">
-            {% if u.role == 'admin' %}降为 user{% else %}升为 admin{% endif %}
+            {% if u.role == 'admin' %}Demote to user{% else %}Promote to admin{% endif %}
           </button>
         </form>
       </td>

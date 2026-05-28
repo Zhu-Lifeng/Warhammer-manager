@@ -2,14 +2,14 @@
 {% block title %}{{ user.username }}{% endblock %}
 {% block body %}
 <p><a href="{{ url_for('users_browse') }}">← Browse Players</a></p>
-<h1>{{ user.username }} <span class="muted" style="font-size:0.6em;">公开档案</span></h1>
-<p class="muted">注册于 {{ user.created_at | dt }} · {{ armies | length }} 张军表 · {{ models | length }} 个模型</p>
+<h1>{{ user.username }} <span class="muted" style="font-size:0.6em;">public profile</span></h1>
+<p class="muted">Joined {{ user.created_at | dt }} · {{ armies | length }} army list(s) · {{ models | length }} model(s)</p>
 
 <div class="section">
-  <h2>军表 ({{ armies | length }})</h2>
+  <h2>Armies ({{ armies | length }})</h2>
   {% if armies %}
   <table class="table">
-    <thead><tr><th>名称</th><th>派系</th><th>单位数</th><th>点数</th><th>建立时间</th></tr></thead>
+    <thead><tr><th>Name</th><th>Faction</th><th>Units</th><th>Points</th><th>Created</th></tr></thead>
     <tbody>
     {% for a in armies %}
       <tr>
@@ -22,11 +22,11 @@
     {% endfor %}
     </tbody>
   </table>
-  {% else %}<p class="muted">还没有军表。</p>{% endif %}
+  {% else %}<p class="muted">No armies yet.</p>{% endif %}
 </div>
 
 <div class="section">
-  <h2>模型库存 ({{ models | length }})</h2>
+  <h2>Model inventory ({{ models | length }})</h2>
   {% if models %}
   <div class="image-grid">
     {% for m in models %}
@@ -46,6 +46,6 @@
     </figure>
     {% endfor %}
   </div>
-  {% else %}<p class="muted">还没有模型。</p>{% endif %}
+  {% else %}<p class="muted">No models yet.</p>{% endif %}
 </div>
 {% endblock %}

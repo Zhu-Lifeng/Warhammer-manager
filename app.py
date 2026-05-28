@@ -36,7 +36,10 @@ ROOT = Path(__file__).resolve().parent
 # so `git pull` from the webhook never touches user-generated content.
 # Local default: project root (legacy paths still work).
 DATA_DIR = Path(os.environ.get("WH40K_DATA_DIR", ROOT)).resolve()
-KB_DB = ROOT / "kb" / "wh40k.db"
+# KB_SEED_DB is imported into app.db on first run, then never read again.
+# After import app.db is the single source of truth — admins can edit every
+# datasheet / weapon / model row directly via /admin.
+KB_SEED_DB = ROOT / "kb" / "wh40k.db"
 USER_DB = DATA_DIR / "app.db"
 UPLOAD_DIR = Path(os.environ.get("WH40K_UPLOAD_DIR", DATA_DIR / "uploads"))
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
@@ -65,22 +68,6 @@ app.config["MAX_CONTENT_LENGTH"] = MAX_IMAGE_BYTES * 10  # multi-upload allowanc
 # DB helpers
 # ---------------------------------------------------------------------------- #
 
-def kb_db() -> sqlite3.Connection:
-    if "kb" not in g:
-        if not KB_DB.exists():
-            raise RuntimeError(
-                f"Knowledge-base DB not found at {KB_DB}. "
-                "Run `py kb/build_kb.py` first."
-            )
-        # Read-only. timeout=10s tolerates the DB being rebuilt while Flask runs.
-        conn = sqlite3.connect(
-            f"file:{KB_DB}?mode=ro", uri=True, timeout=10.0,
-        )
-        conn.row_factory = sqlite3.Row
-        g.kb = conn
-    return g.kb
-
-
 def user_db() -> sqlite3.Connection:
     if "user" not in g:
         # timeout=10s = busy_timeout 10000ms — concurrent writers wait up to
@@ -96,6 +83,87 @@ def user_db() -> sqlite3.Connection:
     return g.user
 
 
+KB_TABLES = (
+    # Order matters: dependents last (so legacy override merging can resolve FKs).
+    "catalogues", "categories", "detachments", "enhancements", "rules",
+    "datasheets", "datasheet_keywords",
+    "unit_models", "weapons", "abilities", "transport", "pricing_tiers",
+    "loadout_slots", "loadout_options", "loadout_option_weapons",
+)
+
+
+def _import_kb_seed(conn: sqlite3.Connection) -> None:
+    """One-time import of kb/wh40k.db rows into app.db.
+
+    Triggers when app.db has no 'datasheets' table yet. After this runs the
+    KB seed file is never read again — app.db is the single source of truth
+    and admins edit rows directly via /admin.
+    """
+    if not KB_SEED_DB.exists():
+        # No seed available — probably running in a test or before kb build.
+        # Leave the tables absent; admin will see an empty CMS.
+        return
+    conn.execute("ATTACH DATABASE ? AS kbseed", (str(KB_SEED_DB),))
+    try:
+        # CREATE TABLE foo AS SELECT * FROM kbseed.foo carries column types but
+        # not constraints or indices — we add them back below where needed.
+        for tbl in KB_TABLES:
+            exists = conn.execute(
+                "SELECT 1 FROM kbseed.sqlite_master WHERE type='table' AND name=?",
+                (tbl,),
+            ).fetchone()
+            if not exists:
+                continue
+            conn.execute(f"CREATE TABLE {tbl} AS SELECT * FROM kbseed.{tbl}")
+        # Apply any legacy point overrides (from before this migration) into the
+        # merged rows, then drop the override tables — admin edits go straight
+        # into datasheets.points / pricing_tiers.points now.
+        has_ds_ov = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='datasheet_overrides'"
+        ).fetchone()
+        if has_ds_ov:
+            conn.execute("""
+                UPDATE datasheets SET points = (
+                    SELECT points FROM datasheet_overrides
+                    WHERE datasheet_overrides.datasheet_id = datasheets.id
+                )
+                WHERE id IN (SELECT datasheet_id FROM datasheet_overrides)
+            """)
+            conn.execute("DROP TABLE datasheet_overrides")
+        has_tier_ov = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='pricing_tier_overrides'"
+        ).fetchone()
+        if has_tier_ov:
+            conn.execute("""
+                UPDATE pricing_tiers SET points = (
+                    SELECT pricing_tier_overrides.points FROM pricing_tier_overrides
+                    WHERE pricing_tier_overrides.datasheet_id = pricing_tiers.datasheet_id
+                    AND pricing_tier_overrides.condition_text = pricing_tiers.condition_text
+                )
+                WHERE EXISTS (
+                    SELECT 1 FROM pricing_tier_overrides
+                    WHERE pricing_tier_overrides.datasheet_id = pricing_tiers.datasheet_id
+                    AND pricing_tier_overrides.condition_text = pricing_tiers.condition_text
+                )
+            """)
+            conn.execute("DROP TABLE pricing_tier_overrides")
+        # Indices that the runtime queries rely on.
+        conn.executescript("""
+            CREATE INDEX IF NOT EXISTS idx_datasheets_cat        ON datasheets(catalogue_id);
+            CREATE INDEX IF NOT EXISTS idx_unit_models_ds        ON unit_models(datasheet_id);
+            CREATE INDEX IF NOT EXISTS idx_weapons_ds            ON weapons(datasheet_id);
+            CREATE INDEX IF NOT EXISTS idx_abilities_ds          ON abilities(datasheet_id);
+            CREATE INDEX IF NOT EXISTS idx_ds_keywords_ds        ON datasheet_keywords(datasheet_id);
+            CREATE INDEX IF NOT EXISTS idx_loadout_slots_model   ON loadout_slots(model_id);
+            CREATE INDEX IF NOT EXISTS idx_loadout_options_slot  ON loadout_options(slot_id);
+            CREATE INDEX IF NOT EXISTS idx_low_option            ON loadout_option_weapons(option_id);
+            CREATE INDEX IF NOT EXISTS idx_pricing_tiers_ds      ON pricing_tiers(datasheet_id);
+        """)
+    finally:
+        conn.commit()
+        conn.execute("DETACH DATABASE kbseed")
+
+
 def init_user_db(conn: sqlite3.Connection) -> None:
     """Idempotent: safe to call on existing DBs (uses IF NOT EXISTS).
 
@@ -106,6 +174,11 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     """
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA synchronous=NORMAL")
+    has_datasheets = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' AND name='datasheets'"
+    ).fetchone()
+    if not has_datasheets:
+        _import_kb_seed(conn)
     conn.executescript("""
     CREATE TABLE IF NOT EXISTS users (
         id            INTEGER PRIMARY KEY,
@@ -157,24 +230,6 @@ def init_user_db(conn: sqlite3.Connection) -> None:
         uploaded_at  TEXT NOT NULL
     );
 
-    -- User-edited point overrides. KB DB stays read-only; these win at display time.
-    CREATE TABLE IF NOT EXISTS datasheet_overrides (
-        datasheet_id TEXT PRIMARY KEY,
-        points       INTEGER,
-        notes        TEXT,
-        updated_at   TEXT NOT NULL
-    );
-
-    -- Per-tier overrides; (datasheet_id, condition_text) is stable across KB rebuilds.
-    CREATE TABLE IF NOT EXISTS pricing_tier_overrides (
-        datasheet_id   TEXT NOT NULL,
-        condition_text TEXT NOT NULL,
-        points         INTEGER NOT NULL,
-        notes          TEXT,
-        updated_at     TEXT NOT NULL,
-        PRIMARY KEY (datasheet_id, condition_text)
-    );
-
     -- Per-army-unit weapon loadout choices.
     CREATE TABLE IF NOT EXISTS army_unit_loadout (
         id           INTEGER PRIMARY KEY,
@@ -223,29 +278,13 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     conn.commit()
 
 
-def get_points_overrides() -> dict[str, int]:
-    rows = user_db().execute(
-        "SELECT datasheet_id, points FROM datasheet_overrides"
-    ).fetchall()
-    return {r["datasheet_id"]: r["points"] for r in rows}
-
-
-def get_tier_overrides(datasheet_id: str) -> dict[str, sqlite3.Row]:
-    """Return {condition_text: row} of tier overrides for a datasheet."""
-    rows = user_db().execute(
-        "SELECT * FROM pricing_tier_overrides WHERE datasheet_id = ?",
-        (datasheet_id,),
-    ).fetchall()
-    return {r["condition_text"]: r for r in rows}
-
-
 def get_loadout_schema(datasheet_id: str) -> list[dict]:
     """Return composition + choice slots + options for a datasheet.
 
     Returns: [{model: row, choice_slots: [{slot: row, options: [{row, weapons}]}]}]
     Only includes slots with kind='choice' since 'fixed' has no user choice.
     """
-    db = kb_db()
+    db = user_db()
     model_rows = db.execute(
         "SELECT * FROM unit_models WHERE datasheet_id = ? ORDER BY sort_order",
         (datasheet_id,),
@@ -280,7 +319,7 @@ def get_loadout_schema(datasheet_id: str) -> list[dict]:
 
 def get_default_loadout(datasheet_id: str) -> list[tuple[str, str, str]]:
     """Return list of (model_id, slot_id, default_option_id) for every choice slot."""
-    db = kb_db()
+    db = user_db()
     rows = db.execute("""
         SELECT s.model_id, s.id AS slot_id,
                (SELECT id FROM loadout_options WHERE slot_id = s.id
@@ -312,7 +351,7 @@ def fetch_model_loadout(model_id: int) -> dict[str, str]:
 
 def option_summary(option_id: str) -> dict | None:
     """Return option row + weapons for display."""
-    db = kb_db()
+    db = user_db()
     o = db.execute("SELECT * FROM loadout_options WHERE id = ?", (option_id,)).fetchone()
     if not o:
         return None
@@ -327,10 +366,9 @@ def option_summary(option_id: str) -> dict | None:
 
 @app.teardown_appcontext
 def close_dbs(exception=None):
-    for key in ("kb", "user"):
-        conn = g.pop(key, None)
-        if conn is not None:
-            conn.close()
+    conn = g.pop("user", None)
+    if conn is not None:
+        conn.close()
 
 
 # ---------------------------------------------------------------------------- #
@@ -364,7 +402,7 @@ def login_required(view):
     @wraps(view)
     def wrapped(*args, **kwargs):
         if current_user() is None:
-            flash("请先登录", "error")
+            flash("Please log in first", "error")
             return redirect(url_for("login", next=request.path))
         return view(*args, **kwargs)
     return wrapped
@@ -375,7 +413,7 @@ def admin_required(view):
     def wrapped(*args, **kwargs):
         u = current_user()
         if u is None:
-            flash("请先登录", "error")
+            flash("Please log in first", "error")
             return redirect(url_for("login", next=request.path))
         if u["role"] != "admin":
             abort(403)
@@ -395,7 +433,7 @@ def inject_user():
 
 def list_factions() -> list[sqlite3.Row]:
     """Catalogues that actually have datasheets, sorted by name."""
-    rows = kb_db().execute("""
+    rows = user_db().execute("""
         SELECT c.id, c.name, c.is_library, COUNT(d.id) AS n_datasheets
         FROM catalogues c LEFT JOIN datasheets d ON d.catalogue_id = c.id
         GROUP BY c.id HAVING n_datasheets > 0
@@ -405,7 +443,7 @@ def list_factions() -> list[sqlite3.Row]:
 
 
 def list_keywords() -> list[str]:
-    rows = kb_db().execute("""
+    rows = user_db().execute("""
         SELECT category_name, COUNT(*) AS n
         FROM datasheet_keywords
         GROUP BY category_name ORDER BY category_name
@@ -414,7 +452,7 @@ def list_keywords() -> list[str]:
 
 
 def get_datasheet_full(datasheet_id: str) -> dict | None:
-    db = kb_db()
+    db = user_db()
     ds = db.execute("""
         SELECT d.*, c.name AS catalogue_name
         FROM datasheets d JOIN catalogues c ON c.id = d.catalogue_id
@@ -465,26 +503,11 @@ def get_datasheet_full(datasheet_id: str) -> dict | None:
     transport = db.execute(
         "SELECT * FROM transport WHERE datasheet_id = ?", (datasheet_id,)
     ).fetchall()
-    pricing_tier_rows = db.execute(
+    pricing_tiers = db.execute(
         "SELECT * FROM pricing_tiers WHERE datasheet_id = ? "
         "ORDER BY condition_value, points",
         (datasheet_id,),
     ).fetchall()
-    # Enrich each tier with effective points (override > KB)
-    tier_overrides = get_tier_overrides(datasheet_id)
-    pricing_tiers = []
-    for t in pricing_tier_rows:
-        d = dict(t)
-        ov_t = tier_overrides.get(t["condition_text"])
-        d["override"] = ov_t  # sqlite3.Row or None
-        d["effective_points"] = ov_t["points"] if ov_t else t["points"]
-        d["overridden"] = ov_t is not None and ov_t["points"] != t["points"]
-        pricing_tiers.append(d)
-    # Base point override (user-edited)
-    ov = user_db().execute(
-        "SELECT points, notes, updated_at FROM datasheet_overrides WHERE datasheet_id = ?",
-        (datasheet_id,),
-    ).fetchone()
     return {
         "ds": ds,
         "models": models,
@@ -492,8 +515,6 @@ def get_datasheet_full(datasheet_id: str) -> dict | None:
         "keywords": keywords,
         "transport": transport,
         "pricing_tiers": pricing_tiers,
-        "override": ov,
-        "effective_points": ov["points"] if ov else ds["points"],
     }
 
 
@@ -520,7 +541,7 @@ def index():
         ).fetchone()["n"]
     else:
         n_armies = n_models = 0
-    n_units = kb_db().execute("SELECT COUNT(*) AS n FROM datasheets").fetchone()["n"]
+    n_units = user_db().execute("SELECT COUNT(*) AS n FROM datasheets").fetchone()["n"]
     n_factions = len(list_factions())
     n_public_users = db_u.execute(
         "SELECT COUNT(*) AS n FROM users WHERE is_public = 1"
@@ -594,17 +615,7 @@ def query_search():
     sql += "\n ORDER BY c.name, d.name LIMIT 500"
 
     has_filter = bool(where or name or catalogue_id or keyword or has_weapon)
-    rows = kb_db().execute(sql, params).fetchall() if has_filter else []
-
-    # Enrich with point overrides
-    overrides = get_points_overrides()
-    results = []
-    for r in rows:
-        d = dict(r)
-        ov = overrides.get(d["id"])
-        d["effective_points"] = ov if ov is not None else d["points"]
-        d["overridden"] = ov is not None and ov != d["points"]
-        results.append(d)
+    results = user_db().execute(sql, params).fetchall() if has_filter else []
 
     return render_template(
         "query_search.html",
@@ -616,103 +627,6 @@ def query_search():
            "t_min": t_min, "t_max": t_max, "w_min": w_min,
            "pts_min": pts_min, "pts_max": pts_max, "weapon": has_weapon},
     )
-
-
-@app.route("/query/unit/<datasheet_id>/edit-tier-points", methods=["POST"])
-@admin_required
-def edit_tier_points(datasheet_id: str):
-    """Set or clear a per-tier point override (size-tier price edit)."""
-    ds = kb_db().execute(
-        "SELECT name FROM datasheets WHERE id = ?", (datasheet_id,),
-    ).fetchone()
-    if not ds:
-        abort(404)
-    condition_text = (request.form.get("condition_text") or "").strip()
-    if not condition_text:
-        abort(400)
-    tier_row = kb_db().execute(
-        "SELECT points FROM pricing_tiers "
-        "WHERE datasheet_id = ? AND condition_text = ?",
-        (datasheet_id, condition_text),
-    ).fetchone()
-    if not tier_row:
-        flash("Tier not found", "error")
-        return redirect(url_for("query_unit", datasheet_id=datasheet_id))
-
-    raw = (request.form.get("points") or "").strip()
-    notes = (request.form.get("notes") or "").strip() or None
-    now = datetime.utcnow().isoformat()
-    db = user_db()
-    if raw == "":
-        db.execute(
-            "DELETE FROM pricing_tier_overrides "
-            "WHERE datasheet_id = ? AND condition_text = ?",
-            (datasheet_id, condition_text),
-        )
-        db.commit()
-        flash(f"Cleared override for tier “{condition_text}”", "ok")
-    else:
-        try:
-            new_pts = int(raw)
-            if new_pts < 0:
-                raise ValueError("negative")
-        except ValueError:
-            flash("Points must be a non-negative integer", "error")
-            return redirect(url_for("query_unit", datasheet_id=datasheet_id))
-        db.execute(
-            "INSERT INTO pricing_tier_overrides "
-            "(datasheet_id, condition_text, points, notes, updated_at) "
-            "VALUES (?, ?, ?, ?, ?) "
-            "ON CONFLICT(datasheet_id, condition_text) DO UPDATE SET "
-            "points=excluded.points, notes=excluded.notes, "
-            "updated_at=excluded.updated_at",
-            (datasheet_id, condition_text, new_pts, notes, now),
-        )
-        db.commit()
-        flash(f"Tier “{condition_text}” set to {new_pts} pts", "ok")
-    return redirect(url_for("query_unit", datasheet_id=datasheet_id))
-
-
-@app.route("/query/unit/<datasheet_id>/edit-points", methods=["POST"])
-@admin_required
-def edit_points(datasheet_id: str):
-    """Set or clear a user point override for a datasheet."""
-    ds = kb_db().execute(
-        "SELECT id, name, points FROM datasheets WHERE id = ?", (datasheet_id,),
-    ).fetchone()
-    if not ds:
-        abort(404)
-    raw = (request.form.get("points") or "").strip()
-    notes = (request.form.get("notes") or "").strip() or None
-    now = datetime.utcnow().isoformat()
-    db = user_db()
-    if raw == "":
-        # empty input → clear override
-        db.execute("DELETE FROM datasheet_overrides WHERE datasheet_id = ?", (datasheet_id,))
-        db.commit()
-        flash(f"Cleared override for {ds['name']}", "ok")
-    else:
-        try:
-            new_pts = int(raw)
-            if new_pts < 0:
-                raise ValueError("negative")
-        except ValueError:
-            flash("Points must be a non-negative integer", "error")
-            return redirect(url_for("query_unit", datasheet_id=datasheet_id))
-        db.execute(
-            "INSERT INTO datasheet_overrides (datasheet_id, points, notes, updated_at) "
-            "VALUES (?, ?, ?, ?) "
-            "ON CONFLICT(datasheet_id) DO UPDATE SET "
-            "points=excluded.points, notes=excluded.notes, updated_at=excluded.updated_at",
-            (datasheet_id, new_pts, notes, now),
-        )
-        db.commit()
-        orig = ds["points"]
-        if orig is None:
-            flash(f"{ds['name']} set to {new_pts} pts", "ok")
-        else:
-            flash(f"{ds['name']} updated: {orig} → {new_pts} pts", "ok")
-    return redirect(url_for("query_unit", datasheet_id=datasheet_id))
 
 
 def _resolve_back(from_param: str) -> tuple[str, str]:
@@ -769,20 +683,17 @@ def query_unit(datasheet_id: str):
 @login_required
 def army_list():
     uid = require_user_id()
+    # Live pricing: read datasheets.points / pricing_tiers.points fresh on every
+    # render so admin edits in /admin/units retroactively update army totals.
     rows = user_db().execute("""
         SELECT a.*,
-               COALESCE(SUM(
-                   CASE WHEN u.tier_points IS NOT NULL
-                        THEN COALESCE(tov.points, u.tier_points)
-                        ELSE COALESCE(o.points,   u.points)
-                   END * u.count), 0) AS total_pts,
+               COALESCE(SUM(COALESCE(pt.points, d.points) * u.count), 0) AS total_pts,
                COUNT(u.id) AS n_units
         FROM armies a
           LEFT JOIN army_units u ON u.army_id = a.id
-          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
-          LEFT JOIN pricing_tier_overrides tov
-                 ON tov.datasheet_id = u.datasheet_id
-                AND tov.condition_text = u.tier_label
+          LEFT JOIN datasheets d ON d.id = u.datasheet_id
+          LEFT JOIN pricing_tiers pt ON pt.datasheet_id = u.datasheet_id
+                                    AND pt.condition_text = u.tier_label
         WHERE a.user_id = ?
         GROUP BY a.id ORDER BY a.created_at DESC
     """, (uid,)).fetchall()
@@ -800,7 +711,7 @@ def army_new():
         if not name or not faction_id:
             flash("Name and faction are required", "error")
             return redirect(url_for("army_new"))
-        faction = kb_db().execute(
+        faction = user_db().execute(
             "SELECT name FROM catalogues WHERE id = ?", (faction_id,)
         ).fetchone()
         if not faction:
@@ -828,39 +739,28 @@ def army_view(army_id: int):
         abort(404)
     unit_rows = user_db().execute("""
         SELECT u.*,
-               o.points   AS override_points,
-               tov.points AS tier_override_points
+               d.points  AS live_base_points,
+               pt.points AS live_tier_points
         FROM army_units u
-          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
-          LEFT JOIN pricing_tier_overrides tov
-                 ON tov.datasheet_id = u.datasheet_id
-                AND tov.condition_text = u.tier_label
+          LEFT JOIN datasheets d ON d.id = u.datasheet_id
+          LEFT JOIN pricing_tiers pt ON pt.datasheet_id = u.datasheet_id
+                                    AND pt.condition_text = u.tier_label
         WHERE u.army_id = ? ORDER BY u.added_at
     """, (army_id,)).fetchall()
     units = []
     total = 0
     for r in unit_rows:
         d = dict(r)
-        d["is_expanded"] = d["tier_points"] is not None
-        if d["is_expanded"]:
-            d["effective_points"] = (d["tier_override_points"]
-                                     if d["tier_override_points"] is not None
-                                     else d["tier_points"])
-            d["overridden"] = (d["tier_override_points"] is not None
-                               and d["tier_override_points"] != d["tier_points"])
-        else:
-            d["effective_points"] = (d["override_points"]
-                                     if d["override_points"] is not None
-                                     else d["points"])
-            d["overridden"] = (d["override_points"] is not None
-                               and d["override_points"] != d["points"])
+        d["is_expanded"] = d["tier_label"] is not None
+        d["effective_points"] = (d["live_tier_points"] if d["is_expanded"]
+                                 else d["live_base_points"])
         # Loadout summary: list of "model: option_name"
         chosen = fetch_army_unit_loadout(d["id"])
         d["loadout_summary"] = []
         if chosen:
-            kb = kb_db()
+            db = user_db()
             for slot_id, option_id in chosen.items():
-                row = kb.execute("""
+                row = db.execute("""
                     SELECT o.name AS option_name, s.slot_name, um.name AS model_name
                     FROM loadout_options o
                     JOIN loadout_slots s ON s.id = o.slot_id
@@ -889,17 +789,9 @@ def army_view(army_id: int):
     else:
         sql += " WHERE d.catalogue_id = ?"
     sql += " ORDER BY d.name"
-    avail_rows = kb_db().execute(sql, params).fetchall()
-    overrides = get_points_overrides()
-    available = []
-    for r in avail_rows:
-        d = dict(r)
-        ov = overrides.get(d["id"])
-        d["effective_points"] = ov if ov is not None else d["points"]
-        d["overridden"] = ov is not None and ov != d["points"]
-        available.append(d)
+    available = user_db().execute(sql, params).fetchall()
     # keywords available within this catalogue
-    kw_rows = kb_db().execute("""
+    kw_rows = user_db().execute("""
         SELECT DISTINCT k.category_name
         FROM datasheet_keywords k JOIN datasheets d ON d.id = k.datasheet_id
         WHERE d.catalogue_id = ? ORDER BY k.category_name
@@ -923,7 +815,7 @@ def army_add_unit(army_id: int):
         abort(404)
     datasheet_id = request.form.get("datasheet_id") or ""
     count = request.form.get("count", type=int) or 1
-    ds = kb_db().execute(
+    ds = user_db().execute(
         "SELECT id, name, points FROM datasheets WHERE id = ?", (datasheet_id,),
     ).fetchone()
     if not ds:
@@ -965,19 +857,11 @@ def army_unit_loadout(army_id: int, unit_id: int):
         abort(404)
 
     # Available pricing tiers for this datasheet (the base is row 0; alternatives follow)
-    tier_rows = kb_db().execute(
+    tiers = user_db().execute(
         "SELECT * FROM pricing_tiers WHERE datasheet_id = ? "
         "ORDER BY condition_value, points",
         (unit["datasheet_id"],),
     ).fetchall()
-    tier_ov_map = get_tier_overrides(unit["datasheet_id"])
-    tiers = []
-    for t in tier_rows:
-        d = dict(t)
-        ov_t = tier_ov_map.get(t["condition_text"])
-        d["effective_points"] = ov_t["points"] if ov_t else t["points"]
-        d["overridden"] = ov_t is not None and ov_t["points"] != t["points"]
-        tiers.append(d)
 
     if request.method == "POST":
         # 1) Save tier (扩编 size)
@@ -1018,15 +902,10 @@ def army_unit_loadout(army_id: int, unit_id: int):
 
     schema = get_loadout_schema(unit["datasheet_id"])
     current = fetch_army_unit_loadout(unit_id)
-    # Datasheet base/override info for the tier picker
-    ds_row = kb_db().execute(
+    ds_row = user_db().execute(
         "SELECT name, points FROM datasheets WHERE id = ?", (unit["datasheet_id"],),
     ).fetchone()
-    ov = user_db().execute(
-        "SELECT points FROM datasheet_overrides WHERE datasheet_id = ?",
-        (unit["datasheet_id"],),
-    ).fetchone()
-    base_points = ov["points"] if ov else (ds_row["points"] if ds_row else None)
+    base_points = ds_row["points"] if ds_row else None
     return render_template(
         "army_unit_loadout.html",
         army=army, unit=unit, schema=schema, current=current,
@@ -1116,7 +995,7 @@ def models_list():
     # Keyword filter → look up matching datasheet_ids from KB
     ds_filter_ids: set[str] | None = None
     if keyword:
-        kb_rows = kb_db().execute(
+        kb_rows = user_db().execute(
             "SELECT DISTINCT datasheet_id FROM datasheet_keywords "
             "WHERE category_name = ?",
             (keyword,),
@@ -1204,7 +1083,7 @@ def model_new():
         custom_name = (request.form.get("custom_name") or "").strip()
         status = request.form.get("status") or "unpainted"
         notes = (request.form.get("notes") or "").strip()
-        ds = kb_db().execute("""
+        ds = user_db().execute("""
             SELECT d.id, d.name, c.name AS catalogue_name
             FROM datasheets d JOIN catalogues c ON c.id = d.catalogue_id
             WHERE d.id = ?
@@ -1214,7 +1093,7 @@ def model_new():
             return redirect(url_for("model_new"))
         # If no model_type picked, default to the first model type of this datasheet
         if not model_type_id:
-            first_m = kb_db().execute(
+            first_m = user_db().execute(
                 "SELECT id FROM unit_models WHERE datasheet_id = ? "
                 "ORDER BY sort_order LIMIT 1",
                 (ds["id"],),
@@ -1302,7 +1181,7 @@ def api_datasheets():
         sql += " AND d.name LIKE ?"
         params.append(f"%{q}%")
     sql += " ORDER BY c.name, d.name LIMIT 200"
-    rows = kb_db().execute(sql, params).fetchall()
+    rows = user_db().execute(sql, params).fetchall()
     return {"items": [dict(r) for r in rows]}
 
 
@@ -1324,15 +1203,15 @@ def model_detail(model_id: int):
     # Resolve model_type → row for display
     model_type_row = None
     if m["model_type_id"]:
-        model_type_row = kb_db().execute(
+        model_type_row = user_db().execute(
             "SELECT * FROM unit_models WHERE id = ?", (m["model_type_id"],),
         ).fetchone()
     # Compose loadout summary for display
     loadout_summary = []
     if current:
-        kb = kb_db()
+        db = user_db()
         for slot_id, option_id in current.items():
-            row = kb.execute("""
+            row = db.execute("""
                 SELECT o.name AS option_name, s.slot_name
                 FROM loadout_options o JOIN loadout_slots s ON s.id = o.slot_id
                 WHERE o.id = ?
@@ -1462,17 +1341,17 @@ def register():
         password = request.form.get("password") or ""
         confirm  = request.form.get("confirm") or ""
         if not USERNAME_RE.match(username):
-            flash("用户名 3–32 位，只允许字母/数字/_-.", "error")
+            flash("Username must be 3–32 chars: letters, digits, _ - .", "error")
             return redirect(url_for("register"))
         if len(password) < 8:
-            flash("密码至少 8 位", "error")
+            flash("Password must be at least 8 characters", "error")
             return redirect(url_for("register"))
         if password != confirm:
-            flash("两次输入的密码不一致", "error")
+            flash("Passwords do not match", "error")
             return redirect(url_for("register"))
         db = user_db()
         if db.execute("SELECT 1 FROM users WHERE username = ?", (username,)).fetchone():
-            flash("用户名已被占用", "error")
+            flash("Username is already taken", "error")
             return redirect(url_for("register"))
         # First-ever registration → admin, and takes ownership of legacy data.
         is_first = db.execute("SELECT COUNT(*) AS n FROM users").fetchone()["n"] == 0
@@ -1488,10 +1367,10 @@ def register():
         db.commit()
         session["user_id"] = uid
         if is_first:
-            flash(f"欢迎，{username}！你是首位用户，已设为管理员，"
-                  f"接管了 {claimed} 条历史数据。", "ok")
+            flash(f"Welcome, {username}! As the first registered user you are now "
+                  f"an admin, and have inherited {claimed} legacy record(s).", "ok")
         else:
-            flash(f"注册成功，欢迎 {username}", "ok")
+            flash(f"Registered. Welcome, {username}.", "ok")
         return redirect(url_for("index"))
     # Show whether this will be the bootstrap admin to give the UI a hint.
     is_bootstrap = user_db().execute("SELECT COUNT(*) AS n FROM users").fetchone()["n"] == 0
@@ -1510,10 +1389,10 @@ def login():
             "SELECT * FROM users WHERE username = ?", (username,),
         ).fetchone()
         if row is None or not check_password_hash(row["password_hash"], password):
-            flash("用户名或密码错误", "error")
+            flash("Invalid username or password", "error")
             return redirect(url_for("login", next=next_url))
         session["user_id"] = row["id"]
-        flash(f"欢迎回来，{row['username']}", "ok")
+        flash(f"Welcome back, {row['username']}", "ok")
         # next must be a local path to avoid open-redirects.
         if next_url.startswith("/") and not next_url.startswith("//"):
             return redirect(next_url)
@@ -1524,7 +1403,7 @@ def login():
 @app.route("/logout", methods=["POST"])
 def logout():
     session.pop("user_id", None)
-    flash("已退出", "ok")
+    flash("Logged out", "ok")
     return redirect(url_for("index"))
 
 
@@ -1539,24 +1418,24 @@ def profile():
             new_val = 1 if request.form.get("is_public") == "1" else 0
             db.execute("UPDATE users SET is_public = ? WHERE id = ?", (new_val, me["id"]))
             db.commit()
-            flash("已切换为" + ("公开" if new_val else "私人"), "ok")
+            flash("Profile is now " + ("public" if new_val else "private"), "ok")
         elif action == "password":
             old_pw = request.form.get("old_password") or ""
             new_pw = request.form.get("new_password") or ""
             confirm = request.form.get("confirm_password") or ""
             if not check_password_hash(me["password_hash"], old_pw):
-                flash("旧密码错误", "error")
+                flash("Current password is incorrect", "error")
             elif len(new_pw) < 8:
-                flash("新密码至少 8 位", "error")
+                flash("New password must be at least 8 characters", "error")
             elif new_pw != confirm:
-                flash("两次输入的新密码不一致", "error")
+                flash("New passwords do not match", "error")
             else:
                 db.execute(
                     "UPDATE users SET password_hash = ? WHERE id = ?",
                     (generate_password_hash(new_pw), me["id"]),
                 )
                 db.commit()
-                flash("密码已更新", "ok")
+                flash("Password updated", "ok")
         return redirect(url_for("profile"))
     n_armies = user_db().execute(
         "SELECT COUNT(*) AS n FROM armies WHERE user_id = ?", (me["id"],),
@@ -1601,18 +1480,13 @@ def public_profile(username: str):
     user = _get_public_user(username)
     armies = user_db().execute("""
         SELECT a.*,
-               COALESCE(SUM(
-                   CASE WHEN u.tier_points IS NOT NULL
-                        THEN COALESCE(tov.points, u.tier_points)
-                        ELSE COALESCE(o.points,   u.points)
-                   END * u.count), 0) AS total_pts,
+               COALESCE(SUM(COALESCE(pt.points, d.points) * u.count), 0) AS total_pts,
                COUNT(u.id) AS n_units
         FROM armies a
           LEFT JOIN army_units u ON u.army_id = a.id
-          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
-          LEFT JOIN pricing_tier_overrides tov
-                 ON tov.datasheet_id = u.datasheet_id
-                AND tov.condition_text = u.tier_label
+          LEFT JOIN datasheets d ON d.id = u.datasheet_id
+          LEFT JOIN pricing_tiers pt ON pt.datasheet_id = u.datasheet_id
+                                    AND pt.condition_text = u.tier_label
         WHERE a.user_id = ?
         GROUP BY a.id ORDER BY a.created_at DESC
     """, (user["id"],)).fetchall()
@@ -1639,26 +1513,19 @@ def public_army(username: str, army_id: int):
         abort(404)
     unit_rows = user_db().execute("""
         SELECT u.*,
-               o.points   AS override_points,
-               tov.points AS tier_override_points
+               d.points  AS live_base_points,
+               pt.points AS live_tier_points
         FROM army_units u
-          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
-          LEFT JOIN pricing_tier_overrides tov
-                 ON tov.datasheet_id = u.datasheet_id
-                AND tov.condition_text = u.tier_label
+          LEFT JOIN datasheets d ON d.id = u.datasheet_id
+          LEFT JOIN pricing_tiers pt ON pt.datasheet_id = u.datasheet_id
+                                    AND pt.condition_text = u.tier_label
         WHERE u.army_id = ? ORDER BY u.added_at
     """, (army_id,)).fetchall()
     units, total = [], 0
     for r in unit_rows:
         d = dict(r)
-        if d["tier_points"] is not None:
-            d["effective_points"] = (d["tier_override_points"]
-                                     if d["tier_override_points"] is not None
-                                     else d["tier_points"])
-        else:
-            d["effective_points"] = (d["override_points"]
-                                     if d["override_points"] is not None
-                                     else d["points"])
+        d["effective_points"] = (d["live_tier_points"] if d["tier_label"] is not None
+                                 else d["live_base_points"])
         total += (d["effective_points"] or 0) * d["count"]
         units.append(d)
     return render_template(
@@ -1686,6 +1553,265 @@ def public_model(username: str, model_id: int):
 # Routes — admin
 # ---------------------------------------------------------------------------- #
 
+# Editable fields per entity. Centralised so the edit form and the UPDATE
+# statement always stay in lockstep — adding a new editable column means
+# adding it here and adding the form input.
+UNIT_MODEL_FIELDS = ("name", "m", "t", "sv", "w", "ld", "oc",
+                     "min_count", "max_count")
+WEAPON_FIELDS = ("name", "weapon_type", "range_", "a", "bs_ws", "s", "ap", "d",
+                 "keywords")
+
+
+def _new_id() -> str:
+    """KB-style id: 16 hex chars in 4-4-4-4 grouping. Matches BSData format."""
+    h = uuid.uuid4().hex[:16]
+    return f"{h[:4]}-{h[4:8]}-{h[8:12]}-{h[12:16]}"
+
+
+def _cascade_delete_option(conn: sqlite3.Connection, option_id: str) -> None:
+    conn.execute("DELETE FROM loadout_option_weapons WHERE option_id = ?", (option_id,))
+    conn.execute("DELETE FROM loadout_options WHERE id = ?", (option_id,))
+
+
+def _cascade_delete_slot(conn: sqlite3.Connection, slot_id: str) -> None:
+    for o in conn.execute(
+        "SELECT id FROM loadout_options WHERE slot_id = ?", (slot_id,),
+    ).fetchall():
+        _cascade_delete_option(conn, o["id"])
+    conn.execute("DELETE FROM loadout_slots WHERE id = ?", (slot_id,))
+
+
+def _cascade_delete_model(conn: sqlite3.Connection, model_id: str) -> None:
+    for s in conn.execute(
+        "SELECT id FROM loadout_slots WHERE model_id = ?", (model_id,),
+    ).fetchall():
+        _cascade_delete_slot(conn, s["id"])
+    conn.execute("DELETE FROM unit_models WHERE id = ?", (model_id,))
+
+
+def _cascade_delete_datasheet(conn: sqlite3.Connection, ds_id: str) -> None:
+    for m in conn.execute(
+        "SELECT id FROM unit_models WHERE datasheet_id = ?", (ds_id,),
+    ).fetchall():
+        _cascade_delete_model(conn, m["id"])
+    # Weapons owned by this datasheet are nuked too. Loadouts on OTHER datasheets
+    # that referenced these weapons will have dangling option_weapons; we clean
+    # those up via _cascade_delete_weapon.
+    for w in conn.execute(
+        "SELECT profile_id FROM weapons WHERE datasheet_id = ?", (ds_id,),
+    ).fetchall():
+        _cascade_delete_weapon(conn, w["profile_id"])
+    conn.execute("DELETE FROM abilities WHERE datasheet_id = ?", (ds_id,))
+    conn.execute("DELETE FROM datasheet_keywords WHERE datasheet_id = ?", (ds_id,))
+    conn.execute("DELETE FROM transport WHERE datasheet_id = ?", (ds_id,))
+    conn.execute("DELETE FROM pricing_tiers WHERE datasheet_id = ?", (ds_id,))
+    conn.execute("DELETE FROM datasheets WHERE id = ?", (ds_id,))
+
+
+def _cascade_delete_weapon(conn: sqlite3.Connection, profile_id: str) -> None:
+    conn.execute(
+        "DELETE FROM loadout_option_weapons WHERE weapon_profile_id = ?",
+        (profile_id,),
+    )
+    conn.execute("DELETE FROM weapons WHERE profile_id = ?", (profile_id,))
+
+
+@app.route("/admin")
+@admin_required
+def admin_home():
+    db = user_db()
+    counts = {
+        "users": db.execute("SELECT COUNT(*) FROM users").fetchone()[0],
+        "datasheets": db.execute("SELECT COUNT(*) FROM datasheets").fetchone()[0],
+        "weapons": db.execute("SELECT COUNT(*) FROM weapons").fetchone()[0],
+        "unit_models": db.execute("SELECT COUNT(*) FROM unit_models").fetchone()[0],
+    }
+    return render_template("admin_home.html", counts=counts)
+
+
+@app.route("/admin/units")
+@admin_required
+def admin_units():
+    q = (request.args.get("q") or "").strip()
+    catalogue_id = (request.args.get("catalogue") or "").strip()
+    where, params = [], []
+    if q:
+        where.append("d.name LIKE ?")
+        params.append(f"%{q}%")
+    if catalogue_id:
+        where.append("d.catalogue_id = ?")
+        params.append(catalogue_id)
+    sql = ("SELECT d.id, d.name, d.points, d.entry_type, c.name AS catalogue_name "
+           "FROM datasheets d JOIN catalogues c ON c.id = d.catalogue_id")
+    if where:
+        sql += " WHERE " + " AND ".join(where)
+    sql += " ORDER BY c.name, d.name LIMIT 500"
+    rows = user_db().execute(sql, params).fetchall()
+    return render_template(
+        "admin_units.html",
+        rows=rows, q=q, catalogue_id=catalogue_id, factions=list_factions(),
+    )
+
+
+@app.route("/admin/units/<datasheet_id>", methods=["GET", "POST"])
+@admin_required
+def admin_unit_edit(datasheet_id: str):
+    db = user_db()
+    ds = db.execute(
+        "SELECT d.*, c.name AS catalogue_name FROM datasheets d "
+        "JOIN catalogues c ON c.id = d.catalogue_id WHERE d.id = ?",
+        (datasheet_id,),
+    ).fetchone()
+    if not ds:
+        abort(404)
+
+    if request.method == "POST":
+        # Datasheet-level edits: name + base points.
+        new_name = (request.form.get("ds_name") or "").strip()
+        raw_pts = (request.form.get("ds_points") or "").strip()
+        try:
+            new_pts = int(raw_pts) if raw_pts else None
+            if new_pts is not None and new_pts < 0:
+                raise ValueError
+        except ValueError:
+            flash("Points must be a non-negative integer", "error")
+            return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+        if not new_name:
+            flash("Name is required", "error")
+            return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+        db.execute(
+            "UPDATE datasheets SET name = ?, points = ? WHERE id = ?",
+            (new_name, new_pts, datasheet_id),
+        )
+
+        # Per-model-type stat edits. Form fields are namespaced m_<model_id>_<field>.
+        model_rows = db.execute(
+            "SELECT id FROM unit_models WHERE datasheet_id = ?", (datasheet_id,),
+        ).fetchall()
+        for m in model_rows:
+            updates, vals = [], []
+            for f in UNIT_MODEL_FIELDS:
+                key = f"m_{m['id']}_{f}"
+                if key not in request.form:
+                    continue
+                raw = request.form.get(key) or ""
+                if f in ("min_count", "max_count"):
+                    val = int(raw) if raw.strip() else None
+                else:
+                    val = raw.strip() or None
+                updates.append(f"{f} = ?")
+                vals.append(val)
+            if updates:
+                vals.append(m["id"])
+                db.execute(
+                    f"UPDATE unit_models SET {', '.join(updates)} WHERE id = ?",
+                    vals,
+                )
+
+        # Pricing-tier edits. Form fields: tier_<id>_points.
+        tier_rows = db.execute(
+            "SELECT id FROM pricing_tiers WHERE datasheet_id = ?", (datasheet_id,),
+        ).fetchall()
+        for t in tier_rows:
+            key = f"tier_{t['id']}_points"
+            if key in request.form:
+                raw = (request.form.get(key) or "").strip()
+                try:
+                    pts = int(raw) if raw else None
+                except ValueError:
+                    flash("Tier points must be an integer", "error")
+                    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+                db.execute(
+                    "UPDATE pricing_tiers SET points = ? WHERE id = ?", (pts, t["id"]),
+                )
+        db.commit()
+        flash(f"Saved changes to {new_name}", "ok")
+        return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+    models = db.execute(
+        "SELECT * FROM unit_models WHERE datasheet_id = ? ORDER BY sort_order",
+        (datasheet_id,),
+    ).fetchall()
+    tiers = db.execute(
+        "SELECT * FROM pricing_tiers WHERE datasheet_id = ? "
+        "ORDER BY condition_value, points",
+        (datasheet_id,),
+    ).fetchall()
+    abilities = db.execute(
+        "SELECT * FROM abilities WHERE datasheet_id = ? ORDER BY ability_type, name",
+        (datasheet_id,),
+    ).fetchall()
+    keywords = db.execute(
+        "SELECT * FROM datasheet_keywords WHERE datasheet_id = ? "
+        "ORDER BY is_primary DESC, category_name",
+        (datasheet_id,),
+    ).fetchall()
+    transport = db.execute(
+        "SELECT * FROM transport WHERE datasheet_id = ?", (datasheet_id,),
+    ).fetchall()
+    return render_template(
+        "admin_unit_edit.html", ds=ds, models=models, tiers=tiers,
+        abilities=abilities, keywords=keywords, transport=transport,
+        unit_model_fields=UNIT_MODEL_FIELDS,
+    )
+
+
+@app.route("/admin/weapons")
+@admin_required
+def admin_weapons():
+    q = (request.args.get("q") or "").strip()
+    datasheet_id = (request.args.get("datasheet") or "").strip()
+    where, params = [], []
+    if q:
+        where.append("w.name LIKE ?")
+        params.append(f"%{q}%")
+    if datasheet_id:
+        where.append("w.datasheet_id = ?")
+        params.append(datasheet_id)
+    sql = ("SELECT w.profile_id, w.name, w.weapon_type, w.range_, w.a, "
+           "w.bs_ws, w.s, w.ap, w.d, w.datasheet_id, "
+           "d.name AS ds_name "
+           "FROM weapons w LEFT JOIN datasheets d ON d.id = w.datasheet_id")
+    if where:
+        sql += " WHERE " + " AND ".join(where)
+    sql += " ORDER BY d.name, w.name LIMIT 500"
+    rows = user_db().execute(sql, params).fetchall()
+    return render_template(
+        "admin_weapons.html",
+        rows=rows, q=q, datasheet_id=datasheet_id,
+    )
+
+
+@app.route("/admin/weapons/<profile_id>", methods=["GET", "POST"])
+@admin_required
+def admin_weapon_edit(profile_id: str):
+    db = user_db()
+    w = db.execute("SELECT * FROM weapons WHERE profile_id = ?", (profile_id,)).fetchone()
+    if not w:
+        abort(404)
+    if request.method == "POST":
+        updates, vals = [], []
+        for f in WEAPON_FIELDS:
+            raw = request.form.get(f"w_{f}", "").strip()
+            updates.append(f"{f} = ?")
+            vals.append(raw or None)
+        vals.append(profile_id)
+        db.execute(
+            f"UPDATE weapons SET {', '.join(updates)} WHERE profile_id = ?", vals,
+        )
+        db.commit()
+        flash(f"Saved {request.form.get('w_name') or w['name']}", "ok")
+        return redirect(url_for("admin_weapon_edit", profile_id=profile_id))
+    ds = None
+    if w["datasheet_id"]:
+        ds = db.execute(
+            "SELECT id, name FROM datasheets WHERE id = ?", (w["datasheet_id"],),
+        ).fetchone()
+    return render_template(
+        "admin_weapon_edit.html", w=w, ds=ds, weapon_fields=WEAPON_FIELDS,
+    )
+
+
 @app.route("/admin/users")
 @admin_required
 def admin_users():
@@ -1708,14 +1834,14 @@ def admin_reset_password(user_id: int):
         abort(404)
     new_pw = request.form.get("new_password") or ""
     if len(new_pw) < 8:
-        flash("新密码至少 8 位", "error")
+        flash("New password must be at least 8 characters", "error")
         return redirect(url_for("admin_users"))
     user_db().execute(
         "UPDATE users SET password_hash = ? WHERE id = ?",
         (generate_password_hash(new_pw), user_id),
     )
     user_db().commit()
-    flash(f"已重置 {target['username']} 的密码", "ok")
+    flash(f"Reset password for {target['username']}", "ok")
     return redirect(url_for("admin_users"))
 
 
@@ -1737,14 +1863,577 @@ def admin_set_role(user_id: int):
             "SELECT COUNT(*) AS n FROM users WHERE role = 'admin'"
         ).fetchone()["n"]
         if n_admins <= 1:
-            flash("无法降级最后一位管理员", "error")
+            flash("Cannot demote the last admin", "error")
             return redirect(url_for("admin_users"))
     user_db().execute(
         "UPDATE users SET role = ? WHERE id = ?", (new_role, user_id),
     )
     user_db().commit()
-    flash(f"已将 {target['username']} 设为 {new_role}", "ok")
+    flash(f"Set {target['username']} to {new_role}", "ok")
     return redirect(url_for("admin_users"))
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin: create new + delete datasheets / weapons
+# ---------------------------------------------------------------------------- #
+
+@app.route("/admin/units/new", methods=["GET", "POST"])
+@admin_required
+def admin_unit_new():
+    db = user_db()
+    if request.method == "POST":
+        name = (request.form.get("name") or "").strip()
+        catalogue_id = (request.form.get("catalogue_id") or "").strip()
+        entry_type = (request.form.get("entry_type") or "").strip() or None
+        raw_pts = (request.form.get("points") or "").strip()
+        if not name or not catalogue_id:
+            flash("Name and faction are required", "error")
+            return redirect(url_for("admin_unit_new"))
+        if not db.execute("SELECT 1 FROM catalogues WHERE id = ?", (catalogue_id,)).fetchone():
+            flash("Invalid faction", "error")
+            return redirect(url_for("admin_unit_new"))
+        try:
+            points = int(raw_pts) if raw_pts else None
+        except ValueError:
+            flash("Points must be an integer", "error")
+            return redirect(url_for("admin_unit_new"))
+        new_id = _new_id()
+        db.execute(
+            "INSERT INTO datasheets (id, name, entry_type, points, catalogue_id) "
+            "VALUES (?, ?, ?, ?, ?)",
+            (new_id, name, entry_type, points, catalogue_id),
+        )
+        db.commit()
+        flash(f"Created datasheet {name}", "ok")
+        return redirect(url_for("admin_unit_edit", datasheet_id=new_id))
+    return render_template("admin_unit_new.html", factions=list_factions())
+
+
+@app.route("/admin/units/<datasheet_id>/delete", methods=["POST"])
+@admin_required
+def admin_unit_delete(datasheet_id: str):
+    db = user_db()
+    ds = db.execute("SELECT name FROM datasheets WHERE id = ?", (datasheet_id,)).fetchone()
+    if not ds:
+        abort(404)
+    _cascade_delete_datasheet(db, datasheet_id)
+    db.commit()
+    flash(f"Deleted {ds['name']} and all its composition / loadout / abilities", "ok")
+    return redirect(url_for("admin_units"))
+
+
+@app.route("/admin/weapons/new", methods=["GET", "POST"])
+@admin_required
+def admin_weapon_new():
+    db = user_db()
+    if request.method == "POST":
+        name = (request.form.get("name") or "").strip()
+        datasheet_id = (request.form.get("datasheet_id") or "").strip() or None
+        if not name:
+            flash("Weapon name is required", "error")
+            return redirect(url_for("admin_weapon_new"))
+        if datasheet_id and not db.execute(
+            "SELECT 1 FROM datasheets WHERE id = ?", (datasheet_id,),
+        ).fetchone():
+            flash("Owner datasheet does not exist", "error")
+            return redirect(url_for("admin_weapon_new"))
+        new_id = _new_id()
+        cat_id = None
+        if datasheet_id:
+            row = db.execute(
+                "SELECT catalogue_id FROM datasheets WHERE id = ?", (datasheet_id,),
+            ).fetchone()
+            cat_id = row["catalogue_id"] if row else None
+        db.execute(
+            "INSERT INTO weapons (profile_id, datasheet_id, name, weapon_type, "
+            "range_, a, bs_ws, s, ap, d, keywords, catalogue_id) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (new_id, datasheet_id, name,
+             request.form.get("weapon_type") or None,
+             request.form.get("range_") or None,
+             request.form.get("a") or None,
+             request.form.get("bs_ws") or None,
+             request.form.get("s") or None,
+             request.form.get("ap") or None,
+             request.form.get("d") or None,
+             request.form.get("keywords") or None,
+             cat_id),
+        )
+        db.commit()
+        flash(f"Created weapon {name}", "ok")
+        return redirect(url_for("admin_weapon_edit", profile_id=new_id))
+    datasheets = db.execute(
+        "SELECT d.id, d.name, c.name AS cat_name FROM datasheets d "
+        "JOIN catalogues c ON c.id = d.catalogue_id "
+        "ORDER BY c.name, d.name LIMIT 2000"
+    ).fetchall()
+    return render_template("admin_weapon_new.html", datasheets=datasheets)
+
+
+@app.route("/admin/weapons/<profile_id>/delete", methods=["POST"])
+@admin_required
+def admin_weapon_delete(profile_id: str):
+    db = user_db()
+    w = db.execute("SELECT name FROM weapons WHERE profile_id = ?", (profile_id,)).fetchone()
+    if not w:
+        abort(404)
+    _cascade_delete_weapon(db, profile_id)
+    db.commit()
+    flash(f"Deleted weapon {w['name']}", "ok")
+    return redirect(url_for("admin_weapons"))
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin: composition (unit_models)
+# ---------------------------------------------------------------------------- #
+
+@app.route("/admin/units/<datasheet_id>/models/new", methods=["POST"])
+@admin_required
+def admin_model_new(datasheet_id: str):
+    db = user_db()
+    if not db.execute("SELECT 1 FROM datasheets WHERE id = ?", (datasheet_id,)).fetchone():
+        abort(404)
+    name = (request.form.get("name") or "New model").strip()
+    next_sort = db.execute(
+        "SELECT COALESCE(MAX(sort_order), -1) + 1 AS n FROM unit_models "
+        "WHERE datasheet_id = ?", (datasheet_id,),
+    ).fetchone()["n"]
+    db.execute(
+        "INSERT INTO unit_models (id, datasheet_id, name, min_count, max_count, "
+        "sort_order) VALUES (?, ?, ?, 1, 1, ?)",
+        (_new_id(), datasheet_id, name, next_sort),
+    )
+    db.commit()
+    flash(f"Added model type “{name}”", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+@app.route("/admin/units/<datasheet_id>/models/<model_id>/delete", methods=["POST"])
+@admin_required
+def admin_model_delete(datasheet_id: str, model_id: str):
+    db = user_db()
+    row = db.execute(
+        "SELECT name FROM unit_models WHERE id = ? AND datasheet_id = ?",
+        (model_id, datasheet_id),
+    ).fetchone()
+    if not row:
+        abort(404)
+    _cascade_delete_model(db, model_id)
+    db.commit()
+    flash(f"Deleted model type “{row['name']}” and its loadout", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin: loadout (slots / options / option_weapons)
+# ---------------------------------------------------------------------------- #
+
+def _get_model_for_admin(datasheet_id: str, model_id: str) -> sqlite3.Row:
+    row = user_db().execute(
+        "SELECT * FROM unit_models WHERE id = ? AND datasheet_id = ?",
+        (model_id, datasheet_id),
+    ).fetchone()
+    if not row:
+        abort(404)
+    return row
+
+
+@app.route("/admin/units/<datasheet_id>/models/<model_id>/loadout")
+@admin_required
+def admin_model_loadout(datasheet_id: str, model_id: str):
+    db = user_db()
+    model = _get_model_for_admin(datasheet_id, model_id)
+    ds = db.execute(
+        "SELECT id, name FROM datasheets WHERE id = ?", (datasheet_id,),
+    ).fetchone()
+    slot_rows = db.execute(
+        "SELECT * FROM loadout_slots WHERE model_id = ? ORDER BY sort_order",
+        (model_id,),
+    ).fetchall()
+    slots = []
+    for s in slot_rows:
+        opt_rows = db.execute(
+            "SELECT * FROM loadout_options WHERE slot_id = ? "
+            "ORDER BY is_default DESC, sort_order",
+            (s["id"],),
+        ).fetchall()
+        options = []
+        for o in opt_rows:
+            weapons = db.execute(
+                "SELECT w.profile_id, w.name, w.weapon_type "
+                "FROM loadout_option_weapons low "
+                "JOIN weapons w ON w.profile_id = low.weapon_profile_id "
+                "WHERE low.option_id = ? ORDER BY low.sort_order",
+                (o["id"],),
+            ).fetchall()
+            options.append({"row": o, "weapons": weapons})
+        slots.append({"row": s, "options": options})
+    # Weapon picker datalist: prefer weapons owned by the same datasheet (most
+    # likely candidates), then everything else.
+    weapon_choices = db.execute(
+        "SELECT profile_id, name, datasheet_id FROM weapons "
+        "ORDER BY (datasheet_id = ?) DESC, name LIMIT 2000",
+        (datasheet_id,),
+    ).fetchall()
+    return render_template(
+        "admin_model_loadout.html",
+        ds=ds, model=model, slots=slots, weapon_choices=weapon_choices,
+    )
+
+
+def _ensure_slot(slot_id: str) -> sqlite3.Row:
+    row = user_db().execute(
+        "SELECT s.*, m.datasheet_id FROM loadout_slots s "
+        "JOIN unit_models m ON m.id = s.model_id WHERE s.id = ?",
+        (slot_id,),
+    ).fetchone()
+    if not row:
+        abort(404)
+    return row
+
+
+def _ensure_option(option_id: str) -> sqlite3.Row:
+    row = user_db().execute(
+        "SELECT o.*, s.model_id, m.datasheet_id FROM loadout_options o "
+        "JOIN loadout_slots s ON s.id = o.slot_id "
+        "JOIN unit_models m ON m.id = s.model_id WHERE o.id = ?",
+        (option_id,),
+    ).fetchone()
+    if not row:
+        abort(404)
+    return row
+
+
+def _redirect_to_loadout(datasheet_id: str, model_id: str):
+    return redirect(url_for("admin_model_loadout",
+                            datasheet_id=datasheet_id, model_id=model_id))
+
+
+@app.route("/admin/units/<datasheet_id>/models/<model_id>/slots/new",
+           methods=["POST"])
+@admin_required
+def admin_slot_new(datasheet_id: str, model_id: str):
+    db = user_db()
+    _get_model_for_admin(datasheet_id, model_id)
+    slot_name = (request.form.get("slot_name") or "New slot").strip()
+    kind = request.form.get("kind") or "choice"
+    if kind not in ("choice", "fixed"):
+        kind = "choice"
+    try:
+        min_sel = int(request.form.get("min_select") or "1")
+        max_sel = int(request.form.get("max_select") or "1")
+    except ValueError:
+        flash("min/max select must be integers", "error")
+        return _redirect_to_loadout(datasheet_id, model_id)
+    next_sort = db.execute(
+        "SELECT COALESCE(MAX(sort_order), -1) + 1 AS n FROM loadout_slots "
+        "WHERE model_id = ?", (model_id,),
+    ).fetchone()["n"]
+    db.execute(
+        "INSERT INTO loadout_slots (id, model_id, slot_name, kind, min_select, "
+        "max_select, sort_order) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        (_new_id(), model_id, slot_name, kind, min_sel, max_sel, next_sort),
+    )
+    db.commit()
+    flash(f"Added slot “{slot_name}”", "ok")
+    return _redirect_to_loadout(datasheet_id, model_id)
+
+
+@app.route("/admin/loadout/slots/<slot_id>/edit", methods=["POST"])
+@admin_required
+def admin_slot_edit(slot_id: str):
+    s = _ensure_slot(slot_id)
+    try:
+        min_sel = int(request.form.get("min_select") or "1")
+        max_sel = int(request.form.get("max_select") or "1")
+    except ValueError:
+        flash("min/max select must be integers", "error")
+        return _redirect_to_loadout(s["datasheet_id"], s["model_id"])
+    kind = request.form.get("kind") or s["kind"]
+    if kind not in ("choice", "fixed"):
+        kind = s["kind"]
+    user_db().execute(
+        "UPDATE loadout_slots SET slot_name = ?, kind = ?, min_select = ?, "
+        "max_select = ? WHERE id = ?",
+        ((request.form.get("slot_name") or s["slot_name"]).strip(),
+         kind, min_sel, max_sel, slot_id),
+    )
+    user_db().commit()
+    flash("Slot updated", "ok")
+    return _redirect_to_loadout(s["datasheet_id"], s["model_id"])
+
+
+@app.route("/admin/loadout/slots/<slot_id>/delete", methods=["POST"])
+@admin_required
+def admin_slot_delete(slot_id: str):
+    s = _ensure_slot(slot_id)
+    _cascade_delete_slot(user_db(), slot_id)
+    user_db().commit()
+    flash(f"Deleted slot “{s['slot_name']}” and its options", "ok")
+    return _redirect_to_loadout(s["datasheet_id"], s["model_id"])
+
+
+@app.route("/admin/loadout/slots/<slot_id>/options/new", methods=["POST"])
+@admin_required
+def admin_option_new(slot_id: str):
+    s = _ensure_slot(slot_id)
+    db = user_db()
+    name = (request.form.get("name") or "New option").strip()
+    is_default = 1 if request.form.get("is_default") == "1" else 0
+    next_sort = db.execute(
+        "SELECT COALESCE(MAX(sort_order), -1) + 1 AS n FROM loadout_options "
+        "WHERE slot_id = ?", (slot_id,),
+    ).fetchone()["n"]
+    db.execute(
+        "INSERT INTO loadout_options (id, slot_id, name, is_default, sort_order) "
+        "VALUES (?, ?, ?, ?, ?)",
+        (_new_id(), slot_id, name, is_default, next_sort),
+    )
+    db.commit()
+    flash(f"Added option “{name}”", "ok")
+    return _redirect_to_loadout(s["datasheet_id"], s["model_id"])
+
+
+@app.route("/admin/loadout/options/<option_id>/edit", methods=["POST"])
+@admin_required
+def admin_option_edit(option_id: str):
+    o = _ensure_option(option_id)
+    name = (request.form.get("name") or o["name"]).strip()
+    is_default = 1 if request.form.get("is_default") == "1" else 0
+    user_db().execute(
+        "UPDATE loadout_options SET name = ?, is_default = ? WHERE id = ?",
+        (name, is_default, option_id),
+    )
+    user_db().commit()
+    flash("Option updated", "ok")
+    return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+
+
+@app.route("/admin/loadout/options/<option_id>/delete", methods=["POST"])
+@admin_required
+def admin_option_delete(option_id: str):
+    o = _ensure_option(option_id)
+    _cascade_delete_option(user_db(), option_id)
+    user_db().commit()
+    flash(f"Deleted option “{o['name']}”", "ok")
+    return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+
+
+@app.route("/admin/loadout/options/<option_id>/weapons/add", methods=["POST"])
+@admin_required
+def admin_option_weapon_add(option_id: str):
+    o = _ensure_option(option_id)
+    db = user_db()
+    wpid = (request.form.get("weapon_profile_id") or "").strip()
+    if not wpid:
+        flash("Pick a weapon", "error")
+        return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+    if not db.execute(
+        "SELECT 1 FROM weapons WHERE profile_id = ?", (wpid,),
+    ).fetchone():
+        flash("Unknown weapon", "error")
+        return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+    if db.execute(
+        "SELECT 1 FROM loadout_option_weapons WHERE option_id = ? AND weapon_profile_id = ?",
+        (option_id, wpid),
+    ).fetchone():
+        flash("Already in this option", "error")
+        return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+    next_sort = db.execute(
+        "SELECT COALESCE(MAX(sort_order), -1) + 1 AS n FROM loadout_option_weapons "
+        "WHERE option_id = ?", (option_id,),
+    ).fetchone()["n"]
+    db.execute(
+        "INSERT INTO loadout_option_weapons (option_id, weapon_profile_id, sort_order) "
+        "VALUES (?, ?, ?)",
+        (option_id, wpid, next_sort),
+    )
+    db.commit()
+    flash("Weapon added to option", "ok")
+    return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+
+
+@app.route("/admin/loadout/options/<option_id>/weapons/<weapon_profile_id>/remove",
+           methods=["POST"])
+@admin_required
+def admin_option_weapon_remove(option_id: str, weapon_profile_id: str):
+    o = _ensure_option(option_id)
+    user_db().execute(
+        "DELETE FROM loadout_option_weapons "
+        "WHERE option_id = ? AND weapon_profile_id = ?",
+        (option_id, weapon_profile_id),
+    )
+    user_db().commit()
+    flash("Weapon removed from option", "ok")
+    return _redirect_to_loadout(o["datasheet_id"], o["model_id"])
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin: abilities / keywords / transport (inline on unit edit)
+# ---------------------------------------------------------------------------- #
+
+@app.route("/admin/units/<datasheet_id>/abilities/new", methods=["POST"])
+@admin_required
+def admin_ability_new(datasheet_id: str):
+    db = user_db()
+    if not db.execute("SELECT 1 FROM datasheets WHERE id = ?", (datasheet_id,)).fetchone():
+        abort(404)
+    name = (request.form.get("name") or "").strip()
+    ability_type = (request.form.get("ability_type") or "").strip() or None
+    desc = (request.form.get("description") or "").strip() or None
+    if not name:
+        flash("Ability name is required", "error")
+        return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+    db.execute(
+        "INSERT INTO abilities (profile_id, datasheet_id, name, ability_type, "
+        "description) VALUES (?, ?, ?, ?, ?)",
+        (_new_id(), datasheet_id, name, ability_type, desc),
+    )
+    db.commit()
+    flash(f"Added ability “{name}”", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+@app.route("/admin/abilities/<profile_id>/edit", methods=["POST"])
+@admin_required
+def admin_ability_edit(profile_id: str):
+    db = user_db()
+    a = db.execute(
+        "SELECT datasheet_id FROM abilities WHERE profile_id = ?", (profile_id,),
+    ).fetchone()
+    if not a:
+        abort(404)
+    name = (request.form.get("name") or "").strip()
+    ability_type = (request.form.get("ability_type") or "").strip() or None
+    desc = (request.form.get("description") or "").strip() or None
+    if not name:
+        flash("Ability name is required", "error")
+        return redirect(url_for("admin_unit_edit", datasheet_id=a["datasheet_id"]))
+    db.execute(
+        "UPDATE abilities SET name = ?, ability_type = ?, description = ? "
+        "WHERE profile_id = ?",
+        (name, ability_type, desc, profile_id),
+    )
+    db.commit()
+    flash("Ability updated", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=a["datasheet_id"]))
+
+
+@app.route("/admin/abilities/<profile_id>/delete", methods=["POST"])
+@admin_required
+def admin_ability_delete(profile_id: str):
+    db = user_db()
+    a = db.execute(
+        "SELECT datasheet_id, name FROM abilities WHERE profile_id = ?",
+        (profile_id,),
+    ).fetchone()
+    if not a:
+        abort(404)
+    db.execute("DELETE FROM abilities WHERE profile_id = ?", (profile_id,))
+    db.commit()
+    flash(f"Deleted ability “{a['name']}”", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=a["datasheet_id"]))
+
+
+@app.route("/admin/units/<datasheet_id>/keywords/new", methods=["POST"])
+@admin_required
+def admin_keyword_new(datasheet_id: str):
+    db = user_db()
+    if not db.execute("SELECT 1 FROM datasheets WHERE id = ?", (datasheet_id,)).fetchone():
+        abort(404)
+    name = (request.form.get("category_name") or "").strip()
+    is_primary = 1 if request.form.get("is_primary") == "1" else 0
+    if not name:
+        flash("Keyword is required", "error")
+        return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+    # category_id needs to be unique within (datasheet_id) — synthesize one.
+    cat_id = _new_id()
+    if db.execute(
+        "SELECT 1 FROM datasheet_keywords WHERE datasheet_id = ? AND category_name = ?",
+        (datasheet_id, name),
+    ).fetchone():
+        flash(f"Keyword “{name}” already present", "error")
+        return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+    db.execute(
+        "INSERT INTO datasheet_keywords (datasheet_id, category_id, category_name, "
+        "is_primary) VALUES (?, ?, ?, ?)",
+        (datasheet_id, cat_id, name, is_primary),
+    )
+    db.commit()
+    flash(f"Added keyword “{name}”", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+@app.route("/admin/units/<datasheet_id>/keywords/<category_id>/delete",
+           methods=["POST"])
+@admin_required
+def admin_keyword_delete(datasheet_id: str, category_id: str):
+    db = user_db()
+    cur = db.execute(
+        "DELETE FROM datasheet_keywords WHERE datasheet_id = ? AND category_id = ?",
+        (datasheet_id, category_id),
+    )
+    db.commit()
+    if cur.rowcount == 0:
+        abort(404)
+    flash("Keyword removed", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+@app.route("/admin/units/<datasheet_id>/transport/new", methods=["POST"])
+@admin_required
+def admin_transport_new(datasheet_id: str):
+    db = user_db()
+    if not db.execute("SELECT 1 FROM datasheets WHERE id = ?", (datasheet_id,)).fetchone():
+        abort(404)
+    capacity = (request.form.get("capacity") or "").strip()
+    if not capacity:
+        flash("Capacity is required", "error")
+        return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+    db.execute(
+        "INSERT INTO transport (profile_id, datasheet_id, capacity) VALUES (?, ?, ?)",
+        (_new_id(), datasheet_id, capacity),
+    )
+    db.commit()
+    flash("Added transport entry", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=datasheet_id))
+
+
+@app.route("/admin/transport/<profile_id>/edit", methods=["POST"])
+@admin_required
+def admin_transport_edit(profile_id: str):
+    db = user_db()
+    t = db.execute(
+        "SELECT datasheet_id FROM transport WHERE profile_id = ?", (profile_id,),
+    ).fetchone()
+    if not t:
+        abort(404)
+    capacity = (request.form.get("capacity") or "").strip()
+    if not capacity:
+        flash("Capacity is required", "error")
+    else:
+        db.execute(
+            "UPDATE transport SET capacity = ? WHERE profile_id = ?",
+            (capacity, profile_id),
+        )
+        db.commit()
+        flash("Transport updated", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=t["datasheet_id"]))
+
+
+@app.route("/admin/transport/<profile_id>/delete", methods=["POST"])
+@admin_required
+def admin_transport_delete(profile_id: str):
+    db = user_db()
+    t = db.execute(
+        "SELECT datasheet_id FROM transport WHERE profile_id = ?", (profile_id,),
+    ).fetchone()
+    if not t:
+        abort(404)
+    db.execute("DELETE FROM transport WHERE profile_id = ?", (profile_id,))
+    db.commit()
+    flash("Transport entry removed", "ok")
+    return redirect(url_for("admin_unit_edit", datasheet_id=t["datasheet_id"]))
 
 
 # ---------------------------------------------------------------------------- #

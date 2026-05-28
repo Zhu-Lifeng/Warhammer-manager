@@ -71,8 +71,7 @@
               <td>{{ r.sv or '-' }}</td>
               <td>{{ r.w or '-' }}</td>
               <td class="right">
-                {% if r.effective_points is not none %}{{ r.effective_points }}{% else %}-{% endif %}
-                {% if r.overridden %}<span class="badge" style="background:#5a4d1f; color:#fff2c0; font-size:0.65rem;">edit</span>{% endif %}
+                {% if r.points is not none %}{{ r.points }}{% else %}-{% endif %}
               </td>
             </tr>
           {% endfor %}

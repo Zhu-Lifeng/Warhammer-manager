@@ -19,7 +19,7 @@
     {% endif %}
     <a href="{{ url_for('users_browse') }}" class="{{ 'active' if ep in ('users_browse', 'public_profile', 'public_army', 'public_model') else '' }}">Browse</a>
     {% if me and me.role == 'admin' %}
-      <a href="{{ url_for('admin_users') }}" class="{{ 'active' if ep.startswith('admin') else '' }}">Admin</a>
+      <a href="{{ url_for('admin_home') }}" class="{{ 'active' if ep.startswith('admin') else '' }}">Admin</a>
     {% endif %}
   </nav>
   <div class="user-menu">
@@ -28,11 +28,11 @@
         {{ me.username }}{% if me.role == 'admin' %} <span class="badge">admin</span>{% endif %}
       </a>
       <form method="post" action="{{ url_for('logout') }}" style="display:inline;">
-        <button type="submit" class="btn-small btn-ghost">退出</button>
+        <button type="submit" class="btn-small btn-ghost">Log out</button>
       </form>
     {% else %}
-      <a href="{{ url_for('login') }}" class="{{ 'active' if ep == 'login' else '' }}">登录</a>
-      <a href="{{ url_for('register') }}" class="{{ 'active' if ep == 'register' else '' }}">注册</a>
+      <a href="{{ url_for('login') }}" class="{{ 'active' if ep == 'login' else '' }}">Log in</a>
+      <a href="{{ url_for('register') }}" class="{{ 'active' if ep == 'register' else '' }}">Register</a>
     {% endif %}
   </div>
 </header>

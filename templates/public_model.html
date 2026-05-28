@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block title %}{{ m.custom_name or m.datasheet_name }} — {{ user.username }}{% endblock %}
 {% block body %}
-<p><a href="{{ url_for('public_profile', username=user.username) }}">← {{ user.username }} 的公开档案</a></p>
+<p><a href="{{ url_for('public_profile', username=user.username) }}">← {{ user.username }}'s public profile</a></p>
 <h1>{{ m.custom_name or m.datasheet_name }}</h1>
 <p class="muted">
   <a href="{{ url_for('query_unit', datasheet_id=m.datasheet_id) }}">{{ m.datasheet_name }}</a>
-  · {{ m.faction_name }} · 状态：{{ status_map.get(m.status, m.status) }}
-  · 由 <a href="{{ url_for('public_profile', username=user.username) }}">{{ user.username }}</a> 拥有
+  · {{ m.faction_name }} · status: {{ status_map.get(m.status, m.status) }}
+  · owned by <a href="{{ url_for('public_profile', username=user.username) }}">{{ user.username }}</a>
 </p>
 
 {% if m.notes %}<div class="panel">{{ m.notes | nl2br }}</div>{% endif %}
 
 {% if imgs %}
 <div class="section">
-  <h2>图片 ({{ imgs | length }})</h2>
+  <h2>Images ({{ imgs | length }})</h2>
   <div class="image-grid">
     {% for img in imgs %}
     <figure>
