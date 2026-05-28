@@ -13,9 +13,28 @@
     {% set ep = request.endpoint or '' %}
     <a href="{{ url_for('index') }}" class="{{ 'active' if ep == 'index' else '' }}">Home</a>
     <a href="{{ url_for('query_search') }}" class="{{ 'active' if ep.startswith('query') else '' }}">Search</a>
-    <a href="{{ url_for('army_list') }}" class="{{ 'active' if ep.startswith('army') else '' }}">Armies</a>
-    <a href="{{ url_for('models_list') }}" class="{{ 'active' if ep.startswith('model') else '' }}">My Models</a>
+    {% if me %}
+      <a href="{{ url_for('army_list') }}" class="{{ 'active' if ep.startswith('army') else '' }}">Armies</a>
+      <a href="{{ url_for('models_list') }}" class="{{ 'active' if ep.startswith('model') else '' }}">My Models</a>
+    {% endif %}
+    <a href="{{ url_for('users_browse') }}" class="{{ 'active' if ep in ('users_browse', 'public_profile', 'public_army', 'public_model') else '' }}">Browse</a>
+    {% if me and me.role == 'admin' %}
+      <a href="{{ url_for('admin_users') }}" class="{{ 'active' if ep.startswith('admin') else '' }}">Admin</a>
+    {% endif %}
   </nav>
+  <div class="user-menu">
+    {% if me %}
+      <a href="{{ url_for('profile') }}" class="{{ 'active' if ep == 'profile' else '' }}">
+        {{ me.username }}{% if me.role == 'admin' %} <span class="badge">admin</span>{% endif %}
+      </a>
+      <form method="post" action="{{ url_for('logout') }}" style="display:inline;">
+        <button type="submit" class="btn-small btn-ghost">退出</button>
+      </form>
+    {% else %}
+      <a href="{{ url_for('login') }}" class="{{ 'active' if ep == 'login' else '' }}">登录</a>
+      <a href="{{ url_for('register') }}" class="{{ 'active' if ep == 'register' else '' }}">注册</a>
+    {% endif %}
+  </div>
 </header>
 <main>
   {% with msgs = get_flashed_messages(with_categories=true) %}

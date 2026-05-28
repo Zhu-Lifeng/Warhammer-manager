@@ -46,6 +46,19 @@ header.top nav a {
 }
 header.top nav a:hover { background: #2a2d35; text-decoration: none; }
 header.top nav a.active { background: #c33; color: #fff; }
+header.top .user-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header.top .user-menu a {
+  color: #d0d0d0;
+  padding: 0.35rem 0.6rem;
+  border-radius: 3px;
+}
+header.top .user-menu a:hover { background: #2a2d35; text-decoration: none; }
+header.top .user-menu a.active { background: #c33; color: #fff; }
 
 main {
   max-width: 1280px;

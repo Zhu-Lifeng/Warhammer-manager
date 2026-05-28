@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}登录{% endblock %}
+{% block body %}
+<h1>登录</h1>
+<form method="post" action="{{ url_for('login') }}" class="panel" style="max-width:400px;">
+  <input type="hidden" name="next" value="{{ next }}">
+  <div class="form-grid">
+    <label>用户名
+      <input type="text" name="username" required autofocus autocomplete="username">
+    </label>
+    <label>密码
+      <input type="password" name="password" required autocomplete="current-password">
+    </label>
+  </div>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">登录</button>
+    <a href="{{ url_for('register') }}" class="btn-ghost">还没账号？注册</a>
+  </div>
+</form>
+{% endblock %}

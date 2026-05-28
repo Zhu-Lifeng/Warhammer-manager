@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ army.name }} — {{ user.username }}{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('public_profile', username=user.username) }}">← {{ user.username }} 的公开档案</a></p>
+<h1>{{ army.name }}</h1>
+<p class="muted">{{ army.faction_name }} · 由 <a href="{{ url_for('public_profile', username=user.username) }}">{{ user.username }}</a> 创建 · {{ army.created_at | dt }}</p>
+{% if army.notes %}<div class="panel">{{ army.notes | nl2br }}</div>{% endif %}
+
+<div class="section">
+  <h2>单位 ({{ units | length }}) · 合计 {{ total }} pts</h2>
+  {% if units %}
+  <table class="table">
+    <thead><tr><th>单位</th><th>数量</th><th>规模</th><th>单价</th><th>小计</th></tr></thead>
+    <tbody>
+    {% for u in units %}
+      <tr>
+        <td>
+          <a href="{{ url_for('query_unit', datasheet_id=u.datasheet_id) }}">{{ u.datasheet_name }}</a>
+        </td>
+        <td>{{ u.count }}</td>
+        <td class="muted">{{ u.tier_label or '基础' }}</td>
+        <td>{{ u.effective_points }}</td>
+        <td>{{ (u.effective_points or 0) * u.count }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="muted">这张军表还没添加单位。</p>{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}{{ user.username }}{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('users_browse') }}">← Browse Players</a></p>
+<h1>{{ user.username }} <span class="muted" style="font-size:0.6em;">公开档案</span></h1>
+<p class="muted">注册于 {{ user.created_at | dt }} · {{ armies | length }} 张军表 · {{ models | length }} 个模型</p>
+
+<div class="section">
+  <h2>军表 ({{ armies | length }})</h2>
+  {% if armies %}
+  <table class="table">
+    <thead><tr><th>名称</th><th>派系</th><th>单位数</th><th>点数</th><th>建立时间</th></tr></thead>
+    <tbody>
+    {% for a in armies %}
+      <tr>
+        <td><a href="{{ url_for('public_army', username=user.username, army_id=a.id) }}"><b>{{ a.name }}</b></a></td>
+        <td>{{ a.faction_name }}</td>
+        <td>{{ a.n_units }}</td>
+        <td>{{ a.total_pts }}</td>
+        <td class="muted">{{ a.created_at | dt }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="muted">还没有军表。</p>{% endif %}
+</div>
+
+<div class="section">
+  <h2>模型库存 ({{ models | length }})</h2>
+  {% if models %}
+  <div class="image-grid">
+    {% for m in models %}
+    <figure>
+      <a href="{{ url_for('public_model', username=user.username, model_id=m.id) }}">
+      {% if m.cover %}
+        <img src="{{ url_for('uploaded_file', filename=m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
+      {% else %}
+        <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>no image</text></svg>" alt="no image">
+      {% endif %}
+      </a>
+      <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
+        <div><b>{{ m.custom_name or m.datasheet_name }}</b></div>
+        <div class="muted" style="font-size:0.8rem;">{{ m.datasheet_name }}</div>
+        <div class="muted" style="font-size:0.75rem;">{{ status_map.get(m.status, m.status) }}</div>
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% else %}<p class="muted">还没有模型。</p>{% endif %}
+</div>
+{% endblock %}

@@ -21,11 +21,14 @@ import uuid
 from datetime import datetime
 from pathlib import Path
 
+from functools import wraps
+
 from flask import (
     Flask, abort, flash, g, redirect, render_template, request, send_from_directory,
-    url_for,
+    session, url_for,
 )
 from PIL import Image
+from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
 
 ROOT = Path(__file__).resolve().parent
@@ -104,6 +107,17 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA synchronous=NORMAL")
     conn.executescript("""
+    CREATE TABLE IF NOT EXISTS users (
+        id            INTEGER PRIMARY KEY,
+        username      TEXT NOT NULL UNIQUE COLLATE NOCASE,
+        password_hash TEXT NOT NULL,
+        role          TEXT NOT NULL DEFAULT 'user',  -- 'user' or 'admin'
+        is_public     INTEGER NOT NULL DEFAULT 0,
+        created_at    TEXT NOT NULL
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_users_public ON users(is_public);
+
     CREATE TABLE IF NOT EXISTS armies (
         id          INTEGER PRIMARY KEY,
         name        TEXT NOT NULL,
@@ -196,6 +210,16 @@ def init_user_db(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE army_units ADD COLUMN tier_label TEXT")
     if "tier_points" not in au_cols:
         conn.execute("ALTER TABLE army_units ADD COLUMN tier_points INTEGER")
+    # armies.user_id / models.user_id — nullable; first registered user claims
+    # all NULL rows and becomes admin (see register route).
+    army_cols = [r[1] for r in conn.execute("PRAGMA table_info(armies)").fetchall()]
+    if "user_id" not in army_cols:
+        conn.execute("ALTER TABLE armies ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE CASCADE")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_armies_user ON armies(user_id)")
+    model_cols = [r[1] for r in conn.execute("PRAGMA table_info(models)").fetchall()]
+    if "user_id" not in model_cols:
+        conn.execute("ALTER TABLE models ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE CASCADE")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_models_user ON models(user_id)")
     conn.commit()
 
 
@@ -307,6 +331,62 @@ def close_dbs(exception=None):
         conn = g.pop(key, None)
         if conn is not None:
             conn.close()
+
+
+# ---------------------------------------------------------------------------- #
+# Auth
+# ---------------------------------------------------------------------------- #
+
+def current_user() -> sqlite3.Row | None:
+    """Cached on the request via g — safe to call from anywhere."""
+    if "current_user" not in g:
+        uid = session.get("user_id")
+        g.current_user = None
+        if uid is not None:
+            row = user_db().execute(
+                "SELECT * FROM users WHERE id = ?", (uid,),
+            ).fetchone()
+            g.current_user = row
+            if row is None:
+                session.pop("user_id", None)
+    return g.current_user
+
+
+def require_user_id() -> int:
+    """Return current user's id or abort. Use inside @login_required routes."""
+    u = current_user()
+    if u is None:
+        abort(401)
+    return u["id"]
+
+
+def login_required(view):
+    @wraps(view)
+    def wrapped(*args, **kwargs):
+        if current_user() is None:
+            flash("请先登录", "error")
+            return redirect(url_for("login", next=request.path))
+        return view(*args, **kwargs)
+    return wrapped
+
+
+def admin_required(view):
+    @wraps(view)
+    def wrapped(*args, **kwargs):
+        u = current_user()
+        if u is None:
+            flash("请先登录", "error")
+            return redirect(url_for("login", next=request.path))
+        if u["role"] != "admin":
+            abort(403)
+        return view(*args, **kwargs)
+    return wrapped
+
+
+@app.context_processor
+def inject_user():
+    """Expose current_user to every template as `me`."""
+    return {"me": current_user()}
 
 
 # ---------------------------------------------------------------------------- #
@@ -430,13 +510,25 @@ def uploaded_file(filename: str):
 @app.route("/")
 def index():
     db_u = user_db()
-    n_armies = db_u.execute("SELECT COUNT(*) AS n FROM armies").fetchone()["n"]
-    n_models = db_u.execute("SELECT COUNT(*) AS n FROM models").fetchone()["n"]
+    me = current_user()
+    if me is not None:
+        n_armies = db_u.execute(
+            "SELECT COUNT(*) AS n FROM armies WHERE user_id = ?", (me["id"],),
+        ).fetchone()["n"]
+        n_models = db_u.execute(
+            "SELECT COUNT(*) AS n FROM models WHERE user_id = ?", (me["id"],),
+        ).fetchone()["n"]
+    else:
+        n_armies = n_models = 0
     n_units = kb_db().execute("SELECT COUNT(*) AS n FROM datasheets").fetchone()["n"]
     n_factions = len(list_factions())
+    n_public_users = db_u.execute(
+        "SELECT COUNT(*) AS n FROM users WHERE is_public = 1"
+    ).fetchone()["n"]
     return render_template(
         "index.html",
         n_armies=n_armies, n_models=n_models, n_units=n_units, n_factions=n_factions,
+        n_public_users=n_public_users,
     )
 
 
@@ -527,6 +619,7 @@ def query_search():
 
 
 @app.route("/query/unit/<datasheet_id>/edit-tier-points", methods=["POST"])
+@admin_required
 def edit_tier_points(datasheet_id: str):
     """Set or clear a per-tier point override (size-tier price edit)."""
     ds = kb_db().execute(
@@ -581,6 +674,7 @@ def edit_tier_points(datasheet_id: str):
 
 
 @app.route("/query/unit/<datasheet_id>/edit-points", methods=["POST"])
+@admin_required
 def edit_points(datasheet_id: str):
     """Set or clear a user point override for a datasheet."""
     ds = kb_db().execute(
@@ -622,22 +716,31 @@ def edit_points(datasheet_id: str):
 
 
 def _resolve_back(from_param: str) -> tuple[str, str]:
-    """Parse ?from=<kind>:<id> → (label, href) for the back link."""
-    if from_param.startswith("army:"):
+    """Parse ?from=<kind>:<id> → (label, href) for the back link.
+
+    Ownership-aware: only resolves to an army/model the current user owns,
+    otherwise falls back to the search page.
+    """
+    me = current_user()
+    uid = me["id"] if me else None
+    if from_param.startswith("army:") and uid is not None:
         try:
             aid = int(from_param.split(":", 1)[1])
         except (ValueError, IndexError):
             return ("← Back to search", url_for("query_search"))
-        row = user_db().execute("SELECT name FROM armies WHERE id = ?", (aid,)).fetchone()
+        row = user_db().execute(
+            "SELECT name FROM armies WHERE id = ? AND user_id = ?", (aid, uid),
+        ).fetchone()
         if row:
             return (f"← Back to army “{row['name']}”", url_for("army_view", army_id=aid))
-    if from_param.startswith("model:"):
+    if from_param.startswith("model:") and uid is not None:
         try:
             mid = int(from_param.split(":", 1)[1])
         except (ValueError, IndexError):
             return ("← Back to search", url_for("query_search"))
         row = user_db().execute(
-            "SELECT custom_name, datasheet_name FROM models WHERE id = ?", (mid,),
+            "SELECT custom_name, datasheet_name FROM models WHERE id = ? AND user_id = ?",
+            (mid, uid),
         ).fetchone()
         if row:
             label = row["custom_name"] or row["datasheet_name"]
@@ -663,10 +766,9 @@ def query_unit(datasheet_id: str):
 # ---------------------------------------------------------------------------- #
 
 @app.route("/army")
+@login_required
 def army_list():
-    # Priority for each unit's effective unit cost:
-    #   - if at expansion tier:  COALESCE(tier_override, u.tier_points)
-    #   - else (base):           COALESCE(base_override, u.points)
+    uid = require_user_id()
     rows = user_db().execute("""
         SELECT a.*,
                COALESCE(SUM(
@@ -681,13 +783,16 @@ def army_list():
           LEFT JOIN pricing_tier_overrides tov
                  ON tov.datasheet_id = u.datasheet_id
                 AND tov.condition_text = u.tier_label
+        WHERE a.user_id = ?
         GROUP BY a.id ORDER BY a.created_at DESC
-    """).fetchall()
+    """, (uid,)).fetchall()
     return render_template("army_list.html", armies=rows)
 
 
 @app.route("/army/new", methods=["GET", "POST"])
+@login_required
 def army_new():
+    uid = require_user_id()
     if request.method == "POST":
         name = (request.form.get("name") or "").strip()
         faction_id = request.form.get("faction") or ""
@@ -702,8 +807,10 @@ def army_new():
             flash("Invalid faction", "error")
             return redirect(url_for("army_new"))
         cur = user_db().execute(
-            "INSERT INTO armies (name, faction_id, faction_name, notes, created_at) VALUES (?, ?, ?, ?, ?)",
-            (name, faction_id, faction["name"], notes, datetime.utcnow().isoformat()),
+            "INSERT INTO armies (name, faction_id, faction_name, notes, created_at, user_id) "
+            "VALUES (?, ?, ?, ?, ?, ?)",
+            (name, faction_id, faction["name"], notes,
+             datetime.utcnow().isoformat(), uid),
         )
         user_db().commit()
         return redirect(url_for("army_view", army_id=cur.lastrowid))
@@ -711,8 +818,12 @@ def army_new():
 
 
 @app.route("/army/<int:army_id>")
+@login_required
 def army_view(army_id: int):
-    army = user_db().execute("SELECT * FROM armies WHERE id = ?", (army_id,)).fetchone()
+    uid = require_user_id()
+    army = user_db().execute(
+        "SELECT * FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    ).fetchone()
     if not army:
         abort(404)
     unit_rows = user_db().execute("""
@@ -802,8 +913,12 @@ def army_view(army_id: int):
 
 
 @app.route("/army/<int:army_id>/add", methods=["POST"])
+@login_required
 def army_add_unit(army_id: int):
-    army = user_db().execute("SELECT * FROM armies WHERE id = ?", (army_id,)).fetchone()
+    uid = require_user_id()
+    army = user_db().execute(
+        "SELECT * FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    ).fetchone()
     if not army:
         abort(404)
     datasheet_id = request.form.get("datasheet_id") or ""
@@ -834,8 +949,12 @@ def army_add_unit(army_id: int):
 
 
 @app.route("/army/<int:army_id>/unit/<int:unit_id>/loadout", methods=["GET", "POST"])
+@login_required
 def army_unit_loadout(army_id: int, unit_id: int):
-    army = user_db().execute("SELECT * FROM armies WHERE id = ?", (army_id,)).fetchone()
+    uid = require_user_id()
+    army = user_db().execute(
+        "SELECT * FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    ).fetchone()
     if not army:
         abort(404)
     unit = user_db().execute(
@@ -916,7 +1035,14 @@ def army_unit_loadout(army_id: int, unit_id: int):
 
 
 @app.route("/army/<int:army_id>/remove/<int:unit_id>", methods=["POST"])
+@login_required
 def army_remove_unit(army_id: int, unit_id: int):
+    uid = require_user_id()
+    army = user_db().execute(
+        "SELECT 1 FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    ).fetchone()
+    if not army:
+        abort(404)
     user_db().execute(
         "DELETE FROM army_units WHERE id = ? AND army_id = ?", (unit_id, army_id),
     )
@@ -925,9 +1051,15 @@ def army_remove_unit(army_id: int, unit_id: int):
 
 
 @app.route("/army/<int:army_id>/delete", methods=["POST"])
+@login_required
 def army_delete(army_id: int):
-    user_db().execute("DELETE FROM armies WHERE id = ?", (army_id,))
+    uid = require_user_id()
+    cur = user_db().execute(
+        "DELETE FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    )
     user_db().commit()
+    if cur.rowcount == 0:
+        abort(404)
     flash("Army deleted", "ok")
     return redirect(url_for("army_list"))
 
@@ -972,7 +1104,9 @@ def save_uploaded_image(file_storage) -> str | None:
 
 
 @app.route("/models")
+@login_required
 def models_list():
+    uid = require_user_id()
     args = request.args
     faction = (args.get("faction") or "").strip()
     keyword = (args.get("keyword") or "").strip()
@@ -991,8 +1125,8 @@ def models_list():
         if not ds_filter_ids:
             ds_filter_ids = {"__none__"}   # force empty result
 
-    where: list[str] = []
-    params: list = []
+    where: list[str] = ["m.user_id = ?"]
+    params: list = [uid]
     if faction:
         where.append("m.faction_name = ?")
         params.append(faction)
@@ -1008,24 +1142,22 @@ def models_list():
         where.append(f"m.datasheet_id IN ({placeholders})")
         params.extend(ds_filter_ids)
 
-    sql = """
-        SELECT m.*,
-               (SELECT filename FROM model_images WHERE model_id = m.id
-                ORDER BY id LIMIT 1) AS cover,
-               (SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images
-        FROM models m
-    """
-    if where:
-        sql += " WHERE " + " AND ".join(where)
-    sql += " ORDER BY m.created_at DESC"
+    sql = ("SELECT m.*, "
+           "(SELECT filename FROM model_images WHERE model_id = m.id "
+           " ORDER BY id LIMIT 1) AS cover, "
+           "(SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images "
+           "FROM models m WHERE " + " AND ".join(where) +
+           " ORDER BY m.created_at DESC")
     rows = user_db().execute(sql, params).fetchall()
-    total = user_db().execute("SELECT COUNT(*) FROM models").fetchone()[0]
+    total = user_db().execute(
+        "SELECT COUNT(*) FROM models WHERE user_id = ?", (uid,),
+    ).fetchone()[0]
 
     # Available faction values (from already-registered models, for the dropdown)
     faction_rows = user_db().execute(
         "SELECT DISTINCT faction_name FROM models "
-        "WHERE faction_name IS NOT NULL AND faction_name != '' "
-        "ORDER BY faction_name"
+        "WHERE user_id = ? AND faction_name IS NOT NULL AND faction_name != '' "
+        "ORDER BY faction_name", (uid,),
     ).fetchall()
     faction_list = [r["faction_name"] for r in faction_rows]
 
@@ -1063,7 +1195,9 @@ def _save_model_loadout(model_id: int, datasheet_id: str, form) -> None:
 
 
 @app.route("/models/new", methods=["GET", "POST"])
+@login_required
 def model_new():
+    uid = require_user_id()
     if request.method == "POST":
         datasheet_id = request.form.get("datasheet_id") or ""
         model_type_id = request.form.get("model_type_id") or ""
@@ -1090,10 +1224,10 @@ def model_new():
         now = datetime.utcnow().isoformat()
         cur = user_db().execute(
             "INSERT INTO models (custom_name, datasheet_id, datasheet_name, faction_name, "
-            "status, notes, model_type_id, created_at, updated_at) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "status, notes, model_type_id, created_at, updated_at, user_id) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (custom_name, ds["id"], ds["name"], ds["catalogue_name"],
-             status, notes, model_type_id, now, now),
+             status, notes, model_type_id, now, now, uid),
         )
         model_id = cur.lastrowid
         _save_model_loadout(model_id, ds["id"], request.form)
@@ -1173,8 +1307,12 @@ def api_datasheets():
 
 
 @app.route("/models/<int:model_id>")
+@login_required
 def model_detail(model_id: int):
-    m = user_db().execute("SELECT * FROM models WHERE id = ?", (model_id,)).fetchone()
+    uid = require_user_id()
+    m = user_db().execute(
+        "SELECT * FROM models WHERE id = ? AND user_id = ?", (model_id, uid),
+    ).fetchone()
     if not m:
         abort(404)
     imgs = user_db().execute(
@@ -1213,8 +1351,12 @@ def model_detail(model_id: int):
 
 
 @app.route("/models/<int:model_id>/edit", methods=["POST"])
+@login_required
 def model_edit(model_id: int):
-    m = user_db().execute("SELECT * FROM models WHERE id = ?", (model_id,)).fetchone()
+    uid = require_user_id()
+    m = user_db().execute(
+        "SELECT * FROM models WHERE id = ? AND user_id = ?", (model_id, uid),
+    ).fetchone()
     if not m:
         abort(404)
     custom_name = (request.form.get("custom_name") or "").strip()
@@ -1242,7 +1384,14 @@ def model_edit(model_id: int):
 
 
 @app.route("/models/<int:model_id>/delete", methods=["POST"])
+@login_required
 def model_delete(model_id: int):
+    uid = require_user_id()
+    m = user_db().execute(
+        "SELECT 1 FROM models WHERE id = ? AND user_id = ?", (model_id, uid),
+    ).fetchone()
+    if not m:
+        abort(404)
     imgs = user_db().execute(
         "SELECT filename FROM model_images WHERE model_id = ?", (model_id,),
     ).fetchall()
@@ -1258,7 +1407,14 @@ def model_delete(model_id: int):
 
 
 @app.route("/models/<int:model_id>/image/<int:image_id>/delete", methods=["POST"])
+@login_required
 def model_image_delete(model_id: int, image_id: int):
+    uid = require_user_id()
+    owner = user_db().execute(
+        "SELECT 1 FROM models WHERE id = ? AND user_id = ?", (model_id, uid),
+    ).fetchone()
+    if not owner:
+        abort(404)
     row = user_db().execute(
         "SELECT filename FROM model_images WHERE id = ? AND model_id = ?",
         (image_id, model_id),
@@ -1271,6 +1427,324 @@ def model_image_delete(model_id: int, image_id: int):
         except Exception:
             pass
     return redirect(url_for("model_detail", model_id=model_id))
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — auth (register / login / logout / profile)
+# ---------------------------------------------------------------------------- #
+
+USERNAME_RE = re.compile(r"^[A-Za-z0-9_.-]{3,32}$")
+
+
+def _claim_legacy_data(conn: sqlite3.Connection, user_id: int) -> int:
+    """Bind every armies/models row with NULL user_id to user_id.
+
+    Only ever runs for the first registered user (the bootstrap admin) because
+    every subsequent insert sets user_id explicitly.
+    """
+    cur = conn.execute(
+        "UPDATE armies SET user_id = ? WHERE user_id IS NULL", (user_id,),
+    )
+    n = cur.rowcount or 0
+    cur = conn.execute(
+        "UPDATE models SET user_id = ? WHERE user_id IS NULL", (user_id,),
+    )
+    n += cur.rowcount or 0
+    return n
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if current_user() is not None:
+        return redirect(url_for("index"))
+    if request.method == "POST":
+        username = (request.form.get("username") or "").strip()
+        password = request.form.get("password") or ""
+        confirm  = request.form.get("confirm") or ""
+        if not USERNAME_RE.match(username):
+            flash("用户名 3–32 位，只允许字母/数字/_-.", "error")
+            return redirect(url_for("register"))
+        if len(password) < 8:
+            flash("密码至少 8 位", "error")
+            return redirect(url_for("register"))
+        if password != confirm:
+            flash("两次输入的密码不一致", "error")
+            return redirect(url_for("register"))
+        db = user_db()
+        if db.execute("SELECT 1 FROM users WHERE username = ?", (username,)).fetchone():
+            flash("用户名已被占用", "error")
+            return redirect(url_for("register"))
+        # First-ever registration → admin, and takes ownership of legacy data.
+        is_first = db.execute("SELECT COUNT(*) AS n FROM users").fetchone()["n"] == 0
+        role = "admin" if is_first else "user"
+        cur = db.execute(
+            "INSERT INTO users (username, password_hash, role, is_public, created_at) "
+            "VALUES (?, ?, ?, 0, ?)",
+            (username, generate_password_hash(password), role,
+             datetime.utcnow().isoformat()),
+        )
+        uid = cur.lastrowid
+        claimed = _claim_legacy_data(db, uid) if is_first else 0
+        db.commit()
+        session["user_id"] = uid
+        if is_first:
+            flash(f"欢迎，{username}！你是首位用户，已设为管理员，"
+                  f"接管了 {claimed} 条历史数据。", "ok")
+        else:
+            flash(f"注册成功，欢迎 {username}", "ok")
+        return redirect(url_for("index"))
+    # Show whether this will be the bootstrap admin to give the UI a hint.
+    is_bootstrap = user_db().execute("SELECT COUNT(*) AS n FROM users").fetchone()["n"] == 0
+    return render_template("register.html", is_bootstrap=is_bootstrap)
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if current_user() is not None:
+        return redirect(url_for("index"))
+    next_url = request.args.get("next") or request.form.get("next") or ""
+    if request.method == "POST":
+        username = (request.form.get("username") or "").strip()
+        password = request.form.get("password") or ""
+        row = user_db().execute(
+            "SELECT * FROM users WHERE username = ?", (username,),
+        ).fetchone()
+        if row is None or not check_password_hash(row["password_hash"], password):
+            flash("用户名或密码错误", "error")
+            return redirect(url_for("login", next=next_url))
+        session["user_id"] = row["id"]
+        flash(f"欢迎回来，{row['username']}", "ok")
+        # next must be a local path to avoid open-redirects.
+        if next_url.startswith("/") and not next_url.startswith("//"):
+            return redirect(next_url)
+        return redirect(url_for("index"))
+    return render_template("login.html", next=next_url)
+
+
+@app.route("/logout", methods=["POST"])
+def logout():
+    session.pop("user_id", None)
+    flash("已退出", "ok")
+    return redirect(url_for("index"))
+
+
+@app.route("/profile", methods=["GET", "POST"])
+@login_required
+def profile():
+    me = current_user()
+    if request.method == "POST":
+        action = request.form.get("action") or ""
+        db = user_db()
+        if action == "visibility":
+            new_val = 1 if request.form.get("is_public") == "1" else 0
+            db.execute("UPDATE users SET is_public = ? WHERE id = ?", (new_val, me["id"]))
+            db.commit()
+            flash("已切换为" + ("公开" if new_val else "私人"), "ok")
+        elif action == "password":
+            old_pw = request.form.get("old_password") or ""
+            new_pw = request.form.get("new_password") or ""
+            confirm = request.form.get("confirm_password") or ""
+            if not check_password_hash(me["password_hash"], old_pw):
+                flash("旧密码错误", "error")
+            elif len(new_pw) < 8:
+                flash("新密码至少 8 位", "error")
+            elif new_pw != confirm:
+                flash("两次输入的新密码不一致", "error")
+            else:
+                db.execute(
+                    "UPDATE users SET password_hash = ? WHERE id = ?",
+                    (generate_password_hash(new_pw), me["id"]),
+                )
+                db.commit()
+                flash("密码已更新", "ok")
+        return redirect(url_for("profile"))
+    n_armies = user_db().execute(
+        "SELECT COUNT(*) AS n FROM armies WHERE user_id = ?", (me["id"],),
+    ).fetchone()["n"]
+    n_models = user_db().execute(
+        "SELECT COUNT(*) AS n FROM models WHERE user_id = ?", (me["id"],),
+    ).fetchone()["n"]
+    return render_template("profile.html", n_armies=n_armies, n_models=n_models)
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — public browse (/users + /u/<username>)
+# ---------------------------------------------------------------------------- #
+
+def _get_public_user(username: str) -> sqlite3.Row:
+    row = user_db().execute(
+        "SELECT * FROM users WHERE username = ? AND is_public = 1", (username,),
+    ).fetchone()
+    if row is None:
+        abort(404)
+    return row
+
+
+@app.route("/users")
+def users_browse():
+    q = (request.args.get("q") or "").strip()
+    sql = ("SELECT u.id, u.username, u.created_at, "
+           "(SELECT COUNT(*) FROM armies WHERE user_id = u.id) AS n_armies, "
+           "(SELECT COUNT(*) FROM models WHERE user_id = u.id) AS n_models "
+           "FROM users u WHERE u.is_public = 1")
+    params: list = []
+    if q:
+        sql += " AND u.username LIKE ?"
+        params.append(f"%{q}%")
+    sql += " ORDER BY u.username COLLATE NOCASE"
+    rows = user_db().execute(sql, params).fetchall()
+    return render_template("users_browse.html", users=rows, q=q)
+
+
+@app.route("/u/<username>")
+def public_profile(username: str):
+    user = _get_public_user(username)
+    armies = user_db().execute("""
+        SELECT a.*,
+               COALESCE(SUM(
+                   CASE WHEN u.tier_points IS NOT NULL
+                        THEN COALESCE(tov.points, u.tier_points)
+                        ELSE COALESCE(o.points,   u.points)
+                   END * u.count), 0) AS total_pts,
+               COUNT(u.id) AS n_units
+        FROM armies a
+          LEFT JOIN army_units u ON u.army_id = a.id
+          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
+          LEFT JOIN pricing_tier_overrides tov
+                 ON tov.datasheet_id = u.datasheet_id
+                AND tov.condition_text = u.tier_label
+        WHERE a.user_id = ?
+        GROUP BY a.id ORDER BY a.created_at DESC
+    """, (user["id"],)).fetchall()
+    models = user_db().execute("""
+        SELECT m.*,
+               (SELECT filename FROM model_images WHERE model_id = m.id
+                ORDER BY id LIMIT 1) AS cover,
+               (SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images
+        FROM models m WHERE m.user_id = ? ORDER BY m.created_at DESC
+    """, (user["id"],)).fetchall()
+    return render_template(
+        "u_profile.html", user=user, armies=armies, models=models,
+        status_map=STATUS_MAP,
+    )
+
+
+@app.route("/u/<username>/army/<int:army_id>")
+def public_army(username: str, army_id: int):
+    user = _get_public_user(username)
+    army = user_db().execute(
+        "SELECT * FROM armies WHERE id = ? AND user_id = ?", (army_id, user["id"]),
+    ).fetchone()
+    if not army:
+        abort(404)
+    unit_rows = user_db().execute("""
+        SELECT u.*,
+               o.points   AS override_points,
+               tov.points AS tier_override_points
+        FROM army_units u
+          LEFT JOIN datasheet_overrides o ON o.datasheet_id = u.datasheet_id
+          LEFT JOIN pricing_tier_overrides tov
+                 ON tov.datasheet_id = u.datasheet_id
+                AND tov.condition_text = u.tier_label
+        WHERE u.army_id = ? ORDER BY u.added_at
+    """, (army_id,)).fetchall()
+    units, total = [], 0
+    for r in unit_rows:
+        d = dict(r)
+        if d["tier_points"] is not None:
+            d["effective_points"] = (d["tier_override_points"]
+                                     if d["tier_override_points"] is not None
+                                     else d["tier_points"])
+        else:
+            d["effective_points"] = (d["override_points"]
+                                     if d["override_points"] is not None
+                                     else d["points"])
+        total += (d["effective_points"] or 0) * d["count"]
+        units.append(d)
+    return render_template(
+        "public_army.html", user=user, army=army, units=units, total=total,
+    )
+
+
+@app.route("/u/<username>/model/<int:model_id>")
+def public_model(username: str, model_id: int):
+    user = _get_public_user(username)
+    m = user_db().execute(
+        "SELECT * FROM models WHERE id = ? AND user_id = ?", (model_id, user["id"]),
+    ).fetchone()
+    if not m:
+        abort(404)
+    imgs = user_db().execute(
+        "SELECT * FROM model_images WHERE model_id = ? ORDER BY id", (model_id,),
+    ).fetchall()
+    return render_template(
+        "public_model.html", user=user, m=m, imgs=imgs, status_map=STATUS_MAP,
+    )
+
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin
+# ---------------------------------------------------------------------------- #
+
+@app.route("/admin/users")
+@admin_required
+def admin_users():
+    rows = user_db().execute(
+        "SELECT u.id, u.username, u.role, u.is_public, u.created_at, "
+        "(SELECT COUNT(*) FROM armies WHERE user_id = u.id) AS n_armies, "
+        "(SELECT COUNT(*) FROM models WHERE user_id = u.id) AS n_models "
+        "FROM users u ORDER BY u.created_at"
+    ).fetchall()
+    return render_template("admin_users.html", users=rows)
+
+
+@app.route("/admin/users/<int:user_id>/reset-password", methods=["POST"])
+@admin_required
+def admin_reset_password(user_id: int):
+    target = user_db().execute(
+        "SELECT * FROM users WHERE id = ?", (user_id,),
+    ).fetchone()
+    if not target:
+        abort(404)
+    new_pw = request.form.get("new_password") or ""
+    if len(new_pw) < 8:
+        flash("新密码至少 8 位", "error")
+        return redirect(url_for("admin_users"))
+    user_db().execute(
+        "UPDATE users SET password_hash = ? WHERE id = ?",
+        (generate_password_hash(new_pw), user_id),
+    )
+    user_db().commit()
+    flash(f"已重置 {target['username']} 的密码", "ok")
+    return redirect(url_for("admin_users"))
+
+
+@app.route("/admin/users/<int:user_id>/role", methods=["POST"])
+@admin_required
+def admin_set_role(user_id: int):
+    target = user_db().execute(
+        "SELECT * FROM users WHERE id = ?", (user_id,),
+    ).fetchone()
+    if not target:
+        abort(404)
+    new_role = request.form.get("role") or "user"
+    if new_role not in ("user", "admin"):
+        abort(400)
+    me = current_user()
+    if target["id"] == me["id"] and new_role != "admin":
+        # Don't let the last admin demote themselves and lock everyone out.
+        n_admins = user_db().execute(
+            "SELECT COUNT(*) AS n FROM users WHERE role = 'admin'"
+        ).fetchone()["n"]
+        if n_admins <= 1:
+            flash("无法降级最后一位管理员", "error")
+            return redirect(url_for("admin_users"))
+    user_db().execute(
+        "UPDATE users SET role = ? WHERE id = ?", (new_role, user_id),
+    )
+    user_db().commit()
+    flash(f"已将 {target['username']} 设为 {new_role}", "ok")
+    return redirect(url_for("admin_users"))
 
 
 # ---------------------------------------------------------------------------- #
