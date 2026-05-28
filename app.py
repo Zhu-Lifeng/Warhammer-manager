@@ -91,6 +91,72 @@ KB_TABLES = (
     "loadout_slots", "loadout_options", "loadout_option_weapons",
 )
 
+# Hard-coded Space Marine chapter → base SM catalogue inheritance. Every chapter
+# can field every base-SM datasheet (Intercessors, Captains, etc.) so the army
+# builder must include both. Other library-style inheritance is filled in by a
+# name heuristic in _populate_catalogue_inherits_defaults below.
+_SM_BASE_ID = "e0af-67df-9d63-8fb7"  # Imperium - Space Marines
+_SM_CHAPTER_IDS = (
+    "36d3-36bc-68dd-40ac",  # Black Templars
+    "4ef9-15ce-e3e6-36de",  # Blood Angels
+    "470a-6daa-9014-12df",  # Dark Angels
+    "f89b-84e0-6e3b-f1e2",  # Deathwatch
+    "5d6e-fd3-330a-11dd",   # Imperial Fists
+    "f27e-18c0-b73e-748e",  # Iron Hands
+    "6e59-e1ee-47ad-6ce5",  # Raven Guard
+    "2261-79a5-19d9-1668",  # Salamanders
+    "94bb-3284-ee14-57a1",  # Space Wolves
+    "4029-9237-e8db-af55",  # Ultramarines
+    "67c1-fc13-f9a1-cbbf",  # White Scars
+)
+
+
+# Factions whose playable catalogue is empty and whose units live in a Library
+# catalogue. Matched by exact name on first import — admin can adjust later.
+_FACTION_LIBRARY_LINKS = (
+    ("Imperium - Astra Militarum",     "Imperium - Astra Militarum - Library"),
+    ("Xenos - Aeldari",                "Aeldari - Aeldari Library"),
+    ("Chaos - Chaos Daemons",          "Chaos - Daemons Library"),
+    ("Imperium - Imperial Knights",    "Imperium - Imperial Knights - Library"),
+    ("Chaos - Chaos Knights",          "Chaos - Chaos Knights Library"),
+)
+
+
+def _populate_catalogue_inherits_defaults(conn: sqlite3.Connection) -> None:
+    """One-time seed: link every catalogue that needs a Library or base book.
+
+    Runs inside _import_kb_seed. Admins can edit afterwards via /admin/catalogues.
+    """
+    # 1. SM chapters → base Space Marines (10e rules: any chapter fields base units).
+    have_base = conn.execute(
+        "SELECT 1 FROM catalogues WHERE id = ?", (_SM_BASE_ID,),
+    ).fetchone()
+    if have_base:
+        for child_id in _SM_CHAPTER_IDS:
+            exists = conn.execute(
+                "SELECT 1 FROM catalogues WHERE id = ?", (child_id,),
+            ).fetchone()
+            if exists:
+                conn.execute(
+                    "INSERT OR IGNORE INTO catalogue_inherits (child_id, parent_id) "
+                    "VALUES (?, ?)", (child_id, _SM_BASE_ID),
+                )
+
+    # 2. Faction → Library mapping by exact name. Skipped silently if either
+    # side doesn't exist in this KB build.
+    for child_name, parent_name in _FACTION_LIBRARY_LINKS:
+        child = conn.execute(
+            "SELECT id FROM catalogues WHERE name = ?", (child_name,),
+        ).fetchone()
+        parent = conn.execute(
+            "SELECT id FROM catalogues WHERE name = ?", (parent_name,),
+        ).fetchone()
+        if child and parent:
+            conn.execute(
+                "INSERT OR IGNORE INTO catalogue_inherits (child_id, parent_id) "
+                "VALUES (?, ?)", (child["id"], parent["id"]),
+            )
+
 
 def _import_kb_seed(conn: sqlite3.Connection) -> None:
     """One-time import of kb/wh40k.db rows into app.db.
@@ -159,6 +225,16 @@ def _import_kb_seed(conn: sqlite3.Connection) -> None:
             CREATE INDEX IF NOT EXISTS idx_low_option            ON loadout_option_weapons(option_id);
             CREATE INDEX IF NOT EXISTS idx_pricing_tiers_ds      ON pricing_tiers(datasheet_id);
         """)
+        # catalogue_inherits is OUR table (not in KB), but it's tightly coupled to
+        # the just-imported catalogues so we create + seed it here in the same tx.
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS catalogue_inherits (
+                child_id  TEXT NOT NULL,
+                parent_id TEXT NOT NULL,
+                PRIMARY KEY (child_id, parent_id)
+            )
+        """)
+        _populate_catalogue_inherits_defaults(conn)
     finally:
         conn.commit()
         conn.execute("DETACH DATABASE kbseed")
@@ -249,6 +325,15 @@ def init_user_db(conn: sqlite3.Connection) -> None:
         UNIQUE (model_id, slot_id)
     );
 
+    -- Faction inheritance. A child catalogue can field every datasheet of any
+    -- catalogue it lists here (transitively). E.g. Blood Angels inherits from
+    -- "Imperium - Space Marines" so a BA army sees all base SM units too.
+    CREATE TABLE IF NOT EXISTS catalogue_inherits (
+        child_id  TEXT NOT NULL,
+        parent_id TEXT NOT NULL,
+        PRIMARY KEY (child_id, parent_id)
+    );
+
     CREATE INDEX IF NOT EXISTS idx_army_units_army    ON army_units(army_id);
     CREATE INDEX IF NOT EXISTS idx_model_images_model ON model_images(model_id);
     CREATE INDEX IF NOT EXISTS idx_aul_unit            ON army_unit_loadout(army_unit_id);
@@ -275,6 +360,16 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     if "user_id" not in model_cols:
         conn.execute("ALTER TABLE models ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE CASCADE")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_models_user ON models(user_id)")
+    # If KB tables already exist but catalogue_inherits is empty, seed the
+    # default chapter/library relationships now (post-upgrade path).
+    has_datasheets_now = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' AND name='datasheets'"
+    ).fetchone()
+    inherits_empty = conn.execute(
+        "SELECT COUNT(*) AS n FROM catalogue_inherits"
+    ).fetchone()["n"] == 0
+    if has_datasheets_now and inherits_empty:
+        _populate_catalogue_inherits_defaults(conn)
     conn.commit()
 
 
@@ -431,13 +526,44 @@ def inject_user():
 # Shared lookups
 # ---------------------------------------------------------------------------- #
 
+def get_catalogue_chain(catalogue_id: str) -> list[str]:
+    """Return [catalogue_id] + all transitive parents from catalogue_inherits.
+
+    Used by every "what units are in this faction" query so that e.g. a Blood
+    Angels army sees both BA-specific and base Space Marine datasheets.
+    """
+    seen = {catalogue_id}
+    stack = [catalogue_id]
+    while stack:
+        cur = stack.pop()
+        for r in user_db().execute(
+            "SELECT parent_id FROM catalogue_inherits WHERE child_id = ?", (cur,),
+        ).fetchall():
+            if r["parent_id"] not in seen:
+                seen.add(r["parent_id"])
+                stack.append(r["parent_id"])
+    return list(seen)
+
+
 def list_factions() -> list[sqlite3.Row]:
-    """Catalogues that actually have datasheets, sorted by name."""
+    """Playable catalogues, sorted by name.
+
+    A catalogue is shown if it has datasheets of its own OR inherits from a
+    catalogue that does (e.g. "Xenos - Aeldari" is empty but inherits the
+    Aeldari Library). Libraries themselves are filtered out.
+    """
     rows = user_db().execute("""
-        SELECT c.id, c.name, c.is_library, COUNT(d.id) AS n_datasheets
-        FROM catalogues c LEFT JOIN datasheets d ON d.catalogue_id = c.id
-        GROUP BY c.id HAVING n_datasheets > 0
-        ORDER BY c.name
+        WITH counts AS (
+            SELECT c.id, c.name, c.is_library,
+                   (SELECT COUNT(*) FROM datasheets d WHERE d.catalogue_id = c.id) AS own,
+                   (SELECT COUNT(*) FROM datasheets d
+                    JOIN catalogue_inherits ci ON ci.parent_id = d.catalogue_id
+                    WHERE ci.child_id = c.id) AS inherited
+            FROM catalogues c WHERE c.is_library = 0
+        )
+        SELECT id, name, is_library, (own + inherited) AS n_datasheets
+        FROM counts WHERE (own + inherited) > 0
+        ORDER BY name
     """).fetchall()
     return rows
 
@@ -592,8 +718,10 @@ def query_search():
         where.append("d.name LIKE ?")
         params.append(f"%{name}%")
     if catalogue_id:
-        where.append("d.catalogue_id = ?")
-        params.append(catalogue_id)
+        chain = get_catalogue_chain(catalogue_id)
+        ph = ",".join("?" * len(chain))
+        where.append(f"d.catalogue_id IN ({ph})")
+        params.extend(chain)
     if t_min is not None:
         where.append("CAST(um.t AS INTEGER) >= ?")
         params.append(t_min)
@@ -777,25 +905,28 @@ def army_view(army_id: int):
         units.append(d)
 
     keyword = (request.args.get("keyword") or "").strip()
-    sql = """
-        SELECT DISTINCT d.id, d.name, d.points
-        FROM datasheets d
-    """
-    params = [army["faction_id"]]
+    # Expand the army's catalogue with its inherited parents (chapter → base SM
+    # etc.) so the unit picker shows everything the army can legally field.
+    cat_chain = get_catalogue_chain(army["faction_id"])
+    placeholders = ",".join("?" * len(cat_chain))
+    sql = ("SELECT DISTINCT d.id, d.name, d.points FROM datasheets d ")
+    params: list = list(cat_chain)
     if keyword:
-        sql += " JOIN datasheet_keywords k ON k.datasheet_id = d.id"
-        sql += " WHERE d.catalogue_id = ? AND k.category_name = ?"
+        sql += (" JOIN datasheet_keywords k ON k.datasheet_id = d.id "
+                f"WHERE d.catalogue_id IN ({placeholders}) "
+                "AND k.category_name = ?")
         params.append(keyword)
     else:
-        sql += " WHERE d.catalogue_id = ?"
+        sql += f" WHERE d.catalogue_id IN ({placeholders})"
     sql += " ORDER BY d.name"
     available = user_db().execute(sql, params).fetchall()
-    # keywords available within this catalogue
-    kw_rows = user_db().execute("""
-        SELECT DISTINCT k.category_name
-        FROM datasheet_keywords k JOIN datasheets d ON d.id = k.datasheet_id
-        WHERE d.catalogue_id = ? ORDER BY k.category_name
-    """, (army["faction_id"],)).fetchall()
+    # Keywords available across the full chain
+    kw_rows = user_db().execute(
+        f"SELECT DISTINCT k.category_name FROM datasheet_keywords k "
+        f"JOIN datasheets d ON d.id = k.datasheet_id "
+        f"WHERE d.catalogue_id IN ({placeholders}) ORDER BY k.category_name",
+        cat_chain,
+    ).fetchall()
     return render_template(
         "army_view.html",
         army=army, units=units, total=total,
@@ -1876,6 +2007,115 @@ def admin_set_role(user_id: int):
 # ---------------------------------------------------------------------------- #
 # Routes — admin: create new + delete datasheets / weapons
 # ---------------------------------------------------------------------------- #
+
+# ---------------------------------------------------------------------------- #
+# Routes — admin: catalogues + inheritance
+# ---------------------------------------------------------------------------- #
+
+@app.route("/admin/catalogues")
+@admin_required
+def admin_catalogues():
+    db = user_db()
+    rows = db.execute("""
+        SELECT c.id, c.name, c.is_library,
+               (SELECT COUNT(*) FROM datasheets d WHERE d.catalogue_id = c.id) AS own,
+               (SELECT COUNT(*) FROM datasheets d
+                JOIN catalogue_inherits ci ON ci.parent_id = d.catalogue_id
+                WHERE ci.child_id = c.id) AS inherited,
+               (SELECT GROUP_CONCAT(c2.name, ' | ')
+                FROM catalogue_inherits ci
+                JOIN catalogues c2 ON c2.id = ci.parent_id
+                WHERE ci.child_id = c.id) AS parents
+        FROM catalogues c ORDER BY c.is_library, c.name
+    """).fetchall()
+    return render_template("admin_catalogues.html", rows=rows)
+
+
+@app.route("/admin/catalogues/<catalogue_id>", methods=["GET", "POST"])
+@admin_required
+def admin_catalogue_edit(catalogue_id: str):
+    db = user_db()
+    cat = db.execute("SELECT * FROM catalogues WHERE id = ?", (catalogue_id,)).fetchone()
+    if not cat:
+        abort(404)
+    if request.method == "POST":
+        new_name = (request.form.get("name") or "").strip()
+        is_library = 1 if request.form.get("is_library") == "1" else 0
+        if not new_name:
+            flash("Name is required", "error")
+            return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+        db.execute(
+            "UPDATE catalogues SET name = ?, is_library = ? WHERE id = ?",
+            (new_name, is_library, catalogue_id),
+        )
+        db.commit()
+        flash("Catalogue updated", "ok")
+        return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+    parents = db.execute("""
+        SELECT c.id, c.name FROM catalogue_inherits ci
+        JOIN catalogues c ON c.id = ci.parent_id
+        WHERE ci.child_id = ? ORDER BY c.name
+    """, (catalogue_id,)).fetchall()
+    # Candidates for adding as a parent: anything that isn't self and isn't
+    # already a parent. We don't try to prevent cycles in the form — the chain
+    # walker has a `seen` set so cycles can't crash queries either way.
+    existing_parent_ids = {p["id"] for p in parents}
+    all_others = db.execute(
+        "SELECT id, name, is_library FROM catalogues WHERE id != ? ORDER BY name",
+        (catalogue_id,),
+    ).fetchall()
+    candidates = [c for c in all_others if c["id"] not in existing_parent_ids]
+    own_n = db.execute(
+        "SELECT COUNT(*) AS n FROM datasheets WHERE catalogue_id = ?", (catalogue_id,),
+    ).fetchone()["n"]
+    inherited_n = db.execute("""
+        SELECT COUNT(*) AS n FROM datasheets d
+        JOIN catalogue_inherits ci ON ci.parent_id = d.catalogue_id
+        WHERE ci.child_id = ?
+    """, (catalogue_id,)).fetchone()["n"]
+    return render_template(
+        "admin_catalogue_edit.html",
+        cat=cat, parents=parents, candidates=candidates,
+        own_n=own_n, inherited_n=inherited_n,
+    )
+
+
+@app.route("/admin/catalogues/<catalogue_id>/inherits/add", methods=["POST"])
+@admin_required
+def admin_catalogue_inherit_add(catalogue_id: str):
+    db = user_db()
+    if not db.execute("SELECT 1 FROM catalogues WHERE id = ?", (catalogue_id,)).fetchone():
+        abort(404)
+    parent_id = (request.form.get("parent_id") or "").strip()
+    if not parent_id or parent_id == catalogue_id:
+        flash("Pick a different catalogue as the parent", "error")
+        return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+    if not db.execute(
+        "SELECT 1 FROM catalogues WHERE id = ?", (parent_id,),
+    ).fetchone():
+        flash("Parent catalogue not found", "error")
+        return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+    db.execute(
+        "INSERT OR IGNORE INTO catalogue_inherits (child_id, parent_id) VALUES (?, ?)",
+        (catalogue_id, parent_id),
+    )
+    db.commit()
+    flash("Inheritance added", "ok")
+    return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+
+
+@app.route("/admin/catalogues/<catalogue_id>/inherits/<parent_id>/remove",
+           methods=["POST"])
+@admin_required
+def admin_catalogue_inherit_remove(catalogue_id: str, parent_id: str):
+    user_db().execute(
+        "DELETE FROM catalogue_inherits WHERE child_id = ? AND parent_id = ?",
+        (catalogue_id, parent_id),
+    )
+    user_db().commit()
+    flash("Inheritance removed", "ok")
+    return redirect(url_for("admin_catalogue_edit", catalogue_id=catalogue_id))
+
 
 @app.route("/admin/units/new", methods=["GET", "POST"])
 @admin_required

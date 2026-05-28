@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Admin · {{ cat.name }}{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<p><a href="{{ url_for('admin_catalogues') }}">← All catalogues</a></p>
+<h1>Edit catalogue · {{ cat.name }}</h1>
+<p class="muted">id <code>{{ cat.id }}</code> · {{ own_n }} own datasheet(s) · {{ inherited_n }} inherited</p>
+
+<form method="post" action="{{ url_for('admin_catalogue_edit', catalogue_id=cat.id) }}" class="panel" style="max-width:540px;">
+  <div class="form-grid">
+    <label>Name <input type="text" name="name" required value="{{ cat.name }}"></label>
+    <label class="row" style="align-items:center;">
+      <input type="checkbox" name="is_library" value="1" {% if cat.is_library %}checked{% endif %}>
+      <span>Library catalogue (hidden from the faction picker)</span>
+    </label>
+  </div>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Save</button>
+  </div>
+</form>
+
+<div class="section">
+  <h2>Inherits from ({{ parents | length }})</h2>
+  {% if parents %}
+  <ul style="list-style:none; padding:0;">
+    {% for p in parents %}
+      <li style="margin:0.3rem 0;">
+        <span>{{ p.name }}</span>
+        <form method="post" action="{{ url_for('admin_catalogue_inherit_remove', catalogue_id=cat.id, parent_id=p.id) }}" style="display:inline;"
+              onsubmit="return confirm('Stop inheriting from {{ p.name|e }}?');">
+          <button type="submit" class="btn-small btn-ghost">remove</button>
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted">Doesn't inherit from any other catalogue.</p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('admin_catalogue_inherit_add', catalogue_id=cat.id) }}" class="panel" style="max-width:540px; margin-top:0.5rem;">
+    <div class="row">
+      <select name="parent_id" required style="flex:1;">
+        <option value="">— Pick a parent catalogue —</option>
+        {% for c in candidates %}
+          <option value="{{ c.id }}">{{ c.name }}{% if c.is_library %} (library){% endif %}</option>
+        {% endfor %}
+      </select>
+      <button type="submit" class="btn">+ Add inheritance</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

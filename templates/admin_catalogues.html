@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Admin · Catalogues{% endblock %}
+{% block body %}
+{% include "_admin_nav.html" %}
+<h1>Catalogues</h1>
+<p class="muted">Factions and libraries. A catalogue can inherit from one or more parents — child sees every datasheet of every ancestor (e.g. Blood Angels inherits from "Imperium - Space Marines" so a BA army can field every base SM unit).</p>
+
+<table class="table">
+  <thead>
+    <tr><th>Name</th><th>Type</th><th>Own units</th><th>Inherited</th><th>Inherits from</th><th></th></tr>
+  </thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td><b>{{ r.name }}</b></td>
+      <td>{% if r.is_library %}<span class="badge" style="background:#5a4d1f; color:#fff2c0;">library</span>{% else %}playable{% endif %}</td>
+      <td>{{ r.own }}</td>
+      <td>{{ r.inherited }}</td>
+      <td class="muted" style="font-size:0.85rem;">{{ r.parents or '—' }}</td>
+      <td><a href="{{ url_for('admin_catalogue_edit', catalogue_id=r.id) }}" class="btn-small">Edit</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
