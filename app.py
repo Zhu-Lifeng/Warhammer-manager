@@ -29,14 +29,32 @@ from PIL import Image
 from werkzeug.utils import secure_filename
 
 ROOT = Path(__file__).resolve().parent
-KB_DB = ROOT.parent / "kb" / "wh40k.db"
-USER_DB = ROOT / "app.db"
-UPLOAD_DIR = ROOT / "static" / "uploads"
+# DATA_DIR holds user data (app.db, uploads/) — kept outside the repo on the VPS
+# so `git pull` from the webhook never touches user-generated content.
+# Local default: project root (legacy paths still work).
+DATA_DIR = Path(os.environ.get("WH40K_DATA_DIR", ROOT)).resolve()
+KB_DB = ROOT / "kb" / "wh40k.db"
+USER_DB = DATA_DIR / "app.db"
+UPLOAD_DIR = Path(os.environ.get("WH40K_UPLOAD_DIR", DATA_DIR / "uploads"))
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
 ALLOWED_EXT = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 
+# Legacy migration: if a project-root app.db / static/uploads exists from before
+# DATA_DIR was introduced, keep using it so existing deployments don't lose data.
+_legacy_db = ROOT / "app.db"
+if "WH40K_DATA_DIR" not in os.environ and _legacy_db.exists() and not USER_DB.exists():
+    USER_DB = _legacy_db
+_legacy_uploads = ROOT / "static" / "uploads"
+if ("WH40K_UPLOAD_DIR" not in os.environ
+        and _legacy_uploads.exists()
+        and any(_legacy_uploads.iterdir())
+        and not UPLOAD_DIR.exists()):
+    UPLOAD_DIR = _legacy_uploads
+
 app = Flask(__name__)
-app.config["SECRET_KEY"] = secrets.token_hex(16)
+# SECRET_KEY must be stable across restarts so flash messages and any future
+# session usage survive a redeploy. Fall back to an ephemeral key for dev.
+app.config["SECRET_KEY"] = os.environ.get("WH40K_SECRET_KEY") or secrets.token_hex(16)
 app.config["MAX_CONTENT_LENGTH"] = MAX_IMAGE_BYTES * 10  # multi-upload allowance
 
 
@@ -402,6 +420,12 @@ def get_datasheet_full(datasheet_id: str) -> dict | None:
 # ---------------------------------------------------------------------------- #
 # Routes — home
 # ---------------------------------------------------------------------------- #
+
+@app.route("/uploads/<path:filename>")
+def uploaded_file(filename: str):
+    """Serve user-uploaded images from UPLOAD_DIR (which may live outside the repo)."""
+    return send_from_directory(UPLOAD_DIR, filename)
+
 
 @app.route("/")
 def index():

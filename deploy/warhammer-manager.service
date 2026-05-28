@@ -1,0 +1,27 @@
+[Unit]
+Description=Warhammer manager (Flask app via gunicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=wh40k
+Group=wh40k
+WorkingDirectory=/srv/warhammer-manager
+EnvironmentFile=/etc/warhammer-manager.env
+# WH40K_DATA_DIR + WH40K_SECRET_KEY come from EnvironmentFile.
+# Bind to localhost only — front with nginx for TLS + the public domain.
+ExecStart=/srv/warhammer-manager/venv/bin/gunicorn \
+    --workers 3 --bind 127.0.0.1:8000 --access-logfile - --error-logfile - \
+    app:app
+Restart=on-failure
+RestartSec=3
+
+# Lockdown: the app process can read the repo but only writes inside DATA_DIR.
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+ReadWritePaths=/var/lib/warhammer-manager
+
+[Install]
+WantedBy=multi-user.target

@@ -10,6 +10,7 @@
 
 Flask>=3.0          # web framework
 Pillow>=10.0        # image upload validation + thumbnail resize
+gunicorn>=21.2      # production WSGI server (used by systemd on the VPS)
 
 # Werkzeug, Jinja2, MarkupSafe, itsdangerous, click, blinker are pulled in
 # automatically as Flask dependencies.

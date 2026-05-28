@@ -1,0 +1,3 @@
+# /etc/sudoers.d/warhammer  (chmod 440, owned by root:root)
+# Lets the webhook service restart the app without a password — and ONLY that.
+wh40k ALL=(root) NOPASSWD: /bin/systemctl restart warhammer-manager

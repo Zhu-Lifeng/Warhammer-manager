@@ -1,0 +1,34 @@
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Virtualenvs -----------------------------------------------------------
+venv/
+.venv/
+env/
+
+# --- IDEs ------------------------------------------------------------------
+.idea/
+.vscode/
+
+# --- OS junk ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- User data (must persist across deploys) -------------------------------
+# When deployed via the GitHub webhook these are kept in WH40K_DATA_DIR
+# (e.g. /var/lib/warhammer-manager) — completely outside this repo.
+# Locally during dev they land at the repo root; never commit them.
+app.db
+app.db-wal
+app.db-shm
+/data/
+/static/uploads/*
+!/static/uploads/.gitkeep
+
+# --- Local secrets / env --------------------------------------------------
+.env
+.env.local
+deploy/.env

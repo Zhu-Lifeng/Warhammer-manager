@@ -52,7 +52,7 @@
       <figure>
         <a href="{{ url_for('model_detail', model_id=m.id) }}">
         {% if m.cover %}
-          <img src="{{ url_for('static', filename='uploads/' ~ m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
+          <img src="{{ url_for('uploaded_file', filename=m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
         {% else %}
           <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>no image</text></svg>" alt="no image">
         {% endif %}

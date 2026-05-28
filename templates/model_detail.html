@@ -31,8 +31,8 @@
   <div class="image-grid">
     {% for img in imgs %}
       <figure>
-        <a href="{{ url_for('static', filename='uploads/' ~ img.filename) }}" target="_blank">
-          <img src="{{ url_for('static', filename='uploads/' ~ img.filename) }}" alt="">
+        <a href="{{ url_for('uploaded_file', filename=img.filename) }}" target="_blank">
+          <img src="{{ url_for('uploaded_file', filename=img.filename) }}" alt="">
         </a>
         <form method="post" action="{{ url_for('model_image_delete', model_id=m.id, image_id=img.id) }}" onsubmit="return confirm('Delete this image?');">
           <button type="submit" class="btn-small btn-ghost">×</button>

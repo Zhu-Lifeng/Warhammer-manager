@@ -1,0 +1,26 @@
+[Unit]
+Description=Warhammer manager GitHub webhook receiver
+After=network.target
+
+[Service]
+Type=simple
+User=wh40k
+Group=wh40k
+WorkingDirectory=/srv/warhammer-manager
+EnvironmentFile=/etc/warhammer-manager.env
+Environment=APP_DIR=/srv/warhammer-manager
+Environment=VENV_DIR=/srv/warhammer-manager/venv
+Environment=APP_SERVICE=warhammer-manager
+ExecStart=/srv/warhammer-manager/venv/bin/gunicorn \
+    --workers 1 --bind 127.0.0.1:9001 --access-logfile - --error-logfile - \
+    deploy.webhook:app
+Restart=on-failure
+RestartSec=3
+
+# The webhook service is the only thing that runs deploy.sh, which restarts
+# warhammer-manager.service — that's what NoNewPrivileges=no + the sudoers
+# entry below permits.
+NoNewPrivileges=no
+
+[Install]
+WantedBy=multi-user.target
