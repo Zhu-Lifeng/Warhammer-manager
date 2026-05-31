@@ -11,23 +11,35 @@
   <input type="hidden" name="list_id" value="{{ target_list.id }}">
   <div class="form-grid">
     <div>
-      <label>Faction (filter units)</label>
-      <select id="faction-picker">
-        <option value="">-- Choose faction --</option>
-        {% for c in factions %}
-          <option value="{{ c.id }}">{{ c.name }} ({{ c.n_datasheets }})</option>
+      <label>Allegiance</label>
+      <select id="allegiance-picker">
+        <option value="">-- Choose --</option>
+        {% for group in faction_tree %}
+          <option value="{{ loop.index0 }}">{{ group.label }}</option>
         {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Faction</label>
+      <select id="faction-picker">
+        <option value="">-- Choose Allegiance first --</option>
       </select>
     </div>
     <div>
       <label>Search unit</label>
       <input type="text" id="datasheet-search" placeholder="Type unit name…">
     </div>
+    <div style="display:flex; align-items:flex-end;">
+      <label style="display:flex; align-items:center; gap:0.4rem; padding-bottom:0.4rem; white-space:nowrap;">
+        <input type="checkbox" id="show-legends">
+        <span>Show Legends</span>
+      </label>
+    </div>
     <div style="grid-column:1/-1;">
       <label>Pick datasheet *</label>
-      <select name="datasheet_id" id="datasheet-select" required>
-        <option value="">-- Choose faction or search first --</option>
-      </select>
+      <div id="datasheet-area" class="datasheet-picker">
+        <div class="empty-state muted">Pick an allegiance/faction or type a unit name above.</div>
+      </div>
     </div>
 
     <div>
@@ -59,33 +71,137 @@
 
 <script>
 (function () {
+  const allegianceEl = document.getElementById('allegiance-picker');
   const factionEl = document.getElementById('faction-picker');
   const searchEl  = document.getElementById('datasheet-search');
-  const selectEl  = document.getElementById('datasheet-select');
+  const legendsEl = document.getElementById('show-legends');
+  const dsAreaEl  = document.getElementById('datasheet-area');
   const loadoutEl = document.getElementById('loadout-area');
   const preselect = {{ preselect_ds | tojson }};
+  const factionTree = {{ faction_tree | tojson }};
   let debounceTimer = null;
+  let selectedDsId = "";
+
+  // Repopulate faction-picker from the picked allegiance group. Builds
+  // <optgroup>s for any named subgroup (e.g. Adeptus Astartes) and a flat
+  // list for the rest. Selected catalogue_id stays on factionEl so the
+  // downstream datasheet loader keeps using factionEl.value as before.
+  function rebuildFactionOptions() {
+    const idx = allegianceEl.value;
+    if (idx === "") {
+      factionEl.innerHTML = '<option value="">-- Choose Allegiance first --</option>';
+      factionEl.dispatchEvent(new Event('change'));
+      return;
+    }
+    const group = factionTree[parseInt(idx, 10)];
+    if (!group) return;
+    let html = '<option value="">-- Choose faction --</option>';
+    for (const sub of group.subgroups) {
+      if (sub.label) {
+        html += '<optgroup label="' + escapeHtml(sub.label) + '">';
+        for (const it of sub.items) {
+          html += '<option value="' + escapeHtml(it.id) + '">' + escapeHtml(it.name) + '</option>';
+        }
+        html += '</optgroup>';
+      } else {
+        for (const it of sub.items) {
+          html += '<option value="' + escapeHtml(it.id) + '">' + escapeHtml(it.name) + '</option>';
+        }
+      }
+    }
+    factionEl.innerHTML = html;
+    factionEl.dispatchEvent(new Event('change'));
+  }
+
+  allegianceEl.addEventListener('change', rebuildFactionOptions);
 
   async function reload() {
     const params = new URLSearchParams();
     if (factionEl.value) params.set('catalogue', factionEl.value);
     if (searchEl.value)  params.set('q', searchEl.value);
-    if (!params.toString() && !preselect) {
-      selectEl.innerHTML = '<option value="">-- Choose faction or search first --</option>';
+    if (legendsEl.checked) params.set('show_legends', '1');
+    if (!params.has('catalogue') && !params.has('q') && !preselect) {
+      dsAreaEl.innerHTML = '<div class="empty-state muted">Pick an allegiance/faction or type a unit name above.</div>';
       loadoutEl.innerHTML = '';
+      selectedDsId = "";
       return;
     }
     const resp = await fetch('/api/datasheets?' + params.toString());
     const data = await resp.json();
-    let html = '<option value="">-- Choose --</option>';
-    for (const item of data.items) {
-      const ptsPart = item.points != null ? ` (${item.points} pts)` : '';
-      html += `<option value="${item.id}">${item.name} — ${item.catalogue_name}${ptsPart}</option>`;
-    }
-    selectEl.innerHTML = html;
+    renderTabs(data.tabs);
     if (preselect) {
-      selectEl.value = preselect;
-      loadLoadout(preselect);
+      selectByValue(preselect);
+    }
+  }
+
+  function renderTabs(tabs) {
+    // Skip tabs with no items so the picker stays compact. Find first
+    // non-empty tab to activate.
+    const total = tabs.reduce((n, t) => n + t.items.length, 0);
+    if (total === 0) {
+      dsAreaEl.innerHTML = '<div class="empty-state muted">No matching units.</div>';
+      loadoutEl.innerHTML = '';
+      selectedDsId = "";
+      return;
+    }
+    const firstKey = (tabs.find(t => t.items.length) || {}).key;
+    let html = '<div class="unit-tabs"><div class="tab-headers">';
+    for (const t of tabs) {
+      const disabled = t.items.length === 0 ? 'disabled' : '';
+      const active = t.key === firstKey ? 'active' : '';
+      html += `<button type="button" class="tab-header ${active}" data-tab="${t.key}" ${disabled}>${escapeHtml(t.label)} <span class="muted">(${t.items.length})</span></button>`;
+    }
+    html += '</div>';
+    for (const t of tabs) {
+      const active = t.key === firstKey ? 'active' : '';
+      html += `<div class="tab-panel ${active}" data-tab="${t.key}">`;
+      if (t.items.length === 0) {
+        html += '<div class="muted" style="padding:0.6rem;">No units in this category.</div>';
+      } else {
+        html += '<ul class="ds-list">';
+        for (const it of t.items) {
+          const ptsPart = it.points != null ? ` <span class="muted">(${it.points} pts)</span>` : '';
+          html += `<li><label><input type="radio" name="datasheet_id" value="${escapeHtml(it.id)}" required>`
+                + ` <b>${escapeHtml(it.name)}</b> <span class="muted" style="font-size:0.8rem;">— ${escapeHtml(it.catalogue_name)}</span>${ptsPart}</label></li>`;
+        }
+        html += '</ul>';
+      }
+      html += '</div>';
+    }
+    html += '</div>';
+    dsAreaEl.innerHTML = html;
+    bindTabBehaviour();
+  }
+
+  function bindTabBehaviour() {
+    dsAreaEl.querySelectorAll('.tab-header').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const k = btn.dataset.tab;
+        dsAreaEl.querySelectorAll('.tab-header').forEach(b => b.classList.toggle('active', b.dataset.tab === k));
+        dsAreaEl.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.tab === k));
+      });
+    });
+    dsAreaEl.querySelectorAll('input[name="datasheet_id"]').forEach(r => {
+      r.addEventListener('change', function () {
+        selectedDsId = r.value;
+        loadLoadout(r.value);
+      });
+    });
+  }
+
+  function selectByValue(dsId) {
+    const r = dsAreaEl.querySelector('input[name="datasheet_id"][value="' + CSS.escape(dsId) + '"]');
+    if (r) {
+      r.checked = true;
+      // Also activate the tab containing this radio so the user can see it.
+      const panel = r.closest('.tab-panel');
+      if (panel) {
+        const key = panel.dataset.tab;
+        dsAreaEl.querySelectorAll('.tab-header').forEach(b => b.classList.toggle('active', b.dataset.tab === key));
+        dsAreaEl.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.tab === key));
+      }
+      selectedDsId = dsId;
+      loadLoadout(dsId);
     }
   }
 
@@ -100,61 +216,25 @@
     const data = await resp.json();
     if (!data.models || data.models.length === 0) return;
 
-    let html = '<div class="section"><h2>Model type + loadout</h2>';
-
-    const hasMultiple = data.models.length > 1;
-    if (hasMultiple) {
-      html += '<div class="card" style="margin-bottom:0.8rem;"><b>Which model type?</b><div style="margin-top:0.4rem;">';
-      data.models.forEach((m, i) => {
-        const range = (m.min_count != null && m.max_count != null && m.min_count !== m.max_count)
-          ? ` (${m.min_count}-${m.max_count})` : '';
-        html += `<label style="display:inline-block; margin-right:1rem; padding:0.3rem 0.5rem; background:#0c0e12; border-radius:3px; cursor:pointer;">
-          <input type="radio" name="model_type_id" value="${escapeHtml(m.id)}" ${i === 0 ? 'checked' : ''} data-model-id="${escapeHtml(m.id)}">
-          ${escapeHtml(m.name)}${range}
-        </label>`;
-      });
-      html += '</div></div>';
-    } else {
-      html += `<input type="hidden" name="model_type_id" value="${escapeHtml(data.models[0].id)}">`;
-    }
-
-    data.models.forEach((m, i) => {
-      if (!m.choice_slots || m.choice_slots.length === 0) return;
-      const showInitially = (i === 0);
-      html += `<div data-model-slots="${escapeHtml(m.id)}" class="card" style="margin-bottom:0.8rem; display:${showInitially ? 'block' : 'none'};">`;
-      html += `<h3 style="margin-top:0;">${escapeHtml(m.name)} loadout</h3>`;
-      for (const s of m.choice_slots) {
-        html += `<div style="margin:0.6rem 0; padding-left:0.6rem; border-left:2px solid #5a4d1f;">
-          <b>${escapeHtml(s.name)}</b>`;
-        if (s.min_select || s.max_select) {
-          const rng = (s.min_select === s.max_select)
-            ? s.min_select
-            : `${s.min_select || 0}-${s.max_select || '?'}`;
-          html += ` <span class="muted" style="font-size:0.85rem;">(pick ${rng})</span>`;
-        }
-        for (const o of s.options) {
-          const ws = o.weapons.map(w => `${escapeHtml(w.name)} (${w.type === 'Ranged' ? 'Ranged' : 'Melee'})`).join(' + ');
-          html += `<label style="display:block; padding:0.35rem 0.5rem; margin:0.25rem 0; background:#0c0e12; border-radius:4px; cursor:pointer;">
-            <input type="radio" name="slot_${escapeHtml(s.id)}" value="${escapeHtml(o.id)}" ${o.is_default ? 'checked' : ''}>
-            <b>${escapeHtml(o.name)}</b>${o.is_default ? ' <span class="badge status-done" style="font-size:0.7rem;">★ default</span>' : ''}
-            ${ws ? `<div class="muted" style="font-size:0.8rem; margin-left:1.5rem;">${ws}</div>` : ''}
-          </label>`;
-        }
-        html += `</div>`;
-      }
-      html += `</div>`;
+    // Wargear/loadout selection deliberately omitted for now — only the
+    // per-type count picker is shown. Re-enable by restoring the loadout
+    // rendering loop and form fields when wargear UX is ready.
+    let html = '<div class="section"><h2>Model types</h2>';
+    html += '<div class="card" style="margin-bottom:0.8rem;"><b>Per-type count</b>';
+    html += ' <span class="muted" style="font-size:0.85rem;">— defaults to the datasheet\'s minimum composition. Set a count to 0 to skip that type.</span>';
+    html += '<div style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.35rem;">';
+    data.models.forEach(m => {
+      const dflt = (m.min_count != null) ? m.min_count : 1;
+      const max  = (m.max_count != null) ? m.max_count : 99;
+      const range = (m.min_count != null && m.max_count != null && m.min_count !== m.max_count)
+        ? ` <span class="muted" style="font-size:0.85rem;">(${m.min_count}–${m.max_count})</span>` : '';
+      html += `<label style="display:flex; align-items:center; gap:0.5rem;">
+        <input type="number" name="count_${escapeHtml(m.id)}" value="${dflt}" min="0" max="${max}" style="width:4.5rem;">
+        <span><b>${escapeHtml(m.name)}</b>${range}</span>
+      </label>`;
     });
-
-    html += '</div>';
+    html += '</div></div></div>';
     loadoutEl.innerHTML = html;
-
-    loadoutEl.querySelectorAll('input[name="model_type_id"]').forEach(radio => {
-      radio.addEventListener('change', () => {
-        loadoutEl.querySelectorAll('[data-model-slots]').forEach(el => {
-          el.style.display = (el.getAttribute('data-model-slots') === radio.value) ? 'block' : 'none';
-        });
-      });
-    });
   }
 
   factionEl.addEventListener('change', reload);
@@ -162,7 +242,7 @@
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(reload, 250);
   });
-  selectEl.addEventListener('change', () => loadLoadout(selectEl.value));
+  legendsEl.addEventListener('change', reload);
   if (preselect) reload();
 })();
 </script>

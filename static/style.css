@@ -133,6 +133,40 @@ nav.admin-nav a.active { background: #5a4d1f; color: #fff2c0; }
 .unit-tabs .tab-panel { display: none; }
 .unit-tabs .tab-panel.active { display: block; }
 
+/* Datasheet picker on model_new: each tab panel scrolls vertically so a
+   big faction (Blood Angels w/ inheritance ≈ 150 units) doesn't blow the
+   layout. Items are touch-friendly rows. */
+.datasheet-picker .empty-state { padding: 0.8rem; font-style: italic; }
+.datasheet-picker .unit-tabs .tab-panel {
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid #2a2d35;
+  border-radius: 4px;
+  background: #0c0e12;
+}
+.datasheet-picker ul.ds-list {
+  list-style: none; padding: 0; margin: 0;
+}
+.datasheet-picker ul.ds-list li {
+  border-bottom: 1px solid #1c1f26;
+}
+.datasheet-picker ul.ds-list li:last-child { border-bottom: 0; }
+.datasheet-picker ul.ds-list label {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 0.7rem; cursor: pointer;
+  font-weight: normal;
+}
+.datasheet-picker ul.ds-list label:hover { background: #1c1f26; }
+.datasheet-picker ul.ds-list input[type="radio"] {
+  width: 18px; height: 18px;
+  accent-color: #c33;
+  flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .datasheet-picker .unit-tabs .tab-panel { max-height: 260px; }
+  .datasheet-picker ul.ds-list label { padding: 0.7rem; }
+}
+
 ul.stat-strip {
   list-style: none;
   padding: 0;
@@ -495,6 +529,20 @@ dialog, .panel {
    ============================================================ */
 
 body.ie-modal-open { overflow: hidden; }
+
+/* Inline preview shown next to a file input after the user crops + applies. */
+.ie-preview {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.ie-preview img {
+  max-width: 220px; max-height: 220px;
+  width: auto; height: auto;
+  border: 1px solid #2a2d35;
+  border-radius: 4px;
+  background: #0c0e12;
+  object-fit: contain;
+}
 
 #ie-modal {
   position: fixed; inset: 0;

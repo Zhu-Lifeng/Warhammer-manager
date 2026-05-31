@@ -35,7 +35,7 @@
         {% endif %}
       </a>
       <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
-        <div><b>{{ m.custom_name or m.datasheet_name }}</b></div>
+        <div><b>{{ m.custom_name or m.datasheet_name }}</b>{% if m.count and m.count > 1 %} <span class="muted" style="font-weight:normal;">× {{ m.count }}</span>{% endif %}</div>
         <div class="muted" style="font-size:0.8rem;">{{ m.datasheet_name }}</div>
         <div class="muted" style="font-size:0.75rem;">{{ status_map.get(m.status, m.status) }}</div>
       </figcaption>

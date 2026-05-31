@@ -333,7 +333,7 @@
   function setupFileInput(input) {
     input.addEventListener("change", async function () {
       const files = Array.from(input.files || []);
-      if (!files.length) return;
+      if (!files.length) { clearPreview(input); return; }
       const edited = [];
       for (const f of files) {
         let bmp;
@@ -342,6 +342,7 @@
         } catch (_) {
           alert("Could not load image: " + f.name);
           input.value = "";
+          clearPreview(input);
           return;
         }
         const src = downscaleIfHuge(bmp);
@@ -349,11 +350,13 @@
         if (blob === null) {
           // User cancelled — wipe selection so the form doesn't upload anything.
           input.value = "";
+          clearPreview(input);
           return;
         }
         edited.push({ orig: f, blob });
       }
-      // Substitute the input's files with the edited blobs.
+      // Substitute the input's files with the edited blobs. The user clicks
+      // Save themselves when they're ready — we don't auto-submit.
       try {
         const dt = new DataTransfer();
         edited.forEach(function (e) {
@@ -368,18 +371,45 @@
       } catch (_) {
         // DataTransfer not supported (very old browsers) — give up silently.
       }
-      // Auto-submit the surrounding form so the user doesn't have to press
-      // Save themselves after picking + editing the image. Native validation
-      // still runs via requestSubmit() — if a required field is empty the
-      // browser will block the submit and highlight the offender.
-      const form = input.closest("form");
-      if (form) {
-        if (typeof form.requestSubmit === "function") {
-          form.requestSubmit();
-        } else {
-          form.submit();
-        }
-      }
+      // Show the edited blob(s) as a thumbnail strip right after the input so
+      // the user sees what they're about to submit.
+      renderPreview(input, edited.map(e => e.blob));
+    });
+  }
+
+  // -------------------- inline preview helpers --------------------
+
+  function previewContainerFor(input) {
+    // We attach a <div class="ie-preview"> immediately after the input. The
+    // DOM is created lazily on first Apply and reused thereafter.
+    let el = input.nextElementSibling;
+    if (!el || !el.classList || !el.classList.contains("ie-preview")) {
+      el = document.createElement("div");
+      el.className = "ie-preview";
+      input.parentNode.insertBefore(el, input.nextSibling);
+    }
+    return el;
+  }
+
+  function clearPreview(input) {
+    const el = input.nextElementSibling;
+    if (!el || !el.classList || !el.classList.contains("ie-preview")) return;
+    // Revoke any blob URLs we created so the browser can free memory.
+    el.querySelectorAll("img").forEach(function (img) {
+      if (img.src.indexOf("blob:") === 0) URL.revokeObjectURL(img.src);
+    });
+    el.remove();
+  }
+
+  function renderPreview(input, blobs) {
+    clearPreview(input);
+    if (!blobs || !blobs.length) return;
+    const wrap = previewContainerFor(input);
+    blobs.forEach(function (blob) {
+      const img = document.createElement("img");
+      img.src = URL.createObjectURL(blob);
+      img.alt = "preview";
+      wrap.appendChild(img);
     });
   }
 

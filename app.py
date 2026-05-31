@@ -381,6 +381,11 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     if "list_id" not in model_cols:
         conn.execute("ALTER TABLE models ADD COLUMN list_id INTEGER REFERENCES model_lists(id) ON DELETE CASCADE")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_models_list ON models(list_id)")
+    # models.count — how many identical minis of this type this entry represents.
+    # Defaults to 1 so existing rows mean "one mini". Multi-type squads get one
+    # row per type with its own count (see model_new POST handler).
+    if "count" not in model_cols:
+        conn.execute("ALTER TABLE models ADD COLUMN count INTEGER NOT NULL DEFAULT 1")
     # Auto-create a "My Models" default list for any user who has unassigned
     # models. is_public copies their account flag so a public user's models
     # stay visible after the upgrade.
@@ -590,6 +595,79 @@ def get_catalogue_chain(catalogue_id: str) -> list[str]:
                 seen.add(r["parent_id"])
                 stack.append(r["parent_id"])
     return list(seen)
+
+
+def faction_tree() -> list[dict]:
+    """Hierarchical view of playable catalogues for cascading UI pickers.
+
+    Returns:
+        [
+          {"label": "Imperium", "subgroups": [
+            {"label": "Adeptus Astartes", "items": [{"id":..., "name":"Blood Angels"}, ...]},
+            {"label": None, "items": [{"id":..., "name":"Adepta Sororitas"}, ...]},
+          ]},
+          {"label": "Xenos",    "subgroups": [...]},
+          {"label": "Chaos",    "subgroups": [...]},
+          {"label": "Other",    "subgroups": [...]},  # only if any unprefixed entries
+        ]
+
+    Catalogue names follow the pattern "<Group> - <Faction>" or
+    "<Group> - <SubCategory> - <Faction>" — we split on " - " and bucket them.
+    Only "Adeptus Astartes" forms a real third tier; everything else is two
+    levels deep. Anything outside the three known top-level groups falls
+    through to the "Other" bucket so nothing disappears.
+    """
+    top_order = ["Imperium", "Xenos", "Chaos"]
+    buckets: dict[str, dict[str | None, list]] = {g: {} for g in top_order}
+    other: dict[str | None, list] = {}
+    for cat in list_factions():
+        parts = cat["name"].split(" - ", 2)
+        if len(parts) < 2:
+            other.setdefault(None, []).append({"id": cat["id"], "name": cat["name"]})
+            continue
+        group = parts[0]
+        target = buckets.get(group, other)
+        if len(parts) == 3 and parts[1] == "Adeptus Astartes":
+            target.setdefault("Adeptus Astartes", []).append(
+                {"id": cat["id"], "name": parts[2]}
+            )
+        elif group == "Imperium" and len(parts) == 2 and parts[1] == "Space Marines":
+            # Generic SM book lives logically next to the chapters under
+            # the Adeptus Astartes subgroup, tagged "(Generic)" so it's
+            # obvious which one to pick when you want non-chapter units.
+            target.setdefault("Adeptus Astartes", []).append(
+                {"id": cat["id"], "name": "Space Marines (Generic)",
+                 "_pin_top": True}
+            )
+        else:
+            display = " - ".join(parts[1:])
+            target.setdefault(None, []).append({"id": cat["id"], "name": display})
+
+    def pack(bucket: dict) -> list[dict]:
+        out: list[dict] = []
+        # Named subgroups (e.g. Adeptus Astartes) first, alphabetised.
+        for sub in sorted(k for k in bucket if k is not None):
+            # Items with _pin_top first, then alphabetical.
+            items = sorted(
+                bucket[sub],
+                key=lambda x: (not x.get("_pin_top"), x["name"].lower()),
+            )
+            out.append({"label": sub, "items": items})
+        if None in bucket:
+            items = sorted(bucket[None], key=lambda x: x["name"].lower())
+            out.append({"label": None, "items": items})
+        return out
+
+    tree: list[dict] = []
+    for g in top_order:
+        sgs = pack(buckets[g])
+        if sgs:
+            tree.append({"label": g, "subgroups": sgs})
+    if other:
+        sgs = pack(other)
+        if sgs:
+            tree.append({"label": "Other", "subgroups": sgs})
+    return tree
 
 
 def list_factions() -> list[sqlite3.Row]:
@@ -1484,10 +1562,18 @@ def models_list():
     return redirect(url_for("lists_index"))
 
 
-def _save_model_loadout(model_id: int, datasheet_id: str, form) -> None:
-    """Validate and persist model loadout choices for the model's picked model_type."""
+def _save_model_loadout(model_id: int, datasheet_id: str, form,
+                         picked_type: str | None = None) -> None:
+    """Validate and persist model loadout choices for the model's picked model_type.
+
+    If picked_type is None, falls back to reading model_type_id from the form
+    (used by the edit flow which still has one type per row). The new-model
+    flow passes picked_type explicitly because one submission can create one
+    row per type.
+    """
     schema = get_loadout_schema(datasheet_id)
-    picked_type = form.get("model_type_id") or ""
+    if picked_type is None:
+        picked_type = form.get("model_type_id") or ""
     # Clear existing
     user_db().execute("DELETE FROM model_loadout WHERE model_id = ?", (model_id,))
     for m_entry in schema:
@@ -1526,7 +1612,6 @@ def model_new():
         return redirect(url_for("lists_index"))
     if request.method == "POST":
         datasheet_id = request.form.get("datasheet_id") or ""
-        model_type_id = request.form.get("model_type_id") or ""
         custom_name = (request.form.get("custom_name") or "").strip()
         status = request.form.get("status") or "unpainted"
         notes = (request.form.get("notes") or "").strip()
@@ -1538,47 +1623,70 @@ def model_new():
         if not ds:
             flash("Please pick a valid datasheet", "error")
             return redirect(url_for("model_new", list=list_id))
-        # If no model_type picked, default to the first model type of this datasheet
-        if not model_type_id:
-            first_m = user_db().execute(
-                "SELECT id FROM unit_models WHERE datasheet_id = ? "
-                "ORDER BY sort_order LIMIT 1",
-                (ds["id"],),
-            ).fetchone()
-            if first_m:
-                model_type_id = first_m["id"]
+        # Per-type quantities: one models row per type with count > 0.
+        # If the form didn't include a count_<id> for any type (older clients
+        # or single-type datasheets without JS), fall back to a single row of
+        # the first type with count=1.
+        type_rows = user_db().execute(
+            "SELECT id, min_count FROM unit_models WHERE datasheet_id = ? "
+            "ORDER BY sort_order", (ds["id"],),
+        ).fetchall()
+        if not type_rows:
+            flash("Datasheet has no model types defined", "error")
+            return redirect(url_for("model_new", list=list_id))
+        picks: list[tuple[str, int]] = []   # (model_type_id, count)
+        for tr in type_rows:
+            raw = request.form.get(f"count_{tr['id']}")
+            if raw is None:
+                continue
+            try:
+                cnt = int(raw)
+            except ValueError:
+                cnt = 0
+            if cnt > 0:
+                picks.append((tr["id"], cnt))
+        if not picks:
+            # Fallback: one row of the first type, count=1. Preserves the
+            # legacy "register one model" UX when count fields are absent.
+            picks = [(type_rows[0]["id"], 1)]
+
         now = datetime.utcnow().isoformat()
-        cur = user_db().execute(
-            "INSERT INTO models (custom_name, datasheet_id, datasheet_name, faction_name, "
-            "status, notes, model_type_id, created_at, updated_at, user_id, list_id) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (custom_name, ds["id"], ds["name"], ds["catalogue_name"],
-             status, notes, model_type_id, now, now, uid, list_id),
-        )
-        model_id = cur.lastrowid
-        _save_model_loadout(model_id, ds["id"], request.form)
-        # Single image per model. Client crops/rotates in the modal before
-        # submission; we just persist what arrives.
+        created_ids: list[int] = []
+        for type_id, cnt in picks:
+            cur = user_db().execute(
+                "INSERT INTO models (custom_name, datasheet_id, datasheet_name, "
+                "faction_name, status, notes, model_type_id, count, "
+                "created_at, updated_at, user_id, list_id) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (custom_name, ds["id"], ds["name"], ds["catalogue_name"],
+                 status, notes, type_id, cnt, now, now, uid, list_id),
+            )
+            new_id = cur.lastrowid
+            created_ids.append(new_id)
+            _save_model_loadout(new_id, ds["id"], request.form, picked_type=type_id)
+
+        # Single image per submission. Linked to the first created row so the
+        # list view can pick it up as that row's cover.
         fs = request.files.get("image")
-        if fs and fs.filename:
+        if fs and fs.filename and created_ids:
             fn = save_uploaded_image(fs)
             if fn:
                 user_db().execute(
                     "INSERT INTO model_images (model_id, filename, uploaded_at) "
                     "VALUES (?, ?, ?)",
-                    (model_id, fn, now),
+                    (created_ids[0], fn, now),
                 )
         # Bump the list's updated_at so it sorts to the top of /lists.
         user_db().execute(
             "UPDATE model_lists SET updated_at = ? WHERE id = ?", (now, list_id),
         )
         user_db().commit()
-        flash("Registered", "ok")
+        flash(f"Registered {len(created_ids)} entry/entries", "ok")
         # Back to the list view after creating — list-centric workflow.
         return redirect(url_for("list_view", list_id=list_id))
     return render_template(
         "model_new.html",
-        factions=list_factions(),
+        faction_tree=faction_tree(),
         status_options=STATUS_OPTIONS,
         preselect_ds=request.args.get("ds") or "",
         target_list=target_list,
@@ -1625,20 +1733,57 @@ def api_datasheet_loadout(datasheet_id: str):
 
 @app.route("/api/datasheets")
 def api_datasheets():
-    """Used by model_new and army to populate the datasheet picker."""
+    """Datasheet picker for model_new. Returns units bucketed into the same
+    tabs the army builder uses (Epic Hero / Character / Battleline / Infantry
+    / Mounted / Beast / Vehicle-Monster / Others).
+
+    If a catalogue is given, the chain is expanded so that e.g. Blood Angels
+    also surfaces base Space Marine units via the inheritance graph.
+    """
     catalogue_id = request.args.get("catalogue") or ""
     q = (request.args.get("q") or "").strip()
-    sql = "SELECT d.id, d.name, d.points, c.name AS catalogue_name FROM datasheets d JOIN catalogues c ON c.id = d.catalogue_id WHERE 1=1"
+    show_legends = request.args.get("show_legends") == "1"
+    where: list[str] = []
     params: list = []
     if catalogue_id:
-        sql += " AND d.catalogue_id = ?"
-        params.append(catalogue_id)
+        chain = get_catalogue_chain(catalogue_id)
+        ph = ",".join("?" * len(chain))
+        where.append(f"d.catalogue_id IN ({ph})")
+        params.extend(chain)
     if q:
-        sql += " AND d.name LIKE ?"
+        where.append("d.name LIKE ?")
         params.append(f"%{q}%")
-    sql += " ORDER BY c.name, d.name LIMIT 200"
+    if not show_legends:
+        # BSData flags Legends units by an "[Legends]" suffix in the name,
+        # not a keyword tag — filter by string.
+        where.append("d.name NOT LIKE '%[Legends]%'")
+    if not where or (len(where) == 1 and not show_legends):
+        # No real filter (only the implicit "hide legends" predicate) → empty
+        # state on the client.
+        return {"tabs": [{"key": k, "label": label, "items": []}
+                         for k, label in UNIT_TABS]}
+    sql = ("SELECT d.id, d.name, d.points, c.name AS catalogue_name, "
+           "GROUP_CONCAT(k.category_name, '|') AS kw_str "
+           "FROM datasheets d "
+           "JOIN catalogues c ON c.id = d.catalogue_id "
+           "LEFT JOIN datasheet_keywords k ON k.datasheet_id = d.id ")
+    sql += " WHERE " + " AND ".join(where)
+    sql += " GROUP BY d.id ORDER BY c.name, d.name LIMIT 500"
     rows = user_db().execute(sql, params).fetchall()
-    return {"items": [dict(r) for r in rows]}
+    buckets = _classify_units_into_tabs(rows)
+    return {
+        "tabs": [
+            {
+                "key": k, "label": label,
+                "items": [
+                    {"id": r["id"], "name": r["name"],
+                     "points": r["points"], "catalogue_name": r["catalogue_name"]}
+                    for r in buckets[k]
+                ],
+            }
+            for k, label in UNIT_TABS
+        ],
+    }
 
 
 @app.route("/models/<int:model_id>")
@@ -1709,7 +1854,8 @@ def model_edit(model_id: int):
         "model_type_id = ?, updated_at = ? WHERE id = ?",
         (custom_name, status, notes, model_type_id, now, model_id),
     )
-    _save_model_loadout(model_id, m["datasheet_id"], request.form)
+    # Wargear/loadout is currently hidden from the model edit form — leave
+    # any pre-existing model_loadout rows untouched. (Was: _save_model_loadout)
     # Single image per model: a new upload wipes any previous images first.
     fs = request.files.get("image")
     if fs and fs.filename:
