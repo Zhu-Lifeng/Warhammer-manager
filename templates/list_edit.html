@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Edit · {{ list.name }}{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('list_view', list_id=list.id) }}">← {{ list.name }}</a></p>
+<h1>Edit list settings</h1>
+
+<form method="post" action="{{ url_for('list_edit', list_id=list.id) }}" enctype="multipart/form-data" class="panel" style="max-width:680px;">
+  <div class="form-grid">
+    <label>Name <input type="text" name="name" required value="{{ list.name }}"></label>
+    <label>Description <textarea name="description" rows="3">{{ list.description or '' }}</textarea></label>
+    <label class="row" style="align-items:center;">
+      <input type="checkbox" name="is_public" value="1" {% if list.is_public %}checked{% endif %}>
+      <span>Public — show on the home page and let guests browse this list</span>
+    </label>
+  </div>
+
+  <div class="section" style="margin-top:1rem;">
+    <h2 style="font-size:1rem;">Cover image</h2>
+    {% if cover_url %}
+      <p><img src="{{ cover_url }}" alt="cover" style="max-width:240px; max-height:160px; border-radius:4px;"></p>
+    {% endif %}
+    <p class="muted" style="font-size:0.85rem;">
+      {% if list.cover_filename %}
+        Custom cover set.
+        <a href="{{ url_for('list_cover_crop', list_id=list.id) }}" class="btn-small">Crop cover →</a>
+      {% else %}
+        No custom cover. The list cover is currently picked at random from the list's model images.
+      {% endif %}
+    </p>
+    <div style="margin-top:0.4rem;">
+      <label class="row" style="align-items:center; margin:0.2rem 0;">
+        <input type="radio" name="cover_action" value="keep" checked>
+        <span>Keep current</span>
+      </label>
+      <label class="row" style="align-items:center; margin:0.2rem 0;">
+        <input type="radio" name="cover_action" value="random">
+        <span>Use a random model image (clear custom cover)</span>
+      </label>
+      <label class="row" style="align-items:center; margin:0.2rem 0;">
+        <input type="radio" name="cover_action" value="upload">
+        <span>Upload a new cover:</span>
+        <input type="file" name="cover_image" accept="image/*">
+      </label>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Save</button>
+    <a href="{{ url_for('list_view', list_id=list.id) }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+
+<div class="section" style="border-top:1px solid #5a1f1f; padding-top:1rem; margin-top:1.5rem;">
+  <h2 style="color:#ff7777;">Danger zone</h2>
+  <p class="muted">Deletes this list and every model in it, including all uploaded images. Cannot be undone.</p>
+  <form method="post" action="{{ url_for('list_delete', list_id=list.id) }}"
+        onsubmit="return confirm('Delete the list {{ list.name|e }} and all its models?');">
+    <button type="submit" class="btn-ghost" style="color:#ff7777; border-color:#5a1f1f;">Delete list</button>
+  </form>
+</div>
+{% endblock %}

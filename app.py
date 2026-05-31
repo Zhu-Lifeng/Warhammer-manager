@@ -334,6 +334,22 @@ def init_user_db(conn: sqlite3.Connection) -> None:
         PRIMARY KEY (child_id, parent_id)
     );
 
+    -- User-defined collections of personal models. Models belong to exactly
+    -- one list; visibility is set per-list, independent of users.is_public.
+    CREATE TABLE IF NOT EXISTS model_lists (
+        id              INTEGER PRIMARY KEY,
+        user_id         INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        name            TEXT NOT NULL,
+        description     TEXT,
+        is_public       INTEGER NOT NULL DEFAULT 0,
+        cover_filename  TEXT,                       -- NULL → random model image
+        created_at      TEXT NOT NULL,
+        updated_at      TEXT NOT NULL
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_model_lists_user   ON model_lists(user_id);
+    CREATE INDEX IF NOT EXISTS idx_model_lists_public ON model_lists(is_public);
+
     CREATE INDEX IF NOT EXISTS idx_army_units_army    ON army_units(army_id);
     CREATE INDEX IF NOT EXISTS idx_model_images_model ON model_images(model_id);
     CREATE INDEX IF NOT EXISTS idx_aul_unit            ON army_unit_loadout(army_unit_id);
@@ -360,6 +376,37 @@ def init_user_db(conn: sqlite3.Connection) -> None:
     if "user_id" not in model_cols:
         conn.execute("ALTER TABLE models ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE CASCADE")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_models_user ON models(user_id)")
+    # models.list_id — every model belongs to exactly one model_lists row.
+    # Nullable on disk for the migration window; auto-claim runs below.
+    if "list_id" not in model_cols:
+        conn.execute("ALTER TABLE models ADD COLUMN list_id INTEGER REFERENCES model_lists(id) ON DELETE CASCADE")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_models_list ON models(list_id)")
+    # Auto-create a "My Models" default list for any user who has unassigned
+    # models. is_public copies their account flag so a public user's models
+    # stay visible after the upgrade.
+    orphan_owners = conn.execute("""
+        SELECT DISTINCT m.user_id FROM models m
+        WHERE m.user_id IS NOT NULL AND m.list_id IS NULL
+    """).fetchall()
+    now = datetime.utcnow().isoformat()
+    for row in orphan_owners:
+        uid = row["user_id"]
+        user_row = conn.execute(
+            "SELECT is_public FROM users WHERE id = ?", (uid,),
+        ).fetchone()
+        is_public = user_row["is_public"] if user_row else 0
+        cur = conn.execute(
+            "INSERT INTO model_lists (user_id, name, description, is_public, "
+            "created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (uid, "My Models",
+             "Auto-created during upgrade. Holds every model you registered "
+             "before the list system existed.",
+             is_public, now, now),
+        )
+        conn.execute(
+            "UPDATE models SET list_id = ? WHERE user_id = ? AND list_id IS NULL",
+            (cur.lastrowid, uid),
+        )
     # If KB tables already exist but catalogue_inherits is empty, seed the
     # default chapter/library relationships now (post-upgrade path).
     has_datasheets_now = conn.execute(
@@ -654,6 +701,96 @@ def uploaded_file(filename: str):
     return send_from_directory(UPLOAD_DIR, filename)
 
 
+def _crop_image_in_place(filename: str, x: int, y: int, w: int, h: int) -> bool:
+    """Crop UPLOAD_DIR/filename to (x,y,w,h) and overwrite. Returns True on success."""
+    target = UPLOAD_DIR / filename
+    if not target.exists():
+        return False
+    try:
+        with Image.open(target) as img:
+            iw, ih = img.size
+            left = max(0, min(x, iw))
+            top = max(0, min(y, ih))
+            right = max(left + 1, min(x + w, iw))
+            bottom = max(top + 1, min(y + h, ih))
+            cropped = img.crop((left, top, right, bottom))
+            cropped.save(target)
+        return True
+    except Exception:
+        return False
+
+
+def _parse_crop_form() -> tuple[int, int, int, int] | None:
+    try:
+        x = int(request.form.get("x") or 0)
+        y = int(request.form.get("y") or 0)
+        w = int(request.form.get("w") or 0)
+        h = int(request.form.get("h") or 0)
+    except ValueError:
+        return None
+    if w <= 0 or h <= 0:
+        return None
+    return x, y, w, h
+
+
+@app.route("/models/<int:model_id>/image/<int:image_id>/crop",
+           methods=["GET", "POST"])
+@login_required
+def model_image_crop(model_id: int, image_id: int):
+    uid = require_user_id()
+    db = user_db()
+    row = db.execute("""
+        SELECT mi.id, mi.filename, m.list_id FROM model_images mi
+        JOIN models m ON m.id = mi.model_id
+        WHERE mi.id = ? AND mi.model_id = ? AND m.user_id = ?
+    """, (image_id, model_id, uid)).fetchone()
+    if not row:
+        abort(404)
+    if request.method == "POST":
+        crop = _parse_crop_form()
+        if crop is None:
+            flash("Bad crop region", "error")
+            return redirect(url_for("model_image_crop",
+                                    model_id=model_id, image_id=image_id))
+        if not _crop_image_in_place(row["filename"], *crop):
+            flash("Crop failed (image missing or corrupt)", "error")
+        else:
+            flash("Image cropped", "ok")
+        return redirect(url_for("model_detail", model_id=model_id))
+    return render_template(
+        "crop.html", filename=row["filename"],
+        back_url=url_for("model_detail", model_id=model_id),
+        post_url=url_for("model_image_crop",
+                         model_id=model_id, image_id=image_id),
+        title=f"Crop image #{image_id}",
+    )
+
+
+@app.route("/lists/<int:list_id>/cover/crop", methods=["GET", "POST"])
+@login_required
+def list_cover_crop(list_id: int):
+    list_row = _ensure_owned_list(list_id)
+    if not list_row["cover_filename"]:
+        flash("Upload a cover image first", "error")
+        return redirect(url_for("list_edit", list_id=list_id))
+    if request.method == "POST":
+        crop = _parse_crop_form()
+        if crop is None:
+            flash("Bad crop region", "error")
+            return redirect(url_for("list_cover_crop", list_id=list_id))
+        if not _crop_image_in_place(list_row["cover_filename"], *crop):
+            flash("Crop failed", "error")
+        else:
+            flash("Cover cropped", "ok")
+        return redirect(url_for("list_edit", list_id=list_id))
+    return render_template(
+        "crop.html", filename=list_row["cover_filename"],
+        back_url=url_for("list_edit", list_id=list_id),
+        post_url=url_for("list_cover_crop", list_id=list_id),
+        title="Crop list cover",
+    )
+
+
 @app.route("/")
 def index():
     db_u = user_db()
@@ -662,20 +799,39 @@ def index():
         n_armies = db_u.execute(
             "SELECT COUNT(*) AS n FROM armies WHERE user_id = ?", (me["id"],),
         ).fetchone()["n"]
-        n_models = db_u.execute(
-            "SELECT COUNT(*) AS n FROM models WHERE user_id = ?", (me["id"],),
+        n_my_lists = db_u.execute(
+            "SELECT COUNT(*) AS n FROM model_lists WHERE user_id = ?", (me["id"],),
         ).fetchone()["n"]
     else:
-        n_armies = n_models = 0
+        n_armies = n_my_lists = 0
     n_units = user_db().execute("SELECT COUNT(*) AS n FROM datasheets").fetchone()["n"]
     n_factions = len(list_factions())
     n_public_users = db_u.execute(
         "SELECT COUNT(*) AS n FROM users WHERE is_public = 1"
     ).fetchone()["n"]
+    # Public list gallery — guests included. Anyone (logged in or not) sees
+    # every list that was flagged is_public, regardless of the owner's account
+    # visibility (list visibility is intentionally independent).
+    list_rows = db_u.execute("""
+        SELECT l.id, l.name, l.description, l.cover_filename, l.created_at,
+               u.username AS owner,
+               (SELECT COUNT(*) FROM models m WHERE m.list_id = l.id) AS n_models
+        FROM model_lists l
+        JOIN users u ON u.id = l.user_id
+        WHERE l.is_public = 1
+        ORDER BY l.updated_at DESC LIMIT 60
+    """).fetchall()
+    public_lists = [
+        {**dict(r), "cover_url": _list_cover_url(r, db_u)} for r in list_rows
+    ]
+    n_public_lists = db_u.execute(
+        "SELECT COUNT(*) AS n FROM model_lists WHERE is_public = 1"
+    ).fetchone()["n"]
     return render_template(
         "index.html",
-        n_armies=n_armies, n_models=n_models, n_units=n_units, n_factions=n_factions,
-        n_public_users=n_public_users,
+        n_armies=n_armies, n_my_lists=n_my_lists, n_units=n_units, n_factions=n_factions,
+        n_public_users=n_public_users, n_public_lists=n_public_lists,
+        public_lists=public_lists,
     )
 
 
@@ -807,6 +963,59 @@ def query_unit(datasheet_id: str):
 # Routes — module 2: army builder
 # ---------------------------------------------------------------------------- #
 
+# Tabs for the "Available units" panel in army_view. Order matches what the
+# user sees; classification priority is top-down (Epic Hero wins over Character
+# which wins over Vehicle/Monster, etc.) so a unit lands in exactly one bucket.
+UNIT_TABS = (
+    ("epic_hero",       "Epic Hero"),
+    ("character",       "Character"),
+    ("battleline",      "Battleline"),
+    ("infantry",        "Infantry"),
+    ("mounted",         "Mounted"),
+    ("beast",           "Beast"),
+    ("vehicle_monster", "Vehicle / Monster"),
+    ("others",          "Others"),
+)
+
+
+def _classify_unit_keywords(kws: set[str]) -> str:
+    """Return the tab key a unit belongs to based on its keywords.
+
+    Priority order:
+      1. Epic Hero / Character — named or generic characters
+      2. Battleline — battleline units of any base type
+      3. Mounted / Beast — distinct unit-type keywords (no overlap with
+         Infantry / Vehicle / Monster in the KB)
+      4. Vehicle / Monster
+      5. Infantry
+      6. Others
+    """
+    if "Epic Hero" in kws:
+        return "epic_hero"
+    if "Character" in kws:
+        return "character"
+    if "Battleline" in kws:
+        return "battleline"
+    if "Mounted" in kws:
+        return "mounted"
+    if "Beast" in kws:
+        return "beast"
+    if "Vehicle" in kws or "Monster" in kws:
+        return "vehicle_monster"
+    if "Infantry" in kws:
+        return "infantry"
+    return "others"
+
+
+def _classify_units_into_tabs(rows: list[sqlite3.Row]) -> dict[str, list[dict]]:
+    """Bucket query rows (with a 'kw_str' column) into UNIT_TABS keys."""
+    buckets: dict[str, list[dict]] = {k: [] for k, _ in UNIT_TABS}
+    for r in rows:
+        kws = set((r["kw_str"] or "").split("|"))
+        buckets[_classify_unit_keywords(kws)].append(dict(r))
+    return buckets
+
+
 @app.route("/army")
 @login_required
 def army_list():
@@ -905,21 +1114,29 @@ def army_view(army_id: int):
         units.append(d)
 
     keyword = (request.args.get("keyword") or "").strip()
+    show_legends = request.args.get("show_legends") == "1"
     # Expand the army's catalogue with its inherited parents (chapter → base SM
     # etc.) so the unit picker shows everything the army can legally field.
     cat_chain = get_catalogue_chain(army["faction_id"])
     placeholders = ",".join("?" * len(cat_chain))
-    sql = ("SELECT DISTINCT d.id, d.name, d.points FROM datasheets d ")
-    params: list = list(cat_chain)
+    # Pull keywords inline via GROUP_CONCAT so we can classify into tabs in
+    # Python without a second per-row query.
+    avail_rows = user_db().execute(f"""
+        SELECT d.id, d.name, d.points,
+               GROUP_CONCAT(k.category_name, '|') AS kw_str
+        FROM datasheets d
+        LEFT JOIN datasheet_keywords k ON k.datasheet_id = d.id
+        WHERE d.catalogue_id IN ({placeholders})
+        GROUP BY d.id ORDER BY d.name
+    """, cat_chain).fetchall()
     if keyword:
-        sql += (" JOIN datasheet_keywords k ON k.datasheet_id = d.id "
-                f"WHERE d.catalogue_id IN ({placeholders}) "
-                "AND k.category_name = ?")
-        params.append(keyword)
-    else:
-        sql += f" WHERE d.catalogue_id IN ({placeholders})"
-    sql += " ORDER BY d.name"
-    available = user_db().execute(sql, params).fetchall()
+        avail_rows = [r for r in avail_rows
+                      if keyword in (r["kw_str"] or "").split("|")]
+    # Legends units are flagged by a literal "[Legends]" suffix in the name —
+    # there is no separate keyword tag in BSData for it.
+    if not show_legends:
+        avail_rows = [r for r in avail_rows if "[Legends]" not in (r["name"] or "")]
+    available_by_tab = _classify_units_into_tabs(avail_rows)
     # Keywords available across the full chain
     kw_rows = user_db().execute(
         f"SELECT DISTINCT k.category_name FROM datasheet_keywords k "
@@ -930,8 +1147,9 @@ def army_view(army_id: int):
     return render_template(
         "army_view.html",
         army=army, units=units, total=total,
-        available=available, faction_keywords=[r["category_name"] for r in kw_rows],
-        filter_keyword=keyword,
+        available_by_tab=available_by_tab, tab_defs=UNIT_TABS,
+        faction_keywords=[r["category_name"] for r in kw_rows],
+        filter_keyword=keyword, show_legends=show_legends,
     )
 
 
@@ -1113,73 +1331,186 @@ def save_uploaded_image(file_storage) -> str | None:
     return fname
 
 
+# ---------------------------------------------------------------------------- #
+# Routes — model lists (collections of personal models)
+# ---------------------------------------------------------------------------- #
+
+def _list_cover_url(list_row: sqlite3.Row, db: sqlite3.Connection) -> str | None:
+    """Return the URL for a list's cover — explicit cover_filename if set,
+    otherwise a random image from one of the list's models. None if empty.
+    """
+    if list_row["cover_filename"]:
+        return url_for("uploaded_file", filename=list_row["cover_filename"])
+    img = db.execute("""
+        SELECT mi.filename FROM model_images mi
+        JOIN models m ON m.id = mi.model_id
+        WHERE m.list_id = ?
+        ORDER BY RANDOM() LIMIT 1
+    """, (list_row["id"],)).fetchone()
+    if img:
+        return url_for("uploaded_file", filename=img["filename"])
+    return None
+
+
+def _user_can_view_list(list_row: sqlite3.Row) -> bool:
+    if list_row["is_public"]:
+        return True
+    me = current_user()
+    return me is not None and me["id"] == list_row["user_id"]
+
+
+def _ensure_owned_list(list_id: int) -> sqlite3.Row:
+    """Fetch a list, abort 404 if it doesn't exist or current user doesn't own it."""
+    uid = require_user_id()
+    row = user_db().execute(
+        "SELECT * FROM model_lists WHERE id = ? AND user_id = ?",
+        (list_id, uid),
+    ).fetchone()
+    if not row:
+        abort(404)
+    return row
+
+
+@app.route("/lists")
+@login_required
+def lists_index():
+    uid = require_user_id()
+    rows = user_db().execute("""
+        SELECT l.*,
+               (SELECT COUNT(*) FROM models m WHERE m.list_id = l.id) AS n_models
+        FROM model_lists l
+        WHERE l.user_id = ? ORDER BY l.updated_at DESC, l.created_at DESC
+    """, (uid,)).fetchall()
+    db = user_db()
+    enriched = [
+        {**dict(r), "cover_url": _list_cover_url(r, db)} for r in rows
+    ]
+    return render_template("lists.html", lists=enriched)
+
+
+@app.route("/lists/new", methods=["GET", "POST"])
+@login_required
+def list_new():
+    uid = require_user_id()
+    if request.method == "POST":
+        name = (request.form.get("name") or "").strip()
+        description = (request.form.get("description") or "").strip() or None
+        is_public = 1 if request.form.get("is_public") == "1" else 0
+        if not name:
+            flash("List name is required", "error")
+            return redirect(url_for("list_new"))
+        now = datetime.utcnow().isoformat()
+        cur = user_db().execute(
+            "INSERT INTO model_lists (user_id, name, description, is_public, "
+            "created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (uid, name, description, is_public, now, now),
+        )
+        user_db().commit()
+        flash(f"Created list “{name}”", "ok")
+        return redirect(url_for("list_view", list_id=cur.lastrowid))
+    return render_template("list_new.html")
+
+
+@app.route("/lists/<int:list_id>")
+def list_view(list_id: int):
+    list_row = user_db().execute(
+        "SELECT l.*, u.username AS owner FROM model_lists l "
+        "JOIN users u ON u.id = l.user_id WHERE l.id = ?",
+        (list_id,),
+    ).fetchone()
+    if not list_row:
+        abort(404)
+    if not _user_can_view_list(list_row):
+        abort(404)
+    me = current_user()
+    is_owner = me is not None and me["id"] == list_row["user_id"]
+    models = user_db().execute("""
+        SELECT m.*,
+               (SELECT filename FROM model_images WHERE model_id = m.id
+                ORDER BY id LIMIT 1) AS cover,
+               (SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images
+        FROM models m WHERE m.list_id = ? ORDER BY m.created_at DESC
+    """, (list_id,)).fetchall()
+    return render_template(
+        "list_view.html",
+        list=list_row, models=models, is_owner=is_owner,
+        status_map=STATUS_MAP,
+    )
+
+
+@app.route("/lists/<int:list_id>/edit", methods=["GET", "POST"])
+@login_required
+def list_edit(list_id: int):
+    list_row = _ensure_owned_list(list_id)
+    db = user_db()
+    if request.method == "POST":
+        name = (request.form.get("name") or "").strip()
+        description = (request.form.get("description") or "").strip() or None
+        is_public = 1 if request.form.get("is_public") == "1" else 0
+        if not name:
+            flash("Name is required", "error")
+            return redirect(url_for("list_edit", list_id=list_id))
+        # Optional: clear cover (radio: random) — set cover_filename to NULL.
+        cover_action = request.form.get("cover_action") or ""
+        cover_updates_sql = ""
+        cover_args: list = []
+        if cover_action == "random":
+            cover_updates_sql = ", cover_filename = NULL"
+        elif cover_action == "upload":
+            fs = request.files.get("cover_image")
+            if fs and fs.filename:
+                fn = save_uploaded_image(fs)
+                if fn:
+                    cover_updates_sql = ", cover_filename = ?"
+                    cover_args = [fn]
+                else:
+                    flash("Cover image rejected (bad format or too large)", "error")
+        now = datetime.utcnow().isoformat()
+        db.execute(
+            f"UPDATE model_lists SET name = ?, description = ?, is_public = ?, "
+            f"updated_at = ?{cover_updates_sql} WHERE id = ?",
+            [name, description, is_public, now, *cover_args, list_id],
+        )
+        db.commit()
+        flash("List updated", "ok")
+        return redirect(url_for("list_edit", list_id=list_id))
+    cover_url = _list_cover_url(list_row, db)
+    return render_template(
+        "list_edit.html", list=list_row, cover_url=cover_url,
+    )
+
+
+@app.route("/lists/<int:list_id>/delete", methods=["POST"])
+@login_required
+def list_delete(list_id: int):
+    list_row = _ensure_owned_list(list_id)
+    db = user_db()
+    # Cascade: collect every uploaded filename so we can unlink them on disk.
+    img_rows = db.execute("""
+        SELECT mi.filename FROM model_images mi
+        JOIN models m ON m.id = mi.model_id WHERE m.list_id = ?
+    """, (list_id,)).fetchall()
+    db.execute("DELETE FROM model_lists WHERE id = ?", (list_id,))
+    db.commit()
+    for r in img_rows:
+        try:
+            (UPLOAD_DIR / r["filename"]).unlink(missing_ok=True)
+        except Exception:
+            pass
+    if list_row["cover_filename"]:
+        try:
+            (UPLOAD_DIR / list_row["cover_filename"]).unlink(missing_ok=True)
+        except Exception:
+            pass
+    flash(f"Deleted list “{list_row['name']}” and its {len(img_rows)} image(s)", "ok")
+    return redirect(url_for("lists_index"))
+
+
 @app.route("/models")
 @login_required
 def models_list():
-    uid = require_user_id()
-    args = request.args
-    faction = (args.get("faction") or "").strip()
-    keyword = (args.get("keyword") or "").strip()
-    status = (args.get("status") or "").strip()
-    q      = (args.get("q") or "").strip()
-
-    # Keyword filter → look up matching datasheet_ids from KB
-    ds_filter_ids: set[str] | None = None
-    if keyword:
-        kb_rows = user_db().execute(
-            "SELECT DISTINCT datasheet_id FROM datasheet_keywords "
-            "WHERE category_name = ?",
-            (keyword,),
-        ).fetchall()
-        ds_filter_ids = {r["datasheet_id"] for r in kb_rows}
-        if not ds_filter_ids:
-            ds_filter_ids = {"__none__"}   # force empty result
-
-    where: list[str] = ["m.user_id = ?"]
-    params: list = [uid]
-    if faction:
-        where.append("m.faction_name = ?")
-        params.append(faction)
-    if status:
-        where.append("m.status = ?")
-        params.append(status)
-    if q:
-        where.append("(m.custom_name LIKE ? OR m.datasheet_name LIKE ?)")
-        params.append(f"%{q}%")
-        params.append(f"%{q}%")
-    if ds_filter_ids is not None:
-        placeholders = ",".join("?" * len(ds_filter_ids))
-        where.append(f"m.datasheet_id IN ({placeholders})")
-        params.extend(ds_filter_ids)
-
-    sql = ("SELECT m.*, "
-           "(SELECT filename FROM model_images WHERE model_id = m.id "
-           " ORDER BY id LIMIT 1) AS cover, "
-           "(SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images "
-           "FROM models m WHERE " + " AND ".join(where) +
-           " ORDER BY m.created_at DESC")
-    rows = user_db().execute(sql, params).fetchall()
-    total = user_db().execute(
-        "SELECT COUNT(*) FROM models WHERE user_id = ?", (uid,),
-    ).fetchone()[0]
-
-    # Available faction values (from already-registered models, for the dropdown)
-    faction_rows = user_db().execute(
-        "SELECT DISTINCT faction_name FROM models "
-        "WHERE user_id = ? AND faction_name IS NOT NULL AND faction_name != '' "
-        "ORDER BY faction_name", (uid,),
-    ).fetchall()
-    faction_list = [r["faction_name"] for r in faction_rows]
-
-    return render_template(
-        "models_list.html",
-        models=rows, status_map=STATUS_MAP,
-        status_options=STATUS_OPTIONS,
-        factions=faction_list,
-        keywords=list_keywords(),
-        total=total,
-        f={"faction": faction, "keyword": keyword, "status": status, "q": q},
-    )
+    """Backward-compat: model index now lives at /lists."""
+    return redirect(url_for("lists_index"))
 
 
 def _save_model_loadout(model_id: int, datasheet_id: str, form) -> None:
@@ -1208,6 +1539,20 @@ def _save_model_loadout(model_id: int, datasheet_id: str, form) -> None:
 @login_required
 def model_new():
     uid = require_user_id()
+    # list_id must be present and owned by the current user.
+    list_id_raw = request.values.get("list") or request.values.get("list_id") or ""
+    try:
+        list_id = int(list_id_raw)
+    except ValueError:
+        flash("Pick a list to add this model to", "error")
+        return redirect(url_for("lists_index"))
+    target_list = user_db().execute(
+        "SELECT id, name FROM model_lists WHERE id = ? AND user_id = ?",
+        (list_id, uid),
+    ).fetchone()
+    if not target_list:
+        flash("List not found", "error")
+        return redirect(url_for("lists_index"))
     if request.method == "POST":
         datasheet_id = request.form.get("datasheet_id") or ""
         model_type_id = request.form.get("model_type_id") or ""
@@ -1221,7 +1566,7 @@ def model_new():
         """, (datasheet_id,)).fetchone()
         if not ds:
             flash("Please pick a valid datasheet", "error")
-            return redirect(url_for("model_new"))
+            return redirect(url_for("model_new", list=list_id))
         # If no model_type picked, default to the first model type of this datasheet
         if not model_type_id:
             first_m = user_db().execute(
@@ -1234,10 +1579,10 @@ def model_new():
         now = datetime.utcnow().isoformat()
         cur = user_db().execute(
             "INSERT INTO models (custom_name, datasheet_id, datasheet_name, faction_name, "
-            "status, notes, model_type_id, created_at, updated_at, user_id) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "status, notes, model_type_id, created_at, updated_at, user_id, list_id) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (custom_name, ds["id"], ds["name"], ds["catalogue_name"],
-             status, notes, model_type_id, now, now, uid),
+             status, notes, model_type_id, now, now, uid, list_id),
         )
         model_id = cur.lastrowid
         _save_model_loadout(model_id, ds["id"], request.form)
@@ -1249,6 +1594,10 @@ def model_new():
                     "VALUES (?, ?, ?)",
                     (model_id, fn, now),
                 )
+        # Bump the list's updated_at so it sorts to the top of /lists.
+        user_db().execute(
+            "UPDATE model_lists SET updated_at = ? WHERE id = ?", (now, list_id),
+        )
         user_db().commit()
         flash("Registered", "ok")
         return redirect(url_for("model_detail", model_id=model_id))
@@ -1257,6 +1606,7 @@ def model_new():
         factions=list_factions(),
         status_options=STATUS_OPTIONS,
         preselect_ds=request.args.get("ds") or "",
+        target_list=target_list,
     )
 
 
@@ -1352,11 +1702,16 @@ def model_detail(model_id: int):
                     "slot_name": row["slot_name"],
                     "option_name": row["option_name"],
                 })
+    parent_list = None
+    if m["list_id"] is not None:
+        parent_list = user_db().execute(
+            "SELECT id, name FROM model_lists WHERE id = ?", (m["list_id"],),
+        ).fetchone()
     return render_template(
         "model_detail.html", m=m, imgs=imgs,
         status_options=STATUS_OPTIONS, status_map=STATUS_MAP,
         schema=schema, current=current, model_type_row=model_type_row,
-        loadout_summary=loadout_summary,
+        loadout_summary=loadout_summary, parent_list=parent_list,
     )
 
 
@@ -1609,7 +1964,8 @@ def users_browse():
 @app.route("/u/<username>")
 def public_profile(username: str):
     user = _get_public_user(username)
-    armies = user_db().execute("""
+    db = user_db()
+    armies = db.execute("""
         SELECT a.*,
                COALESCE(SUM(COALESCE(pt.points, d.points) * u.count), 0) AS total_pts,
                COUNT(u.id) AS n_units
@@ -1621,16 +1977,18 @@ def public_profile(username: str):
         WHERE a.user_id = ?
         GROUP BY a.id ORDER BY a.created_at DESC
     """, (user["id"],)).fetchall()
-    models = user_db().execute("""
-        SELECT m.*,
-               (SELECT filename FROM model_images WHERE model_id = m.id
-                ORDER BY id LIMIT 1) AS cover,
-               (SELECT COUNT(*) FROM model_images WHERE model_id = m.id) AS n_images
-        FROM models m WHERE m.user_id = ? ORDER BY m.created_at DESC
+    list_rows = db.execute("""
+        SELECT l.*,
+               (SELECT COUNT(*) FROM models m WHERE m.list_id = l.id) AS n_models
+        FROM model_lists l
+        WHERE l.user_id = ? AND l.is_public = 1
+        ORDER BY l.updated_at DESC
     """, (user["id"],)).fetchall()
+    public_lists = [
+        {**dict(r), "cover_url": _list_cover_url(r, db)} for r in list_rows
+    ]
     return render_template(
-        "u_profile.html", user=user, armies=armies, models=models,
-        status_map=STATUS_MAP,
+        "u_profile.html", user=user, armies=armies, public_lists=public_lists,
     )
 
 

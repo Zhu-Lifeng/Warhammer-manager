@@ -57,7 +57,7 @@
   <div>
     <div class="section">
       <h2>Available units</h2>
-      <form method="get" style="margin-bottom:0.6rem;">
+      <form method="get" style="margin-bottom:0.6rem; display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
         <label>Filter by keyword:
           <select name="keyword" onchange="this.form.submit()">
             <option value="">All</option>
@@ -66,32 +66,76 @@
             {% endfor %}
           </select>
         </label>
-        {% if filter_keyword %}<a href="{{ url_for('army_view', army_id=army.id) }}" class="btn btn-ghost btn-small">Clear</a>{% endif %}
+        <label style="display:flex; align-items:center; gap:0.3rem; white-space:nowrap;">
+          <input type="checkbox" name="show_legends" value="1" {% if show_legends %}checked{% endif %} onchange="this.form.submit()">
+          <span>Show Legends</span>
+        </label>
+        {% if filter_keyword %}<a href="{{ url_for('army_view', army_id=army.id, show_legends='1' if show_legends else None) }}" class="btn btn-ghost btn-small">Clear</a>{% endif %}
       </form>
 
-      {% if available %}
-        <div class="table-wrap">
-        <table class="compact">
-          <thead><tr><th>Unit</th><th>Pts</th><th></th></tr></thead>
-          <tbody>
-            {% for d in available %}
-              <tr>
-                <td><a href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a></td>
-                <td>
-                  {{ d.points if d.points is not none else '-' }}
-                </td>
-                <td>
-                  <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" style="display:inline">
-                    <input type="hidden" name="datasheet_id" value="{{ d.id }}">
-                    <input type="number" name="count" value="1" min="1" max="20" style="width:3.5rem;">
-                    <button type="submit" class="btn-small">+ Add</button>
-                  </form>
-                </td>
-              </tr>
+      {% set total_avail = available_by_tab.values() | map('length') | sum %}
+      {% if total_avail %}
+        {% set first_nonempty = namespace(key=None) %}
+        {% for key, label in tab_defs %}
+          {% if available_by_tab[key] and first_nonempty.key is none %}
+            {% set first_nonempty.key = key %}
+          {% endif %}
+        {% endfor %}
+        <div class="unit-tabs">
+          <div class="tab-headers">
+            {% for key, label in tab_defs %}
+              <button type="button" class="tab-header {{ 'active' if key == first_nonempty.key else '' }}"
+                      data-tab="{{ key }}"
+                      {% if not available_by_tab[key] %}disabled{% endif %}>
+                {{ label }} <span class="muted">({{ available_by_tab[key] | length }})</span>
+              </button>
             {% endfor %}
-          </tbody>
-        </table>
+          </div>
+          {% for key, label in tab_defs %}
+            <div class="tab-panel {{ 'active' if key == first_nonempty.key else '' }}" data-tab="{{ key }}">
+              {% if available_by_tab[key] %}
+              <div class="table-wrap">
+              <table class="compact">
+                <thead><tr><th>Unit</th><th>Pts</th><th></th></tr></thead>
+                <tbody>
+                  {% for d in available_by_tab[key] %}
+                    <tr>
+                      <td><a href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a></td>
+                      <td>{{ d.points if d.points is not none else '-' }}</td>
+                      <td>
+                        <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" style="display:inline">
+                          <input type="hidden" name="datasheet_id" value="{{ d.id }}">
+                          <input type="number" name="count" value="1" min="1" max="20" style="width:3.5rem;">
+                          <button type="submit" class="btn-small">+ Add</button>
+                        </form>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              </div>
+              {% else %}
+                <p class="muted">No units in this category.</p>
+              {% endif %}
+            </div>
+          {% endfor %}
         </div>
+        <script>
+          (function(){
+            var root = document.currentScript.previousElementSibling;
+            root.querySelectorAll('.tab-header').forEach(function(btn){
+              btn.addEventListener('click', function(){
+                var key = btn.dataset.tab;
+                root.querySelectorAll('.tab-header').forEach(function(b){
+                  b.classList.toggle('active', b.dataset.tab === key);
+                });
+                root.querySelectorAll('.tab-panel').forEach(function(p){
+                  p.classList.toggle('active', p.dataset.tab === key);
+                });
+              });
+            });
+          })();
+        </script>
       {% else %}
         <p class="muted">No units in this catalogue.</p>
       {% endif %}

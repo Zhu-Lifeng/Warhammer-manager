@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ list.name }}{% endblock %}
+{% block body %}
+<p>
+  {% if is_owner %}<a href="{{ url_for('lists_index') }}">← My Lists</a>
+  {% else %}<a href="{{ url_for('index') }}">← Home</a>{% endif %}
+</p>
+<h1>{{ list.name }}
+  {% if list.is_public %}<span class="badge" style="background:#1f4d2c; color:#d0ffdc; font-size:0.6em; vertical-align:middle;">public</span>
+  {% else %}<span class="badge" style="background:#4a4a4a; color:#ddd; font-size:0.6em; vertical-align:middle;">private</span>{% endif %}
+</h1>
+<p class="muted">
+  by <a href="{{ url_for('public_profile', username=list.owner) if list.is_public else url_for('profile') }}">{{ list.owner }}</a>
+  · {{ models | length }} model(s) · created {{ list.created_at | dt }}
+</p>
+{% if list.description %}<div class="panel">{{ list.description | nl2br }}</div>{% endif %}
+
+{% if is_owner %}
+<div class="section">
+  <a href="{{ url_for('model_new', list=list.id) }}" class="btn">+ Register a model in this list</a>
+  <a href="{{ url_for('list_edit', list_id=list.id) }}" class="btn-ghost">Edit list settings</a>
+</div>
+{% endif %}
+
+<div class="section">
+  {% if models %}
+  <div class="image-grid">
+    {% for m in models %}
+    <figure>
+      <a href="{{ url_for('model_detail', model_id=m.id) if is_owner else url_for('public_model', username=list.owner, model_id=m.id) }}">
+        {% if m.cover %}
+          <img src="{{ url_for('uploaded_file', filename=m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
+        {% else %}
+          <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>no image</text></svg>" alt="no image">
+        {% endif %}
+      </a>
+      <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
+        <div><b>{{ m.custom_name or m.datasheet_name }}</b></div>
+        <div class="muted" style="font-size:0.8rem;">{{ m.datasheet_name }}</div>
+        <div class="muted" style="font-size:0.75rem;">{{ status_map.get(m.status, m.status) }}</div>
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="muted">This list has no models yet.{% if is_owner %} Click "+ Register a model in this list" above to start.{% endif %}</p>
+  {% endif %}
+</div>
+{% endblock %}

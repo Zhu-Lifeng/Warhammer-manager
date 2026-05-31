@@ -15,7 +15,7 @@
     <a href="{{ url_for('query_search') }}" class="{{ 'active' if ep.startswith('query') else '' }}">Search</a>
     {% if me %}
       <a href="{{ url_for('army_list') }}" class="{{ 'active' if ep.startswith('army') else '' }}">Armies</a>
-      <a href="{{ url_for('models_list') }}" class="{{ 'active' if ep.startswith('model') else '' }}">My Models</a>
+      <a href="{{ url_for('lists_index') }}" class="{{ 'active' if ep.startswith('list') or ep.startswith('model') else '' }}">My Lists</a>
     {% endif %}
     <a href="{{ url_for('users_browse') }}" class="{{ 'active' if ep in ('users_browse', 'public_profile', 'public_army', 'public_model') else '' }}">Browse</a>
     {% if me and me.role == 'admin' %}

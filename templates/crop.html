@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+<p><a href="{{ back_url }}">← Cancel</a></p>
+<h1>{{ title }}</h1>
+<p class="muted">Drag on the image to select the area you want to keep. Drag the edges of the selection to resize. Click <b>Apply crop</b> to overwrite the image.</p>
+
+<div class="crop-wrap" style="display:inline-block; position:relative; user-select:none;">
+  <img id="crop-img" src="{{ url_for('uploaded_file', filename=filename) }}" style="display:block; max-width:100%;">
+  <div id="crop-sel" style="position:absolute; border:2px solid #ffb84d; background:rgba(255,184,77,0.15); display:none; box-sizing:border-box;">
+    <div data-handle="nw" style="position:absolute; left:-6px; top:-6px; width:10px; height:10px; background:#ffb84d; cursor:nwse-resize;"></div>
+    <div data-handle="ne" style="position:absolute; right:-6px; top:-6px; width:10px; height:10px; background:#ffb84d; cursor:nesw-resize;"></div>
+    <div data-handle="sw" style="position:absolute; left:-6px; bottom:-6px; width:10px; height:10px; background:#ffb84d; cursor:nesw-resize;"></div>
+    <div data-handle="se" style="position:absolute; right:-6px; bottom:-6px; width:10px; height:10px; background:#ffb84d; cursor:nwse-resize;"></div>
+  </div>
+</div>
+
+<form method="post" action="{{ post_url }}" id="crop-form" style="margin-top:0.8rem;">
+  <input type="hidden" name="x" id="crop-x">
+  <input type="hidden" name="y" id="crop-y">
+  <input type="hidden" name="w" id="crop-w">
+  <input type="hidden" name="h" id="crop-h">
+  <div class="row" style="gap:0.5rem;">
+    <button type="submit" class="btn" id="crop-apply" disabled>Apply crop</button>
+    <a href="{{ back_url }}" class="btn-ghost">Cancel</a>
+    <span class="muted" id="crop-info" style="margin-left:0.5rem;">Drag to start selection</span>
+  </div>
+</form>
+
+<script>
+(function(){
+  var img = document.getElementById('crop-img');
+  var sel = document.getElementById('crop-sel');
+  var info = document.getElementById('crop-info');
+  var applyBtn = document.getElementById('crop-apply');
+  var hidden = {
+    x: document.getElementById('crop-x'),
+    y: document.getElementById('crop-y'),
+    w: document.getElementById('crop-w'),
+    h: document.getElementById('crop-h'),
+  };
+
+  // State: selection coords are stored in *natural pixel* units. We render
+  // them scaled to whatever the image is currently displayed at.
+  var rect = null;            // {x, y, w, h} in natural pixels, or null
+  var drag = null;            // {mode: 'new'|'move'|'resize', handle, startX, startY, startRect}
+
+  function naturalToDisplay() { return img.clientWidth / (img.naturalWidth || 1); }
+
+  function renderRect() {
+    if (!rect) { sel.style.display = 'none'; updateHidden(); return; }
+    var s = naturalToDisplay();
+    sel.style.display = 'block';
+    sel.style.left   = (rect.x * s) + 'px';
+    sel.style.top    = (rect.y * s) + 'px';
+    sel.style.width  = (rect.w * s) + 'px';
+    sel.style.height = (rect.h * s) + 'px';
+    updateHidden();
+  }
+
+  function updateHidden() {
+    if (!rect) { applyBtn.disabled = true; info.textContent = 'Drag to start selection'; return; }
+    hidden.x.value = Math.round(rect.x);
+    hidden.y.value = Math.round(rect.y);
+    hidden.w.value = Math.round(rect.w);
+    hidden.h.value = Math.round(rect.h);
+    applyBtn.disabled = (rect.w < 4 || rect.h < 4);
+    info.textContent = Math.round(rect.w) + ' × ' + Math.round(rect.h) + ' px (out of ' + img.naturalWidth + ' × ' + img.naturalHeight + ')';
+  }
+
+  function pointInRect(px, py) {
+    if (!rect) return false;
+    return px >= rect.x && px <= rect.x + rect.w && py >= rect.y && py <= rect.y + rect.h;
+  }
+
+  function eventToNatural(e) {
+    var box = img.getBoundingClientRect();
+    var s = naturalToDisplay();
+    return {
+      x: Math.max(0, Math.min(img.naturalWidth,  (e.clientX - box.left) / s)),
+      y: Math.max(0, Math.min(img.naturalHeight, (e.clientY - box.top)  / s)),
+    };
+  }
+
+  // Resize handles need their own listeners so we can tell them apart from
+  // the move/new-draw cases on the image / selection body.
+  Array.from(sel.querySelectorAll('[data-handle]')).forEach(function(h){
+    h.addEventListener('mousedown', function(e){
+      e.preventDefault(); e.stopPropagation();
+      drag = {mode:'resize', handle:h.dataset.handle, startRect:{...rect}};
+      attachDragListeners();
+    });
+  });
+
+  img.addEventListener('mousedown', function(e){
+    e.preventDefault();
+    var p = eventToNatural(e);
+    if (pointInRect(p.x, p.y)) {
+      drag = {mode:'move', startX:p.x, startY:p.y, startRect:{...rect}};
+    } else {
+      rect = {x:p.x, y:p.y, w:0, h:0};
+      drag = {mode:'new', startX:p.x, startY:p.y};
+    }
+    attachDragListeners();
+  });
+
+  function onMove(e) {
+    if (!drag) return;
+    var p = eventToNatural(e);
+    if (drag.mode === 'new') {
+      var sx = drag.startX, sy = drag.startY;
+      rect = {x:Math.min(sx,p.x), y:Math.min(sy,p.y), w:Math.abs(p.x-sx), h:Math.abs(p.y-sy)};
+    } else if (drag.mode === 'move') {
+      var dx = p.x - drag.startX, dy = p.y - drag.startY;
+      var nx = Math.max(0, Math.min(img.naturalWidth - drag.startRect.w, drag.startRect.x + dx));
+      var ny = Math.max(0, Math.min(img.naturalHeight - drag.startRect.h, drag.startRect.y + dy));
+      rect = {x:nx, y:ny, w:drag.startRect.w, h:drag.startRect.h};
+    } else if (drag.mode === 'resize') {
+      var s0 = drag.startRect;
+      var x1 = s0.x, y1 = s0.y, x2 = s0.x + s0.w, y2 = s0.y + s0.h;
+      if (drag.handle.indexOf('w') !== -1) x1 = Math.min(x2 - 4, p.x);
+      if (drag.handle.indexOf('e') !== -1) x2 = Math.max(x1 + 4, p.x);
+      if (drag.handle.indexOf('n') !== -1) y1 = Math.min(y2 - 4, p.y);
+      if (drag.handle.indexOf('s') !== -1) y2 = Math.max(y1 + 4, p.y);
+      rect = {x:x1, y:y1, w:x2-x1, h:y2-y1};
+    }
+    renderRect();
+  }
+  function onUp() { drag = null; detachDragListeners(); }
+  function attachDragListeners() {
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+  }
+  function detachDragListeners() {
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup', onUp);
+  }
+
+  // Re-render when the image's displayed size changes (e.g. window resize).
+  window.addEventListener('resize', renderRect);
+  // Initial state: rect is null, button disabled.
+  updateHidden();
+})();
+</script>
+{% endblock %}

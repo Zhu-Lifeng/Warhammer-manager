@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}New list{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('lists_index') }}">← My Lists</a></p>
+<h1>Create a new list</h1>
+
+<form method="post" action="{{ url_for('list_new') }}" class="panel" style="max-width:540px;">
+  <div class="form-grid">
+    <label>List name <input type="text" name="name" required autofocus></label>
+    <label>Description <textarea name="description" rows="3" placeholder="Optional"></textarea></label>
+    <label class="row" style="align-items:center;">
+      <input type="checkbox" name="is_public" value="1">
+      <span>Public — show on the home page and let guests browse this list</span>
+    </label>
+  </div>
+  <p class="muted" style="font-size:0.85rem;">After creating the list you can upload a cover image (or leave it blank to use a random model image), and start adding models.</p>
+  <div class="row" style="margin-top:0.8rem;">
+    <button type="submit" class="btn">Create</button>
+    <a href="{{ url_for('lists_index') }}" class="btn-ghost">Cancel</a>
+  </div>
+</form>
+{% endblock %}

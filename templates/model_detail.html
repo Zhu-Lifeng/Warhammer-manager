@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% block title %}{{ m.custom_name or m.datasheet_name }} — Model{% endblock %}
 {% block body %}
-<p><a href="{{ url_for('models_list') }}">← Back</a></p>
+<p>
+  {% if parent_list %}
+    <a href="{{ url_for('lists_index') }}">My Lists</a> ·
+    <a href="{{ url_for('list_view', list_id=parent_list.id) }}">← {{ parent_list.name }}</a>
+  {% else %}
+    <a href="{{ url_for('lists_index') }}">← My Lists</a>
+  {% endif %}
+</p>
 <h1>
   {{ m.custom_name or m.datasheet_name }}
   <span class="badge status-{{ m.status }}">{{ status_map.get(m.status, m.status) }}</span>
@@ -34,9 +41,12 @@
         <a href="{{ url_for('uploaded_file', filename=img.filename) }}" target="_blank">
           <img src="{{ url_for('uploaded_file', filename=img.filename) }}" alt="">
         </a>
-        <form method="post" action="{{ url_for('model_image_delete', model_id=m.id, image_id=img.id) }}" onsubmit="return confirm('Delete this image?');">
-          <button type="submit" class="btn-small btn-ghost">×</button>
-        </form>
+        <div style="display:flex; gap:0.25rem; padding:0.25rem;">
+          <a href="{{ url_for('model_image_crop', model_id=m.id, image_id=img.id) }}" class="btn-small">Crop</a>
+          <form method="post" action="{{ url_for('model_image_delete', model_id=m.id, image_id=img.id) }}" style="margin-left:auto;" onsubmit="return confirm('Delete this image?');">
+            <button type="submit" class="btn-small btn-ghost">×</button>
+          </form>
+        </div>
       </figure>
     {% endfor %}
   </div>

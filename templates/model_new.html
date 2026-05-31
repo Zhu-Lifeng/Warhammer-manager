@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Register model — WH40K 10e{% endblock %}
 {% block body %}
-<p><a href="{{ url_for('models_list') }}">← Back</a></p>
-<h1>Register a new model</h1>
+<p>
+  <a href="{{ url_for('lists_index') }}">My Lists</a> ·
+  <a href="{{ url_for('list_view', list_id=target_list.id) }}">← {{ target_list.name }}</a>
+</p>
+<h1>Register a new model in “{{ target_list.name }}”</h1>
 
 <form method="post" enctype="multipart/form-data" class="panel">
+  <input type="hidden" name="list_id" value="{{ target_list.id }}">
   <div class="form-grid">
     <div>
       <label>Faction (filter units)</label>

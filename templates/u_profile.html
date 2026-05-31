@@ -3,7 +3,7 @@
 {% block body %}
 <p><a href="{{ url_for('users_browse') }}">← Browse Players</a></p>
 <h1>{{ user.username }} <span class="muted" style="font-size:0.6em;">public profile</span></h1>
-<p class="muted">Joined {{ user.created_at | dt }} · {{ armies | length }} army list(s) · {{ models | length }} model(s)</p>
+<p class="muted">Joined {{ user.created_at | dt }} · {{ armies | length }} army list(s) · {{ public_lists | length }} public model list(s)</p>
 
 <div class="section">
   <h2>Armies ({{ armies | length }})</h2>
@@ -26,26 +26,26 @@
 </div>
 
 <div class="section">
-  <h2>Model inventory ({{ models | length }})</h2>
-  {% if models %}
+  <h2>Public model lists ({{ public_lists | length }})</h2>
+  {% if public_lists %}
   <div class="image-grid">
-    {% for m in models %}
+    {% for l in public_lists %}
     <figure>
-      <a href="{{ url_for('public_model', username=user.username, model_id=m.id) }}">
-      {% if m.cover %}
-        <img src="{{ url_for('uploaded_file', filename=m.cover) }}" alt="{{ m.custom_name or m.datasheet_name }}">
-      {% else %}
-        <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>no image</text></svg>" alt="no image">
-      {% endif %}
+      <a href="{{ url_for('list_view', list_id=l.id) }}">
+        {% if l.cover_url %}
+          <img src="{{ l.cover_url }}" alt="{{ l.name }}">
+        {% else %}
+          <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>empty</text></svg>" alt="empty list">
+        {% endif %}
       </a>
       <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
-        <div><b>{{ m.custom_name or m.datasheet_name }}</b></div>
-        <div class="muted" style="font-size:0.8rem;">{{ m.datasheet_name }}</div>
-        <div class="muted" style="font-size:0.75rem;">{{ status_map.get(m.status, m.status) }}</div>
+        <div><b>{{ l.name }}</b></div>
+        <div class="muted" style="font-size:0.8rem;">{{ l.n_models }} model(s)</div>
+        <div class="muted" style="font-size:0.75rem;">{{ l.updated_at | dt }}</div>
       </figcaption>
     </figure>
     {% endfor %}
   </div>
-  {% else %}<p class="muted">No models yet.</p>{% endif %}
+  {% else %}<p class="muted">No public lists yet.</p>{% endif %}
 </div>
 {% endblock %}

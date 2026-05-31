@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}My Lists{% endblock %}
+{% block body %}
+<h1>My model lists</h1>
+<p>
+  <a href="{{ url_for('list_new') }}" class="btn">+ New list</a>
+  <span class="muted" style="margin-left:0.6rem;">{{ lists | length }} list(s) total</span>
+</p>
+
+{% if lists %}
+<div class="image-grid">
+  {% for l in lists %}
+  <figure>
+    <a href="{{ url_for('list_view', list_id=l.id) }}">
+      {% if l.cover_url %}
+        <img src="{{ l.cover_url }}" alt="{{ l.name }}">
+      {% else %}
+        <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;180&quot; height=&quot;180&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23222&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23666&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>empty</text></svg>" alt="empty list">
+      {% endif %}
+    </a>
+    <figcaption style="padding:0.4rem 0.5rem; background:#1c1f26;">
+      <div><b>{{ l.name }}</b>
+        {% if l.is_public %}<span class="badge" style="background:#1f4d2c; color:#d0ffdc;">public</span>
+        {% else %}<span class="badge" style="background:#4a4a4a; color:#ddd;">private</span>{% endif %}
+      </div>
+      <div class="muted" style="font-size:0.75rem;">{{ l.n_models }} model(s) · {{ l.updated_at | dt }}</div>
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">You haven't created any lists yet. Start by clicking <b>+ New list</b> above.</p>
+{% endif %}
+{% endblock %}

@@ -77,6 +77,49 @@ nav.admin-nav a {
 nav.admin-nav a:hover { background: #2a2d35; text-decoration: none; }
 nav.admin-nav a.active { background: #5a4d1f; color: #fff2c0; }
 
+.unit-tabs .tab-headers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  border-bottom: 1px solid #2a2d35;
+  margin-bottom: 0.5rem;
+}
+.unit-tabs .tab-header {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.4rem 0.7rem;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.unit-tabs .tab-header:hover:not(:disabled) { color: #fff; background: #2a2d35; }
+.unit-tabs .tab-header.active {
+  color: #ffb84d;
+  border-bottom-color: #c33;
+  background: #1c1f26;
+}
+.unit-tabs .tab-header:disabled { color: #555; cursor: default; }
+.unit-tabs .tab-header .muted { color: inherit; opacity: 0.6; font-size: 0.85em; }
+.unit-tabs .tab-panel { display: none; }
+.unit-tabs .tab-panel.active { display: block; }
+
+ul.stat-strip {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  font-size: 0.78rem;
+  color: #888;
+}
+ul.stat-strip li { display: inline-flex; align-items: baseline; gap: 0.3rem; }
+ul.stat-strip .num { color: #ccc; font-weight: 600; font-size: 0.85rem; }
+ul.stat-strip a { color: #aaa; font-size: 0.72rem; }
+ul.stat-strip a:hover { color: #ffb84d; }
+
 main {
   max-width: 1280px;
   margin: 1.2rem auto;
