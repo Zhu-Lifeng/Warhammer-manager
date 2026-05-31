@@ -701,94 +701,79 @@ def uploaded_file(filename: str):
     return send_from_directory(UPLOAD_DIR, filename)
 
 
-def _crop_image_in_place(filename: str, x: int, y: int, w: int, h: int) -> bool:
-    """Crop UPLOAD_DIR/filename to (x,y,w,h) and overwrite. Returns True on success."""
+def _replace_uploaded_image(filename: str, file_storage) -> bool:
+    """Overwrite UPLOAD_DIR/filename with file_storage (an edited blob)."""
     target = UPLOAD_DIR / filename
     if not target.exists():
         return False
     try:
-        with Image.open(target) as img:
-            iw, ih = img.size
-            left = max(0, min(x, iw))
-            top = max(0, min(y, ih))
-            right = max(left + 1, min(x + w, iw))
-            bottom = max(top + 1, min(y + h, ih))
-            cropped = img.crop((left, top, right, bottom))
-            cropped.save(target)
+        # Re-validate the incoming blob: must be a real image, capped at the
+        # same thumbnail size as save_uploaded_image so a malicious client
+        # can't push a 200 MB PNG.
+        tmp = target.with_suffix(target.suffix + ".tmp")
+        file_storage.save(tmp)
+        with Image.open(tmp) as img:
+            img.verify()
+        with Image.open(tmp) as img:
+            img.thumbnail((1600, 1600))
+            img.save(target)
+        tmp.unlink(missing_ok=True)
         return True
     except Exception:
+        try:
+            tmp.unlink(missing_ok=True)
+        except Exception:
+            pass
         return False
 
 
-def _parse_crop_form() -> tuple[int, int, int, int] | None:
-    try:
-        x = int(request.form.get("x") or 0)
-        y = int(request.form.get("y") or 0)
-        w = int(request.form.get("w") or 0)
-        h = int(request.form.get("h") or 0)
-    except ValueError:
-        return None
-    if w <= 0 or h <= 0:
-        return None
-    return x, y, w, h
-
-
-@app.route("/models/<int:model_id>/image/<int:image_id>/crop",
-           methods=["GET", "POST"])
+@app.route("/lists/<int:list_id>/cover/replace", methods=["POST"])
 @login_required
-def model_image_crop(model_id: int, image_id: int):
-    uid = require_user_id()
-    db = user_db()
-    row = db.execute("""
-        SELECT mi.id, mi.filename, m.list_id FROM model_images mi
-        JOIN models m ON m.id = mi.model_id
-        WHERE mi.id = ? AND mi.model_id = ? AND m.user_id = ?
-    """, (image_id, model_id, uid)).fetchone()
-    if not row:
-        abort(404)
-    if request.method == "POST":
-        crop = _parse_crop_form()
-        if crop is None:
-            flash("Bad crop region", "error")
-            return redirect(url_for("model_image_crop",
-                                    model_id=model_id, image_id=image_id))
-        if not _crop_image_in_place(row["filename"], *crop):
-            flash("Crop failed (image missing or corrupt)", "error")
-        else:
-            flash("Image cropped", "ok")
-        return redirect(url_for("model_detail", model_id=model_id))
-    return render_template(
-        "crop.html", filename=row["filename"],
-        back_url=url_for("model_detail", model_id=model_id),
-        post_url=url_for("model_image_crop",
-                         model_id=model_id, image_id=image_id),
-        title=f"Crop image #{image_id}",
-    )
+def list_cover_replace(list_id: int):
+    """Save/overwrite a list's custom cover from an edited blob.
 
-
-@app.route("/lists/<int:list_id>/cover/crop", methods=["GET", "POST"])
-@login_required
-def list_cover_crop(list_id: int):
+    If the list already has a cover, overwrite that file in place. Otherwise
+    save the blob as a fresh image and link it. Caller is the in-browser
+    editor's Apply handler.
+    """
     list_row = _ensure_owned_list(list_id)
-    if not list_row["cover_filename"]:
-        flash("Upload a cover image first", "error")
-        return redirect(url_for("list_edit", list_id=list_id))
-    if request.method == "POST":
-        crop = _parse_crop_form()
-        if crop is None:
-            flash("Bad crop region", "error")
-            return redirect(url_for("list_cover_crop", list_id=list_id))
-        if not _crop_image_in_place(list_row["cover_filename"], *crop):
-            flash("Crop failed", "error")
-        else:
-            flash("Cover cropped", "ok")
-        return redirect(url_for("list_edit", list_id=list_id))
-    return render_template(
-        "crop.html", filename=list_row["cover_filename"],
-        back_url=url_for("list_edit", list_id=list_id),
-        post_url=url_for("list_cover_crop", list_id=list_id),
-        title="Crop list cover",
+    fs = request.files.get("image")
+    if not fs or not fs.filename:
+        abort(400)
+    if list_row["cover_filename"]:
+        # Overwrite existing file.
+        if not _replace_uploaded_image(list_row["cover_filename"], fs):
+            abort(400)
+    else:
+        # Save fresh and link it. save_uploaded_image validates + thumbnails.
+        fn = save_uploaded_image(fs)
+        if not fn:
+            abort(400)
+        user_db().execute(
+            "UPDATE model_lists SET cover_filename = ?, updated_at = ? WHERE id = ?",
+            (fn, datetime.utcnow().isoformat(), list_id),
+        )
+        user_db().commit()
+    return {"ok": True}
+
+
+@app.route("/lists/<int:list_id>/cover/clear", methods=["POST"])
+@login_required
+def list_cover_clear(list_id: int):
+    """Drop the custom cover so the list falls back to a random model image."""
+    list_row = _ensure_owned_list(list_id)
+    if list_row["cover_filename"]:
+        try:
+            (UPLOAD_DIR / list_row["cover_filename"]).unlink(missing_ok=True)
+        except Exception:
+            pass
+    user_db().execute(
+        "UPDATE model_lists SET cover_filename = NULL, updated_at = ? WHERE id = ?",
+        (datetime.utcnow().isoformat(), list_id),
     )
+    user_db().commit()
+    flash("Custom cover removed", "ok")
+    return redirect(url_for("list_edit", list_id=list_id))
 
 
 @app.route("/")
@@ -1450,30 +1435,16 @@ def list_edit(list_id: int):
         if not name:
             flash("Name is required", "error")
             return redirect(url_for("list_edit", list_id=list_id))
-        # Optional: clear cover (radio: random) — set cover_filename to NULL.
-        cover_action = request.form.get("cover_action") or ""
-        cover_updates_sql = ""
-        cover_args: list = []
-        if cover_action == "random":
-            cover_updates_sql = ", cover_filename = NULL"
-        elif cover_action == "upload":
-            fs = request.files.get("cover_image")
-            if fs and fs.filename:
-                fn = save_uploaded_image(fs)
-                if fn:
-                    cover_updates_sql = ", cover_filename = ?"
-                    cover_args = [fn]
-                else:
-                    flash("Cover image rejected (bad format or too large)", "error")
-        now = datetime.utcnow().isoformat()
         db.execute(
-            f"UPDATE model_lists SET name = ?, description = ?, is_public = ?, "
-            f"updated_at = ?{cover_updates_sql} WHERE id = ?",
-            [name, description, is_public, now, *cover_args, list_id],
+            "UPDATE model_lists SET name = ?, description = ?, is_public = ?, "
+            "updated_at = ? WHERE id = ?",
+            (name, description, is_public, datetime.utcnow().isoformat(), list_id),
         )
         db.commit()
         flash("List updated", "ok")
         return redirect(url_for("list_edit", list_id=list_id))
+    # Cover is shown + edited via the JS image editor, hitting /cover/replace
+    # and /cover/clear directly — no cover_action radio buttons anymore.
     cover_url = _list_cover_url(list_row, db)
     return render_template(
         "list_edit.html", list=list_row, cover_url=cover_url,
@@ -1586,7 +1557,10 @@ def model_new():
         )
         model_id = cur.lastrowid
         _save_model_loadout(model_id, ds["id"], request.form)
-        for fs in request.files.getlist("images"):
+        # Single image per model. Client crops/rotates in the modal before
+        # submission; we just persist what arrives.
+        fs = request.files.get("image")
+        if fs and fs.filename:
             fn = save_uploaded_image(fs)
             if fn:
                 user_db().execute(
@@ -1600,7 +1574,8 @@ def model_new():
         )
         user_db().commit()
         flash("Registered", "ok")
-        return redirect(url_for("model_detail", model_id=model_id))
+        # Back to the list view after creating — list-centric workflow.
+        return redirect(url_for("list_view", list_id=list_id))
     return render_template(
         "model_new.html",
         factions=list_factions(),
@@ -1735,9 +1710,22 @@ def model_edit(model_id: int):
         (custom_name, status, notes, model_type_id, now, model_id),
     )
     _save_model_loadout(model_id, m["datasheet_id"], request.form)
-    for fs in request.files.getlist("images"):
+    # Single image per model: a new upload wipes any previous images first.
+    fs = request.files.get("image")
+    if fs and fs.filename:
         fn = save_uploaded_image(fs)
         if fn:
+            old = user_db().execute(
+                "SELECT filename FROM model_images WHERE model_id = ?", (model_id,),
+            ).fetchall()
+            user_db().execute(
+                "DELETE FROM model_images WHERE model_id = ?", (model_id,),
+            )
+            for r in old:
+                try:
+                    (UPLOAD_DIR / r["filename"]).unlink(missing_ok=True)
+                except Exception:
+                    pass
             user_db().execute(
                 "INSERT INTO model_images (model_id, filename, uploaded_at) "
                 "VALUES (?, ?, ?)",
@@ -1745,7 +1733,11 @@ def model_edit(model_id: int):
             )
     user_db().commit()
     flash("Saved", "ok")
-    return redirect(url_for("model_detail", model_id=model_id))
+    # Land on the list view after Save (list-centric workflow). If the model
+    # is somehow unlisted, fall back to the lists index.
+    if m["list_id"]:
+        return redirect(url_for("list_view", list_id=m["list_id"]))
+    return redirect(url_for("lists_index"))
 
 
 @app.route("/models/<int:model_id>/delete", methods=["POST"])
@@ -1771,26 +1763,27 @@ def model_delete(model_id: int):
     return redirect(url_for("models_list"))
 
 
-@app.route("/models/<int:model_id>/image/<int:image_id>/delete", methods=["POST"])
+@app.route("/models/<int:model_id>/image/clear", methods=["POST"])
 @login_required
-def model_image_delete(model_id: int, image_id: int):
+def model_image_clear(model_id: int):
+    """Remove every image attached to this model (one-image-per-model UX)."""
     uid = require_user_id()
     owner = user_db().execute(
         "SELECT 1 FROM models WHERE id = ? AND user_id = ?", (model_id, uid),
     ).fetchone()
     if not owner:
         abort(404)
-    row = user_db().execute(
-        "SELECT filename FROM model_images WHERE id = ? AND model_id = ?",
-        (image_id, model_id),
-    ).fetchone()
-    if row:
-        user_db().execute("DELETE FROM model_images WHERE id = ?", (image_id,))
-        user_db().commit()
+    rows = user_db().execute(
+        "SELECT filename FROM model_images WHERE model_id = ?", (model_id,),
+    ).fetchall()
+    user_db().execute("DELETE FROM model_images WHERE model_id = ?", (model_id,))
+    user_db().commit()
+    for r in rows:
         try:
-            (UPLOAD_DIR / row["filename"]).unlink(missing_ok=True)
+            (UPLOAD_DIR / r["filename"]).unlink(missing_ok=True)
         except Exception:
             pass
+    flash("Image cleared", "ok")
     return redirect(url_for("model_detail", model_id=model_id))
 
 

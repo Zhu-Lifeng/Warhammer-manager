@@ -4,7 +4,7 @@
 <p><a href="{{ url_for('list_view', list_id=list.id) }}">← {{ list.name }}</a></p>
 <h1>Edit list settings</h1>
 
-<form method="post" action="{{ url_for('list_edit', list_id=list.id) }}" enctype="multipart/form-data" class="panel" style="max-width:680px;">
+<form method="post" action="{{ url_for('list_edit', list_id=list.id) }}" class="panel" style="max-width:680px;">
   <div class="form-grid">
     <label>Name <input type="text" name="name" required value="{{ list.name }}"></label>
     <label>Description <textarea name="description" rows="3">{{ list.description or '' }}</textarea></label>
@@ -13,42 +13,44 @@
       <span>Public — show on the home page and let guests browse this list</span>
     </label>
   </div>
-
-  <div class="section" style="margin-top:1rem;">
-    <h2 style="font-size:1rem;">Cover image</h2>
-    {% if cover_url %}
-      <p><img src="{{ cover_url }}" alt="cover" style="max-width:240px; max-height:160px; border-radius:4px;"></p>
-    {% endif %}
-    <p class="muted" style="font-size:0.85rem;">
-      {% if list.cover_filename %}
-        Custom cover set.
-        <a href="{{ url_for('list_cover_crop', list_id=list.id) }}" class="btn-small">Crop cover →</a>
-      {% else %}
-        No custom cover. The list cover is currently picked at random from the list's model images.
-      {% endif %}
-    </p>
-    <div style="margin-top:0.4rem;">
-      <label class="row" style="align-items:center; margin:0.2rem 0;">
-        <input type="radio" name="cover_action" value="keep" checked>
-        <span>Keep current</span>
-      </label>
-      <label class="row" style="align-items:center; margin:0.2rem 0;">
-        <input type="radio" name="cover_action" value="random">
-        <span>Use a random model image (clear custom cover)</span>
-      </label>
-      <label class="row" style="align-items:center; margin:0.2rem 0;">
-        <input type="radio" name="cover_action" value="upload">
-        <span>Upload a new cover:</span>
-        <input type="file" name="cover_image" accept="image/*">
-      </label>
-    </div>
-  </div>
-
   <div class="row" style="margin-top:0.8rem;">
     <button type="submit" class="btn">Save</button>
     <a href="{{ url_for('list_view', list_id=list.id) }}" class="btn-ghost">Cancel</a>
   </div>
 </form>
+
+<div class="section">
+  <h2>Cover image</h2>
+  <div class="cover-pane">
+    <div class="cover-preview">
+      {% if cover_url %}
+        <img src="{{ cover_url }}" alt="cover">
+      {% else %}
+        <div class="cover-empty">no cover</div>
+      {% endif %}
+    </div>
+    <div class="cover-actions">
+      <button type="button" class="btn"
+              {% if list.cover_filename %}data-edit-image="{{ cover_url }}"{% endif %}
+              data-edit-post="{{ url_for('list_cover_replace', list_id=list.id) }}">
+        {% if list.cover_filename %}Edit cover{% else %}+ Set cover{% endif %}
+      </button>
+      {% if list.cover_filename %}
+        <form method="post" action="{{ url_for('list_cover_clear', list_id=list.id) }}" style="display:inline;"
+              onsubmit="return confirm('Use random model image instead of the custom cover?');">
+          <button type="submit" class="btn-ghost">Use random instead</button>
+        </form>
+      {% endif %}
+      <p class="muted" style="font-size:0.85rem; margin-top:0.4rem;">
+        {% if list.cover_filename %}
+          Custom cover set. Click <b>Edit cover</b> to crop, rotate, or upload a different image.
+        {% else %}
+          No custom cover. The list cover falls back to a random model image. Click <b>+ Set cover</b> to upload one.
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="section" style="border-top:1px solid #5a1f1f; padding-top:1rem; margin-top:1.5rem;">
   <h2 style="color:#ff7777;">Danger zone</h2>

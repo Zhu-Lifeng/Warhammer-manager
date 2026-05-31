@@ -8,8 +8,12 @@
 </head>
 <body>
 <header class="top">
+  <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+    <span></span><span></span><span></span>
+  </button>
   <span class="brand">WH40K 10e</span>
-  <nav>
+  <nav id="primary-nav" class="primary-nav">
+    <button type="button" class="nav-close" aria-label="Close menu">×</button>
     {% set ep = request.endpoint or '' %}
     <a href="{{ url_for('index') }}" class="{{ 'active' if ep == 'index' else '' }}">Home</a>
     <a href="{{ url_for('query_search') }}" class="{{ 'active' if ep.startswith('query') else '' }}">Search</a>
@@ -21,20 +25,21 @@
     {% if me and me.role == 'admin' %}
       <a href="{{ url_for('admin_home') }}" class="{{ 'active' if ep.startswith('admin') else '' }}">Admin</a>
     {% endif %}
+    <div class="user-menu">
+      {% if me %}
+        <a href="{{ url_for('profile') }}" class="{{ 'active' if ep == 'profile' else '' }}">
+          {{ me.username }}{% if me.role == 'admin' %} <span class="badge">admin</span>{% endif %}
+        </a>
+        <form method="post" action="{{ url_for('logout') }}" style="display:inline;">
+          <button type="submit" class="btn-small btn-ghost">Log out</button>
+        </form>
+      {% else %}
+        <a href="{{ url_for('login') }}" class="{{ 'active' if ep == 'login' else '' }}">Log in</a>
+        <a href="{{ url_for('register') }}" class="{{ 'active' if ep == 'register' else '' }}">Register</a>
+      {% endif %}
+    </div>
   </nav>
-  <div class="user-menu">
-    {% if me %}
-      <a href="{{ url_for('profile') }}" class="{{ 'active' if ep == 'profile' else '' }}">
-        {{ me.username }}{% if me.role == 'admin' %} <span class="badge">admin</span>{% endif %}
-      </a>
-      <form method="post" action="{{ url_for('logout') }}" style="display:inline;">
-        <button type="submit" class="btn-small btn-ghost">Log out</button>
-      </form>
-    {% else %}
-      <a href="{{ url_for('login') }}" class="{{ 'active' if ep == 'login' else '' }}">Log in</a>
-      <a href="{{ url_for('register') }}" class="{{ 'active' if ep == 'register' else '' }}">Register</a>
-    {% endif %}
-  </div>
+  <div id="nav-backdrop" class="nav-backdrop" hidden></div>
 </header>
 <main>
   {% with msgs = get_flashed_messages(with_categories=true) %}
@@ -46,5 +51,32 @@
   {% endwith %}
   {% block body %}{% endblock %}
 </main>
+<script>
+(function () {
+  var nav = document.getElementById("primary-nav");
+  var toggle = document.getElementById("nav-toggle");
+  var backdrop = document.getElementById("nav-backdrop");
+  var closeBtn = nav && nav.querySelector(".nav-close");
+  if (!nav || !toggle) return;
+  function setOpen(open) {
+    nav.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    backdrop.hidden = !open;
+    document.body.classList.toggle("nav-open", open);
+  }
+  toggle.addEventListener("click", function () { setOpen(!nav.classList.contains("open")); });
+  if (closeBtn) closeBtn.addEventListener("click", function () { setOpen(false); });
+  backdrop.addEventListener("click", function () { setOpen(false); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && nav.classList.contains("open")) setOpen(false);
+  });
+  // Tapping a nav link closes the drawer (mobile only — at wider widths the
+  // drawer doesn't exist).
+  nav.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () { setOpen(false); });
+  });
+})();
+</script>
+<script src="{{ url_for('static', filename='image-editor.js') }}" defer></script>
 </body>
 </html>

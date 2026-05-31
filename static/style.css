@@ -28,6 +28,34 @@ header.top {
   top: 0;
   z-index: 50;
 }
+
+/* Hamburger button — hidden on desktop, visible on small screens. */
+.nav-toggle {
+  display: none;
+  background: transparent; border: 0; cursor: pointer;
+  padding: 0.4rem 0.5rem; margin: -0.4rem 0;
+  border-radius: 4px;
+}
+.nav-toggle:hover { background: #2a2d35; }
+.nav-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: #d0d0d0; margin: 4px 0; border-radius: 1px;
+}
+
+/* Close button — only visible inside the drawer (i.e. on small screens). */
+.nav-close {
+  display: none;
+  position: absolute; top: 0.5rem; right: 0.5rem;
+  background: transparent; border: 0; cursor: pointer;
+  color: #ddd; font-size: 1.6rem; line-height: 1;
+  padding: 0.2rem 0.6rem;
+}
+
+.nav-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 90;
+}
 header.top .brand {
   font-weight: bold;
   font-size: 1.05rem;
@@ -301,11 +329,52 @@ dialog, .panel {
     padding: 0.5rem 0.75rem;
     gap: 0.5rem 0.75rem;
   }
-  header.top .brand { font-size: 1rem; }
+  header.top .brand { font-size: 1rem; flex: 1; }
   header.top nav a {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.95rem;
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
   }
+
+  /* Show hamburger, hide the inline nav. The drawer slides in when toggled. */
+  .nav-toggle { display: block; order: -1; }
+  .nav-close { display: block; }
+
+  .primary-nav {
+    position: fixed;
+    top: 0; left: -50%;
+    width: 39%; max-width: 160px;
+    height: 100vh;
+    background: #0c0e12;
+    border-right: 2px solid #c33;
+    z-index: 100;
+    padding: 2.6rem 0.35rem 1rem;
+    display: flex; flex-direction: column;
+    gap: 0.15rem;
+    overflow-y: auto;
+    transition: left 0.2s ease-out;
+    box-shadow: 4px 0 16px rgba(0,0,0,0.4);
+  }
+  .primary-nav a, .primary-nav .user-menu a {
+    padding: 0.55rem 0.55rem;
+    font-size: 0.92rem;
+  }
+  .primary-nav.open { left: 0; }
+  .primary-nav a, .primary-nav .user-menu a {
+    display: block; width: 100%; box-sizing: border-box;
+    text-align: left; padding: 0.7rem 0.8rem;
+    border-radius: 4px;
+  }
+  .primary-nav .user-menu {
+    display: flex; flex-direction: column; align-items: stretch;
+    gap: 0.3rem;
+    margin: 0.6rem 0 0;
+    padding-top: 0.6rem;
+    border-top: 1px solid #2a2d35;
+  }
+  .primary-nav .user-menu form { display: flex; }
+  .primary-nav .user-menu form button { width: 100%; padding: 0.7rem; }
+
+  body.nav-open { overflow: hidden; }
 
   main {
     padding: 0 0.75rem;
@@ -355,22 +424,9 @@ dialog, .panel {
 @media (max-width: 480px) {
   header.top {
     padding: 0.5rem 0.6rem;
-    gap: 0.3rem;
+    gap: 0.4rem;
   }
-  header.top .brand {
-    width: 100%;
-    text-align: center;
-  }
-  header.top nav {
-    width: 100%;
-    justify-content: space-between;
-  }
-  header.top nav a {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.9rem;
-    flex: 1;
-    text-align: center;
-  }
+  header.top .brand { font-size: 0.95rem; }
 
   main { padding: 0 0.6rem; }
 
@@ -401,5 +457,159 @@ dialog, .panel {
 /* Very narrow */
 @media (max-width: 360px) {
   .cards { grid-template-columns: 1fr; }
-  header.top nav a { font-size: 0.85rem; padding: 0.4rem 0.3rem; }
+}
+
+/* Cover-image pane on the list edit page. */
+.cover-pane {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  background: #1c1f26;
+  border: 1px solid #2a2d35;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.cover-pane .cover-preview {
+  flex: 0 0 200px;
+  height: 200px;
+  background: #0c0e12;
+  border: 1px solid #2a2d35;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.cover-pane .cover-preview img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.cover-pane .cover-preview .cover-empty {
+  color: #555; font-style: italic; font-size: 0.9rem;
+}
+.cover-pane .cover-actions {
+  flex: 1; min-width: 220px;
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+@media (max-width: 480px) {
+  .cover-pane .cover-preview { flex: 1 1 100%; height: 220px; }
+}
+
+/* ============================================================
+   Image editor modal
+   ============================================================ */
+
+body.ie-modal-open { overflow: hidden; }
+
+#ie-modal {
+  position: fixed; inset: 0;
+  background: rgba(8, 9, 12, 0.92);
+  z-index: 1000;
+  display: flex; flex-direction: column;
+  /* Touch interactions inside the editor must not scroll the page. */
+}
+
+.ie-instructions {
+  background: #5a4d1f;
+  color: #fff2c0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid #2a2d35;
+}
+
+.ie-toolbar {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  background: #0c0e12;
+  border-bottom: 1px solid #2a2d35;
+}
+.ie-toolbar .ie-spacer { flex: 1; }
+
+.ie-btn, .ie-btn-ghost, .ie-btn-primary {
+  font: inherit; cursor: pointer;
+  min-height: 40px; padding: 0.45rem 0.8rem;
+  border-radius: 4px; border: 1px solid #2a2d35;
+  background: #1c1f26; color: #ddd;
+}
+.ie-btn:hover, .ie-btn-ghost:hover { background: #2a2d35; }
+.ie-btn-primary {
+  background: #c33; border-color: #c33; color: #fff;
+}
+.ie-btn-primary:hover { background: #e44; }
+.ie-btn-ghost { background: transparent; }
+
+.ie-stage {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: 0.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.ie-empty {
+  color: #888; font-size: 1rem; text-align: center; max-width: 360px;
+  padding: 1rem; line-height: 1.5;
+}
+.ie-canvas-wrap {
+  position: relative;
+  max-width: 100%; max-height: 100%;
+  /* Stop touch from panning the page when dragging on the image. */
+  touch-action: none;
+}
+.ie-canvas {
+  display: block;
+  max-width: 100%; max-height: calc(100vh - 120px);
+  background: #000;
+  cursor: crosshair;
+  -webkit-user-select: none; user-select: none;
+}
+.ie-sel {
+  position: absolute;
+  border: 2px solid #ffb84d;
+  background: rgba(255, 184, 77, 0.15);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.ie-handle {
+  position: absolute;
+  width: 24px; height: 24px;
+  background: #ffb84d; border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: auto;
+  touch-action: none;
+}
+.ie-handle[data-h="nw"] { left: -12px; top: -12px;    cursor: nwse-resize; }
+.ie-handle[data-h="ne"] { right: -12px; top: -12px;   cursor: nesw-resize; }
+.ie-handle[data-h="sw"] { left: -12px; bottom: -12px; cursor: nesw-resize; }
+.ie-handle[data-h="se"] { right: -12px; bottom: -12px; cursor: nwse-resize; }
+
+@media (max-width: 480px) {
+  .ie-toolbar { padding: 0.45rem; gap: 0.3rem; }
+  .ie-instructions { font-size: 0.85rem; padding: 0.45rem 0.6rem; }
+  .ie-btn, .ie-btn-ghost, .ie-btn-primary {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.85rem;
+  }
+  /* Bigger touch targets for the handle dots on phones. */
+  .ie-handle { width: 30px; height: 30px; }
+  .ie-handle[data-h="nw"] { left: -15px; top: -15px; }
+  .ie-handle[data-h="ne"] { right: -15px; top: -15px; }
+  .ie-handle[data-h="sw"] { left: -15px; bottom: -15px; }
+  .ie-handle[data-h="se"] { right: -15px; bottom: -15px; }
+}
+
+/* ============================================================
+   Generic mobile fixes (additions to the existing media queries)
+   ============================================================ */
+
+.table-wrap { overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
+.unit-tabs .tab-headers { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+@media (max-width: 480px) {
+  /* All buttons big enough to tap reliably. */
+  .btn, button.btn, button[type="submit"] {
+    min-height: 40px;
+  }
+  /* Forms with .row layout should wrap. */
+  form .row { flex-wrap: wrap; }
+  /* Stat strip stays compact even on tiny phones. */
+  ul.stat-strip { font-size: 0.72rem; gap: 0.3rem 0.7rem; }
+  ul.stat-strip .num { font-size: 0.78rem; }
 }
