@@ -54,3 +54,112 @@ Press CTRL+C to quit
 192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /query/unit/b351-fccc-2121-1e1e?from=army:2 HTTP/1.1" 200 -
 192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /static/style.css HTTP/1.1" 304 -
 192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /static/image-editor.js HTTP/1.1" 304 -
+ * Detected change in 'C:\\Users\\DannyZhu\\PycharmProjects\\Warhammer-manager\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 505-200-365
+ * Detected change in 'C:\\Users\\DannyZhu\\PycharmProjects\\Warhammer-manager\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 505-200-365
+127.0.0.1 - - [05/Jun/2026 16:25:10] "GET /army HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:28:33] "GET /army HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 16:29:42] "GET / HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 16:29:43] "GET /static/style.css HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 16:29:43] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 16:29:43] "GET /uploads/c01d38e8a31f4b7193a14c018d51782d.jpg HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 16:29:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Jun/2026 16:30:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:15] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:15] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:15] "GET /static/image-editor.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Jun/2026 16:30:21] "GET /undefined HTTP/1.1" 404 -
+127.0.0.1 - - [05/Jun/2026 16:30:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:21] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:21] "GET /uploads/c01d38e8a31f4b7193a14c018d51782d.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:21] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:26] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:26] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:26] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:34] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:30:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:34] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:34] "GET /uploads/78442257fd244b5384e0f7db1a43e401.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:34] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:36] "GET /army HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:36] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:36] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:40] "GET /army/new HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:40] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:40] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:47] "POST /army/new HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:30:47] "GET /army/3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:30:47] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:30:47] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:05] "POST /army/3/add HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:31:05] "GET /army/3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:05] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:05] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:20] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:20] "GET /uploads/78442257fd244b5384e0f7db1a43e401.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:20] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:22] "GET /lists HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:22] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:22] "GET /uploads/c01d38e8a31f4b7193a14c018d51782d.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:22] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:24] "GET /army HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:24] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:24] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:25] "GET /army/new HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:25] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:25] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:26] "GET /army HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:26] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:26] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:27] "GET /army/3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:31:27] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:31:27] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:35:10] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:35:38] "GET /army HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:41:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:41:37] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:41:37] "GET /uploads/78442257fd244b5384e0f7db1a43e401.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:37] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:41:39] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:39] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:39] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:42] "GET /army HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:41:42] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:42] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:43] "GET /army/3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:41:43] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:41:43] "GET /static/image-editor.js HTTP/1.1" 304 -
+ * Detected change in 'C:\\Users\\DannyZhu\\PycharmProjects\\Warhammer-manager\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 505-200-365
+127.0.0.1 - - [05/Jun/2026 16:46:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:21] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:21] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:21] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:22] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:22] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:22] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:27] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:27] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:35] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [05/Jun/2026 16:46:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:35] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:35] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:35] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:40] "GET /army HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:40] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:40] "GET /static/image-editor.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:42] "GET /army/3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jun/2026 16:46:42] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Jun/2026 16:46:42] "GET /static/image-editor.js HTTP/1.1" 304 -

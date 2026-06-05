@@ -1,97 +1,72 @@
 {% extends "base.html" %}
 {% block title %}{{ army.name }} — Army{% endblock %}
+
+{# ---- Selected-side unit card (used for top-level units and nested leaders) ---- #}
+{% macro selected_card(u, child=False) %}
+  <div class="ucard ucard--selected{% if u.attached_leaders %} ucard--lead{% endif %}{% if child %} ucard--child{% endif %}">
+    <div class="ucard__thumb">
+      {% if u.img %}<img src="{{ url_for('uploaded_file', filename=u.img) }}" alt="">{% endif %}
+    </div>
+    <div class="ucard__main">
+      <div class="ucard__top">
+        <a class="ucard__name" href="{{ url_for('query_unit', datasheet_id=u.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ u.datasheet_name }}</a>
+        <span class="ucard__pts">{{ (u.effective_points or 0) * u.count }} pts{% if u.count > 1 %} <span class="muted">(×{{ u.count }})</span>{% endif %}</span>
+      </div>
+      <div class="ucard__tags">
+        {% if child %}<span class="badge badge-lead">↳ leads</span>{% endif %}
+        {% if u.is_expanded %}<span class="badge badge-exp" title="{{ u.tier_label }}">expanded</span>{% endif %}
+        {% if u.attached_leaders %}<span class="badge badge-lead">led by {{ u.attached_leaders | length }}</span>{% endif %}
+      </div>
+      {% if u.tier_label or u.loadout_summary %}
+        <ul class="ucard__loadout muted">
+          {% if u.tier_label %}<li>Size: <span class="hl">{{ u.tier_label }}</span></li>{% endif %}
+          {% for s in u.loadout_summary %}
+            <li>{{ s.model_name }} · {{ s.slot_name }}: <span class="hl">{{ s.option_name }}</span></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if u.is_leader and not u.attached_to_id and u.eligible_targets %}
+        <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" class="ucard__attach">
+          <select name="target_id">
+            <option value="">Attach to…</option>
+            {% for t in u.eligible_targets %}<option value="{{ t.id }}">{{ t.name }}</option>{% endfor %}
+          </select>
+          <button type="submit" class="btn-small">Lead</button>
+        </form>
+      {% endif %}
+      <div class="ucard__actions">
+        <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}" class="btn btn-ghost btn-small">Configure</a>
+        {% if child %}
+          <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
+            <button type="submit" class="btn btn-ghost btn-small">Detach</button>
+          </form>
+        {% endif %}
+        <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
+          <button type="submit" class="btn btn-ghost btn-small">Remove</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
 {% block body %}
 <p><a href="{{ url_for('army_list') }}">← Back to armies</a></p>
 <h1>{{ army.name }} <span class="muted" style="font-size:1rem;">— {{ army.faction_name }}</span></h1>
 {% if army.notes %}<p class="muted">{{ army.notes }}</p>{% endif %}
 
-<div class="layout-split">
+<div class="layout-split army-split">
+  {# ---------------- Selected (left) ---------------- #}
   <div>
     <div class="section">
-      <h2>Selected units — total <span style="color:#ffb84d">{{ total }} pts</span></h2>
+      <h2>Selected — total <span class="hl">{{ total }} pts</span></h2>
       {% if units %}
-        <div class="table-wrap">
-        <table class="compact">
-          <thead><tr><th>Unit / loadout</th><th>Pts</th><th>Qty</th><th class="right">Subtotal</th><th></th></tr></thead>
-          <tbody>
-            {% for u in units %}
-              {% set combined = (u.effective_points or 0) * u.count %}
-              {% for ldr in u.attached_leaders %}{% set combined = combined + (ldr.effective_points or 0) * ldr.count %}{% endfor %}
-              <tr {% if u.attached_leaders %}style="border-top:2px solid #3a4a63;"{% endif %}>
-                <td>
-                  <a href="{{ url_for('query_unit', datasheet_id=u.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ u.datasheet_name }}</a>
-                  {% if u.is_expanded %}
-                    <span class="badge" style="background:#1f3a5a; color:#cfe1ff; font-size:0.65rem;" title="{{ u.tier_label }}">expanded</span>
-                  {% endif %}
-                  {% if u.attached_leaders %}
-                    <span class="badge" style="background:#3a2f5a; color:#d9c9ff; font-size:0.65rem;">led by {{ u.attached_leaders | length }}</span>
-                  {% endif %}
-                  {% if u.tier_label or u.loadout_summary %}
-                    <ul class="muted" style="margin:0.25rem 0 0; padding-left:1rem; font-size:0.8rem;">
-                      {% if u.tier_label %}
-                        <li>Size: <span style="color:#ffb84d">{{ u.tier_label }}</span></li>
-                      {% endif %}
-                      {% for s in u.loadout_summary %}
-                        <li>{{ s.model_name }} · {{ s.slot_name }}: <span style="color:#ffb84d">{{ s.option_name }}</span></li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                  {% if u.is_leader and not u.attached_to_id and u.eligible_targets %}
-                    <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" style="margin-top:0.3rem; display:flex; gap:0.3rem; align-items:center; flex-wrap:wrap;">
-                      <select name="target_id" style="font-size:0.8rem;">
-                        <option value="">Attach to…</option>
-                        {% for t in u.eligible_targets %}
-                          <option value="{{ t.id }}">{{ t.name }}</option>
-                        {% endfor %}
-                      </select>
-                      <button type="submit" class="btn-small">Lead</button>
-                    </form>
-                  {% endif %}
-                </td>
-                <td>{{ u.effective_points if u.effective_points is not none else '-' }}</td>
-                <td>×{{ u.count }}</td>
-                <td class="right">
-                  {{ (u.effective_points or 0) * u.count }}
-                  {% if u.attached_leaders %}<br><span class="muted" style="font-size:0.75rem;">∑ {{ combined }}</span>{% endif %}
-                </td>
-                <td style="white-space:nowrap;">
-                  <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}" class="btn btn-ghost btn-small">Configure</a>
-                  <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
-                    <button type="submit" class="btn btn-ghost btn-small">Remove</button>
-                  </form>
-                </td>
-              </tr>
-              {% for ldr in u.attached_leaders %}
-                <tr style="background:#1b2230;">
-                  <td style="padding-left:1.5rem;">
-                    <span class="muted">↳ leads</span>
-                    <a href="{{ url_for('query_unit', datasheet_id=ldr.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ ldr.datasheet_name }}</a>
-                    {% if ldr.tier_label or ldr.loadout_summary %}
-                      <ul class="muted" style="margin:0.25rem 0 0; padding-left:1rem; font-size:0.8rem;">
-                        {% if ldr.tier_label %}<li>Size: <span style="color:#ffb84d">{{ ldr.tier_label }}</span></li>{% endif %}
-                        {% for s in ldr.loadout_summary %}
-                          <li>{{ s.model_name }} · {{ s.slot_name }}: <span style="color:#ffb84d">{{ s.option_name }}</span></li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </td>
-                  <td>{{ ldr.effective_points if ldr.effective_points is not none else '-' }}</td>
-                  <td>×{{ ldr.count }}</td>
-                  <td class="right">{{ (ldr.effective_points or 0) * ldr.count }}</td>
-                  <td style="white-space:nowrap;">
-                    <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=ldr.id) }}" class="btn btn-ghost btn-small">Configure</a>
-                    <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=ldr.id) }}" style="display:inline">
-                      <button type="submit" class="btn btn-ghost btn-small">Detach</button>
-                    </form>
-                    <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=ldr.id) }}" style="display:inline">
-                      <button type="submit" class="btn btn-ghost btn-small">Remove</button>
-                    </form>
-                  </td>
-                </tr>
-              {% endfor %}
+        <div class="ucard-list">
+          {% for u in units %}
+            {{ selected_card(u) }}
+            {% for ldr in u.attached_leaders %}
+              {{ selected_card(ldr, child=True) }}
             {% endfor %}
-          </tbody>
-        </table>
+          {% endfor %}
         </div>
       {% else %}
         <p class="muted">Pick a unit from the list on the right to add it.</p>
@@ -99,23 +74,19 @@
     </div>
   </div>
 
+  {# ---------------- Available (right) ---------------- #}
   <div>
     <div class="section">
-      <h2>Available units</h2>
-      <form method="get" style="margin-bottom:0.6rem; display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
-        <label>Filter by keyword:
-          <select name="keyword" onchange="this.form.submit()">
-            <option value="">All</option>
-            {% for k in faction_keywords %}
-              <option value="{{ k }}" {% if k == filter_keyword %}selected{% endif %}>{{ k }}</option>
-            {% endfor %}
-          </select>
+      <h2>Available</h2>
+      <form method="get" class="army-filters">
+        <label class="chk">
+          <input type="checkbox" name="owned_only" value="1" {% if owned_only %}checked{% endif %} onchange="this.form.submit()">
+          <span>My models only</span>
         </label>
-        <label style="display:flex; align-items:center; gap:0.3rem; white-space:nowrap;">
+        <label class="chk">
           <input type="checkbox" name="show_legends" value="1" {% if show_legends %}checked{% endif %} onchange="this.form.submit()">
-          <span>Show Legends</span>
+          <span>Legends</span>
         </label>
-        {% if filter_keyword %}<a href="{{ url_for('army_view', army_id=army.id, show_legends='1' if show_legends else None) }}" class="btn btn-ghost btn-small">Clear</a>{% endif %}
       </form>
 
       {% set total_avail = available_by_tab.values() | map('length') | sum %}
@@ -139,26 +110,23 @@
           {% for key, label in tab_defs %}
             <div class="tab-panel {{ 'active' if key == first_nonempty.key else '' }}" data-tab="{{ key }}">
               {% if available_by_tab[key] %}
-              <div class="table-wrap">
-              <table class="compact">
-                <thead><tr><th>Unit</th><th>Pts</th><th></th></tr></thead>
-                <tbody>
+                <div class="ucard-list">
                   {% for d in available_by_tab[key] %}
-                    <tr>
-                      <td><a href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a></td>
-                      <td>{{ d.points if d.points is not none else '-' }}</td>
-                      <td>
-                        <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" style="display:inline">
-                          <input type="hidden" name="datasheet_id" value="{{ d.id }}">
-                          <input type="number" name="count" value="1" min="1" max="20" style="width:3.5rem;">
-                          <button type="submit" class="btn-small">+ Add</button>
-                        </form>
-                      </td>
-                    </tr>
+                    <form method="post" action="{{ url_for('army_add_unit', army_id=army.id) }}" class="ucard ucard--add">
+                      <input type="hidden" name="datasheet_id" value="{{ d.id }}">
+                      <div class="ucard__thumb">
+                        {% if d.img %}<img src="{{ url_for('uploaded_file', filename=d.img) }}" alt="">{% endif %}
+                      </div>
+                      <div class="ucard__main">
+                        <div class="ucard__top">
+                          <a class="ucard__name" href="{{ url_for('query_unit', datasheet_id=d.id, **{'from': 'army:' ~ army.id}) }}">{{ d.name }}</a>
+                          <span class="ucard__pts">{{ d.points if d.points is not none else '—' }} pts</span>
+                        </div>
+                      </div>
+                      <button type="submit" class="ucard__add" title="Add to army">+</button>
+                    </form>
                   {% endfor %}
-                </tbody>
-              </table>
-              </div>
+                </div>
               {% else %}
                 <p class="muted">No units in this category.</p>
               {% endif %}
@@ -182,7 +150,7 @@
           })();
         </script>
       {% else %}
-        <p class="muted">No units in this catalogue.</p>
+        <p class="muted">No units match{% if owned_only %} — try unchecking “My models only”.{% else %} this catalogue.{% endif %}</p>
       {% endif %}
     </div>
   </div>

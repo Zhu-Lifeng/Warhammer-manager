@@ -1198,6 +1198,39 @@ def build_attachment_view(units: list[dict], cat_chain: list[str]) -> list[dict]
             if not (u.get("attached_to_id") and u["attached_to_id"] in by_id)]
 
 
+def user_owned_datasheets(uid: int) -> set[str]:
+    """Datasheet ids the user has registered a personal model for."""
+    rows = user_db().execute(
+        "SELECT DISTINCT datasheet_id FROM models WHERE user_id = ?", (uid,),
+    ).fetchall()
+    return {r["datasheet_id"] for r in rows}
+
+
+def user_images_by_datasheet(uid: int, datasheet_ids) -> dict[str, str]:
+    """Map datasheet_id → one of the user's uploaded image filenames for it.
+
+    Lets the army builder show a thumbnail of the player's own painted mini on
+    each unit card. Datasheets with no owned image are simply absent from the
+    map (the card renders an empty slot). The lowest model_images.id wins so the
+    pick is stable across renders.
+    """
+    ids = list({d for d in datasheet_ids if d})
+    if not ids:
+        return {}
+    placeholders = ",".join("?" * len(ids))
+    rows = user_db().execute(
+        f"SELECT m.datasheet_id AS ds, mi.filename AS fn "
+        f"FROM models m JOIN model_images mi ON mi.model_id = m.id "
+        f"WHERE m.user_id = ? AND m.datasheet_id IN ({placeholders}) "
+        f"ORDER BY mi.id",
+        [uid, *ids],
+    ).fetchall()
+    out: dict[str, str] = {}
+    for r in rows:
+        out.setdefault(r["ds"], r["fn"])  # first (lowest id) wins
+    return out
+
+
 @app.route("/army")
 @login_required
 def army_list():
@@ -1295,8 +1328,8 @@ def army_view(army_id: int):
         total += (d["effective_points"] or 0) * d["count"]
         units.append(d)
 
-    keyword = (request.args.get("keyword") or "").strip()
     show_legends = request.args.get("show_legends") == "1"
+    owned_only = request.args.get("owned_only") == "1"
     # Expand the army's catalogue with its inherited parents (chapter → base SM
     # etc.) so the unit picker shows everything the army can legally field.
     cat_chain = get_catalogue_chain(army["faction_id"])
@@ -1311,30 +1344,35 @@ def army_view(army_id: int):
         WHERE d.catalogue_id IN ({placeholders})
         GROUP BY d.id ORDER BY d.name
     """, cat_chain).fetchall()
-    if keyword:
-        avail_rows = [r for r in avail_rows
-                      if keyword in (r["kw_str"] or "").split("|")]
     # Legends units are flagged by a literal "[Legends]" suffix in the name —
     # there is no separate keyword tag in BSData for it.
     if not show_legends:
         avail_rows = [r for r in avail_rows if "[Legends]" not in (r["name"] or "")]
+    # "Only units I own a model for" filter.
+    owned_ids = user_owned_datasheets(uid)
+    if owned_only:
+        avail_rows = [r for r in avail_rows if r["id"] in owned_ids]
     available_by_tab = _classify_units_into_tabs(avail_rows)
     # Resolve leader → bodyguard relationships and nest attached units. `total`
     # is already summed over every unit above, so attachment is display-only.
     top_units = build_attachment_view(units, cat_chain)
-    # Keywords available across the full chain
-    kw_rows = user_db().execute(
-        f"SELECT DISTINCT k.category_name FROM datasheet_keywords k "
-        f"JOIN datasheets d ON d.id = k.datasheet_id "
-        f"WHERE d.catalogue_id IN ({placeholders}) ORDER BY k.category_name",
-        cat_chain,
-    ).fetchall()
+    # Thumbnails: the player's own uploaded image per datasheet (available +
+    # selected sides). Absent datasheets render an empty image slot.
+    img_map = user_images_by_datasheet(
+        uid,
+        [d["id"] for lst in available_by_tab.values() for d in lst]
+        + [u["datasheet_id"] for u in units],
+    )
+    for lst in available_by_tab.values():
+        for d in lst:
+            d["img"] = img_map.get(d["id"])
+    for u in units:  # same dict objects are nested under bodyguards
+        u["img"] = img_map.get(u["datasheet_id"])
     return render_template(
         "army_view.html",
         army=army, units=top_units, total=total,
         available_by_tab=available_by_tab, tab_defs=UNIT_TABS,
-        faction_keywords=[r["category_name"] for r in kw_rows],
-        filter_keyword=keyword, show_legends=show_legends,
+        show_legends=show_legends, owned_only=owned_only,
     )
 
 
