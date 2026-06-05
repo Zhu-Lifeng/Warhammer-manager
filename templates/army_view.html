@@ -15,11 +15,16 @@
           <thead><tr><th>Unit / loadout</th><th>Pts</th><th>Qty</th><th class="right">Subtotal</th><th></th></tr></thead>
           <tbody>
             {% for u in units %}
-              <tr>
+              {% set combined = (u.effective_points or 0) * u.count %}
+              {% for ldr in u.attached_leaders %}{% set combined = combined + (ldr.effective_points or 0) * ldr.count %}{% endfor %}
+              <tr {% if u.attached_leaders %}style="border-top:2px solid #3a4a63;"{% endif %}>
                 <td>
                   <a href="{{ url_for('query_unit', datasheet_id=u.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ u.datasheet_name }}</a>
                   {% if u.is_expanded %}
                     <span class="badge" style="background:#1f3a5a; color:#cfe1ff; font-size:0.65rem;" title="{{ u.tier_label }}">expanded</span>
+                  {% endif %}
+                  {% if u.attached_leaders %}
+                    <span class="badge" style="background:#3a2f5a; color:#d9c9ff; font-size:0.65rem;">led by {{ u.attached_leaders | length }}</span>
                   {% endif %}
                   {% if u.tier_label or u.loadout_summary %}
                     <ul class="muted" style="margin:0.25rem 0 0; padding-left:1rem; font-size:0.8rem;">
@@ -31,12 +36,24 @@
                       {% endfor %}
                     </ul>
                   {% endif %}
+                  {% if u.is_leader and not u.attached_to_id and u.eligible_targets %}
+                    <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" style="margin-top:0.3rem; display:flex; gap:0.3rem; align-items:center; flex-wrap:wrap;">
+                      <select name="target_id" style="font-size:0.8rem;">
+                        <option value="">Attach to…</option>
+                        {% for t in u.eligible_targets %}
+                          <option value="{{ t.id }}">{{ t.name }}</option>
+                        {% endfor %}
+                      </select>
+                      <button type="submit" class="btn-small">Lead</button>
+                    </form>
+                  {% endif %}
                 </td>
-                <td>
-                  {{ u.effective_points if u.effective_points is not none else '-' }}
-                </td>
+                <td>{{ u.effective_points if u.effective_points is not none else '-' }}</td>
                 <td>×{{ u.count }}</td>
-                <td class="right">{{ (u.effective_points or 0) * u.count }}</td>
+                <td class="right">
+                  {{ (u.effective_points or 0) * u.count }}
+                  {% if u.attached_leaders %}<br><span class="muted" style="font-size:0.75rem;">∑ {{ combined }}</span>{% endif %}
+                </td>
                 <td style="white-space:nowrap;">
                   <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}" class="btn btn-ghost btn-small">Configure</a>
                   <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
@@ -44,6 +61,34 @@
                   </form>
                 </td>
               </tr>
+              {% for ldr in u.attached_leaders %}
+                <tr style="background:#1b2230;">
+                  <td style="padding-left:1.5rem;">
+                    <span class="muted">↳ leads</span>
+                    <a href="{{ url_for('query_unit', datasheet_id=ldr.datasheet_id, **{'from': 'army:' ~ army.id}) }}">{{ ldr.datasheet_name }}</a>
+                    {% if ldr.tier_label or ldr.loadout_summary %}
+                      <ul class="muted" style="margin:0.25rem 0 0; padding-left:1rem; font-size:0.8rem;">
+                        {% if ldr.tier_label %}<li>Size: <span style="color:#ffb84d">{{ ldr.tier_label }}</span></li>{% endif %}
+                        {% for s in ldr.loadout_summary %}
+                          <li>{{ s.model_name }} · {{ s.slot_name }}: <span style="color:#ffb84d">{{ s.option_name }}</span></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </td>
+                  <td>{{ ldr.effective_points if ldr.effective_points is not none else '-' }}</td>
+                  <td>×{{ ldr.count }}</td>
+                  <td class="right">{{ (ldr.effective_points or 0) * ldr.count }}</td>
+                  <td style="white-space:nowrap;">
+                    <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=ldr.id) }}" class="btn btn-ghost btn-small">Configure</a>
+                    <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=ldr.id) }}" style="display:inline">
+                      <button type="submit" class="btn btn-ghost btn-small">Detach</button>
+                    </form>
+                    <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=ldr.id) }}" style="display:inline">
+                      <button type="submit" class="btn btn-ghost btn-small">Remove</button>
+                    </form>
+                  </td>
+                </tr>
+              {% endfor %}
             {% endfor %}
           </tbody>
         </table>

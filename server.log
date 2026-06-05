@@ -1,0 +1,56 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.188:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 505-200-365
+127.0.0.1 - - [05/Jun/2026 14:46:41] "GET /army HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:08:33] "GET / HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:34] "GET /static/style.css HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:34] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:34] "GET /static/image-editor.js HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.188 - - [05/Jun/2026 15:08:37] "GET /login HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:37] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:37] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:43] "POST /login HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:08:43] "GET / HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:43] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:43] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:43] "GET /uploads/c01d38e8a31f4b7193a14c018d51782d.jpg HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:46] "GET /query HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:46] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:46] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /lists HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /uploads/6ada540654f14333b3ac38edd7a72177.jpg HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /army HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:47] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:49] "GET /army/2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:08:49] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:08:49] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:03] "POST /army/2/add HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:09:03] "GET /army/2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:09:03] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:03] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:08] "POST /army/2/add HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:09:08] "GET /army/2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:09:08] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:08] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:09] "POST /army/2/add HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:09:09] "GET /army/2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:09:09] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:09] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:21] "POST /army/2/add HTTP/1.1" 302 -
+192.168.0.188 - - [05/Jun/2026 15:09:21] "GET /army/2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:09:21] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:21] "GET /static/image-editor.js HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /query/unit/b351-fccc-2121-1e1e?from=army:2 HTTP/1.1" 200 -
+192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /static/style.css HTTP/1.1" 304 -
+192.168.0.188 - - [05/Jun/2026 15:09:29] "GET /static/image-editor.js HTTP/1.1" 304 -

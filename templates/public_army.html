@@ -13,15 +13,28 @@
     <thead><tr><th>Unit</th><th>Count</th><th>Size</th><th>Unit cost</th><th>Subtotal</th></tr></thead>
     <tbody>
     {% for u in units %}
-      <tr>
+      <tr {% if u.attached_leaders %}style="border-top:2px solid #3a4a63;"{% endif %}>
         <td>
           <a href="{{ url_for('query_unit', datasheet_id=u.datasheet_id) }}">{{ u.datasheet_name }}</a>
+          {% if u.attached_leaders %}<span class="badge" style="background:#3a2f5a; color:#d9c9ff; font-size:0.65rem;">led by {{ u.attached_leaders | length }}</span>{% endif %}
         </td>
         <td>{{ u.count }}</td>
         <td class="muted">{{ u.tier_label or 'base' }}</td>
         <td>{{ u.effective_points }}</td>
         <td>{{ (u.effective_points or 0) * u.count }}</td>
       </tr>
+      {% for ldr in u.attached_leaders %}
+        <tr style="background:#1b2230;">
+          <td style="padding-left:1.5rem;">
+            <span class="muted">↳ leads</span>
+            <a href="{{ url_for('query_unit', datasheet_id=ldr.datasheet_id) }}">{{ ldr.datasheet_name }}</a>
+          </td>
+          <td>{{ ldr.count }}</td>
+          <td class="muted">{{ ldr.tier_label or 'base' }}</td>
+          <td>{{ ldr.effective_points }}</td>
+          <td>{{ (ldr.effective_points or 0) * ldr.count }}</td>
+        </tr>
+      {% endfor %}
     {% endfor %}
     </tbody>
   </table>

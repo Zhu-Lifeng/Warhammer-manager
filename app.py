@@ -366,6 +366,12 @@ def init_user_db(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE army_units ADD COLUMN tier_label TEXT")
     if "tier_points" not in au_cols:
         conn.execute("ALTER TABLE army_units ADD COLUMN tier_points INTEGER")
+    # army_units.attached_to_id — Leader/Bodyguard join. A Character unit that
+    # has been attached to another unit points at that bodyguard's army_units.id.
+    # NULL means the unit stands alone. Cleared (not cascaded) when the bodyguard
+    # is removed so the leader survives as a standalone unit.
+    if "attached_to_id" not in au_cols:
+        conn.execute("ALTER TABLE army_units ADD COLUMN attached_to_id INTEGER")
     # armies.user_id / models.user_id — nullable; first registered user claims
     # all NULL rows and becomes admin (see register route).
     army_cols = [r[1] for r in conn.execute("PRAGMA table_info(armies)").fetchall()]
@@ -1079,6 +1085,119 @@ def _classify_units_into_tabs(rows: list[sqlite3.Row]) -> dict[str, list[dict]]:
     return buckets
 
 
+# ----- Leader / Bodyguard (attached units) --------------------------------- #
+
+def _parse_leader_target_names(description: str) -> list[str]:
+    """Extract bodyguard unit names from a 'Leader' ability description.
+
+    The KB stores the targets as a bullet list after an intro line, e.g.:
+        This model can be attached to the following units:
+        ▪ Dark Reapers
+        ▪ Dire Avengers
+    Bullet glyphs are inconsistent (often mojibake), so leading non-alphanumeric
+    characters are stripped. Some entries append a prose note ("You can attach
+    this unit even if …"); those lines run long, so anything over six words is
+    dropped as not-a-unit-name. ^^…^^ emphasis markers are removed.
+    """
+    names: list[str] = []
+    for line in (description or "").split("\n")[1:]:
+        s = re.sub(r"^[^A-Za-z0-9]+", "", line).replace("^^", "").strip()
+        if not s or len(s.split()) > 6:
+            continue
+        names.append(s)
+    return names
+
+
+def get_leader_targets(datasheet_id: str, cat_chain: list[str]) -> set[str]:
+    """Datasheet ids in `cat_chain` this unit's Leader ability may attach to.
+
+    Returns an empty set if the unit has no Leader ability or none of its listed
+    targets exist in the army's catalogue chain. Names are matched
+    case-insensitively (the KB stores some targets in ALL CAPS).
+    """
+    if not cat_chain:
+        return set()
+    db = user_db()
+    ab = db.execute(
+        "SELECT description FROM abilities "
+        "WHERE datasheet_id = ? AND name = 'Leader' LIMIT 1",
+        (datasheet_id,),
+    ).fetchone()
+    if not ab:
+        return set()
+    names = _parse_leader_target_names(ab["description"])
+    if not names:
+        return set()
+    placeholders = ",".join("?" * len(cat_chain))
+    targets: set[str] = set()
+    for nm in names:
+        rows = db.execute(
+            f"SELECT id FROM datasheets WHERE lower(name) = lower(?) "
+            f"AND catalogue_id IN ({placeholders})",
+            [nm, *cat_chain],
+        ).fetchall()
+        targets.update(r["id"] for r in rows)
+    return targets
+
+
+def leader_datasheet_ids(cat_chain: list[str]) -> set[str]:
+    """Datasheet ids in `cat_chain` that carry a Leader ability."""
+    if not cat_chain:
+        return set()
+    placeholders = ",".join("?" * len(cat_chain))
+    rows = user_db().execute(
+        f"SELECT DISTINCT a.datasheet_id FROM abilities a "
+        f"JOIN datasheets d ON d.id = a.datasheet_id "
+        f"WHERE a.name = 'Leader' AND d.catalogue_id IN ({placeholders})",
+        cat_chain,
+    ).fetchall()
+    return {r["datasheet_id"] for r in rows}
+
+
+def build_attachment_view(units: list[dict], cat_chain: list[str]) -> list[dict]:
+    """Annotate army units with leader/bodyguard relationships and nest them.
+
+    Mutates each unit dict in place adding:
+      - is_leader          : carries a Leader ability
+      - attached_leaders   : list of leader units attached to this bodyguard
+      - eligible_targets   : [{id, name}] units in this army it may attach to
+                             (leaders only; computed for the attach dropdown)
+    Returns the top-level units (bodyguards + standalone units); attached
+    leaders are removed from the top level and nested under their bodyguard.
+    """
+    leaders = leader_datasheet_ids(cat_chain)
+    by_id = {u["id"]: u for u in units}
+    for u in units:
+        u["is_leader"] = u["datasheet_id"] in leaders
+        u["attached_leaders"] = []
+
+    # Nest attached leaders under their bodyguard (only if the target still exists).
+    for u in units:
+        tgt = u.get("attached_to_id")
+        if tgt and tgt in by_id and tgt != u["id"]:
+            by_id[tgt]["attached_leaders"].append(u)
+
+    # Compute eligible attach targets for each standalone leader.
+    target_cache: dict[str, set[str]] = {}
+    for u in units:
+        if not u["is_leader"] or u.get("attached_to_id"):
+            continue
+        ds = u["datasheet_id"]
+        if ds not in target_cache:
+            target_cache[ds] = get_leader_targets(ds, cat_chain)
+        valid = target_cache[ds]
+        u["eligible_targets"] = [
+            {"id": v["id"], "name": v["datasheet_name"]}
+            for v in units
+            if v["id"] != u["id"]
+            and not v["is_leader"]
+            and v["datasheet_id"] in valid
+        ]
+
+    return [u for u in units
+            if not (u.get("attached_to_id") and u["attached_to_id"] in by_id)]
+
+
 @app.route("/army")
 @login_required
 def army_list():
@@ -1200,6 +1319,9 @@ def army_view(army_id: int):
     if not show_legends:
         avail_rows = [r for r in avail_rows if "[Legends]" not in (r["name"] or "")]
     available_by_tab = _classify_units_into_tabs(avail_rows)
+    # Resolve leader → bodyguard relationships and nest attached units. `total`
+    # is already summed over every unit above, so attachment is display-only.
+    top_units = build_attachment_view(units, cat_chain)
     # Keywords available across the full chain
     kw_rows = user_db().execute(
         f"SELECT DISTINCT k.category_name FROM datasheet_keywords k "
@@ -1209,7 +1331,7 @@ def army_view(army_id: int):
     ).fetchall()
     return render_template(
         "army_view.html",
-        army=army, units=units, total=total,
+        army=army, units=top_units, total=total,
         available_by_tab=available_by_tab, tab_defs=UNIT_TABS,
         faction_keywords=[r["category_name"] for r in kw_rows],
         filter_keyword=keyword, show_legends=show_legends,
@@ -1325,6 +1447,55 @@ def army_unit_loadout(army_id: int, unit_id: int):
     )
 
 
+@app.route("/army/<int:army_id>/unit/<int:unit_id>/attach", methods=["POST"])
+@login_required
+def army_attach_unit(army_id: int, unit_id: int):
+    """Attach a leader unit to a bodyguard unit (or detach when target is empty)."""
+    uid = require_user_id()
+    army = user_db().execute(
+        "SELECT * FROM armies WHERE id = ? AND user_id = ?", (army_id, uid),
+    ).fetchone()
+    if not army:
+        abort(404)
+    leader = user_db().execute(
+        "SELECT * FROM army_units WHERE id = ? AND army_id = ?", (unit_id, army_id),
+    ).fetchone()
+    if not leader:
+        abort(404)
+
+    target_raw = (request.form.get("target_id") or "").strip()
+    if not target_raw:  # detach
+        user_db().execute(
+            "UPDATE army_units SET attached_to_id = NULL WHERE id = ?", (unit_id,),
+        )
+        user_db().commit()
+        flash("Detached", "ok")
+        return redirect(url_for("army_view", army_id=army_id))
+
+    try:
+        target_id = int(target_raw)
+    except ValueError:
+        flash("Invalid target", "error")
+        return redirect(url_for("army_view", army_id=army_id))
+
+    cat_chain = get_catalogue_chain(army["faction_id"])
+    valid_targets = get_leader_targets(leader["datasheet_id"], cat_chain)
+    target = user_db().execute(
+        "SELECT * FROM army_units WHERE id = ? AND army_id = ?", (target_id, army_id),
+    ).fetchone()
+    if (not target or target_id == unit_id
+            or target["datasheet_id"] not in valid_targets):
+        flash(f"{leader['datasheet_name']} cannot lead that unit", "error")
+        return redirect(url_for("army_view", army_id=army_id))
+
+    user_db().execute(
+        "UPDATE army_units SET attached_to_id = ? WHERE id = ?", (target_id, unit_id),
+    )
+    user_db().commit()
+    flash(f"{leader['datasheet_name']} now leads {target['datasheet_name']}", "ok")
+    return redirect(url_for("army_view", army_id=army_id))
+
+
 @app.route("/army/<int:army_id>/remove/<int:unit_id>", methods=["POST"])
 @login_required
 def army_remove_unit(army_id: int, unit_id: int):
@@ -1334,6 +1505,12 @@ def army_remove_unit(army_id: int, unit_id: int):
     ).fetchone()
     if not army:
         abort(404)
+    # If this unit was a bodyguard, free any leaders attached to it so they
+    # survive as standalone units rather than vanishing.
+    user_db().execute(
+        "UPDATE army_units SET attached_to_id = NULL WHERE attached_to_id = ?",
+        (unit_id,),
+    )
     user_db().execute(
         "DELETE FROM army_units WHERE id = ? AND army_id = ?", (unit_id, army_id),
     )
@@ -2156,8 +2333,10 @@ def public_army(username: str, army_id: int):
                                  else d["live_base_points"])
         total += (d["effective_points"] or 0) * d["count"]
         units.append(d)
+    cat_chain = get_catalogue_chain(army["faction_id"])
+    top_units = build_attachment_view(units, cat_chain)
     return render_template(
-        "public_army.html", user=user, army=army, units=units, total=total,
+        "public_army.html", user=user, army=army, units=top_units, total=total,
     )
 
 
