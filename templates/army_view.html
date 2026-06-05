@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block title %}{{ army.name }} — Army{% endblock %}
 
+{# ---- Inline icons (Feather) ---- #}
+{% macro icon_wrench() %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>{% endmacro %}
+{% macro icon_trash() %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>{% endmacro %}
+
 {# ---- Selected-side unit card (used for top-level units and nested leaders) ---- #}
 {% macro selected_card(u, child=False) %}
   <div class="ucard ucard--selected{% if u.attached_leaders %} ucard--lead{% endif %}{% if child %} ucard--child{% endif %}">
@@ -16,6 +20,11 @@
         {% if child %}<span class="badge badge-lead">↳ leads</span>{% endif %}
         {% if u.is_expanded %}<span class="badge badge-exp" title="{{ u.tier_label }}">expanded</span>{% endif %}
         {% if u.attached_leaders %}<span class="badge badge-lead">led by {{ u.attached_leaders | length }}</span>{% endif %}
+        {% if child %}
+          <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
+            <button type="submit" class="btn btn-ghost btn-small ucard__detach">Detach</button>
+          </form>
+        {% endif %}
       </div>
       {% if u.tier_label or u.loadout_summary %}
         <ul class="ucard__loadout muted">
@@ -26,25 +35,23 @@
         </ul>
       {% endif %}
       {% if u.is_leader and not u.attached_to_id and u.eligible_targets %}
-        <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" class="ucard__attach">
-          <select name="target_id">
-            <option value="">Attach to…</option>
-            {% for t in u.eligible_targets %}<option value="{{ t.id }}">{{ t.name }}</option>{% endfor %}
-          </select>
-          <button type="submit" class="btn-small">Lead</button>
-        </form>
-      {% endif %}
-      <div class="ucard__actions">
-        <a href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}" class="btn btn-ghost btn-small">Configure</a>
-        {% if child %}
-          <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
-            <button type="submit" class="btn btn-ghost btn-small">Detach</button>
+        <div class="ucard__lead-wrap">
+          <button type="button" class="btn-small ucard__lead-btn" onclick="this.parentNode.classList.toggle('open')">Lead ▾</button>
+          <form method="post" action="{{ url_for('army_attach_unit', army_id=army.id, unit_id=u.id) }}" class="ucard__attach">
+            <select name="target_id">
+              <option value="">Select unit to lead…</option>
+              {% for t in u.eligible_targets %}<option value="{{ t.id }}">{{ t.name }}</option>{% endfor %}
+            </select>
+            <button type="submit" class="btn-small">Attach</button>
           </form>
-        {% endif %}
-        <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}" style="display:inline">
-          <button type="submit" class="btn btn-ghost btn-small">Remove</button>
-        </form>
-      </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="ucard__icons">
+      <a class="icon-btn" title="Configure" href="{{ url_for('army_unit_loadout', army_id=army.id, unit_id=u.id) }}">{{ icon_wrench() }}</a>
+      <form method="post" action="{{ url_for('army_remove_unit', army_id=army.id, unit_id=u.id) }}">
+        <button type="submit" class="icon-btn icon-btn--danger" title="Remove">{{ icon_trash() }}</button>
+      </form>
     </div>
   </div>
 {% endmacro %}
