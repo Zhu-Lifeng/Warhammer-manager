@@ -1970,16 +1970,87 @@
      },
      "loadout": [
       {
-       "id": "f91f-9745-9165-ec47",
+       "id": "a0ad-897a-f9ca-170c",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a0ad-897a-f9ca-170c:2f84-3498-e578-8223",
+         "name": "Guardian Spear",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "758c-b70e-8940-0a3e",
+           "name": "Guardian Spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "0e1d-9037-73ea-a4e6",
+           "name": "Guardian Spear",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault"
+          }
+         ]
+        },
+        {
+         "id": "a0ad-897a-f9ca-170c:a576-b3a0-7198-2094",
+         "name": "Castellan Axe",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea20-f463-db39-5c55",
+           "name": "Castellan axe",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1c2c-2282-3f68-6e7b",
+           "name": "Castellan axe",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ce2a-1a42-7525-c06b",
+       "kind": "fixed",
+       "name": "Balistus grenade launcher",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "f91f-9745-9165-ec47:ce2a-1a42-7525-c06b",
+         "id": "ce2a-1a42-7525-c06b:4863-f443-2b45-e18b",
          "name": "Balistus grenade launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6505-76ad-2840-1f87",
@@ -2103,16 +2174,16 @@
      },
      "loadout": [
       {
-       "id": "fefc-86b1-1d3d-f21c",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a674-6426-accd-e863",
+       "kind": "fixed",
+       "name": "Interceptor lance",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "fefc-86b1-1d3d-f21c:a674-6426-accd-e863",
+         "id": "a674-6426-accd-e863:a674-6426-accd-e863",
          "name": "Interceptor lance",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7c7c-ee5d-5594-297a",
@@ -2125,6 +2196,53 @@
            "ap": "-2",
            "d": "2",
            "keywords": "Lance"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ab48-8c10-894a-5d46",
+       "kind": "choice",
+       "name": "equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ab48-8c10-894a-5d46:58c3-4e14-bc1a-318b",
+         "name": "Vertus hurricane bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b286-b80e-6daf-d1ae",
+           "name": "Vertus hurricane bolter",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 3, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "ab48-8c10-894a-5d46:1576-174e-e5d6-82ea",
+         "name": "Salvo launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "aad1-aeb6-5e6a-e90f",
+           "name": "Salvo launcher",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -2494,16 +2612,16 @@
      },
      "loadout": [
       {
-       "id": "f869-c5f5-f929-8502",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "33a3-7a7b-c766-bf09",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f869-c5f5-f929-8502:33a3-7a7b-c766-bf09",
+         "id": "33a3-7a7b-c766-bf09:33a3-7a7b-c766-bf09",
          "name": "Combi-bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e494-2f2b-84a5-87fb",
@@ -2518,11 +2636,20 @@
            "keywords": "Rapid Fire 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "355c-3441-af3d-849",
+       "kind": "fixed",
+       "name": "Contemptor combat weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f869-c5f5-f929-8502:355c-3441-af3d-849",
+         "id": "355c-3441-af3d-849:355c-3441-af3d-849",
          "name": "Contemptor combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d311-c2b6-b701-2ac7",
@@ -2535,6 +2662,53 @@
            "ap": "-2",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6ee7-91e7-5929-dbdb",
+       "kind": "choice",
+       "name": "equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6ee7-91e7-5929-dbdb:8b8b-4b36-94ed-9483",
+         "name": "Multi-melta",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8fb8-a45b-fd14-7331",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "6ee7-91e7-5929-dbdb:f2da-e26c-e0e9-7c84",
+         "name": "Kheres-pattern assault cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d9d9-6020-eea6-e669",
+           "name": "Kheres-pattern assault cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds"
           }
          ]
         }
@@ -4447,16 +4621,16 @@
      },
      "loadout": [
       {
-       "id": "6db1-a68f-db04-8f95",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b1eb-9d70-dfc2-208b",
+       "kind": "fixed",
+       "name": "Achillus dreadspear",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6db1-a68f-db04-8f95:b1eb-9d70-dfc2-208b",
+         "id": "b1eb-9d70-dfc2-208b:b1eb-9d70-dfc2-208b",
          "name": "Achillus dreadspear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3fdd-84bf-e173-68a2",
@@ -4481,6 +4655,72 @@
            "ap": "-2",
            "d": "D6+1",
            "keywords": "Lance"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "551e-4148-5814-7f07",
+       "kind": "choice",
+       "name": "equipped with",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "551e-4148-5814-7f07:6610-ef88-536f-9e15",
+         "name": "Infernus incinerator",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c393-f1c0-a33b-5bc9",
+           "name": "Infernus incinerator",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "551e-4148-5814-7f07:d9a6-8dbd-2c01-862b",
+         "name": "Lastrum storm bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9cbb-2c6f-2ed8-b636",
+           "name": "Lastrum storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "551e-4148-5814-7f07:89d9-93fa-1d9a-3407",
+         "name": "Twin adrathic destructor",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0b87-bbb3-1dd8-dadb",
+           "name": "Twin adrathic destructor",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -4712,16 +4952,16 @@
      },
      "loadout": [
       {
-       "id": "5043-dc01-5cbc-9328",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "dca3-638e-52a2-b1b8",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "5043-dc01-5cbc-9328:dca3-638e-52a2-b1b8",
+         "id": "dca3-638e-52a2-b1b8:dca3-638e-52a2-b1b8",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "14e3-fad3-7a64-7dc8",
@@ -4736,11 +4976,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "62a1-1fa7-70b7-614d",
+       "kind": "fixed",
+       "name": "Twin lastrum bolt cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "5043-dc01-5cbc-9328:62a1-1fa7-70b7-614d",
+         "id": "62a1-1fa7-70b7-614d:62a1-1fa7-70b7-614d",
          "name": "Twin lastrum bolt cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9992-31de-4b34-25f9",
@@ -4753,6 +5002,53 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cbfe-9c88-8c0d-d293",
+       "kind": "choice",
+       "name": "Equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cbfe-9c88-8c0d-d293:28a6-d971-1c4d-6bf6",
+         "name": "Twin iliastus accelerator cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "203c-c496-58fc-29b8",
+           "name": "Twin iliastus accelerator cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Rapid Fire 4, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "cbfe-9c88-8c0d-d293:65f3-bcd5-17ad-e068",
+         "name": "Twin arachnus heavy blaze cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6b79-41bc-9ce3-ba57",
+           "name": "Twin arachnus heavy blaze cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -4859,16 +5155,16 @@
      },
      "loadout": [
       {
-       "id": "01f8-6c1d-3f4f-63c5",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "80e0-3d7a-702a-a745",
+       "kind": "fixed",
+       "name": "Armoured feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "01f8-6c1d-3f4f-63c5:80e0-3d7a-702a-a745",
+         "id": "80e0-3d7a-702a-a745:80e0-3d7a-702a-a745",
          "name": "Armoured feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "434b-e859-6049-eb07",
@@ -4883,11 +5179,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "1189-dcd8-e3ed-7837",
+       "kind": "fixed",
+       "name": "Spiculus bolt launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "01f8-6c1d-3f4f-63c5:1189-dcd8-e3ed-7837",
+         "id": "1189-dcd8-e3ed-7837:1189-dcd8-e3ed-7837",
          "name": "Spiculus bolt launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cac3-5b7e-537f-9f67",
@@ -4900,6 +5205,84 @@
            "ap": "0",
            "d": "1",
            "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1ad8-749e-76ed-07e6",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "1ad8-749e-76ed-07e6:bf6b-9538-d9ff-4f9c",
+         "name": "Arachnus storm cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "eec2-26cf-677e-3596",
+           "name": "Arachnus storm cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "12",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "1ad8-749e-76ed-07e6:896a-dae8-2bad-b241",
+         "name": "Iliastus accelerator culverin",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7489-b958-21a3-a105",
+           "name": "Iliastus accelerator culverin",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1ad8-749e-76ed-07e6:d0d1-74ce-ec54-c122",
+         "name": "Telemon caestus and twin plasma projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0373-eed1-b39f-953a",
+           "name": "Telemon Caestus",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "8750-854c-4dc4-6d2c",
+           "name": "Twin plasma projector",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D3",
+           "bs_ws": "N/A",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Torrent, Twin-linked"
           }
          ]
         }
@@ -5957,16 +6340,16 @@
        ]
       },
       {
-       "id": "de4d-e73a-c207-8a11",
-       "kind": "choice",
-       "name": "Ranged weapons",
+       "id": "20d4-fc33-be99-5088",
+       "kind": "fixed",
+       "name": "Guardian spear",
        "min_select": null,
        "max_select": 2,
        "options": [
         {
-         "id": "de4d-e73a-c207-8a11:20d4-fc33-be99-5088",
+         "id": "20d4-fc33-be99-5088:20d4-fc33-be99-5088",
          "name": "Guardian spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "beb8-73dc-aad4-23e9",
@@ -5981,11 +6364,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "624c-1b32-8add-3369",
+       "kind": "fixed",
+       "name": "Castellan axe",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:624c-1b32-8add-3369",
+         "id": "624c-1b32-8add-3369:624c-1b32-8add-3369",
          "name": "Castellan axe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a9f8-504f-171d-f940",
@@ -6000,11 +6392,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a4d1-d302-d225-ec44",
+       "kind": "fixed",
+       "name": "Pyrithite spear",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:a4d1-d302-d225-ec44",
+         "id": "a4d1-d302-d225-ec44:a4d1-d302-d225-ec44",
          "name": "Pyrithite spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d2e7-9201-3ed5-c23f",
@@ -6019,11 +6420,67 @@
            "keywords": "Melta 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "50d2-0a06-783a-9907",
+       "kind": "choice",
+       "name": "Jetbike weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "50d2-0a06-783a-9907:68be-8f65-bc85-9f88",
+         "name": "Vertus hurricane bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-699d-9730-a658",
+           "name": "Vertus hurricane bolter",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 3, Twin-linked"
+          }
+         ]
         },
         {
-         "id": "de4d-e73a-c207-8a11:c247-c092-2c89-8dab",
-         "name": "Balistus grenade launcher",
+         "id": "50d2-0a06-783a-9907:034d-c61a-83cc-f360",
+         "name": "Salvo launcher",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7268-b11a-ddf7-2b55",
+           "name": "Salvo launcher",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c247-c092-2c89-8dab",
+       "kind": "fixed",
+       "name": "Balistus grenade launcher",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c247-c092-2c89-8dab:4863-f443-2b45-e18b",
+         "name": "Balistus grenade launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6505-76ad-2840-1f87",
@@ -6536,16 +6993,16 @@
        ]
       },
       {
-       "id": "de4d-e73a-c207-8a11",
-       "kind": "choice",
-       "name": "Ranged weapons",
+       "id": "20d4-fc33-be99-5088",
+       "kind": "fixed",
+       "name": "Guardian spear",
        "min_select": null,
        "max_select": 2,
        "options": [
         {
-         "id": "de4d-e73a-c207-8a11:20d4-fc33-be99-5088",
+         "id": "20d4-fc33-be99-5088:20d4-fc33-be99-5088",
          "name": "Guardian spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "beb8-73dc-aad4-23e9",
@@ -6560,11 +7017,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "624c-1b32-8add-3369",
+       "kind": "fixed",
+       "name": "Castellan axe",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:624c-1b32-8add-3369",
+         "id": "624c-1b32-8add-3369:624c-1b32-8add-3369",
          "name": "Castellan axe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a9f8-504f-171d-f940",
@@ -6579,11 +7045,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a4d1-d302-d225-ec44",
+       "kind": "fixed",
+       "name": "Pyrithite spear",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:a4d1-d302-d225-ec44",
+         "id": "a4d1-d302-d225-ec44:a4d1-d302-d225-ec44",
          "name": "Pyrithite spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d2e7-9201-3ed5-c23f",
@@ -6598,11 +7073,67 @@
            "keywords": "Melta 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "50d2-0a06-783a-9907",
+       "kind": "choice",
+       "name": "Jetbike weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "50d2-0a06-783a-9907:68be-8f65-bc85-9f88",
+         "name": "Vertus hurricane bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-699d-9730-a658",
+           "name": "Vertus hurricane bolter",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 3, Twin-linked"
+          }
+         ]
         },
         {
-         "id": "de4d-e73a-c207-8a11:c247-c092-2c89-8dab",
-         "name": "Balistus grenade launcher",
+         "id": "50d2-0a06-783a-9907:034d-c61a-83cc-f360",
+         "name": "Salvo launcher",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7268-b11a-ddf7-2b55",
+           "name": "Salvo launcher",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c247-c092-2c89-8dab",
+       "kind": "fixed",
+       "name": "Balistus grenade launcher",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c247-c092-2c89-8dab:4863-f443-2b45-e18b",
+         "name": "Balistus grenade launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6505-76ad-2840-1f87",
@@ -7120,16 +7651,16 @@
        ]
       },
       {
-       "id": "de4d-e73a-c207-8a11",
-       "kind": "choice",
-       "name": "Ranged weapons",
+       "id": "20d4-fc33-be99-5088",
+       "kind": "fixed",
+       "name": "Guardian spear",
        "min_select": null,
        "max_select": 2,
        "options": [
         {
-         "id": "de4d-e73a-c207-8a11:20d4-fc33-be99-5088",
+         "id": "20d4-fc33-be99-5088:20d4-fc33-be99-5088",
          "name": "Guardian spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "beb8-73dc-aad4-23e9",
@@ -7144,11 +7675,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "624c-1b32-8add-3369",
+       "kind": "fixed",
+       "name": "Castellan axe",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:624c-1b32-8add-3369",
+         "id": "624c-1b32-8add-3369:624c-1b32-8add-3369",
          "name": "Castellan axe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a9f8-504f-171d-f940",
@@ -7163,11 +7703,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a4d1-d302-d225-ec44",
+       "kind": "fixed",
+       "name": "Pyrithite spear",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "de4d-e73a-c207-8a11:a4d1-d302-d225-ec44",
+         "id": "a4d1-d302-d225-ec44:a4d1-d302-d225-ec44",
          "name": "Pyrithite spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d2e7-9201-3ed5-c23f",
@@ -7182,11 +7731,67 @@
            "keywords": "Melta 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "50d2-0a06-783a-9907",
+       "kind": "choice",
+       "name": "Jetbike weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "50d2-0a06-783a-9907:68be-8f65-bc85-9f88",
+         "name": "Vertus hurricane bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-699d-9730-a658",
+           "name": "Vertus hurricane bolter",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 3, Twin-linked"
+          }
+         ]
         },
         {
-         "id": "de4d-e73a-c207-8a11:c247-c092-2c89-8dab",
-         "name": "Balistus grenade launcher",
+         "id": "50d2-0a06-783a-9907:034d-c61a-83cc-f360",
+         "name": "Salvo launcher",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7268-b11a-ddf7-2b55",
+           "name": "Salvo launcher",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c247-c092-2c89-8dab",
+       "kind": "fixed",
+       "name": "Balistus grenade launcher",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c247-c092-2c89-8dab:4863-f443-2b45-e18b",
+         "name": "Balistus grenade launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6505-76ad-2840-1f87",

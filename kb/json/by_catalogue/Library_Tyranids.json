@@ -197,16 +197,16 @@
      },
      "loadout": [
       {
-       "id": "c80c-048b-a074-27b5",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f65e-95a4-be9d-282f",
+       "kind": "fixed",
+       "name": "Tyrant talons",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "c80c-048b-a074-27b5:f65e-95a4-be9d-282f",
+         "id": "f65e-95a4-be9d-282f:f65e-95a4-be9d-282f",
          "name": "Tyrant talons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "84d0-f0bf-85c5-2266",
@@ -219,6 +219,91 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8bc7-da89-cba2-31d4",
+       "kind": "choice",
+       "name": "Monstrous Bonesword and Lash Whip",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8bc7-da89-cba2-31d4:2019-583b-ca88-546c",
+         "name": "Monstrous scything talons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "54a6-4f13-d99b-583c",
+           "name": "Monstrous scything talons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        },
+        {
+         "id": "8bc7-da89-cba2-31d4:79d7-2c8d-a55e-af25",
+         "name": "Stranglethorn cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3803-1fe1-edde-12e1",
+           "name": "Stranglethorn cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "8bc7-da89-cba2-31d4:46a7-e00d-e612-2a6d",
+         "name": "Heavy venom cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "953d-482e-624b-2465",
+           "name": "Heavy venom cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "8bc7-da89-cba2-31d4:777b-826-ebd3-6a1a",
+         "name": "Monstrous bonesword and lash whip",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8ad2-55e5-a52f-2ca0",
+           "name": "Monstrous bonesword and lash whip",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Twin-linked"
           }
          ]
         }

@@ -468,16 +468,16 @@
      },
      "loadout": [
       {
-       "id": "663f-d79b-25fd-b52f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f483-c541-62c8-5a49",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "663f-d79b-25fd-b52f:f483-c541-62c8-5a49",
+         "id": "f483-c541-62c8-5a49:f483-c541-62c8-5a49",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cb83-410b-8dfc-9961",
@@ -492,11 +492,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "39fd-529-fe62-955e",
+       "kind": "fixed",
+       "name": "Hurricane bolter",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "663f-d79b-25fd-b52f:39fd-529-fe62-955e",
+         "id": "39fd-529-fe62-955e:39fd-529-fe62-955e",
          "name": "Hurricane bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "85c5-d77a-762-df62",
@@ -509,6 +518,100 @@
            "ap": "0",
            "d": "1",
            "keywords": "Rapid Fire 6, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cd33-acae-10d1-2db0",
+       "kind": "choice",
+       "name": "Centreline weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cd33-acae-10d1-2db0:a53b-f93b-5136-1fb1",
+         "name": "Twin assault cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "11d9-6915-a37f-3504",
+           "name": "Twin assault cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "cd33-acae-10d1-2db0:ce7c-2f31-957b-e430",
+         "name": "Twin lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fe26-6685-7cb7-67c9",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f7b7-2fa0-265f-69ec",
+       "kind": "choice",
+       "name": "Missile choice",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f7b7-2fa0-265f-69ec:659f-cdb6-c687-5096",
+         "name": "2 Blackstar rocket launchers",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b1e7-499-b467-b78",
+           "name": "Blackstar rocket launcher",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "f7b7-2fa0-265f-69ec:f01a-6492-a57e-31e8",
+         "name": "2 Stormstrike missile launchers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "58c9-ffce-1cb1-e267",
+           "name": "Stormstrike missile launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
           }
          ]
         }

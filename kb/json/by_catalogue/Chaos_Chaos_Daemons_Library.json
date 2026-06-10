@@ -580,16 +580,16 @@
      },
      "loadout": [
       {
-       "id": "7203-903a-f7c3-ede1",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8484-4b54-f9e6-844b",
+       "kind": "fixed",
+       "name": "Hellfire breath",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "7203-903a-f7c3-ede1:8484-4b54-f9e6-844b",
+         "id": "8484-4b54-f9e6-844b:8484-4b54-f9e6-844b",
          "name": "Hellfire breath",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5d4d-7050-d2cf-8240",
@@ -602,6 +602,132 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7e92-60ac-7f9a-8e1c",
+       "kind": "choice",
+       "name": "Replace great axe",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7e92-60ac-7f9a-8e1c:f55d-30fe-6117-ac",
+         "name": "Great axe of Khorne",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6160-9374-7a40-76e5",
+           "name": "➤ Great axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "16",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "fc9a-a154-b87e-94d9",
+           "name": "➤ Great axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "14",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7e92-60ac-7f9a-8e1c:f504-1083-7663-a961",
+         "name": "Axe and flail",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d99-5cf3-1fa9-359",
+           "name": "➤ Axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D3+1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "b1a8-b7d8-c2c7-6c05",
+           "name": "➤ Axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "16",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "dac7-e089-fe2e-7575",
+           "name": "Bloodflail",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "16",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "7e92-60ac-7f9a-8e1c:8a9d-93c9-8953-72b4",
+         "name": "Axe and lash",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d99-5cf3-1fa9-359",
+           "name": "➤ Axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D3+1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "b1a8-b7d8-c2c7-6c05",
+           "name": "➤ Axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "16",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "8210-b688-f5aa-38bc",
+           "name": "Lash of Khorne",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
           }
          ]
         }
@@ -3307,16 +3433,16 @@
      },
      "loadout": [
       {
-       "id": "45ec-3fff-8a88-7a4c",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8440-a7a8-b859-2ac3",
+       "kind": "fixed",
+       "name": "Bolt of Change",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "45ec-3fff-8a88-7a4c:8440-a7a8-b859-2ac3",
+         "id": "8440-a7a8-b859-2ac3:8440-a7a8-b859-2ac3",
          "name": "Bolt of Change",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "896c-f294-b33b-5637",
@@ -3343,11 +3469,20 @@
            "keywords": "Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "dc95-31f-eded-9d6b",
+       "kind": "fixed",
+       "name": "Staff of Tzeentch",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "45ec-3fff-8a88-7a4c:dc95-31f-eded-9d6b",
+         "id": "dc95-31f-eded-9d6b:dc95-31f-eded-9d6b",
          "name": "Staff of Tzeentch",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3acd-48e5-e34b-b98c",
@@ -3360,6 +3495,53 @@
            "ap": "-1",
            "d": "3",
            "keywords": "Psychic"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "46e5-5f26-e3ad-921b",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "46e5-5f26-e3ad-921b:2b05-a636-23ce-28e",
+         "name": "Rod of sorcery",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "799-d455-b0a9-a9b1",
+           "name": "Rod of sorcery",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Psychic"
+          }
+         ]
+        },
+        {
+         "id": "46e5-5f26-e3ad-921b:f552-1495-3154-1e61",
+         "name": "Baleful sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ccc4-dc6c-e8f0-f374",
+           "name": "Baleful sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Extra Attacks"
           }
          ]
         }
@@ -5608,16 +5790,16 @@
      },
      "loadout": [
       {
-       "id": "7aa4-b95c-7ba6-8344",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "be79-7c87-f13b-b20",
+       "kind": "fixed",
+       "name": "Putrid vomit",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "7aa4-b95c-7ba6-8344:be79-7c87-f13b-b20",
+         "id": "be79-7c87-f13b-b20:be79-7c87-f13b-b20",
          "name": "Putrid vomit",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "94a0-91ef-2f49-7ee",
@@ -5630,6 +5812,112 @@
            "ap": "-2",
            "d": "1",
            "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "769f-27bd-d67c-1520",
+       "kind": "choice",
+       "name": "Bilesword / Bell",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "769f-27bd-d67c-1520:9f7c-9afa-4eee-8cca",
+         "name": "Bilesword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fc4e-b8b9-8c0b-f5ce",
+           "name": "➤ Bilesword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "Lethal Hits"
+          },
+          {
+           "profile_id": "a6a4-72e3-4d09-7b80",
+           "name": "➤ Bilesword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "769f-27bd-d67c-1520:2b79-2650-4b79-7ad9",
+         "name": "Doomsday bell",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7926-6f71-f877-8888",
+           "name": "Doomsday bell",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits, Reverberating Summons"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1c3-61fc-5acf-e5f9",
+       "kind": "choice",
+       "name": "Flail / Bileblade",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c1c3-61fc-5acf-e5f9:fea6-d9bc-41b9-26f5",
+         "name": "Plague flail",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "acbc-5684-284d-ef5f",
+           "name": "Plague flail",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c1c3-61fc-5acf-e5f9:7c03-9d0f-1bd7-fc65",
+         "name": "Bileblade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "34a-898b-66b1-fe4e",
+           "name": "Bileblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks, Lethal Hits"
           }
          ]
         }
@@ -7525,16 +7813,16 @@
      },
      "loadout": [
       {
-       "id": "2100-9d97-56df-0588",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7c05-e818-3a21-f029",
+       "kind": "fixed",
+       "name": "Phantasmagoria",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2100-9d97-56df-0588:7c05-e818-3a21-f029",
+         "id": "7c05-e818-3a21-f029:7c05-e818-3a21-f029",
          "name": "Phantasmagoria",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "864d-7635-ceba-3038",
@@ -7561,11 +7849,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7042-de94-8978-d9f9",
+       "kind": "fixed",
+       "name": "Snapping claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "2100-9d97-56df-0588:7042-de94-8978-d9f9",
+         "id": "7042-de94-8978-d9f9:7042-de94-8978-d9f9",
          "name": "Snapping claws",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b5ad-8fec-3be2-aa34",
@@ -7580,11 +7877,20 @@
            "keywords": "Devastating Wounds, Extra Attacks"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "333c-78e7-ed7c-4553",
+       "kind": "fixed",
+       "name": "Witstealer sword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "2100-9d97-56df-0588:333c-78e7-ed7c-4553",
+         "id": "333c-78e7-ed7c-4553:333c-78e7-ed7c-4553",
          "name": "Witstealer sword",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f048-46a2-c41e-cf8d",
@@ -7597,6 +7903,53 @@
            "ap": "-2",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a9d3-f6d5-e4a7-d2d0",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a9d3-f6d5-e4a7-d2d0:b8d9-92ad-63b2-bc74",
+         "name": "Living whip",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dd9b-6bea-921a-3a7e",
+           "name": "Living whip",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault"
+          }
+         ]
+        },
+        {
+         "id": "a9d3-f6d5-e4a7-d2d0:1df1-a091-c2f2-eafc",
+         "name": "Ritual knife",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "330a-68d7-b400-f219",
+           "name": "Ritual knife",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks"
           }
          ]
         }

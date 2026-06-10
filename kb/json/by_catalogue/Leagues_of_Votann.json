@@ -407,14 +407,14 @@
        ]
       },
       {
-       "id": "6bf0-d579-38eb-5bc9",
-       "kind": "choice",
-       "name": "Hearthkyn Warriors",
-       "min_select": 9,
+       "id": "4782-445d-730e-6b69",
+       "kind": "fixed",
+       "name": "Hearthkyn Warrior w/ bolter",
+       "min_select": null,
        "max_select": 9,
        "options": [
         {
-         "id": "6bf0-d579-38eb-5bc9:4782-445d-730e-6b69",
+         "id": "4782-445d-730e-6b69:4782-445d-730e-6b69",
          "name": "Hearthkyn Warrior w/ bolter",
          "is_default": true,
          "weapons": [
@@ -455,11 +455,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7802-9a4a-cc1c-7103",
+       "kind": "fixed",
+       "name": "Hearthkyn Warrior w/ ion blaster",
+       "min_select": null,
+       "max_select": 9,
+       "options": [
         {
-         "id": "6bf0-d579-38eb-5bc9:7802-9a4a-cc1c-7103",
+         "id": "7802-9a4a-cc1c-7103:7802-9a4a-cc1c-7103",
          "name": "Hearthkyn Warrior w/ ion blaster",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7c49-ad4b-a91a-c031",
@@ -498,11 +507,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "6c9e-f7c7-6e0e-4dd7",
+       "kind": "fixed",
+       "name": "Hearthkyn Warrior w/ plasma knife",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "6bf0-d579-38eb-5bc9:6c9e-f7c7-6e0e-4dd7",
+         "id": "6c9e-f7c7-6e0e-4dd7:6c9e-f7c7-6e0e-4dd7",
          "name": "Hearthkyn Warrior w/ plasma knife",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8570-a69f-a5b7-ba42",
@@ -539,6 +557,242 @@
            "ap": "-2",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2a24-d1f1-d866-2bf5",
+       "kind": "choice",
+       "name": "Heavy weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "2a24-d1f1-d866-2bf5:ad43-fc9a-f768-62b7",
+         "name": "Hearthkyn Warrior w/ HYLas rotary cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f0db-2e1f-40a9-5852",
+           "name": "Autoch-pattern bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "5aa2-c2f7-ed44-f3bc",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "eeea-f4e8-272a-bc1e",
+           "name": "HYLas rotary cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Heavy, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "2a24-d1f1-d866-2bf5:6ba5-67fa-c681-f302",
+         "name": "Hearthkyn Warrior w/ HYLas auto rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9066-fa55-1172-ad47",
+           "name": "Autoch-pattern bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "8623-f250-5514-d51d",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "28a9-2493-6b48-efb0",
+           "name": "HYLas auto rifle",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "2a24-d1f1-d866-2bf5:6028-01a8-a643-aea3",
+         "name": "Hearthkyn Warrior w/ L7 missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3835-b091-80cf-c564",
+           "name": "Autoch-pattern bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "ff18-d44b-d9e3-719c",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "df2e-7066-b61c-1a2d",
+           "name": "➤ L7 missile launcher - blast",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "0f47-f0cd-0d5b-514b",
+           "name": "➤ L7 missile launcher - focused",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2a24-d1f1-d866-2bf5:9bba-c4eb-ade6-2339",
+         "name": "Hearthkyn Warrior w/ magna-rail rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e418-606a-270a-7080",
+           "name": "Autoch-pattern bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "1b86-5771-52f1-1701",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "f36a-ee45-45ab-5147",
+           "name": "Magna-rail rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D3+3",
+           "keywords": "Devastating Wounds, Heavy"
+          }
+         ]
+        },
+        {
+         "id": "2a24-d1f1-d866-2bf5:0fd5-2630-0aba-19cd",
+         "name": "Hearthkyn Warrior w/ EtaCarn plasma beamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "09a5-f9fb-c5b0-9558",
+           "name": "Autoch-pattern bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "6a86-b736-3f97-febd",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ca1a-455d-df48-30a4",
+           "name": "EtaCarn plasma beamer",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Sustained Hits D3"
           }
          ]
         }
@@ -836,16 +1090,63 @@
      },
      "loadout": [
       {
-       "id": "efc5-6144-fcf2-f366",
+       "id": "aab6-e41b-da7f-10ed",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Melee weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "aab6-e41b-da7f-10ed:d302-52a9-ef8a-d430",
+         "name": "Mass hammer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "afc9-caae-2b68-5ef1",
+           "name": "Mass hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "aab6-e41b-da7f-10ed:ac4f-c500-41ba-07cf",
+         "name": "Darkstar axe",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0337-ed2f-e579-4e50",
+           "name": "Darkstar axe",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "00ac-a3ae-c23e-c0d6",
+       "kind": "fixed",
+       "name": "Autoch-pattern combi-bolter",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "efc5-6144-fcf2-f366:00ac-a3ae-c23e-c0d6",
+         "id": "00ac-a3ae-c23e-c0d6:6a0b-0a93-2494-57f9",
          "name": "Autoch-pattern combi-bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5ffa-1afc-8bea-83c4",
@@ -2051,14 +2352,14 @@
      },
      "loadout": [
       {
-       "id": "6016-5c68-b821-0070",
-       "kind": "choice",
-       "name": "3 - 6 Pioneers",
-       "min_select": 3,
+       "id": "48b1-2aa0-4098-6661",
+       "kind": "fixed",
+       "name": "Hernkyn Pioneer",
+       "min_select": null,
        "max_select": 6,
        "options": [
         {
-         "id": "6016-5c68-b821-0070:48b1-2aa0-4098-6661",
+         "id": "48b1-2aa0-4098-6661:48b1-2aa0-4098-6661",
          "name": "Hernkyn Pioneer",
          "is_default": true,
          "weapons": [
@@ -2111,11 +2412,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "bd9c-c54e-c236-ade3",
+       "kind": "fixed",
+       "name": "Hernkyn Pioneer w/ comms array",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "6016-5c68-b821-0070:bd9c-c54e-c236-ade3",
+         "id": "bd9c-c54e-c236-ade3:bd9c-c54e-c236-ade3",
          "name": "Hernkyn Pioneer w/ comms array",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "de45-842a-6ee5-63bd",
@@ -2166,12 +2476,161 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "e7c2-eaab-0dbb-9f36",
+       "kind": "fixed",
+       "name": "Hernkyn Pioneer w/ pan-spectral scanner",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "6016-5c68-b821-0070:e7c2-eaab-0dbb-9f36",
+         "id": "e7c2-eaab-0dbb-9f36:e7c2-eaab-0dbb-9f36",
          "name": "Hernkyn Pioneer w/ pan-spectral scanner",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "de45-842a-6ee5-63bd",
+           "name": "Bolt revolver",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "d0e7-2687-90fc-cea6",
+           "name": "Bolt shotgun",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault"
+          },
+          {
+           "profile_id": "f9fa-06ca-c878-b6ca",
+           "name": "Magna-coil autocannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "a821-1b95-fe63-eca9",
+           "name": "Plasma knife",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1689-9abb-20cf-5c8b",
+       "kind": "fixed",
+       "name": "Hernkyn Pioneer w/ searchlight",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1689-9abb-20cf-5c8b:1689-9abb-20cf-5c8b",
+         "name": "Hernkyn Pioneer w/ searchlight",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "de45-842a-6ee5-63bd",
+           "name": "Bolt revolver",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "d0e7-2687-90fc-cea6",
+           "name": "Bolt shotgun",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault"
+          },
+          {
+           "profile_id": "f9fa-06ca-c878-b6ca",
+           "name": "Magna-coil autocannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "a821-1b95-fe63-eca9",
+           "name": "Plasma knife",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "087f-002e-3cc1-7623",
+       "kind": "choice",
+       "name": "Heavy weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "087f-002e-3cc1-7623:ce66-1679-9f1d-bbba",
+         "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
          "is_default": false,
          "weapons": [
+          {
+           "profile_id": "a612-cca6-bcdf-d73a",
+           "name": "HYLas rotary cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          },
           {
            "profile_id": "de45-842a-6ee5-63bd",
            "name": "Bolt revolver",
@@ -2223,10 +2682,22 @@
          ]
         },
         {
-         "id": "6016-5c68-b821-0070:1689-9abb-20cf-5c8b",
-         "name": "Hernkyn Pioneer w/ searchlight",
+         "id": "087f-002e-3cc1-7623:c8df-4536-bd14-5d05",
+         "name": "Hernkyn Pioneer w/ ion beamer",
          "is_default": false,
          "weapons": [
+          {
+           "profile_id": "95f0-954e-ce91-b292",
+           "name": "Ion beamer",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D3+1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Blast"
+          },
           {
            "profile_id": "de45-842a-6ee5-63bd",
            "name": "Bolt revolver",
@@ -2396,16 +2867,16 @@
      },
      "loadout": [
       {
-       "id": "f345-ef22-665e-8149",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "97ff-6dbb-8293-7243",
+       "kind": "fixed",
+       "name": "Armoured wheels",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f345-ef22-665e-8149:97ff-6dbb-8293-7243",
+         "id": "97ff-6dbb-8293-7243:97ff-6dbb-8293-7243",
          "name": "Armoured wheels",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f818-73c9-d2cc-39ce",
@@ -2420,11 +2891,110 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "acc4-06bc-93c2-f53b",
+       "kind": "choice",
+       "name": "Turret weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "acc4-06bc-93c2-f53b:091e-06fa-a39a-1d8f",
+         "name": "HYLas beam cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "11ea-f90f-5b03-d2e8",
+           "name": "HYLas beam cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "f345-ef22-665e-8149:31fe-11c-4b19-fbea",
-         "name": "Twin bolt cannon",
+         "id": "acc4-06bc-93c2-f53b:deaa-766c-aaeb-4e0b",
+         "name": "L7 missile launcher and Sagitaur missile launcher",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6cc8-24f5-2d3e-9378",
+           "name": "Sagitaur missile launcher",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "df2e-7066-b61c-1a2d",
+           "name": "➤ L7 missile launcher - blast",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "0f47-f0cd-0d5b-514b",
+           "name": "➤ L7 missile launcher - focused",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "acc4-06bc-93c2-f53b:f8df-a23a-c129-49a1",
+         "name": "MATR autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2a2a-566e-9f4a-dff7",
+           "name": "MATR autocannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault, Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "31fe-11c-4b19-fbea",
+       "kind": "fixed",
+       "name": "Twin bolt cannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "31fe-11c-4b19-fbea:43cd-5e9f-e550-83e0",
+         "name": "Twin bolt cannon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a63c-aa6e-395c-714d",
@@ -2695,16 +3265,16 @@
      },
      "loadout": [
       {
-       "id": "c800-24e7-4c01-efc2",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8376-0494-75e0-8ea2",
+       "kind": "fixed",
+       "name": "Armoured wheels",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "c800-24e7-4c01-efc2:8376-0494-75e0-8ea2",
+         "id": "8376-0494-75e0-8ea2:8376-0494-75e0-8ea2",
          "name": "Armoured wheels",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "09b1-bd9a-ed25-2246",
@@ -2719,11 +3289,161 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "8bd8-ce25-04fb-0707",
+       "kind": "choice",
+       "name": "Main weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8bd8-ce25-04fb-0707:6a5d-d311-99dc-aa34",
+         "name": "SP heavy conversion beamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0397-a3eb-649a-14b6",
+           "name": "SP heavy conversion beamer",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "4",
+           "keywords": "Conversion, Lethal Hits"
+          }
+         ]
         },
         {
-         "id": "c800-24e7-4c01-efc2:e8c-7ce2-bb36-a36a",
-         "name": "MATR autocannon",
+         "id": "8bd8-ce25-04fb-0707:d4d5-abd4-b267-340f",
+         "name": "Heavy magna-rail cannon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d95-32eb-6471-6cb3",
+           "name": "Heavy magna-rail cannon",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "18",
+           "ap": "-4",
+           "d": "D6+4",
+           "keywords": "Devastating Wounds, Heavy"
+          }
+         ]
+        },
+        {
+         "id": "8bd8-ce25-04fb-0707:542-3f3e-969b-c932",
+         "name": "Cyclic ion cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3a10-ca7f-c2be-80fb",
+           "name": "Cyclic ion cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ed73-88aa-f7af-8490",
+       "kind": "choice",
+       "name": "Sponson weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "ed73-88aa-f7af-8490:c84b-96c6-419b-fa92",
+         "name": "Twin ion beamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9152-b960-78dd-8109",
+           "name": "Twin ion beamer",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D3+1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Blast, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "ed73-88aa-f7af-8490:88b4-8d32-cab2-7e2b",
+         "name": "Twin bolt cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a63c-aa6e-395c-714d",
+           "name": "Twin bolt cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 2, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7eb4-5fc8-e729-ca88",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7eb4-5fc8-e729-ca88:3c12-5387-4d1a-cf2b",
+         "name": "Hekaton warhead",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3ddb-569b-3ddd-8305",
+           "name": "Hekaton warhead",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast, One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e8c-7ce2-bb36-a36a",
+       "kind": "fixed",
+       "name": "MATR autocannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "e8c-7ce2-bb36-a36a:8d16-a849-dd95-997f",
+         "name": "MATR autocannon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2a2a-566e-9f4a-dff7",
@@ -3592,16 +4312,16 @@
      },
      "loadout": [
       {
-       "id": "f740-c9ea-75cf-d1d8",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "50f0-1ba3-dbdf-0dd3",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f740-c9ea-75cf-d1d8:50f0-1ba3-dbdf-0dd3",
+         "id": "50f0-1ba3-dbdf-0dd3:50f0-1ba3-dbdf-0dd3",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8ce9-6e0d-f23f-436a",
@@ -3616,11 +4336,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "56bd-02fb-932d-236b",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "56bd-02fb-932d-236b:c96f-9f3d-8a0b-7bda",
+         "name": "Magna-rail cannon ",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9fdc-f2bb-5cfc-41fc",
+           "name": "Magna-rail cannon ",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D3+3",
+           "keywords": "Devastating Wounds, Heavy"
+          }
+         ]
         },
         {
-         "id": "f740-c9ea-75cf-d1d8:ce29-5c9b-6c26-f0aa",
-         "name": "Twin magna-coil autocannon",
+         "id": "56bd-02fb-932d-236b:0a28-6bcb-a0bc-b869",
+         "name": "HYLas rotary cannon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5c9e-fda1-cf8f-17a3",
+           "name": "HYLas rotary cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ce29-5c9b-6c26-f0aa",
+       "kind": "fixed",
+       "name": "Twin magna-coil autocannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ce29-5c9b-6c26-f0aa:9767-47cb-3455-140e",
+         "name": "Twin magna-coil autocannon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2f25-192f-1c36-faac",

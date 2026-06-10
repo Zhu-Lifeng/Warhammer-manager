@@ -2290,16 +2290,324 @@
      },
      "loadout": [
       {
-       "id": "8512-e0a3-8a59-e899",
+       "id": "3053-376f-d1dc-3ba5",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "8512-e0a3-8a59-e899:26f0-9978-1be3-d54d",
-         "name": "Crushing teeth and claws",
+         "id": "3053-376f-d1dc-3ba5:f547-6f84-d14a-7390",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3104-8d29-e431-05d7",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:59ad-1299-c737-6b9c",
+         "name": "Combi-weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "23be-25e0-7210-cb7f",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:ced9-1867-e80b-61de",
+         "name": "Master-crafted boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ceda-d902-8ff-e126",
+           "name": "Master-crafted boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:8916-c21f-18bd-4a0f",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a80-2594-8839-c0bf",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "5edb-fb23-55e8-8415",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:598b-9b2a-c448-c8d0",
+         "name": "Storm bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "83a0-da0c-752f-b4b3",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:f697-480-a27e-e52e",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f7e-39a9-fc61-122a",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:703f-f2c0-4e98-46bc",
+         "name": "Relic Weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5f7a-ff26-584b-8355",
+           "name": "Relic Weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3053-376f-d1dc-3ba5:a1f3-99e2-99c1-7dd",
+         "name": "Thunder Hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b63-a16a-2b44-553a",
+           "name": "Thunder Hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "eeff-86fd-25b2-9554",
+       "kind": "choice",
+       "name": "Replace relic weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "eeff-86fd-25b2-9554:d701-8454-8bb1-f492",
+         "name": "Relic Weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5f7a-ff26-584b-8355",
+           "name": "Relic Weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "eeff-86fd-25b2-9554:4312-e817-9daf-609a",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a80-2594-8839-c0bf",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "5edb-fb23-55e8-8415",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "eeff-86fd-25b2-9554:5906-21fb-55ce-d492",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f7e-39a9-fc61-122a",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "eeff-86fd-25b2-9554:8c71-726a-78f7-4b2e",
+         "name": "Thunder Hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b63-a16a-2b44-553a",
+           "name": "Thunder Hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "eeff-86fd-25b2-9554:e3e1-31fd-e2d6-64f",
+         "name": "Relic shield and close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7c00-829d-43ae-de12",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "eeff-86fd-25b2-9554:24d9-750b-64f5-1771",
+         "name": "Twin lightning claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "770e-7d92-16bb-cd23",
+           "name": "Twin lightning claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "26f0-9978-1be3-d54d",
+       "kind": "fixed",
+       "name": "Crushing teeth and claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "26f0-9978-1be3-d54d:4700-100e-6b9e-336a",
+         "name": "Crushing teeth and claws",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4378-fbfe-b908-e450",
@@ -2429,16 +2737,293 @@
      },
      "loadout": [
       {
-       "id": "5534-f24f-0e36-89ae",
+       "id": "efc9-d913-2611-5bca",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Relic weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "5534-f24f-0e36-89ae:31d3-efdd-59d6-2548",
-         "name": "Crushing teeth and claws",
+         "id": "efc9-d913-2611-5bca:28-917a-5833-3b0d",
+         "name": "Relic weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ddd6-c0d2-bdc7-5c8f",
+           "name": "Relic weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "efc9-d913-2611-5bca:4d71-bc53-5083-83b3",
+         "name": "Plasma pistol",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f264-ea62-cda0-febf",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "cbd1-4462-91ab-3f64",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "efc9-d913-2611-5bca:1067-e279-33a0-362f",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a82-4af6-7ce3-2046",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "efc9-d913-2611-5bca:29d2-1ac8-c50e-ebaa",
+         "name": "Thunder hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5b97-e8d6-f346-28c7",
+           "name": "Thunder hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "efc9-d913-2611-5bca:a213-74a8-fdfd-0846",
+         "name": "Twin lightning claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2678-ad6e-15c2-30ae",
+           "name": "Twin lightning claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "efc9-d913-2611-5bca:a197-9877-1d6d-7125",
+         "name": "Storm shield and close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c36-5843-1818-4f49",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2682-c4a0-8ebf-f7e1",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2682-c4a0-8ebf-f7e1:6181-cb77-a8da-988",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3104-8d29-e431-05d7",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:f143-6ac3-b758-d343",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-fb54-7530-8818",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:42aa-5e38-8d75-82ee",
+         "name": "Master-crafted boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ceda-d902-8ff-e126",
+           "name": "Master-crafted boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:d0d7-859a-831f-af9e",
+         "name": "Storm bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "77f0-d479-d1e8-1b2",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:6965-bdb7-e0af-d681",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a82-4af6-7ce3-2046",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:c859-96ab-582c-2701",
+         "name": "Relic weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ddd6-c0d2-bdc7-5c8f",
+           "name": "Relic weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2682-c4a0-8ebf-f7e1:3f27-ee6c-a2e8-19ed",
+         "name": "Thunder hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5b97-e8d6-f346-28c7",
+           "name": "Thunder hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "31d3-efdd-59d6-2548",
+       "kind": "fixed",
+       "name": "Crushing teeth and claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "31d3-efdd-59d6-2548:4700-100e-6b9e-336a",
+         "name": "Crushing teeth and claws",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4378-fbfe-b908-e450",
@@ -6891,35 +7476,16 @@
      },
      "loadout": [
       {
-       "id": "7509-b31c-adda-47ec",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "225a-82c9-f85f-9473",
+       "kind": "fixed",
+       "name": "Helfrost destructor",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "7509-b31c-adda-47ec:7cd3-635a-7c6-5885",
-         "name": "Armoured hull",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "8fd8-ebcf-bf97-e1e2",
-           "name": "Armoured hull",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "6",
-           "bs_ws": "4+",
-           "s": "8",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "7509-b31c-adda-47ec:225a-82c9-f85f-9473",
+         "id": "225a-82c9-f85f-9473:225a-82c9-f85f-9473",
          "name": "Helfrost destructor",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ea3f-1db5-a2e-bc19",
@@ -6944,6 +7510,147 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6025-22ba-3467-c002",
+       "kind": "choice",
+       "name": "Nose weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6025-22ba-3467-c002:ced4-1879-e17f-6aeb",
+         "name": "Twin stormstrike missile launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "772f-567b-e3fb-e2",
+           "name": "Twin stormstrike missile launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "6025-22ba-3467-c002:2fd4-7850-7f8f-1683",
+         "name": "Twin lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5ea4-f8cb-ab40-a843",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e784-8de3-915c-ab4b",
+       "kind": "choice",
+       "name": "Sponson weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e784-8de3-915c-ab4b:d2e2-fffb-3656-509d",
+         "name": "Two skyhammer missile launchers",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e95d-5335-b730-da78",
+           "name": "Skyhammer Missile Launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Anti-Fly 2+"
+          }
+         ]
+        },
+        {
+         "id": "e784-8de3-915c-ab4b:b536-ae30-c1df-ae8a",
+         "name": "Two twin multi-meltas",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5eb7-47-da8a-4283",
+           "name": "Twin multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "e784-8de3-915c-ab4b:bc1a-1ed-ed2c-fcce",
+         "name": "Two twin heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dc5-9d7a-3682-55d4",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7cd3-635a-7c6-5885",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7cd3-635a-7c6-5885:3fc0-1753-fefb-89b5",
+         "name": "Armoured hull",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8fd8-ebcf-bf97-e1e2",
+           "name": "Armoured hull",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -7060,54 +7767,16 @@
      },
      "loadout": [
       {
-       "id": "6989-764a-71da-6b6e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "957e-56f9-97a5-956a",
+       "kind": "fixed",
+       "name": "Twin helfrost cannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6989-764a-71da-6b6e:4cff-9335-5d9d-bc83",
-         "name": "Armoured hull",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "8fd8-ebcf-bf97-e1e2",
-           "name": "Armoured hull",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "6",
-           "bs_ws": "4+",
-           "s": "8",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "6989-764a-71da-6b6e:7d89-a417-546f-ef",
-         "name": "Twin lascannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "5ea4-f8cb-ab40-a843",
-           "name": "Twin lascannon",
-           "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "1",
-           "bs_ws": "3+",
-           "s": "12",
-           "ap": "-3",
-           "d": "D6+1",
-           "keywords": "Twin-linked"
-          }
-         ]
-        },
-        {
-         "id": "6989-764a-71da-6b6e:957e-56f9-97a5-956a",
+         "id": "957e-56f9-97a5-956a:957e-56f9-97a5-956a",
          "name": "Twin helfrost cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "bda4-8f56-33d9-5dd1",
@@ -7131,6 +7800,128 @@
            "s": "9",
            "ap": "-3",
            "d": "5",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a450-1a6e-20a3-4893",
+       "kind": "choice",
+       "name": "Sponson weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a450-1a6e-20a3-4893:b48c-aba2-e0da-6180",
+         "name": "Two skyhammer missile launchers",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e95d-5335-b730-da78",
+           "name": "Skyhammer Missile Launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Anti-Fly 2+"
+          }
+         ]
+        },
+        {
+         "id": "a450-1a6e-20a3-4893:62fd-5f6d-590b-9c5d",
+         "name": "Two twin multi-meltas",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5eb7-47-da8a-4283",
+           "name": "Twin multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a450-1a6e-20a3-4893:7f68-eefd-710a-b7ea",
+         "name": "Two twin heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dc5-9d7a-3682-55d4",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4cff-9335-5d9d-bc83",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4cff-9335-5d9d-bc83:3fc0-1753-fefb-89b5",
+         "name": "Armoured hull",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8fd8-ebcf-bf97-e1e2",
+           "name": "Armoured hull",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7d89-a417-546f-ef",
+       "kind": "fixed",
+       "name": "Twin lascannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "7d89-a417-546f-ef:c36c-6247-f673-fe00",
+         "name": "Twin lascannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5ea4-f8cb-ab40-a843",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
            "keywords": "Twin-linked"
           }
          ]
@@ -7248,16 +8039,245 @@
      },
      "loadout": [
       {
-       "id": "f5d7-b1b8-c8a1-a663",
+       "id": "e702-36c4-8de9-f88f",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pistols",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e702-36c4-8de9-f88f:3e3f-742c-5bcf-e4aa",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d093-797a-4c76-eea3",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "e702-36c4-8de9-f88f:ad08-e59b-fa3a-d436",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "463f-3356-9c0c-6dd3",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "d0c3-4572-5e37-b039",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3313-cbd5-3173-b86c",
+       "kind": "choice",
+       "name": "Ranged weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3313-cbd5-3173-b86c:b204-3793-dc87-0f0c",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4540-ab37-18b4-3e56",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3313-cbd5-3173-b86c:773f-feba-ee41-4b2f",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-fb54-7530-8818",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "3313-cbd5-3173-b86c:c5b5-9c75-78fa-fad2",
+         "name": "Storm bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8b94-15e4-ad55-66c3",
+           "name": "Storm Bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d50a-c327-a8b6-e085",
+       "kind": "choice",
+       "name": "Melee weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "d50a-c327-a8b6-e085:bac8-f0b1-8b3b-6b4b",
+         "name": "Astartes Chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6f0d-9f9f-21d6-a85e",
+           "name": "Astartes Chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "d50a-c327-a8b6-e085:5581-7a66-f7d7-fa01",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2794-4bcf-ec72-6af4",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "d50a-c327-a8b6-e085:d480-dbc4-e368-66fa",
+         "name": "Power weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "762d-1541-295e-ab81",
+           "name": "Power weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "d50a-c327-a8b6-e085:5d4d-c980-c66a-7277",
+         "name": "Thunder Hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6739-b626-f2ff-5a5d",
+           "name": "Thunder Hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "d50a-c327-a8b6-e085:4697-a53e-604b-9f50",
+         "name": "Twin lightning claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8102-43c7-1a00-a6ed",
+           "name": "Twin lightning claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1a19-ae98-48dc-1f56",
+       "kind": "fixed",
+       "name": "Close combat weapon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "f5d7-b1b8-c8a1-a663:1a19-ae98-48dc-1f56",
+         "id": "1a19-ae98-48dc-1f56:6c7d-af5b-482-6fbe",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5047-1299-63ca-db8a",
@@ -7396,16 +8416,245 @@
      },
      "loadout": [
       {
-       "id": "9667-cfaf-767f-1cee",
+       "id": "ad73-c797-fbbd-ddc0",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pistols",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ad73-c797-fbbd-ddc0:4136-3a81-50f1-a35b",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d093-797a-4c76-eea3",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "ad73-c797-fbbd-ddc0:ef74-2abc-d22a-33c4",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "463f-3356-9c0c-6dd3",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "d0c3-4572-5e37-b039",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9c1d-7d34-3113-88d8",
+       "kind": "choice",
+       "name": "Ranged weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9c1d-7d34-3113-88d8:b037-9d42-390a-8e43",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4540-ab37-18b4-3e56",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9c1d-7d34-3113-88d8:bfbc-1bfe-716e-6d08",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa18-fb54-7530-8818",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "9c1d-7d34-3113-88d8:0846-ef02-c5a6-1501",
+         "name": "Storm bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8b94-15e4-ad55-66c3",
+           "name": "Storm Bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "98ce-88ee-f872-e204",
+       "kind": "choice",
+       "name": "Melee weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "98ce-88ee-f872-e204:c93e-49b2-c6d6-95bf",
+         "name": "Astartes Chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6f0d-9f9f-21d6-a85e",
+           "name": "Astartes Chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "98ce-88ee-f872-e204:5fc6-ad07-1019-f31a",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2794-4bcf-ec72-6af4",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "98ce-88ee-f872-e204:2bf-f75f-3bfa-1883",
+         "name": "Power weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "762d-1541-295e-ab81",
+           "name": "Power weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "98ce-88ee-f872-e204:b6e0-ba74-7212-b044",
+         "name": "Thunder Hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6739-b626-f2ff-5a5d",
+           "name": "Thunder Hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "98ce-88ee-f872-e204:10ff-d64a-db7f-6c82",
+         "name": "Twin lightning claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8102-43c7-1a00-a6ed",
+           "name": "Twin lightning claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e34e-ce3a-7eec-aa5b",
+       "kind": "fixed",
+       "name": "Close combat weapon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "9667-cfaf-767f-1cee:e34e-ce3a-7eec-aa5b",
+         "id": "e34e-ce3a-7eec-aa5b:6c7d-af5b-482-6fbe",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5047-1299-63ca-db8a",
@@ -9330,16 +10579,16 @@
      },
      "loadout": [
       {
-       "id": "b4ba-16da-c13e-24c5",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "3d97-4e47-c2be-1ce7",
+       "kind": "fixed",
+       "name": "Fenrisian great axe and blizzard shield",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "b4ba-16da-c13e-24c5:3d97-4e47-c2be-1ce7",
+         "id": "3d97-4e47-c2be-1ce7:3d97-4e47-c2be-1ce7",
          "name": "Fenrisian great axe and blizzard shield",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ced3-1cac-9b81-30ac",
@@ -9390,11 +10639,98 @@
            "keywords": "Rapid Fire 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "e093-7a72-d3ad-b908",
+       "kind": "choice",
+       "name": "Replace assault cannon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e093-7a72-d3ad-b908:33f4-4eeb-a8e5-d7c3",
+         "name": "Assault Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "229a-6aa7-98d9-234d",
+           "name": "Assault Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
         },
         {
-         "id": "b4ba-16da-c13e-24c5:baca-37da-7ded-3194",
-         "name": "Dreadnought Combat Weapon",
+         "id": "e093-7a72-d3ad-b908:323f-3728-2a0a-1483",
+         "name": "Multi-melta",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "e093-7a72-d3ad-b908:ba38-62d3-698a-3f35",
+         "name": "Helfrost cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "588a-e63e-738d-e9c8",
+           "name": "➤ Helfrost cannon - dispersed",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Torrent"
+          },
+          {
+           "profile_id": "9a14-199f-feda-9419",
+           "name": "➤ Helfrost cannon - focused",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "5",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "baca-37da-7ded-3194",
+       "kind": "fixed",
+       "name": "Dreadnought Combat Weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "baca-37da-7ded-3194:2693-7478-d47c-9699",
+         "name": "Dreadnought Combat Weapon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cf7c-9c6f-3235-6c6d",
@@ -9512,35 +10848,16 @@
      },
      "loadout": [
       {
-       "id": "cf2b-83a3-f1ec-f6fc",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "2ef1-cb97-6595-a6ec",
+       "kind": "fixed",
+       "name": "Iron Priest hammer",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cf2b-83a3-f1ec-f6fc:7a52-347c-7423-4d22",
-         "name": "Crushing teeth and claws",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "4378-fbfe-b908-e450",
-           "name": "Crushing teeth and claws",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "5",
-           "ap": "-1",
-           "d": "1",
-           "keywords": "Extra Attacks"
-          }
-         ]
-        },
-        {
-         "id": "cf2b-83a3-f1ec-f6fc:2ef1-cb97-6595-a6ec",
+         "id": "2ef1-cb97-6595-a6ec:2ef1-cb97-6595-a6ec",
          "name": "Iron Priest hammer",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4fe4-d221-603b-73f0",
@@ -9555,11 +10872,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "769e-a437-6232-6e19",
+       "kind": "fixed",
+       "name": "Servo-arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "cf2b-83a3-f1ec-f6fc:769e-a437-6232-6e19",
+         "id": "769e-a437-6232-6e19:769e-a437-6232-6e19",
          "name": "Servo-arm",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "91bc-7443-8dc7-d270",
@@ -9571,6 +10897,112 @@
            "s": "8",
            "ap": "-2",
            "d": "3",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ccd4-f9c4-b048-adb",
+       "kind": "choice",
+       "name": "Boltgun Options",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ccd4-f9c4-b048-adb:8eb8-2a3e-eae4-3fc",
+         "name": "Helfrost pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5577-2fbc-c360-aaa",
+           "name": "➤ Helfrost pistol - dispersed",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D3",
+           "bs_ws": "N/A",
+           "s": "3",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Pistol, Torrent"
+          },
+          {
+           "profile_id": "60ca-e862-292d-d5dd",
+           "name": "➤ Helfrost pistol - focused",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "ccd4-f9c4-b048-adb:a96b-7f25-cf66-2663",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d093-797a-4c76-eea3",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "ccd4-f9c4-b048-adb:44f0-b33e-40ef-907f",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4540-ab37-18b4-3e56",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7a52-347c-7423-4d22",
+       "kind": "fixed",
+       "name": "Crushing teeth and claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7a52-347c-7423-4d22:4700-100e-6b9e-336a",
+         "name": "Crushing teeth and claws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4378-fbfe-b908-e450",
+           "name": "Crushing teeth and claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
            "keywords": "Extra Attacks"
           }
          ]

@@ -2479,16 +2479,63 @@
      },
      "loadout": [
       {
-       "id": "5767-f1e9-1e4f-b719",
+       "id": "78e-ace3-6436-fb55",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Replace combi-bolter",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "78e-ace3-6436-fb55:b95f-e352-4d05-937c",
+         "name": "Combi-bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b805-bb52-d8d5-5e82",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "78e-ace3-6436-fb55:8284-661f-8e4c-9e65",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6230-3b5f-6331-2629",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1bea-3e16-7cfb-7544",
+       "kind": "fixed",
+       "name": "Infernal Gaze",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "5767-f1e9-1e4f-b719:1bea-3e16-7cfb-7544",
+         "id": "1bea-3e16-7cfb-7544:6834-1608-e8bc-f243",
          "name": "Infernal Gaze",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8c77-5cce-2226-ff8a",
@@ -2515,11 +2562,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b018-a4e6-359d-6306",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "5767-f1e9-1e4f-b719:b018-a4e6-359d-6306",
+         "id": "b018-a4e6-359d-6306:f9e1-0d72-a04a-dc6f",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "235e-dd39-9df1-729d",
@@ -2656,16 +2712,16 @@
      },
      "loadout": [
       {
-       "id": "6ec4-3abc-3db2-849f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7793-9fa8-84f7-3454",
+       "kind": "fixed",
+       "name": "Bladed limbs",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6ec4-3abc-3db2-849f:7793-9fa8-84f7-3454",
+         "id": "7793-9fa8-84f7-3454:7793-9fa8-84f7-3454",
          "name": "Bladed limbs",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b975-8164-a186-58c9",
@@ -2680,11 +2736,20 @@
            "keywords": "Extra Attacks"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "9c89-2141-493-1a45",
+       "kind": "fixed",
+       "name": "Impaler chainglaive",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "6ec4-3abc-3db2-849f:9c89-2141-493-1a45",
+         "id": "9c89-2141-493-1a45:9c89-2141-493-1a45",
          "name": "Impaler chainglaive",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "19c4-726a-471b-fa10",
@@ -2699,11 +2764,114 @@
            "keywords": "Lance"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "23a-7cc3-6bfc-30b3",
+       "kind": "choice",
+       "name": "Autocannon or baleflamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "23a-7cc3-6bfc-30b3:2c61-621f-9a2e-f681",
+         "name": "Helstalker autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b347-fe10-f8cc-dcf4",
+           "name": "Helstalker autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "6ec4-3abc-3db2-849f:0d6c-b66a-89cc-ff4b",
-         "name": "Bolt pistol",
+         "id": "23a-7cc3-6bfc-30b3:a7b6-2710-fbb1-a5e5",
+         "name": "Baleflamer",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d2ef-b5d7-632d-a4ea",
+           "name": "Baleflamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6+3",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "544f-da23-22f2-2081",
+       "kind": "choice",
+       "name": "Injector or magma cutter",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "544f-da23-22f2-2081:62ab-b83f-26b-b699",
+         "name": "Techno-virus injector",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "60ce-5a91-a3f1-f79a",
+           "name": "Techno-virus injector",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Anti-VEHICLE 2+, Extra Attacks"
+          }
+         ]
+        },
+        {
+         "id": "544f-da23-22f2-2081:6272-39e1-57b1-487a",
+         "name": "Magma cutter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4c65-757-a60a-8f27",
+           "name": "Magma cutter",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "0d6c-b66a-89cc-ff4b",
+       "kind": "fixed",
+       "name": "Bolt pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "0d6c-b66a-89cc-ff4b:a12a-4a92-aef-2ccc",
+         "name": "Bolt pistol",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2ff9-d27-c553-65c2",
@@ -3704,16 +3872,248 @@
      },
      "loadout": [
       {
-       "id": "924c-1427-ca27-7531",
+       "id": "33b-6b32-5bd3-4358",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "924c-1427-ca27-7531:2013-e2e3-fa39-fe6f",
-         "name": "Close combat weapon",
+         "id": "33b-6b32-5bd3-4358:ee07-1b83-5f90-4002",
+         "name": "Accursed weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef75-c544-6241-1281",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "33b-6b32-5bd3-4358:c0f1-e498-b6a6-f7e9",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "33b-6b32-5bd3-4358:f033-7554-5561-7ec5",
+         "name": "Heavy melee weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "54a-9461-807a-7750",
+           "name": "Heavy melee weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "33b-6b32-5bd3-4358:b32-e48-57b8-ad3b",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "33b-6b32-5bd3-4358:5385-7f51-1d3-a579",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "46a1-162a-774b-d91b",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "499c-b49b-0c00-f9c8",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7fec-6d11-12ed-b41f",
+       "kind": "choice",
+       "name": "Replace boltgun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7fec-6d11-12ed-b41f:ecd7-1e10-bc63-c4c6",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7c1f-e02-fe06-92fb",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7fec-6d11-12ed-b41f:e01d-689a-d81-4123",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7fec-6d11-12ed-b41f:8dcc-b2c5-3e33-61ef",
+         "name": "Heavy melee weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "54a-9461-807a-7750",
+           "name": "Heavy melee weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7fec-6d11-12ed-b41f:4284-5fdc-c7a4-4d83",
+         "name": "Boltgun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "63e7-7452-2edb-99dc",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7fec-6d11-12ed-b41f:4fbc-1d5e-3848-24c0",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "46a1-162a-774b-d91b",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "499c-b49b-0c00-f9c8",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2013-e2e3-fa39-fe6f",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2013-e2e3-fa39-fe6f:b12c-308b-9920-b09a",
+         "name": "Close combat weapon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "aee9-ca1-a640-8f06",
@@ -5603,14 +6003,14 @@
      },
      "loadout": [
       {
-       "id": "cf84-bb8c-bc0c-3380",
-       "kind": "choice",
-       "name": "2-5 Bikers",
-       "min_select": 2,
+       "id": "7012-8aec-f98-e883",
+       "kind": "fixed",
+       "name": "Biker w/ combi-bolter and bolt pistol",
+       "min_select": null,
        "max_select": 5,
        "options": [
         {
-         "id": "cf84-bb8c-bc0c-3380:7012-8aec-f98-e883",
+         "id": "7012-8aec-f98-e883:7012-8aec-f98-e883",
          "name": "Biker w/ combi-bolter and bolt pistol",
          "is_default": true,
          "weapons": [
@@ -5651,11 +6051,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "6e5f-56e5-5083-25eb",
+       "kind": "fixed",
+       "name": "Biker w/ combi-bolter and chainsword",
+       "min_select": null,
+       "max_select": 5,
+       "options": [
         {
-         "id": "cf84-bb8c-bc0c-3380:6e5f-56e5-5083-25eb",
+         "id": "6e5f-56e5-5083-25eb:6e5f-56e5-5083-25eb",
          "name": "Biker w/ combi-bolter and chainsword",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "356a-666c-2ce5-9dcb",
@@ -5692,6 +6101,283 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "efae-d485-fac2-5a6c",
+       "kind": "choice",
+       "name": "Up to two:",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "efae-d485-fac2-5a6c:b4-8945-1738-4dac",
+         "name": "Biker w/ flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "493a-8e37-c060-1a8d",
+           "name": "Flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "efae-d485-fac2-5a6c:626c-9f61-24a3-fbc0",
+         "name": "Biker w/ meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          },
+          {
+           "profile_id": "764a-68b9-164b-6651",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "efae-d485-fac2-5a6c:7281-9fba-d635-602",
+         "name": "Biker w/ plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "38ff-30e0-10e1-fb2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "8416-1e2b-edc1-7acf",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Rapid Fire 1"
+          },
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "efae-d485-fac2-5a6c:c10f-b066-53fa-33d8",
+         "name": "Biker w/ combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
           }
          ]
         }
@@ -5742,16 +6428,132 @@
      },
      "loadout": [
       {
-       "id": "f645-cac3-1ad6-e9b4",
+       "id": "4a22-5287-4358-314f",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f645-cac3-1ad6-e9b4:aad2-2d41-4c70-fecc",
-         "name": "Combi-bolter",
+         "id": "4a22-5287-4358-314f:4904-383b-84d2-9fb2",
+         "name": "Accursed weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "79e9-512b-5b1e-d478",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4a22-5287-4358-314f:3bad-55f3-c2d1-65aa",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-6b3b-7297-3604",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4a22-5287-4358-314f:859d-d4c0-2d40-b701",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "4a22-5287-4358-314f:3b9a-a847-755c-f197",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "46a1-162a-774b-d91b",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "499c-b49b-0c00-f9c8",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "4a22-5287-4358-314f:ecf4-5e7f-98c6-6b0f",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4199-c4ef-a7c6-aad1",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "aad2-2d41-4c70-fecc",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "aad2-2d41-4c70-fecc:c627-5d3-1420-c7f1",
+         "name": "Combi-bolter",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "356a-666c-2ce5-9dcb",
@@ -5766,11 +6568,20 @@
            "keywords": "Rapid Fire 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a2e3-f4bd-a571-5892",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f645-cac3-1ad6-e9b4:a2e3-f4bd-a571-5892",
+         "id": "a2e3-f4bd-a571-5892:b12c-308b-9920-b09a",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "aee9-ca1-a640-8f06",
@@ -5869,14 +6680,14 @@
      },
      "loadout": [
       {
-       "id": "6756-c1dd-ae6-e0b0",
-       "kind": "choice",
-       "name": "4-9 Raptors",
-       "min_select": 4,
+       "id": "b6c1-f5f5-550f-cb87",
+       "kind": "fixed",
+       "name": "Raptor",
+       "min_select": null,
        "max_select": 9,
        "options": [
         {
-         "id": "6756-c1dd-ae6-e0b0:b6c1-f5f5-550f-cb87",
+         "id": "b6c1-f5f5-550f-cb87:b6c1-f5f5-550f-cb87",
          "name": "Raptor",
          "is_default": true,
          "weapons": [
@@ -5905,11 +6716,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "d733-cfda-380d-6de3",
+       "kind": "fixed",
+       "name": "Raptor w/ plasma pistol",
+       "min_select": null,
+       "max_select": 4,
+       "options": [
         {
-         "id": "6756-c1dd-ae6-e0b0:d733-cfda-380d-6de3",
+         "id": "d733-cfda-380d-6de3:d733-cfda-380d-6de3",
          "name": "Raptor w/ plasma pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2d43-6b3b-7297-3604",
@@ -5948,11 +6768,20 @@
            "keywords": "Hazardous, Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "62dd-c15f-6a10-9c52",
+       "kind": "fixed",
+       "name": "Raptor w/ heavy melee weapon",
+       "min_select": null,
+       "max_select": 4,
+       "options": [
         {
-         "id": "6756-c1dd-ae6-e0b0:62dd-c15f-6a10-9c52",
+         "id": "62dd-c15f-6a10-9c52:62dd-c15f-6a10-9c52",
          "name": "Raptor w/ heavy melee weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "332b-2bbb-f15b-b7e8",
@@ -5979,11 +6808,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "340f-c113-9aa9-8a42",
+       "kind": "fixed",
+       "name": "Raptor w/ mutations",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "6756-c1dd-ae6-e0b0:340f-c113-9aa9-8a42",
+         "id": "340f-c113-9aa9-8a42:340f-c113-9aa9-8a42",
          "name": "Raptor w/ mutations",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ed0b-7e33-319d-93e4",
@@ -6008,6 +6846,156 @@
            "ap": "-2",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a76b-f5f1-ddc6-2780",
+       "kind": "choice",
+       "name": "2 selections per 5 models",
+       "min_select": null,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "a76b-f5f1-ddc6-2780:dcd9-54f0-e40-634c",
+         "name": "Raptor w/ meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "764a-68b9-164b-6651",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "a76b-f5f1-ddc6-2780:90e9-e59a-ce0a-eb1d",
+         "name": "Raptor w/ plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "38ff-30e0-10e1-fb2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "8416-1e2b-edc1-7acf",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Rapid Fire 1"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "a76b-f5f1-ddc6-2780:5222-cd14-f5e1-d585",
+         "name": "Raptor w/ flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "24af-e727-aa06-d6cc",
+           "name": "Flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "c1cb-1e20-a75d-6eb2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
           }
          ]
         }
@@ -7577,14 +8565,14 @@
        ]
       },
       {
-       "id": "8c37-4f28-e18f-58df",
-       "kind": "choice",
-       "name": "9 Traitor Guardsmen",
-       "min_select": 9,
+       "id": "45d2-3454-daf-c7a8",
+       "kind": "fixed",
+       "name": "Guardsman w/ lasgun",
+       "min_select": null,
        "max_select": 9,
        "options": [
         {
-         "id": "8c37-4f28-e18f-58df:45d2-3454-daf-c7a8",
+         "id": "45d2-3454-daf-c7a8:45d2-3454-daf-c7a8",
          "name": "Guardsman w/ lasgun",
          "is_default": true,
          "weapons": [
@@ -7599,6 +8587,194 @@
            "ap": "0",
            "d": "1",
            "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "93b1-211f-5577-222e",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a2d6-834f-612e-39bd",
+       "kind": "choice",
+       "name": "Up to 3:",
+       "min_select": null,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "a2d6-834f-612e-39bd:9865-ec5d-36c5-48c8",
+         "name": "Guardsman w/ flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "32dc-74b6-a239-d55d",
+           "name": "Flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "93b1-211f-5577-222e",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a2d6-834f-612e-39bd:f69b-87be-dedb-e059",
+         "name": "Guardsman w/ plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "73fa-10e-5e5b-b486",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "6f5d-6839-50d5-a577",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Rapid Fire 1"
+          },
+          {
+           "profile_id": "93b1-211f-5577-222e",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a2d6-834f-612e-39bd:f462-99a-26d7-365c",
+         "name": "Guardsman w/ meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7ccb-e7f2-6c93-98e8",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          },
+          {
+           "profile_id": "93b1-211f-5577-222e",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a2d6-834f-612e-39bd:bd89-37ee-f0e1-cb62",
+         "name": "Guardsman w/ Cultist sniper rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "68cd-53e6-b7fb-eb4",
+           "name": "Cultist sniper rifle",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Heavy, Precision"
+          },
+          {
+           "profile_id": "93b1-211f-5577-222e",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a2d6-834f-612e-39bd:56fa-b048-3325-2122",
+         "name": "Guardsman w/ Cultist grenade launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea8-a8b-39f3-3c4",
+           "name": "➤ Cultist grenade launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "d64a-2151-c768-8e64",
+           "name": "➤ Cultist grenade launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "-"
           },
           {
            "profile_id": "93b1-211f-5577-222e",
@@ -8138,16 +9314,16 @@
      },
      "loadout": [
       {
-       "id": "ea73-a866-a80c-ea37",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4a90-eb21-262c-6e12",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ea73-a866-a80c-ea37:4a90-eb21-262c-6e12",
+         "id": "4a90-eb21-262c-6e12:4a90-eb21-262c-6e12",
          "name": "Armoured tracks",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8d01-e4ea-c21c-b172",
@@ -8162,11 +9338,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b171-4e01-337f-c749",
+       "kind": "fixed",
+       "name": "Soulshatter lascannon",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
         {
-         "id": "ea73-a866-a80c-ea37:b171-4e01-337f-c749",
+         "id": "b171-4e01-337f-c749:b171-4e01-337f-c749",
          "name": "Soulshatter lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cb8a-dd24-fe4c-5d8c",
@@ -8181,11 +9366,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "a9c0-a89b-d6f5-417c",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a9c0-a89b-d6f5-417c:61bf-b7c6-f38a-af4",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
         },
         {
-         "id": "ea73-a866-a80c-ea37:199e-ef51-693e-1ca",
-         "name": "Havoc launcher",
+         "id": "a9c0-a89b-d6f5-417c:75fd-9640-f749-fb3",
+         "name": "Combi-weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "199e-ef51-693e-1ca",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "199e-ef51-693e-1ca:4bfd-ad0f-5e78-ccf9",
+         "name": "Havoc launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6691-69f0-ca72-827d",
@@ -8200,11 +9441,20 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "2c9c-2c69-25a2-bc38",
+       "kind": "fixed",
+       "name": "Twin heavy bolter",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "ea73-a866-a80c-ea37:2c9c-2c69-25a2-bc38",
+         "id": "2c9c-2c69-25a2-bc38:b79-64e7-e1c5-491",
          "name": "Twin heavy bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e48b-ecc4-bbe7-dd6c",
@@ -8318,16 +9568,138 @@
      },
      "loadout": [
       {
-       "id": "cf59-0778-2067-b770",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1e2b-bdd2-116e-1f83",
+       "kind": "fixed",
+       "name": "Predator twin lascannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cf59-0778-2067-b770:9717-16ac-64dc-506a",
-         "name": "Armoured tracks",
+         "id": "1e2b-bdd2-116e-1f83:1e2b-bdd2-116e-1f83",
+         "name": "Predator twin lascannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d943-c785-a356-263a",
+           "name": "Predator twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "db1a-3d22-5c82-fdb6",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "db1a-3d22-5c82-fdb6:212-9ef0-74c0-4c9a",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "db1a-3d22-5c82-fdb6:f1bf-8525-2d07-7d92",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ab3d-1758-f92c-336",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ab3d-1758-f92c-336:95a9-664b-e605-52d0",
+         "name": "2 heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bb5d-5c55-97ed-c51c",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "ab3d-1758-f92c-336:d24a-9b6a-e48b-2fcb",
+         "name": "2 lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8883-2cfc-65ee-9f13",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9717-16ac-64dc-506a",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9717-16ac-64dc-506a:aaaa-9466-3887-3cdd",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e7ef-8415-2391-4c1",
@@ -8342,11 +9714,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "bcb1-85f2-49e8-d494",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "cf59-0778-2067-b770:bcb1-85f2-49e8-d494",
+         "id": "bcb1-85f2-49e8-d494:4bfd-ad0f-5e78-ccf9",
          "name": "Havoc launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6691-69f0-ca72-827d",
@@ -8359,25 +9740,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Blast"
-          }
-         ]
-        },
-        {
-         "id": "cf59-0778-2067-b770:1e2b-bdd2-116e-1f83",
-         "name": "Predator twin lascannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "d943-c785-a356-263a",
-           "name": "Predator twin lascannon",
-           "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "1",
-           "bs_ws": "3+",
-           "s": "14",
-           "ap": "-3",
-           "d": "D6+1",
-           "keywords": "Twin-linked"
           }
          ]
         }
@@ -8473,16 +9835,138 @@
      },
      "loadout": [
       {
-       "id": "2e6f-e184-c2f2-0cf5",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b08d-6108-969a-9a95",
+       "kind": "fixed",
+       "name": "Predator autocannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2e6f-e184-c2f2-0cf5:23e8-db08-190d-1fd",
-         "name": "Armoured tracks",
+         "id": "b08d-6108-969a-9a95:b08d-6108-969a-9a95",
+         "name": "Predator autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9f32-4cfc-7282-41d0",
+           "name": "Predator autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9f60-f36c-ee33-8d64",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9f60-f36c-ee33-8d64:538f-491f-680-3d77",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "9f60-f36c-ee33-8d64:2751-3bf6-c9b6-aef",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "865a-231b-26ef-a729",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "865a-231b-26ef-a729:18ee-2abf-8522-1b75",
+         "name": "2 heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bb5d-5c55-97ed-c51c",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "865a-231b-26ef-a729:1eb0-4d8e-a77-3d72",
+         "name": "2 lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8883-2cfc-65ee-9f13",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "23e8-db08-190d-1fd",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "23e8-db08-190d-1fd:aaaa-9466-3887-3cdd",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e7ef-8415-2391-4c1",
@@ -8497,11 +9981,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "cd3c-9766-b4e7-a81c",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "2e6f-e184-c2f2-0cf5:cd3c-9766-b4e7-a81c",
+         "id": "cd3c-9766-b4e7-a81c:4bfd-ad0f-5e78-ccf9",
          "name": "Havoc launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6691-69f0-ca72-827d",
@@ -8514,25 +10007,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Blast"
-          }
-         ]
-        },
-        {
-         "id": "2e6f-e184-c2f2-0cf5:b08d-6108-969a-9a95",
-         "name": "Predator autocannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "9f32-4cfc-7282-41d0",
-           "name": "Predator autocannon",
-           "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "4",
-           "bs_ws": "3+",
-           "s": "9",
-           "ap": "-1",
-           "d": "3",
-           "keywords": "Rapid Fire 2"
           }
          ]
         }
@@ -8628,16 +10102,91 @@
      },
      "loadout": [
       {
-       "id": "390e-dadf-b8dd-5007",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7f72-9cd7-e0a6-39fa",
+       "kind": "fixed",
+       "name": "Demolisher cannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "390e-dadf-b8dd-5007:5921-a204-e144-124c",
-         "name": "Armoured tracks",
+         "id": "7f72-9cd7-e0a6-39fa:7f72-9cd7-e0a6-39fa",
+         "name": "Demolisher cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fc34-fd56-1075-6e3b",
+           "name": "Demolisher cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1d35-b2fe-99f9-286",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1d35-b2fe-99f9-286:ebe1-7afc-cbba-fd8a",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "1d35-b2fe-99f9-286:61d2-21a2-ea71-cf2",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5921-a204-e144-124c",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5921-a204-e144-124c:aaaa-9466-3887-3cdd",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e7ef-8415-2391-4c1",
@@ -8652,11 +10201,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "bfbe-945f-d336-b6b0",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "390e-dadf-b8dd-5007:bfbe-945f-d336-b6b0",
+         "id": "bfbe-945f-d336-b6b0:4bfd-ad0f-5e78-ccf9",
          "name": "Havoc launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6691-69f0-ca72-827d",
@@ -8668,25 +10226,6 @@
            "s": "5",
            "ap": "0",
            "d": "1",
-           "keywords": "Blast"
-          }
-         ]
-        },
-        {
-         "id": "390e-dadf-b8dd-5007:7f72-9cd7-e0a6-39fa",
-         "name": "Demolisher cannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "fc34-fd56-1075-6e3b",
-           "name": "Demolisher cannon",
-           "weapon_type": "Ranged",
-           "range": "24\"",
-           "a": "D6+3",
-           "bs_ws": "3+",
-           "s": "14",
-           "ap": "-3",
-           "d": "D6",
            "keywords": "Blast"
           }
          ]
@@ -8989,16 +10528,16 @@
      },
      "loadout": [
       {
-       "id": "2995-70d3-7ff1-84f5",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "da4f-e317-2582-a402",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2995-70d3-7ff1-84f5:da4f-e317-2582-a402",
+         "id": "da4f-e317-2582-a402:da4f-e317-2582-a402",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5fbc-eacd-4312-ca64",
@@ -9011,6 +10550,312 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "88ec-a238-7f50-6d1b",
+       "kind": "choice",
+       "name": "Missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "88ec-a238-7f50-6d1b:bfbe-6f88-7b0c-acc9",
+         "name": "Helbrute fist with combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca9d-91bd-7116-4b9d",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "88ec-a238-7f50-6d1b:9757-2934-1dc7-8d93",
+         "name": "Helbrute fist with heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca9d-91bd-7116-4b9d",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "cc5a-c8a2-d618-1078",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "88ec-a238-7f50-6d1b:ff0c-eb31-b101-f2f2",
+         "name": "Missile launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c74-2f27-b386-a09b",
+           "name": "➤ Missile launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "d137-8f12-7931-ae52",
+           "name": "➤ Missile launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "88ec-a238-7f50-6d1b:809e-1365-93d9-1ae1",
+         "name": "Helbrute hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8e93-ec0b-c5d0-7785",
+           "name": "Helbrute hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "88ec-a238-7f50-6d1b:7f50-164f-5a9b-2817",
+         "name": "Power scourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "26a-53a7-7995-587c",
+           "name": "Power scourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6380-a54c-4993-d0fb",
+       "kind": "choice",
+       "name": "Multi-melta",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6380-a54c-4993-d0fb:fbdb-f6a3-ec48-b697",
+         "name": "Multi-melta",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "cce2-712c-bbdc-c11e",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:8150-a83e-7663-e0a1",
+         "name": "Twin autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a12d-afd6-9203-3eca",
+           "name": "Twin autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:c0c9-c542-abce-95a7",
+         "name": "Helbrute fist with heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca9d-91bd-7116-4b9d",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "cc5a-c8a2-d618-1078",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:c602-93ab-11da-ec53",
+         "name": "Helbrute fist with combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca9d-91bd-7116-4b9d",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:6d34-f63e-b95e-9eb9",
+         "name": "Helbrute plasma cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa1d-aa3b-6e38-b5e7",
+           "name": "Helbrute plasma cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:8540-861d-9f65-829d",
+         "name": "Twin heavy bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e48b-ecc4-bbe7-dd6c",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "6380-a54c-4993-d0fb:b490-98bf-7c26-fdcf",
+         "name": "Twin lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8d78-1663-972a-5086",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -9122,16 +10967,16 @@
      },
      "loadout": [
       {
-       "id": "5af3-52f8-0eb7-c9b0",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b3a0-991d-74b8-7900",
+       "kind": "fixed",
+       "name": "Heldrake claws",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "5af3-52f8-0eb7-c9b0:b3a0-991d-74b8-7900",
+         "id": "b3a0-991d-74b8-7900:b3a0-991d-74b8-7900",
          "name": "Heldrake claws",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f2e7-4385-eeb9-9b5c",
@@ -9144,6 +10989,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "240d-ebfb-942f-52f6",
+       "kind": "choice",
+       "name": "Mouth weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "240d-ebfb-942f-52f6:efe4-e927-efcf-409f",
+         "name": "Baleflamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6c0d-6c5e-5e49-b843",
+           "name": "Baleflamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6+3",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "240d-ebfb-942f-52f6:52f1-1f9a-b6a2-6ff3",
+         "name": "Hades autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2c4b-5059-9578-8124",
+           "name": "Hades autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
           }
          ]
         }
@@ -9250,16 +11142,16 @@
      },
      "loadout": [
       {
-       "id": "7956-e2bd-7b78-69f5",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "c282-992e-9d74-f62a",
+       "kind": "fixed",
+       "name": "Maulerfiend fists",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "7956-e2bd-7b78-69f5:c282-992e-9d74-f62a",
+         "id": "c282-992e-9d74-f62a:c282-992e-9d74-f62a",
          "name": "Maulerfiend fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2265-952-4447-177f",
@@ -9272,6 +11164,53 @@
            "ap": "-2",
            "d": "D6+1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d15d-5a91-db0b-2b52",
+       "kind": "choice",
+       "name": "Head weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d15d-5a91-db0b-2b52:4949-ea22-368c-14e1",
+         "name": "2 magma cutters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bcfc-d5b0-7f4e-654",
+           "name": "Magma cutter",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "d15d-5a91-db0b-2b52:762a-30ef-ed85-945e",
+         "name": "Lasher tendrils",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2e57-63c1-4a82-e352",
+           "name": "Lasher tendrils",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
           }
          ]
         }
@@ -9383,33 +11322,14 @@
      },
      "loadout": [
       {
-       "id": "ea0b-45da-b62b-6f6b",
+       "id": "c549-5890-b199-7c77",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pintle weapon",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "ea0b-45da-b62b-6f6b:f0a3-3143-afb9-9578",
-         "name": "Armoured tracks",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "e7ef-8415-2391-4c1",
-           "name": "Armoured tracks",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "ea0b-45da-b62b-6f6b:b94b-5765-b762-553c",
+         "id": "c549-5890-b199-7c77:7f24-12fe-4e5b-8178",
          "name": "Combi-bolter",
          "is_default": false,
          "weapons": [
@@ -9428,9 +11348,93 @@
          ]
         },
         {
-         "id": "ea0b-45da-b62b-6f6b:ab9f-1e64-4513-4dbb",
-         "name": "Havoc launcher",
+         "id": "c549-5890-b199-7c77:c036-8ff5-9af5-5740",
+         "name": "Combi-weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f0a3-3143-afb9-9578",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f0a3-3143-afb9-9578:aaaa-9466-3887-3cdd",
+         "name": "Armoured tracks",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e7ef-8415-2391-4c1",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b94b-5765-b762-553c",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b94b-5765-b762-553c:c627-5d3-1420-c7f1",
+         "name": "Combi-bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "356a-666c-2ce5-9dcb",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ab9f-1e64-4513-4dbb",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ab9f-1e64-4513-4dbb:4bfd-ad0f-5e78-ccf9",
+         "name": "Havoc launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6691-69f0-ca72-827d",
@@ -9559,16 +11563,16 @@
      },
      "loadout": [
       {
-       "id": "8325-c9fb-a435-3e69",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "3f99-c99a-f07d-1eb2",
+       "kind": "fixed",
+       "name": "Great cleaver of Khorne",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "8325-c9fb-a435-3e69:3f99-c99a-f07d-1eb2",
+         "id": "3f99-c99a-f07d-1eb2:3f99-c99a-f07d-1eb2",
          "name": "Great cleaver of Khorne",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d4d2-7b86-2d37-bad5",
@@ -9593,6 +11597,119 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c8ac-dc6f-2142-2b7f",
+       "kind": "choice",
+       "name": "Hades gatling cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c8ac-dc6f-2142-2b7f:2a98-e2c8-f280-983c",
+         "name": "Hades gatling cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e980-62a3-649c-2bc0",
+           "name": "Hades gatling cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "c8ac-dc6f-2142-2b7f:398e-59bb-6ac8-a5a5",
+         "name": "Skullhurler",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1378-8801-d833-a5c6",
+           "name": "Skullhurler",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "2D6",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fa56-2007-150b-ca29",
+       "kind": "choice",
+       "name": "Gorestorm cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fa56-2007-150b-ca29:7ca-230f-cc21-275a",
+         "name": "Gorestorm cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "299e-f785-7ff8-2694",
+           "name": "Gorestorm cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "fa56-2007-150b-ca29:5081-3e79-7631-2eb5",
+         "name": "Daemongore cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3171-8be5-e5f2-befa",
+           "name": "Daemongore cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "fa56-2007-150b-ca29:2f9-55fe-ac10-f50c",
+         "name": "Ichor cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7fa3-ae00-69f8-e6a5",
+           "name": "Ichor cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2D6",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast"
           }
          ]
         }
@@ -9822,16 +11939,75 @@
      },
      "loadout": [
       {
-       "id": "a5e6-5174-a050-aa3e",
+       "id": "72ce-fe2d-627a-c64e",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Pistol",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "a5e6-5174-a050-aa3e:cdf-a737-a563-5e52",
-         "name": "Chainblade",
+         "id": "72ce-fe2d-627a-c64e:b07e-dbae-65ff-eb78",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ed0b-7e33-319d-93e4",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "72ce-fe2d-627a-c64e:02e6-0af0-f900-64f2",
+         "name": "Plasma pistol",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "46a1-162a-774b-d91b",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "499c-b49b-0c00-f9c8",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cdf-a737-a563-5e52",
+       "kind": "fixed",
+       "name": "Chainblade",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cdf-a737-a563-5e52:6368-a3ed-9f23-af2e",
+         "name": "Chainblade",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ad77-65f7-8b2-5ee4",
@@ -10388,16 +12564,16 @@
      },
      "loadout": [
       {
-       "id": "dd02-4e91-4154-9b9b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "de98-b1df-92e5-f399",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "dd02-4e91-4154-9b9b:de98-b1df-92e5-f399",
+         "id": "de98-b1df-92e5-f399:de98-b1df-92e5-f399",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "465-1aa2-fe4-9f5b",
@@ -10412,11 +12588,20 @@
            "keywords": "Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "ed87-1ee0-ab1e-83d6",
+       "kind": "fixed",
+       "name": "Malefic Curse",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "dd02-4e91-4154-9b9b:ed87-1ee0-ab1e-83d6",
+         "id": "ed87-1ee0-ab1e-83d6:ed87-1ee0-ab1e-83d6",
          "name": "Malefic Curse",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9fb4-3ea7-2dfe-9732",
@@ -10429,6 +12614,53 @@
            "ap": "-3",
            "d": "1",
            "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Psychic"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "65c8-618f-540b-31c9",
+       "kind": "choice",
+       "name": "Pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "65c8-618f-540b-31c9:4b25-1282-72c4-3749",
+         "name": "Inferno bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "672d-f472-2a52-98af",
+           "name": "Inferno bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "65c8-618f-540b-31c9:b29c-b7b-e57f-29f8",
+         "name": "Warpflame pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5b2a-bae-bd7a-443",
+           "name": "Warpflame pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "3",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Pistol, Torrent"
           }
          ]
         }
@@ -10651,16 +12883,16 @@
        ]
       },
       {
-       "id": "c835-5842-bbdb-63b7",
-       "kind": "choice",
-       "name": "Plague Marines",
-       "min_select": 4,
-       "max_select": 9,
+       "id": "f4a6-f3e-129d-c7c9",
+       "kind": "fixed",
+       "name": "Plague Marine w/ bubotic weapons",
+       "min_select": null,
+       "max_select": 4,
        "options": [
         {
-         "id": "c835-5842-bbdb-63b7:f4a6-f3e-129d-c7c9",
+         "id": "f4a6-f3e-129d-c7c9:f4a6-f3e-129d-c7c9",
          "name": "Plague Marine w/ bubotic weapons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e0e9-86a0-e00b-a8bb",
@@ -10687,11 +12919,20 @@
            "keywords": "Lethal Hits"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "2d46-b072-53d6-e1d5",
+       "kind": "fixed",
+       "name": "Plague Marine w/ heavy plague weapon",
+       "min_select": null,
+       "max_select": 4,
+       "options": [
         {
-         "id": "c835-5842-bbdb-63b7:2d46-b072-53d6-e1d5",
+         "id": "2d46-b072-53d6-e1d5:2d46-b072-53d6-e1d5",
          "name": "Plague Marine w/ heavy plague weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e0e9-86a0-e00b-a8bb",
@@ -10718,11 +12959,20 @@
            "keywords": "Lethal Hits"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f8c0-8d1-b969-f76e",
+       "kind": "fixed",
+       "name": "Plague Marine w/ blight launcher",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "c835-5842-bbdb-63b7:f8c0-8d1-b969-f76e",
+         "id": "f8c0-8d1-b969-f76e:f8c0-8d1-b969-f76e",
          "name": "Plague Marine w/ blight launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b055-e1-d23d-2b94",
@@ -10749,9 +12999,18 @@
            "keywords": "Lethal Hits"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "477c-681d-afd5-2daa",
+       "kind": "fixed",
+       "name": "Plague Marine w/ boltgun",
+       "min_select": null,
+       "max_select": 9,
+       "options": [
         {
-         "id": "c835-5842-bbdb-63b7:477c-681d-afd5-2daa",
+         "id": "477c-681d-afd5-2daa:477c-681d-afd5-2daa",
          "name": "Plague Marine w/ boltgun",
          "is_default": true,
          "weapons": [
@@ -10780,11 +13039,20 @@
            "keywords": "Lethal Hits"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "cc0b-d3cf-13e8-9970",
+       "kind": "fixed",
+       "name": "Plague Marine w/ plague spewer",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "c835-5842-bbdb-63b7:cc0b-d3cf-13e8-9970",
+         "id": "cc0b-d3cf-13e8-9970:cc0b-d3cf-13e8-9970",
          "name": "Plague Marine w/ plague spewer",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "16fa-cd9e-572e-1b5e",
@@ -10811,11 +13079,20 @@
            "keywords": "Lethal Hits"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7f28-2a53-8491-2298",
+       "kind": "fixed",
+       "name": "Plague Marine w/ icon of despair",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "c835-5842-bbdb-63b7:7f28-2a53-8491-2298",
+         "id": "7f28-2a53-8491-2298:7f28-2a53-8491-2298",
          "name": "Plague Marine w/ icon of despair",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e0e9-86a0-e00b-a8bb",
@@ -10840,6 +13117,120 @@
            "ap": "0",
            "d": "1",
            "keywords": "Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1b0f-7d15-1ad2-86ea",
+       "kind": "choice",
+       "name": "Special weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "1b0f-7d15-1ad2-86ea:3f19-d76c-10d7-6c3e",
+         "name": "Plague Marine w/ meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e0e9-86a0-e00b-a8bb",
+           "name": "Plague knives",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Lethal Hits"
+          },
+          {
+           "profile_id": "764a-68b9-164b-6651",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "1b0f-7d15-1ad2-86ea:6dda-97e7-d705-f256",
+         "name": "Plague Marine w/ plague belcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e0e9-86a0-e00b-a8bb",
+           "name": "Plague knives",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Lethal Hits"
+          },
+          {
+           "profile_id": "49c5-9f16-2bbc-ff38",
+           "name": "Plague belcher",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "1b0f-7d15-1ad2-86ea:da5c-c3c5-d424-d08b",
+         "name": "Plague Marine w/ plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e0e9-86a0-e00b-a8bb",
+           "name": "Plague knives",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Lethal Hits"
+          },
+          {
+           "profile_id": "38ff-30e0-10e1-fb2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "8416-1e2b-edc1-7acf",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Rapid Fire 1"
           }
          ]
         }
@@ -10963,16 +13354,16 @@
      },
      "loadout": [
       {
-       "id": "2b81-8ed7-5584-299a",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7659-215f-e828-9ea3",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2b81-8ed7-5584-299a:7659-215f-e828-9ea3",
+         "id": "7659-215f-e828-9ea3:7659-215f-e828-9ea3",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cdbc-4fc1-e016-8126",
@@ -10987,11 +13378,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "9eb-eb26-b7cf-57c3",
+       "kind": "choice",
+       "name": "Autocannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9eb-eb26-b7cf-57c3:9676-c3ae-3539-e173",
+         "name": "Havoc launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6691-69f0-ca72-827d",
+           "name": "Havoc launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
         },
         {
-         "id": "2b81-8ed7-5584-299a:ae62-f8d8-8809-d101",
+         "id": "9eb-eb26-b7cf-57c3:2fa4-3b60-8c4a-f76e",
+         "name": "Autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "756b-465f-740-e1e6",
+           "name": "Autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ae62-f8d8-8809-d101",
+       "kind": "fixed",
+       "name": "Twin lascannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "ae62-f8d8-8809-d101:2d38-2ad5-8e3a-3c43",
          "name": "Twin lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8d78-1663-972a-5086",
@@ -11110,16 +13557,16 @@
      },
      "loadout": [
       {
-       "id": "2183-73c4-0212-f114",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "32fc-470b-d31e-d300",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2183-73c4-0212-f114:32fc-470b-d31e-d300",
+         "id": "32fc-470b-d31e-d300:32fc-470b-d31e-d300",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b822-9c28-c09b-eebe",
@@ -11132,6 +13579,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a1fc-e822-3c6c-ba20",
+       "kind": "choice",
+       "name": "Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a1fc-e822-3c6c-ba20:31d5-c23b-ce36-aa6",
+         "name": "Two twin autocannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9b36-c753-d67f-7dd9",
+           "name": "Twin autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a1fc-e822-3c6c-ba20:516-931c-b19c-8f2d",
+         "name": "Two twin lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8d78-1663-972a-5086",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -11258,16 +13752,170 @@
      },
      "loadout": [
       {
-       "id": "6d1c-1826-249d-a9b3",
+       "id": "f361-38dc-b401-8f4d",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f361-38dc-b401-8f4d:33da-9aa0-b47-aa",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bd49-b462-e973-1e02",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:b975-fd3e-f2c0-a6dc",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fb9f-1b8b-2f77-e698",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:9061-d092-4515-3d8",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "82e-d6d-8f83-f82d",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:811a-117d-590c-89e9",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2c35-5f18-702b-7e7f",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:5bbb-7b10-d1de-ac0f",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "313a-ebd4-8b53-6934",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:f639-6ad9-9b4d-dacb",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "f361-38dc-b401-8f4d:4de2-feb9-4110-d9cf",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5436-e612-f3b4-fb2c",
+       "kind": "fixed",
+       "name": "Infernal Gaze",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "6d1c-1826-249d-a9b3:5436-e612-f3b4-fb2c",
+         "id": "5436-e612-f3b4-fb2c:6834-1608-e8bc-f243",
          "name": "Infernal Gaze",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8c77-5cce-2226-ff8a",
@@ -11294,11 +13942,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7293-ac21-a426-57df",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "6d1c-1826-249d-a9b3:7293-ac21-a426-57df",
+         "id": "7293-ac21-a426-57df:f9e1-0d72-a04a-dc6f",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "235e-dd39-9df1-729d",
@@ -11438,16 +14095,16 @@
      },
      "loadout": [
       {
-       "id": "e977-e7cb-895b-7610",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "dcb4-3254-b2-237",
+       "kind": "fixed",
+       "name": "Nurgling's claws and teeth",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "e977-e7cb-895b-7610:dcb4-3254-b2-237",
+         "id": "dcb4-3254-b2-237:dcb4-3254-b2-237",
          "name": "Nurgling's claws and teeth",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "df5-1a21-180b-a69",
@@ -11462,11 +14119,174 @@
            "keywords": "Extra Attacks, Lethal Hits"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "e5be-c6fd-e13d-d1b7",
+       "kind": "choice",
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e5be-c6fd-e13d-d1b7:6694-758f-5910-f5f6",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a566-23a4-fda2-4684",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "e977-e7cb-895b-7610:13d1-6e1a-0a9c-bf94",
-         "name": "Infernal Gaze",
+         "id": "e5be-c6fd-e13d-d1b7:2db2-a52f-85fe-1320",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d324-e14c-49e1-7887",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "e5be-c6fd-e13d-d1b7:a692-f2c9-1f8-88a6",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1150-45f4-2059-dbcc",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e5be-c6fd-e13d-d1b7:2b8b-53bd-739-8b2a",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1abe-3e30-ea48-c62a",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e5be-c6fd-e13d-d1b7:4c7a-3d9-f821-4ae5",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "e5be-c6fd-e13d-d1b7:8516-416e-afe3-1285",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "e5be-c6fd-e13d-d1b7:a00e-a787-6f1a-fc0d",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "13d1-6e1a-0a9c-bf94",
+       "kind": "fixed",
+       "name": "Infernal Gaze",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "13d1-6e1a-0a9c-bf94:6834-1608-e8bc-f243",
+         "name": "Infernal Gaze",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8c77-5cce-2226-ff8a",
@@ -11493,11 +14313,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5a09-13bd-806f-2ad7",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "e977-e7cb-895b-7610:5a09-13bd-806f-2ad7",
+         "id": "5a09-13bd-806f-2ad7:f9e1-0d72-a04a-dc6f",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "235e-dd39-9df1-729d",
@@ -11632,16 +14461,16 @@
      },
      "loadout": [
       {
-       "id": "76f2-6ecf-1f80-da09",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d303-b03a-142b-2b74",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "76f2-6ecf-1f80-da09:d303-b03a-142b-2b74",
+         "id": "d303-b03a-142b-2b74:d303-b03a-142b-2b74",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8ac1-2511-70f3-76c",
@@ -11656,11 +14485,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "83c4-a01f-5f23-435b",
+       "kind": "fixed",
+       "name": "Nurgling's claws and teeth",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "76f2-6ecf-1f80-da09:83c4-a01f-5f23-435b",
+         "id": "83c4-a01f-5f23-435b:83c4-a01f-5f23-435b",
          "name": "Nurgling's claws and teeth",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d502-b74b-7e82-d25f",
@@ -11673,6 +14511,276 @@
            "ap": "0",
            "d": "1",
            "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4324-f05d-b205-3c6d",
+       "kind": "choice",
+       "name": "Astartes chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4324-f05d-b205-3c6d:f192-74a4-732a-5e96",
+         "name": "Astartes chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "82aa-7eac-99e7-16ff",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4324-f05d-b205-3c6d:fa8f-de8a-5131-1746",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff19-2444-e74e-29b0",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4324-f05d-b205-3c6d:8e43-9fd9-62a5-7af5",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8dc-f20c-911-f23b",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4324-f05d-b205-3c6d:8a28-b7d5-7267-d398",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca63-e9de-b82a-9fcb",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "4324-f05d-b205-3c6d:ae76-147a-52f0-949a",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "4324-f05d-b205-3c6d:0921-f8ae-e3e5-f891",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "808a-9060-bebe-4c54",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "808a-9060-bebe-4c54:95ec-d315-46f1-f5a3",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fdec-2275-2d11-3e12",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "808a-9060-bebe-4c54:eb3b-6ee0-790d-6273",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "880e-c47e-c40d-7a01",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "808a-9060-bebe-4c54:33c7-68f0-838e-13d0",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a000-425d-7a78-8243",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "808a-9060-bebe-4c54:5f8d-a3c3-5a2d-ec8e",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "808a-9060-bebe-4c54:fa74-913d-c8b0-ff40",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "808a-9060-bebe-4c54:44f8-e42b-65a8-7783",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -11800,16 +14908,16 @@
      },
      "loadout": [
       {
-       "id": "8db8-80b2-884a-5184",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b156-39ac-3557-d580",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "8db8-80b2-884a-5184:b156-39ac-3557-d580",
+         "id": "b156-39ac-3557-d580:b156-39ac-3557-d580",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a927-39f3-a22c-4b1b",
@@ -11822,6 +14930,276 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4bee-6673-210b-ffd6",
+       "kind": "choice",
+       "name": "Astartes chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4bee-6673-210b-ffd6:8dc1-1d3a-3942-5fe5",
+         "name": "Astartes chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "eb1b-5ff2-dc5d-93ba",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4bee-6673-210b-ffd6:8907-4053-148c-ee1d",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "eb2b-45bf-9f2e-7c4",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4bee-6673-210b-ffd6:b5fe-a9ed-50ce-1ffa",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b014-3c3c-7ed1-4fdf",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4bee-6673-210b-ffd6:7197-25e0-fa27-c846",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d60b-9e9c-5b66-f6b4",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "4bee-6673-210b-ffd6:1738-d5c7-9fbd-69bd",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "4bee-6673-210b-ffd6:9260-7a36-a691-6470",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5081-6314-85e5-4bab",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5081-6314-85e5-4bab:6b8d-eee2-d782-c969",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "753d-2ade-50c9-3a3d",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "5081-6314-85e5-4bab:5d39-aa34-3ff0-7a4e",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ac9b-c9d1-c1d9-dd63",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "5081-6314-85e5-4bab:4aa-be35-e293-7",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d730-bd75-6adf-732e",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "5081-6314-85e5-4bab:e7d8-478e-6c4e-aed5",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "5081-6314-85e5-4bab:adea-7d92-ed27-ed6f",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "5081-6314-85e5-4bab:2f6d-a663-8e31-b956",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -11944,16 +15322,16 @@
      },
      "loadout": [
       {
-       "id": "c3a5-4792-f4ae-97cb",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "99-6713-6301-678d",
+       "kind": "fixed",
+       "name": "Bladed horn",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "c3a5-4792-f4ae-97cb:99-6713-6301-678d",
+         "id": "99-6713-6301-678d:99-6713-6301-678d",
          "name": "Bladed horn",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b6a2-871f-c505-d446",
@@ -11968,11 +15346,20 @@
            "keywords": "Extra Attacks, Lance"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "fff9-6123-3e2b-bc63",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "c3a5-4792-f4ae-97cb:fff9-6123-3e2b-bc63",
+         "id": "fff9-6123-3e2b-bc63:fff9-6123-3e2b-bc63",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b235-f907-569a-7d35",
@@ -11985,6 +15372,276 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b542-8364-6976-a0a6",
+       "kind": "choice",
+       "name": "Astartes chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b542-8364-6976-a0a6:b31c-7f3f-5d83-4134",
+         "name": "Astartes chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "effa-ebab-a031-dec8",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b542-8364-6976-a0a6:ef1b-23b4-bfd8-29e7",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5270-91d2-3bd-e102",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b542-8364-6976-a0a6:25a1-fe0-160f-2f13",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5882-1375-6a3a-95b9",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b542-8364-6976-a0a6:a8f7-62c8-d919-6c49",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2fd6-2102-7264-5735",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b542-8364-6976-a0a6:5f5e-737a-68ac-4a73",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "b542-8364-6976-a0a6:88b0-76ff-e35c-620b",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3748-28dd-6f45-17a3",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3748-28dd-6f45-17a3:c7a5-5c46-44a4-9f82",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7c30-8e09-49e1-fe94",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3748-28dd-6f45-17a3:7a57-4652-73a5-5086",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a403-cc29-661c-a819",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3748-28dd-6f45-17a3:d7d7-5fbc-9153-8eca",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d27e-2ce9-ef7f-28b1",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "3748-28dd-6f45-17a3:c3f3-6b97-d08b-1131",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "3748-28dd-6f45-17a3:b481-98ff-aac4-9eb8",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "3748-28dd-6f45-17a3:af6c-70da-fbd5-c643",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -12107,16 +15764,16 @@
      },
      "loadout": [
       {
-       "id": "00de-6360-9a30-7aa8",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "3778-3227-2266-6abc",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "00de-6360-9a30-7aa8:3778-3227-2266-6abc",
+         "id": "3778-3227-2266-6abc:3778-3227-2266-6abc",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "85c-8a5b-3a12-d2e9",
@@ -12131,11 +15788,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "40a5-b9fa-48ea-380a",
+       "kind": "fixed",
+       "name": "Lashing tongue",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "00de-6360-9a30-7aa8:40a5-b9fa-48ea-380a",
+         "id": "40a5-b9fa-48ea-380a:40a5-b9fa-48ea-380a",
          "name": "Lashing tongue",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e75-147d-584d-1c0b",
@@ -12148,6 +15814,276 @@
            "ap": "0",
            "d": "1",
            "keywords": "Extra Attacks, Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "43a5-9930-44e3-7d11",
+       "kind": "choice",
+       "name": "Astartes chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "43a5-9930-44e3-7d11:c6cf-4617-9a2-4252",
+         "name": "Astartes chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9de9-db34-8f73-119",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "43a5-9930-44e3-7d11:6298-bc6f-94cc-2abd",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "96f4-5d59-7aa-a229",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "43a5-9930-44e3-7d11:c79e-6b5d-1f57-fec6",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a21f-2be9-893d-4df5",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "43a5-9930-44e3-7d11:d49f-1877-3692-7407",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9a33-ab3e-3989-17d",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "43a5-9930-44e3-7d11:b230-51d8-989c-1498",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "43a5-9930-44e3-7d11:b58b-20eb-a01f-9a39",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ccef-e198-532f-36f7",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ccef-e198-532f-36f7:97c5-2afe-fa2a-452",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cc83-77f8-78b4-1092",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ccef-e198-532f-36f7:cf0e-b97f-a01d-9a93",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e328-867a-da17-fa22",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ccef-e198-532f-36f7:d5a9-9be2-2d0d-7118",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cee5-ec4a-6fd-e750",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "ccef-e198-532f-36f7:7a26-cbeb-8763-f124",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "ccef-e198-532f-36f7:8dd2-31df-6bc8-fe39",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "ccef-e198-532f-36f7:9789-4347-ce2d-d5e0",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -12275,16 +16211,16 @@
      },
      "loadout": [
       {
-       "id": "ab4e-4e64-b92d-c25f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "3a42-7897-ac82-ab4d",
+       "kind": "fixed",
+       "name": "Lashing tongue",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ab4e-4e64-b92d-c25f:3a42-7897-ac82-ab4d",
+         "id": "3a42-7897-ac82-ab4d:3a42-7897-ac82-ab4d",
          "name": "Lashing tongue",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a882-70a-8c17-9ae1",
@@ -12299,11 +16235,174 @@
            "keywords": "Extra Attacks, Lethal Hits"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "36fb-2d64-a6d2-f981",
+       "kind": "choice",
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "36fb-2d64-a6d2-f981:b8c5-6176-44e7-a87e",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "38e4-6ff8-914a-c56c",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "ab4e-4e64-b92d-c25f:5b69-e62a-2dfb-e26e",
-         "name": "Infernal Gaze",
+         "id": "36fb-2d64-a6d2-f981:bea4-d07b-e69d-6ca5",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6cda-3df5-f1b8-1cce",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "36fb-2d64-a6d2-f981:1a8b-a7d7-1ddf-67c0",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1161-873a-33a9-b9a5",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "36fb-2d64-a6d2-f981:46c2-3b13-a857-12bf",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1c33-a0ce-63d3-6c1",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "36fb-2d64-a6d2-f981:bb8c-72a5-226f-dd1d",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8c3-975a-740c-3070",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "36fb-2d64-a6d2-f981:7190-3f89-dfc0-fc27",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "36fb-2d64-a6d2-f981:ff42-2c70-95d2-8a6a",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5b69-e62a-2dfb-e26e",
+       "kind": "fixed",
+       "name": "Infernal Gaze",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "5b69-e62a-2dfb-e26e:6834-1608-e8bc-f243",
+         "name": "Infernal Gaze",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8c77-5cce-2226-ff8a",
@@ -12330,11 +16429,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3583-4ef5-0b78-772b",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "ab4e-4e64-b92d-c25f:3583-4ef5-0b78-772b",
+         "id": "3583-4ef5-0b78-772b:f9e1-0d72-a04a-dc6f",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "235e-dd39-9df1-729d",
@@ -13889,16 +17997,16 @@
      },
      "loadout": [
       {
-       "id": "4f79-3533-05cf-85db",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "bec7-1b4f-3d9f-68ca",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4f79-3533-05cf-85db:bec7-1b4f-3d9f-68ca",
+         "id": "bec7-1b4f-3d9f-68ca:bec7-1b4f-3d9f-68ca",
          "name": "Combi-bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7c3b-fc35-20d2-5b2",
@@ -13913,11 +18021,174 @@
            "keywords": "Rapid Fire 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "482c-f660-4189-baa5",
+       "kind": "choice",
+       "name": "Replace bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "482c-f660-4189-baa5:cd2c-3e0f-2efe-406b",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8325-edda-e092-ddc4",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "4f79-3533-05cf-85db:08af-cbbf-5683-b9a8",
-         "name": "Infernal Gaze",
+         "id": "482c-f660-4189-baa5:3623-40e3-98fc-28d5",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "87a7-ac81-a8e0-987c",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "482c-f660-4189-baa5:56b8-572f-b7b1-fe70",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6664-565a-fd74-413c",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "482c-f660-4189-baa5:224c-3f26-99aa-abc9",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f6e8-7f2d-2834-86ed",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "482c-f660-4189-baa5:a068-6da6-d799-e4a6",
+         "name": "Astartes chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "75a3-375f-a569-a16f",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "482c-f660-4189-baa5:c99d-66d1-8d17-a311",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "482c-f660-4189-baa5:9e5e-485a-8c2e-a7c8",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "08af-cbbf-5683-b9a8",
+       "kind": "fixed",
+       "name": "Infernal Gaze",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "08af-cbbf-5683-b9a8:6834-1608-e8bc-f243",
+         "name": "Infernal Gaze",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8c77-5cce-2226-ff8a",
@@ -13944,11 +18215,20 @@
            "keywords": "Devastating Wounds, Hazardous, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a322-5294-8788-5083",
+       "kind": "fixed",
+       "name": "Force weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "4f79-3533-05cf-85db:a322-5294-8788-5083",
+         "id": "a322-5294-8788-5083:f9e1-0d72-a04a-dc6f",
          "name": "Force weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "235e-dd39-9df1-729d",
@@ -14215,16 +18495,16 @@
      },
      "loadout": [
       {
-       "id": "1d6f-bb9b-c199-32f3",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "905c-c253-6364-1d05",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "1d6f-bb9b-c199-32f3:905c-c253-6364-1d05",
+         "id": "905c-c253-6364-1d05:905c-c253-6364-1d05",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "acdd-d020-ca4d-db9f",
@@ -14239,11 +18519,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7e9b-1cdb-82a4-940d",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "1d6f-bb9b-c199-32f3:7e9b-1cdb-82a4-940d",
+         "id": "7e9b-1cdb-82a4-940d:7e9b-1cdb-82a4-940d",
          "name": "Combi-bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3f01-9e1f-2531-131a",
@@ -14256,6 +18545,276 @@
            "ap": "0",
            "d": "1",
            "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "aafc-b346-e367-64c3",
+       "kind": "choice",
+       "name": "Astartes chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "aafc-b346-e367-64c3:2433-b7c2-528-33f8",
+         "name": "Astartes chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d1c3-4ade-aafd-13b",
+           "name": "Astartes chainsword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "aafc-b346-e367-64c3:4d52-c0e7-31a6-54b3",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "21d4-6816-b322-682b",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "aafc-b346-e367-64c3:296-c30d-a19a-ba11",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e54a-7175-9d54-c1e2",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "aafc-b346-e367-64c3:1d8f-8c7a-e9fb-79ca",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1150-615c-d17-4a02",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "aafc-b346-e367-64c3:7bdc-d063-b4eb-8262",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "aafc-b346-e367-64c3:adb8-8cea-c286-8881",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1087-82bd-bab9-69de",
+       "kind": "choice",
+       "name": "Bolt pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1087-82bd-bab9-69de:ed73-c69d-5c77-f738",
+         "name": "Accursed weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aefe-324c-8096-b2b8",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1087-82bd-bab9-69de:5063-519b-b919-fd26",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "59a1-2e20-41b3-5e60",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1087-82bd-bab9-69de:a537-c769-2452-e242",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "acbd-cc99-488a-cb9a",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "1087-82bd-bab9-69de:c4a9-191b-1066-3dba",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a24-7f6b-db11-6cf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "1087-82bd-bab9-69de:a711-a996-f606-dbb9",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ff9-d27-c553-65c2",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "1087-82bd-bab9-69de:b206-0583-b490-50fe",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "229b-efc2-e2f5-5e56",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "cf81-8980-5b7b-8b84",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -14363,16 +18922,179 @@
      },
      "loadout": [
       {
-       "id": "64fc-1cf2-ec91-06a8",
+       "id": "d070-7bf3-4e4f-b4f0",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Main weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "64fc-1cf2-ec91-06a8:ec6e-2f42-9a9-4230",
-         "name": "Armoured tracks",
+         "id": "d070-7bf3-4e4f-b4f0:fefe-82d6-a8b2-72fd",
+         "name": "Plasma destroyer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e6c-9088-67b0-4be9",
+           "name": "➤ Plasma destroyer - standard",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "d3ff-cdbb-e518-d31e",
+           "name": "➤ Plasma destroyer - supercharge",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "d070-7bf3-4e4f-b4f0:b4ee-99d5-ec63-8b9c",
+         "name": "Conversion beam cannon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "46af-c47d-1bb0-6dc1",
+           "name": "Conversion beam cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Conversion, Sustained Hits D3"
+          }
+         ]
+        },
+        {
+         "id": "d070-7bf3-4e4f-b4f0:b6cd-59dd-49d5-af79",
+         "name": "Magna-melta cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4112-820f-354f-395",
+           "name": "Magna-melta cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 4"
+          }
+         ]
+        },
+        {
+         "id": "d070-7bf3-4e4f-b4f0:49e8-44a8-9f5c-8aa9",
+         "name": "Infernus cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ded6-6f3d-3b1-951",
+           "name": "Infernus cannon",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "2D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ede0-672-e65a-7d5e",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ede0-672-e65a-7d5e:6c0f-f431-7e7e-aceb",
+         "name": "2 heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bb5d-5c55-97ed-c51c",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "ede0-672-e65a-7d5e:ed2d-e730-d7c9-29",
+         "name": "2 lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8883-2cfc-65ee-9f13",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ede0-672-e65a-7d5e:54c-562d-a7a9-6f62",
+         "name": "2 heavy flamers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7063-af3b-a701-cd10",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ec6e-2f42-9a9-4230",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ec6e-2f42-9a9-4230:1151-47cb-d17e-b332",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8976-2975-b67a-3d4c",
@@ -14387,11 +19109,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "76f-c4-792-a8dc",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "64fc-1cf2-ec91-06a8:76f-c4-792-a8dc",
+         "id": "76f-c4-792-a8dc:c627-5d3-1420-c7f1",
          "name": "Combi-bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "356a-666c-2ce5-9dcb",
@@ -14406,11 +19137,20 @@
            "keywords": "Rapid Fire 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5477-254b-8aca-139c",
+       "kind": "fixed",
+       "name": "Hunter-killer missile",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "64fc-1cf2-ec91-06a8:5477-254b-8aca-139c",
+         "id": "5477-254b-8aca-139c:308-b972-2863-2a32",
          "name": "Hunter-killer missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3a35-7a4c-cf0a-1683",
@@ -15898,16 +20638,75 @@
      },
      "loadout": [
       {
-       "id": "d51a-0e13-4f86-aadd",
+       "id": "39b2-f376-e5c4-a8e9",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Replace sonic blaster",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "d51a-0e13-4f86-aadd:203f-87cc-cfee-b017",
-         "name": "Close combat weapon",
+         "id": "39b2-f376-e5c4-a8e9:18a0-776b-ee04-a9a3",
+         "name": "Screamer pistol and power sword",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6a43-7380-d894-6722",
+           "name": "Power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "106e-7b83-ed98-0043",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "39b2-f376-e5c4-a8e9:8fe1-c520-f33a-3fd3",
+         "name": "Sonic blaster",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5354-ae18-76ad-c7aa",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "203f-87cc-cfee-b017",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "203f-87cc-cfee-b017:3854-44a6-5746-d602",
+         "name": "Close combat weapon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c1cb-1e20-a75d-6eb2",
@@ -17155,16 +21954,63 @@
      },
      "loadout": [
       {
-       "id": "b4fa-d061-acb4-0780",
+       "id": "45e8-325a-5581-49e0",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Melee weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "45e8-325a-5581-49e0:6f91-a792-548d-8298",
+         "name": "Power sword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "0773-723f-edb7-2a56",
+           "name": "Power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "45e8-325a-5581-49e0:2d8e-ebca-0f2a-788a",
+         "name": "Power maul",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea86-7d55-0594-9f34",
+           "name": "Power maul",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8dc4-046e-b8c4-faff",
+       "kind": "fixed",
+       "name": "Bolt pistol",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "b4fa-d061-acb4-0780:8dc4-046e-b8c4-faff",
+         "id": "8dc4-046e-b8c4-faff:a12a-4a92-aef-2ccc",
          "name": "Bolt pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2ff9-d27-c553-65c2",
@@ -17179,11 +22025,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "0ce7-2684-cfad-044d",
+       "kind": "fixed",
+       "name": "Plasma pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "b4fa-d061-acb4-0780:0ce7-2684-cfad-044d",
+         "id": "0ce7-2684-cfad-044d:244-694c-22c-74fb",
          "name": "Plasma pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "229b-efc2-e2f5-5e56",
@@ -19769,16 +24624,16 @@
      },
      "loadout": [
       {
-       "id": "1cab-239e-64b2-caa6",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "444f-651e-c664-3cb7",
+       "kind": "fixed",
+       "name": "Shearing claws",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "1cab-239e-64b2-caa6:444f-651e-c664-3cb7",
+         "id": "444f-651e-c664-3cb7:444f-651e-c664-3cb7",
          "name": "Shearing claws",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "de4e-9ebb-ba3d-d699",
@@ -19803,6 +24658,282 @@
            "ap": "-2",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4cbf-1ab8-1491-efb4",
+       "kind": "choice",
+       "name": "Replace heavy missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4cbf-1ab8-1491-efb4:db71-036c-d005-6634",
+         "name": "Heavy missile launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1400-abea-6161-1d0d",
+           "name": "➤ Heavy missile launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "97ca-00d4-52d4-fac3",
+           "name": "➤ Heavy missile launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4cbf-1ab8-1491-efb4:ddee-5481-e9a8-37c6",
+         "name": "Electroscourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "77da-6ee1-0d5b-e405",
+           "name": "Electroscourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks, Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "4cbf-1ab8-1491-efb4:117d-9ed8-4286-de8f",
+         "name": "Hades lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee61-2991-31b0-eeaa",
+           "name": "Hades lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4cbf-1ab8-1491-efb4:32fb-57a9-da74-ec85",
+         "name": "Heavy reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9a26-ddc6-9dec-6c18",
+           "name": "Heavy reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9028-f787-a528-47f3",
+       "kind": "choice",
+       "name": "Main cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9028-f787-a528-47f3:7796-8eda-2056-811e",
+         "name": "Hades battle cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5324-cfee-fed9-e6b5",
+           "name": "Hades battle cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "9028-f787-a528-47f3:6b1a-2c96-ea28-db94",
+         "name": "Ectoplasma destructor",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1573-a28c-f40f-ed65",
+           "name": "Ectoplasma destructor",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c2c7-6ec2-d30d-9a38",
+       "kind": "choice",
+       "name": "Replace heavy baleflamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c2c7-6ec2-d30d-9a38:de9a-ea6d-9d30-a60f",
+         "name": "Heavy baleflamer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9919-3f17-01e0-f565",
+           "name": "Heavy baleflamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6+3",
+           "bs_ws": "N/A",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "c2c7-6ec2-d30d-9a38:22bb-0e8c-9eb8-0060",
+         "name": "Electroscourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "77da-6ee1-0d5b-e405",
+           "name": "Electroscourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks, Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "c2c7-6ec2-d30d-9a38:668c-f85f-a6dd-039f",
+         "name": "Hades lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee61-2991-31b0-eeaa",
+           "name": "Hades lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c2c7-6ec2-d30d-9a38:414a-4588-16c8-46c9",
+         "name": "Heavy reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9a26-ddc6-9dec-6c18",
+           "name": "Heavy reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "51c3-ec8b-2882-4af1",
+       "kind": "choice",
+       "name": "Replace excruciator cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "51c3-ec8b-2882-4af1:a3d9-19d0-90cb-05e0",
+         "name": "Two excruciator cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d761-aa8e-5706-8185",
+           "name": "Excruciator cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "51c3-ec8b-2882-4af1:60aa-7973-e52c-3b9e",
+         "name": "Two magma cutters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a26-de09-c051-6346",
+           "name": "Magma cutter",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
           }
          ]
         }

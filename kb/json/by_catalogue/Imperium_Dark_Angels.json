@@ -1438,16 +1438,16 @@
      },
      "loadout": [
       {
-       "id": "9cf8-53f5-bc7c-2d4e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "ac7-5c12-7450-c36d",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "9cf8-53f5-bc7c-2d4e:ac7-5c12-7450-c36d",
+         "id": "ac7-5c12-7450-c36d:ac7-5c12-7450-c36d",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "bf08-990c-3aeb-d59a",
@@ -1462,11 +1462,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b920-723e-9b06-3467",
+       "kind": "fixed",
+       "name": "Blacksword missiles",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "9cf8-53f5-bc7c-2d4e:b920-723e-9b06-3467",
+         "id": "b920-723e-9b06-3467:b920-723e-9b06-3467",
          "name": "Blacksword missiles",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "80f7-1a8d-b7ae-e553",
@@ -1481,11 +1490,20 @@
            "keywords": "Anti-Fly 2+"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "1a17-51e4-81e0-2614",
+       "kind": "fixed",
+       "name": "Twin heavy bolter",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "9cf8-53f5-bc7c-2d4e:1a17-51e4-81e0-2614",
+         "id": "1a17-51e4-81e0-2614:1a17-51e4-81e0-2614",
          "name": "Twin heavy bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8971-1042-724e-7ee1",
@@ -1498,6 +1516,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Sustained Hits 1, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3e1a-7875-611e-5b3d",
+       "kind": "choice",
+       "name": "Main Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3e1a-7875-611e-5b3d:4c0b-95dd-62ef-dc02",
+         "name": "Avenger mega bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8692-a94f-2cf1-eeda",
+           "name": "Avenger mega bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "3e1a-7875-611e-5b3d:c0e3-e130-a578-3fe3",
+         "name": "Nephilim lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d03-9ff4-329b-d586",
+           "name": "Nephilim lascannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
           }
          ]
         }
@@ -1797,16 +1862,16 @@
      },
      "loadout": [
       {
-       "id": "dcbf-7b5c-9de0-5ea2",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b095-d588-7f75-2f48",
+       "kind": "fixed",
+       "name": "Close Combat Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "dcbf-7b5c-9de0-5ea2:b095-d588-7f75-2f48",
+         "id": "b095-d588-7f75-2f48:b095-d588-7f75-2f48",
          "name": "Close Combat Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "abe1-b957-d3a5-bbee",
@@ -1821,11 +1886,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "88a9-a163-855e-7301",
+       "kind": "fixed",
+       "name": "Plasma storm battery",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "dcbf-7b5c-9de0-5ea2:88a9-a163-855e-7301",
+         "id": "88a9-a163-855e-7301:88a9-a163-855e-7301",
          "name": "Plasma storm battery",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7850-13a-cdea-60ed",
@@ -1850,6 +1924,53 @@
            "ap": "-3",
            "d": "3",
            "keywords": "Blast, Hazardous, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1205-1daa-db65-7b2f",
+       "kind": "choice",
+       "name": "Main Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1205-1daa-db65-7b2f:2a13-19b0-3227-4bcf",
+         "name": "Assault cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ed4d-f05a-72a3-2be",
+           "name": "Assault cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "1205-1daa-db65-7b2f:332d-712a-1017-e31",
+         "name": "Heavy bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "715a-b91a-87f6-f8bd",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -1961,16 +2082,16 @@
      },
      "loadout": [
       {
-       "id": "4150-1a2b-522f-2417",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "6670-a3c1-dc23-3622",
+       "kind": "fixed",
+       "name": "Close Combat Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4150-1a2b-522f-2417:6670-a3c1-dc23-3622",
+         "id": "6670-a3c1-dc23-3622:6670-a3c1-dc23-3622",
          "name": "Close Combat Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8a4-9f54-dfa5-55a1",
@@ -1983,6 +2104,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "344e-42e8-587a-1216",
+       "kind": "choice",
+       "name": "Main Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "344e-42e8-587a-1216:5197-a7eb-3b4d-d93e",
+         "name": "Assault cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c299-f489-ce81-913b",
+           "name": "Assault cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "344e-42e8-587a-1216:927c-dfc4-4e98-e2ca",
+         "name": "Heavy bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "913b-d9f-f48d-6f69",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -2797,16 +2965,16 @@
      },
      "loadout": [
       {
-       "id": "ef39-2ca8-0396-efc9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "fec0-bee1-3d8a-53c6",
+       "kind": "fixed",
+       "name": "Bolt Pistol",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ef39-2ca8-0396-efc9:fec0-bee1-3d8a-53c6",
+         "id": "fec0-bee1-3d8a-53c6:fec0-bee1-3d8a-53c6",
          "name": "Bolt Pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d4dd-3b18-adba-7fbc",
@@ -2821,11 +2989,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "1206-2cfc-cfae-7c9e",
+       "kind": "fixed",
+       "name": "Master-crafted power weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "ef39-2ca8-0396-efc9:1206-2cfc-cfae-7c9e",
+         "id": "1206-2cfc-cfae-7c9e:1206-2cfc-cfae-7c9e",
          "name": "Master-crafted power weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ad4-d6c8-b8b9-7902",
@@ -2838,6 +3015,77 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3b1a-9e16-a44b-b70a",
+       "kind": "choice",
+       "name": "Plasma Talon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3b1a-9e16-a44b-b70a:1abc-7ec8-e6ef-6069",
+         "name": "Plasma talon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6f4d-5a20-65af-b70a",
+           "name": "➤ Plasma talon - Standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "3dd7-4652-c235-e1dc",
+           "name": "➤ Plasma talon - Supercharged",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "3b1a-9e16-a44b-b70a:e907-e029-9d32-8d15",
+         "name": "Astartes grenade launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e307-f8d3-d06c-9dd9",
+           "name": "➤ Astartes grenade launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "960c-e26b-b802-53d1",
+           "name": "➤ Astartes grenade launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
           }
          ]
         }

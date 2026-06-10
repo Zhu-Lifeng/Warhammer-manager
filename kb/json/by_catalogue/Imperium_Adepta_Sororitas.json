@@ -899,35 +899,16 @@
      },
      "loadout": [
       {
-       "id": "f3dd-1040-6556-c7ad",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "96c2-1d90-def-8f60",
+       "kind": "fixed",
+       "name": "Heavy bolter",
+       "min_select": 3,
+       "max_select": 3,
        "options": [
         {
-         "id": "f3dd-1040-6556-c7ad:b548-d81f-aea6-26f8",
-         "name": "Armoured tracks",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "5179-e76b-7ddd-5d38",
-           "name": "Armoured tracks",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "f3dd-1040-6556-c7ad:96c2-1d90-def-8f60",
+         "id": "96c2-1d90-def-8f60:96c2-1d90-def-8f60",
          "name": "Heavy bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "bb98-2e08-23c3-6dc7",
@@ -940,6 +921,128 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c132-47cf-763b-65be",
+       "kind": "choice",
+       "name": "Main gun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c132-47cf-763b-65be:1111-1170-a699-900f",
+         "name": "Castigator autocannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e731-9f46-3e21-50c4",
+           "name": "Castigator autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Twin-Linked, Rapid Fire 4"
+          }
+         ]
+        },
+        {
+         "id": "c132-47cf-763b-65be:f05c-129e-712f-dd03",
+         "name": "Castigator battle cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "83ed-56fb-4fc9-9725",
+           "name": "Castigator battle cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Blast, Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fb5b-6d12-d575-3c8",
+       "kind": "choice",
+       "name": "Secondary weapons",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "fb5b-6d12-d575-3c8:7b03-1cc2-4688-a5b5",
+         "name": "Storm bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1e2-c793-704d-623c",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "fb5b-6d12-d575-3c8:ccdf-218b-300c-b333",
+         "name": "Hunter-Killer Missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a98-ad7-fbd0-89bb",
+           "name": "Hunter-killer missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b548-d81f-aea6-26f8",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b548-d81f-aea6-26f8:c16b-804f-46cb-2256",
+         "name": "Armoured tracks",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5179-e76b-7ddd-5d38",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -1680,16 +1783,91 @@
      },
      "loadout": [
       {
-       "id": "9a18-1601-3717-898b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1edd-4be8-7b6a-34e3",
+       "kind": "fixed",
+       "name": "Heavy Bolter",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "9a18-1601-3717-898b:411a-2f57-4d45-7977",
-         "name": "Armoured tracks",
+         "id": "1edd-4be8-7b6a-34e3:1edd-4be8-7b6a-34e3",
+         "name": "Heavy Bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "eb73-300c-1234-9cc7",
+           "name": "Heavy Bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6948-a3ab-3ff6-dcff",
+       "kind": "choice",
+       "name": "Main Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6948-a3ab-3ff6-dcff:7276-fb9b-cb95-f1a9",
+         "name": "Exorcist Missile Launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ce7d-c52a-dd48-555c",
+           "name": "Exorcist Missile Launcher",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+2",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6",
+           "keywords": "Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "6948-a3ab-3ff6-dcff:dd5e-3bc2-7c3-ec3c",
+         "name": "Exorcist Conflagration Rockets",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c85d-6813-6ef3-e513",
+           "name": "Exorcist Conflagration Rockets",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Ignores Cover, Indirect Fire"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "411a-2f57-4d45-7977",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "411a-2f57-4d45-7977:c16b-804f-46cb-2256",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5179-e76b-7ddd-5d38",
@@ -1704,11 +1882,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7f86-b6ab-1e2c-8e5e",
+       "kind": "fixed",
+       "name": "Hunter-Killer Missile",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "9a18-1601-3717-898b:7f86-b6ab-1e2c-8e5e",
+         "id": "7f86-b6ab-1e2c-8e5e:1d2f-6fb-9587-2ef",
          "name": "Hunter-Killer Missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3a98-ad7-fbd0-89bb",
@@ -1721,25 +1908,6 @@
            "ap": "-3",
            "d": "D6",
            "keywords": "One Shot"
-          }
-         ]
-        },
-        {
-         "id": "9a18-1601-3717-898b:1edd-4be8-7b6a-34e3",
-         "name": "Heavy Bolter",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "eb73-300c-1234-9cc7",
-           "name": "Heavy Bolter",
-           "weapon_type": "Ranged",
-           "range": "36\"",
-           "a": "3",
-           "bs_ws": "3+",
-           "s": "5",
-           "ap": "-1",
-           "d": "2",
-           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -2195,16 +2363,110 @@
      },
      "loadout": [
       {
-       "id": "0a74-a0d6-1634-810d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "6d60-d6f-ef8c-ed7e",
+       "kind": "fixed",
+       "name": "Heavy Bolter",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "0a74-a0d6-1634-810d:d0da-6c55-c440-7848",
-         "name": "Armoured tracks",
+         "id": "6d60-d6f-ef8c-ed7e:6d60-d6f-ef8c-ed7e",
+         "name": "Heavy Bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9c67-cd11-29f0-1b5e",
+           "name": "Heavy Bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "171a-7cfe-8ec4-49e5",
+       "kind": "choice",
+       "name": "Immolator Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "171a-7cfe-8ec4-49e5:3661-576a-2df7-506e",
+         "name": "Immolation Flamers",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "f061-12a-5d87-3418",
+           "name": "Immolation Flamers",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "171a-7cfe-8ec4-49e5:cc59-dd80-4fde-aa6d",
+         "name": "Twin Heavy Bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b59-e057-6cdf-fe5a",
+           "name": "Twin Heavy Bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 2, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "171a-7cfe-8ec4-49e5:fe9c-67db-68e4-45af",
+         "name": "Twin Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7fbf-ceb5-24d6-ff9f",
+           "name": "Twin Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d0da-6c55-c440-7848",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d0da-6c55-c440-7848:c16b-804f-46cb-2256",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5179-e76b-7ddd-5d38",
@@ -2219,11 +2481,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7488-6bc-5df8-7959",
+       "kind": "fixed",
+       "name": "Hunter-Killer Missile",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "0a74-a0d6-1634-810d:7488-6bc-5df8-7959",
+         "id": "7488-6bc-5df8-7959:1d2f-6fb-9587-2ef",
          "name": "Hunter-Killer Missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3a98-ad7-fbd0-89bb",
@@ -2236,25 +2507,6 @@
            "ap": "-3",
            "d": "D6",
            "keywords": "One Shot"
-          }
-         ]
-        },
-        {
-         "id": "0a74-a0d6-1634-810d:6d60-d6f-ef8c-ed7e",
-         "name": "Heavy Bolter",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "9c67-cd11-29f0-1b5e",
-           "name": "Heavy Bolter",
-           "weapon_type": "Ranged",
-           "range": "36\"",
-           "a": "3",
-           "bs_ws": "3+",
-           "s": "5",
-           "ap": "-1",
-           "d": "2",
-           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -2952,16 +3204,16 @@
      },
      "loadout": [
       {
-       "id": "78e1-6fe6-b624-09b8",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "781f-8857-1a01-b77e",
+       "kind": "fixed",
+       "name": "Palatine blade",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "78e1-6fe6-b624-09b8:781f-8857-1a01-b77e",
+         "id": "781f-8857-1a01-b77e:781f-8857-1a01-b77e",
          "name": "Palatine blade",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f39d-e382-22dc-8267",
@@ -2974,6 +3226,65 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3be8-e600-f2d7-7629",
+       "kind": "choice",
+       "name": "Pistols",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3be8-e600-f2d7-7629:b469-3642-608f-349d",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c934-fc40-d6a2-8919",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "3be8-e600-f2d7-7629:be96-9986-1a-dc66",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8b0f-a842-f8c4-af36",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "fe8c-f846-bb77-69d0",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
           }
          ]
         }
@@ -3296,16 +3607,176 @@
      },
      "loadout": [
       {
-       "id": "1cec-494e-39bb-ed6c",
+       "id": "f9c3-6cb-989f-4961",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Paragon Carapace Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f9c3-6cb-989f-4961:a9b4-1765-d757-f846",
+         "name": "Paragon Storm Bolters",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8cd6-b952-3b8e-12cc",
+           "name": "Paragon Storm Bolters",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "f9c3-6cb-989f-4961:22fe-594c-7ff-1f57",
+         "name": "Paragon Grenade Launchers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c94a-44b4-29a4-8abb",
+           "name": "Paragon Grenade Launchers",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7d4e-ad12-e676-8a3c",
+       "kind": "choice",
+       "name": "Paragon Melee Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7d4e-ad12-e676-8a3c:963e-770-5d54-fcce",
+         "name": "Paragon War Blade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b396-aa30-204-e2fc",
+           "name": "Paragon War Blade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7d4e-ad12-e676-8a3c:54d7-c189-89d-3231",
+         "name": "Paragon War Mace",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1d2a-350e-1b76-b11d",
+           "name": "Paragon War Mace",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a6a5-15bc-b748-47c0",
+       "kind": "choice",
+       "name": "Paragon Ranged Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a6a5-15bc-b748-47c0:4ec4-554-a05e-9817",
+         "name": "Heavy Bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5ab3-4ef3-92a4-c3f0",
+           "name": "Heavy Bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "a6a5-15bc-b748-47c0:9403-6ce4-fcc2-e5e8",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fb85-f329-fd95-9834",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "a6a5-15bc-b748-47c0:4099-badc-b481-43c7",
+         "name": "Ministorum heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7689-6689-bb7-4b53",
+           "name": "Ministorum heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8f93-20be-8de2-5d37",
+       "kind": "fixed",
+       "name": "Bolt pistol",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "1cec-494e-39bb-ed6c:8f93-20be-8de2-5d37",
+         "id": "8f93-20be-8de2-5d37:a330-88d-5e33-d8ca",
          "name": "Bolt pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c934-fc40-d6a2-8919",
@@ -3396,16 +3867,16 @@
      },
      "loadout": [
       {
-       "id": "4ab9-4aff-bdcf-7d26",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f418-4278-1585-98ed",
+       "kind": "fixed",
+       "name": "Penitent Flamers",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4ab9-4aff-bdcf-7d26:f418-4278-1585-98ed",
+         "id": "f418-4278-1585-98ed:f418-4278-1585-98ed",
          "name": "Penitent Flamers",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6a17-28c-9e0a-e561",
@@ -3418,6 +3889,84 @@
            "ap": "0",
            "d": "1",
            "keywords": "Assault, Ignores Cover, Torrent, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e9c5-72a5-c0ce-bc84",
+       "kind": "choice",
+       "name": "Melee Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e9c5-72a5-c0ce-bc84:306-d054-aad8-ae63",
+         "name": "Twin Penitent Buzz-Blades",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4237-5e1f-fb9f-a7ae",
+           "name": "Twin Penitent Buzz-Blades",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "e9c5-72a5-c0ce-bc84:a548-1641-cf1f-f538",
+         "name": "Twin Penitent Flails",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3ce6-365a-9533-d823",
+           "name": "Twin Penitent Flails",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Sustained Hits 1, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "e9c5-72a5-c0ce-bc84:fb72-668b-3b8e-ad9d",
+         "name": "Penitent Buzz-Blade and Penitent Flail",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6e93-a932-2059-3049",
+           "name": "Penitent Buzz-Blade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          },
+          {
+           "profile_id": "c16e-a07e-925e-8e1f",
+           "name": "Penitent Flail",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -5643,52 +6192,70 @@
      },
      "loadout": [
       {
-       "id": "f2ce-83a9-f033-732b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d42b-3013-98ca-ced9",
+       "kind": "fixed",
+       "name": "Dozer Ram",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f2ce-83a9-f033-732b:d6f3-b5d0-b9ef-ac6f",
-         "name": "Armoured tracks",
-         "is_default": false,
+         "id": "d42b-3013-98ca-ced9:d42b-3013-98ca-ced9",
+         "name": "Dozer Ram",
+         "is_default": true,
          "weapons": [
           {
-           "profile_id": "5179-e76b-7ddd-5d38",
-           "name": "Armoured tracks",
+           "profile_id": "89b9-db4e-224f-961c",
+           "name": "Dozer Ram",
            "weapon_type": "Melee",
            "range": "Melee",
            "a": "3",
            "bs_ws": "4+",
-           "s": "6",
+           "s": "7",
            "ap": "0",
            "d": "1",
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3cf6-498f-c163-ddc5",
+       "kind": "fixed",
+       "name": "Repressor twin heavy flamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f2ce-83a9-f033-732b:cf3e-384e-1060-401a",
-         "name": "Hunter-Killer Missile",
-         "is_default": false,
+         "id": "3cf6-498f-c163-ddc5:3cf6-498f-c163-ddc5",
+         "name": "Repressor twin heavy flamer",
+         "is_default": true,
          "weapons": [
           {
-           "profile_id": "3a98-ad7-fbd0-89bb",
-           "name": "Hunter-killer missile",
+           "profile_id": "5c8f-4727-31c9-c590",
+           "name": "Repressor twin heavy flamer",
            "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "1",
-           "bs_ws": "2+",
-           "s": "14",
-           "ap": "-3",
-           "d": "D6",
-           "keywords": "One Shot"
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent, Twin-Linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "34d7-c320-5bbd-bd58",
+       "kind": "choice",
+       "name": "May be equipped with",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f2ce-83a9-f033-732b:cbb9-fd2c-9159-9eb1",
+         "id": "34d7-c320-5bbd-bd58:3b6-ae53-38b6-ee17",
          "name": "Storm bolter",
          "is_default": false,
          "weapons": [
@@ -5707,32 +6274,13 @@
          ]
         },
         {
-         "id": "f2ce-83a9-f033-732b:d42b-3013-98ca-ced9",
-         "name": "Dozer Ram",
+         "id": "34d7-c320-5bbd-bd58:cddd-e100-a61b-b5f5",
+         "name": "Heavy flamer",
          "is_default": false,
          "weapons": [
           {
-           "profile_id": "89b9-db4e-224f-961c",
-           "name": "Dozer Ram",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "7",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "f2ce-83a9-f033-732b:3cf6-498f-c163-ddc5",
-         "name": "Repressor twin heavy flamer",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "5c8f-4727-31c9-c590",
-           "name": "Repressor twin heavy flamer",
+           "profile_id": "214c-3b92-3367-a74e",
+           "name": "Heavy flamer",
            "weapon_type": "Ranged",
            "range": "12\"",
            "a": "D6",
@@ -5740,7 +6288,91 @@
            "s": "6",
            "ap": "-1",
            "d": "1",
-           "keywords": "Ignores Cover, Torrent, Twin-Linked"
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d6f3-b5d0-b9ef-ac6f",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d6f3-b5d0-b9ef-ac6f:c16b-804f-46cb-2256",
+         "name": "Armoured tracks",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5179-e76b-7ddd-5d38",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cf3e-384e-1060-401a",
+       "kind": "fixed",
+       "name": "Hunter-Killer Missile",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cf3e-384e-1060-401a:1d2f-6fb-9587-2ef",
+         "name": "Hunter-Killer Missile",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3a98-ad7-fbd0-89bb",
+           "name": "Hunter-killer missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cbb9-fd2c-9159-9eb1",
+       "kind": "fixed",
+       "name": "Storm bolter",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "cbb9-fd2c-9159-9eb1:c6fd-b98c-a3b7-5155",
+         "name": "Storm bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1e2-c793-704d-623c",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
           }
          ]
         }

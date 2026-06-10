@@ -2808,16 +2808,138 @@
      },
      "loadout": [
       {
-       "id": "b5ce-e38c-f9de-3e51",
+       "id": "d3b4-b33-8c3d-a82f",
+       "kind": "fixed",
+       "name": "Lancer Laser Destroyer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d3b4-b33-8c3d-a82f:d3b4-b33-8c3d-a82f",
+         "name": "Lancer Laser Destroyer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fc93-530e-f627-6cdf",
+           "name": "Lancer Laser Destroyer",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D6+3",
+           "keywords": "Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "855a-ed4d-f6ec-e6a1",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pintle Mount Option",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "855a-ed4d-f6ec-e6a1:2a35-76f4-1e7b-2c26",
+         "name": "Ironhail Heavy Stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9111-913e-ec42-e830",
+           "name": "Ironhail Heavy Stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "855a-ed4d-f6ec-e6a1:8d43-c098-fbb7-40a2",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a6c6-38b-f9d2-a778",
+       "kind": "choice",
+       "name": "Sponson Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a6c6-38b-f9d2-a778:1c04-55c9-791c-033d",
+         "name": "2 Fragstorm Grenade Launchers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b2-9e09-20e1-6b64",
+           "name": "Fragstorm grenade launcher",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "a6c6-38b-f9d2-a778:abd2-2ce6-1691-3f9d",
+         "name": "2 Storm Bolters",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "83a0-da0c-752f-b4b3",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "261-d90b-20a4-c8e4",
+       "kind": "fixed",
+       "name": "Armoured Hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "b5ce-e38c-f9de-3e51:261-d90b-20a4-c8e4",
+         "id": "261-d90b-20a4-c8e4:a879-624d-42ab-2b43",
          "name": "Armoured Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b695-6a40-93a3-f048",
@@ -2832,11 +2954,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "9d0-2034-31b5-dd36",
+       "kind": "fixed",
+       "name": "Icarus Rocket Pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "b5ce-e38c-f9de-3e51:9d0-2034-31b5-dd36",
+         "id": "9d0-2034-31b5-dd36:5afc-2af9-3bb7-d28f",
          "name": "Icarus Rocket Pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c387-f167-8913-822c",
@@ -2849,25 +2980,6 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-fly 2+"
-          }
-         ]
-        },
-        {
-         "id": "b5ce-e38c-f9de-3e51:d3b4-b33-8c3d-a82f",
-         "name": "Lancer Laser Destroyer",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "fc93-530e-f627-6cdf",
-           "name": "Lancer Laser Destroyer",
-           "weapon_type": "Ranged",
-           "range": "72\"",
-           "a": "2",
-           "bs_ws": "3+",
-           "s": "14",
-           "ap": "-4",
-           "d": "D6+3",
-           "keywords": "Heavy"
           }
          ]
         }
@@ -2968,54 +3080,16 @@
      },
      "loadout": [
       {
-       "id": "f2cc-7c61-3446-e6c1",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "93e-fbbe-7176-a34e",
+       "kind": "fixed",
+       "name": "Tempest Bolter",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "f2cc-7c61-3446-e6c1:9215-9b6c-81f8-3d48",
-         "name": "Armoured Hull",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "b695-6a40-93a3-f048",
-           "name": "Armoured Hull",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "f2cc-7c61-3446-e6c1:642d-c216-39b4-53ce",
-         "name": "Icarus Rocket Pod",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "c387-f167-8913-822c",
-           "name": "Icarus Rocket Pod",
-           "weapon_type": "Ranged",
-           "range": "24\"",
-           "a": "D3",
-           "bs_ws": "3+",
-           "s": "8",
-           "ap": "-1",
-           "d": "2",
-           "keywords": "Anti-fly 2+"
-          }
-         ]
-        },
-        {
-         "id": "f2cc-7c61-3446-e6c1:93e-fbbe-7176-a34e",
+         "id": "93e-fbbe-7176-a34e:93e-fbbe-7176-a34e",
          "name": "Tempest Bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4dd0-ab3d-784d-3be1",
@@ -3030,11 +3104,20 @@
            "keywords": "Rapid Fire 4"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "ae4d-5d5c-a3ad-e214",
+       "kind": "fixed",
+       "name": "Twin Heavy Onslaught Gatling Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f2cc-7c61-3446-e6c1:ae4d-5d5c-a3ad-e214",
+         "id": "ae4d-5d5c-a3ad-e214:ae4d-5d5c-a3ad-e214",
          "name": "Twin Heavy Onslaught Gatling Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d43b-4208-d398-1437",
@@ -3047,6 +3130,109 @@
            "ap": "0",
            "d": "1",
            "keywords": "Devastating Wounds, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8b6e-1810-8082-e758",
+       "kind": "choice",
+       "name": "Pintle Mount Option",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8b6e-1810-8082-e758:ec5d-19c-10fb-eb05",
+         "name": "Ironhail Heavy Stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9111-913e-ec42-e830",
+           "name": "Ironhail Heavy Stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "8b6e-1810-8082-e758:5e93-9c5b-d950-d88d",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9215-9b6c-81f8-3d48",
+       "kind": "fixed",
+       "name": "Armoured Hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "9215-9b6c-81f8-3d48:a879-624d-42ab-2b43",
+         "name": "Armoured Hull",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b695-6a40-93a3-f048",
+           "name": "Armoured Hull",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "642d-c216-39b4-53ce",
+       "kind": "fixed",
+       "name": "Icarus Rocket Pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "642d-c216-39b4-53ce:5afc-2af9-3bb7-d28f",
+         "name": "Icarus Rocket Pod",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c387-f167-8913-822c",
+           "name": "Icarus Rocket Pod",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-fly 2+"
           }
          ]
         }
@@ -3147,16 +3333,91 @@
      },
      "loadout": [
       {
-       "id": "4e12-0e6e-622d-3914",
+       "id": "613d-95b2-7336-31e2",
+       "kind": "fixed",
+       "name": "Twin Las-talon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "613d-95b2-7336-31e2:613d-95b2-7336-31e2",
+         "name": "Twin Las-talon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "14c1-fd5b-29e4-133a",
+           "name": "Twin Las-talon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9b10-aced-7aeb-ba29",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pintle Mount Option",
+       "min_select": null,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "9b10-aced-7aeb-ba29:f29e-b741-f0ba-8a25",
+         "name": "Ironhail Heavy Stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9111-913e-ec42-e830",
+           "name": "Ironhail Heavy Stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "9b10-aced-7aeb-ba29:3144-17de-9e9c-18fe",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fa2a-9ce5-7979-1a18",
+       "kind": "fixed",
+       "name": "Armoured Hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "4e12-0e6e-622d-3914:fa2a-9ce5-7979-1a18",
+         "id": "fa2a-9ce5-7979-1a18:a879-624d-42ab-2b43",
          "name": "Armoured Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b695-6a40-93a3-f048",
@@ -3171,11 +3432,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "4b41-f70d-b30-4a35",
+       "kind": "fixed",
+       "name": "Icarus Rocket Pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "4e12-0e6e-622d-3914:4b41-f70d-b30-4a35",
+         "id": "4b41-f70d-b30-4a35:5afc-2af9-3bb7-d28f",
          "name": "Icarus Rocket Pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c387-f167-8913-822c",
@@ -3188,25 +3458,6 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-fly 2+"
-          }
-         ]
-        },
-        {
-         "id": "4e12-0e6e-622d-3914:613d-95b2-7336-31e2",
-         "name": "Twin Las-talon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "14c1-fd5b-29e4-133a",
-           "name": "Twin Las-talon",
-           "weapon_type": "Ranged",
-           "range": "36\"",
-           "a": "2",
-           "bs_ws": "3+",
-           "s": "10",
-           "ap": "-3",
-           "d": "D6+1",
-           "keywords": "Twin-linked"
           }
          ]
         }
@@ -3312,16 +3563,181 @@
      },
      "loadout": [
       {
-       "id": "e447-8787-c657-e1a5",
+       "id": "3ab0-ac18-e44d-42c1",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Option",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3ab0-ac18-e44d-42c1:18f4-1a36-c674-ad37",
+         "name": "Ironhail Skytalon Array",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3601-616b-f5af-7d29",
+           "name": "Ironhail Skytalon Array",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Fly 4+, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "3ab0-ac18-e44d-42c1:3cbe-b4ef-bb2b-6282",
+         "name": "Bellicatus Missile Array",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a4d0-6b1e-b6e8-f6ce",
+           "name": "➤ Bellicatus Missile Array - Frag",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "3e8b-ef9f-3ada-0658",
+           "name": "➤ Bellicatus Missile Array - Icarus",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+"
+          },
+          {
+           "profile_id": "59bc-a344-af08-2111",
+           "name": "➤ Bellicatus Missile Array - Krak",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2f54-9a17-c73b-eed4",
+       "kind": "choice",
+       "name": "Pintle Mount Option",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2f54-9a17-c73b-eed4:6324-f3c5-dc8c-779f",
+         "name": "Ironhail Heavy Stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9111-913e-ec42-e830",
+           "name": "Ironhail Heavy Stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "2f54-9a17-c73b-eed4:ec25-89a7-5d6d-1176",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "76b6-9c09-5e50-127f",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "76b6-9c09-5e50-127f:54f5-c4a7-8eea-a435",
+         "name": "2 Fragstorm Grenade Launchers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b2-9e09-20e1-6b64",
+           "name": "Fragstorm grenade launcher",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "76b6-9c09-5e50-127f:9242-224b-28ad-c3e2",
+         "name": "2 Storm Bolters",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "83a0-da0c-752f-b4b3",
+           "name": "Storm bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "de19-de54-539-23d0",
+       "kind": "fixed",
+       "name": "Armoured Hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "e447-8787-c657-e1a5:de19-de54-539-23d0",
+         "id": "de19-de54-539-23d0:a879-624d-42ab-2b43",
          "name": "Armoured Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b695-6a40-93a3-f048",
@@ -3457,16 +3873,110 @@
      },
      "loadout": [
       {
-       "id": "3555-4938-c643-e6eb",
+       "id": "63a6-e193-5452-fe0e",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Hull Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "63a6-e193-5452-fe0e:836d-ca1f-cf0a-d9f5",
+         "name": "Twin heavy bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "edd0-6f1c-83e7-c0ea",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "63a6-e193-5452-fe0e:20e4-5007-d85a-e9b1",
+         "name": "Twin lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a57b-cba0-79c1-5d71",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c29a-a7bc-eb38-f0ff",
+       "kind": "choice",
+       "name": "Turret Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c29a-a7bc-eb38-f0ff:e5ce-f9cc-ca96-9fa6",
+         "name": "Heavy Onslaught Gatling Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9a6f-e83b-69b1-8dbf",
+           "name": "Heavy Onslaught Gatling Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "c29a-a7bc-eb38-f0ff:3619-7d22-2359-62c0",
+         "name": "Las-talon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6777-105d-ff39-6650",
+           "name": "Las-talon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cfcd-5e47-e27c-9b0e",
+       "kind": "fixed",
+       "name": "Armoured Hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "3555-4938-c643-e6eb:cfcd-5e47-e27c-9b0e",
+         "id": "cfcd-5e47-e27c-9b0e:3b59-048c-5410-33fe",
          "name": "Armoured Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b45e-46d1-f4fc-bbea",
@@ -3481,11 +3991,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "23fc-deab-77f8-f2d9",
+       "kind": "fixed",
+       "name": "Multi-melta",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "3555-4938-c643-e6eb:23fc-deab-77f8-f2d9",
+         "id": "23fc-deab-77f8-f2d9:395-4b75-b9b2-7a5c",
          "name": "Multi-melta",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e7ca-a953-c254-dc54",
@@ -3500,11 +4019,20 @@
            "keywords": "Melta 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "db34-b48e-eb27-9a25",
+       "kind": "fixed",
+       "name": "Hunter-slayer missile",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "3555-4938-c643-e6eb:db34-b48e-eb27-9a25",
+         "id": "db34-b48e-eb27-9a25:63a5-9c8a-4b8b-bf8b",
          "name": "Hunter-slayer missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8d34-e671-adb0-b8e3",
@@ -3519,11 +4047,20 @@
            "keywords": "Indirect Fire, One Shot"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "9ad7-97b1-0a12-6832",
+       "kind": "fixed",
+       "name": "Repulsor Defensive Array",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "3555-4938-c643-e6eb:9ad7-97b1-0a12-6832",
+         "id": "9ad7-97b1-0a12-6832:1eaa-6dc9-f8bb-9c4a",
          "name": "Repulsor Defensive Array",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3b1f-86b4-781c-636d",
@@ -3647,16 +4184,150 @@
      },
      "loadout": [
       {
-       "id": "f91e-17de-860c-18ac",
+       "id": "9528-b267-9534-8c58",
+       "kind": "fixed",
+       "name": "Repulsor Executioner Defensive Array",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9528-b267-9534-8c58:9528-b267-9534-8c58",
+         "name": "Repulsor Executioner Defensive Array",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9c9e-a2b8-bdbe-faf6",
+           "name": "Repulsor Executioner Defensive Array",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a9cf-b56e-f539-7419",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pintle Mount Option",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a9cf-b56e-f539-7419:362d-bd44-cdf4-b99c",
+         "name": "Ironhail Heavy Stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9111-913e-ec42-e830",
+           "name": "Ironhail Heavy Stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "a9cf-b56e-f539-7419:e1ee-27d5-2c7b-e88c",
+         "name": "Multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e7ca-a953-c254-dc54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5d17-7232-7f46-d7d1",
+       "kind": "choice",
+       "name": "Turret Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5d17-7232-7f46-d7d1:9458-a89-aae3-d05",
+         "name": "Macro Plasma Incinerator",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e54-149a-9924-afe",
+           "name": "➤ Macro Plasma Incinerator - Standard",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "256a-8119-50f8-259",
+           "name": "➤ Macro Plasma Incinerator - Supercharge",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "5d17-7232-7f46-d7d1:5212-e8d7-efe3-491b",
+         "name": "Heavy Laser Destroyer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f97c-adf0-2a83-53d9",
+           "name": "Heavy Laser Destroyer",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "16",
+           "ap": "-4",
+           "d": "D6+4",
+           "keywords": "Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ec7d-b667-d72d-ae11",
+       "kind": "fixed",
+       "name": "Armoured Hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "f91e-17de-860c-18ac:ec7d-b667-d72d-ae11",
+         "id": "ec7d-b667-d72d-ae11:3b59-048c-5410-33fe",
          "name": "Armoured Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b45e-46d1-f4fc-bbea",
@@ -3671,11 +4342,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "586a-2a76-382d-e53d",
+       "kind": "fixed",
+       "name": "Heavy Onslaught Gatling Cannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f91e-17de-860c-18ac:586a-2a76-382d-e53d",
+         "id": "586a-2a76-382d-e53d:39fe-deb4-dde-2c1a",
          "name": "Heavy Onslaught Gatling Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9a6f-e83b-69b1-8dbf",
@@ -3690,11 +4370,20 @@
            "keywords": "Devastating Wounds"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7c61-e824-6694-44f5",
+       "kind": "fixed",
+       "name": "Icarus Rocket Pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f91e-17de-860c-18ac:7c61-e824-6694-44f5",
+         "id": "7c61-e824-6694-44f5:5afc-2af9-3bb7-d28f",
          "name": "Icarus Rocket Pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c387-f167-8913-822c",
@@ -3709,11 +4398,20 @@
            "keywords": "Anti-fly 2+"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3c61-278f-852d-a296",
+       "kind": "fixed",
+       "name": "Twin heavy bolter",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f91e-17de-860c-18ac:3c61-278f-852d-a296",
+         "id": "3c61-278f-852d-a296:d107-1e89-9d3f-c9c7",
          "name": "Twin heavy bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "edd0-6f1c-83e7-c0ea",
@@ -3728,11 +4426,20 @@
            "keywords": "Sustained Hits 1, Twin-linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a902-ff64-9273-642",
+       "kind": "fixed",
+       "name": "Twin Icarus ironhail heavy stubber",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f91e-17de-860c-18ac:a902-ff64-9273-642",
+         "id": "a902-ff64-9273-642:6c9-da5-cea7-f3c9",
          "name": "Twin Icarus ironhail heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3204-5fbd-c5a5-1bf9",
@@ -3745,25 +4452,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Anti-FLY 4+, Rapid Fire 3, Twin-linked"
-          }
-         ]
-        },
-        {
-         "id": "f91e-17de-860c-18ac:9528-b267-9534-8c58",
-         "name": "Repulsor Executioner Defensive Array",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "9c9e-a2b8-bdbe-faf6",
-           "name": "Repulsor Executioner Defensive Array",
-           "weapon_type": "Ranged",
-           "range": "24\"",
-           "a": "10",
-           "bs_ws": "3+",
-           "s": "4",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
           }
          ]
         }
@@ -4100,16 +4788,16 @@
      },
      "loadout": [
       {
-       "id": "53da-64b0-4e7d-3c2b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "5b0b-9cc5-4b5-3f9c",
+       "kind": "fixed",
+       "name": "Master-crafted Power Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "53da-64b0-4e7d-3c2b:5b0b-9cc5-4b5-3f9c",
+         "id": "5b0b-9cc5-4b5-3f9c:5b0b-9cc5-4b5-3f9c",
          "name": "Master-crafted Power Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "646c-a341-f427-32bf",
@@ -4122,6 +4810,65 @@
            "ap": "-2",
            "d": "2",
            "keywords": "Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c9cf-49ba-2389-88d2",
+       "kind": "choice",
+       "name": "Ranged Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c9cf-49ba-2389-88d2:6261-7afb-e272-28ce",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a668-202f-eb7b-4a41",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "c9cf-49ba-2389-88d2:9ffe-ab57-8e84-55aa",
+         "name": "Plasma Pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3844-3c6d-1d29-d804",
+           "name": "➤ Plasma Pistol - Standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "78bf-495d-5438-d37e",
+           "name": "➤ Plasma Pistol - Supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
           }
          ]
         }
@@ -4249,16 +4996,16 @@
      },
      "loadout": [
       {
-       "id": "beb9-c4bb-68b9-bed5",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "f7d8-9616-dd48-e3d4",
+       "kind": "fixed",
+       "name": "Master-crafted Power Weapon",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "beb9-c4bb-68b9-bed5:f7d8-9616-dd48-e3d4",
+         "id": "f7d8-9616-dd48-e3d4:f7d8-9616-dd48-e3d4",
          "name": "Master-crafted Power Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6915-9e8f-c92b-af24",
@@ -4273,11 +5020,67 @@
            "keywords": "Extra Attacks, Lethal Hits"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "9b3f-80d8-ad90-5990",
+       "kind": "choice",
+       "name": "Pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9b3f-80d8-ad90-5990:cfe3-a0ee-85c3-cff5",
+         "name": "Pyre Pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "62bd-9f6-bc09-5fd",
+           "name": "Pyre Pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Pistol, Torrent"
+          }
+         ]
         },
         {
-         "id": "beb9-c4bb-68b9-bed5:3ec7-c2de-11ce-abb1",
+         "id": "9b3f-80d8-ad90-5990:9a2e-2565-fdc4-4e81",
+         "name": "Absolvor bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "cb64-ddb1-cbc3-3621",
+           "name": "Absolvor bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3ec7-c2de-11ce-abb1",
+       "kind": "fixed",
+       "name": "Crozius arcanum",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "3ec7-c2de-11ce-abb1:871-d25c-e7b3-5dfc",
          "name": "Crozius arcanum",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6386-4ecc-8309-5d8",

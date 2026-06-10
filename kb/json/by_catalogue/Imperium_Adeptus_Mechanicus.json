@@ -274,16 +274,16 @@
      },
      "loadout": [
       {
-       "id": "1d1c-30a2-effa-d7df",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a34b-6a88-3768-3a37",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "1d1c-30a2-effa-d7df:a34b-6a88-3768-3a37",
+         "id": "a34b-6a88-3768-3a37:eea3-949a-21d2-d33f",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7bcd-d4c7-6975-3fd4",
@@ -298,11 +298,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "66b0-cc6a-fae-50c8",
+       "kind": "fixed",
+       "name": "Cognis heavy stubber array",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "1d1c-30a2-effa-d7df:66b0-cc6a-fae-50c8",
+         "id": "66b0-cc6a-fae-50c8:5e69-8258-9ee5-3b6b",
          "name": "Cognis heavy stubber array",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4272-b799-115a-2d11",
@@ -583,35 +592,16 @@
      },
      "loadout": [
       {
-       "id": "50dd-2e4c-5008-4139",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "5f4f-99c8-1bac-711c",
+       "kind": "fixed",
+       "name": "Cognis heavy stubber",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "50dd-2e4c-5008-4139:c3fa-7553-d82e-bfa8",
-         "name": "Armoured hull",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "7bcd-d4c7-6975-3fd4",
-           "name": "Armoured hull",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "50dd-2e4c-5008-4139:5f4f-99c8-1bac-711c",
+         "id": "5f4f-99c8-1bac-711c:5f4f-99c8-1bac-711c",
          "name": "Cognis heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1586-8711-ca3e-63fe",
@@ -626,11 +616,20 @@
            "keywords": "Rapid Fire 3, Sustained Hits 1"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "c2ef-d725-c7b5-577",
+       "kind": "fixed",
+       "name": "Heavy phosphor blaster",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
         {
-         "id": "50dd-2e4c-5008-4139:c2ef-d725-c7b5-577",
+         "id": "c2ef-d725-c7b5-577:c2ef-d725-c7b5-577",
          "name": "Heavy phosphor blaster",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "807c-1cd4-9bc6-7bfe",
@@ -645,11 +644,20 @@
            "keywords": "Ignores Cover"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "44e-ae99-4e59-39a1",
+       "kind": "fixed",
+       "name": "Twin cognis lascannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "50dd-2e4c-5008-4139:44e-ae99-4e59-39a1",
+         "id": "44e-ae99-4e59-39a1:44e-ae99-4e59-39a1",
          "name": "Twin cognis lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7894-6024-5bb1-400a",
@@ -662,6 +670,34 @@
            "ap": "-3",
            "d": "D6+1",
            "keywords": "Sustained hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c3fa-7553-d82e-bfa8",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c3fa-7553-d82e-bfa8:eea3-949a-21d2-d33f",
+         "name": "Armoured hull",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7bcd-d4c7-6975-3fd4",
+           "name": "Armoured hull",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -935,16 +971,16 @@
      },
      "loadout": [
       {
-       "id": "3742-9c08-5e56-ed06",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1732-1849-97cf-d8f8",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "3742-9c08-5e56-ed06:1732-1849-97cf-d8f8",
+         "id": "1732-1849-97cf-d8f8:eea3-949a-21d2-d33f",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7bcd-d4c7-6975-3fd4",
@@ -959,11 +995,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "562b-78e8-ea0b-3ed3",
+       "kind": "fixed",
+       "name": "Cognis heavy stubber array",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "3742-9c08-5e56-ed06:562b-78e8-ea0b-3ed3",
+         "id": "562b-78e8-ea0b-3ed3:5e69-8258-9ee5-3b6b",
          "name": "Cognis heavy stubber array",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4272-b799-115a-2d11",
@@ -3295,16 +3340,16 @@
      },
      "loadout": [
       {
-       "id": "9ce3-a73f-7f19-02b8",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "1aed-a297-70d2-78b4",
+       "kind": "fixed",
+       "name": "Cognis heavy stubber",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "9ce3-a73f-7f19-02b8:1aed-a297-70d2-78b4",
+         "id": "1aed-a297-70d2-78b4:1aed-a297-70d2-78b4",
          "name": "Cognis heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e137-3ea7-ff5b-b1b9",
@@ -3319,11 +3364,20 @@
            "keywords": "Rapid Fire 3, Sustained Hits 1"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "eb85-7ead-6dee-f00f",
+       "kind": "fixed",
+       "name": "Dunecrawler legs",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "9ce3-a73f-7f19-02b8:eb85-7ead-6dee-f00f",
+         "id": "eb85-7ead-6dee-f00f:eb85-7ead-6dee-f00f",
          "name": "Dunecrawler legs",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a36f-9589-f032-8c2d",
@@ -3336,6 +3390,127 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9924-abf6-bd0b-a534",
+       "kind": "choice",
+       "name": "Replace eradication beamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9924-abf6-bd0b-a534:c5da-3895-2c65-e13f",
+         "name": "Eradication beamer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e17d-e4fc-e2cb-12a4",
+           "name": "➤ Eradication beamer - dissipated",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3D3",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast, Sustained Hits 1"
+          },
+          {
+           "profile_id": "3a9e-26fc-7876-7eac",
+           "name": "➤ Eradication beamer - focused",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3D3",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "9924-abf6-bd0b-a534:b2ff-da2a-eb39-2b0c",
+         "name": "Daedalus missile launcher & Icarus array",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cb8e-22a1-e3f1-4da7",
+           "name": "Daedalus missile launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "Anti-Fly 2+"
+          },
+          {
+           "profile_id": "f616-3e41-f5a1-3f9d",
+           "name": "Icarus array",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 4+, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "9924-abf6-bd0b-a534:2887-6836-5f5f-20eb",
+         "name": "Neutron laser & Cognis heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c785-a538-d937-3d13",
+           "name": "Cognis heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 3, Sustained Hits 1"
+          },
+          {
+           "profile_id": "265f-8b35-89e7-3ed3",
+           "name": "Neutron laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "16",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "Heavy"
+          }
+         ]
+        },
+        {
+         "id": "9924-abf6-bd0b-a534:67d3-0a50-aa82-c444",
+         "name": "Twin Onager heavy phosphor blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9586-3103-6c23-7fb8",
+           "name": "Twin Onager heavy phosphor blaster",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "12",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Twin-linked"
           }
          ]
         }
@@ -7304,35 +7479,16 @@
      },
      "loadout": [
       {
-       "id": "9c13-f117-f9d4-d874",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "88b0-793f-b85c-680b",
+       "kind": "fixed",
+       "name": "Cognis heavy stubber",
+       "min_select": 3,
+       "max_select": 3,
        "options": [
         {
-         "id": "9c13-f117-f9d4-d874:95ee-4601-8c92-b047",
-         "name": "Armoured hull",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "7bcd-d4c7-6975-3fd4",
-           "name": "Armoured hull",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "9c13-f117-f9d4-d874:88b0-793f-b85c-680b",
+         "id": "88b0-793f-b85c-680b:88b0-793f-b85c-680b",
          "name": "Cognis heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3376-8f0e-551d-e750",
@@ -7347,11 +7503,20 @@
            "keywords": "Rapid Fire 3, Sustained Hits 1"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "1911-226b-90f1-d420",
+       "kind": "fixed",
+       "name": "Disruptor missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "9c13-f117-f9d4-d874:1911-226b-90f1-d420",
+         "id": "1911-226b-90f1-d420:1911-226b-90f1-d420",
          "name": "Disruptor missile launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2afa-6fbb-ecd9-5fb7",
@@ -7364,6 +7529,81 @@
            "ap": "-2",
            "d": "D6",
            "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1b3-2833-7ea9-d113",
+       "kind": "choice",
+       "name": "equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c1b3-2833-7ea9-d113:12a4-c5bd-85c9-ec3f",
+         "name": "Belleros energy cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "54aa-70ba-3cd4-8311",
+           "name": "Belleros energy cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2D6",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "c1b3-2833-7ea9-d113:5059-e78f-c558-c8e8",
+         "name": "Ferrumite cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6ba1-b1f4-cf34-5d5b",
+           "name": "Ferrumite cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "95ee-4601-8c92-b047",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "95ee-4601-8c92-b047:eea3-949a-21d2-d33f",
+         "name": "Armoured hull",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7bcd-d4c7-6975-3fd4",
+           "name": "Armoured hull",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -8075,16 +8315,16 @@
      },
      "loadout": [
       {
-       "id": "03a6-f1ef-5a60-b2c3",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4587-20b2-c305-10c6",
+       "kind": "fixed",
+       "name": "Omnissian axe",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "03a6-f1ef-5a60-b2c3:4587-20b2-c305-10c6",
+         "id": "4587-20b2-c305-10c6:4587-20b2-c305-10c6",
          "name": "Omnissian axe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3dc8-2740-24c0-d7a4",
@@ -8097,6 +8337,112 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "dbdc-0fcc-04cf-4ff8",
+       "kind": "choice",
+       "name": "Replace macrostubber",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "dbdc-0fcc-04cf-4ff8:e1d3-cc18-b4cf-acb8",
+         "name": "Macrostubber",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b263-d554-9189-e6c4",
+           "name": "Macrostubber",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "dbdc-0fcc-04cf-4ff8:15eb-56c3-ec5a-d2bd",
+         "name": "Phosphor serpenta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7be3-4a12-fa74-9192",
+           "name": "Phosphor serpenta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "00cd-ebc9-bb41-d92d",
+       "kind": "choice",
+       "name": "Replace volkite blaster",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "00cd-ebc9-bb41-d92d:40ae-6480-a68e-4829",
+         "name": "Eradication ray",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4e8e-0e11-167b-c99a",
+           "name": "➤ Eradication ray - dissipated",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "128a-8d5e-4286-dec5",
+           "name": "➤ Eradication ray - focused",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "00cd-ebc9-bb41-d92d:1c7c-e356-69ed-fd6b",
+         "name": "Volkite blaster",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2537-6387-ba31-8ad2",
+           "name": "Volkite blaster",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Devastating Wounds"
           }
          ]
         }
@@ -8711,16 +9057,16 @@
      },
      "loadout": [
       {
-       "id": "62f3-00b6-6909-72f0",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "ed2c-31b2-8f67-9f05",
+       "kind": "fixed",
+       "name": "Omnissian staff",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "62f3-00b6-6909-72f0:ed2c-31b2-8f67-9f05",
+         "id": "ed2c-31b2-8f67-9f05:ed2c-31b2-8f67-9f05",
          "name": "Omnissian staff",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "512d-4eee-4920-f919",
@@ -8733,6 +9079,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2292-e3ad-0523-66c2",
+       "kind": "choice",
+       "name": "Replace magnarail lance",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2292-e3ad-0523-66c2:2ee4-fe4c-2b3c-fc7e",
+         "name": "Magnarail lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "57ef-daee-9ff1-3799",
+           "name": "Magnarail lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Heavy"
+          }
+         ]
+        },
+        {
+         "id": "2292-e3ad-0523-66c2:7115-e9c6-3307-e8e4",
+         "name": "Transonic cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "da77-f2cb-97f8-e958",
+           "name": "Transonic cannon",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Devastating Wounds, Torrent"
           }
          ]
         }
@@ -10547,16 +10940,16 @@
      },
      "loadout": [
       {
-       "id": "bb65-070f-7f5b-67ee",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "12ab-2cc5-b306-c22b",
+       "kind": "fixed",
+       "name": "Termite drill",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "bb65-070f-7f5b-67ee:12ab-2cc5-b306-c22b",
+         "id": "12ab-2cc5-b306-c22b:12ab-2cc5-b306-c22b",
          "name": "Termite drill",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "598e-9274-5ec8-dc12",
@@ -10571,11 +10964,20 @@
            "keywords": "Anti-Vehicle 3+"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "4ae6-a3d6-c23-b5",
+       "kind": "fixed",
+       "name": "Termite melta cutter",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "bb65-070f-7f5b-67ee:4ae6-a3d6-c23-b5",
+         "id": "4ae6-a3d6-c23-b5:4ae6-a3d6-c23-b5",
          "name": "Termite melta cutter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a81b-babd-8380-baf0",
@@ -10588,6 +10990,72 @@
            "ap": "-4",
            "d": "D6",
            "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "adc9-18ec-c9d6-1541",
+       "kind": "choice",
+       "name": "equipped with",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "adc9-18ec-c9d6-1541:47cb-5267-800e-5f32",
+         "name": "Combi bolters",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6f7-c1a2-851b-4fb5",
+           "name": "Combi bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "adc9-18ec-c9d6-1541:4ba0-35c2-c936-eaf3",
+         "name": "Heavy flamers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1446-f4c5-a538-c44f",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "adc9-18ec-c9d6-1541:9efa-de62-28d6-a1d1",
+         "name": "Twin volkite chargers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1737-5eb8-716d-2200",
+           "name": "Twin volkite charger",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Devastating Wounds, Twin-linked"
           }
          ]
         }
@@ -10862,35 +11330,16 @@
      },
      "loadout": [
       {
-       "id": "3dff-42fe-a519-8522",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "de8a-6305-a50b-8f55",
+       "kind": "fixed",
+       "name": "Sydonian Feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "3dff-42fe-a519-8522:966e-b790-a1c9-e3ef",
-         "name": "Mechanicus pistol",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "43ca-9255-d4f5-3962",
-           "name": "Mechanicus pistol",
-           "weapon_type": "Ranged",
-           "range": "12\"",
-           "a": "1",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "-1",
-           "d": "1",
-           "keywords": "Devastating Wounds, Pistol"
-          }
-         ]
-        },
-        {
-         "id": "3dff-42fe-a519-8522:de8a-6305-a50b-8f55",
+         "id": "de8a-6305-a50b-8f55:de8a-6305-a50b-8f55",
          "name": "Sydonian Feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d119-8698-e973-8f78",
@@ -10903,6 +11352,81 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "84e2-5c38-9573-3875",
+       "kind": "choice",
+       "name": "Replace Radium Jezzail",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "84e2-5c38-9573-3875:fe64-bfcb-6a47-dc54",
+         "name": "Radium Jezzail",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e8d0-806f-865a-f37c",
+           "name": "Radium Jezzail",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Heavy, Precision, Anti-Infantry 3+"
+          }
+         ]
+        },
+        {
+         "id": "84e2-5c38-9573-3875:d1c-d00e-912c-25d8",
+         "name": "Skatros transuranic arquebus",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "51e4-f297-d831-7291",
+           "name": "Skatros transuranic arquebus",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Heavy, Precision, Anti-Monster 4+, Anti-Vehicle 4+"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "966e-b790-a1c9-e3ef",
+       "kind": "fixed",
+       "name": "Mechanicus pistol",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "966e-b790-a1c9-e3ef:2b1f-798d-9bca-4ad9",
+         "name": "Mechanicus pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "43ca-9255-d4f5-3962",
+           "name": "Mechanicus pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds, Pistol"
           }
          ]
         }
@@ -11332,14 +11856,14 @@
      },
      "loadout": [
       {
-       "id": "f4fc-65f6-86ad-ad12",
-       "kind": "choice",
-       "name": "Servitors",
-       "min_select": 4,
+       "id": "136b-56d7-1c3c-f325",
+       "kind": "fixed",
+       "name": "Servitor with servo-arm",
+       "min_select": 2,
        "max_select": 4,
        "options": [
         {
-         "id": "f4fc-65f6-86ad-ad12:136b-56d7-1c3c-f325",
+         "id": "136b-56d7-1c3c-f325:136b-56d7-1c3c-f325",
          "name": "Servitor with servo-arm",
          "is_default": true,
          "weapons": [
@@ -11353,6 +11877,120 @@
            "s": "8",
            "ap": "-2",
            "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3d41-ff5a-a95e-48d2",
+       "kind": "choice",
+       "name": "Max 2 weapon swaps",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "3d41-ff5a-a95e-48d2:1ad8-e89d-acee-a9cf",
+         "name": "Servitor with heavy bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a8db-9aea-3b48-50ca",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "6+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Heavy, Sustained Hits 1"
+          },
+          {
+           "profile_id": "acc-79ba-2f33-560",
+           "name": "Servitor's tools",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3d41-ff5a-a95e-48d2:a64b-a641-c5a0-bd52",
+         "name": "Servitor with multi-melta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a1c0-b16-ef3d-2db0",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "6+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Heavy, Melta 2"
+          },
+          {
+           "profile_id": "acc-79ba-2f33-560",
+           "name": "Servitor's tools",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3d41-ff5a-a95e-48d2:2890-a47e-82a-1789",
+         "name": "Servitor with plasma cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2528-614a-b32c-eb7e",
+           "name": "➤ Plasma cannon - Standard",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "6+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Heavy, Blast"
+          },
+          {
+           "profile_id": "d7c8-2785-19d-c945",
+           "name": "➤ Plasma cannon - supercharge",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "6+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Heavy, Blast"
+          },
+          {
+           "profile_id": "acc-79ba-2f33-560",
+           "name": "Servitor's tools",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
            "keywords": "-"
           }
          ]

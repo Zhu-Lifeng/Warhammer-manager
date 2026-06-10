@@ -441,16 +441,16 @@
      },
      "loadout": [
       {
-       "id": "0ad0-c4f8-a31a-5d1b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "75c9-67d6-fa86-7854",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "0ad0-c4f8-a31a-5d1b:75c9-67d6-fa86-7854",
+         "id": "75c9-67d6-fa86-7854:75c9-67d6-fa86-7854",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "178-e832-5837-5f5",
@@ -465,11 +465,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "1d2a-dcb9-d666-68ec",
+       "kind": "fixed",
+       "name": "Twin heavy stubber",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "0ad0-c4f8-a31a-5d1b:1d2a-dcb9-d666-68ec",
+         "id": "1d2a-dcb9-d666-68ec:1d2a-dcb9-d666-68ec",
          "name": "Twin heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "de2a-3439-ed47-c77c",
@@ -482,6 +491,72 @@
            "ap": "0",
            "d": "1",
            "keywords": "Twin-linked, Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8263-4c12-faea-3210",
+       "kind": "choice",
+       "name": "Heavy Mining Laser",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8263-4c12-faea-3210:4dfd-1554-a484-439d",
+         "name": "Achilles missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "445c-216b-baa5-214",
+           "name": "Achilles missile launcher",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8263-4c12-faea-3210:1f1a-1975-8221-4f33",
+         "name": "Heavy mortar",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea6f-9f30-3a62-379",
+           "name": "Heavy mortar",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "8263-4c12-faea-3210:1a72-a226-6838-a4c5",
+         "name": "Heavy mining laser",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e210-15ab-5d0b-e7de",
+           "name": "Heavy mining laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Blast"
           }
          ]
         }
@@ -1623,16 +1698,110 @@
      },
      "loadout": [
       {
-       "id": "712c-4f8e-e5da-a60a",
+       "id": "c51c-b3b4-bd8e-e6b7",
+       "kind": "fixed",
+       "name": "Drilldozer blade",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c51c-b3b4-bd8e-e6b7:c51c-b3b4-bd8e-e6b7",
+         "name": "Drilldozer blade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7c06-64d8-4853-e9b4",
+           "name": "Drilldozer blade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3164-29f6-53db-22a",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Heavy Mining Laser",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3164-29f6-53db-22a:b84a-a526-5ec7-2d1d",
+         "name": "Clearance incinerator",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3fc6-e456-6b50-1698",
+           "name": "Clearance incinerator",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "2D6",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "3164-29f6-53db-22a:7cf-3e0a-5eb-900",
+         "name": "Heavy seismic cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8149-e9f4-cf00-4f18",
+           "name": "Heavy seismic cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "3164-29f6-53db-22a:41f4-7e6a-9b7c-6577",
+         "name": "Heavy mining laser",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e210-15ab-5d0b-e7de",
+           "name": "Heavy mining laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9ad7-8617-271d-a4b3",
+       "kind": "fixed",
+       "name": "Heavy stubber",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "712c-4f8e-e5da-a60a:9ad7-8617-271d-a4b3",
+         "id": "9ad7-8617-271d-a4b3:2edb-110e-e4f8-b6da",
          "name": "Heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c8a1-9a5-b48e-135f",
@@ -1647,11 +1816,20 @@
            "keywords": "Rapid Fire 3"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "191d-962a-b755-78a1",
+       "kind": "fixed",
+       "name": "Demolition charge cache",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "712c-4f8e-e5da-a60a:191d-962a-b755-78a1",
+         "id": "191d-962a-b755-78a1:3559-aeb4-e705-138f",
          "name": "Demolition charge cache",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "dd61-527c-40a8-2d57",
@@ -1664,25 +1842,6 @@
            "ap": "-2",
            "d": "2",
            "keywords": "Assault, Blast, Hazardous"
-          }
-         ]
-        },
-        {
-         "id": "712c-4f8e-e5da-a60a:c51c-b3b4-bd8e-e6b7",
-         "name": "Drilldozer blade",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "7c06-64d8-4853-e9b4",
-           "name": "Drilldozer blade",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "8",
-           "bs_ws": "3+",
-           "s": "10",
-           "ap": "-2",
-           "d": "2",
-           "keywords": "-"
           }
          ]
         }
@@ -1969,16 +2128,16 @@
      },
      "loadout": [
       {
-       "id": "48e4-6ac9-4879-b5eb",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e596-c885-a0c9-69e0",
+       "kind": "fixed",
+       "name": "Leader's Bio-weapons",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "48e4-6ac9-4879-b5eb:e596-c885-a0c9-69e0",
+         "id": "e596-c885-a0c9-69e0:e596-c885-a0c9-69e0",
          "name": "Leader's Bio-weapons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fed4-54c0-b413-c29b",
@@ -1991,6 +2150,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f32e-d895-aae2-e940",
+       "kind": "choice",
+       "name": "Autopistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f32e-d895-aae2-e940:b8a2-2f65-1cf1-fe41",
+         "name": "Autopistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "431-cdd3-d765-3c47",
+           "name": "Autopistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "f32e-d895-aae2-e940:4767-9f99-39ee-135d",
+         "name": "Hand flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2674-bc9a-7cbf-6c68",
+           "name": "Hand flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Pistol, Torrent"
           }
          ]
         }

@@ -2798,16 +2798,16 @@
      },
      "loadout": [
       {
-       "id": "b857-57b5-9198-5e16",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "0850-43da-8b31-3161",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b857-57b5-9198-5e16:0850-43da-8b31-3161",
+         "id": "0850-43da-8b31-3161:0850-43da-8b31-3161",
          "name": "Armoured tracks",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8efb-db7e-56ba-febc",
@@ -2822,11 +2822,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7ee7-b40e-1886-3b33",
+       "kind": "fixed",
+       "name": "Soulshatter lascannon",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
         {
-         "id": "b857-57b5-9198-5e16:7ee7-b40e-1886-3b33",
+         "id": "7ee7-b40e-1886-3b33:7ee7-b40e-1886-3b33",
          "name": "Soulshatter lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9db2-8b92-7474-97a2",
@@ -2841,11 +2850,67 @@
            "keywords": "Rapid Fire 2"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "0613-73cc-4337-73ce",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "0613-73cc-4337-73ce:2ff9-11c9-511a-ee3a",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          }
+         ]
         },
         {
-         "id": "b857-57b5-9198-5e16:4a8f-1b1a-1ad4-c547",
-         "name": "Havoc launcher",
+         "id": "0613-73cc-4337-73ce:e740-4f3e-dac1-81ab",
+         "name": "Combi-weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2396-046a-d1ba-5daf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4a8f-1b1a-1ad4-c547",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4a8f-1b1a-1ad4-c547:5df1-0d33-8cea-a191",
+         "name": "Havoc launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0bbc-60b7-e869-01a8",
@@ -2860,11 +2925,20 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "29d6-5565-efeb-935b",
+       "kind": "fixed",
+       "name": "Twin heavy bolter",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "b857-57b5-9198-5e16:29d6-5565-efeb-935b",
+         "id": "29d6-5565-efeb-935b:caa8-634e-b7e4-a286",
          "name": "Twin heavy bolter",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fc72-9f62-b714-d195",
@@ -2983,16 +3057,138 @@
      },
      "loadout": [
       {
-       "id": "2829-e94b-3c14-c993",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "dadc-2c8c-6a2e-e9d2",
+       "kind": "fixed",
+       "name": "Predator twin lascannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2829-e94b-3c14-c993:e6d3-8cca-69a0-fe55",
-         "name": "Armoured tracks",
+         "id": "dadc-2c8c-6a2e-e9d2:dadc-2c8c-6a2e-e9d2",
+         "name": "Predator twin lascannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4335-d27e-ac60-6b32",
+           "name": "Predator twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "45a9-cbcc-3ed3-02a4",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "45a9-cbcc-3ed3-02a4:72aa-41c7-7a60-b9e2",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          }
+         ]
+        },
+        {
+         "id": "45a9-cbcc-3ed3-02a4:953e-8119-c0ac-91e0",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2396-046a-d1ba-5daf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "63fa-ab1c-aa38-6701",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "63fa-ab1c-aa38-6701:2c2b-ca49-5b0a-55e4",
+         "name": "2 heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "55cd-6458-4bb4-8c5c",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 2, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "63fa-ab1c-aa38-6701:8e02-c343-e6ae-57b1",
+         "name": "2 lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1b09-07ca-bfa2-b30f",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e6d3-8cca-69a0-fe55",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e6d3-8cca-69a0-fe55:f76c-0f51-ad33-c118",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1c01-242b-864f-6a0f",
@@ -3007,11 +3203,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7a7b-a3f9-68d5-a91b",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "2829-e94b-3c14-c993:7a7b-a3f9-68d5-a91b",
+         "id": "7a7b-a3f9-68d5-a91b:5df1-0d33-8cea-a191",
          "name": "Havoc launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0bbc-60b7-e869-01a8",
@@ -3024,25 +3229,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Blast"
-          }
-         ]
-        },
-        {
-         "id": "2829-e94b-3c14-c993:dadc-2c8c-6a2e-e9d2",
-         "name": "Predator twin lascannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "4335-d27e-ac60-6b32",
-           "name": "Predator twin lascannon",
-           "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "1",
-           "bs_ws": "4+",
-           "s": "14",
-           "ap": "-3",
-           "d": "D6+1",
-           "keywords": "Rapid Fire 2, Twin-linked"
           }
          ]
         }
@@ -3143,16 +3329,138 @@
      },
      "loadout": [
       {
-       "id": "ba3b-bfd0-0579-98a7",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "0fbc-05e5-596c-ac82",
+       "kind": "fixed",
+       "name": "Predator autocannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ba3b-bfd0-0579-98a7:0c7b-7427-dcc6-6198",
-         "name": "Armoured tracks",
+         "id": "0fbc-05e5-596c-ac82:0fbc-05e5-596c-ac82",
+         "name": "Predator autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4429-83d9-ae30-87cb",
+           "name": "Predator autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Rapid Fire 6"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "59bb-8d9a-0249-a752",
+       "kind": "choice",
+       "name": "Pintle weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "59bb-8d9a-0249-a752:2dab-bec4-fbe9-da7b",
+         "name": "Combi-bolter",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          }
+         ]
+        },
+        {
+         "id": "59bb-8d9a-0249-a752:3cc6-ce42-e45b-b893",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2396-046a-d1ba-5daf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4cd7-eb6a-503d-1a3c",
+       "kind": "choice",
+       "name": "Sponsons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4cd7-eb6a-503d-1a3c:7ad9-e02d-3f17-bfc4",
+         "name": "2 heavy bolters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "55cd-6458-4bb4-8c5c",
+           "name": "Heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 2, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "4cd7-eb6a-503d-1a3c:7c8d-003b-e2c1-cbea",
+         "name": "2 lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1b09-07ca-bfa2-b30f",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "0c7b-7427-dcc6-6198",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "0c7b-7427-dcc6-6198:f76c-0f51-ad33-c118",
+         "name": "Armoured tracks",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1c01-242b-864f-6a0f",
@@ -3167,11 +3475,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "0396-585a-5830-0f21",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "ba3b-bfd0-0579-98a7:0396-585a-5830-0f21",
+         "id": "0396-585a-5830-0f21:5df1-0d33-8cea-a191",
          "name": "Havoc launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0bbc-60b7-e869-01a8",
@@ -3184,25 +3501,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Blast"
-          }
-         ]
-        },
-        {
-         "id": "ba3b-bfd0-0579-98a7:0fbc-05e5-596c-ac82",
-         "name": "Predator autocannon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "4429-83d9-ae30-87cb",
-           "name": "Predator autocannon",
-           "weapon_type": "Ranged",
-           "range": "48\"",
-           "a": "4",
-           "bs_ws": "4+",
-           "s": "9",
-           "ap": "-1",
-           "d": "3",
-           "keywords": "Rapid Fire 6"
           }
          ]
         }
@@ -3308,16 +3606,16 @@
      },
      "loadout": [
       {
-       "id": "50bb-61a9-c7bd-d26e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b39c-92d1-f763-74a1",
+       "kind": "fixed",
+       "name": "Shearing claws",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "50bb-61a9-c7bd-d26e:b39c-92d1-f763-74a1",
+         "id": "b39c-92d1-f763-74a1:b39c-92d1-f763-74a1",
          "name": "Shearing claws",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1ca4-387f-a06e-b111",
@@ -3342,6 +3640,282 @@
            "ap": "-2",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "bc8c-8049-6630-4444",
+       "kind": "choice",
+       "name": "Replace heavy missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "bc8c-8049-6630-4444:6792-55bf-deb5-fdee",
+         "name": "Heavy missile launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7396-8929-420d-eea0",
+           "name": "➤ Heavy missile launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2D6",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Rapid Fire 1"
+          },
+          {
+           "profile_id": "5384-de10-ce9e-35d5",
+           "name": "➤ Heavy missile launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "bc8c-8049-6630-4444:a928-9283-9104-32a9",
+         "name": "Electroscourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "176e-3cd1-f550-03f4",
+           "name": "Electroscourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks, Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "bc8c-8049-6630-4444:d463-a219-12f9-39a2",
+         "name": "Hades lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8734-32c6-44d9-5a93",
+           "name": "Hades lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "bc8c-8049-6630-4444:4a2a-a02d-fbec-cda1",
+         "name": "Heavy reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea67-a7e4-2bfa-d325",
+           "name": "Heavy reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Devastating Wounds, Rapid Fire 2, Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "16bb-7548-615c-f697",
+       "kind": "choice",
+       "name": "Main cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "16bb-7548-615c-f697:93ce-bbcf-a32b-577b",
+         "name": "Hades battle cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "da64-6fb7-6c1e-ff19",
+           "name": "Hades battle cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Blast, Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "16bb-7548-615c-f697:0370-b37e-609a-e8f8",
+         "name": "Ectoplasma destructor",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bf79-6fdc-847f-2512",
+           "name": "Ectoplasma destructor",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ee9e-8c2b-c344-6943",
+       "kind": "choice",
+       "name": "Replace heavy baleflamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ee9e-8c2b-c344-6943:9289-e765-9eb6-30b5",
+         "name": "Heavy baleflamer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "24ba-c33f-ab47-2f2d",
+           "name": "Heavy baleflamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6+3",
+           "bs_ws": "N/A",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "ee9e-8c2b-c344-6943:7ac6-028b-4d6e-8f4f",
+         "name": "Heavy reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ea67-a7e4-2bfa-d325",
+           "name": "Heavy reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Devastating Wounds, Rapid Fire 2, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "ee9e-8c2b-c344-6943:5ab0-d9e2-bb43-ba4e",
+         "name": "Electroscourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "176e-3cd1-f550-03f4",
+           "name": "Electroscourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks, Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "ee9e-8c2b-c344-6943:f10d-0f8f-b354-fda3",
+         "name": "Hades lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8734-32c6-44d9-5a93",
+           "name": "Hades lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c294-5d07-1bb4-af43",
+       "kind": "choice",
+       "name": "Replace excruciator cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c294-5d07-1bb4-af43:2fe1-327f-c6bc-2650",
+         "name": "Two excruciator cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "afb3-dbe7-bbeb-902f",
+           "name": "Excruciator cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "c294-5d07-1bb4-af43:bd61-e672-16ae-05a1",
+         "name": "Two magma cutters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bab8-69e8-c1d6-1ecd",
+           "name": "Magma cutter",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Rapid Fire 1"
           }
          ]
         }
@@ -3659,16 +4233,16 @@
      },
      "loadout": [
       {
-       "id": "817d-88bd-e513-e4e6",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "70b-bdff-5001-4b21",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "817d-88bd-e513-e4e6:70b-bdff-5001-4b21",
+         "id": "70b-bdff-5001-4b21:70b-bdff-5001-4b21",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6abd-b956-2a51-241",
@@ -3681,6 +4255,312 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8049-1102-1ce1-98e7",
+       "kind": "choice",
+       "name": "Replace missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8049-1102-1ce1-98e7:2759-54bd-669d-4a20",
+         "name": "Helbrute fist with combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          },
+          {
+           "profile_id": "9cf0-22da-7500-4848",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8049-1102-1ce1-98e7:816c-7eb1-1ce0-e806",
+         "name": "Helbrute fist with heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ab67-d80a-c94c-e6e3",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "9cf0-22da-7500-4848",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8049-1102-1ce1-98e7:4b78-28cf-7dee-c426",
+         "name": "Missile launcher",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c383-ed5a-fdf2-7a4f",
+           "name": "➤ Missile launcher - frag",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Rapid Fire 3"
+          },
+          {
+           "profile_id": "9296-f12a-ad7f-30c4",
+           "name": "➤ Missile launcher - krak",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "8049-1102-1ce1-98e7:a9cc-73a1-144c-0d11",
+         "name": "Helbrute hammer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fc6f-24af-e553-0c3d",
+           "name": "Helbrute hammer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8049-1102-1ce1-98e7:3532-2abd-0b96-4bf4",
+         "name": "Power scourge",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b7a2-e159-fe07-db5d",
+           "name": "Power scourge",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9e0f-923b-62b7-958b",
+       "kind": "choice",
+       "name": "Replace multi-melta",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9e0f-923b-62b7-958b:3ad1-17dc-4185-e273",
+         "name": "Multi-melta",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "74ad-f155-27a9-3e54",
+           "name": "Multi-melta",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:6e8b-0b2d-0438-f572",
+         "name": "Twin autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d49f-822-633e-12e",
+           "name": "Twin autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:1f9f-ed59-6c0c-64e0",
+         "name": "Helbrute fist with heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ab67-d80a-c94c-e6e3",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "9cf0-22da-7500-4848",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:3248-a80c-0b48-7880",
+         "name": "Helbrute fist with combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          },
+          {
+           "profile_id": "9cf0-22da-7500-4848",
+           "name": "Helbrute fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:1cc2-ec19-93cd-5374",
+         "name": "Plasma cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "55df-3e4e-7496-90c5",
+           "name": "Plasma cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Hazardous, Rapid Fire D3"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:0ac2-1916-4c67-03d0",
+         "name": "Twin heavy bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fc72-9f62-b714-d195",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "9e0f-923b-62b7-958b:097b-a120-6146-3e0c",
+         "name": "Twin lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9eb6-d9a7-c754-c1a6",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 1, Twin-linked"
           }
          ]
         }
@@ -3797,16 +4677,16 @@
      },
      "loadout": [
       {
-       "id": "4615-666e-52a8-5a23",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "cac7-3a37-c963-8dfa",
+       "kind": "fixed",
+       "name": "Heldrake claws",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4615-666e-52a8-5a23:cac7-3a37-c963-8dfa",
+         "id": "cac7-3a37-c963-8dfa:cac7-3a37-c963-8dfa",
          "name": "Heldrake claws",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "22d7-4caa-1838-1c3f",
@@ -3819,6 +4699,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3037-ed3b-29aa-6c83",
+       "kind": "choice",
+       "name": "Mouth weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3037-ed3b-29aa-6c83:6b8f-4996-bee7-5c3d",
+         "name": "Baleflamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a649-2296-8c56-08cd",
+           "name": "Baleflamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6+3",
+           "bs_ws": "N/A",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "3037-ed3b-29aa-6c83:9d42-2747-ee22-1162",
+         "name": "Hades autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "dd4d-6efb-fc4e-c3cf",
+           "name": "Hades autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 4"
           }
          ]
         }
@@ -3930,16 +4857,16 @@
      },
      "loadout": [
       {
-       "id": "8206-8741-c3c8-27c9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b6ea-b414-4386-e416",
+       "kind": "fixed",
+       "name": "Maulerfiend fists",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "8206-8741-c3c8-27c9:b6ea-b414-4386-e416",
+         "id": "b6ea-b414-4386-e416:b6ea-b414-4386-e416",
          "name": "Maulerfiend fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e721-bc30-a7c5-cce9",
@@ -3952,6 +4879,53 @@
            "ap": "-2",
            "d": "D6+1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6f14-0332-55ac-9643",
+       "kind": "choice",
+       "name": "Head weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6f14-0332-55ac-9643:1e09-7721-1a1f-7ced",
+         "name": "2 magma cutters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dab-f908-07a4-8d2d",
+           "name": "Magma cutter",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "6f14-0332-55ac-9643:e3ea-0c3d-1c03-ac0a",
+         "name": "Lasher tendrils",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2d57-1a54-028b-fd77",
+           "name": "Lasher tendrils",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
           }
          ]
         }
@@ -4074,33 +5048,14 @@
      },
      "loadout": [
       {
-       "id": "465d-5908-c229-beb8",
+       "id": "f8f9-edf8-b4b1-fe5a",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Pintle weapon",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "465d-5908-c229-beb8:3837-6b0a-9a8c-011e",
-         "name": "Armoured tracks",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "1c01-242b-864f-6a0f",
-           "name": "Armoured tracks",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "6",
-           "bs_ws": "3+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "465d-5908-c229-beb8:39ae-e537-ab68-108f",
+         "id": "f8f9-edf8-b4b1-fe5a:efa3-1b72-4d64-2127",
          "name": "Combi-bolter",
          "is_default": false,
          "weapons": [
@@ -4119,9 +5074,93 @@
          ]
         },
         {
-         "id": "465d-5908-c229-beb8:e245-00af-d40f-697e",
-         "name": "Havoc launcher",
+         "id": "f8f9-edf8-b4b1-fe5a:7208-ec46-5e23-4a30",
+         "name": "Combi-weapon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2396-046a-d1ba-5daf",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3837-6b0a-9a8c-011e",
+       "kind": "fixed",
+       "name": "Armoured tracks",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3837-6b0a-9a8c-011e:f76c-0f51-ad33-c118",
+         "name": "Armoured tracks",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1c01-242b-864f-6a0f",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "39ae-e537-ab68-108f",
+       "kind": "fixed",
+       "name": "Combi-bolter",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "39ae-e537-ab68-108f:9cc3-1188-9678-0ee1",
+         "name": "Combi-bolter",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5005-6b6a-dd38-4f11",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 4"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e245-00af-d40f-697e",
+       "kind": "fixed",
+       "name": "Havoc launcher",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e245-00af-d40f-697e:5df1-0d33-8cea-a191",
+         "name": "Havoc launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0bbc-60b7-e869-01a8",
@@ -4367,16 +5406,16 @@
      },
      "loadout": [
       {
-       "id": "408c-99c9-c58d-8098",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a267-97a0-25b1-8036",
+       "kind": "fixed",
+       "name": "Great cleaver of Khorne",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "408c-99c9-c58d-8098:a267-97a0-25b1-8036",
+         "id": "a267-97a0-25b1-8036:a267-97a0-25b1-8036",
          "name": "Great cleaver of Khorne",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d303-1eb7-b9d0-af6b",
@@ -4401,6 +5440,119 @@
            "ap": "-2",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "df53-9a55-796f-00b4",
+       "kind": "choice",
+       "name": "Replace gatling cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "df53-9a55-796f-00b4:810b-c236-e372-377f",
+         "name": "Hades gatling cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4f13-7818-f020-fe32",
+           "name": "Hades gatling cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "12",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Rapid Fire 6, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "df53-9a55-796f-00b4:fea5-da94-7ffe-8bbd",
+         "name": "Skullhurler",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1f29-6965-2404-190c",
+           "name": "Skullhurler",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "2D6",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "66f3-ae18-220d-ffb6",
+       "kind": "choice",
+       "name": "Replace gorestorm cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "66f3-ae18-220d-ffb6:87f0-f2de-a092-a2ea",
+         "name": "Gorestorm cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2291-6ae2-5a0c-0026",
+           "name": "Gorestorm cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "66f3-ae18-220d-ffb6:bce4-e2c7-43cb-fe44",
+         "name": "Daemongore cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "046f-8be9-131b-0ed8",
+           "name": "Daemongore cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "Blast, Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "66f3-ae18-220d-ffb6:8f95-98be-d46d-a76a",
+         "name": "Ichor cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "624a-be29-77f2-203b",
+           "name": "Ichor cannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2D6",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast, Rapid Fire 4"
           }
          ]
         }
@@ -4518,16 +5670,16 @@
      },
      "loadout": [
       {
-       "id": "955a-b5f6-9030-368b",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "aef8-9b52-bf69-3eb5",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "955a-b5f6-9030-368b:aef8-9b52-bf69-3eb5",
+         "id": "aef8-9b52-bf69-3eb5:aef8-9b52-bf69-3eb5",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4ebb-36f9-5f9a-a86a",
@@ -4542,11 +5694,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "2d94-8a70-49c0-5fe4",
+       "kind": "choice",
+       "name": "Replace autocannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2d94-8a70-49c0-5fe4:1ffd-b0d4-e6b-215f",
+         "name": "Havoc launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0bbc-60b7-e869-01a8",
+           "name": "Havoc launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
         },
         {
-         "id": "955a-b5f6-9030-368b:7614-c823-9385-7127",
+         "id": "2d94-8a70-49c0-5fe4:acc6-6ac7-6327-d4d3",
+         "name": "Autocannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "bf25-83ac-da0d-8a91",
+           "name": "Autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7614-c823-9385-7127",
+       "kind": "fixed",
+       "name": "Twin lascannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "7614-c823-9385-7127:0fc2-382a-b387-9634",
          "name": "Twin lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9eb6-d9a7-c754-c1a6",
@@ -4670,16 +5878,16 @@
      },
      "loadout": [
       {
-       "id": "35fb-3a76-191a-4625",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "dad5-cead-c326-813d",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "35fb-3a76-191a-4625:dad5-cead-c326-813d",
+         "id": "dad5-cead-c326-813d:dad5-cead-c326-813d",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1368-27f7-bc8a-e50f",
@@ -4692,6 +5900,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d31f-85fd-a1-76a9",
+       "kind": "choice",
+       "name": "Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d31f-85fd-a1-76a9:2c93-2d85-b225-72dc",
+         "name": "Two twin autocannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a65b-8c39-15a4-e33d",
+           "name": "Twin autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "d31f-85fd-a1-76a9:bad-7d98-f08a-635e",
+         "name": "Two twin lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9eb6-d9a7-c754-c1a6",
+           "name": "Twin lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Rapid Fire 1, Twin-linked"
           }
          ]
         }
@@ -5414,16 +6669,16 @@
      },
      "loadout": [
       {
-       "id": "737a-dbe0-550e-4a2e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "9064-698b-c833-b972",
+       "kind": "fixed",
+       "name": "Hellfire breath",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "737a-dbe0-550e-4a2e:9064-698b-c833-b972",
+         "id": "9064-698b-c833-b972:9064-698b-c833-b972",
          "name": "Hellfire breath",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "27b2-ec70-49ca-d5c7",
@@ -5436,6 +6691,132 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1e91-049b-6156-a2f1",
+       "kind": "choice",
+       "name": "Replace great axe",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1e91-049b-6156-a2f1:819a-63a5-f90c-7794",
+         "name": "Great axe of Khorne",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9dfd-3138-2111-f204",
+           "name": "➤ Great axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "7",
+           "bs_ws": "2+",
+           "s": "16",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "78d3-f6d0-45c4-9145",
+           "name": "➤ Great axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "14",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1e91-049b-6156-a2f1:a49c-ab0e-a06b-1762",
+         "name": "Axe and flail",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6260-10af-22ef-f664",
+           "name": "➤ Axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D3+1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "a72c-25d4-1924-fe3c",
+           "name": "➤ Axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "16",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "6fe5-b0db-58e3-ab95",
+           "name": "Bloodflail",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "16",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "1e91-049b-6156-a2f1:fe7a-c05d-a8a4-480e",
+         "name": "Axe and lash",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6260-10af-22ef-f664",
+           "name": "➤ Axe of Khorne - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D3+1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "a72c-25d4-1924-fe3c",
+           "name": "➤ Axe of Khorne - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "16",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "a6a3-e0e6-f400-ac07",
+           "name": "Lash of Khorne",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "9",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
           }
          ]
         }

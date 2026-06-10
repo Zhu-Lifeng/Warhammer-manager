@@ -780,16 +780,170 @@
      },
      "loadout": [
       {
-       "id": "3e0b-ab5b-d140-f192",
+       "id": "738f-2f00-e5f6-d038",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Support Systems (1-4)",
+       "min_select": 1,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "738f-2f00-e5f6-d038:64f3-9021-ee7e-820f",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "31d5-d59a-2d18-2d58",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:f12e-ee4d-4ca1-3477",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a62-f987-469f-e15a",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:7a71-3c5a-a5c9-ce67",
+         "name": "Airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7252-9cbf-4736-285e",
+           "name": "Airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:6946-ead2-92f9-86c3",
+         "name": "Cyclic ion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d55e-419e-e6a0-89a8",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3d00-e134-a1e7-c9bd",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:ef8a-1a12-d664-f69f",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:c29e-1f09-bcd6-c83e",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fec0-d86e-fd85-42a1",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "738f-2f00-e5f6-d038:d73b-0f77-90e7-3918",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "526e-7c08-b2d3-bc44",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3f2c-c4aa-5d38-03a0",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "3e0b-ab5b-d140-f192:3f2c-c4aa-5d38-03a0",
+         "id": "3f2c-c4aa-5d38-03a0:2529-ef4c-ea18-5964",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3519-759a-5a51-2de9",
@@ -802,6 +956,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5430-0262-ba51-af66",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "5430-0262-ba51-af66:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "5430-0262-ba51-af66:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -918,16 +1119,170 @@
      },
      "loadout": [
       {
-       "id": "dac8-bba4-2c2e-9196",
+       "id": "e3b2-b45e-4d3d-e5cf",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Support Systems (1-4)",
+       "min_select": 1,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:9a03-4a30-0a68-1db4",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "31d5-d59a-2d18-2d58",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:ed07-fd69-fdef-2482",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a62-f987-469f-e15a",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:7a59-e857-9ead-a189",
+         "name": "Airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7252-9cbf-4736-285e",
+           "name": "Airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:c22d-f6d8-9402-21b9",
+         "name": "Cyclic ion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d55e-419e-e6a0-89a8",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3d00-e134-a1e7-c9bd",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:d850-2def-4a37-717a",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:2e46-a7fd-185c-8f94",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fec0-d86e-fd85-42a1",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "e3b2-b45e-4d3d-e5cf:e1e7-ffd5-f7c3-9e85",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "526e-7c08-b2d3-bc44",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5ec6-e048-bc36-4ec1",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "dac8-bba4-2c2e-9196:5ec6-e048-bc36-4ec1",
+         "id": "5ec6-e048-bc36-4ec1:2529-ef4c-ea18-5964",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3519-759a-5a51-2de9",
@@ -940,6 +1295,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b18d-5e91-de36-fbd7",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "b18d-5e91-de36-fbd7:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b18d-5e91-de36-fbd7:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -1056,16 +1458,189 @@
      },
      "loadout": [
       {
-       "id": "13b3-b221-a151-233b",
+       "id": "1311-84d4-e5c5-e8ca",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Support Systems (1-4)",
+       "min_select": 1,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "1311-84d4-e5c5-e8ca:9341-a5b8-1f4a-6c9f",
+         "name": "High-output burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "27cc-b6a6-632a-6fb5",
+           "name": "High-output burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:9e91-274e-2322-4b1b",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "31d5-d59a-2d18-2d58",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:cad2-eea2-9f64-a2af",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a62-f987-469f-e15a",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:da48-f97e-82ec-40cd",
+         "name": "Airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7252-9cbf-4736-285e",
+           "name": "Airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:7dc9-1904-171d-80c0",
+         "name": "Cyclic ion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d55e-419e-e6a0-89a8",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3d00-e134-a1e7-c9bd",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:3e0a-6736-edf4-2654",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:ca22-7e8c-cbac-025a",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fec0-d86e-fd85-42a1",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "1311-84d4-e5c5-e8ca:fddd-9b4b-c121-8e96",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "526e-7c08-b2d3-bc44",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ed33-86b4-a9bd-b59d",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "13b3-b221-a151-233b:ed33-86b4-a9bd-b59d",
+         "id": "ed33-86b4-a9bd-b59d:2529-ef4c-ea18-5964",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3519-759a-5a51-2de9",
@@ -1078,6 +1653,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "256c-a2af-03c7-e3b2",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "256c-a2af-03c7-e3b2:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "256c-a2af-03c7-e3b2:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -1184,16 +1806,16 @@
      },
      "loadout": [
       {
-       "id": "cadd-8930-5c9d-f2a3",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "a201-0ce5-a5d8-89f6",
+       "kind": "fixed",
+       "name": "Fireblade pulse rifle",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "cadd-8930-5c9d-f2a3:a201-0ce5-a5d8-89f6",
+         "id": "a201-0ce5-a5d8-89f6:a840-cffd-5513-7ef5",
          "name": "Fireblade pulse rifle",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "230a-d8fa-420b-4258",
@@ -1208,11 +1830,20 @@
            "keywords": "Rapid Fire 1"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "cf1a-de54-c3e9-baa1",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "cadd-8930-5c9d-f2a3:cf1a-de54-c3e9-baa1",
+         "id": "cf1a-de54-c3e9-baa1:9723-19aa-cd65-d7d0",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cdb3-583c-f777-493b",
@@ -1225,6 +1856,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8c47-8ce8-951d-dec2",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "8c47-8ce8-951d-dec2:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8c47-8ce8-951d-dec2:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -1332,16 +2010,16 @@
      },
      "loadout": [
       {
-       "id": "6bf3-f714-37d1-8726",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e7b9-efe8-e0f-83f9",
+       "kind": "fixed",
+       "name": "Honour stave",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6bf3-f714-37d1-8726:e7b9-efe8-e0f-83f9",
+         "id": "e7b9-efe8-e0f-83f9:e7b9-efe8-e0f-83f9",
          "name": "Honour stave",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4857-a947-2073-1773",
@@ -1354,6 +2032,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "370f-155c-d630-9146",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "370f-155c-d630-9146:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "370f-155c-d630-9146:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -2325,16 +3050,16 @@
      },
      "loadout": [
       {
-       "id": "7cd6-5380-2540-8db6",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "e528-d3be-edbd-ea75",
+       "kind": "fixed",
+       "name": "Close combat weapon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "7cd6-5380-2540-8db6:e528-d3be-edbd-ea75",
+         "id": "e528-d3be-edbd-ea75:de0b-0da1-d97e-8d59",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f9f3-a15e-537e-8852",
@@ -2349,11 +3074,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "db1c-f145-e712-08b4",
+       "kind": "fixed",
+       "name": "Pulse pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "7cd6-5380-2540-8db6:db1c-f145-e712-08b4",
+         "id": "db1c-f145-e712-08b4:4310-a1ce-dde7-70e3",
          "name": "Pulse pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbad-3604-3016-f719",
@@ -2368,11 +3102,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "bfe3-4c33-ad39-b26f",
+       "kind": "fixed",
+       "name": "Pulse rifle",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "7cd6-5380-2540-8db6:bfe3-4c33-ad39-b26f",
+         "id": "bfe3-4c33-ad39-b26f:b0cc-6a4b-ccbe-2668",
          "name": "Pulse rifle",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7b5d-b5b4-88de-9799",
@@ -2387,11 +3130,20 @@
            "keywords": "Rapid Fire 1"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3415-da99-a44b-060d",
+       "kind": "fixed",
+       "name": "Support turret",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "7cd6-5380-2540-8db6:3415-da99-a44b-060d",
+         "id": "3415-da99-a44b-060d:25f4-4559-c056-0e4e",
          "name": "Support turret",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b3d4-211a-48f8-266e",
@@ -2404,6 +3156,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "Indirect Fire, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ab62-80ac-3434-886e",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "ab62-80ac-3434-886e:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ab62-80ac-3434-886e:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -2592,16 +3391,16 @@
      },
      "loadout": [
       {
-       "id": "285f-9b03-5cd4-171e",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "5f80-fbcc-b135-2d3e",
+       "kind": "fixed",
+       "name": "Close combat weapon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "285f-9b03-5cd4-171e:5f80-fbcc-b135-2d3e",
+         "id": "5f80-fbcc-b135-2d3e:de0b-0da1-d97e-8d59",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f9f3-a15e-537e-8852",
@@ -2616,11 +3415,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "133c-2148-f6bf-abef",
+       "kind": "fixed",
+       "name": "Pulse pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "285f-9b03-5cd4-171e:133c-2148-f6bf-abef",
+         "id": "133c-2148-f6bf-abef:4310-a1ce-dde7-70e3",
          "name": "Pulse pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbad-3604-3016-f719",
@@ -2635,11 +3443,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "79e4-d0fe-fe57-e1bb",
+       "kind": "fixed",
+       "name": "Pulse blaster",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "285f-9b03-5cd4-171e:79e4-d0fe-fe57-e1bb",
+         "id": "79e4-d0fe-fe57-e1bb:13ec-4217-90b8-e270",
          "name": "Pulse blaster",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6b87-25ec-8946-7354",
@@ -2654,11 +3471,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "50f3-bf97-6487-18b9",
+       "kind": "fixed",
+       "name": "Support turret",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "285f-9b03-5cd4-171e:50f3-bf97-6487-18b9",
+         "id": "50f3-bf97-6487-18b9:25f4-4559-c056-0e4e",
          "name": "Support turret",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b3d4-211a-48f8-266e",
@@ -2671,6 +3497,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "Indirect Fire, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f3d6-0990-2179-eed6",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "f3d6-0990-2179-eed6:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f3d6-0990-2179-eed6:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -3194,16 +4067,217 @@
      },
      "loadout": [
       {
-       "id": "4404-1f0f-c7e8-c0e2",
+       "id": "f466-1c02-c779-53d5",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Support Systems (1-4)",
+       "min_select": 1,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "f466-1c02-c779-53d5:2409-6432-e6c5-df12",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:be08-5d29-991b-8c91",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:4675-f094-9a85-88d4",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:3589-8f7d-f0f8-7630",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9167-b3e7-ff4a-dd38",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:0283-a876-92e6-000a",
+         "name": "Airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c993-5cf8-fd6a-bc2e",
+           "name": "Airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:38d8-5ea3-0de5-0497",
+         "name": "Cyclic ion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff94-d2c1-034d-e875",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c30d-6274-c12d-6e16",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "f466-1c02-c779-53d5:0969-8369-9d23-d0eb",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bc9-74b7-1e9c-8619",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ee0f-4b5e-11f9-233a",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "ee0f-4b5e-11f9-233a:a2c-25e-bb0c-50fc",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "ee0f-4b5e-11f9-233a:87e6-9a39-44b3-c69a",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f2c-e640-b41e-36a0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7284-708c-1923-8b39",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "4404-1f0f-c7e8-c0e2:7284-708c-1923-8b39",
+         "id": "7284-708c-1923-8b39:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -3238,16 +4312,170 @@
      },
      "loadout": [
       {
-       "id": "1544-9321-65e0-f35b",
+       "id": "ed16-9494-02dd-74ca",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Support Systems (1-4)",
+       "min_select": 1,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "ed16-9494-02dd-74ca:70f5-0119-0a99-4603",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:e017-d7b4-fe40-0837",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:5b32-c00f-763b-5372",
+         "name": "Airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c993-5cf8-fd6a-bc2e",
+           "name": "Airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:eb76-3253-7317-e47d",
+         "name": "Cyclic ion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff94-d2c1-034d-e875",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c30d-6274-c12d-6e16",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:e1c8-4c94-7d2a-e964",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:4525-9065-aa81-8d1d",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bc9-74b7-1e9c-8619",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "ed16-9494-02dd-74ca:d8c2-b29e-060b-13bd",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9167-b3e7-ff4a-dd38",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "0280-2182-1b01-25e2",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "1544-9321-65e0-f35b:0280-2182-1b01-25e2",
+         "id": "0280-2182-1b01-25e2:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -3260,6 +4488,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9119-fce4-aaae-4839",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "9119-fce4-aaae-4839:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9119-fce4-aaae-4839:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -3501,16 +4776,63 @@
      },
      "loadout": [
       {
-       "id": "1051-a2a2-9c34-e570",
+       "id": "64ed-7a58-bc2f-e280",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Burst cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "64ed-7a58-bc2f-e280:d9b7-3749-909f-a357",
+         "name": "Burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "64ed-7a58-bc2f-e280:9c83-dc2b-dcfe-3660",
+         "name": "Fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bc9-74b7-1e9c-8619",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "329a-10c5-2661-7ba3",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "1051-a2a2-9c34-e570:329a-10c5-2661-7ba3",
+         "id": "329a-10c5-2661-7ba3:6cf1-5611-ba26-a9b1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3d93-d7b-3ae5-7524",
@@ -3525,11 +4847,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "15f3-e055-4fce-f77e",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "15f3-e055-4fce-f77e:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "1051-a2a2-9c34-e570:2c55-cf25-c27a-4eb4",
-         "name": "Pulse pistol",
+         "id": "15f3-e055-4fce-f77e:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2c55-cf25-c27a-4eb4",
+       "kind": "fixed",
+       "name": "Pulse pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "2c55-cf25-c27a-4eb4:4310-a1ce-dde7-70e3",
+         "name": "Pulse pistol",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbad-3604-3016-f719",
@@ -3624,16 +5002,16 @@
      },
      "loadout": [
       {
-       "id": "b66b-419b-794d-130d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "5804-a3f4-b65a-4e32",
+       "kind": "fixed",
+       "name": "Ghostkeel fists",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b66b-419b-794d-130d:5804-a3f4-b65a-4e32",
+         "id": "5804-a3f4-b65a-4e32:5804-a3f4-b65a-4e32",
          "name": "Ghostkeel fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fece-1dd7-9f4e-38c1",
@@ -3646,6 +5024,131 @@
            "ap": "0",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a5ca-2dc6-27b-c040",
+       "kind": "choice",
+       "name": "Twin T'au flamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a5ca-2dc6-27b-c040:61d9-d495-5173-30fe",
+         "name": "Twin burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d67-3828-11d4-b8f1",
+           "name": "Twin burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a5ca-2dc6-27b-c040:41f6-4347-9b33-a099",
+         "name": "Twin T'au flamer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e5cc-4d2d-324f-6da0",
+           "name": "Twin T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a5ca-2dc6-27b-c040:ed83-603d-844e-f9c4",
+         "name": "Twin fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d33c-8505-a08f-6160",
+           "name": "Twin fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fb72-62ac-9b5c-d6b8",
+       "kind": "choice",
+       "name": "Fusion collider",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fb72-62ac-9b5c-d6b8:7911-3c42-8875-13d4",
+         "name": "Fusion collider",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2700-47eb-f3be-eb6e",
+           "name": "Fusion collider",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "fb72-62ac-9b5c-d6b8:607c-5de1-21e-96bf",
+         "name": "Cyclic ion raker",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8475-3bd-6677-efb9",
+           "name": "➤ Cyclic ion raker - standard",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "8d84-7f48-b1cc-ee98",
+           "name": "➤ Cyclic ion raker - overcharge",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Hazardous"
           }
          ]
         }
@@ -4364,16 +5867,16 @@
      },
      "loadout": [
       {
-       "id": "3fcf-5576-c034-13b4",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4e2b-de81-733a-721d",
+       "kind": "fixed",
+       "name": "Pulse carbine",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "3fcf-5576-c034-13b4:4e2b-de81-733a-721d",
+         "id": "4e2b-de81-733a-721d:4e2b-de81-733a-721d",
          "name": "Pulse carbine",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9d00-a7fb-afe6-98f9",
@@ -4388,11 +5891,48 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "74cb-a7a8-869a-53ee",
+       "kind": "choice",
+       "name": "Pathfinder Drone",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "3fcf-5576-c034-13b4:c6a4-9585-1b62-0fa0",
-         "name": "Close combat weapon",
+         "id": "74cb-a7a8-869a-53ee:124e-a9a3-efd7-8788",
+         "name": "Recon drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a2c7-b3a1-dd13-916d",
+           "name": "Drone burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c6a4-9585-1b62-0fa0",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c6a4-9585-1b62-0fa0:de0b-0da1-d97e-8d59",
+         "name": "Close combat weapon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f9f3-a15e-537e-8852",
@@ -4407,11 +5947,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "fff7-3461-6283-cdf0",
+       "kind": "fixed",
+       "name": "Pulse pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "3fcf-5576-c034-13b4:fff7-3461-6283-cdf0",
+         "id": "fff7-3461-6283-cdf0:4310-a1ce-dde7-70e3",
          "name": "Pulse pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbad-3604-3016-f719",
@@ -4426,11 +5975,67 @@
            "keywords": "Pistol"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "25d5-4ee4-f75f-69bf",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "25d5-4ee4-f75f-69bf:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "3fcf-5576-c034-13b4:44be-4a7e-5a8b-cabc",
-         "name": "Semi-automatic grenade launcher",
+         "id": "25d5-4ee4-f75f-69bf:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "44be-4a7e-5a8b-cabc",
+       "kind": "fixed",
+       "name": "Semi-automatic grenade launcher",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "44be-4a7e-5a8b-cabc:6af0-a6dd-ddeb-4178",
+         "name": "Semi-automatic grenade launcher",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "31a1-c5dd-a259-1d89",
@@ -4540,16 +6145,91 @@
      },
      "loadout": [
       {
-       "id": "7c6c-3ee9-1d7b-a76c",
+       "id": "35f-3416-5978-472c",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Piranha Burst Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "35f-3416-5978-472c:af16-2b3c-31c7-a7b8",
+         "name": "Piranha burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5907-8e6e-e23c-f975",
+           "name": "Piranha burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "35f-3416-5978-472c:fe73-7631-4dca-96d7",
+         "name": "Piranha fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "13bb-2136-6885-d9cf",
+           "name": "Piranha fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 4"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a1d6-3f5c-85dc-50a0",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "a1d6-3f5c-85dc-50a0:3170-7dcc-8835-42ce",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e28d-f564-51a7-af43",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "7c6c-3ee9-1d7b-a76c:e28d-f564-51a7-af43",
+         "id": "e28d-f564-51a7-af43:b77b-33fb-425d-60de",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6623-339f-6773-dc3c",
@@ -4564,11 +6244,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "651e-ab03-7cad-fc4a",
+       "kind": "fixed",
+       "name": "Twin pulse carbine",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "7c6c-3ee9-1d7b-a76c:651e-ab03-7cad-fc4a",
+         "id": "651e-ab03-7cad-fc4a:f532-7ffd-02fe-6af8",
          "name": "Twin pulse carbine",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "47d1-604d-fa7f-0ec4",
@@ -5104,16 +6793,63 @@
        ]
       },
       {
-       "id": "5068-3b7e-4bf0-a83d",
+       "id": "b05f-dadf-e0a2-eaf4",
        "kind": "choice",
-       "name": "Support Systems (0-2)",
+       "name": "Secondary Weapons",
        "min_select": null,
-       "max_select": 2,
+       "max_select": 1,
        "options": [
         {
-         "id": "5068-3b7e-4bf0-a83d:f973-85e7-df62-81ed",
-         "name": "Seeker missile",
+         "id": "b05f-dadf-e0a2-eaf4:7bdf-c969-6780-cb3a",
+         "name": "Twin plasma rifle",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e18f-f00f-7d58-1ddd",
+           "name": "Twin plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b05f-dadf-e0a2-eaf4:6183-1b10-6962-1699",
+         "name": "Twin smart missile system",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9dee-43e2-22c6-68ee",
+           "name": "Twin smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f973-85e7-df62-81ed",
+       "kind": "fixed",
+       "name": "Seeker missile",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "f973-85e7-df62-81ed:3a30-cb51-c88c-255f",
+         "name": "Seeker missile",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3837-b5fb-54d1-adf8",
@@ -5223,16 +6959,185 @@
      },
      "loadout": [
       {
-       "id": "c91a-02aa-961b-821c",
+       "id": "e56e-6333-6b23-8033",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Heavy rail rifle",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e56e-6333-6b23-8033:6ebb-b385-cd48-f263",
+         "name": "Heavy rail rifle",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "86cd-e0c6-0001-bd7d",
+           "name": "Heavy rail rifle",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6+1",
+           "keywords": "Heavy, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "e56e-6333-6b23-8033:7404-3eed-57ee-ba12",
+         "name": "High-yield missile pods",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8193-592f-d90d-9365",
+           "name": "High-yield missile pods",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b745-5932-11ff-26bf",
+       "kind": "choice",
+       "name": "Secondary Weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b745-5932-11ff-26bf:a15a-ef0c-7d43-6e7e",
+         "name": "Twin plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e18f-f00f-7d58-1ddd",
+           "name": "Twin plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b745-5932-11ff-26bf:6769-a812-ab12-8be4",
+         "name": "Twin smart missile system",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9dee-43e2-22c6-68ee",
+           "name": "Twin smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fd30-c628-c717-2433",
+       "kind": "fixed",
+       "name": "Seeker missile",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "c91a-02aa-961b-821c:4936-fe9b-2fbe-4556",
-         "name": "Crushing bulk",
+         "id": "fd30-c628-c717-2433:3a30-cb51-c88c-255f",
+         "name": "Seeker missile",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e7d2-2b67-4d89-2ae6",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "e7d2-2b67-4d89-2ae6:a658-7737-2031-8e07",
+         "name": "Missile Drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e7d2-2b67-4d89-2ae6:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4936-fe9b-2fbe-4556",
+       "kind": "fixed",
+       "name": "Crushing bulk",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "4936-fe9b-2fbe-4556:659c-0926-9ea4-8983",
+         "name": "Crushing bulk",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7761-1b77-42a7-af36",
@@ -5339,16 +7244,16 @@
      },
      "loadout": [
       {
-       "id": "b9b3-9409-ad48-4c64",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d41c-dfc2-1b8d-710c",
+       "kind": "fixed",
+       "name": "Riptide fists",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b9b3-9409-ad48-4c64:d41c-dfc2-1b8d-710c",
+         "id": "d41c-dfc2-1b8d-710c:d41c-dfc2-1b8d-710c",
          "name": "Riptide fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "925f-89df-81b7-ad2",
@@ -5361,6 +7266,159 @@
            "ap": "0",
            "d": "2",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6008-c771-7432-c6b0",
+       "kind": "choice",
+       "name": "Heavy Burst Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6008-c771-7432-c6b0:d731-8997-c962-5bba",
+         "name": "Heavy burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "143d-9a72-8e82-cc52",
+           "name": "Heavy burst cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "12",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "6008-c771-7432-c6b0:fac9-3d5c-53c2-b08c",
+         "name": "Ion accelerator",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8eed-7cba-62e1-dc2e",
+           "name": "➤ Ion accelerator - standard",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "994d-2bc4-8b8b-37ba",
+           "name": "➤ Ion accelerator - overcharge",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6a04-101c-70b6-3e01",
+       "kind": "choice",
+       "name": "Missile Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "6a04-101c-70b6-3e01:345a-f548-79e7-b25d",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7a35-60cb-6bae-5e0d",
+       "kind": "choice",
+       "name": "Twin Plasma Rifles",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7a35-60cb-6bae-5e0d:e1e7-c9cc-715c-3415",
+         "name": "Twin smart missile system",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a1d-7714-bdab-43fd",
+           "name": "Twin smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "7a35-60cb-6bae-5e0d:df5e-0201-5fa4-75a1",
+         "name": "Twin fusion blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d33c-8505-a08f-6160",
+           "name": "Twin fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "7a35-60cb-6bae-5e0d:c1f6-01e4-8fce-62f2",
+         "name": "Twin plasma rifle",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e18f-f00f-7d58-1ddd",
+           "name": "Twin plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -5456,16 +7514,169 @@
      },
      "loadout": [
       {
-       "id": "6b03-40c0-1d98-d7f1",
+       "id": "fe0e-b869-a39e-16a9",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Railgun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fe0e-b869-a39e-16a9:fc2c-78c4-4617-ec8d",
+         "name": "Railgun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c7e5-e0ff-81a0-7df5",
+           "name": "Railgun",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "20",
+           "ap": "-5",
+           "d": "D6+6",
+           "keywords": "Heavy, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "fe0e-b869-a39e-16a9:c1d2-b6ec-202f-9aeb",
+         "name": "Ion cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "180a-8fbc-32ed-d6be",
+           "name": "➤ Ion cannon - standard",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "ef85-73db-c8cc-9432",
+           "name": "➤ Ion cannon - overcharge",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7451-88a-f165-da",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "7451-88a-f165-da:139f-8b53-7275-2dc9",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8dc7-ace3-f372-895f",
+       "kind": "choice",
+       "name": "Twin Pulse Carbines",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8dc7-ace3-f372-895f:731d-5afd-9039-d4f5",
+         "name": "2 Accelerator burst cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d2d4-6c29-133d-548b",
+           "name": "Accelerator burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8dc7-ace3-f372-895f:f83b-f22d-da93-8f4b",
+         "name": "2 Twin pulse carbines",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e8a5-c9de-b590-ee97",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "8dc7-ace3-f372-895f:b68a-bdff-3d5c-7b63",
+         "name": "2 Smart missile systems",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1a19-7172-2f9b-3a8e",
+           "name": "Smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f79d-01df-cc05-362c",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "6b03-40c0-1d98-d7f1:f79d-01df-cc05-362c",
+         "id": "f79d-01df-cc05-362c:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -5578,16 +7789,16 @@
      },
      "loadout": [
       {
-       "id": "6ed5-12b0-0ce2-c953",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "cd24-168c-be83-b8d8",
+       "kind": "fixed",
+       "name": "Seeker missile rack",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6ed5-12b0-0ce2-c953:cd24-168c-be83-b8d8",
+         "id": "cd24-168c-be83-b8d8:cd24-168c-be83-b8d8",
          "name": "Seeker missile rack",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9475-a50e-aef8-42d9",
@@ -5602,11 +7813,86 @@
            "keywords": "Twin-linked"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "3dc9-6bc8-0575-c1c4",
+       "kind": "choice",
+       "name": "Twin Pulse Carbines",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3dc9-6bc8-0575-c1c4:0e94-3f4c-9564-beff",
+         "name": "2 Accelerator burst cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d2d4-6c29-133d-548b",
+           "name": "Accelerator burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "6ed5-12b0-0ce2-c953:9582-a8b7-29d0-7ca1",
-         "name": "Armoured hull",
+         "id": "3dc9-6bc8-0575-c1c4:7ad3-2853-6bba-c6b4",
+         "name": "2 Twin pulse carbines",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "47d1-604d-fa7f-0ec4",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Twin-linked, Assault"
+          }
+         ]
+        },
+        {
+         "id": "3dc9-6bc8-0575-c1c4:17e3-c0a4-7de9-5c78",
+         "name": "2 Smart missile systems",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1a19-7172-2f9b-3a8e",
+           "name": "Smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9582-a8b7-29d0-7ca1",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "9582-a8b7-29d0-7ca1:f2bd-0132-eee3-7311",
+         "name": "Armoured hull",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -5724,16 +8010,91 @@
      },
      "loadout": [
       {
-       "id": "ab8f-d4c9-7668-7e1d",
+       "id": "68c8-2849-51dc-b4ea",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Twin Pulse Carbines",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "68c8-2849-51dc-b4ea:e2b9-ad4b-5f60-db9e",
+         "name": "2 Twin pulse carbines",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "47d1-604d-fa7f-0ec4",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Twin-linked, Assault"
+          }
+         ]
+        },
+        {
+         "id": "68c8-2849-51dc-b4ea:c669-45e-85aa-4252",
+         "name": "2 Smart missile systems",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1a19-7172-2f9b-3a8e",
+           "name": "Smart missile system",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Indirect Fire"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6366-1f29-9d95-c246",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "6366-1f29-9d95-c246:df4a-aa21-e21b-d510",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "38d1-28b2-e43f-08da",
+       "kind": "fixed",
+       "name": "Accelerator burst cannon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "ab8f-d4c9-7668-7e1d:38d1-28b2-e43f-08da",
+         "id": "38d1-28b2-e43f-08da:e5b9-7fe9-4792-3e31",
          "name": "Accelerator burst cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d2d4-6c29-133d-548b",
@@ -5748,11 +8109,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "344a-8cce-415e-5aba",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "ab8f-d4c9-7668-7e1d:344a-8cce-415e-5aba",
+         "id": "344a-8cce-415e-5aba:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -5871,16 +8241,16 @@
      },
      "loadout": [
       {
-       "id": "62ed-4e85-d25a-ec37",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4124-9c2b-ec89-c63",
+       "kind": "fixed",
+       "name": "Quad ion turret",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "62ed-4e85-d25a-ec37:4124-9c2b-ec89-c63",
+         "id": "4124-9c2b-ec89-c63:4124-9c2b-ec89-c63",
          "name": "Quad ion turret",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5f4b-8252-2657-c7fa",
@@ -5907,11 +8277,67 @@
            "keywords": "Hazardous, Twin-linked"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "9200-9eb-cbf7-b177",
+       "kind": "choice",
+       "name": "Accelerator Burst Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9200-9eb-cbf7-b177:5baa-d1f6-15ac-89db",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "62ed-4e85-d25a-ec37:b590-52d1-4150-a560",
+         "id": "9200-9eb-cbf7-b177:2ec6-6c16-6e7b-7e00",
+         "name": "Accelerator burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d2d4-6c29-133d-548b",
+           "name": "Accelerator burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b590-52d1-4150-a560",
+       "kind": "fixed",
+       "name": "Seeker missile",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "b590-52d1-4150-a560:3a30-cb51-c88c-255f",
          "name": "Seeker missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3837-b5fb-54d1-adf8",
@@ -5926,11 +8352,20 @@
            "keywords": "One Shot"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "0e73-d93a-1d15-ff4b",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "62ed-4e85-d25a-ec37:0e73-d93a-1d15-ff4b",
+         "id": "0e73-d93a-1d15-ff4b:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -6043,16 +8478,16 @@
      },
      "loadout": [
       {
-       "id": "be27-ec47-3149-8f10",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7072-c47d-79b2-f80b",
+       "kind": "fixed",
+       "name": "Twin ion rifle",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "be27-ec47-3149-8f10:7072-c47d-79b2-f80b",
+         "id": "7072-c47d-79b2-f80b:7072-c47d-79b2-f80b",
          "name": "Twin ion rifle",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e44-8052-1aee-9c76",
@@ -6079,11 +8514,67 @@
            "keywords": "Hazardous, Twin-linked"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "1c25-8744-1a0-5981",
+       "kind": "choice",
+       "name": "Missile Pod",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1c25-8744-1a0-5981:9012-aa0b-5410-d607",
+         "name": "Twin missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "15f9-3719-8a1a-d3f0",
+           "name": "Twin missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Twin-linked"
+          }
+         ]
         },
         {
-         "id": "be27-ec47-3149-8f10:f132-9fa9-9dc8-02f8",
+         "id": "1c25-8744-1a0-5981:82c3-deb9-3d13-ad8f",
+         "name": "Missile pod",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f132-9fa9-9dc8-02f8",
+       "kind": "fixed",
+       "name": "Seeker missile",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "f132-9fa9-9dc8-02f8:3a30-cb51-c88c-255f",
          "name": "Seeker missile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3837-b5fb-54d1-adf8",
@@ -6098,11 +8589,20 @@
            "keywords": "One Shot"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a7c1-784d-13ca-535a",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "be27-ec47-3149-8f10:a7c1-784d-13ca-535a",
+         "id": "a7c1-784d-13ca-535a:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -6499,16 +8999,16 @@
      },
      "loadout": [
       {
-       "id": "e4fa-b389-4cdd-f860",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "cf60-7be2-e5a8-767",
+       "kind": "fixed",
+       "name": "Cluster rocket system",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "e4fa-b389-4cdd-f860:cf60-7be2-e5a8-767",
+         "id": "cf60-7be2-e5a8-767:cf60-7be2-e5a8-767",
          "name": "Cluster rocket system",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "29a6-3f44-894e-e1ca",
@@ -6523,11 +9023,20 @@
            "keywords": "Blast, Heavy"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "6e13-c32e-d336-c",
+       "kind": "fixed",
+       "name": "Destroyer missiles",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "e4fa-b389-4cdd-f860:6e13-c32e-d336-c",
+         "id": "6e13-c32e-d336-c:6e13-c32e-d336-c",
          "name": "Destroyer missiles",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fc4d-b5a0-5faa-fc50",
@@ -6542,11 +9051,20 @@
            "keywords": "Heavy"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b413-48c2-13c8-9194",
+       "kind": "fixed",
+       "name": "Thunderous footfalls",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "e4fa-b389-4cdd-f860:b413-48c2-13c8-9194",
+         "id": "b413-48c2-13c8-9194:b413-48c2-13c8-9194",
          "name": "Thunderous footfalls",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2d47-e9ba-c294-81bb",
@@ -6561,11 +9079,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "c1b5-d3b5-9765-7eb0",
+       "kind": "fixed",
+       "name": "Twin smart missile system",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
         {
-         "id": "e4fa-b389-4cdd-f860:c1b5-d3b5-9765-7eb0",
+         "id": "c1b5-d3b5-9765-7eb0:c1b5-d3b5-9765-7eb0",
          "name": "Twin smart missile system",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5b17-951b-a7e3-e92e",
@@ -6578,6 +9105,131 @@
            "ap": "0",
            "d": "1",
            "keywords": "Heavy, Indirect Fire, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fdf9-b67f-2381-32b6",
+       "kind": "choice",
+       "name": "Pulse Driver Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fdf9-b67f-2381-32b6:317-c1c4-e623-8890",
+         "name": "Pulse driver cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d5a3-7b4e-7307-154",
+           "name": "Pulse Driver Cannon",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Heavy"
+          }
+         ]
+        },
+        {
+         "id": "fdf9-b67f-2381-32b6:b092-a7a6-2afc-99d1",
+         "name": "Pulse blast cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5586-4bd7-df7c-24a9",
+           "name": "➤ Pulse blast cannon - focused",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "24",
+           "ap": "-6",
+           "d": "12",
+           "keywords": "Heavy"
+          },
+          {
+           "profile_id": "8d7a-98de-25be-7b80",
+           "name": "➤ Pulse blast cannon - dispersed",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "4",
+           "keywords": "Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5976-1d9c-cdce-30dd",
+       "kind": "choice",
+       "name": "Twin T'au Flamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5976-1d9c-cdce-30dd:e4ce-ed55-a1bd-9a6b",
+         "name": "Twin airbursting fragmentation projector",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aa8c-b84c-5626-631b",
+           "name": "Twin airbursting fragmentation projector",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "3",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Heavy, Indirect Fire, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "5976-1d9c-cdce-30dd:2526-2545-30a1-7685",
+         "name": "Twin burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "112e-45c5-61fb-9cb0",
+           "name": "Twin burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Heavy, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "5976-1d9c-cdce-30dd:2721-8821-88f8-7aad",
+         "name": "Twin T'au flamer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e5cc-4d2d-324f-6da0",
+           "name": "Twin T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent, Twin-linked"
           }
          ]
         }
@@ -6841,16 +9493,16 @@
        ]
       },
       {
-       "id": "42b3-7f9a-d4eb-5d6f",
-       "kind": "choice",
-       "name": "Kroot Farstalkers",
-       "min_select": 9,
-       "max_select": 9,
+       "id": "9620-c5b6-e0da-589d",
+       "kind": "fixed",
+       "name": "Kroot Farstalker",
+       "min_select": 8,
+       "max_select": 8,
        "options": [
         {
-         "id": "42b3-7f9a-d4eb-5d6f:9620-c5b6-e0da-589d",
+         "id": "9620-c5b6-e0da-589d:9620-c5b6-e0da-589d",
          "name": "Kroot Farstalker",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fe17-63c8-985-a0b2",
@@ -6889,11 +9541,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "ca9e-99f0-8f4b-8355",
+       "kind": "fixed",
+       "name": "Kroot Farstalker w/ Farstalker firearm and Pech'ra",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "42b3-7f9a-d4eb-5d6f:ca9e-99f0-8f4b-8355",
+         "id": "ca9e-99f0-8f4b-8355:ca9e-99f0-8f4b-8355",
          "name": "Kroot Farstalker w/ Farstalker firearm and Pech'ra",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ae6e-a965-67d4-2f29",
@@ -6918,6 +9579,144 @@
            "ap": "0",
            "d": "1",
            "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "fd20-1f79-27c3-aa2c",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d244-c40b-5b02-39f6",
+       "kind": "choice",
+       "name": "Special Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d244-c40b-5b02-39f6:795b-e4b5-252-145d",
+         "name": "Kroot Farstalker w/ Dvorgite skinner",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a49e-69cc-7f9f-49cb",
+           "name": "Dvorgite skinner",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "ae6e-a965-67d4-2f29",
+           "name": "Kroot pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "fd20-1f79-27c3-aa2c",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "d244-c40b-5b02-39f6:ebca-9caf-7200-a021",
+         "name": "Kroot Farstalker w/ Londaxi tribalest",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "da44-fef6-a176-793c",
+           "name": "Londaxi tribalest",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Anti-Vehicle 4+, Devastating Wounds, Heavy"
+          },
+          {
+           "profile_id": "ae6e-a965-67d4-2f29",
+           "name": "Kroot pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "fd20-1f79-27c3-aa2c",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "d244-c40b-5b02-39f6:4374-c9e6-f4e2-ab59",
+         "name": "Kroot Farstalker",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fe17-63c8-985-a0b2",
+           "name": "Farstalker firearm",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "ae6e-a965-67d4-2f29",
+           "name": "Kroot pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
           },
           {
            "profile_id": "fd20-1f79-27c3-aa2c",
@@ -7105,16 +9904,16 @@
      },
      "loadout": [
       {
-       "id": "4bc7-4e93-0258-8a19",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "38d1-fd46-bf47-d179",
+       "kind": "fixed",
+       "name": "Pulse submunitions cannon",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "4bc7-4e93-0258-8a19:38d1-fd46-bf47-d179",
+         "id": "38d1-fd46-bf47-d179:38d1-fd46-bf47-d179",
          "name": "Pulse submunitions cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8d9-16e9-c8a6-e4e3",
@@ -7129,11 +9928,48 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "11af-dfb0-74e8-d986",
+       "kind": "choice",
+       "name": "Missile Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "4bc7-4e93-0258-8a19:b1b0-dcf9-e549-e6d3",
-         "name": "Battlesuit fists",
+         "id": "11af-dfb0-74e8-d986:35cc-8268-016f-74ef",
+         "name": "Missile Drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b1b0-dcf9-e549-e6d3",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "b1b0-dcf9-e549-e6d3:97a2-336f-a2a9-f28d",
+         "name": "Battlesuit fists",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbe7-3041-cdb4-f7fd",
@@ -7251,16 +10087,16 @@
      },
      "loadout": [
       {
-       "id": "f023-998c-2cc7-bdb2",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "17e1-7036-5a2e-f1d5",
+       "kind": "fixed",
+       "name": "Flechette pod",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f023-998c-2cc7-bdb2:17e1-7036-5a2e-f1d5",
+         "id": "17e1-7036-5a2e-f1d5:17e1-7036-5a2e-f1d5",
          "name": "Flechette pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d5ac-9918-4973-4e8d",
@@ -7275,11 +10111,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "309a-ecb2-8772-b424",
+       "kind": "fixed",
+       "name": "Ionic discharge cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f023-998c-2cc7-bdb2:309a-ecb2-8772-b424",
+         "id": "309a-ecb2-8772-b424:309a-ecb2-8772-b424",
          "name": "Ionic discharge cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5fcc-2232-8654-9825",
@@ -7306,11 +10151,20 @@
            "keywords": "Blast, Hazardous"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "ce72-8459-7e37-4b86",
+       "kind": "fixed",
+       "name": "Phased plasma-flamer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f023-998c-2cc7-bdb2:ce72-8459-7e37-4b86",
+         "id": "ce72-8459-7e37-4b86:ce72-8459-7e37-4b86",
          "name": "Phased plasma-flamer",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7efb-ecb-ae7a-ef0f",
@@ -7325,11 +10179,48 @@
            "keywords": "Ignores Cover, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "70d-147c-3c60-3749",
+       "kind": "choice",
+       "name": "Missile Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
         {
-         "id": "f023-998c-2cc7-bdb2:eb14-560d-08b5-d4fb",
-         "name": "Battlesuit fists",
+         "id": "70d-147c-3c60-3749:1551-de79-2cc6-becb",
+         "name": "Missile Drone",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "eb14-560d-08b5-d4fb",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "eb14-560d-08b5-d4fb:97a2-336f-a2a9-f28d",
+         "name": "Battlesuit fists",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cbe7-3041-cdb4-f7fd",
@@ -7701,16 +10592,16 @@
      },
      "loadout": [
       {
-       "id": "9f99-ca6b-b3d9-7fc1",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8ce0-aef-a22a-959a",
+       "kind": "fixed",
+       "name": "Crushing feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "9f99-ca6b-b3d9-7fc1:8ce0-aef-a22a-959a",
+         "id": "8ce0-aef-a22a-959a:8ce0-aef-a22a-959a",
          "name": "Crushing feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3ba9-dc18-61fa-2076",
@@ -7725,11 +10616,157 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "51ee-1291-3fcc-97a5",
+       "kind": "choice",
+       "name": "Arm Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "51ee-1291-3fcc-97a5:88f3-ea64-a043-fe7a",
+         "name": "Tri-axis ion cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8a80-8223-739f-99b4",
+           "name": "➤ Tri-axis ion cannon - standard",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "4821-1484-e5a0-1382",
+           "name": "➤ Tri-axis ion cannon - supercharge",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
         },
         {
-         "id": "9f99-ca6b-b3d9-7fc1:434b-8cdc-a43d-b927",
-         "name": "Burst cannon",
+         "id": "51ee-1291-3fcc-97a5:989a-c4d7-9753-a99b",
+         "name": "Fusion eradicator",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cead-eef7-db3a-4e49",
+           "name": "Fusion eradicator",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "5",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ee38-bff5-864f-53",
+       "kind": "choice",
+       "name": "Carapace Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ee38-bff5-864f-53:d8f2-2ad3-7c20-8c52",
+         "name": "3 Pulse ordnance drivers",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "e6c1-f457-45b0-363e",
+           "name": "Pulse ordnance driver",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "8",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Anti-Infantry 2+"
+          }
+         ]
+        },
+        {
+         "id": "ee38-bff5-864f-53:5ecc-3699-7437-9378",
+         "name": "2 Nexus missile launchers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "625b-fbf9-1ab7-7f56",
+           "name": "Nexus missile launcher",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "8",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ee38-bff5-864f-53:d14c-4901-3f1-dc25",
+         "name": "Heavy rail cannon array and fragmentation cluster shell launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "db24-a303-7dab-2305",
+           "name": "Heavy rail cannon array",
+           "weapon_type": "Ranged",
+           "range": "120\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "26",
+           "ap": "-5",
+           "d": "16",
+           "keywords": "Devastating Wounds, Heavy"
+          },
+          {
+           "profile_id": "4448-ace8-3e24-92f6",
+           "name": "Fragmentation cluster shell launcher",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2D6+6",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "434b-8cdc-a43d-b927",
+       "kind": "fixed",
+       "name": "Burst cannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "434b-8cdc-a43d-b927:1790-25b7-8264-f6ba",
+         "name": "Burst cannon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7626-73ed-7cf1-8d3b",
@@ -7744,11 +10781,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5f95-47dc-b48d-bea4",
+       "kind": "fixed",
+       "name": "Smart missile system",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "9f99-ca6b-b3d9-7fc1:5f95-47dc-b48d-bea4",
+         "id": "5f95-47dc-b48d-bea4:0e88-5a0e-bf04-1937",
          "name": "Smart missile system",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "1a19-7172-2f9b-3a8e",
@@ -7873,16 +10919,181 @@
      },
      "loadout": [
       {
-       "id": "8cc5-f55b-7930-af30",
+       "id": "9bb0-1090-bfee-7ecd",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Swiftstrike Burst Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9bb0-1090-bfee-7ecd:3542-2950-5fa0-d109",
+         "name": "Swiftstrike burst cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "db32-d0ab-a5f-cbb3",
+           "name": "Swiftstrike burst cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "16",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9bb0-1090-bfee-7ecd:b40c-badc-7dd6-d995",
+         "name": "Ion cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2783-2cca-4289-8866",
+           "name": "➤ Ion cannon - standard",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "e5ce-3bd5-4cf5-cb98",
+           "name": "➤ Ion cannon - overcharge",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "9bb0-1090-bfee-7ecd:c2a9-9471-2a4f-58f2",
+         "name": "Swiftstrike railgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "af19-b1f2-44a5-80df",
+           "name": "Swiftstrike railgun",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "20",
+           "ap": "-5",
+           "d": "D6+6",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3af6-4ffa-fcc1-872b",
+       "kind": "choice",
+       "name": "Long-barrelled Burst Cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3af6-4ffa-fcc1-872b:3793-76b5-1a5-4988",
+         "name": "2 Long-barrelled burst cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1d9a-7c4f-3f9d-45a8",
+           "name": "Long-barrelled burst cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "8",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3af6-4ffa-fcc1-872b:f765-770f-c441-a832",
+         "name": "2 Cyclic ion blasters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff94-d2c1-034d-e875",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c30d-6274-c12d-6e16",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b35a-2af5-f2d0-34de",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-4)",
+       "min_select": null,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "b35a-2af5-f2d0-34de:ce7a-8f9d-92d7-31d5",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4f19-9e00-0098-1f2b",
+       "kind": "fixed",
+       "name": "Missile pod",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "8cc5-f55b-7930-af30:4f19-9e00-0098-1f2b",
+         "id": "4f19-9e00-0098-1f2b:8290-c852-cce9-d50e",
          "name": "Missile pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3c5c-b69d-6be7-cbca",
@@ -7897,11 +11108,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "d157-3d9a-fa6c-6dcb",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "8cc5-f55b-7930-af30:d157-3d9a-fa6c-6dcb",
+         "id": "d157-3d9a-fa6c-6dcb:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -8014,16 +11234,209 @@
      },
      "loadout": [
       {
-       "id": "0fb7-63d7-33cf-538d",
+       "id": "4160-b045-7340-5973",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Burst Cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4160-b045-7340-5973:7014-fcdc-d295-68e8",
+         "name": "2 cyclic ion blasters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff94-d2c1-034d-e875",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c30d-6274-c12d-6e16",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "4160-b045-7340-5973:4ee6-3e8-4a53-a102",
+         "name": "2 burst cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6177-6b0c-6c01-678f",
+       "kind": "choice",
+       "name": "Ion Cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6177-6b0c-6c01-678f:6b2e-e5b6-db54-1c42",
+         "name": "2 Ion cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7c3c-c95c-b1a0-6085",
+           "name": "➤ Ion cannon - standard",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "9da3-6a99-d1b2-5261",
+           "name": "➤ Ion cannon - overcharge",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "6177-6b0c-6c01-678f:6d35-9c23-5e6e-ff1",
+         "name": "2 Swiftstrike burst cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6ca2-685e-3c0-bb12",
+           "name": "Swiftstrike burst cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "16",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "6177-6b0c-6c01-678f:4c36-ef94-5175-494",
+         "name": "2 Swiftstrike railguns",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "af19-b1f2-44a5-80df",
+           "name": "Swiftstrike railgun",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "20",
+           "ap": "-5",
+           "d": "D6+6",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4c18-e330-6bc0-6ff2",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-6)",
+       "min_select": null,
+       "max_select": 6,
+       "options": [
+        {
+         "id": "4c18-e330-6bc0-6ff2:0824-a0a3-d48e-23e1",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a34f-2b37-bad1-dfd3",
+       "kind": "choice",
+       "name": "Transport Bay",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a34f-2b37-bad1-dfd3:1194-9499-3f75-d373",
+         "name": "2 Skyspear missile racks",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d02-e91-5f59-9ec3",
+           "name": "Skyspear missile rack",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6+1",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Anti-Fly 3+, Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ca9c-c443-bce8-c158",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "0fb7-63d7-33cf-538d:ca9c-c443-bce8-c158",
+         "id": "ca9c-c443-bce8-c158:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -8038,11 +11451,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b77f-5217-3395-0cbd",
+       "kind": "fixed",
+       "name": "Missile pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "0fb7-63d7-33cf-538d:b77f-5217-3395-0cbd",
+         "id": "b77f-5217-3395-0cbd:8290-c852-cce9-d50e",
          "name": "Missile pod",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3c5c-b69d-6be7-cbca",
@@ -8161,16 +11583,16 @@
      },
      "loadout": [
       {
-       "id": "cd3f-473c-ea7e-b32a",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "65a0-3c61-2bd3-6be4",
+       "kind": "fixed",
+       "name": "Twin heavy rail cannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cd3f-473c-ea7e-b32a:65a0-3c61-2bd3-6be4",
+         "id": "65a0-3c61-2bd3-6be4:65a0-3c61-2bd3-6be4",
          "name": "Twin heavy rail cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0cad-9d71-3245-1abc",
@@ -8185,11 +11607,107 @@
            "keywords": "Devastating Wounds, Twin-linked"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "c468-7140-2a88-0286",
+       "kind": "choice",
+       "name": "Burst Cannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c468-7140-2a88-0286:efc7-7546-a4eb-d2e4",
+         "name": "2 burst cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "cd3f-473c-ea7e-b32a:1ddc-8778-bc8b-5bdf",
-         "name": "Missile pod",
+         "id": "c468-7140-2a88-0286:8281-77cf-faf9-d0c2",
+         "name": "2 cyclic ion blasters",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ff94-d2c1-034d-e875",
+           "name": "➤ Cyclic ion blaster - standard",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c30d-6274-c12d-6e16",
+           "name": "➤ Cyclic ion blaster - overcharge",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7b59-223d-b595-936b",
+       "kind": "choice",
+       "name": "Seeker Missiles (0-6)",
+       "min_select": null,
+       "max_select": 6,
+       "options": [
+        {
+         "id": "7b59-223d-b595-936b:2311-8630-9bfa-3950",
+         "name": "Seeker missile",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3837-b5fb-54d1-adf8",
+           "name": "Seeker missile",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "One Shot"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1ddc-8778-bc8b-5bdf",
+       "kind": "fixed",
+       "name": "Missile pod",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "1ddc-8778-bc8b-5bdf:8290-c852-cce9-d50e",
+         "name": "Missile pod",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3c5c-b69d-6be7-cbca",
@@ -8204,11 +11722,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "93a2-229f-3ff4-a863",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "cd3f-473c-ea7e-b32a:93a2-229f-3ff4-a863",
+         "id": "93a2-229f-3ff4-a863:f2bd-0132-eee3-7311",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ec22-219d-9edf-9005",
@@ -8926,16 +12453,16 @@
      },
      "loadout": [
       {
-       "id": "0812-17a4-d901-e4aa",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "7a9f-8bfc-25a-8e18",
+       "kind": "fixed",
+       "name": "Great Knarloc beak and talons",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "0812-17a4-d901-e4aa:7a9f-8bfc-25a-8e18",
+         "id": "7a9f-8bfc-25a-8e18:7a9f-8bfc-25a-8e18",
          "name": "Great Knarloc beak and talons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5d63-1f21-637b-56db",
@@ -8948,6 +12475,77 @@
            "ap": "-1",
            "d": "3",
            "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b781-e56e-81a2-ae4e",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b781-e56e-81a2-ae4e:6ea2-cf32-3107-3b37",
+         "name": "Kroot bolt thrower and Kroot rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "700f-556e-ba35-5424",
+           "name": "Kroot bolt thrower",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Hooked"
+          },
+          {
+           "profile_id": "1148-4286-305f-66f7",
+           "name": "Kroot rifle (Ranged)",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 1"
+          },
+          {
+           "profile_id": "6cd-51fc-5ee0-9346",
+           "name": "Kroot rifle (Melee)",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b781-e56e-81a2-ae4e:9d77-a5ba-9b0e-e91",
+         "name": "Twin Kroot gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "97a5-d645-763d-f137",
+           "name": "Twin Kroot gun",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Twin-linked"
           }
          ]
         }
@@ -9049,16 +12647,101 @@
      },
      "loadout": [
       {
-       "id": "137b-7359-f4ff-a8ed",
+       "id": "ca17-2ff0-a035-d1dd",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Plasma Rifles",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ca17-2ff0-a035-d1dd:e681-5e-2bab-9b2c",
+         "name": "2 Plasma rifles",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9167-b3e7-ff4a-dd38",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca17-2ff0-a035-d1dd:b99d-2c6c-bb1-3671",
+         "name": "2 Fusion blasters",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bc9-74b7-1e9c-8619",
+           "name": "Fusion blaster",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "ca17-2ff0-a035-d1dd:f9a4-449f-7a0d-e217",
+         "name": "2 Missile pods",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca17-2ff0-a035-d1dd:dc67-69a8-fdc4-3ed5",
+         "name": "2 Rail rifles",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5ad6-ff13-67e9-4378",
+           "name": "Rail rifle",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-4",
+           "d": "3",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a6cc-1b86-0e1a-60aa",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "137b-7359-f4ff-a8ed:a6cc-1b86-0e1a-60aa",
+         "id": "a6cc-1b86-0e1a-60aa:b77b-33fb-425d-60de",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6623-339f-6773-dc3c",
@@ -9914,16 +13597,63 @@
      },
      "loadout": [
       {
-       "id": "8274-3320-1e2a-8685",
+       "id": "866-7d9d-cec9-ec88",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "866-7d9d-cec9-ec88:a2c-25e-bb0c-50fc",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "866-7d9d-cec9-ec88:87e6-9a39-44b3-c69a",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f2c-e640-b41e-36a0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6bc1-3ee3-d8b4-65c2",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "8274-3320-1e2a-8685:6bc1-3ee3-d8b4-65c2",
+         "id": "6bc1-3ee3-d8b4-65c2:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -9938,11 +13668,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "abfe-83b-188b-bc12",
+       "kind": "fixed",
+       "name": "Fusion blaster",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "8274-3320-1e2a-8685:abfe-83b-188b-bc12",
+         "id": "abfe-83b-188b-bc12:f836-d31-4688-d623",
          "name": "Fusion blaster",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4bc9-74b7-1e9c-8619",
@@ -9977,16 +13716,16 @@
      },
      "loadout": [
       {
-       "id": "0851-ae81-0e05-a3ff",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "6ec9-ed7a-9a16-96cb",
+       "kind": "fixed",
+       "name": "Fusion blaster",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "0851-ae81-0e05-a3ff:6ec9-ed7a-9a16-96cb",
+         "id": "6ec9-ed7a-9a16-96cb:f836-d31-4688-d623",
          "name": "Fusion blaster",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4bc9-74b7-1e9c-8619",
@@ -10001,11 +13740,20 @@
            "keywords": "Melta 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "12b3-7b0a-8838-9ffb",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "0851-ae81-0e05-a3ff:12b3-7b0a-8838-9ffb",
+         "id": "12b3-7b0a-8838-9ffb:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -10018,6 +13766,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "73fc-7f2f-5562-a421",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "73fc-7f2f-5562-a421:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "73fc-7f2f-5562-a421:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -10100,16 +13895,110 @@
      },
      "loadout": [
       {
-       "id": "26e8-3116-91aa-ea5b",
+       "id": "57b3-be86-424c-07a3",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "57b3-be86-424c-07a3:3b76-4791-cbc3-2534",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9167-b3e7-ff4a-dd38",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "57b3-be86-424c-07a3:0ea4-6323-6103-5675",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3a3c-5ce9-5a05-7c6e",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "3a3c-5ce9-5a05-7c6e:a2c-25e-bb0c-50fc",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "3a3c-5ce9-5a05-7c6e:87e6-9a39-44b3-c69a",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f2c-e640-b41e-36a0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e079-9c53-1b99-67fd",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "26e8-3116-91aa-ea5b:e079-9c53-1b99-67fd",
+         "id": "e079-9c53-1b99-67fd:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -10144,16 +14033,63 @@
      },
      "loadout": [
       {
-       "id": "e1df-0571-2ae2-ffa7",
+       "id": "e17f-45c5-b242-a5d1",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "e17f-45c5-b242-a5d1:0926-4604-2901-2eae",
+         "name": "Missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c5c-b69d-6be7-cbca",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e17f-45c5-b242-a5d1:5442-d1a8-bd84-861b",
+         "name": "Plasma rifle",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9167-b3e7-ff4a-dd38",
+           "name": "Plasma rifle",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8681-e850-f5b4-54a2",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "e1df-0571-2ae2-ffa7:8681-e850-f5b4-54a2",
+         "id": "8681-e850-f5b4-54a2:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -10166,6 +14102,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fd9d-60c1-7293-c324",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "fd9d-60c1-7293-c324:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "fd9d-60c1-7293-c324:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -10254,16 +14237,110 @@
      },
      "loadout": [
       {
-       "id": "6371-43ca-0a8b-79a7",
+       "id": "a1f2-2246-32c2-b3b7",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "a1f2-2246-32c2-b3b7:e0ad-d61c-64db-98f5",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a1f2-2246-32c2-b3b7:aec0-6731-a113-a8c5",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d98e-bf62-b4c6-e435",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "d98e-bf62-b4c6-e435:a2c-25e-bb0c-50fc",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "d98e-bf62-b4c6-e435:87e6-9a39-44b3-c69a",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f2c-e640-b41e-36a0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "93eb-0fa2-220b-140e",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "6371-43ca-0a8b-79a7:93eb-0fa2-220b-140e",
+         "id": "93eb-0fa2-220b-140e:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -10298,16 +14375,63 @@
      },
      "loadout": [
       {
-       "id": "30e8-aa98-9607-a007",
+       "id": "5988-5974-f522-3e54",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "5988-5974-f522-3e54:2b4b-6b4e-001a-4c3c",
+         "name": "Burst cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7626-73ed-7cf1-8d3b",
+           "name": "Burst cannon",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "5988-5974-f522-3e54:7988-2344-a087-e5a0",
+         "name": "T'au flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4f5a-58b-5a49-1c96",
+           "name": "T'au flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "0e86-376b-1a2b-e651",
+       "kind": "fixed",
+       "name": "Battlesuit fists",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "30e8-aa98-9607-a007:0e86-376b-1a2b-e651",
+         "id": "0e86-376b-1a2b-e651:d357-859f-3b61-42f1",
          "name": "Battlesuit fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3bb9-f1fb-50ba-17b",
@@ -10320,6 +14444,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c8ef-16ea-8610-969c",
+       "kind": "choice",
+       "name": "Drones (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "c8ef-16ea-8610-969c:a658-7737-2031-8e07",
+         "name": "Missile Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "925b-bdfa-4365-68d0",
+           "name": "Missile pod",
+           "weapon_type": "Ranged",
+           "range": "30\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c8ef-16ea-8610-969c:caf5-ab72-8da1-04a8",
+         "name": "Gun Drone",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bca7-e744-1c90-b631",
+           "name": "Twin pulse carbine",
+           "weapon_type": "Ranged",
+           "range": "20\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Twin-linked"
           }
          ]
         }
@@ -10551,16 +14722,63 @@
      },
      "loadout": [
       {
-       "id": "10d6-4d24-b81e-387a",
+       "id": "ef23-c97a-6598-7200",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Wargear Options",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ef23-c97a-6598-7200:2e88-ed2b-ac7c-693e",
+         "name": "Bladestave and prey-hook",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8f3e-fcef-9438-7e4e",
+           "name": "Bladestave and prey-hook",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "ef23-c97a-6598-7200:4c7d-fce0-4985-488d",
+         "name": "Dart-bow and tri-blade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4167-7f7c-4716-ca8a",
+           "name": "Dart-bow and tri-blade",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3+1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Anti-Infantry 3+, Assault, Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fb69-3dc9-cfa4-17c6",
+       "kind": "fixed",
+       "name": "Shaper's blade",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "10d6-4d24-b81e-387a:fb69-3dc9-cfa4-17c6",
+         "id": "fb69-3dc9-cfa4-17c6:88d1-1fe9-5428-1482",
          "name": "Shaper's blade",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7823-9cfc-0f6c-bce1",
@@ -10575,11 +14793,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "8b70-46c1-3dca-033f",
+       "kind": "fixed",
+       "name": "Kroot pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "10d6-4d24-b81e-387a:8b70-46c1-3dca-033f",
+         "id": "8b70-46c1-3dca-033f:591e-d6ae-6069-c203",
          "name": "Kroot pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ae6e-a965-67d4-2f29",
@@ -10846,16 +15073,16 @@
      },
      "loadout": [
       {
-       "id": "6afa-3589-0ffb-8688",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "430a-b9a3-10c2-ec0f",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6afa-3589-0ffb-8688:430a-b9a3-10c2-ec0f",
+         "id": "430a-b9a3-10c2-ec0f:430a-b9a3-10c2-ec0f",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "38dd-91a0-394c-ca49",
@@ -10870,11 +15097,79 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "5aa4-f37d-7f45-c182",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5aa4-f37d-7f45-c182:e372-ee25-8391-50fc",
+         "name": "Blast javelin and hunting javelin",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d2f5-718a-809b-b2ff",
+           "name": "Hunting javelin",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Lance"
+          },
+          {
+           "profile_id": "24e6-221e-63ab-8bd9",
+           "name": "Blast javelin",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Assault, Blast"
+          }
+         ]
         },
         {
-         "id": "6afa-3589-0ffb-8688:0021-7be2-bfb8-c7da",
-         "name": "Kalamandra's bite",
+         "id": "5aa4-f37d-7f45-c182:895a-fb15-3921-637b",
+         "name": "Kroot long gun",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dbec-f0ae-85bd-6ba7",
+           "name": "Kroot long gun",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Heavy, Precision"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "0021-7be2-bfb8-c7da",
+       "kind": "fixed",
+       "name": "Kalamandra's bite",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "0021-7be2-bfb8-c7da:d18c-6a8c-64b7-dfe",
+         "name": "Kalamandra's bite",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "804-c754-e788-5598",

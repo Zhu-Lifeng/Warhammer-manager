@@ -785,16 +785,16 @@
      },
      "loadout": [
       {
-       "id": "f50d-07e6-8d6a-463d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "2537-a3f7-8ebb-35ba",
+       "kind": "fixed",
+       "name": "Close Combat Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f50d-07e6-8d6a-463d:2537-a3f7-8ebb-35ba",
+         "id": "2537-a3f7-8ebb-35ba:2537-a3f7-8ebb-35ba",
          "name": "Close Combat Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e11f-7c27-851e-edc0",
@@ -809,11 +809,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f4a1-5619-60c0-687b",
+       "kind": "fixed",
+       "name": "Twin Shuriken Catapult",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f50d-07e6-8d6a-463d:f4a1-5619-60c0-687b",
+         "id": "f4a1-5619-60c0-687b:f4a1-5619-60c0-687b",
          "name": "Twin Shuriken Catapult",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "20e3-117a-27ce-4adb",
@@ -826,6 +835,84 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Assault, Twin Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d3c7-7e5f-d1cd-41a5",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d3c7-7e5f-d1cd-41a5:8ea9-ab75-fa19-5b4e",
+         "name": "Laser Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1ced-28e0-8ca5-fa63",
+           "name": "Laser Lance",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Assault"
+          },
+          {
+           "profile_id": "4059-c7fa-d548-76f7",
+           "name": "Laser Lance",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        },
+        {
+         "id": "d3c7-7e5f-d1cd-41a5:918a-3ccd-8c9e-383",
+         "name": "Dragon Fusion Gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ec3e-60a-9e2-5be0",
+           "name": "Dragon Fusion Gun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Assault, Melta 3"
+          }
+         ]
+        },
+        {
+         "id": "d3c7-7e5f-d1cd-41a5:aae6-9569-c184-ee3f",
+         "name": "Banshee Blade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2950-e03f-500-dfad",
+           "name": "Banshee Blade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-3",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -2039,16 +2126,16 @@
      },
      "loadout": [
       {
-       "id": "5f07-9f16-64f3-1ef3",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e8b5-20aa-b1db-d67",
+       "kind": "fixed",
+       "name": "Pulse Laser",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "5f07-9f16-64f3-1ef3:e8b5-20aa-b1db-d67",
+         "id": "e8b5-20aa-b1db-d67:e8b5-20aa-b1db-d67",
          "name": "Pulse Laser",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "18d5-2884-50c6-46f7",
@@ -2063,11 +2150,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "69d8-4688-5098-a4ba",
+       "kind": "fixed",
+       "name": "Wraithbone Hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "5f07-9f16-64f3-1ef3:69d8-4688-5098-a4ba",
+         "id": "69d8-4688-5098-a4ba:69d8-4688-5098-a4ba",
          "name": "Wraithbone Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "475f-be45-76c1-af1b",
@@ -2079,6 +2175,53 @@
            "s": "6",
            "ap": "0",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "371a-a8b-ff14-304b",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "371a-a8b-ff14-304b:a333-ffe0-66ef-d64f",
+         "name": "2 Starcannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "119e-32cd-90a7-b4b0",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "371a-a8b-ff14-304b:92fd-dbc8-7ba4-e705",
+         "name": "2 Bright Lances",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "872e-1cf8-23a8-f6d7",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
            "keywords": "-"
           }
          ]
@@ -3180,16 +3323,16 @@
      },
      "loadout": [
       {
-       "id": "ca06-9505-0ac8-8ac8",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "dc24-cfc3-17f7-c4fb",
+       "kind": "fixed",
+       "name": "Pulse Laser",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ca06-9505-0ac8-8ac8:dc24-cfc3-17f7-c4fb",
+         "id": "dc24-cfc3-17f7-c4fb:dc24-cfc3-17f7-c4fb",
          "name": "Pulse Laser",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a762-6627-e95c-4357",
@@ -3204,11 +3347,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3942-83ab-8d26-66fa",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "ca06-9505-0ac8-8ac8:3942-83ab-8d26-66fa",
+         "id": "3942-83ab-8d26-66fa:3942-83ab-8d26-66fa",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8d7e-f15d-38d0-80c",
@@ -3220,6 +3372,169 @@
            "s": "6",
            "ap": "0",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9792-3b-5f3e-f8b8",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9792-3b-5f3e-f8b8:e8fe-8098-2150-7d5d",
+         "name": "Twin Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9fd-813b-bf1f-6fb8",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "9792-3b-5f3e-f8b8:5ecd-e81f-265f-7a9c",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ead7-c1d5-83b4-532d",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2ae8-8a83-f084-c589",
+       "kind": "choice",
+       "name": "Heavy Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2ae8-8a83-f084-c589:8c0e-e2ad-4bfd-bb1e",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2b07-8500-49f2-52f9",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "2ae8-8a83-f084-c589:6823-46fe-4f90-fad7",
+         "name": "Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a2be-98ee-367f-1538",
+           "name": "➤ Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "33eb-6a3e-cb0f-188e",
+           "name": "➤ Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "2ae8-8a83-f084-c589:71e2-5897-d6fe-1201",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9fa1-355f-34dc-a4a1",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2ae8-8a83-f084-c589:b059-adc7-9243-df68",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9d36-202a-b181-d7c8",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "2ae8-8a83-f084-c589:453b-e939-8b7d-68a2",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8445-fb8c-88e0-1a6b",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
            "keywords": "-"
           }
          ]
@@ -3338,16 +3653,16 @@
      },
      "loadout": [
       {
-       "id": "bdf8-0710-ae79-333e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f47a-b7c0-8257-4fc7",
+       "kind": "fixed",
+       "name": "Eldritch Storm",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "bdf8-0710-ae79-333e:f47a-b7c0-8257-4fc7",
+         "id": "f47a-b7c0-8257-4fc7:f47a-b7c0-8257-4fc7",
          "name": "Eldritch Storm",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "bbcb-fbad-23ee-79e9",
@@ -3362,11 +3677,20 @@
            "keywords": "Blast, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "8f86-fdd5-94e2-9f11",
+       "kind": "fixed",
+       "name": "Shuriken Pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "bdf8-0710-ae79-333e:8f86-fdd5-94e2-9f11",
+         "id": "8f86-fdd5-94e2-9f11:8f86-fdd5-94e2-9f11",
          "name": "Shuriken Pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f5b9-c818-3551-304c",
@@ -3379,6 +3703,65 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Assault, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "482e-3d16-b9a4-5ae9",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "482e-3d16-b9a4-5ae9:8afd-f357-bb3-788f",
+         "name": "Witchblade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6679-e605-1314-bac4",
+           "name": "Witchblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "3",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Anti-Infantry 2+, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "482e-3d16-b9a4-5ae9:8e89-ff15-231c-1305",
+         "name": "Singing Spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d1f-f377-6bc3-40f6",
+           "name": "Singing Spear",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Assault, Psychic"
+          },
+          {
+           "profile_id": "8cca-f1e9-21d6-87da",
+           "name": "Singing Spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "3",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Psychic"
           }
          ]
         }
@@ -3512,16 +3895,16 @@
      },
      "loadout": [
       {
-       "id": "be72-1e0f-e109-6b6d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "5caa-585-9873-9ae9",
+       "kind": "fixed",
+       "name": "Eldritch Storm",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "be72-1e0f-e109-6b6d:5caa-585-9873-9ae9",
+         "id": "5caa-585-9873-9ae9:5caa-585-9873-9ae9",
          "name": "Eldritch Storm",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b718-46ea-b550-2352",
@@ -3536,11 +3919,20 @@
            "keywords": "Blast, Psychic"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b022-c256-b6a3-e636",
+       "kind": "fixed",
+       "name": "Shuriken Pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "be72-1e0f-e109-6b6d:b022-c256-b6a3-e636",
+         "id": "b022-c256-b6a3-e636:b022-c256-b6a3-e636",
          "name": "Shuriken Pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7825-a114-ca5f-1bc2",
@@ -3555,11 +3947,20 @@
            "keywords": "Assault, Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "511-add5-c4b5-4302",
+       "kind": "fixed",
+       "name": "Twin Shuriken Catapult",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "be72-1e0f-e109-6b6d:511-add5-c4b5-4302",
+         "id": "511-add5-c4b5-4302:511-add5-c4b5-4302",
          "name": "Twin Shuriken Catapult",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5fa6-19eb-f75e-a41",
@@ -3572,6 +3973,65 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Assault, Twin Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "61d1-bf62-7eee-8830",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "61d1-bf62-7eee-8830:b911-1e91-721f-9628",
+         "name": "Witchblade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "aa4c-c850-5606-3153",
+           "name": "Witchblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "3",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Anti-Infantry 2+, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "61d1-bf62-7eee-8830:e1b4-2787-f402-c30d",
+         "name": "Singing Spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a4b8-2ce3-93a2-f98b",
+           "name": "Singing Spear",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Assault, Psychic"
+          },
+          {
+           "profile_id": "938f-d1ee-fb90-c89c",
+           "name": "Singing Spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "3",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Psychic"
           }
          ]
         }
@@ -3973,16 +4433,16 @@
      },
      "loadout": [
       {
-       "id": "056e-54bd-cfcc-c192",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4704-9a49-8dee-2852",
+       "kind": "fixed",
+       "name": "Prism Cannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "056e-54bd-cfcc-c192:4704-9a49-8dee-2852",
+         "id": "4704-9a49-8dee-2852:4704-9a49-8dee-2852",
          "name": "Prism Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cf51-83c3-5e6b-9440",
@@ -4009,11 +4469,20 @@
            "keywords": "Linked Fire"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "93aa-b39f-e09b-4bd0",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "056e-54bd-cfcc-c192:93aa-b39f-e09b-4bd0",
+         "id": "93aa-b39f-e09b-4bd0:93aa-b39f-e09b-4bd0",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "af8b-71f6-6396-224",
@@ -4026,6 +4495,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ac7e-3a52-7e47-2387",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ac7e-3a52-7e47-2387:68be-f35c-9028-6ca6",
+         "name": "Twin Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "638d-416f-93be-165d",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "ac7e-3a52-7e47-2387:5ba-f7a8-4424-da82",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3a01-4ed4-c367-f53b",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
           }
          ]
         }
@@ -5631,16 +6147,16 @@
      },
      "loadout": [
       {
-       "id": "205f-d186-6c9b-49e1",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "71df-1be9-d2b1-1317",
+       "kind": "fixed",
+       "name": "Doomweaver",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "205f-d186-6c9b-49e1:71df-1be9-d2b1-1317",
+         "id": "71df-1be9-d2b1-1317:71df-1be9-d2b1-1317",
          "name": "Doomweaver",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7854-1000-7c9e-3e6a",
@@ -5655,11 +6171,20 @@
            "keywords": "Blast, Indirect Fire, Twin Linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "9ed4-ce2-2800-4116",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "205f-d186-6c9b-49e1:9ed4-ce2-2800-4116",
+         "id": "9ed4-ce2-2800-4116:9ed4-ce2-2800-4116",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b86a-9b1f-81be-b461",
@@ -5672,6 +6197,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4753-fd5f-ff64-df6a",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4753-fd5f-ff64-df6a:60a9-f52b-f86c-723",
+         "name": "Twin Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "dda6-6cce-7d25-af4",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "4753-fd5f-ff64-df6a:8b36-e7f2-d344-ac61",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3983-a8e9-2d16-19b9",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
           }
          ]
         }
@@ -6093,16 +6665,16 @@
      },
      "loadout": [
       {
-       "id": "cc12-4501-ba67-5d29",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d4fb-7f6b-bbb0-ebc0",
+       "kind": "fixed",
+       "name": "Miststave",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cc12-4501-ba67-5d29:d4fb-7f6b-bbb0-ebc0",
+         "id": "d4fb-7f6b-bbb0-ebc0:d4fb-7f6b-bbb0-ebc0",
          "name": "Miststave",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e652-815c-4106-690d",
@@ -6115,6 +6687,53 @@
            "ap": "-1",
            "d": "D3",
            "keywords": "Psychic"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cee4-e00d-a53a-d528",
+       "kind": "choice",
+       "name": "Pistol Choice",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cee4-e00d-a53a-d528:be85-769f-eb20-8805",
+         "name": "Shuriken Pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "aab5-8360-a50-d395",
+           "name": "Shuriken Pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "cee4-e00d-a53a-d528:bf9-5593-8d64-d584",
+         "name": "Neuro Disruptor",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ebc7-b59c-5e9-3df5",
+           "name": "Neuro Disruptor",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Anti-infantry 2+, Assault, Pistol"
           }
          ]
         }
@@ -8850,16 +9469,16 @@
      },
      "loadout": [
       {
-       "id": "eaed-5aa5-3edf-15b2",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "9b6a-5658-e114-b9a1",
+       "kind": "fixed",
+       "name": "Close Combat Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "eaed-5aa5-3edf-15b2:9b6a-5658-e114-b9a1",
+         "id": "9b6a-5658-e114-b9a1:9b6a-5658-e114-b9a1",
          "name": "Close Combat Weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d42c-2ce2-93ab-23fc",
@@ -8874,11 +9493,79 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "d63c-beb1-8353-112f",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d63c-beb1-8353-112f:db3a-9f18-6c00-aa3e",
+         "name": "Prismatic Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c31c-ccd-3a28-9102",
+           "name": "➤ Prismatic Cannon - dispersed pulse",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          },
+          {
+           "profile_id": "8fe3-2450-5321-bc65",
+           "name": "➤ Prismatic Cannon - focused lances",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "eaed-5aa5-3edf-15b2:2475-c006-b2f3-f9e7",
+         "id": "d63c-beb1-8353-112f:49a7-3388-c32f-788d",
+         "name": "Voidweaver Haywire Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a7d0-5e75-3d92-7889",
+           "name": "Voidweaver Haywire Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Anti-vehicle 4+, Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2475-c006-b2f3-f9e7",
+       "kind": "fixed",
+       "name": "Shuriken Cannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "2475-c006-b2f3-f9e7:3924-7fd-61b4-f4ec",
          "name": "Shuriken Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2b07-8500-49f2-52f9",
@@ -9002,16 +9689,75 @@
      },
      "loadout": [
       {
-       "id": "7a4b-bdcd-0c36-8c98",
+       "id": "12ab-7567-f590-05f4",
        "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "7a4b-bdcd-0c36-8c98:9b81-8d22-1cc4-9624",
-         "name": "Destructor",
+         "id": "12ab-7567-f590-05f4:2f30-b2f1-11a7-eaf1",
+         "name": "Witchblade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b4ac-2c82-a64f-cd1e",
+           "name": "Witchblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Anti-Infantry 2+, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "12ab-7567-f590-05f4:1e10-cf9e-987f-81bd",
+         "name": "Singing Spear",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "abee-a07a-4559-c08a",
+           "name": "Singing Spear",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Assault, Psychic"
+          },
+          {
+           "profile_id": "17f2-1f57-9ff9-e7a1",
+           "name": "Singing Spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "0",
+           "d": "3",
+           "keywords": "Psychic"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9b81-8d22-1cc4-9624",
+       "kind": "fixed",
+       "name": "Destructor",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9b81-8d22-1cc4-9624:f193-b2a3-44f8-5ee0",
+         "name": "Destructor",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "323f-87bd-d2ae-bf10",
@@ -9026,11 +9772,20 @@
            "keywords": "Psychic, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "039f-ac9f-934f-da4a",
+       "kind": "fixed",
+       "name": "Shuriken Pistol",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "7a4b-bdcd-0c36-8c98:039f-ac9f-934f-da4a",
+         "id": "039f-ac9f-934f-da4a:6783-a483-98bc-4f87",
          "name": "Shuriken Pistol",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "73b1-af98-ddaf-1eb1",
@@ -9765,16 +10520,16 @@
      },
      "loadout": [
       {
-       "id": "ebc4-13e2-f7bb-5f0a",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "318b-bd88-7162-2ce2",
+       "kind": "fixed",
+       "name": "Wraithbone Hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ebc4-13e2-f7bb-5f0a:318b-bd88-7162-2ce2",
+         "id": "318b-bd88-7162-2ce2:318b-bd88-7162-2ce2",
          "name": "Wraithbone Hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "aaef-332e-5fd-7431",
@@ -9787,6 +10542,169 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e099-c60b-2ff7-e7f1",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e099-c60b-2ff7-e7f1:ee01-8949-aeb9-378",
+         "name": "Twin Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9fb-e843-a91c-27c8",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "e099-c60b-2ff7-e7f1:aa94-649-5315-ead4",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b0e2-ec9-3465-e5e0",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "48be-6604-e319-4db0",
+       "kind": "choice",
+       "name": "Turret Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "48be-6604-e319-4db0:ce0c-7500-9591-a795",
+         "name": "Twin Aeldari Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d8fb-cd43-f95d-f0a",
+           "name": "➤ Twin Aeldari Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Twin-Linked"
+          },
+          {
+           "profile_id": "26ee-915f-b855-1008",
+           "name": "➤ Twin Aeldari Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "48be-6604-e319-4db0:e599-503c-5d55-e377",
+         "name": "Twin Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "64f3-bc7a-e35b-a9f1",
+           "name": "Twin Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "48be-6604-e319-4db0:a891-16c0-2605-f5ab",
+         "name": "Twin Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dd2b-1031-6f51-c9ad",
+           "name": "Twin Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "48be-6604-e319-4db0:1cd8-271b-6f20-6624",
+         "name": "Twin Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "840c-2084-f6d7-a673",
+           "name": "Twin Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "48be-6604-e319-4db0:c6a3-5d1e-eb78-5e83",
+         "name": "Twin Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6e97-1117-2b18-d0f8",
+           "name": "Twin Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Twin-Linked"
           }
          ]
         }
@@ -10051,16 +10969,16 @@
      },
      "loadout": [
       {
-       "id": "cf1d-2009-4d08-c00a",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e86d-b767-a9bd-a683",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cf1d-2009-4d08-c00a:e86d-b767-a9bd-a683",
+         "id": "e86d-b767-a9bd-a683:e86d-b767-a9bd-a683",
          "name": "Titanic feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8f4b-7318-2a8e-588b",
@@ -10071,6 +10989,147 @@
            "bs_ws": "3+",
            "s": "8",
            "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1603-a55a-1b30-74f4",
+       "kind": "choice",
+       "name": "Left Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1603-a55a-1b30-74f4:7a9-ed40-b9db-b2a0",
+         "name": "Heavy Wraithcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d4e-8abb-65ad-c0bc",
+           "name": "Heavy Wraithcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-4",
+           "d": "2D6",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3035-2757-54b9-ca6d",
+       "kind": "choice",
+       "name": "Right Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3035-2757-54b9-ca6d:a286-ba4e-bcc0-3911",
+         "name": "Suncannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6474-db97-fca6-b8d",
+           "name": "Suncannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+4",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "3035-2757-54b9-ca6d:2fe5-624b-bc18-c889",
+         "name": "Heavy Wraithcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a293-46b0-1bd1-863",
+           "name": "Heavy Wraithcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-4",
+           "d": "2D6",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9d23-6ba2-d5a9-42fd",
+       "kind": "choice",
+       "name": "Secondary Weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "9d23-6ba2-d5a9-42fd:800e-c911-429b-5c0a",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c77a-1b41-952b-a922",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "9d23-6ba2-d5a9-42fd:9d81-8f1f-ff2e-f578",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e878-4e99-5326-29a5",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "9d23-6ba2-d5a9-42fd:5b41-e3a6-815d-60ca",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b227-1ceb-8973-957e",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
            "d": "2",
            "keywords": "-"
           }
@@ -10196,16 +11255,16 @@
      },
      "loadout": [
       {
-       "id": "121d-1cae-b3c9-98f6",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "e9b7-c334-8d6d-9422",
+       "kind": "fixed",
+       "name": "Ghostglaive",
        "min_select": null,
-       "max_select": null,
+       "max_select": 1,
        "options": [
         {
-         "id": "121d-1cae-b3c9-98f6:e9b7-c334-8d6d-9422",
+         "id": "e9b7-c334-8d6d-9422:e9b7-c334-8d6d-9422",
          "name": "Ghostglaive",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4d7a-dbf5-d746-c03c",
@@ -10232,11 +11291,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "d06a-5348-e773-89b3",
+       "kind": "fixed",
+       "name": "Wraithbone Fists",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "121d-1cae-b3c9-98f6:d06a-5348-e773-89b3",
+         "id": "d06a-5348-e773-89b3:d06a-5348-e773-89b3",
          "name": "Wraithbone Fists",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "299b-abd2-736e-1953",
@@ -10247,6 +11315,169 @@
            "bs_ws": "4+",
            "s": "7",
            "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "eeb0-a5d0-8ead-f9e6",
+       "kind": "choice",
+       "name": "Arm Weapons",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "eeb0-a5d0-8ead-f9e6:fa35-8240-73b7-e8e2",
+         "name": "Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2ea7-2985-908b-760c",
+           "name": "Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault"
+          }
+         ]
+        },
+        {
+         "id": "eeb0-a5d0-8ead-f9e6:da17-5e9c-be19-60d9",
+         "name": "Flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "81b2-d7a8-8a48-f92e",
+           "name": "Flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Assault, Ignores cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e0d0-8077-6cd9-15c3",
+       "kind": "choice",
+       "name": "Heavy Weapons",
+       "min_select": 0,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "e0d0-8077-6cd9-15c3:ab89-264d-27fa-8618",
+         "name": "Aeldari Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1947-1f77-c504-2bd1",
+           "name": "➤ Aeldari Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ba63-64b2-cafe-188",
+           "name": "➤ Aeldari Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "e0d0-8077-6cd9-15c3:1104-3ed7-eaea-f106",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "177e-2ee9-84fc-95dd",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e0d0-8077-6cd9-15c3:5a53-d5a2-3090-b650",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3745-73d2-5a6e-247a",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "e0d0-8077-6cd9-15c3:efe2-3555-6289-f204",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a9f-ade4-798b-c6c4",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "e0d0-8077-6cd9-15c3:6e76-51cc-90b-e3bf",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1b9e-90e4-318e-9d29",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
            "d": "2",
            "keywords": "-"
           }
@@ -13318,16 +14549,16 @@
      },
      "loadout": [
       {
-       "id": "954d-b9fe-a668-3c3d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "fb8a-5326-c32b-2efc",
+       "kind": "fixed",
+       "name": "Bladevanes and chainsnares",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "954d-b9fe-a668-3c3d:fb8a-5326-c32b-2efc",
+         "id": "fb8a-5326-c32b-2efc:fb8a-5326-c32b-2efc",
          "name": "Bladevanes and chainsnares",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3066-3272-1419-2985",
@@ -13339,6 +14570,53 @@
            "s": "6",
            "ap": "-1",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1143-11b4-959-1a1c",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1143-11b4-959-1a1c:af3d-29bd-71f0-3352",
+         "name": "Disintegrator Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8ac9-bd8f-3c8f-20b2",
+           "name": "Disintegrator Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1143-11b4-959-1a1c:7786-7319-2842-703a",
+         "name": "Dark Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2f64-fbe-491f-c59d",
+           "name": "Dark Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
            "keywords": "-"
           }
          ]
@@ -13482,16 +14760,16 @@
      },
      "loadout": [
       {
-       "id": "d108-ec36-0702-5352",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a105-1988-7e9b-a77d",
+       "kind": "fixed",
+       "name": "Bladevanes",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "d108-ec36-0702-5352:a105-1988-7e9b-a77d",
+         "id": "a105-1988-7e9b-a77d:a105-1988-7e9b-a77d",
          "name": "Bladevanes",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e909-1ca0-ba4b-9142",
@@ -13503,6 +14781,53 @@
            "s": "6",
            "ap": "-1",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "64ff-a651-505-1904",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 3,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "64ff-a651-505-1904:4679-8fe2-2279-4246",
+         "name": "Disintegrator Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a032-2f58-4562-e9c9",
+           "name": "Disintegrator Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "64ff-a651-505-1904:8c0f-1bd-db16-bd1a",
+         "name": "Dark Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c1a8-2276-1eb2-f120",
+           "name": "Dark Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
            "keywords": "-"
           }
          ]
@@ -13622,16 +14947,16 @@
      },
      "loadout": [
       {
-       "id": "3919-5bde-3de5-e115",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "ed56-19ca-76b1-7c82",
+       "kind": "fixed",
+       "name": "Bladed wings",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "3919-5bde-3de5-e115:ed56-19ca-76b1-7c82",
+         "id": "ed56-19ca-76b1-7c82:ed56-19ca-76b1-7c82",
          "name": "Bladed wings",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cb62-edc8-ce05-844d",
@@ -13646,11 +14971,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3a02-5934-ef63-df89",
+       "kind": "fixed",
+       "name": "Razorwing missiles",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "3919-5bde-3de5-e115:3a02-5934-ef63-df89",
+         "id": "3a02-5934-ef63-df89:3a02-5934-ef63-df89",
          "name": "Razorwing missiles",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "89ef-5a93-f6e2-2544",
@@ -13687,6 +15021,100 @@
            "ap": "-2",
            "d": "1",
            "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e725-8ad2-9d29-af8a",
+       "kind": "choice",
+       "name": "Main Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e725-8ad2-9d29-af8a:4b8b-8747-c47d-ed1b",
+         "name": "Two dark lances",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "cccf-20c5-f914-73b0",
+           "name": "Dark Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e725-8ad2-9d29-af8a:76a4-6255-a45c-10e4",
+         "name": "Two disintegrator cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fedd-d487-ac8c-3ae0",
+           "name": "Disintegrator Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9bb0-cffe-4e92-5904",
+       "kind": "choice",
+       "name": "Splinter cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9bb0-cffe-4e92-5904:2523-310d-8e06-884e",
+         "name": "Splinter Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d92-9836-d7f3-eead",
+           "name": "Splinter Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Infantry 3+, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "9bb0-cffe-4e92-5904:34ab-c084-d4f9-143",
+         "name": "Twin Splinter Rifle",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7f03-bacf-19e5-5ce3",
+           "name": "Twin Splinter Rifle",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 3+, Assault, Rapid Fire 2, Twin Linked"
           }
          ]
         }
@@ -15063,16 +16491,16 @@
      },
      "loadout": [
       {
-       "id": "20c9-391d-e5b3-987c",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e11b-b191-576b-ee9d",
+       "kind": "fixed",
+       "name": "Bladevanes",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "20c9-391d-e5b3-987c:e11b-b191-576b-ee9d",
+         "id": "e11b-b191-576b-ee9d:e11b-b191-576b-ee9d",
          "name": "Bladevanes",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e591-aeec-d8f0-eedb",
@@ -15087,11 +16515,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f5e0-d6b2-60f9-f09c",
+       "kind": "fixed",
+       "name": "Splinter Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "20c9-391d-e5b3-987c:f5e0-d6b2-60f9-f09c",
+         "id": "f5e0-d6b2-60f9-f09c:f5e0-d6b2-60f9-f09c",
          "name": "Splinter Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c099-b674-6dd5-43d8",
@@ -15104,6 +16541,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-Infantry 3+, Sustained hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b651-9a99-4645-eeb5",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b651-9a99-4645-eeb5:d705-8a64-4af2-8630",
+         "name": "Splinter Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "db42-4bfc-561c-9ada",
+           "name": "Splinter Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Infantry 3+, Sustained hits 1"
+          }
+         ]
+        },
+        {
+         "id": "b651-9a99-4645-eeb5:11a9-b4f2-9a6a-e389",
+         "name": "Twin Splinter Rifle",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b4c8-23bb-724a-e97a",
+           "name": "Twin Splinter Rifle",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 3+, Assault, Rapid Fire 2, Twin Linked"
           }
          ]
         }
@@ -15222,16 +16706,16 @@
      },
      "loadout": [
       {
-       "id": "dea5-f1a9-86ce-1d38",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "3342-58c4-339-2309",
+       "kind": "fixed",
+       "name": "Bladed wings",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "dea5-f1a9-86ce-1d38:3342-58c4-339-2309",
+         "id": "3342-58c4-339-2309:3342-58c4-339-2309",
          "name": "Bladed wings",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "acc-415b-b771-5fda",
@@ -15246,11 +16730,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f1b8-7eac-fee0-e8c1",
+       "kind": "fixed",
+       "name": "Voidraven Missiles",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
         {
-         "id": "dea5-f1a9-86ce-1d38:f1b8-7eac-fee0-e8c1",
+         "id": "f1b8-7eac-fee0-e8c1:f1b8-7eac-fee0-e8c1",
          "name": "Voidraven Missiles",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e225-22de-5598-fa3e",
@@ -15275,6 +16768,53 @@
            "ap": "-2",
            "d": "1",
            "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b9c4-d6c3-7509-9c2a",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b9c4-d6c3-7509-9c2a:117c-d05f-c3ed-b28a",
+         "name": "2 Void Lances",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "b1e2-96b6-92d0-565f",
+           "name": "Void Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b9c4-d6c3-7509-9c2a:a855-c06-eb97-be9",
+         "name": "2 Dark Scythes",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c98b-30a9-8a17-2a5e",
+           "name": "Dark Scythe",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-4",
+           "d": "2",
+           "keywords": "-"
           }
          ]
         }
@@ -16002,16 +17542,16 @@
      },
      "loadout": [
       {
-       "id": "35c5-3f40-6826-3733",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f768-7932-63ed-2b11",
+       "kind": "fixed",
+       "name": "D-Impaler",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "35c5-3f40-6826-3733:f768-7932-63ed-2b11",
+         "id": "f768-7932-63ed-2b11:f768-7932-63ed-2b11",
          "name": "D-Impaler",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5f17-5e8-9e5e-4069",
@@ -16026,11 +17566,20 @@
            "keywords": "Blast, Devastating Wounds"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f742-8053-6d16-36fb",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "35c5-3f40-6826-3733:f742-8053-6d16-36fb",
+         "id": "f742-8053-6d16-36fb:f742-8053-6d16-36fb",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "912b-e60d-26dd-4ced",
@@ -16043,6 +17592,122 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2d9a-5b86-6fde-b314",
+       "kind": "choice",
+       "name": "Heavy Weapons [Legends]",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2d9a-5b86-6fde-b314:494a-12c7-988a-e4e3",
+         "name": "Aeldari missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5956-5a47-d609-6f04",
+           "name": "➤ Aeldari missile launcher - starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad1e-6f32-04ac-a226",
+           "name": "➤ Aeldari missile launcher - sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "2d9a-5b86-6fde-b314:1cfb-373b-9546-8882",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "331d-bb13-9d30-239c",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2d9a-5b86-6fde-b314:1e1e-e76f-b6e9-e5a6",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f4aa-18cc-df65-a622",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2d9a-5b86-6fde-b314:5de6-d5a9-ed51-5b78",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8fa-3510-adc8-e949",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "2d9a-5b86-6fde-b314:8385-f1ab-090c-2ea6",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7a66-2d69-8adc-68c3",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -16155,16 +17820,16 @@
      },
      "loadout": [
       {
-       "id": "ee95-7364-3df1-9587",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "5b97-9633-df3d-6177",
+       "kind": "fixed",
+       "name": "Twin Scorpion Pulsar",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ee95-7364-3df1-9587:5b97-9633-df3d-6177",
+         "id": "5b97-9633-df3d-6177:5b97-9633-df3d-6177",
          "name": "Twin Scorpion Pulsar",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cd38-b1d6-99a1-e9d3",
@@ -16179,11 +17844,20 @@
            "keywords": "Twin-Linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "cfbf-5314-1435-373f",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "ee95-7364-3df1-9587:cfbf-5314-1435-373f",
+         "id": "cfbf-5314-1435-373f:cfbf-5314-1435-373f",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b6af-166b-b9f9-a28c",
@@ -16196,6 +17870,122 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "290f-8759-113d-6377",
+       "kind": "choice",
+       "name": "Heavy Weapons [Legends]",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "290f-8759-113d-6377:494a-12c7-988a-e4e3",
+         "name": "Aeldari missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5956-5a47-d609-6f04",
+           "name": "➤ Aeldari missile launcher - starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad1e-6f32-04ac-a226",
+           "name": "➤ Aeldari missile launcher - sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "290f-8759-113d-6377:1cfb-373b-9546-8882",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "331d-bb13-9d30-239c",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "290f-8759-113d-6377:1e1e-e76f-b6e9-e5a6",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f4aa-18cc-df65-a622",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "290f-8759-113d-6377:5de6-d5a9-ed51-5b78",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8fa-3510-adc8-e949",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "290f-8759-113d-6377:8385-f1ab-090c-2ea6",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7a66-2d69-8adc-68c3",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -16666,16 +18456,16 @@
      },
      "loadout": [
       {
-       "id": "4fa3-cec0-15f6-7934",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "b968-2381-130c-c02",
+       "kind": "fixed",
+       "name": "Lynx Pulsar",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4fa3-cec0-15f6-7934:b968-2381-130c-c02",
+         "id": "b968-2381-130c-c02:b968-2381-130c-c02",
          "name": "Lynx Pulsar",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f682-64d7-4e8e-f4f4",
@@ -16690,11 +18480,20 @@
            "keywords": "Assault"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "c5d8-8b4f-314b-de0e",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "4fa3-cec0-15f6-7934:c5d8-8b4f-314b-de0e",
+         "id": "c5d8-8b4f-314b-de0e:c5d8-8b4f-314b-de0e",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6792-c563-8701-d9bb",
@@ -16707,6 +18506,122 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b8d-741c-c5d8-660a",
+       "kind": "choice",
+       "name": "Heavy Weapons [Legends]",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b8d-741c-c5d8-660a:494a-12c7-988a-e4e3",
+         "name": "Aeldari missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5956-5a47-d609-6f04",
+           "name": "➤ Aeldari missile launcher - starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad1e-6f32-04ac-a226",
+           "name": "➤ Aeldari missile launcher - sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "b8d-741c-c5d8-660a:1cfb-373b-9546-8882",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "331d-bb13-9d30-239c",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b8d-741c-c5d8-660a:1e1e-e76f-b6e9-e5a6",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f4aa-18cc-df65-a622",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b8d-741c-c5d8-660a:5de6-d5a9-ed51-5b78",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8fa-3510-adc8-e949",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b8d-741c-c5d8-660a:8385-f1ab-090c-2ea6",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7a66-2d69-8adc-68c3",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -16995,16 +18910,16 @@
      },
      "loadout": [
       {
-       "id": "015d-495e-08d2-7254",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4e1c-8f2e-300b-51",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "015d-495e-08d2-7254:4e1c-8f2e-300b-51",
+         "id": "4e1c-8f2e-300b-51:4e1c-8f2e-300b-51",
          "name": "Titanic feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e492-323e-f57-456e",
@@ -17015,6 +18930,190 @@
            "bs_ws": "3+",
            "s": "8",
            "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1aa5-5476-803d-7a68",
+       "kind": "choice",
+       "name": "Left Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1aa5-5476-803d-7a68:9b81-57ef-2f8c-caa2",
+         "name": "Deathshroud Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6457-1086-8590-b1f1",
+           "name": "➤ Deathshroud Cannon - Dispersed",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Devastating Wounds"
+          },
+          {
+           "profile_id": "e415-e937-2c5b-2d27",
+           "name": "➤ Deathshroud Cannon - Focused",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "1aa5-5476-803d-7a68:3c11-e1f2-6c29-cd5e",
+         "name": "Inferno Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c84-faef-98d2-938e",
+           "name": "Inferno Lance",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7332-77ce-a627-6040",
+       "kind": "choice",
+       "name": "Right Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7332-77ce-a627-6040:f62a-7ed1-3fbc-7190",
+         "name": "Inferno Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fc0f-aac1-d239-e826",
+           "name": "Inferno Lance",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "7332-77ce-a627-6040:e730-4017-eb9a-eadd",
+         "name": "Deathshroud Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ffcc-3e45-a8fd-187c",
+           "name": "➤ Deathshroud Cannon - Dispersed",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Devastating Wounds"
+          },
+          {
+           "profile_id": "1bd2-5c96-9497-d3c9",
+           "name": "➤ Deathshroud Cannon - Focused",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "92aa-a607-fda0-8ec1",
+       "kind": "choice",
+       "name": "Secondary Weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "92aa-a607-fda0-8ec1:1371-3622-350e-d740",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5157-1e2-b190-f79c",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "92aa-a607-fda0-8ec1:243a-b996-457f-9638",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b3a4-47fe-525d-316e",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "92aa-a607-fda0-8ec1:ba5d-8f4c-c924-804b",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "14b9-578f-65c9-1fc0",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
            "d": "2",
            "keywords": "-"
           }
@@ -17378,16 +19477,16 @@
      },
      "loadout": [
       {
-       "id": "84fa-cd20-be08-f096",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4a86-4ef2-b715-1aa5",
+       "kind": "fixed",
+       "name": "Phantom feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "84fa-cd20-be08-f096:4a86-4ef2-b715-1aa5",
+         "id": "4a86-4ef2-b715-1aa5:4a86-4ef2-b715-1aa5",
          "name": "Phantom feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b506-b396-1ac3-268e",
@@ -17402,11 +19501,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b114-c837-6af0-4625",
+       "kind": "fixed",
+       "name": "Voidstorm missile launcher",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "84fa-cd20-be08-f096:b114-c837-6af0-4625",
+         "id": "b114-c837-6af0-4625:b114-c837-6af0-4625",
          "name": "Voidstorm missile launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d927-f688-7abe-26a6",
@@ -17414,6 +19522,429 @@
            "weapon_type": "Ranged",
            "range": "48\"",
            "a": "2D6",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8812-c579-5494-681c",
+       "kind": "choice",
+       "name": "D-bombard Replacement",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8812-c579-5494-681c:2d9f-75c5-eb71-2fb6",
+         "name": "D-bombard",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3a83-8687-7116-ef8f",
+           "name": "D-bombard",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-4",
+           "d": "2D6",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "8812-c579-5494-681c:9c9e-3b2e-cb6f-70ca",
+         "name": "1 Phantom pulsar",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "34e5-945b-522-9fe7",
+           "name": "Phantom pulsar",
+           "weapon_type": "Ranged",
+           "range": "120\"",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8812-c579-5494-681c:c4c3-72b0-10fd-d15f",
+         "name": "2 Phantom starcannons & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7026-8e1f-6366-1bbd",
+           "name": "Phantom starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8812-c579-5494-681c:1fa2-b693-52d3-faaf",
+         "name": "2 pulse lasers & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d90-44b6-2c5f-efdf",
+           "name": "Pulse laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8812-c579-5494-681c:5ca8-717c-e55-1326",
+         "name": "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d90-44b6-2c5f-efdf",
+           "name": "Pulse laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "7026-8e1f-6366-1bbd",
+           "name": "Phantom starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c712-3511-6ec2-390e",
+       "kind": "choice",
+       "name": "Phantom pulsar Replacement",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c712-3511-6ec2-390e:9095-c748-c249-ad5c",
+         "name": "D-bombard",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2cef-b297-7e62-cee2",
+           "name": "D-bombard",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-4",
+           "d": "2D6",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "c712-3511-6ec2-390e:cc05-055f-0029-ab1d",
+         "name": "Phantom pulsar",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3d92-9a8d-807e-e02d",
+           "name": "Phantom pulsar",
+           "weapon_type": "Ranged",
+           "range": "120\"",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c712-3511-6ec2-390e:c7c3-9e64-c6b1-9657",
+         "name": "2 Phantom starcannons & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7026-8e1f-6366-1bbd",
+           "name": "Phantom starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c712-3511-6ec2-390e:c17b-b0aa-4128-4b2d",
+         "name": "2 pulse lasers & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d90-44b6-2c5f-efdf",
+           "name": "Pulse laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c712-3511-6ec2-390e:0b48-12b6-9af7-96b7",
+         "name": "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d90-44b6-2c5f-efdf",
+           "name": "Pulse laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2333-c31f-9129-15f9",
+           "name": "➤ Wraith glaive - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "18",
+           "ap": "-4",
+           "d": "12",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "71b8-b44a-f45e-4cb2",
+           "name": "➤ Wraith glaive - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "7026-8e1f-6366-1bbd",
+           "name": "Phantom starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "214e-c11a-19fa-7819",
+       "kind": "choice",
+       "name": "Phantom starcannon replacement",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "214e-c11a-19fa-7819:be1d-913c-2335-8e39",
+         "name": "Pulse laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4d90-44b6-2c5f-efdf",
+           "name": "Pulse laser",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "214e-c11a-19fa-7819:4970-5fe7-e62a-11b9",
+         "name": "Phantom starcannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7026-8e1f-6366-1bbd",
+           "name": "Phantom starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
            "bs_ws": "3+",
            "s": "8",
            "ap": "-3",
@@ -17558,16 +20089,16 @@
      },
      "loadout": [
       {
-       "id": "bb6d-d44d-9216-70ba",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "377c-4960-da64-5ee9",
+       "kind": "fixed",
+       "name": "Cloudburst missile launcher",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "bb6d-d44d-9216-70ba:377c-4960-da64-5ee9",
+         "id": "377c-4960-da64-5ee9:377c-4960-da64-5ee9",
          "name": "Cloudburst missile launcher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8fad-8354-d405-4a28",
@@ -17582,11 +20113,20 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3033-d025-4a83-d8bf",
+       "kind": "fixed",
+       "name": "Revenant feet",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "bb6d-d44d-9216-70ba:3033-d025-4a83-d8bf",
+         "id": "3033-d025-4a83-d8bf:3033-d025-4a83-d8bf",
          "name": "Revenant feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "45a6-815-4cd1-71b1",
@@ -17599,6 +20139,100 @@
            "ap": "-1",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1c8-95e3-afe3-a34",
+       "kind": "choice",
+       "name": "Left Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c1c8-95e3-afe3-a34:ceea-26f5-93c5-c967",
+         "name": "Sonic Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "844-8c26-6eaf-5858",
+           "name": "Sonic Lance",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6+6",
+           "bs_ws": "N/A",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Anti-Monster 4+, Anti-Vehicle 4+, Assault, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "c1c8-95e3-afe3-a34:dc71-8b0d-ed05-bd4a",
+         "name": "Revenant Pulsar",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7ef3-6190-a948-a4ff",
+           "name": "Revenant Pulsar",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7621-8363-a4dd-8cef",
+       "kind": "choice",
+       "name": "Right Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7621-8363-a4dd-8cef:17c6-9d9d-9454-5228",
+         "name": "Sonic Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "169e-4b1f-ee82-c6c7",
+           "name": "Sonic Lance",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6+6",
+           "bs_ws": "N/A",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Anti-Monster 4+, Anti-Vehicle 4+, Assault, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "7621-8363-a4dd-8cef:82ea-fef5-5005-f06d",
+         "name": "Revenant Pulsar",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d6b3-6e05-85d4-a6a8",
+           "name": "Revenant Pulsar",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "Assault"
           }
          ]
         }
@@ -17718,16 +20352,16 @@
      },
      "loadout": [
       {
-       "id": "b0d7-8b21-5646-7e61",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "cc2d-97ec-ab7c-d4f5",
+       "kind": "fixed",
+       "name": "D-Flail",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b0d7-8b21-5646-7e61:cc2d-97ec-ab7c-d4f5",
+         "id": "cc2d-97ec-ab7c-d4f5:cc2d-97ec-ab7c-d4f5",
          "name": "D-Flail",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3fc9-f0f6-2814-9b4a",
@@ -17754,11 +20388,20 @@
            "keywords": "Devastating Wounds, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "fc11-6216-f80f-d1b9",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "b0d7-8b21-5646-7e61:fc11-6216-f80f-d1b9",
+         "id": "fc11-6216-f80f-d1b9:fc11-6216-f80f-d1b9",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f0a6-ac70-408f-92a9",
@@ -17771,6 +20414,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4a2b-be4d-ac05-bf67",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4a2b-be4d-ac05-bf67:f411-7b76-d850-b1c7",
+         "name": "Twin Shuriken Catapult",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ee30-7af7-6ffc-1af7",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "4a2b-be4d-ac05-bf67:12a8-a1a3-b500-1421",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "48fd-264c-262d-74b9",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -17882,16 +20572,16 @@
      },
      "loadout": [
       {
-       "id": "b7c9-2045-b154-c2df",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1583-8c64-1069-f661",
+       "kind": "fixed",
+       "name": "Destructor",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b7c9-2045-b154-c2df:1583-8c64-1069-f661",
+         "id": "1583-8c64-1069-f661:1583-8c64-1069-f661",
          "name": "Destructor",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9fd3-6c49-5869-ae92",
@@ -17906,11 +20596,20 @@
            "keywords": "Psychic, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5782-cffd-df63-ee62",
+       "kind": "fixed",
+       "name": "Ghostspear",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "b7c9-2045-b154-c2df:5782-cffd-df63-ee62",
+         "id": "5782-cffd-df63-ee62:5782-cffd-df63-ee62",
          "name": "Ghostspear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2f42-72d3-33bb-6862",
@@ -17935,6 +20634,141 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Anti-Infantry 2+, Psychic"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "323e-b1bf-3926-a8f5",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "323e-b1bf-3926-a8f5:13ad-6c55-3cd5-becb",
+         "name": "Aeldari Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "499f-3faf-c319-247d",
+           "name": "➤ Aeldari Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "5b2c-21d9-4d7d-be4f",
+           "name": "➤ Aeldari Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "323e-b1bf-3926-a8f5:5de9-fc84-70c3-107a",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8c62-3d5f-7ff2-55ce",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "323e-b1bf-3926-a8f5:1c95-4914-19e3-c19",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bcb5-1eb6-fe3d-ab",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "323e-b1bf-3926-a8f5:1267-425e-a31c-48f4",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7eb5-647a-82c8-4309",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "323e-b1bf-3926-a8f5:a255-9afb-1d90-29be",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "71f7-a4ef-ad01-d655",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "323e-b1bf-3926-a8f5:38aa-31b3-5eca-bd5b",
+         "name": "Wraithseer D-Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "62d3-e127-7566-699c",
+           "name": "Wraithseer D-Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "14",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Devastating Wounds"
           }
          ]
         }
@@ -18846,16 +21680,16 @@
      },
      "loadout": [
       {
-       "id": "6bd5-66d5-8cf4-a7b9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8c49-fd52-2c96-838d",
+       "kind": "fixed",
+       "name": "Firestorm Scatter Laser",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6bd5-66d5-8cf4-a7b9:8c49-fd52-2c96-838d",
+         "id": "8c49-fd52-2c96-838d:8c49-fd52-2c96-838d",
          "name": "Firestorm Scatter Laser",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e376-2ba6-796-8ff1",
@@ -18870,11 +21704,20 @@
            "keywords": "Anti-Fly 2+"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7f63-7496-69cc-25b",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "6bd5-66d5-8cf4-a7b9:7f63-7496-69cc-25b",
+         "id": "7f63-7496-69cc-25b:7f63-7496-69cc-25b",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "559f-a887-891e-125e",
@@ -18887,6 +21730,53 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8584-e041-5077-79a6",
+       "kind": "choice",
+       "name": "Hull weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8584-e041-5077-79a6:495d-9b0f-1bc3-e07",
+         "name": "Twin Shuriken Catapult",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "733b-e996-4a50-b0d5",
+           "name": "Twin Shuriken Catapult",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Assault, Twin Linked"
+          }
+         ]
+        },
+        {
+         "id": "8584-e041-5077-79a6:8f56-998c-56e-5e0e",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8818-f426-5b57-418d",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -19568,16 +22458,16 @@
      },
      "loadout": [
       {
-       "id": "f326-d969-ec78-21d2",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "196d-7a49-33c6-3534",
+       "kind": "fixed",
+       "name": "Wasp feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f326-d969-ec78-21d2:196d-7a49-33c6-3534",
+         "id": "196d-7a49-33c6-3534:196d-7a49-33c6-3534",
          "name": "Wasp feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8b0b-9022-de4d-aaa8",
@@ -19590,6 +22480,122 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "813e-c434-ebe3-9157",
+       "kind": "choice",
+       "name": "Heavy Weapons [Legends]",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "813e-c434-ebe3-9157:494a-12c7-988a-e4e3",
+         "name": "Aeldari missile launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5956-5a47-d609-6f04",
+           "name": "➤ Aeldari missile launcher - starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad1e-6f32-04ac-a226",
+           "name": "➤ Aeldari missile launcher - sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "813e-c434-ebe3-9157:1cfb-373b-9546-8882",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "331d-bb13-9d30-239c",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "813e-c434-ebe3-9157:1e1e-e76f-b6e9-e5a6",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f4aa-18cc-df65-a622",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "813e-c434-ebe3-9157:5de6-d5a9-ed51-5b78",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8fa-3510-adc8-e949",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "813e-c434-ebe3-9157:8385-f1ab-090c-2ea6",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7a66-2d69-8adc-68c3",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
           }
          ]
         }
@@ -20408,16 +23414,16 @@
      },
      "loadout": [
       {
-       "id": "1144-7da9-bee9-07c9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "ed6c-f113-afff-c095",
+       "kind": "fixed",
+       "name": "Huskblade",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "1144-7da9-bee9-07c9:ed6c-f113-afff-c095",
+         "id": "ed6c-f113-afff-c095:ed6c-f113-afff-c095",
          "name": "Huskblade",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e207-5d7f-2bd4-63c7",
@@ -20430,6 +23436,53 @@
            "ap": "-2",
            "d": "2",
            "keywords": "Anti-Infantry 3+"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2765-ef02-3ca2-54a9",
+       "kind": "choice",
+       "name": "Pistol Choice",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2765-ef02-3ca2-54a9:2fa4-b07d-9fdb-a8af",
+         "name": "Splinter Pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5d1a-717d-8f21-89b0",
+           "name": "Splinter Pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 3+, Assault, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "2765-ef02-3ca2-54a9:f592-745d-c0b9-2563",
+         "name": "Blast Pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bbe2-9c69-7bc7-f464",
+           "name": "Blast Pistol",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "D3",
+           "keywords": "Pistol"
           }
          ]
         }
@@ -20736,16 +23789,16 @@
      },
      "loadout": [
       {
-       "id": "cb80-9c37-a52c-9563",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "64ca-68b1-a888-819d",
+       "kind": "fixed",
+       "name": "War Walker feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cb80-9c37-a52c-9563:64ca-68b1-a888-819d",
+         "id": "64ca-68b1-a888-819d:64ca-68b1-a888-819d",
          "name": "War Walker feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "bfb7-3daf-8cd8-95e7",
@@ -20757,6 +23810,122 @@
            "s": "5",
            "ap": "0",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c275-d2b-cbf0-9b2f",
+       "kind": "choice",
+       "name": "Heavy Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c275-d2b-cbf0-9b2f:8c0e-e2ad-4bfd-bb1e",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2b07-8500-49f2-52f9",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "c275-d2b-cbf0-9b2f:6823-46fe-4f90-fad7",
+         "name": "Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a2be-98ee-367f-1538",
+           "name": "➤ Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "33eb-6a3e-cb0f-188e",
+           "name": "➤ Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "c275-d2b-cbf0-9b2f:71e2-5897-d6fe-1201",
+         "name": "Bright Lance",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9fa1-355f-34dc-a4a1",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c275-d2b-cbf0-9b2f:b059-adc7-9243-df68",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9d36-202a-b181-d7c8",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "c275-d2b-cbf0-9b2f:453b-e939-8b7d-68a2",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8445-fb8c-88e0-1a6b",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
            "keywords": "-"
           }
          ]
@@ -21156,16 +24325,16 @@
      },
      "loadout": [
       {
-       "id": "cf72-eb34-206c-e38f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8e1c-783b-f90a-c521",
+       "kind": "fixed",
+       "name": "Wraithbone hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cf72-eb34-206c-e38f:8e1c-783b-f90a-c521",
+         "id": "8e1c-783b-f90a-c521:8e1c-783b-f90a-c521",
          "name": "Wraithbone hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7a4-e976-ebab-7628",
@@ -21178,6 +24347,131 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "50d8-c86e-f241-7510",
+       "kind": "choice",
+       "name": "Bright Lance Replacement",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "50d8-c86e-f241-7510:8d6e-e5e4-877f-c1ed",
+         "name": "Bright Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1e77-7e71-6fa9-51d1",
+           "name": "Bright Lance",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "50d8-c86e-f241-7510:263c-da89-893a-5d0b",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3c88-dd0c-4584-d28d",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "50d8-c86e-f241-7510:33a2-d75c-39ba-ccce",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6ca9-083a-e413-c75f",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a792-8ae4-1a10-c52a",
+       "kind": "choice",
+       "name": "Shuriken Cannon Replacement",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a792-8ae4-1a10-c52a:1a36-66c6-b8dc-0b9a",
+         "name": "Shuriken Cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9a0a-f352-b92d-987b",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "a792-8ae4-1a10-c52a:62a3-1366-f23f-fb73",
+         "name": "Missile Launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1ff4-be61-80b2-104b",
+           "name": "➤ Missile Launcher - Starshot",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "5b18-139d-5ae1-715a",
+           "name": "➤ Missile Launcher - Sunburst",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast"
           }
          ]
         }
@@ -21265,16 +24559,16 @@
      },
      "loadout": [
       {
-       "id": "b290-7d2e-cbc8-4406",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "2d05-efec-bda2-f059",
+       "kind": "fixed",
+       "name": "Titanic Ghostglaive",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b290-7d2e-cbc8-4406:2d05-efec-bda2-f059",
+         "id": "2d05-efec-bda2-f059:2d05-efec-bda2-f059",
          "name": "Titanic Ghostglaive",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f80b-dedc-197b-aa21",
@@ -21297,6 +24591,100 @@
            "bs_ws": "3+",
            "s": "8",
            "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6bc5-e120-52b6-d591",
+       "kind": "choice",
+       "name": "Left Arm",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6bc5-e120-52b6-d591:eb0d-7b5a-e9cd-1763",
+         "name": "Heavy Wraithcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "00c7-b232-b0e9-221d",
+           "name": "Heavy Wraithcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-4",
+           "d": "2D6",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "eb42-f7d3-e98f-3534",
+       "kind": "choice",
+       "name": "Secondary Weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "eb42-f7d3-e98f-3534:4305-3d8d-7fa6-7777",
+         "name": "Scatter Laser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3d9c-0e45-7043-bcb2",
+           "name": "Scatter Laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "eb42-f7d3-e98f-3534:33f6-082e-0af5-965e",
+         "name": "Shuriken Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b5d3-f19c-1cff-d9c6",
+           "name": "Shuriken Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "eb42-f7d3-e98f-3534:93b7-b620-6352-1764",
+         "name": "Starcannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4481-41d2-a040-2bfd",
+           "name": "Starcannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
            "d": "2",
            "keywords": "-"
           }
@@ -21406,16 +24794,16 @@
      },
      "loadout": [
       {
-       "id": "6ec9-2b2e-db9e-e5dc",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "6873-8ac2-1d42-5e2a",
+       "kind": "fixed",
+       "name": "Succubus weapons",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "6ec9-2b2e-db9e-e5dc:6873-8ac2-1d42-5e2a",
+         "id": "6873-8ac2-1d42-5e2a:6873-8ac2-1d42-5e2a",
          "name": "Succubus weapons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4897-d18c-1a8c-c217",
@@ -21428,6 +24816,53 @@
            "ap": "-2",
            "d": "1",
            "keywords": "Anti-Infantry 3+"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8bb8-3864-f51b-de2e",
+       "kind": "choice",
+       "name": "Pistol Choice",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8bb8-3864-f51b-de2e:7005-b8f9-cd47-a13d",
+         "name": "Splinter Pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d5e9-b2fe-4bf2-139f",
+           "name": "Splinter Pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 3+, Assault, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8bb8-3864-f51b-de2e:ac0d-b018-169c-7fbb",
+         "name": "Blast Pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "03a0-590b-0463-e879",
+           "name": "Blast Pistol",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "D3",
+           "keywords": "Pistol"
           }
          ]
         }
@@ -22526,16 +25961,16 @@
      },
      "loadout": [
       {
-       "id": "cd76-6556-160d-ae4c",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "9d49-8ef9-d771-fac6",
+       "kind": "fixed",
+       "name": "Bladevanes",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "cd76-6556-160d-ae4c:9d49-8ef9-d771-fac6",
+         "id": "9d49-8ef9-d771-fac6:9d49-8ef9-d771-fac6",
          "name": "Bladevanes",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "9272-6c73-c848-fb13",
@@ -22547,6 +25982,53 @@
            "s": "6",
            "ap": "0",
            "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b3cd-d554-de2f-5acc",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b3cd-d554-de2f-5acc:ecda-9712-4626-0ff0",
+         "name": "Disintegrator Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e591-3a37-7e8b-221a",
+           "name": "Disintegrator Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b3cd-d554-de2f-5acc:3c82-00d0-1e60-2d40",
+         "name": "Dark Lance",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7900-c97e-ec3e-f2e3",
+           "name": "Dark Lance",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
            "keywords": "-"
           }
          ]
@@ -22665,16 +26147,16 @@
      },
      "loadout": [
       {
-       "id": "2cd9-8621-a4c7-29e9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "c883-6add-2307-882d",
+       "kind": "fixed",
+       "name": "Bladevanes",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2cd9-8621-a4c7-29e9:c883-6add-2307-882d",
+         "id": "c883-6add-2307-882d:c883-6add-2307-882d",
          "name": "Bladevanes",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8ce0-ab2a-fc6d-70a8",
@@ -22689,11 +26171,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "0a1b-623b-7aa5-6333",
+       "kind": "fixed",
+       "name": "Splinter Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "2cd9-8621-a4c7-29e9:0a1b-623b-7aa5-6333",
+         "id": "0a1b-623b-7aa5-6333:0a1b-623b-7aa5-6333",
          "name": "Splinter Cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3c6a-81ec-337e-9bc1",
@@ -22706,6 +26197,53 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Anti-Infantry 3+, Sustained hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3c11-7591-ec6d-441d",
+       "kind": "choice",
+       "name": "Weapon Option",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3c11-7591-ec6d-441d:8551-5490-4e61-9abe",
+         "name": "Splinter Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "533b-e59f-7ea2-1042",
+           "name": "Splinter Cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "3",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Infantry 3+, Sustained hits 1"
+          }
+         ]
+        },
+        {
+         "id": "3c11-7591-ec6d-441d:5546-d537-b8a6-20cf",
+         "name": "Twin Splinter Rifle",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6dc3-a42a-97a4-18a6",
+           "name": "Twin Splinter Rifle",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 3+, Assault, Rapid Fire 1, Twin Linked"
           }
          ]
         }

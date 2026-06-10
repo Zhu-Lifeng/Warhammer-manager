@@ -401,16 +401,16 @@
      },
      "loadout": [
       {
-       "id": "f385-ed99-7337-140a",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f120-b686-d22f-e700",
+       "kind": "fixed",
+       "name": "Reaper chain-cleaver",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f385-ed99-7337-140a:f120-b686-d22f-e700",
+         "id": "f120-b686-d22f-e700:f120-b686-d22f-e700",
          "name": "Reaper chain-cleaver",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3a79-406d-aaa7-ed6c",
@@ -437,11 +437,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b2b4-a523-8dc5-ca7c",
+       "kind": "fixed",
+       "name": "Thermal spear",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "f385-ed99-7337-140a:b2b4-a523-8dc5-ca7c",
+         "id": "b2b4-a523-8dc5-ca7c:b2b4-a523-8dc5-ca7c",
          "name": "Thermal spear",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "38d-4520-1309-4074",
@@ -454,6 +463,53 @@
            "ap": "-4",
            "d": "D6",
            "keywords": "Melta 4"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "54c4-470c-eaf4-6333",
+       "kind": "choice",
+       "name": "Heavy Stubber",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "54c4-470c-eaf4-6333:709a-393b-c3ea-1d2a",
+         "name": "Meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "54c4-470c-eaf4-6333:5c62-d3a1-687b-b75f",
+         "name": "Questoris heavy stubber",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
           }
          ]
         }
@@ -554,16 +610,16 @@
      },
      "loadout": [
       {
-       "id": "d481-1806-2a6e-bbcb",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d0c7-36d4-2d50-f975",
+       "kind": "fixed",
+       "name": "Armiger autocannon",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "d481-1806-2a6e-bbcb:d0c7-36d4-2d50-f975",
+         "id": "d0c7-36d4-2d50-f975:d0c7-36d4-2d50-f975",
          "name": "Armiger autocannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "3d6c-b927-b515-c0d8",
@@ -578,11 +634,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "9cd6-456f-8bc6-7cc7",
+       "kind": "choice",
+       "name": "Heavy Stubber",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9cd6-456f-8bc6-7cc7:709a-393b-c3ea-1d2a",
+         "name": "Meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
         },
         {
-         "id": "d481-1806-2a6e-bbcb:cd91-d85d-6aef-dcae",
+         "id": "9cd6-456f-8bc6-7cc7:5c62-d3a1-687b-b75f",
+         "name": "Questoris heavy stubber",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cd91-d85d-6aef-dcae",
+       "kind": "fixed",
+       "name": "Armoured feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "cd91-d85d-6aef-dcae:541e-cd89-cb31-4ee6",
          "name": "Armoured feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b6b7-cce0-ad60-bdf4",
@@ -710,16 +822,16 @@
      },
      "loadout": [
       {
-       "id": "f6b3-c1e3-d5db-633c",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "93c3-d64f-2d6e-ea",
+       "kind": "fixed",
+       "name": "Questoris heavy stubber",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "f6b3-c1e3-d5db-633c:93c3-d64f-2d6e-ea",
+         "id": "93c3-d64f-2d6e-ea:93c3-d64f-2d6e-ea",
          "name": "Questoris heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "19b5-e47a-9e29-d6db",
@@ -734,11 +846,20 @@
            "keywords": "Rapid Fire 3"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "55c3-c331-7871-b89c",
+       "kind": "fixed",
+       "name": "Rapid-fire battle cannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f6b3-c1e3-d5db-633c:55c3-c331-7871-b89c",
+         "id": "55c3-c331-7871-b89c:d6c0-4d42-c3c4-db8a",
          "name": "Rapid-fire battle cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e63e-93fd-e131-fe85",
@@ -751,6 +872,190 @@
            "ap": "-1",
            "d": "3",
            "keywords": "Blast, Rapid Fire D6+3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8629-b6c4-3f8e-34ac",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8629-b6c4-3f8e-34ac:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "8629-b6c4-3f8e-34ac:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "8629-b6c4-3f8e-34ac:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6fac-c820-3200-ad1d",
+       "kind": "choice",
+       "name": "Meltagun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6fac-c820-3200-ad1d:c5cb-313-ca18-f95e",
+         "name": "Meltagun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "6fac-c820-3200-ad1d:f02e-cee3-37ef-5bd9",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8e6-6b5f-c1c6-45ad",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8e6-6b5f-c1c6-45ad:301c-7afe-38a8-cec5",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "8e6-6b5f-c1c6-45ad:be0d-5fd6-c8ee-aaed",
+         "name": "Thunderstrike gauntlet",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dc7b-57c8-2678-6b40",
+           "name": "➤ Thunderstrike gauntlet - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "d2f7-1f2a-e319-9e6a",
+           "name": "➤ Thunderstrike gauntlet - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
           }
          ]
         }
@@ -872,16 +1177,16 @@
      },
      "loadout": [
       {
-       "id": "d135-a87e-794b-2bb3",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "9b08-a22c-9f1e-5afa",
+       "kind": "fixed",
+       "name": "Thermal cannon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "d135-a87e-794b-2bb3:9b08-a22c-9f1e-5afa",
+         "id": "9b08-a22c-9f1e-5afa:86c9-46db-4de-4a5d",
          "name": "Thermal cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7ec3-aee0-2545-428e",
@@ -894,6 +1199,190 @@
            "ap": "-4",
            "d": "D6",
            "keywords": "Blast, Melta 6"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ef13-6633-2433-de02",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ef13-6633-2433-de02:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "ef13-6633-2433-de02:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "ef13-6633-2433-de02:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3ceb-8584-7a48-a14",
+       "kind": "choice",
+       "name": "Meltagun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3ceb-8584-7a48-a14:c5cb-313-ca18-f95e",
+         "name": "Meltagun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "3ceb-8584-7a48-a14:f02e-cee3-37ef-5bd9",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f64e-101e-1f30-5321",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f64e-101e-1f30-5321:301c-7afe-38a8-cec5",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f64e-101e-1f30-5321:be0d-5fd6-c8ee-aaed",
+         "name": "Thunderstrike gauntlet",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dc7b-57c8-2678-6b40",
+           "name": "➤ Thunderstrike gauntlet - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "d2f7-1f2a-e319-9e6a",
+           "name": "➤ Thunderstrike gauntlet - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
           }
          ]
         }
@@ -1015,16 +1504,16 @@
      },
      "loadout": [
       {
-       "id": "b47c-205e-38ec-c89d",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "528-89bb-c0a5-99e7",
+       "kind": "fixed",
+       "name": "Reaper chainsword",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b47c-205e-38ec-c89d:528-89bb-c0a5-99e7",
+         "id": "528-89bb-c0a5-99e7:528-89bb-c0a5-99e7",
          "name": "Reaper chainsword",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a8ae-6973-4131-ab78",
@@ -1051,11 +1540,20 @@
            "keywords": "Devastating Wounds"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "78c6-6f21-6c74-ebc6",
+       "kind": "fixed",
+       "name": "Thunderstrike gauntlet",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "b47c-205e-38ec-c89d:78c6-6f21-6c74-ebc6",
+         "id": "78c6-6f21-6c74-ebc6:78c6-6f21-6c74-ebc6",
          "name": "Thunderstrike gauntlet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cea7-7bb7-44c4-89d4",
@@ -1080,6 +1578,119 @@
            "ap": "-2",
            "d": "3",
            "keywords": "Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e309-43b9-a759-3c0e",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e309-43b9-a759-3c0e:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "e309-43b9-a759-3c0e:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "e309-43b9-a759-3c0e:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b4a-f71f-ee01-58e6",
+       "kind": "choice",
+       "name": "Meltagun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b4a-f71f-ee01-58e6:c5cb-313-ca18-f95e",
+         "name": "Meltagun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "b4a-f71f-ee01-58e6:f02e-cee3-37ef-5bd9",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
           }
          ]
         }
@@ -1201,16 +1812,16 @@
      },
      "loadout": [
       {
-       "id": "1d56-427b-7981-9723",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "5f75-3961-3d75-bc36",
+       "kind": "fixed",
+       "name": "Avenger gatling cannon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "1d56-427b-7981-9723:5f75-3961-3d75-bc36",
+         "id": "5f75-3961-3d75-bc36:4fc1-2679-a110-3cd",
          "name": "Avenger gatling cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c28d-679c-9e28-af08",
@@ -1225,11 +1836,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "8ee9-1713-3809-32b7",
+       "kind": "fixed",
+       "name": "Heavy flamer",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "1d56-427b-7981-9723:8ee9-1713-3809-32b7",
+         "id": "8ee9-1713-3809-32b7:ca02-db54-10e6-f20e",
          "name": "Heavy flamer",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7b42-981d-db0-4e83",
@@ -1242,6 +1862,190 @@
            "ap": "-1",
            "d": "1",
            "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f9a1-bca0-687e-c351",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f9a1-bca0-687e-c351:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "f9a1-bca0-687e-c351:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "f9a1-bca0-687e-c351:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b5f9-ca1c-d7f9-cf1c",
+       "kind": "choice",
+       "name": "Meltagun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b5f9-ca1c-d7f9-cf1c:c5cb-313-ca18-f95e",
+         "name": "Meltagun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "b5f9-ca1c-d7f9-cf1c:f02e-cee3-37ef-5bd9",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fab-29cf-81a2-ca29",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fab-29cf-81a2-ca29:301c-7afe-38a8-cec5",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "fab-29cf-81a2-ca29:be0d-5fd6-c8ee-aaed",
+         "name": "Thunderstrike gauntlet",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dc7b-57c8-2678-6b40",
+           "name": "➤ Thunderstrike gauntlet - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "d2f7-1f2a-e319-9e6a",
+           "name": "➤ Thunderstrike gauntlet - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
           }
          ]
         }
@@ -1363,16 +2167,75 @@
      },
      "loadout": [
       {
-       "id": "8282-f19b-cc15-9fcd",
+       "id": "2cc0-66f6-9d7a-65b",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Thermal Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2cc0-66f6-9d7a-65b:a05e-db63-84ad-4c5e",
+         "name": "Rapid-fire battlecannon and Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          },
+          {
+           "profile_id": "e63e-93fd-e131-fe85",
+           "name": "Rapid-fire battle cannon",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Blast, Rapid Fire D6+3"
+          }
+         ]
+        },
+        {
+         "id": "2cc0-66f6-9d7a-65b:ef24-c94e-d430-2af",
+         "name": "Thermal cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7ec3-aee0-2545-428e",
+           "name": "Thermal cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2D3",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Blast, Melta 6"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2b0-2a2-db03-357f",
+       "kind": "fixed",
+       "name": "Avenger gatling cannon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "8282-f19b-cc15-9fcd:2b0-2a2-db03-357f",
+         "id": "2b0-2a2-db03-357f:4fc1-2679-a110-3cd",
          "name": "Avenger gatling cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "c28d-679c-9e28-af08",
@@ -1387,11 +2250,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "308b-3-572e-1161",
+       "kind": "fixed",
+       "name": "Heavy flamer",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "8282-f19b-cc15-9fcd:308b-3-572e-1161",
+         "id": "308b-3-572e-1161:ca02-db54-10e6-f20e",
          "name": "Heavy flamer",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7b42-981d-db0-4e83",
@@ -1406,11 +2278,133 @@
            "keywords": "Ignores Cover, Torrent"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "87fe-91dc-b0e3-14cf",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "87fe-91dc-b0e3-14cf:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
         },
         {
-         "id": "8282-f19b-cc15-9fcd:4ea0-a462-d2cd-023d",
-         "name": "Titanic feet",
+         "id": "87fe-91dc-b0e3-14cf:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "87fe-91dc-b0e3-14cf:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7a26-edb1-e1de-4cc4",
+       "kind": "choice",
+       "name": "Meltagun",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "7a26-edb1-e1de-4cc4:c5cb-313-ca18-f95e",
+         "name": "Meltagun",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        },
+        {
+         "id": "7a26-edb1-e1de-4cc4:f02e-cee3-37ef-5bd9",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4ea0-a462-d2cd-023d",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "4ea0-a462-d2cd-023d:288c-1cbc-8340-9c0a",
+         "name": "Titanic feet",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "db4a-30a9-b229-c2f1",
@@ -1544,16 +2538,16 @@
      },
      "loadout": [
       {
-       "id": "15a7-ea20-568f-d8e9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e1a0-435d-be85-5e07",
+       "kind": "fixed",
+       "name": "Las-impulsor",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "15a7-ea20-568f-d8e9:e1a0-435d-be85-5e07",
+         "id": "e1a0-435d-be85-5e07:e1a0-435d-be85-5e07",
          "name": "Las-impulsor",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "118d-63f7-70a3-629a",
@@ -1578,6 +2572,209 @@
            "ap": "-1",
            "d": "2",
            "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "92b7-8ed0-4ace-508a",
+       "kind": "choice",
+       "name": "Preceptor Multi-laser",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "92b7-8ed0-4ace-508a:8104-457c-9ad5-b1ce",
+         "name": "Preceptor multi-laser",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "553f-100d-a8d5-5a25",
+           "name": "Preceptor multi-laser",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "92b7-8ed0-4ace-508a:d75a-1551-9941-5e64",
+         "name": "Questoris heavy stubber",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3b13-7770-1d2b-9e66",
+           "name": "Questoris heavy stubber",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 3"
+          }
+         ]
+        },
+        {
+         "id": "92b7-8ed0-4ace-508a:6ee4-af24-db67-b279",
+         "name": "Meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4b6f-2df5-d7b6-34dd",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9c9b-5c7f-a8eb-d169",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapon",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9c9b-5c7f-a8eb-d169:73fa-8625-9c1a-6652",
+         "name": "Twin Icarus autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee46-9279-756e-de84",
+           "name": "Icarus autocannons",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Fly 2+, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "9c9b-5c7f-a8eb-d169:45af-c931-489a-2f0e",
+         "name": "Ironstorm missile pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "712a-105f-a24e-badb",
+           "name": "Ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+1",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "9c9b-5c7f-a8eb-d169:273-38fa-249e-3aa4",
+         "name": "Stormspear rocket pod",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4dbb-a82d-89ff-e62e",
+           "name": "Stormspear rocket pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "54b6-4bfd-2e83-6e92",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "54b6-4bfd-2e83-6e92:301c-7afe-38a8-cec5",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "54b6-4bfd-2e83-6e92:be0d-5fd6-c8ee-aaed",
+         "name": "Thunderstrike gauntlet",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dc7b-57c8-2678-6b40",
+           "name": "➤ Thunderstrike gauntlet - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "d2f7-1f2a-e319-9e6a",
+           "name": "➤ Thunderstrike gauntlet - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
           }
          ]
         }
@@ -1699,16 +2896,16 @@
      },
      "loadout": [
       {
-       "id": "be21-7bd6-270a-2986",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "18d7-565e-a1b7-4040",
+       "kind": "fixed",
+       "name": "Plasma decimator",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "be21-7bd6-270a-2986:18d7-565e-a1b7-4040",
+         "id": "18d7-565e-a1b7-4040:18d7-565e-a1b7-4040",
          "name": "Plasma decimator",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d8eb-d595-9bdc-3cf",
@@ -1735,11 +2932,20 @@
            "keywords": "Blast, Hazardous"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "4a7e-57b0-1b1a-b226",
+       "kind": "fixed",
+       "name": "Volcano lance",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "be21-7bd6-270a-2986:4a7e-57b0-1b1a-b226",
+         "id": "4a7e-57b0-1b1a-b226:4a7e-57b0-1b1a-b226",
          "name": "Volcano lance",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8057-e9f4-1d1-41f0",
@@ -1754,11 +2960,20 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3742-70f7-6207-8820",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "be21-7bd6-270a-2986:3742-70f7-6207-8820",
+         "id": "3742-70f7-6207-8820:288c-1cbc-8340-9c0a",
          "name": "Titanic feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "db4a-30a9-b229-c2f1",
@@ -1773,11 +2988,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5e47-8699-72dc-b352",
+       "kind": "fixed",
+       "name": "Twin meltagun",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "be21-7bd6-270a-2986:5e47-8699-72dc-b352",
+         "id": "5e47-8699-72dc-b352:65ed-f9fa-c767-15d",
          "name": "Twin meltagun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a5d2-c8c3-3928-fdb6",
@@ -1790,6 +3014,77 @@
            "ap": "-4",
            "d": "D6",
            "keywords": "Melta 2, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "285b-c562-a286-90b2",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "285b-c562-a286-90b2:99d8-9565-2a1-aab7",
+         "name": "2 shieldbreaker missile launchers and twin siegebreaker cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8710-73e3-af0d-d850",
+           "name": "Shieldbreaker missile launcher",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-6",
+           "d": "D6+1",
+           "keywords": "Anti-Titanic 4+, Devastating Wounds"
+          },
+          {
+           "profile_id": "bd3-71c3-fe65-ab78",
+           "name": "Twin siegebreaker cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "285b-c562-a286-90b2:9cc-451b-d4c5-f71c",
+         "name": "Shieldbreaker missile launcher and 2 twin siegebreaker cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8710-73e3-af0d-d850",
+           "name": "Shieldbreaker missile launcher",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-6",
+           "d": "D6+1",
+           "keywords": "Anti-Titanic 4+, Devastating Wounds"
+          },
+          {
+           "profile_id": "bd3-71c3-fe65-ab78",
+           "name": "Twin siegebreaker cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Twin-Linked"
           }
          ]
         }
@@ -1905,16 +3200,16 @@
      },
      "loadout": [
       {
-       "id": "e16f-cf11-5348-c413",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "be5c-af2b-86d3-da18",
+       "kind": "fixed",
+       "name": "Conflagration cannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "e16f-cf11-5348-c413:be5c-af2b-86d3-da18",
+         "id": "be5c-af2b-86d3-da18:be5c-af2b-86d3-da18",
          "name": "Conflagration cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "feeb-790a-99d5-67fc",
@@ -1929,11 +3224,20 @@
            "keywords": "Ignores Cover, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "9a45-74ba-e166-9692",
+       "kind": "fixed",
+       "name": "Thundercoil harpoon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "e16f-cf11-5348-c413:9a45-74ba-e166-9692",
+         "id": "9a45-74ba-e166-9692:9a45-74ba-e166-9692",
          "name": "Thundercoil harpoon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2fc1-856c-bd08-2f05",
@@ -1948,11 +3252,20 @@
            "keywords": "Blast, Devastating Wounds"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "8704-b1cd-ac55-3a8",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "e16f-cf11-5348-c413:8704-b1cd-ac55-3a8",
+         "id": "8704-b1cd-ac55-3a8:288c-1cbc-8340-9c0a",
          "name": "Titanic feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "db4a-30a9-b229-c2f1",
@@ -1967,11 +3280,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "a21f-6701-aa11-b2e5",
+       "kind": "fixed",
+       "name": "Twin meltagun",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "e16f-cf11-5348-c413:a21f-6701-aa11-b2e5",
+         "id": "a21f-6701-aa11-b2e5:65ed-f9fa-c767-15d",
          "name": "Twin meltagun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a5d2-c8c3-3928-fdb6",
@@ -1984,6 +3306,77 @@
            "ap": "-4",
            "d": "D6",
            "keywords": "Melta 2, Twin-Linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d6d0-f919-6b60-1883",
+       "kind": "choice",
+       "name": "Carapace-mounted Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d6d0-f919-6b60-1883:99d8-9565-2a1-aab7",
+         "name": "2 shieldbreaker missile launchers and twin siegebreaker cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8710-73e3-af0d-d850",
+           "name": "Shieldbreaker missile launcher",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-6",
+           "d": "D6+1",
+           "keywords": "Anti-Titanic 4+, Devastating Wounds"
+          },
+          {
+           "profile_id": "bd3-71c3-fe65-ab78",
+           "name": "Twin siegebreaker cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Twin-Linked"
+          }
+         ]
+        },
+        {
+         "id": "d6d0-f919-6b60-1883:9cc-451b-d4c5-f71c",
+         "name": "Shieldbreaker missile launcher and 2 twin siegebreaker cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8710-73e3-af0d-d850",
+           "name": "Shieldbreaker missile launcher",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-6",
+           "d": "D6+1",
+           "keywords": "Anti-Titanic 4+, Devastating Wounds"
+          },
+          {
+           "profile_id": "bd3-71c3-fe65-ab78",
+           "name": "Twin siegebreaker cannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Twin-Linked"
           }
          ]
         }
@@ -2283,16 +3676,16 @@
      },
      "loadout": [
       {
-       "id": "27a6-c33d-73bf-a9c1",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1d9a-57f1-78bd-f342",
+       "kind": "fixed",
+       "name": "Twin magna lascannon",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "27a6-c33d-73bf-a9c1:1d9a-57f1-78bd-f342",
+         "id": "1d9a-57f1-78bd-f342:1d9a-57f1-78bd-f342",
          "name": "Twin magna lascannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6f32-c97f-e3e-8dc0",
@@ -2307,11 +3700,145 @@
            "keywords": "Blast, Twin-linked"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "4d7f-db31-7a3a-3907",
+       "kind": "choice",
+       "name": "Acastus Autocannons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4d7f-db31-7a3a-3907:5621-3b42-f51b-e40c",
+         "name": "2 Acastus autocannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "eb3a-97a1-f83-1fcc",
+           "name": "Acastus autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "27a6-c33d-73bf-a9c1:1a95-7824-0e6f-4e13",
-         "name": "Titanic feet",
+         "id": "4d7f-db31-7a3a-3907:62d8-6634-9940-a56a",
+         "name": "1 Acastus autocannon and 1 lascannon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bea1-bed6-c0ea-e4aa",
+           "name": "Acastus autocannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1898-d8d0-7e42-652d",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "4d7f-db31-7a3a-3907:84b4-a59b-3e71-6a0f",
+         "name": "2 Lascannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3688-2729-1cfa-369b",
+           "name": "Lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2d57-7258-76bf-5aa0",
+       "kind": "choice",
+       "name": "Acastus Ironstorm Missile Pod",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2d57-7258-76bf-5aa0:845c-f07d-7d-b5f9",
+         "name": "Acastus ironstorm missile pod",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3576-4d0d-5fbb-8d1a",
+           "name": "Acastus ironstorm missile pod",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6+6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Heavy, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "2d57-7258-76bf-5aa0:f5b1-c36e-4936-862f",
+         "name": "Helios defence missiles",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ee88-6de7-ede9-c612",
+           "name": "Helios defence missiles",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Anti-Fly 2+, Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1a95-7824-0e6f-4e13",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "1a95-7824-0e6f-4e13:3a05-e1f7-7966-ce43",
+         "name": "Titanic feet",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5f2c-0abb-b86f-43ef",
@@ -3195,16 +4722,16 @@
      },
      "loadout": [
       {
-       "id": "d619-677b-ec45-00c0",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "6da8-51ad-1ce1-cd25",
+       "kind": "fixed",
+       "name": "Phased plasma-fusil",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "d619-677b-ec45-00c0:6da8-51ad-1ce1-cd25",
+         "id": "6da8-51ad-1ce1-cd25:6da8-51ad-1ce1-cd25",
          "name": "Phased plasma-fusil",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ea44-b29b-859c-45ac",
@@ -3219,11 +4746,20 @@
            "keywords": "Rapid Fire 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "2708-f76a-56f1-f55e",
+       "kind": "fixed",
+       "name": "Lightning cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "d619-677b-ec45-00c0:2708-f76a-56f1-f55e",
+         "id": "2708-f76a-56f1-f55e:2708-f76a-56f1-f55e",
          "name": "Lightning cannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e803-b7a9-6d6b-85cf",
@@ -3236,6 +4772,89 @@
            "ap": "0",
            "d": "2",
            "keywords": "Sustained Hits 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9787-a8f1-fe3a-24cc",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9787-a8f1-fe3a-24cc:e23f-57fa-44c2-b8a4",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9787-a8f1-fe3a-24cc:2d0b-90-d794-14fd",
+         "name": "Hekaton siege claw and twin rad cleanser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "481e-5d5c-2d83-d182",
+           "name": "➤ Hekaton siege claw - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1d68-b832-4e87-7093",
+           "name": "➤ Hekaton siege claw - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3a9f-c444-b1d4-c31c",
+           "name": "Twin rad cleanser",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Torrent, Ignores Cover, Anti-Infantry 2+, Twin-linked"
           }
          ]
         }
@@ -3357,16 +4976,16 @@
      },
      "loadout": [
       {
-       "id": "356a-e3f4-1a31-8237",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1f25-f0ec-aeea-b440",
+       "kind": "fixed",
+       "name": "Graviton crusher",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "356a-e3f4-1a31-8237:1f25-f0ec-aeea-b440",
+         "id": "1f25-f0ec-aeea-b440:1f25-f0ec-aeea-b440",
          "name": "Graviton crusher",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "63a2-7ba2-3845-f2de",
@@ -3381,11 +5000,20 @@
            "keywords": "Anti-Vehicle 2+, Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "b689-ef77-3687-fa10",
+       "kind": "fixed",
+       "name": "Volkite chierovile",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "356a-e3f4-1a31-8237:b689-ef77-3687-fa10",
+         "id": "b689-ef77-3687-fa10:b689-ef77-3687-fa10",
          "name": "Volkite chierovile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8e62-813d-11cb-9310",
@@ -3398,6 +5026,89 @@
            "ap": "0",
            "d": "3",
            "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fa9d-d89d-a99e-e1e6",
+       "kind": "choice",
+       "name": "Reaper Chainsword",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fa9d-d89d-a99e-e1e6:15b5-39f2-c392-d599",
+         "name": "Reaper chainsword",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "fcad-44c-ff88-9d66",
+           "name": "➤ Reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-4",
+           "d": "6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c460-106f-f9f2-69d4",
+           "name": "➤ Reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "fa9d-d89d-a99e-e1e6:67e7-c45-689b-9c8",
+         "name": "Hekaton siege claw and twin rad cleanser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "481e-5d5c-2d83-d182",
+           "name": "➤ Hekaton siege claw - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "20",
+           "ap": "-3",
+           "d": "8",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1d68-b832-4e87-7093",
+           "name": "➤ Hekaton siege claw - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "3a9f-c444-b1d4-c31c",
+           "name": "Twin rad cleanser",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Torrent, Ignores Cover, Anti-Infantry 2+, Twin-linked"
           }
          ]
         }
@@ -3504,16 +5215,132 @@
      },
      "loadout": [
       {
-       "id": "408d-111e-6929-a352",
+       "id": "ae03-c1d6-edf4-574f",
        "kind": "choice",
        "name": "Wargear",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "ae03-c1d6-edf4-574f:d21e-d3c2-dfff-ec6d",
+         "name": "Volkite veuglaire",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b5d6-3736-74ec-1e93",
+           "name": "Volkite veuglaire",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "ae03-c1d6-edf4-574f:6496-9e76-13ee-bec8",
+         "name": "Graviton pulsar",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9401-8675-2bac-35b",
+           "name": "Graviton pulsar",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-Vehicle 2+, Blast"
+          }
+         ]
+        },
+        {
+         "id": "ae03-c1d6-edf4-574f:b7c9-95ee-4488-9de8",
+         "name": "Lightning lock",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b9d1-1e57-836-a531",
+           "name": "Lightning lock",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 2"
+          }
+         ]
+        },
+        {
+         "id": "ae03-c1d6-edf4-574f:30be-cbba-e2ec-ceeb",
+         "name": "Conversion beam cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "fec2-9b94-3ebd-f1a4",
+           "name": "Conversion beam cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Conversion, Sustained Hits D3"
+          }
+         ]
+        },
+        {
+         "id": "ae03-c1d6-edf4-574f:caa0-3ec6-7d48-139",
+         "name": "Siege claw and rad cleanser",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ec3a-304-38d3-eb09",
+           "name": "Siege claw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "165d-95f5-f19e-8016",
+           "name": "Rad cleanser",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "2",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 2+, Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "583d-a2ff-3824-d186",
+       "kind": "fixed",
+       "name": "Armoured feet",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "408d-111e-6929-a352:583d-a2ff-3824-d186",
+         "id": "583d-a2ff-3824-d186:541e-cd89-cb31-4ee6",
          "name": "Armoured feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b6b7-cce0-ad60-bdf4",
@@ -3872,16 +5699,16 @@
      },
      "loadout": [
       {
-       "id": "83e1-b1c0-cf0c-3751",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "646c-5f7f-cd1c-d5c9",
+       "kind": "fixed",
+       "name": "Questoris heavy stubber",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "83e1-b1c0-cf0c-3751:646c-5f7f-cd1c-d5c9",
+         "id": "646c-5f7f-cd1c-d5c9:646c-5f7f-cd1c-d5c9",
          "name": "Questoris heavy stubber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4da0-f06c-cb4f-243e",
@@ -3896,11 +5723,20 @@
            "keywords": "Assault, Rapid Fire 3"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "c62a-bc9c-37fb-2b36",
+       "kind": "fixed",
+       "name": "Titanic feet",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "83e1-b1c0-cf0c-3751:c62a-bc9c-37fb-2b36",
+         "id": "c62a-bc9c-37fb-2b36:c62a-bc9c-37fb-2b36",
          "name": "Titanic feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "35ae-80f4-fd78-7500",
@@ -3911,6 +5747,186 @@
            "bs_ws": "4+",
            "s": "7",
            "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3f2e-1b6b-0948-5173",
+       "kind": "choice",
+       "name": "Chastiser Gatling Cannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3f2e-1b6b-0948-5173:3ded-7df8-ef3e-913a",
+         "name": "Chastiser gatling cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "dc08-210f-db16-ae84",
+           "name": "Chastiser gatling cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "12",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault"
+          }
+         ]
+        },
+        {
+         "id": "3f2e-1b6b-0948-5173:0ad5-761a-ba40-0625",
+         "name": "Bellatus reaper chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "330d-53b3-8f58-f2c2",
+           "name": "➤ Bellatus reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D3+3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "6c4b-9e14-e4c3-1ae0",
+           "name": "➤ Bellatus reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3f2e-1b6b-0948-5173:3c70-609a-f8c9-6d8b",
+         "name": "Thundershock spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0b60-7c1d-1a0d-fc91",
+           "name": "➤ Thundershock spear - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D3+3",
+           "keywords": "Lance"
+          },
+          {
+           "profile_id": "4f95-2e29-51c7-6528",
+           "name": "➤ Thundershock spear - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b315-bf77-9da2-51c0",
+       "kind": "choice",
+       "name": "Frag Bombard",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b315-bf77-9da2-51c0:fc2d-063a-a9fa-968f",
+         "name": "Frag bombard",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "aece-99dd-d0f3-9b40",
+           "name": "Frag bombard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault, Blast, Rapid Fire D6+3"
+          }
+         ]
+        },
+        {
+         "id": "b315-bf77-9da2-51c0:ff27-c795-2265-a6e1",
+         "name": "Thundershock spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0b60-7c1d-1a0d-fc91",
+           "name": "➤ Thundershock spear - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D3+3",
+           "keywords": "Lance"
+          },
+          {
+           "profile_id": "4f95-2e29-51c7-6528",
+           "name": "➤ Thundershock spear - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        },
+        {
+         "id": "b315-bf77-9da2-51c0:9127-31f8-2c8b-9f82",
+         "name": "Bellatus reaper chainsword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "330d-53b3-8f58-f2c2",
+           "name": "➤ Bellatus reaper chainsword - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D3+3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "6c4b-9e14-e4c3-1ae0",
+           "name": "➤ Bellatus reaper chainsword - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
            "d": "2",
            "keywords": "-"
           }

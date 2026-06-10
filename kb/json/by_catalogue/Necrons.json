@@ -4086,16 +4086,16 @@
      },
      "loadout": [
       {
-       "id": "aed4-721a-41bf-0aa7",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a2b-3dc2-e1af-5df2",
+       "kind": "fixed",
+       "name": "Stalker's forelimbs",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "aed4-721a-41bf-0aa7:a2b-3dc2-e1af-5df2",
+         "id": "a2b-3dc2-e1af-5df2:a2b-3dc2-e1af-5df2",
          "name": "Stalker's forelimbs",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "b9ff-de53-d39f-c6d0",
@@ -4108,6 +4108,84 @@
            "ap": "-1",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3455-c1e9-9cb-3f53",
+       "kind": "choice",
+       "name": "Weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3455-c1e9-9cb-3f53:86ac-3ebf-e3dd-116b",
+         "name": "Heat ray",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "619d-1c81-7792-b712",
+           "name": "➤ Heat ray - dispersed",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "2D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "4ce4-6834-7f86-1815",
+           "name": "➤ Heat ray - focused",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 4"
+          }
+         ]
+        },
+        {
+         "id": "3455-c1e9-9cb-3f53:49df-1333-60f6-da40",
+         "name": "Particle shredder",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "368a-9e23-69ff-75a7",
+           "name": "Particle shredder",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6+6",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "3455-c1e9-9cb-3f53:c517-baae-8b-697",
+         "name": "Heavy gauss cannon array",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "231d-94d0-55e7-9098",
+           "name": "Heavy gauss cannon array",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lethal Hits"
           }
          ]
         }
@@ -5782,35 +5860,16 @@
      },
      "loadout": [
       {
-       "id": "ed80-84ae-13b8-7219",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "eb36-d3cc-bde0-aa1b",
+       "kind": "fixed",
+       "name": "Twin tesla destructor",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "ed80-84ae-13b8-7219:801d-4444-6e10-c462",
-         "name": "Armoured bulk",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "3877-caf9-6eb1-9139",
-           "name": "Armoured bulk",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "ed80-84ae-13b8-7219:eb36-d3cc-bde0-aa1b",
+         "id": "eb36-d3cc-bde0-aa1b:eb36-d3cc-bde0-aa1b",
          "name": "Twin tesla destructor",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e975-712f-73be-52c1",
@@ -5823,6 +5882,81 @@
            "ap": "0",
            "d": "2",
            "keywords": "Sustained Hits 2, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cb40-aa29-d568-52b3",
+       "kind": "choice",
+       "name": "Secondary weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cb40-aa29-d568-52b3:dea3-f269-a319-129b",
+         "name": "Gauss cannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "d723-724f-3353-399c",
+           "name": "Gauss cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "cb40-aa29-d568-52b3:e2e6-5edd-5585-9c0d",
+         "name": "Tesla cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "44bc-1767-3bda-2233",
+           "name": "Tesla cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "801d-4444-6e10-c462",
+       "kind": "fixed",
+       "name": "Armoured bulk",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "801d-4444-6e10-c462:927a-5f3d-6d88-260",
+         "name": "Armoured bulk",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3877-caf9-6eb1-9139",
+           "name": "Armoured bulk",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -7363,16 +7497,16 @@
      },
      "loadout": [
       {
-       "id": "3228-72d1-1549-70f9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "713c-56a-6daf-39",
+       "kind": "fixed",
+       "name": "Particle whip",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "3228-72d1-1549-70f9:713c-56a-6daf-39",
+         "id": "713c-56a-6daf-39:713c-56a-6daf-39",
          "name": "Particle whip",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6bf8-16c0-9110-37e",
@@ -7387,11 +7521,20 @@
            "keywords": "Blast, Devastating Wounds"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "828c-60df-8e28-7d4c",
+       "kind": "fixed",
+       "name": "Portal of exile",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "3228-72d1-1549-70f9:828c-60df-8e28-7d4c",
+         "id": "828c-60df-8e28-7d4c:828c-60df-8e28-7d4c",
          "name": "Portal of exile",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d431-ae78-fb15-ae6f",
@@ -7404,6 +7547,53 @@
            "ap": "-2",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c3ef-3e6b-e57a-9c32",
+       "kind": "choice",
+       "name": "Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c3ef-3e6b-e57a-9c32:38b2-6df5-3b2a-ec",
+         "name": "Four death rays",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "de95-9dd7-c085-26c3",
+           "name": "Death ray",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-4",
+           "d": "D6+1",
+           "keywords": "Sustained Hits D3"
+          }
+         ]
+        },
+        {
+         "id": "c3ef-3e6b-e57a-9c32:266f-c700-199-e196",
+         "name": "Four gauss flux arcs",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "42ba-a9fa-18da-e9ad",
+           "name": "Gauss flux arc",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Lethal Hits, Rapid Fire 3"
           }
          ]
         }
@@ -8262,35 +8452,16 @@
      },
      "loadout": [
       {
-       "id": "c7ce-cfb4-23da-f08f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "d326-f3d9-8bc1-153",
+       "kind": "fixed",
+       "name": "Tesseract singularity chamber",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "c7ce-cfb4-23da-f08f:f0d3-b21-f515-1054",
-         "name": "Armoured bulk",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "3877-caf9-6eb1-9139",
-           "name": "Armoured bulk",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "6",
-           "ap": "0",
-           "d": "1",
-           "keywords": "-"
-          }
-         ]
-        },
-        {
-         "id": "c7ce-cfb4-23da-f08f:d326-f3d9-8bc1-153",
+         "id": "d326-f3d9-8bc1-153:d326-f3d9-8bc1-153",
          "name": "Tesseract singularity chamber",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d948-41b3-e562-4ec4",
@@ -8315,6 +8486,100 @@
            "ap": "-3",
            "d": "D6+1",
            "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8cd-ad13-9ced-7622",
+       "kind": "choice",
+       "name": "Secondary weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8cd-ad13-9ced-7622:a83d-addc-d927-7f52",
+         "name": "Two gauss cannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c14b-fec2-1d67-a06",
+           "name": "Gauss cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lethal Hits"
+          }
+         ]
+        },
+        {
+         "id": "8cd-ad13-9ced-7622:e442-690e-fc30-5ed9",
+         "name": "Two particle beamers",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9811-cff8-97d1-9182",
+           "name": "Particle beamer",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "8cd-ad13-9ced-7622:f97d-e878-7468-c1b8",
+         "name": "Two tesla cannons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "97d1-36c-50d9-2a66",
+           "name": "Tesla cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Sustained Hits 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f0d3-b21-f515-1054",
+       "kind": "fixed",
+       "name": "Armoured bulk",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f0d3-b21-f515-1054:927a-5f3d-6d88-260",
+         "name": "Armoured bulk",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3877-caf9-6eb1-9139",
+           "name": "Armoured bulk",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
           }
          ]
         }
@@ -8421,16 +8686,16 @@
      },
      "loadout": [
       {
-       "id": "4080-0461-78ca-dd29",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "9be5-1d97-4957-fd73",
+       "kind": "fixed",
+       "name": "Titanic forelimbs",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "4080-0461-78ca-dd29:9be5-1d97-4957-fd73",
+         "id": "9be5-1d97-4957-fd73:9be5-1d97-4957-fd73",
          "name": "Titanic forelimbs",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f7bc-c56-e829-fc4a",
@@ -8454,6 +8719,65 @@
            "s": "8",
            "ap": "-1",
            "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2815-eb02-857c-f8e6",
+       "kind": "choice",
+       "name": "Weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2815-eb02-857c-f8e6:237f-84f1-139b-e9ec",
+         "name": "Two singularity generators",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "94a2-f8f6-6dbf-c4cb",
+           "name": "Singularity generator",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2D6",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "Blast, Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "2815-eb02-857c-f8e6:879a-5e15-79eb-cf4d",
+         "name": "Two synaptic obliterators and two transdimensional projectors",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a43d-2927-be52-c0a0",
+           "name": "Synaptic obliterator",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "8",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 2"
+          },
+          {
+           "profile_id": "d56a-467d-ecb9-9b6",
+           "name": "Transdimensional projector",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "24",
+           "ap": "-4",
+           "d": "D6+4",
            "keywords": "-"
           }
          ]

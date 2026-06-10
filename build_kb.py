@@ -351,10 +351,17 @@ def _collect_slots(container, kb, slots, visited):
         elif t == 'selectionEntryGroup':
             # options are the group's selectionEntries, including those reached
             # through entryLinks (10e routes many weapon options through links).
-            opt_entries = [(o, olink) for o, olink in kb.effective_children(elem)
+            kids = kb.effective_children(elem)
+            opt_entries = [(o, olink) for o, olink in kids
                            if ln(o.tag) == 'selectionEntry']
             if any(is_carrier(o) for o, _ in opt_entries):
                 continue  # model-composition group -> handled as separate models
+            # A group that also contains sub-groups is a wrapper (e.g. 'Wargear'
+            # holding fixed items + 'Weapon Option N' choices): descend so each
+            # leaf becomes its own slot rather than collapsing to one choice.
+            if any(ln(o.tag) == 'selectionEntryGroup' for o, _ in kids):
+                _collect_slots(elem, kb, slots, visited)
+                continue
             default_id = elem.attrib.get('defaultSelectionEntryId')
             options = []
             for o, olink in opt_entries:

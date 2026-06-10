@@ -439,16 +439,141 @@
      },
      "loadout": [
       {
-       "id": "f5cb-13eb-c974-fd0a",
+       "id": "3ae-5a0a-4510-21fe",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Big Gun",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "3ae-5a0a-4510-21fe:d5aa-da6c-782e-c6a9",
+         "name": "Killkannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4991-c399-ec31-e536",
+           "name": "Killkannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "3ae-5a0a-4510-21fe:fda-8994-d709-20ff",
+         "name": "Zzap gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c59c-65c9-8d4c-3a4a",
+           "name": "Zzap gun",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "D6+6",
+           "ap": "-3",
+           "d": "5",
+           "keywords": "Anti-Vehicle 4+"
+          }
+         ]
+        },
+        {
+         "id": "3ae-5a0a-4510-21fe:1fcf-a839-4b11-5177",
+         "name": "Kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9ebd-2f86-3c4d-f07",
+           "name": "➤ Kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "8d30-7148-666a-f1d0",
+           "name": "➤ Kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+3",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "63a7-6816-c39c-5afc",
+       "kind": "choice",
+       "name": "Tracks and Wheels",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "63a7-6816-c39c-5afc:6419-35ad-b9da-a3a2",
+         "name": "Deff rolla",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cc9f-3901-ef98-2b38",
+           "name": "Deff rolla",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "63a7-6816-c39c-5afc:f8d7-2bcc-346e-cb5d",
+         "name": "Tracks and wheels",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c31a-1d87-e6bf-68cc",
+           "name": "Tracks and wheels",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d714-5c73-954c-9091",
+       "kind": "fixed",
+       "name": "Lobba",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "f5cb-13eb-c974-fd0a:d714-5c73-954c-9091",
+         "id": "d714-5c73-954c-9091:16b8-c9e4-cf9-cf5",
          "name": "Lobba",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ada2-d3dc-221b-d44e",
@@ -463,11 +588,20 @@
            "keywords": "Blast, Indirect Fire"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3c51-5eaa-8eab-c2da",
+       "kind": "fixed",
+       "name": "Wreckin' ball",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f5cb-13eb-c974-fd0a:3c51-5eaa-8eab-c2da",
+         "id": "3c51-5eaa-8eab-c2da:3e1a-c27b-7ef-a2d6",
          "name": "Wreckin' ball",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7978-9eb5-37c7-45d8",
@@ -482,11 +616,20 @@
            "keywords": "Extra Attacks"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "5d30-eaaa-2400-b690",
+       "kind": "fixed",
+       "name": "Grabbin' klaw",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f5cb-13eb-c974-fd0a:5d30-eaaa-2400-b690",
+         "id": "5d30-eaaa-2400-b690:13e7-e408-69ab-5aef",
          "name": "Grabbin' klaw",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "762d-8cdc-960b-152e",
@@ -501,11 +644,20 @@
            "keywords": "Extra Attacks"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "0cc2-4235-4d46-90f0",
+       "kind": "fixed",
+       "name": "Big shoota",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f5cb-13eb-c974-fd0a:0cc2-4235-4d46-90f0",
+         "id": "0cc2-4235-4d46-90f0:1fa0-d99a-154f-ffd8",
          "name": "Big shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7984-498c-477b-98ae",
@@ -1077,16 +1229,72 @@
      },
      "loadout": [
       {
-       "id": "b89a-f2fc-a891-c2f8",
+       "id": "4dcd-5d7f-65c2-245b",
+       "kind": "fixed",
+       "name": "Squigosaur’s jaws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "4dcd-5d7f-65c2-245b:4dcd-5d7f-65c2-245b",
+         "name": "Squigosaur’s jaws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "f5dc-e5f7-8f42-2b83",
+           "name": "Squigosaur’s jaws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "7",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Devastating Wounds, Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8329-c0ff-daf8-3fe9",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Thump Gun",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8329-c0ff-daf8-3fe9:4909-436c-d89-94e9",
+         "name": "Thump gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2031-57b9-ff7d-5ce2",
+           "name": "Thump gun",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "0",
+           "d": "2",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "37d6-231f-76f8-77d2",
+       "kind": "fixed",
+       "name": "Beastchoppa",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "b89a-f2fc-a891-c2f8:37d6-231f-76f8-77d2",
+         "id": "37d6-231f-76f8-77d2:6084-9fb5-76d2-8487",
          "name": "Beastchoppa",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fdd4-6e9f-2fb2-9e67",
@@ -1101,11 +1309,20 @@
            "keywords": "Anti-Monster 4+, Anti-Vehicle 4+"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "f81c-2c4b-fc42-ea80",
+       "kind": "fixed",
+       "name": "Slugga",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "b89a-f2fc-a891-c2f8:f81c-2c4b-fc42-ea80",
+         "id": "f81c-2c4b-fc42-ea80:752e-cd9b-4721-f0b0",
          "name": "Slugga",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8a84-7c52-bf36-8bf9",
@@ -1118,25 +1335,6 @@
            "ap": "0",
            "d": "1",
            "keywords": "Pistol"
-          }
-         ]
-        },
-        {
-         "id": "b89a-f2fc-a891-c2f8:4dcd-5d7f-65c2-245b",
-         "name": "Squigosaur’s jaws",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "f5dc-e5f7-8f42-2b83",
-           "name": "Squigosaur’s jaws",
-           "weapon_type": "Melee",
-           "range": "Melee",
-           "a": "3",
-           "bs_ws": "4+",
-           "s": "7",
-           "ap": "-2",
-           "d": "3",
-           "keywords": "Devastating Wounds, Extra Attacks"
           }
          ]
         }
@@ -1249,16 +1447,129 @@
      },
      "loadout": [
       {
-       "id": "6cf1-2b7d-377b-6891",
+       "id": "130-ebbe-6bfe-794",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Additional Options",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "130-ebbe-6bfe-794:82cc-4b0b-8e55-bf48",
+         "name": "Tellyport blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4ae-ac01-6971-66cc",
+           "name": "Tellyport blasta",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "8",
+           "ap": "-1",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b3b9-15d9-18f8-ea8b",
+       "kind": "choice",
+       "name": "Kustom-mega Blaster",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b3b9-15d9-18f8-ea8b:c5a2-3b86-4d71-f926",
+         "name": "Kustom mega-blasta",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "b3b9-15d9-18f8-ea8b:4e8b-b781-673a-855f",
+         "name": "Kustom shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a564-4e0-9914-a50f",
+           "name": "Kustom shoota",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "4",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "b3b9-15d9-18f8-ea8b:f87b-896f-3aad-d4d2",
+         "name": "Kombi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1451-6820-fd91-1dec",
+           "name": "Kombi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "b3b9-15d9-18f8-ea8b:064a-bdc4-5d3a-ab24",
+         "name": "Killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef00-c81e-013c-7c65",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "bddb-02eb-ece3-bd7d",
+       "kind": "fixed",
+       "name": "Power klaw",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "6cf1-2b7d-377b-6891:bddb-02eb-ece3-bd7d",
+         "id": "bddb-02eb-ece3-bd7d:a325-d197-5553-a355",
          "name": "Power klaw",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "4948-c377-3e43-3d98",
@@ -1394,16 +1705,16 @@
      },
      "loadout": [
       {
-       "id": "1bf2-9cb6-cba9-eeee",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "8396-9b7-61f5-9ed",
+       "kind": "fixed",
+       "name": "Slugga",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "1bf2-9cb6-cba9-eeee:8396-9b7-61f5-9ed",
+         "id": "8396-9b7-61f5-9ed:752e-cd9b-4721-f0b0",
          "name": "Slugga",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8a84-7c52-bf36-8bf9",
@@ -1418,11 +1729,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "ab1e-8ea8-312b-0224",
+       "kind": "fixed",
+       "name": "Choppa",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "1bf2-9cb6-cba9-eeee:ab1e-8ea8-312b-0224",
+         "id": "ab1e-8ea8-312b-0224:8fca-90dd-a784-b5c0",
          "name": "Choppa",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e80d-0c84-0d78-d635",
@@ -1553,16 +1873,16 @@
      },
      "loadout": [
       {
-       "id": "ade6-24f4-f4e3-f259",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "7c7b-a23e-0d85-08a1",
+       "kind": "fixed",
+       "name": "Close combat weapon",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "ade6-24f4-f4e3-f259:7c7b-a23e-0d85-08a1",
+         "id": "7c7b-a23e-0d85-08a1:b292-af7e-e129-8336",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f8a4-5309-fb04-e2c4",
@@ -1577,11 +1897,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "3d77-f1d6-997e-208c",
+       "kind": "fixed",
+       "name": "Shokk attack gun",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "ade6-24f4-f4e3-f259:3d77-f1d6-997e-208c",
+         "id": "3d77-f1d6-997e-208c:5a62-fc16-4f10-8f80",
          "name": "Shokk attack gun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "ef7e-2df3-e5ed-8eaf",
@@ -3191,16 +3520,44 @@
      },
      "loadout": [
       {
-       "id": "57c4-8244-5eab-33c3",
+       "id": "f464-c9e3-535b-5188",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Skorcha Missile Rack",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "f464-c9e3-535b-5188:fa1-d94-c71c-36c8",
+         "name": "Skorcha missile rack",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "6af3-2d3f-58d5-391e",
+           "name": "Skorcha missile rack",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "2D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c870-a811-b474-87d4",
+       "kind": "fixed",
+       "name": "Twin big shoota",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "57c4-8244-5eab-33c3:c870-a811-b474-87d4",
+         "id": "c870-a811-b474-87d4:8e99-adf-bad4-e07f",
          "name": "Twin big shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2990-d370-7498-3e58",
@@ -3215,11 +3572,20 @@
            "keywords": "Rapid Fire 2, Twin-linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "59b0-90cc-a5d0-aa82",
+       "kind": "fixed",
+       "name": "Twin supa-shoota",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "57c4-8244-5eab-33c3:59b0-90cc-a5d0-aa82",
+         "id": "59b0-90cc-a5d0-aa82:7c7-2cc-12e-c710",
          "name": "Twin supa-shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "169f-aa32-d982-1f5a",
@@ -3234,11 +3600,20 @@
            "keywords": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "d13b-19cb-f2d6-ae99",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "57c4-8244-5eab-33c3:d13b-19cb-f2d6-ae99",
+         "id": "d13b-19cb-f2d6-ae99:c20a-6327-4743-4114",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -3351,16 +3726,44 @@
      },
      "loadout": [
       {
-       "id": "08c5-054c-3f84-8f68",
+       "id": "26d-7cdd-27c5-2cdd",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Twin Supa-shootas (2-3)",
+       "min_select": 2,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "26d-7cdd-27c5-2cdd:89f1-2b13-1285-d84e",
+         "name": "Twin supa-shoota",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "169f-aa32-d982-1f5a",
+           "name": "Twin supa-shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3fe9-c673-6cfe-6f0c",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "08c5-054c-3f84-8f68:3fe9-c673-6cfe-6f0c",
+         "id": "3fe9-c673-6cfe-6f0c:c20a-6327-4743-4114",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -3463,16 +3866,16 @@
      },
      "loadout": [
       {
-       "id": "1dec-4515-a1cf-88f3",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "cce1-1241-fcb5-5997",
+       "kind": "fixed",
+       "name": "Stompy feet",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "1dec-4515-a1cf-88f3:cce1-1241-fcb5-5997",
+         "id": "cce1-1241-fcb5-5997:cce1-1241-fcb5-5997",
          "name": "Stompy feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2f80-93a6-3326-8742",
@@ -3485,6 +3888,110 @@
            "ap": "0",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2f50-9d15-a92e-fb8c",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": 4,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "2f50-9d15-a92e-fb8c:9f50-ada6-8082-15e7",
+         "name": "Big shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "2f50-9d15-a92e-fb8c:ba1e-528f-ec57-6a41",
+         "name": "Kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "2f50-9d15-a92e-fb8c:a0b-d6ca-bc06-2f6f",
+         "name": "Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "2f50-9d15-a92e-fb8c:20ce-b502-54cb-4aae",
+         "name": "Skorcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2836-aa14-8c6b-da7e",
+           "name": "Skorcha",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "2f50-9d15-a92e-fb8c:7cfa-bba3-f906-b473",
+         "name": "Dread klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5019-da4d-308b-e3a3",
+           "name": "Dread klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Dead Choppy"
           }
          ]
         }
@@ -7063,16 +7570,63 @@
      },
      "loadout": [
       {
-       "id": "53a0-9149-85b5-ca44",
+       "id": "529f-1fb5-b2da-8eae",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Wrench",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "529f-1fb5-b2da-8eae:c6e4-e5a5-d4be-d07c",
+         "name": "Wrench",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "9ffb-39f3-d46b-2f31",
+           "name": "Wrench",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "529f-1fb5-b2da-8eae:8ca4-9bdd-d210-624d",
+         "name": "Killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "152f-bcce-3-f8f7",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "29df-345a-6ab5-4644",
+       "kind": "fixed",
+       "name": "Kustom mega-slugga",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "53a0-9149-85b5-ca44:29df-345a-6ab5-4644",
+         "id": "29df-345a-6ab5-4644:45df-1f49-a53f-13eb",
          "name": "Kustom mega-slugga",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e6dc-45f4-f247-45e1",
@@ -8322,16 +8876,16 @@
      },
      "loadout": [
       {
-       "id": "e678-3063-de93-7a9e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "e9e3-3cff-1ff2-f9cc",
+       "kind": "fixed",
+       "name": "Beast Snagga klaw",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "e678-3063-de93-7a9e:e9e3-3cff-1ff2-f9cc",
+         "id": "e9e3-3cff-1ff2-f9cc:e9e3-3cff-1ff2-f9cc",
          "name": "Beast Snagga klaw",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f02b-3f98-414c-38e5",
@@ -8452,16 +9006,16 @@
      },
      "loadout": [
       {
-       "id": "3ce2-52ad-7bf5-1235",
-       "kind": "choice",
-       "name": "Wargear",
+       "id": "73f5-86ce-612d-5a0f",
+       "kind": "fixed",
+       "name": "’Urty syringe",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "3ce2-52ad-7bf5-1235:73f5-86ce-612d-5a0f",
+         "id": "73f5-86ce-612d-5a0f:14e-7f95-331e-8d6c",
          "name": "’Urty syringe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6087-fccb-f0b5-d3e6",
@@ -8476,11 +9030,20 @@
            "keywords": "Anti-Infantry 4+, Extra Attacks, Precision"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "bc10-845c-3ec2-1091",
+       "kind": "fixed",
+       "name": "Power klaw",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "3ce2-52ad-7bf5-1235:bc10-845c-3ec2-1091",
+         "id": "bc10-845c-3ec2-1091:ee65-6385-44ba-3758",
          "name": "Power klaw",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2a0c-d470-c159-9b2b",
@@ -10442,35 +11005,16 @@
      },
      "loadout": [
       {
-       "id": "eec2-6ed3-27cd-f0cd",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "f8a0-f279-3ee8-2eda",
+       "kind": "fixed",
+       "name": "Twin slugga",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "eec2-6ed3-27cd-f0cd:183b-3f43-10fc-ca2d",
-         "name": "Kombi-weapon",
-         "is_default": false,
-         "weapons": [
-          {
-           "profile_id": "1451-6820-fd91-1dec",
-           "name": "Kombi-weapon",
-           "weapon_type": "Ranged",
-           "range": "24\"",
-           "a": "1",
-           "bs_ws": "5+",
-           "s": "4",
-           "ap": "0",
-           "d": "1",
-           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
-          }
-         ]
-        },
-        {
-         "id": "eec2-6ed3-27cd-f0cd:f8a0-f279-3ee8-2eda",
+         "id": "f8a0-f279-3ee8-2eda:f8a0-f279-3ee8-2eda",
          "name": "Twin slugga",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "5bde-8a1f-83e6-6450",
@@ -10483,6 +11027,109 @@
            "ap": "0",
            "d": "1",
            "keywords": "Pistol, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d636-df33-eff7-a1a5",
+       "kind": "choice",
+       "name": "Attack Squig",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "d636-df33-eff7-a1a5:b7a6-0fd2-8079-83c3",
+         "name": "Attack squig",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3094-cf7a-7a70-3807",
+           "name": "Attack Squig",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5eb8-cd57-5dee-4eec",
+       "kind": "choice",
+       "name": "Big Choppa",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5eb8-cd57-5dee-4eec:446d-ce2c-1afc-c5fb",
+         "name": "Big choppa",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a43a-fbb3-2a23-b3c5",
+           "name": "Big choppa",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "5eb8-cd57-5dee-4eec:9b81-c90b-705a-6af2",
+         "name": "Power klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2b2f-dd7c-cb35-1a32",
+           "name": "Power klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "183b-3f43-10fc-ca2d",
+       "kind": "fixed",
+       "name": "Kombi-weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "183b-3f43-10fc-ca2d:ac6f-9310-e9ac-678",
+         "name": "Kombi-weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1451-6820-fd91-1dec",
+           "name": "Kombi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
           }
          ]
         }
@@ -10753,16 +11400,16 @@
      },
      "loadout": [
       {
-       "id": "2bdc-ca87-75f3-65df",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "c12-1527-2508-aa3f",
+       "kind": "fixed",
+       "name": "Smasha gun",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "2bdc-ca87-75f3-65df:c12-1527-2508-aa3f",
+         "id": "c12-1527-2508-aa3f:c12-1527-2508-aa3f",
          "name": "Smasha gun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "e0c3-c641-1834-7011",
@@ -10777,11 +11424,95 @@
            "keywords": "Blast"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "1d07-b41f-f7f6-65b3",
+       "kind": "choice",
+       "name": "Twin Wazbom Mega-kannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1d07-b41f-f7f6-65b3:adf-c65c-b8b9-6633",
+         "name": "Twin wazbom mega-kannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "18ff-f18d-fdb4-99f",
+           "name": "Twin wazbom mega-kannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Blast, Hazardous, Twin-linked"
+          }
+         ]
         },
         {
-         "id": "2bdc-ca87-75f3-65df:7594-fe41-9050-fbf0",
-         "name": "Armoured hull",
+         "id": "1d07-b41f-f7f6-65b3:9043-7ba-74b7-51f3",
+         "name": "Twin tellyport mega-blasta",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "325c-f450-e74f-68c9",
+           "name": "Twin tellyport mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-1",
+           "d": "D6+1",
+           "keywords": "Blast, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "f8a7-188e-248d-5890",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "f8a7-188e-248d-5890:7ad2-f83c-5cc5-4072",
+         "name": "Twin supa-shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e106-91cd-aee-8662",
+           "name": "Twin supa-shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7594-fe41-9050-fbf0",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "7594-fe41-9050-fbf0:c20a-6327-4743-4114",
+         "name": "Armoured hull",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -11429,16 +12160,16 @@
      },
      "loadout": [
       {
-       "id": "8a89-f3d5-f974-56c9",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "1ebb-4e0a-9896-734f",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "8a89-f3d5-f974-56c9:1ebb-4e0a-9896-734f",
+         "id": "1ebb-4e0a-9896-734f:1ebb-4e0a-9896-734f",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "d420-7c93-9760-baf8",
@@ -11453,11 +12184,20 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "cd6a-9500-bb1b-c525",
+       "kind": "fixed",
+       "name": "Mega-tank weapons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "8a89-f3d5-f974-56c9:cd6a-9500-bb1b-c525",
+         "id": "cd6a-9500-bb1b-c525:cd6a-9500-bb1b-c525",
          "name": "Mega-tank weapons",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "896-e64-1128-a32f",
@@ -11470,6 +12210,110 @@
            "ap": "0",
            "d": "1",
            "keywords": "Rapid Fire 10"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "63b9-7717-d040-5129",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "63b9-7717-d040-5129:e81a-4309-ab7f-12b3",
+         "name": "Twin big shoota",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c450-62ee-d859-1f9e",
+           "name": "Twin big shoota",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "63b9-7717-d040-5129:e141-ac14-32c0-34f8",
+         "name": "Twin grotzooka",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a501-edfa-367b-3756",
+           "name": "Twin grotzooka",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D3+3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Blast, Ignores Cover, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "63b9-7717-d040-5129:6b6d-51b9-b812-c520",
+         "name": "Twin kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8b2-4cf6-2d3a-7e9",
+           "name": "Twin kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "63b9-7717-d040-5129:ef28-3822-b537-22f2",
+         "name": "Twin rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9736-e397-f565-86f2",
+           "name": "Twin rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "63b9-7717-d040-5129:2ff-3362-a51f-a276",
+         "name": "Twin skorcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "80d1-7d55-7939-f6e3",
+           "name": "Twin skorcha",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent, Twin-linked"
           }
          ]
         }
@@ -11560,16 +12404,16 @@
      },
      "loadout": [
       {
-       "id": "5dc5-65b1-71e3-5cb4",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "89c7-3225-1bc6-f023",
+       "kind": "fixed",
+       "name": "Gorin’ horns",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "5dc5-65b1-71e3-5cb4:89c7-3225-1bc6-f023",
+         "id": "89c7-3225-1bc6-f023:89c7-3225-1bc6-f023",
          "name": "Gorin’ horns",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "fc84-d51b-ce99-36dc",
@@ -11594,6 +12438,46 @@
            "ap": "-2",
            "d": "D6",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5965-f0a9-9f75-c627",
+       "kind": "choice",
+       "name": "Kannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "5965-f0a9-9f75-c627:1bb4-4590-e7ed-d8f3",
+         "name": "Kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bbe-d027-4cc3-45b",
+           "name": "➤ Kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad9-ed17-a724-9191",
+           "name": "➤ Kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
           }
          ]
         }
@@ -11706,16 +12590,16 @@
      },
      "loadout": [
       {
-       "id": "9d8a-457b-57ee-fa20",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "c0b1-a70b-89a0-a5f9",
+       "kind": "fixed",
+       "name": "Huge tusks",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "9d8a-457b-57ee-fa20:c0b1-a70b-89a0-a5f9",
+         "id": "c0b1-a70b-89a0-a5f9:c0b1-a70b-89a0-a5f9",
          "name": "Huge tusks",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "22fa-5ab5-c07-2e6c",
@@ -11740,6 +12624,65 @@
            "ap": "-2",
            "d": "3",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c125-6ace-cee2-1f54",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c125-6ace-cee2-1f54:e2e9-d6e3-7d7d-76ae",
+         "name": "Supa-kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b99b-9792-55a5-cdc0",
+           "name": "Supa-kannon",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "2D6",
+           "bs_ws": "5+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "c125-6ace-cee2-1f54:95b4-4fb1-62e8-ed4a",
+         "name": "Kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bbe-d027-4cc3-45b",
+           "name": "➤ Kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad9-ed17-a724-9191",
+           "name": "➤ Kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
           }
          ]
         }
@@ -11853,16 +12796,16 @@
      },
      "loadout": [
       {
-       "id": "bede-984a-c688-c3ca",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "c7d8-6dc9-8246-dfaf",
+       "kind": "fixed",
+       "name": "Reinforced ram",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "bede-984a-c688-c3ca:c7d8-6dc9-8246-dfaf",
+         "id": "c7d8-6dc9-8246-dfaf:c7d8-6dc9-8246-dfaf",
          "name": "Reinforced ram",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "dac9-4f29-7424-e50",
@@ -11877,11 +12820,67 @@
            "keywords": "-"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "49d8-b298-b34f-2726",
+       "kind": "choice",
+       "name": "Bursta Kannon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "49d8-b298-b34f-2726:5ab6-c7c2-e5c4-2c34",
+         "name": "Bursta kannon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "19b3-1b0c-2d8e-7180",
+           "name": "Bursta kannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3D6",
+           "bs_ws": "5+",
+           "s": "14",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
         },
         {
-         "id": "bede-984a-c688-c3ca:7400-78ba-9ebc-2ecc",
-         "name": "Skorcha",
+         "id": "49d8-b298-b34f-2726:489a-ed98-e89a-6687",
+         "name": "Giga shoota",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cda0-d4a4-4ca6-ff68",
+           "name": "Giga shoota",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "30",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7400-78ba-9ebc-2ecc",
+       "kind": "fixed",
+       "name": "Skorcha",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "7400-78ba-9ebc-2ecc:7a18-2212-5898-1149",
+         "name": "Skorcha",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2836-aa14-8c6b-da7e",
@@ -11896,11 +12895,20 @@
            "keywords": "Ignores Cover, Torrent"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "4706-a695-3cfa-93bf",
+       "kind": "fixed",
+       "name": "Twin big shoota",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "bede-984a-c688-c3ca:4706-a695-3cfa-93bf",
+         "id": "4706-a695-3cfa-93bf:8e99-adf-bad4-e07f",
          "name": "Twin big shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2990-d370-7498-3e58",
@@ -12015,16 +13023,16 @@
      },
      "loadout": [
       {
-       "id": "b8f0-6dc4-df27-5353",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "a182-6e27-79cb-8b58",
+       "kind": "fixed",
+       "name": "Boombits",
+       "min_select": 2,
+       "max_select": 2,
        "options": [
         {
-         "id": "b8f0-6dc4-df27-5353:a182-6e27-79cb-8b58",
+         "id": "a182-6e27-79cb-8b58:a182-6e27-79cb-8b58",
          "name": "Boombits",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "edd1-533-fb4c-7a5e",
@@ -12039,11 +13047,86 @@
            "keywords": "Torrent"
           }
          ]
+        }
+       ]
+      },
+      {
+       "id": "9a90-445a-e807-577",
+       "kind": "choice",
+       "name": "Wargear Options",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "9a90-445a-e807-577:cd25-a8c7-3a7f-0d29",
+         "name": "Dread killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b109-688a-9f1d-ea63",
+           "name": "Dread killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
         },
         {
-         "id": "b8f0-6dc4-df27-5353:33ce-59f7-5825-01ea",
-         "name": "Stompy feet",
+         "id": "9a90-445a-e807-577:01d3-cb97-395a-08a2",
+         "name": "Killkannon",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef40-bb1b-6f5b-998e",
+           "name": "Killkannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "9a90-445a-e807-577:107d-96f4-5315-b31b",
+         "name": "Dread rippa klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5026-1c24-bdeb-68fa",
+           "name": "Dread rippa klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "33ce-59f7-5825-01ea",
+       "kind": "fixed",
+       "name": "Stompy feet",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "33ce-59f7-5825-01ea:bb3c-3fee-6ae2-517a",
+         "name": "Stompy feet",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0f23-8fe8-fe2c-e34b",
@@ -12152,16 +13235,82 @@
      },
      "loadout": [
       {
-       "id": "2c1c-b249-b4a9-e5a1",
+       "id": "103a-7b9-d947-eb62",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Wargear Options",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "103a-7b9-d947-eb62:9b2d-bdb9-6d41-d4a2",
+         "name": "Dread killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b109-688a-9f1d-ea63",
+           "name": "Dread killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-3",
+           "d": "4",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "103a-7b9-d947-eb62:95d3-872e-fec2-5b4b",
+         "name": "Killkannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef40-bb1b-6f5b-998e",
+           "name": "Killkannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D6+3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "103a-7b9-d947-eb62:a8ab-1f00-4a28-f5a3",
+         "name": "Dread rippa klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5026-1c24-bdeb-68fa",
+           "name": "Dread rippa klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "795f-e59d-4b9e-7db5",
+       "kind": "fixed",
+       "name": "Stompy feet",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "2c1c-b249-b4a9-e5a1:795f-e59d-4b9e-7db5",
+         "id": "795f-e59d-4b9e-7db5:bb3c-3fee-6ae2-517a",
          "name": "Stompy feet",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "0f23-8fe8-fe2c-e34b",
@@ -12270,16 +13419,87 @@
      },
      "loadout": [
       {
-       "id": "f42d-3cbc-9cc9-b6e7",
+       "id": "84f-50d8-aa0f-c54c",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Wargear Options",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "84f-50d8-aa0f-c54c:514b-8040-22a0-4445",
+         "name": "Kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bbe-d027-4cc3-45b",
+           "name": "➤ Kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad9-ed17-a724-9191",
+           "name": "➤ Kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "84f-50d8-aa0f-c54c:fd51-1b8f-c671-e9eb",
+         "name": "Supa-kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f6dc-c7d9-4203-f5c0",
+           "name": "➤ Supa-kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D3+3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2596-f437-c78c-8b19",
+           "name": "➤ Supa-kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6+3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9880-2a15-14e7-773",
+       "kind": "fixed",
+       "name": "Big shoota",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "f42d-3cbc-9cc9-b6e7:9880-2a15-14e7-773",
+         "id": "9880-2a15-14e7-773:1fa0-d99a-154f-ffd8",
          "name": "Big shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "7984-498c-477b-98ae",
@@ -12294,11 +13514,20 @@
            "keywords": "Rapid Fire 2"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "c85c-8627-5865-ac53",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "f42d-3cbc-9cc9-b6e7:c85c-8627-5865-ac53",
+         "id": "c85c-8627-5865-ac53:c20a-6327-4743-4114",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -12417,16 +13646,82 @@
      },
      "loadout": [
       {
-       "id": "a680-e95c-2ec5-3d54",
+       "id": "e0b3-c5ac-9034-e2db",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Killsaw",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e0b3-c5ac-9034-e2db:7da1-5006-14ad-879",
+         "name": "Killsaw",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3900-ca6c-3b11-e10e",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e0b3-c5ac-9034-e2db:9144-7ad1-bbf2-9c81",
+         "name": "Big choppa",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a43a-fbb3-2a23-b3c5",
+           "name": "Big choppa",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e0b3-c5ac-9034-e2db:893c-a595-8f35-a8a6",
+         "name": "Power klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2b2f-dd7c-cb35-1a32",
+           "name": "Power klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ee39-3778-704e-1b8",
+       "kind": "fixed",
+       "name": "Twin dakkagun",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "a680-e95c-2ec5-3d54:ee39-3778-704e-1b8",
+         "id": "ee39-3778-704e-1b8:dc72-6a9b-5792-557a",
          "name": "Twin dakkagun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2a24-7d4d-f8d9-148",
@@ -12748,16 +14043,16 @@
      },
      "loadout": [
       {
-       "id": "b8e3-3881-82d1-dd6f",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "8f81-e36d-bf1e-b823",
+       "kind": "fixed",
+       "name": "Spiked ram",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "b8e3-3881-82d1-dd6f:8f81-e36d-bf1e-b823",
+         "id": "8f81-e36d-bf1e-b823:8f81-e36d-bf1e-b823",
          "name": "Spiked ram",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6c8-9749-9c83-5228",
@@ -12772,11 +14067,48 @@
            "keywords": "-"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "7790-8d5a-10f3-dd24",
+       "kind": "choice",
+       "name": "Big Shootas (0-3)",
+       "min_select": null,
+       "max_select": 3,
+       "options": [
         {
-         "id": "b8e3-3881-82d1-dd6f:119f-7117-dec1-fd6b",
-         "name": "Supa-kannon",
+         "id": "7790-8d5a-10f3-dd24:597b-5c97-ab67-7fd7",
+         "name": "Big shoota",
          "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "119f-7117-dec1-fd6b",
+       "kind": "fixed",
+       "name": "Supa-kannon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "119f-7117-dec1-fd6b:8d14-e9c0-ad28-fa20",
+         "name": "Supa-kannon",
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f6dc-c7d9-4203-f5c0",
@@ -13041,16 +14373,63 @@
      },
      "loadout": [
       {
-       "id": "e4e9-cf79-ef80-4ac3",
+       "id": "b568-fc65-1cb-7ba4",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Power Klaw",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b568-fc65-1cb-7ba4:6cdf-c444-b379-3e29",
+         "name": "Power klaw",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2a0c-d470-c159-9b2b",
+           "name": "Power klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b568-fc65-1cb-7ba4:d82a-5fe1-8209-0442",
+         "name": "Killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "79a1-8883-2650-9969",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2ea5-2db8-ceb0-b2f",
+       "kind": "fixed",
+       "name": "’Urty syringe",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "e4e9-cf79-ef80-4ac3:2ea5-2db8-ceb0-b2f",
+         "id": "2ea5-2db8-ceb0-b2f:14e-7f95-331e-8d6c",
          "name": "’Urty syringe",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "6087-fccb-f0b5-d3e6",
@@ -13065,11 +14444,20 @@
            "keywords": "Anti-Infantry 4+, Extra Attacks, Precision"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "470f-24a1-c7c1-33fc",
+       "kind": "fixed",
+       "name": "Twin dakkagun",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "e4e9-cf79-ef80-4ac3:470f-24a1-c7c1-33fc",
+         "id": "470f-24a1-c7c1-33fc:dc72-6a9b-5792-557a",
          "name": "Twin dakkagun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2a24-7d4d-f8d9-148",
@@ -13875,16 +15263,110 @@
      },
      "loadout": [
       {
-       "id": "b046-c136-681d-7a04",
+       "id": "a224-a652-2d1a-809",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Killsaw",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a224-a652-2d1a-809:3faa-9e7f-740b-2361",
+         "name": "Killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef00-c81e-013c-7c65",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a4a4-1a81-17c6-9793",
+       "kind": "choice",
+       "name": "Twin Big Shootas",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a4a4-1a81-17c6-9793:ad61-d07f-4cc1-fea7",
+         "name": "Twin big shoota",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2990-d370-7498-3e58",
+           "name": "Twin big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a4a4-1a81-17c6-9793:0188-f5aa-b3a3-b700",
+         "name": "Kopta rokkits",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a3df-eb78-084d-f421",
+           "name": "Kopta rokkits",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "a4a4-1a81-17c6-9793:1754-f94c-6b8c-d9ad",
+         "name": "Kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ffc0-cc98-bf71-a2af",
+       "kind": "fixed",
+       "name": "Slugga",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "b046-c136-681d-7a04:ffc0-cc98-bf71-a2af",
+         "id": "ffc0-cc98-bf71-a2af:752e-cd9b-4721-f0b0",
          "name": "Slugga",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "8a84-7c52-bf36-8bf9",
@@ -13899,11 +15381,20 @@
            "keywords": "Pistol"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "24f0-4790-b0ea-965d",
+       "kind": "fixed",
+       "name": "Spinnin’ blades",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "b046-c136-681d-7a04:24f0-4790-b0ea-965d",
+         "id": "24f0-4790-b0ea-965d:16ab-3dbd-57ed-34bb",
          "name": "Spinnin’ blades",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cdb2-bd61-e612-1699",
@@ -13983,16 +15474,16 @@
      },
      "loadout": [
       {
-       "id": "c721-5cd5-3190-4b5e",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "4b3d-dca5-3cda-b29d",
+       "kind": "fixed",
+       "name": "Krusha kannon",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "c721-5cd5-3190-4b5e:4b3d-dca5-3cda-b29d",
+         "id": "4b3d-dca5-3cda-b29d:4b3d-dca5-3cda-b29d",
          "name": "Krusha kannon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a817-2d4b-5a1a-89b0",
@@ -14019,11 +15510,20 @@
            "keywords": "Blast"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "8d1e-3739-a173-9b91",
+       "kind": "fixed",
+       "name": "Tracks and wheels",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
         {
-         "id": "c721-5cd5-3190-4b5e:8d1e-3739-a173-9b91",
+         "id": "8d1e-3739-a173-9b91:8d1e-3739-a173-9b91",
          "name": "Tracks and wheels",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "610b-ab7-8c94-b037",
@@ -14036,6 +15536,72 @@
            "ap": "-1",
            "d": "1",
            "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7e0a-c897-9ef6-9752",
+       "kind": "choice",
+       "name": "Wargear Options (0-2)",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "7e0a-c897-9ef6-9752:2e66-f76f-4880-9897",
+         "name": "2 Rokkit launchas",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "7e0a-c897-9ef6-9752:9cd9-9830-add8-c7f8",
+         "name": "Twin big shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2990-d370-7498-3e58",
+           "name": "Twin big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "7e0a-c897-9ef6-9752:674b-7459-ce8a-5e7f",
+         "name": "Skorcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2836-aa14-8c6b-da7e",
+           "name": "Skorcha",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
           }
          ]
         }
@@ -14137,16 +15703,188 @@
      },
      "loadout": [
       {
-       "id": "09b5-0bc6-87c1-98ab",
+       "id": "6d7e-3046-8d01-6a36",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Big Gunz",
+       "min_select": 3,
+       "max_select": 3,
+       "options": [
+        {
+         "id": "6d7e-3046-8d01-6a36:2f65-2b9d-1968-4cd5",
+         "name": "Kannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4bbe-d027-4cc3-45b",
+           "name": "➤ Kannon - shell",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "ad9-ed17-a724-9191",
+           "name": "➤ Kannon - frag",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "6d7e-3046-8d01-6a36:67b6-ccb6-2a12-c691",
+         "name": "Lobba",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ada2-d3dc-221b-d44e",
+           "name": "Lobba",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast, Indirect Fire"
+          }
+         ]
+        },
+        {
+         "id": "6d7e-3046-8d01-6a36:f587-96e-8972-71a2",
+         "name": "Zzap gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5700-8d15-99d5-1ec1",
+           "name": "Zzap gun",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "2D6",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "64f7-2833-b2e6-1f31",
+       "kind": "choice",
+       "name": "Big Shootas (0-5)",
+       "min_select": null,
+       "max_select": 5,
+       "options": [
+        {
+         "id": "64f7-2833-b2e6-1f31:a87b-f43b-a214-d86b",
+         "name": "Big shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5e9c-d9a2-1aaf-d0c2",
+       "kind": "choice",
+       "name": "Twin Big Shootas",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "5e9c-d9a2-1aaf-d0c2:cd8b-6a59-841d-7a01",
+         "name": "Twin big shoota",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2990-d370-7498-3e58",
+           "name": "Twin big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2, Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "5e9c-d9a2-1aaf-d0c2:f377-9791-191-c96f",
+         "name": "Skorcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2836-aa14-8c6b-da7e",
+           "name": "Skorcha",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "5e9c-d9a2-1aaf-d0c2:5a06-c20-6e22-2637",
+         "name": "Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "49f2-85d8-86db-7fdc",
+       "kind": "fixed",
+       "name": "Deff rolla",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "09b5-0bc6-87c1-98ab:49f2-85d8-86db-7fdc",
+         "id": "49f2-85d8-86db-7fdc:de9b-6229-5f85-bdbe",
          "name": "Deff rolla",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "cc9f-3901-ef98-2b38",
@@ -14265,16 +16003,148 @@
      },
      "loadout": [
       {
-       "id": "8006-0bfe-1179-0701",
+       "id": "a048-e8e7-a613-abac",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Big Shoota",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a048-e8e7-a613-abac:d849-e88e-213d-bd60",
+         "name": "Big shoota",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "a048-e8e7-a613-abac:6d52-9ce1-e768-5cba",
+         "name": "Kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "a048-e8e7-a613-abac:9e71-3500-7b06-bef3",
+         "name": "Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "a048-e8e7-a613-abac:be3a-d081-e0f0-b904",
+         "name": "Skorcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2836-aa14-8c6b-da7e",
+           "name": "Skorcha",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6079-5573-6bba-5b24",
+       "kind": "choice",
+       "name": "Deffguns",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6079-5573-6bba-5b24:620c-5d6b-82e7-6b4",
+         "name": "2 Deffguns",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7a69-ee8-36f1-41a0",
+           "name": "Deffgun",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "5+",
+           "s": "8",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "6079-5573-6bba-5b24:ac4-e6e2-d5b5-8928",
+         "name": "2 Rattler kannons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e73b-b9da-ce92-6bd3",
+           "name": "Rattler kannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "6",
+           "bs_ws": "5+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4d62-d5f6-d4b1-18ab",
+       "kind": "fixed",
+       "name": "Armoured hull",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "8006-0bfe-1179-0701:4d62-d5f6-d4b1-18ab",
+         "id": "4d62-d5f6-d4b1-18ab:c20a-6327-4743-4114",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -14399,16 +16269,63 @@
      },
      "loadout": [
       {
-       "id": "5c95-a5f4-611b-eeb1",
+       "id": "653e-6d8d-4f23-1be1",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Wargear Options",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "653e-6d8d-4f23-1be1:605e-3f70-32b-693b",
+         "name": "2 Wing missiles",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "486c-92de-6777-c96d",
+           "name": "Wing missiles",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "653e-6d8d-4f23-1be1:49f5-61b1-d0d0-e46f",
+         "name": "2 Grot-guided bomms",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5400-8efe-9c97-718a",
+           "name": "Grot-guided bomm",
+           "weapon_type": "Ranged",
+           "range": "72\"",
+           "a": "D6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Blast, One Shot, Indirect Fire"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "5ed4-242b-198b-812a",
+       "kind": "fixed",
+       "name": "Twin big shoota",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "5c95-a5f4-611b-eeb1:5ed4-242b-198b-812a",
+         "id": "5ed4-242b-198b-812a:8e99-adf-bad4-e07f",
          "name": "Twin big shoota",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2990-d370-7498-3e58",
@@ -14423,11 +16340,20 @@
            "keywords": "Rapid Fire 2, Twin-linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "543c-1f07-767b-eaa5",
+       "kind": "fixed",
+       "name": "Armoured hull",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "5c95-a5f4-611b-eeb1:543c-1f07-767b-eaa5",
+         "id": "543c-1f07-767b-eaa5:c20a-6327-4743-4114",
          "name": "Armoured hull",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "57d4-85a7-87ad-b165",
@@ -14697,16 +16623,16 @@
      },
      "loadout": [
       {
-       "id": "aadd-6ea5-a13a-2cbf",
-       "kind": "choice",
-       "name": "Wargear",
-       "min_select": null,
-       "max_select": null,
+       "id": "6b8d-e695-ea70-1193",
+       "kind": "fixed",
+       "name": "Lifta-droppa",
+       "min_select": 1,
+       "max_select": 1,
        "options": [
         {
-         "id": "aadd-6ea5-a13a-2cbf:6b8d-e695-ea70-1193",
+         "id": "6b8d-e695-ea70-1193:6b8d-e695-ea70-1193",
          "name": "Lifta-droppa",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "a908-7f9c-564d-770d",
@@ -14719,6 +16645,225 @@
            "ap": "-3",
            "d": "D6+1",
            "keywords": "Anti-Vehicle 3+"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a588-439f-8146-68ea",
+       "kind": "choice",
+       "name": "Tracks and Wheels",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "a588-439f-8146-68ea:1746-5298-19ac-bc5a",
+         "name": "Deff rolla",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cc9f-3901-ef98-2b38",
+           "name": "Deff rolla",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "a588-439f-8146-68ea:cef2-1c81-b91e-6dbf",
+         "name": "Tracks and wheels",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "c31a-1d87-e6bf-68cc",
+           "name": "Tracks and wheels",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1cd-7e0e-e7c8-4cd7",
+       "kind": "choice",
+       "name": "Gunz",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c1cd-7e0e-e7c8-4cd7:30ff-f75c-8832-8899",
+         "name": "1 Big shoota",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "c1cd-7e0e-e7c8-4cd7:c2cf-f1a9-e5d7-20de",
+         "name": "2 Big shootas",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "c1cd-7e0e-e7c8-4cd7:2610-4494-3dae-d87b",
+         "name": "1 Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "c1cd-7e0e-e7c8-4cd7:befd-b1f1-66e6-e5b3",
+         "name": "2 Rokkit launchas",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "c1cd-7e0e-e7c8-4cd7:eedf-4307-3af0-d39f",
+         "name": "1 Big shoota and 1 rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7984-498c-477b-98ae",
+           "name": "Big shoota",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          },
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8bdc-d59e-47a9-8cf0",
+       "kind": "fixed",
+       "name": "Grabbin' klaw",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "8bdc-d59e-47a9-8cf0:13e7-e408-69ab-5aef",
+         "name": "Grabbin' klaw",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "762d-8cdc-960b-152e",
+           "name": "Grabbin' klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e737-889-219f-be14",
+       "kind": "fixed",
+       "name": "Wreckin' ball",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "e737-889-219f-be14:3e1a-c27b-7ef-a2d6",
+         "name": "Wreckin' ball",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7978-9eb5-37c7-45d8",
+           "name": "Wreckin' ball",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "10",
+           "ap": "0",
+           "d": "D6",
+           "keywords": "Extra Attacks"
           }
          ]
         }
@@ -14960,16 +17105,338 @@
      },
      "loadout": [
       {
-       "id": "ca53-cf0d-31e8-2745",
+       "id": "38e9-915d-3f85-6888",
        "kind": "choice",
-       "name": "Wargear",
+       "name": "Slugga",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "38e9-915d-3f85-6888:27f5-548b-f42f-52bb",
+         "name": "Slugga",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8a84-7c52-bf36-8bf9",
+           "name": "Slugga",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:d4d0-3089-c473-3739",
+         "name": "Kombi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1451-6820-fd91-1dec",
+           "name": "Kombi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:2fb0-19ec-adac-9567",
+         "name": "Kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:9510-e9a8-26c0-fed7",
+         "name": "Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:9870-91d1-837f-9717",
+         "name": "Big choppa",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8c72-e163-8dfb-cb28",
+           "name": "Big choppa",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:c339-830b-366d-dae4",
+         "name": "Power klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "37af-5bc8-9327-7d1e",
+           "name": "Power klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:f57d-8580-4645-8766",
+         "name": "Kustom mega-slugga",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e6dc-45f4-f247-45e1",
+           "name": "Kustom mega-slugga",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "38e9-915d-3f85-6888:518b-ffc6-da4e-6c0d",
+         "name": "Shokk attack gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef7e-2df3-e5ed-8eaf",
+           "name": "Shokk attack gun",
+           "weapon_type": "Ranged",
+           "range": "60\"",
+           "a": "D6+1",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Blast, Heavy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ca57-1c11-4d15-6e3",
+       "kind": "choice",
+       "name": "Choppa",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "ca57-1c11-4d15-6e3:c65-4eee-17d-81c6",
+         "name": "Kombi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1451-6820-fd91-1dec",
+           "name": "Kombi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "5+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:f8a9-c125-ed2d-f167",
+         "name": "Kustom mega-blasta",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1508-23e-fa3b-d006",
+           "name": "Kustom mega-blasta",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Hazardous"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:7534-df98-75fd-8844",
+         "name": "Rokkit launcha",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2adc-cde3-b9d4-3aaf",
+           "name": "Rokkit launcha",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "9",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:7255-65e5-72ce-6514",
+         "name": "Choppa",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e80d-0c84-0d78-d635",
+           "name": "Choppa",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:9a7a-ce95-23ff-2be9",
+         "name": "Big choppa",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "8c72-e163-8dfb-cb28",
+           "name": "Big choppa",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:79a4-04f7-f896-36cb",
+         "name": "Power klaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "37af-5bc8-9327-7d1e",
+           "name": "Power klaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "4+",
+           "s": "9",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:5af6-2f8b-d073-37fe",
+         "name": "Killsaw",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ef00-c81e-013c-7c65",
+           "name": "Killsaw",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "12",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "ca57-1c11-4d15-6e3:053c-feb1-c05c-5e16",
+         "name": "Kustom mega-slugga",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e6dc-45f4-f247-45e1",
+           "name": "Kustom mega-slugga",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D3",
+           "bs_ws": "5+",
+           "s": "8",
+           "ap": "-2",
+           "d": "D6",
+           "keywords": "Blast, Hazardous"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "9d35-2345-f5d5-20a7",
+       "kind": "fixed",
+       "name": "Twin dakkagun",
        "min_select": null,
        "max_select": null,
        "options": [
         {
-         "id": "ca53-cf0d-31e8-2745:9d35-2345-f5d5-20a7",
+         "id": "9d35-2345-f5d5-20a7:dc72-6a9b-5792-557a",
          "name": "Twin dakkagun",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "2a24-7d4d-f8d9-148",
@@ -14984,11 +17451,20 @@
            "keywords": "Assault, Rapid Fire 2, Twin-linked"
           }
          ]
-        },
+        }
+       ]
+      },
+      {
+       "id": "936a-d4e3-edc7-01c2",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": null,
+       "max_select": null,
+       "options": [
         {
-         "id": "ca53-cf0d-31e8-2745:936a-d4e3-edc7-01c2",
+         "id": "936a-d4e3-edc7-01c2:b292-af7e-e129-8336",
          "name": "Close combat weapon",
-         "is_default": false,
+         "is_default": true,
          "weapons": [
           {
            "profile_id": "f8a4-5309-fb04-e2c4",
