@@ -156,6 +156,11 @@ nav.admin-nav a.active { background: #5a4d1f; color: #fff2c0; }
 /* Datasheet picker on model_new: each tab panel scrolls vertically so a
    big faction (Blood Angels w/ inheritance ≈ 150 units) doesn't blow the
    layout. Items are touch-friendly rows. */
+/* As a grid item in .form-grid, this defaults to min-width:auto and would
+   refuse to shrink below the tab row's intrinsic width — so the row expands
+   the cell instead of letting .tab-headers overflow-x scroll. min-width:0
+   lets it shrink so the horizontal scroll actually engages. */
+.datasheet-picker { min-width: 0; }
 .datasheet-picker .empty-state { padding: 0.8rem; font-style: italic; }
 .datasheet-picker .unit-tabs .tab-panel {
   max-height: 360px;
