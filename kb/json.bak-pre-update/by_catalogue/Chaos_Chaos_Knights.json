@@ -1,0 +1,2916 @@
+{
+  "id": "46d8-abc8-ef3a-9f85",
+  "name": "Chaos - Chaos Knights",
+  "is_library": false,
+  "revision": "7",
+  "source_file": "Chaos - Chaos Knights.cat",
+  "categories": [
+    {
+      "id": "06be-3f52-afb7-a99f",
+      "name": "Accursed Cultists"
+    },
+    {
+      "id": "ac7d-42cc-342b-c911",
+      "name": "Damned"
+    },
+    {
+      "id": "3e1b-4c61-e82a-f37f",
+      "name": "Cultist Mob"
+    },
+    {
+      "id": "2b46-f0a9-3c6f-54da",
+      "name": "Dark Commune"
+    },
+    {
+      "id": "bad8-8d1c-c5a8-d0ff",
+      "name": "Traitor Guardsmen Squad"
+    },
+    {
+      "id": "08c6-ccd5-bb57-3716",
+      "name": "Fellgor Beastmen"
+    },
+    {
+      "id": "91bd-c36d-0cdb-78c6",
+      "name": "Traitor Enforcer"
+    },
+    {
+      "id": "0de6-58ea-0288-84fe",
+      "name": "Cultist Firebrand"
+    },
+    {
+      "id": "3108-6e28-4a77-d0c6",
+      "name": "Cultist Mob with Firearms"
+    },
+    {
+      "id": "93b7-6273-18b4-b20c",
+      "name": "Renegade Enforcer"
+    },
+    {
+      "id": "f58d-8132-8900-0fc3",
+      "name": "Renegade Heavy Weapons Squad"
+    },
+    {
+      "id": "e54c-3999-c9de-70f5",
+      "name": "Renegade Ogryn Beast Handler"
+    },
+    {
+      "id": "5827-9697-7414-7984",
+      "name": "Renegade Ogryn Brutes"
+    },
+    {
+      "id": "a806-bb18-59f4-0da2",
+      "name": "Renegade Plague Ogryns"
+    },
+    {
+      "id": "8625-c9ef-695b-2b34",
+      "name": "Rogue Psyker"
+    },
+    {
+      "id": "f056-311e-9491-5df1",
+      "name": "Gellerpox Infected"
+    },
+    {
+      "id": "6658-a6ab-7761-59d4",
+      "name": "Mutoid Vermin"
+    },
+    {
+      "id": "eea1-8c12-4d11-c383",
+      "name": "Negavolt Cultists"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "3b78-bfd1-fe54-cf68",
+      "name": "Accursed Cultists",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Accursed Cultists",
+          "target_id": "06be-3f52-afb7-a99f",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "97d8-390c-e39b-d4bd",
+          "name": "Torment",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "6+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6248-0599-9a4d-854a",
+              "kind": "fixed",
+              "name": "Hideous mutations",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6248-0599-9a4d-854a:6248-0599-9a4d-854a",
+                  "name": "Hideous mutations",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b169-4558-4191-1c0e",
+                      "name": "Hideous mutations",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "D6+2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d33a-0b02-5739-2a1a",
+          "name": "Mutant",
+          "min_count": 5,
+          "max_count": 10,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "444c-8ed8-f43b-9fe1",
+              "kind": "fixed",
+              "name": "Blasphemous appendages",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "444c-8ed8-f43b-9fe1:444c-8ed8-f43b-9fe1",
+                  "name": "Blasphemous appendages",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0c7f-89f2-c851-848f",
+                      "name": "Blasphemous appendages",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ea62-7fcf-189e-9b92",
+          "name": "Howling Horde",
+          "type": "Abilities",
+          "description": "Each time an enemy unit has shot, if one or more models from this unit were destroyed as a result of those attacks, this unit can make a Horde move. To do so, roll one D6; this unit can move a number of inches up to the result, but this unit must finish that move as close as possible to the nearest enemy unit (excluding AIRCRAFT). When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Horde move while it is Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 195,
+          "condition_text": "≥ 9 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 9,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "544c-478c-06c3-271a",
+      "name": "Cultist Mob",
+      "type": "unit",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Cultist Mob",
+          "target_id": "3e1b-4c61-e82a-f37f",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "544c-478c-06c3-271a",
+          "name": "Cultist Mob",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "58ce-0070-e50b-f821",
+              "kind": "fixed",
+              "name": "Cultist Champion",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "58ce-0070-e50b-f821:58ce-0070-e50b-f821",
+                  "name": "Cultist Champion",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9972-2a5e-8c35-506b",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "3b76-994a-7211-383b",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cfb9-9800-71c3-64f7",
+              "kind": "fixed",
+              "name": "Cultist w/ autopistol and brutal assault weapon",
+              "min_select": 9,
+              "max_select": 19,
+              "options": [
+                {
+                  "id": "cfb9-9800-71c3-64f7:cfb9-9800-71c3-64f7",
+                  "name": "Cultist w/ autopistol and brutal assault weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "06f2-d57c-c423-949b",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e7fe-8395-4000-9dcd",
+          "name": "For the Dark Gods",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 100,
+          "condition_text": "≥ 11 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 11,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "7de7-2e7a-3454-ee84",
+      "name": "Dark Commune",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "34df-5015-5a92-4e91",
+          "name": "Cult Demagogue",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "cb16-f0d1-1924-362a",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cb16-f0d1-1924-362a:cb16-f0d1-1924-362a",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1709-0915-d210-86ba",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8cc8-ce90-9ad3-ec8d",
+              "kind": "fixed",
+              "name": "Commune stave",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8cc8-ce90-9ad3-ec8d:8cc8-ce90-9ad3-ec8d",
+                  "name": "Commune stave",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b214-ebaa-3c40-6549",
+                      "name": "Commune stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "D3",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6b33-f7d0-d2a1-0357",
+          "name": "Mindwitch",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bae2-3416-081f-02e6",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bae2-3416-081f-02e6:bae2-3416-081f-02e6",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "16b5-0e9f-c216-723f",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a42b-a165-bf39-3149",
+              "kind": "fixed",
+              "name": "Warp Curse",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a42b-a165-bf39-3149:a42b-a165-bf39-3149",
+                  "name": "Warp Curse",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f666-4865-a69d-5fba",
+                      "name": "➤ Warp Curse - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Psychic"
+                    },
+                    {
+                      "profile_id": "ffef-8e89-e5bb-04f4",
+                      "name": "➤ Warp Curse - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Hazardous, Psychic, Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b3c0-0ee9-14ea-cfe3",
+          "name": "Iconarch",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f823-eacc-0de7-58d4",
+              "kind": "fixed",
+              "name": "Autopistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f823-eacc-0de7-58d4:f823-eacc-0de7-58d4",
+                  "name": "Autopistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4b03-c7a9-b506-1615",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9372-a0ce-7386-fcc2",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9372-a0ce-7386-fcc2:9372-a0ce-7386-fcc2",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bcb6-80c8-6ea8-69aa",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4990-b7ce-7d1f-5469",
+          "name": "Blessed Blades",
+          "min_count": 2,
+          "max_count": 2,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3300-840a-3e81-7127",
+              "kind": "fixed",
+              "name": "Commune blade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3300-840a-3e81-7127:3300-840a-3e81-7127",
+                  "name": "Commune blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2ddf-cda3-8ff2-de8d",
+                      "name": "Commune blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "0fee-292f-26f8-db25",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ ACCURSED CULTISTS\n■ CULTIST MOB"
+        },
+        {
+          "id": "535d-d041-9b3f-bed1",
+          "name": "Faithful Flock",
+          "type": "Abilities",
+          "description": "While this unit is leading a unit and contains a CULT DEMAGOGUE model, models in that unit have a 5+ invulnerable save."
+        },
+        {
+          "id": "092f-e3f9-1143-96f7",
+          "name": "Dark Ritual",
+          "type": "Abilities",
+          "description": "Once per battle, in your Command phase, if this unit contains a CULT DEMAGOGUE model, it can use this ability. If it does, until the end of the turn, this unit can declare a charge in a turn in which it Advanced and each time a model in this unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6c40-644a-53f2-69c2",
+      "name": "Traitor Guardsmen Squad",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Traitor Guardsmen Squad",
+          "target_id": "bad8-8d1c-c5a8-d0ff",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6c40-644a-53f2-69c2",
+          "name": "Traitor Guardsmen Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "db29-1610-6e1c-c775",
+              "kind": "fixed",
+              "name": "Traitor Sergeant",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "db29-1610-6e1c-c775:db29-1610-6e1c-c775",
+                  "name": "Traitor Sergeant",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "717f-e270-7068-b6a1",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "6893-1de6-b02f-a0a3",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "5931-d0a8-9a60-b1d7",
+                      "name": "Corrupted pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "3001-0d31-f98f-5f4a",
+                      "name": "Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f6cb-83e2-0c0d-05b0",
+              "kind": "choice",
+              "name": "9 Traitor Guardsmen",
+              "min_select": 9,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "f6cb-83e2-0c0d-05b0:46e3-9fb2-7ad6-9597",
+                  "name": "Guardsman w/ lasgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6746-e8b8-ac52-7e94",
+                      "name": "Lasgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "eb15-6894-696d-3d36",
+          "name": "Twisted Defence Force",
+          "type": "Abilities",
+          "description": "While this unit is within range of an objective marker, each time a ranged attack targets this unit, models in this unit have the Benefit of Cover against that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2693-0f93-e1d8-f300",
+      "name": "Fellgor Beastmen",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Fellgor Beastmen",
+          "target_id": "08c6-ccd5-bb57-3716",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2693-0f93-e1d8-f300",
+          "name": "Fellgor Beastmen",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "5+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3ffa-a7a4-9a12-b5d7",
+              "kind": "fixed",
+              "name": "Fellgor Champion",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3ffa-a7a4-9a12-b5d7:3ffa-a7a4-9a12-b5d7",
+                  "name": "Fellgor Champion",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6861-7831-3189-d6a6",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "4b7a-f222-f4ff-a390",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "cba2-e87b-01ac-3750",
+                      "name": "➤ Plasma pistol - standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "96bb-4077-c2a5-d99f",
+                      "name": "➤ Plasma pistol- supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cdb3-8e64-593f-6f38",
+              "kind": "choice",
+              "name": "9 Beastmen",
+              "min_select": 9,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "cdb3-8e64-593f-6f38:c982-6147-87da-3989",
+                  "name": "Beastman",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e2c5-0af3-ceac-b61c",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "68a4-8ea0-3b79-b193",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "cdb3-8e64-593f-6f38:f9ae-5e1d-542f-ab1e",
+                  "name": "Beastman w/ great weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "68d5-72f8-02c8-29b3",
+                      "name": "Great weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "fc9c-d56a-c29e-bb2b",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "cdb3-8e64-593f-6f38:0605-c26f-3315-83d6",
+                  "name": "Beastman w/ corrupted stave",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e804-a185-c0a8-ab91",
+                      "name": "Corrupted stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Devastating Wounds, Psychic"
+                    },
+                    {
+                      "profile_id": "7f83-21f1-418e-f6a7",
+                      "name": "Corrupted stave",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Psychic"
+                    },
+                    {
+                      "profile_id": "01cf-c228-9f2f-0d97",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d7a6-f651-21d9-1732",
+          "name": "Bestial Raiders",
+          "type": "Abilities",
+          "description": "If this unit begins the game in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. If this unit is in Strategic Reserves, for the purposes of setting it up on the battlefield, treat the current battle round number as being one higher than it actually is."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ce8e-af89-58fe-94bd",
+      "name": "Traitor Enforcer",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "0fc7-49fd-36e5-7305",
+          "name": "Traitor Enforcer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b1e7-bdaa-d82d-29b4",
+              "kind": "fixed",
+              "name": "Power fist",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b1e7-bdaa-d82d-29b4:b1e7-bdaa-d82d-29b4",
+                  "name": "Power fist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e6dd-1569-1d7c-758a",
+                      "name": "Power fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3818-204c-0a2a-9ac7",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3818-204c-0a2a-9ac7:3818-204c-0a2a-9ac7",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "665c-0ace-f3fe-ec7e",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "04b5-ea88-cdcf-9d97",
+          "name": "Traitor Ogryn",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6550-6482-4838-9c92",
+              "kind": "fixed",
+              "name": "Ogryn weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6550-6482-4838-9c92:6550-6482-4838-9c92",
+                  "name": "Ogryn weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d697-04d7-b838-d12c",
+                      "name": "Ogryn weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b8d1-dc1c-a3b8-58a2",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following unit:\n■ TRAITOR GUARDSMAN SQUAD"
+        },
+        {
+          "id": "0c80-eeab-80a6-651e",
+          "name": "Brutal Example",
+          "type": "Abilities",
+          "description": "Once per turn, while this unit is leading a unit and contains a TRAITOR ENFORCER model, you can target that unit with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit from your army with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed."
+        },
+        {
+          "id": "78ed-1f24-2794-4cb8",
+          "name": "Mutated Bodyguard",
+          "type": "Abilities",
+          "description": "While this unit contains a Traitor Ogryn model, CHARACTER models in this unit have the Feel No Pain 4+ ability."
+        },
+        {
+          "id": "459b-0af2-1d01-bfd1",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This unit's TRAITOR ENFORCER model has a 5+ invulnerable save"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "919b-7d4c-5a57-0b40",
+      "name": "Cultist Firebrand",
+      "type": "model",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Cultist Firebrand",
+          "target_id": "0de6-58ea-0288-84fe",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "919b-7d4c-5a57-0b40",
+          "name": "Cultist Firebrand",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "549c-fc1c-6e66-7edf",
+              "kind": "fixed",
+              "name": "Balefire pike",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "549c-fc1c-6e66-7edf:549c-fc1c-6e66-7edf",
+                  "name": "Balefire pike",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "87ad-3a04-7181-e21e",
+                      "name": "Balefire pike",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "020b-41c6-1628-072d",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "020b-41c6-1628-072d:020b-41c6-1628-072d",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0847-1787-852d-42a3",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7449-2b99-da4f-d0d2",
+          "name": "Fiery Faith",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, you can re-roll Leadership tests taken for that unit."
+        },
+        {
+          "id": "f3d9-8358-aeef-e021",
+          "name": "Cursed Flames",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy INFANTRY unit hit by one or more of those attacks. That unit must make a Battle-shock test."
+        },
+        {
+          "id": "a6d3-7f56-982b-5c98",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ ACCURSED CULTISTS\n■ CULTIST MOB"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bbab-6f86-5279-be89",
+      "name": "Cultist Mob with Firearms [Legends]",
+      "type": "unit",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        },
+        {
+          "name": "Cultist Mob with Firearms",
+          "target_id": "3108-6e28-4a77-d0c6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bbab-6f86-5279-be89",
+          "name": "Cultist Mob with Firearms [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "95ef-6f82-dd91-22f3",
+              "kind": "fixed",
+              "name": "Cultist Champion",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "95ef-6f82-dd91-22f3:95ef-6f82-dd91-22f3",
+                  "name": "Cultist Champion",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cc5a-dfea-2d1b-66a8",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "4cd9-0881-145b-db0e",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2b2e-d0d9-c0c7-762a",
+              "kind": "choice",
+              "name": "9 - 19 Cultists",
+              "min_select": 9,
+              "max_select": 19,
+              "options": [
+                {
+                  "id": "2b2e-d0d9-c0c7-762a:97cc-8cc5-cf1e-26a8",
+                  "name": "Cultist w/ autopistol and brutal assault weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c768-253d-fe2a-382a",
+                      "name": "Autopistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "2b2e-d0d9-c0c7-762a:f255-24e9-e5a7-de02",
+                  "name": "Cultist w/ flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "980b-d2fd-0412-ac8f",
+                      "name": "Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "2b2e-d0d9-c0c7-762a:bdb7-908f-1eac-8004",
+                  "name": "Cultist w/ cultist grenade launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e433-dee0-3791-11b9",
+                      "name": "➤ Cultist grenade launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "0172-b9d3-a941-fcc3",
+                      "name": "➤ Cultist grenade launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "2b2e-d0d9-c0c7-762a:1598-bae8-c157-1b34",
+                  "name": "Cultist w/ heavy stubber",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "823b-24e6-f8b5-6302",
+                      "name": "Heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "5+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Heavy, Rapid Fire 3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "69bc-8f74-5ef0-5717",
+          "name": "For the Dark Gods",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker  you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 100,
+          "condition_text": "≥ 11 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 11,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "88ab-80b1-fb67-7f82",
+      "name": "Renegade Enforcer [Legends]",
+      "type": "model",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Renegade Enforcer",
+          "target_id": "93b7-6273-18b4-b20c",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "88ab-80b1-fb67-7f82",
+          "name": "Renegade Enforcer [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "56c4-c9ad-9984-7d45",
+              "kind": "choice",
+              "name": "Melee weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "56c4-c9ad-9984-7d45:50c1-64ff-3bc4-3660",
+                  "name": "Enforcer melee weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c203-fa02-f669-45a7",
+                      "name": "Enforcer melee weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "56c4-c9ad-9984-7d45:c251-7836-b5f2-3dc4",
+                  "name": "Power weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8f51-1418-c0e9-ba9a",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "56c4-c9ad-9984-7d45:595e-ef49-a175-d1f0",
+                  "name": "Power fist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ca38-8a09-296e-7b6a",
+                      "name": "Power fist",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1500-1aa8-428f-2ab2",
+              "kind": "choice",
+              "name": "Ranged weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1500-1aa8-428f-2ab2:09a2-5096-5130-4b5a",
+                  "name": "Enforcer pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "44d1-b72d-2d27-812f",
+                      "name": "Enforcer pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "1500-1aa8-428f-2ab2:163c-a841-5527-52d7",
+                  "name": "Autogun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7e7c-0c24-0018-63f4",
+                      "name": "Autogun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "1500-1aa8-428f-2ab2:f315-3d37-4067-8b6c",
+                  "name": "Lasgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fe8a-dcd1-0712-111d",
+                      "name": "Lasgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "1500-1aa8-428f-2ab2:fde0-a8cb-da7e-e24a",
+                  "name": "Shotgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "921c-6862-e0e6-01e6",
+                      "name": "Shotgun",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "a77b-9ae3-87de-b9af",
+          "name": "Brutal Example",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, you can target that unit with the Insane Bravery Stratagem for 0CP, and can do so even if another unit from your army has already been targeted with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed."
+        },
+        {
+          "id": "1a03-feea-04f7-83ca",
+          "name": "Enforcer",
+          "type": "Abilities",
+          "description": "This model's unit is eligible to declare a charge in a turn in which it Fell Back."
+        },
+        {
+          "id": "825d-1f96-099c-949e",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ TRAITOR GUARDSMEN SQUAD\n■ RENEGADE HEAVY WEAPONS SQUAD"
+        },
+        {
+          "id": "3897-bc30-2201-eb85",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "68ad-03fb-10b7-fc0b",
+      "name": "Renegade Heavy Weapons Squad [Legends]",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Renegade Heavy Weapons Squad",
+          "target_id": "f58d-8132-8900-0fc3",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68ad-03fb-10b7-fc0b",
+          "name": "Renegade Heavy Weapons Squad [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "846e-f2fd-70d6-8fda",
+              "kind": "fixed",
+              "name": "Heavy Weapons Team",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "846e-f2fd-70d6-8fda:846e-f2fd-70d6-8fda",
+                  "name": "Heavy Weapons Team",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ceb9-9e26-c23a-1b1a",
+                      "name": "Renegade firearm",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    },
+                    {
+                      "profile_id": "59c2-0110-299a-fffb",
+                      "name": "Close combat weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "0d6b-835e-77e8-7e5d",
+                      "name": "Heavy stubber",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "5+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Heavy, Rapid Fire 3"
+                    },
+                    {
+                      "profile_id": "015b-e944-69de-ab4e",
+                      "name": "Heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "5+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Heavy, Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "0304-df36-7bb7-700c",
+                      "name": "Autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Heavy"
+                    },
+                    {
+                      "profile_id": "b609-fa89-db99-dd24",
+                      "name": "Lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "5+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Heavy"
+                    },
+                    {
+                      "profile_id": "3309-d56f-4382-e84e",
+                      "name": "➤ Missile launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "5+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Heavy"
+                    },
+                    {
+                      "profile_id": "bb5a-8cbb-d167-7865",
+                      "name": "➤ Missile launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "5+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "1321-1972-c0e6-caa1",
+                      "name": "Mortar",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "5+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Heavy, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "00ff-4dba-2b4b-ab5a",
+          "name": "Covering Fire",
+          "type": "Abilities",
+          "description": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+."
+        }
+      ],
+      "transport": [
+        {
+          "id": "ec29-fdbf-7e08-c359",
+          "name": "Renegade Heavy Weapons Squad",
+          "capacity": "For the purposes of embarking within TRANSPORTS, each Renegade Heavy Weapons Team model counts as two models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2ad8-b5f2-1b54-0eb8",
+      "name": "Renegade Ogryn Beast Handler [Legends]",
+      "type": "unit",
+      "points": 40,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Beast",
+          "target_id": "4c3e-9310-a516-3590",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Renegade Ogryn Beast Handler",
+          "target_id": "e54c-3999-c9de-70f5",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ca9b-fbb6-c470-1deb",
+          "name": "Ogryn Pack Master",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4033-57ae-98a5-2b82",
+              "kind": "fixed",
+              "name": "Mauler goad and ripper claw",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4033-57ae-98a5-2b82:4033-57ae-98a5-2b82",
+                  "name": "Mauler goad and ripper claw",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1f25-3daf-6c76-c81f",
+                      "name": "Mauler goad and ripper claw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c811-21cb-de7e-b9c9",
+          "name": "Chaos Mauler Hound",
+          "min_count": 3,
+          "max_count": 6,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8129-8f2c-c41f-6a2c",
+              "kind": "fixed",
+              "name": "Befouled fangs and claws",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8129-8f2c-c41f-6a2c:8129-8f2c-c41f-6a2c",
+                  "name": "Befouled fangs and claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a080-918e-4377-30e7",
+                      "name": "Befouled fangs and claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b369-99cd-18af-71b0",
+          "name": "Beastmaster",
+          "type": "Abilities",
+          "description": "While this unit contains an Ogryn Pack Master model, you can re-roll Charge rolls made for this unit, and each time a Chaos Mauler Hound model in this unit makes an attack, re-roll a Hit roll of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 70,
+          "condition_text": "> 4 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 4,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "6abc-4bee-f011-f490",
+      "name": "Renegade Ogryn Brutes [Legends]",
+      "type": "unit",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Renegade Ogryn Brutes",
+          "target_id": "5827-9697-7414-7984",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6abc-4bee-f011-f490",
+          "name": "Renegade Ogryn Brutes [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "6",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "eb69-ad4a-58d2-d15b",
+              "kind": "choice",
+              "name": "Ogryn Brutes",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "eb69-ad4a-58d2-d15b:21df-d5f0-da8e-36bf",
+                  "name": "Brute w/ Ogryn weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5cd0-460e-403d-1c58",
+                      "name": "Ogryn weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "eb69-ad4a-58d2-d15b:6208-8df3-4f2e-f88a",
+                  "name": "Brute w/ power drill",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f199-2179-e6de-89db",
+                      "name": "Ogryn power drill",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5520-55bc-a753-668d",
+          "name": "Ogryn Combat Stimms",
+          "type": "Abilities",
+          "description": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+        }
+      ],
+      "transport": [
+        {
+          "id": "a1cb-e3fb-c764-994b",
+          "name": "Renegade Ogryn Brutes",
+          "capacity": "For the purposes of embarking within TRANSPORTS, each Renegade Ogryn Brute model counts as one TERMINATOR model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6324-e721-420d-4436",
+      "name": "Renegade Plague Ogryns [Legends]",
+      "type": "unit",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Nurgle",
+          "target_id": "ed0d-8e2a-225c-2340",
+          "primary": false
+        },
+        {
+          "name": "Renegade Plague Ogryns",
+          "target_id": "a806-bb18-59f4-0da2",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6324-e721-420d-4436",
+          "name": "Renegade Plague Ogryns [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "7",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bea5-6b0f-2c15-6fdf",
+              "kind": "fixed",
+              "name": "Renegade Plague Ogryn",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "bea5-6b0f-2c15-6fdf:bea5-6b0f-2c15-6fdf",
+                  "name": "Renegade Plague Ogryn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "243a-0403-aee0-b349",
+                      "name": "Ogryn plague claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ca07-28e7-39c7-d97d",
+          "name": "Wall of Muscle",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack."
+        }
+      ],
+      "transport": [
+        {
+          "id": "a0ba-a814-bbd1-b084",
+          "name": "Renegade Plague Ogryns",
+          "capacity": "For the purposes of embarking within TRANSPORTS, each Renegade Plague Ogryn model counts as one TERMINATOR model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "dfc7-dc1f-1f4a-daa6",
+      "name": "Rogue Psyker [Legends]",
+      "type": "model",
+      "points": 60,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Psyker",
+          "target_id": "13bf-2bee-3ae0-b414",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Rogue Psyker",
+          "target_id": "8625-c9ef-695b-2b34",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "dfc7-dc1f-1f4a-daa6",
+          "name": "Rogue Psyker [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "5+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "df42-f8d2-4853-d1a2",
+              "kind": "fixed",
+              "name": "Laspistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "df42-f8d2-4853-d1a2:df42-f8d2-4853-d1a2",
+                  "name": "Laspistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4584-6981-d127-42e7",
+                      "name": "Laspistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "40da-cb2f-8bbf-e66c",
+              "kind": "fixed",
+              "name": "Psychic Strike",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "40da-cb2f-8bbf-e66c:40da-cb2f-8bbf-e66c",
+                  "name": "Psychic Strike",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ec6-3ea3-cfff-834d",
+                      "name": "➤ Psychic Strike - focused witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast, Devastating Wounds, Hazardous, Psychic"
+                    },
+                    {
+                      "profile_id": "4a04-edfc-4f33-79af",
+                      "name": "➤ Psychic Strike - witchfire",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Blast, Devastating Wounds, Psychic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1eca-8033-49b7-e09a",
+              "kind": "fixed",
+              "name": "Chaos stave",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1eca-8033-49b7-e09a:1eca-8033-49b7-e09a",
+                  "name": "Chaos stave",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b5a8-d038-f38b-e686",
+                      "name": "Chaos stave",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "D3",
+                      "keywords": "Psychic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3109-f3c1-b124-41e3",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ ACCURSED CULTISTS\n■ CULTIST MOB\n■ NEGAVOLT CULTISTS"
+        },
+        {
+          "id": "0a20-7eaa-5aac-0431",
+          "name": "Cursed Wardings (Psychic)",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks."
+        },
+        {
+          "id": "e3bb-ec81-0a02-babf",
+          "name": "Psychic Barrier (Psychic)",
+          "type": "Abilities",
+          "description": "At the start of your opponent’s Shooting phase, you can roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, models in this PSYKER’s unit have a 4+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7562-d429-6153-a823",
+      "name": "Gellerpox Infected [Legends]",
+      "type": "unit",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Nurgle",
+          "target_id": "ed0d-8e2a-225c-2340",
+          "primary": false
+        },
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        },
+        {
+          "name": "Gellerpox Infected",
+          "target_id": "f056-311e-9491-5df1",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6516-1e8d-2046-1186",
+          "name": "Gellerpox Mutant",
+          "min_count": 3,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b689-04ac-651e-dba2",
+              "kind": "fixed",
+              "name": "Brutal weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b689-04ac-651e-dba2:b689-04ac-651e-dba2",
+                  "name": "Brutal weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "750e-e10d-bc6b-035f",
+                      "name": "Brutal weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1426-c250-8566-f048",
+          "name": "Nightmare Hulk",
+          "min_count": 3,
+          "max_count": 3,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "6+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "75f4-130a-123c-fedd",
+              "kind": "fixed",
+              "name": "Hideous mutations",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "75f4-130a-123c-fedd:75f4-130a-123c-fedd",
+                  "name": "Hideous mutations",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dc1e-0182-a60b-0737",
+                      "name": "Hideous mutations",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1682-2183-62c6-a85d",
+          "name": "Fearsome (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this unit, each time that enemy unit takes a Battle-shock or Leadership test, subtract 1 from the result."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "68a3-27e6-94e0-dda7",
+      "name": "Mutoid Vermin [Legends]",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Swarm",
+          "target_id": "b00b-5bae-444f-964e",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Nurgle",
+          "target_id": "ed0d-8e2a-225c-2340",
+          "primary": false
+        },
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Mutoid Vermin",
+          "target_id": "6658-a6ab-7761-59d4",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68a3-27e6-94e0-dda7",
+          "name": "Mutoid Vermin [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "2",
+            "sv": "7+",
+            "w": "1",
+            "ld": "8+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "5030-a25e-1b5a-5ccc",
+              "kind": "fixed",
+              "name": "Mutoid Vermin",
+              "min_select": 16,
+              "max_select": 16,
+              "options": [
+                {
+                  "id": "5030-a25e-1b5a-5ccc:5030-a25e-1b5a-5ccc",
+                  "name": "Mutoid Vermin",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2033-f3e4-3d9a-8986",
+                      "name": "Diseased claws and fangs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b332-e451-1446-3e27",
+          "name": "Mischief Makers (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit (excluding MONSTERS and VEHICLES) is within 6\" of this unit, each time a model in that unit makes a melee attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a1b1-8647-15af-9731",
+      "name": "Negavolt Cultists [Legends]",
+      "type": "unit",
+      "points": 55,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Negavolt Cultists",
+          "target_id": "eea1-8c12-4d11-c383",
+          "primary": false
+        },
+        {
+          "name": "Damned",
+          "target_id": "ac7d-42cc-342b-c911",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a1b1-8647-15af-9731",
+          "name": "Negavolt Cultists [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "7+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "73f6-d962-64df-5a2c",
+              "kind": "fixed",
+              "name": "Negavolt Cultist",
+              "min_select": 4,
+              "max_select": 4,
+              "options": [
+                {
+                  "id": "73f6-d962-64df-5a2c:73f6-d962-64df-5a2c",
+                  "name": "Negavolt Cultist",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4718-1eaa-f112-e2ee",
+                      "name": "Electro-goads",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1b26-8985-6167-2e80",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 5+ invulnerable save."
+        },
+        {
+          "id": "38e9-65f0-26f2-e134",
+          "name": "Voltagheist Field",
+          "type": "Abilities",
+          "description": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound."
+        },
+        {
+          "id": "5a5e-0a19-37d7-1802",
+          "name": "Servants of the Abyss",
+          "type": "Abilities",
+          "description": "If a unit from your army with the Leader ability can be attached to a CULTIST MOB, it can be attached to this unit instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

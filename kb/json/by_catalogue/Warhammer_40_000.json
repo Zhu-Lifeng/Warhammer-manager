@@ -1,341 +1,853 @@
 {
-  "id": "sys-352e-adc2-7639-d6a9",
-  "name": "Warhammer 40,000 10th Edition",
-  "is_library": false,
-  "revision": "36",
-  "source_file": "Warhammer 40,000.gst",
-  "categories": [
-    {
-      "id": "9cfd-1c32-585f-7d5c",
-      "name": "Character"
-    },
-    {
-      "id": "4f3a-f0f7-6647-348d",
-      "name": "Epic Hero"
-    },
-    {
-      "id": "cf47-a0d7-7207-29dc",
-      "name": "Infantry"
-    },
-    {
-      "id": "9693-cf84-fe69-37a9",
-      "name": "Monster"
-    },
-    {
-      "id": "e338-111e-d0c6-b687",
-      "name": "Battleline"
-    },
-    {
-      "id": "ba07-411c-2832-1f79",
-      "name": "Dedicated Transport"
-    },
-    {
-      "id": "14a0-40c9-2748-ae6e",
-      "name": "Mounted"
-    },
-    {
-      "id": "2d7f-1892-2fd0-e29c",
-      "name": "Captain"
-    },
-    {
-      "id": "5a61-81ac-eb7c-a87e",
-      "name": "Grenades"
-    },
-    {
-      "id": "aff3-d6a3-2a95-9dc",
-      "name": "Imperium"
-    },
-    {
-      "id": "4ac9-fd30-1e3d-b249",
-      "name": "Configuration"
-    },
-    {
-      "id": "1160-70ae-a862-b1a8",
-      "name": "Unit"
-    },
-    {
-      "id": "c619-2086-bbcf-69c9",
-      "name": "Fly"
-    },
-    {
-      "id": "6df-937-16bc-8c1a",
-      "name": "Smoke"
-    },
-    {
-      "id": "13bf-2bee-3ae0-b414",
-      "name": "Psyker"
-    },
-    {
-      "id": "dbd4-63-af05-998",
-      "name": "Vehicle"
-    },
-    {
-      "id": "6dda-e157-334d-e93a",
-      "name": "Walker"
-    },
-    {
-      "id": "75e8-57c4-40e3-1817",
-      "name": "Transport"
-    },
-    {
-      "id": "63f1-e6e8-f6f6-a4f0",
-      "name": "Aircraft"
-    },
-    {
-      "id": "19d7-9c74-2140-5851",
-      "name": "Fortification"
-    },
-    {
-      "id": "d666-e2c9-b6cc-5716",
-      "name": "Towering"
-    },
-    {
-      "id": "5929-ad51-d006-e008",
-      "name": "Titanic"
-    },
-    {
-      "id": "4c3e-9310-a516-3590",
-      "name": "Beast"
-    },
-    {
-      "id": "4c00-2578-faf5-6918",
-      "name": "Chaos"
-    },
-    {
-      "id": "bb67-f191-6562-acc7",
-      "name": "Faction: Chaos Knights"
-    },
-    {
-      "id": "d1d8-6ae0-1be7-e9e",
-      "name": "Faction: Tyranids"
-    },
-    {
-      "id": "1015-db48-a2fa-c7da",
-      "name": "Faction: Drukhari"
-    },
-    {
-      "id": "4378-1827-4988-be4e",
-      "name": "Faction: Asuryani"
-    },
-    {
-      "id": "fa45-57e-930e-602b",
-      "name": "Faction: Astra Militarum"
-    },
-    {
-      "id": "b5e4-3253-c157-54fd",
-      "name": "Faction: Imperial Knights"
-    },
-    {
-      "id": "1e42-dfae-cbdd-207d",
-      "name": "Faction: Heretic Astartes"
-    },
-    {
-      "id": "fd71-afa6-b13b-7fda",
-      "name": "Faction: Adepta Sororitas"
-    },
-    {
-      "id": "ee0-cf31-4fb5-6b26",
-      "name": "Faction: Necrons"
-    },
-    {
-      "id": "571f-ec3a-a5a2-751a",
-      "name": "Faction: Legiones Daemonica"
-    },
-    {
-      "id": "b2a9-ede5-7a83-4da8",
-      "name": "Slaanesh"
-    },
-    {
-      "id": "ed0d-8e2a-225c-2340",
-      "name": "Nurgle"
-    },
-    {
-      "id": "4bd-5ee0-f179-2fc5",
-      "name": "Khorne"
-    },
-    {
-      "id": "b188-114f-6ba5-79a1",
-      "name": "Tzeentch"
-    },
-    {
-      "id": "6e7-40c-58d9-e402",
-      "name": "Faction: Adeptus Astartes"
-    },
-    {
-      "id": "5418-f86b-6e76-c5a",
-      "name": "Faction: Adeptus Mechanicus"
-    },
-    {
-      "id": "226b-cf1e-353a-ae7f",
-      "name": "Faction: Genestealer Cults"
-    },
-    {
-      "id": "bd1d-c1a5-6ca2-c791",
-      "name": "Faction: World Eaters"
-    },
-    {
-      "id": "8474-765-16a9-f00d",
-      "name": "Faction: Leagues of Votann"
-    },
-    {
-      "id": "9888-ddb2-a141-6037",
-      "name": "Faction: Death Guard"
-    },
-    {
-      "id": "3d58-2655-391e-ecc",
-      "name": "Faction: T'au Empire"
-    },
-    {
-      "id": "eea5-aeaf-bbf0-d5ee",
-      "name": "Faction: Adeptus Custodes"
-    },
-    {
-      "id": "56cc-5f43-2403-8da0",
-      "name": "Faction: Orks"
-    },
-    {
-      "id": "7002-1fbb-7571-e8e7",
-      "name": "Faction: Thousand Sons"
-    },
-    {
-      "id": "d564-3284-bf44-b873",
-      "name": "Faction: Grey Knights"
-    },
-    {
-      "id": "5128-90b-e4a5-dcbd",
-      "name": "Faction: Agents of the Imperium"
-    },
-    {
-      "id": "aab1-4f05-fabe-5ba5",
-      "name": "Faction: Dark Angels"
-    },
-    {
-      "id": "65e4-13-4fa8-b36c",
-      "name": "Faction: Salamanders"
-    },
-    {
-      "id": "d39c-9989-db7f-d815",
-      "name": "Faction: Deathwatch"
-    },
-    {
-      "id": "62ac-ef42-27b4-ae7",
-      "name": "Faction: Blood Angels"
-    },
-    {
-      "id": "1a2d-2f00-c054-4dcb",
-      "name": "Faction: Ultramarines"
-    },
-    {
-      "id": "a0d9-c115-2a-8330",
-      "name": "Faction: Space Wolves"
-    },
-    {
-      "id": "9249-acae-2882-d95",
-      "name": "Faction: Black Templars"
-    },
-    {
-      "id": "84b7-7194-3b84-1b0c",
-      "name": "Faction: Raven Guard"
-    },
-    {
-      "id": "b88e-1b0c-b79f-5cdf",
-      "name": "Faction: Iron Hands"
-    },
-    {
-      "id": "97aa-d0e4-71c7-96c3",
-      "name": "Faction: Imperial Fists"
-    },
-    {
-      "id": "5c0e-2250-dd3a-1df9",
-      "name": "Faction: White Scars"
-    },
-    {
-      "id": "5c0e-4c31-d51b-e470",
-      "name": "Warlord"
-    },
-    {
-      "id": "9c0e-7e25-4580-e439",
-      "name": "Daemon"
-    },
-    {
-      "id": "6474-0ce3-6b5a-120c",
-      "name": "Primarch"
-    },
-    {
-      "id": "4f09-0141-6c70-6c5a",
-      "name": "Daemon Prince"
-    },
-    {
-      "id": "b00b-5bae-444f-964e",
-      "name": "Swarm"
-    },
-    {
-      "id": "2471-e2e0-3f55-d6cb",
-      "name": "Drone"
-    },
-    {
-      "id": "7850-cc5a-c191-b80d",
-      "name": "Great Devourer"
-    },
-    {
-      "id": "cc77-a53-fca8-f48e",
-      "name": "Retinue"
-    },
-    {
-      "id": "740a-892c-8958-defa",
-      "name": "Terminator"
-    },
-    {
-      "id": "50a2-5557-84bb-ca4d",
-      "name": "Rhino"
-    },
-    {
-      "id": "dda2-bb0a-215e-ad9c",
-      "name": "Jump Pack"
-    },
-    {
-      "id": "4c40-ab9-54af-d290",
-      "name": "Armiger"
-    },
-    {
-      "id": "e4d6-1a77-132b-f39d",
-      "name": "Questoris"
-    },
-    {
-      "id": "af4c-b971-a31c-669c",
-      "name": "Dominus"
-    },
-    {
-      "id": "887b-ab87-92a2-20f5",
-      "name": "Allied Units"
-    },
-    {
-      "id": "f76f-29c1-de9-74c2",
-      "name": "Acastus"
-    },
-    {
-      "id": "481c-3b2e-5c99-c248",
-      "name": "Cerastus"
-    },
-    {
-      "id": "8cab-448d-37b7-32bc",
-      "name": "Artillery"
-    },
-    {
-      "id": "ac7e-be7b-eb02-4752",
-      "name": "Order of Battle"
-    },
-    {
-      "id": "a5a2-d0c0-0349-d226",
-      "name": "Faction: Harlequins"
-    },
-    {
-      "id": "9a21-190a-9d31-35d2",
-      "name": "Faction: Ynnari"
+ "id": "sys-352e-adc2-7639-d6a9",
+ "name": "Warhammer 40,000 10th Edition",
+ "is_library": false,
+ "revision": "118",
+ "source_file": "Warhammer 40,000.gst",
+ "categories": [
+  {
+   "id": "9cfd-1c32-585f-7d5c",
+   "name": "Character"
+  },
+  {
+   "id": "4f3a-f0f7-6647-348d",
+   "name": "Epic Hero"
+  },
+  {
+   "id": "cf47-a0d7-7207-29dc",
+   "name": "Infantry"
+  },
+  {
+   "id": "9693-cf84-fe69-37a9",
+   "name": "Monster"
+  },
+  {
+   "id": "e338-111e-d0c6-b687",
+   "name": "Battleline"
+  },
+  {
+   "id": "ba07-411c-2832-1f79",
+   "name": "Dedicated Transport"
+  },
+  {
+   "id": "14a0-40c9-2748-ae6e",
+   "name": "Mounted"
+  },
+  {
+   "id": "2d7f-1892-2fd0-e29c",
+   "name": "Captain"
+  },
+  {
+   "id": "5a61-81ac-eb7c-a87e",
+   "name": "Grenades"
+  },
+  {
+   "id": "aff3-d6a3-2a95-9dc",
+   "name": "Imperium"
+  },
+  {
+   "id": "4ac9-fd30-1e3d-b249",
+   "name": "Configuration"
+  },
+  {
+   "id": "1160-70ae-a862-b1a8",
+   "name": "Unit"
+  },
+  {
+   "id": "c619-2086-bbcf-69c9",
+   "name": "Fly"
+  },
+  {
+   "id": "6df-937-16bc-8c1a",
+   "name": "Smoke"
+  },
+  {
+   "id": "13bf-2bee-3ae0-b414",
+   "name": "Psyker"
+  },
+  {
+   "id": "dbd4-63-af05-998",
+   "name": "Vehicle"
+  },
+  {
+   "id": "6dda-e157-334d-e93a",
+   "name": "Walker"
+  },
+  {
+   "id": "75e8-57c4-40e3-1817",
+   "name": "Transport"
+  },
+  {
+   "id": "63f1-e6e8-f6f6-a4f0",
+   "name": "Aircraft"
+  },
+  {
+   "id": "19d7-9c74-2140-5851",
+   "name": "Fortification"
+  },
+  {
+   "id": "d666-e2c9-b6cc-5716",
+   "name": "Towering"
+  },
+  {
+   "id": "5929-ad51-d006-e008",
+   "name": "Titanic"
+  },
+  {
+   "id": "4c3e-9310-a516-3590",
+   "name": "Beast"
+  },
+  {
+   "id": "4c00-2578-faf5-6918",
+   "name": "Chaos"
+  },
+  {
+   "id": "bb67-f191-6562-acc7",
+   "name": "Faction: Chaos Knights"
+  },
+  {
+   "id": "d1d8-6ae0-1be7-e9e",
+   "name": "Faction: Tyranids"
+  },
+  {
+   "id": "1015-db48-a2fa-c7da",
+   "name": "Faction: Drukhari"
+  },
+  {
+   "id": "4378-1827-4988-be4e",
+   "name": "Faction: Asuryani"
+  },
+  {
+   "id": "fa45-57e-930e-602b",
+   "name": "Faction: Astra Militarum"
+  },
+  {
+   "id": "b5e4-3253-c157-54fd",
+   "name": "Faction: Imperial Knights"
+  },
+  {
+   "id": "1e42-dfae-cbdd-207d",
+   "name": "Faction: Heretic Astartes"
+  },
+  {
+   "id": "fd71-afa6-b13b-7fda",
+   "name": "Faction: Adepta Sororitas"
+  },
+  {
+   "id": "ee0-cf31-4fb5-6b26",
+   "name": "Faction: Necrons"
+  },
+  {
+   "id": "571f-ec3a-a5a2-751a",
+   "name": "Faction: Legiones Daemonica"
+  },
+  {
+   "id": "b2a9-ede5-7a83-4da8",
+   "name": "Slaanesh"
+  },
+  {
+   "id": "ed0d-8e2a-225c-2340",
+   "name": "Nurgle"
+  },
+  {
+   "id": "4bd-5ee0-f179-2fc5",
+   "name": "Khorne"
+  },
+  {
+   "id": "b188-114f-6ba5-79a1",
+   "name": "Tzeentch"
+  },
+  {
+   "id": "6e7-40c-58d9-e402",
+   "name": "Faction: Adeptus Astartes"
+  },
+  {
+   "id": "5418-f86b-6e76-c5a",
+   "name": "Faction: Adeptus Mechanicus"
+  },
+  {
+   "id": "226b-cf1e-353a-ae7f",
+   "name": "Faction: Genestealer Cults"
+  },
+  {
+   "id": "bd1d-c1a5-6ca2-c791",
+   "name": "Faction: World Eaters"
+  },
+  {
+   "id": "8474-765-16a9-f00d",
+   "name": "Faction: Leagues of Votann"
+  },
+  {
+   "id": "9888-ddb2-a141-6037",
+   "name": "Faction: Death Guard"
+  },
+  {
+   "id": "3d58-2655-391e-ecc",
+   "name": "Faction: T'au Empire"
+  },
+  {
+   "id": "eea5-aeaf-bbf0-d5ee",
+   "name": "Faction: Adeptus Custodes"
+  },
+  {
+   "id": "56cc-5f43-2403-8da0",
+   "name": "Faction: Orks"
+  },
+  {
+   "id": "7002-1fbb-7571-e8e7",
+   "name": "Faction: Thousand Sons"
+  },
+  {
+   "id": "d564-3284-bf44-b873",
+   "name": "Faction: Grey Knights"
+  },
+  {
+   "id": "5128-90b-e4a5-dcbd",
+   "name": "Faction: Agents of the Imperium"
+  },
+  {
+   "id": "aab1-4f05-fabe-5ba5",
+   "name": "Faction: Dark Angels"
+  },
+  {
+   "id": "65e4-13-4fa8-b36c",
+   "name": "Faction: Salamanders"
+  },
+  {
+   "id": "d39c-9989-db7f-d815",
+   "name": "Faction: Deathwatch"
+  },
+  {
+   "id": "62ac-ef42-27b4-ae7",
+   "name": "Faction: Blood Angels"
+  },
+  {
+   "id": "1a2d-2f00-c054-4dcb",
+   "name": "Faction: Ultramarines"
+  },
+  {
+   "id": "a0d9-c115-2a-8330",
+   "name": "Faction: Space Wolves"
+  },
+  {
+   "id": "9249-acae-2882-d95",
+   "name": "Faction: Black Templars"
+  },
+  {
+   "id": "84b7-7194-3b84-1b0c",
+   "name": "Faction: Raven Guard"
+  },
+  {
+   "id": "b88e-1b0c-b79f-5cdf",
+   "name": "Faction: Iron Hands"
+  },
+  {
+   "id": "97aa-d0e4-71c7-96c3",
+   "name": "Faction: Imperial Fists"
+  },
+  {
+   "id": "5c0e-2250-dd3a-1df9",
+   "name": "Faction: White Scars"
+  },
+  {
+   "id": "5c0e-4c31-d51b-e470",
+   "name": "Warlord"
+  },
+  {
+   "id": "9c0e-7e25-4580-e439",
+   "name": "Daemon"
+  },
+  {
+   "id": "6474-0ce3-6b5a-120c",
+   "name": "Primarch"
+  },
+  {
+   "id": "4f09-0141-6c70-6c5a",
+   "name": "Daemon Prince"
+  },
+  {
+   "id": "b00b-5bae-444f-964e",
+   "name": "Swarm"
+  },
+  {
+   "id": "2471-e2e0-3f55-d6cb",
+   "name": "Drone"
+  },
+  {
+   "id": "7850-cc5a-c191-b80d",
+   "name": "Great Devourer"
+  },
+  {
+   "id": "cc77-a53-fca8-f48e",
+   "name": "Retinue"
+  },
+  {
+   "id": "740a-892c-8958-defa",
+   "name": "Terminator"
+  },
+  {
+   "id": "50a2-5557-84bb-ca4d",
+   "name": "Rhino"
+  },
+  {
+   "id": "dda2-bb0a-215e-ad9c",
+   "name": "Jump Pack"
+  },
+  {
+   "id": "4c40-ab9-54af-d290",
+   "name": "Armiger"
+  },
+  {
+   "id": "e4d6-1a77-132b-f39d",
+   "name": "Questoris"
+  },
+  {
+   "id": "af4c-b971-a31c-669c",
+   "name": "Dominus"
+  },
+  {
+   "id": "887b-ab87-92a2-20f5",
+   "name": "Allied Units"
+  },
+  {
+   "id": "f76f-29c1-de9-74c2",
+   "name": "Acastus"
+  },
+  {
+   "id": "481c-3b2e-5c99-c248",
+   "name": "Cerastus"
+  },
+  {
+   "id": "8cab-448d-37b7-32bc",
+   "name": "Artillery"
+  },
+  {
+   "id": "ac7e-be7b-eb02-4752",
+   "name": "Order of Battle"
+  },
+  {
+   "id": "a5a2-d0c0-0349-d226",
+   "name": "Faction: Harlequins"
+  },
+  {
+   "id": "9a21-190a-9d31-35d2",
+   "name": "Faction: Ynnari"
+  },
+  {
+   "id": "26fe-d7cb-eb8f-77d4",
+   "name": "Tyrannic War Veteran"
+  },
+  {
+   "id": "0dce-ed3d-83af-2f27",
+   "name": "Striding Behemoths"
+  },
+  {
+   "id": "1532-9501-d870-4514",
+   "name": "Monster Hunters"
+  },
+  {
+   "id": "4546-4a0c-b3be-e84c",
+   "name": "Psychic Weapon"
+  },
+  {
+   "id": "84c4-6d1e-e724-bd6e",
+   "name": "Extra Attacks Weapon"
+  },
+  {
+   "id": "064a-0470-60eb-e3ef",
+   "name": "Torrent Weapon"
+  },
+  {
+   "id": "eeda-8544-a2f3-3fab",
+   "name": "Ranged Weapon"
+  },
+  {
+   "id": "ccdd-3987-11ed-90cd",
+   "name": "Melee Weapon"
+  },
+  {
+   "id": "c13c-1717-f8a8-a8df",
+   "name": "Crusade Relic"
+  },
+  {
+   "id": "1db0-c6b5-19db-8d0c",
+   "name": "Pistol Weapon"
+  },
+  {
+   "id": "7278-781b-ce6c-d23c",
+   "name": "Death Company"
+  },
+  {
+   "id": "e993-e086-6de1-12af",
+   "name": "Attacks Dx Weapon"
+  },
+  {
+   "id": "4986-bf86-beb4-13ac",
+   "name": "Damage Dx Weapon"
+  },
+  {
+   "id": "6337-b83b-0d1e-5770",
+   "name": "Attacks Dx+0 Modifier"
+  },
+  {
+   "id": "982b-de77-dd2d-d9bd",
+   "name": "Damage Dx+0 Modifier"
+  },
+  {
+   "id": "59a9-b5cc-7c11-aaad",
+   "name": "Tech-Priest"
+  },
+  {
+   "id": "cc88-9467-86ac-4ca2",
+   "name": "Ministorum Priest"
+  },
+  {
+   "id": "9d4f-4beb-107d-3175",
+   "name": "Sanctifiers"
+  },
+  {
+   "id": "5b15-724e-2eeb-8cb7",
+   "name": "Pilot"
+  },
+  {
+   "id": "e106-0758-7137-2432",
+   "name": "Assault Weapon"
+  },
+  {
+   "id": "e2bc-fc0c-1099-3e75",
+   "name": "Crucible"
+  },
+  {
+   "id": "eef1-be80-500a-edfc",
+   "name": "Reference"
+  },
+  {
+   "id": "c97c-376-e2e0-1dd2",
+   "name": "Dreadnought"
+  },
+  {
+   "id": "bdc8-7127-287c-a267",
+   "name": "Docked Vehicle"
+  },
+  {
+   "id": "0cc6-ca49-ee2f-4294",
+   "name": "Critical Threat"
+  },
+  {
+   "id": "75fe-c657-43c6-7c09",
+   "name": "Supreme Commander"
+  },
+  {
+   "id": "1cf9-0660-4ef2-4d18",
+   "name": "Bellatus"
+  },
+  {
+   "id": "9440-07f1-b09d-ce8b",
+   "name": "Unbound Adversaries"
+  },
+  {
+   "id": "d445-8a18-5300-c3cc",
+   "name": "Greater Daemon"
+  },
+  {
+   "id": "f927-898a-ebe2-1aca",
+   "name": "Lesser Daemon"
+  },
+  {
+   "id": "e17d-56fd-1957-071f",
+   "name": "Abomination"
+  },
+  {
+   "id": "a783-fe90-2280-47ec",
+   "name": "Daemonic Beasts"
+  }
+ ],
+ "rules": [],
+ "datasheets": [
+  {
+   "id": "b216-722b-2361-a19f",
+   "name": "Greater Daemon (Unbound Adversaries)",
+   "type": "model",
+   "points": null,
+   "keywords": [
+    {
+     "name": "Reference",
+     "target_id": "eef1-be80-500a-edfc",
+     "primary": true
+    },
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Greater Daemon",
+     "target_id": "d445-8a18-5300-c3cc",
+     "primary": false
     }
-  ],
-  "rules": [],
-  "datasheets": [],
-  "detachments": [],
-  "enhancements": []
+   ],
+   "models": [
+    {
+     "id": "b216-722b-2361-a19f",
+     "name": "Greater Daemon (Unbound Adversaries)",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "12\"",
+      "t": "10",
+      "sv": "5+",
+      "w": "18",
+      "ld": "6+",
+      "oc": "5"
+     },
+     "loadout": [
+      {
+       "id": "67d8-8ee4-6f6f-727a",
+       "kind": "fixed",
+       "name": "Fell weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "67d8-8ee4-6f6f-727a:67d8-8ee4-6f6f-727a",
+         "name": "Fell weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "ff85-20f1-0ad9-e303",
+           "name": "➤ Fell weapon - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "37ba-cd7f-a05f-be0c",
+           "name": "➤ Fell weapon - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2123-d523-b4e3-459b",
+       "kind": "fixed",
+       "name": "Infernal scream",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2123-d523-b4e3-459b:2123-d523-b4e3-459b",
+         "name": "Infernal scream",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "0b50-d04d-5a42-85c3",
+           "name": "Infernal scream",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "b257-5fca-9e35-6c64",
+   "name": "Lesser Daemons (Unbound Adversaries)",
+   "type": "unit",
+   "points": null,
+   "keywords": [
+    {
+     "name": "Reference",
+     "target_id": "eef1-be80-500a-edfc",
+     "primary": true
+    },
+    {
+     "name": "Unbound Adversaries",
+     "target_id": "9440-07f1-b09d-ce8b",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Lesser Daemon",
+     "target_id": "f927-898a-ebe2-1aca",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "23b7-c2ad-8d26-c40f",
+     "name": "Lesser Daemons",
+     "min_count": 10,
+     "max_count": 10,
+     "stats": {
+      "m": "6\"",
+      "t": "4",
+      "sv": "7+",
+      "w": "1",
+      "ld": "7+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "c8d1-48e3-3264-8927",
+       "kind": "fixed",
+       "name": "Daemonic weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "c8d1-48e3-3264-8927:c8d1-48e3-3264-8927",
+         "name": "Daemonic weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "457c-9f0b-d49c-5a01",
+           "name": "Daemonic weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "4ad0-7f62-b1e4-c6bb",
+   "name": "Abomination (Unbound Adversaries)",
+   "type": "unit",
+   "points": null,
+   "keywords": [
+    {
+     "name": "Reference",
+     "target_id": "eef1-be80-500a-edfc",
+     "primary": true
+    },
+    {
+     "name": "Unbound Adversaries",
+     "target_id": "9440-07f1-b09d-ce8b",
+     "primary": false
+    },
+    {
+     "name": "Beast",
+     "target_id": "4c3e-9310-a516-3590",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Abomination",
+     "target_id": "e17d-56fd-1957-071f",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "1def-7fc2-64ba-706b",
+     "name": "Abomination",
+     "min_count": 2,
+     "max_count": 4,
+     "stats": {
+      "m": "10\"",
+      "t": "5",
+      "sv": "4+",
+      "w": "4",
+      "ld": "7+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "db8e-4a59-5a9c-b987",
+       "kind": "fixed",
+       "name": "Hideous mutations",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "db8e-4a59-5a9c-b987:db8e-4a59-5a9c-b987",
+         "name": "Hideous mutations",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a8f3-eb0b-068b-8681",
+           "name": "Hideous mutations",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "D6+2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "8d9a-d925-56f3-1890",
+   "name": "Daemonic Beasts (Unbound Adversaries)",
+   "type": "unit",
+   "points": null,
+   "keywords": [
+    {
+     "name": "Reference",
+     "target_id": "eef1-be80-500a-edfc",
+     "primary": true
+    },
+    {
+     "name": "Unbound Adversaries",
+     "target_id": "9440-07f1-b09d-ce8b",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Beast",
+     "target_id": "4c3e-9310-a516-3590",
+     "primary": false
+    },
+    {
+     "name": "Daemonic Beasts",
+     "target_id": "a783-fe90-2280-47ec",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "317e-1c59-edbb-f183",
+     "name": "Daemonic Beasts",
+     "min_count": 3,
+     "max_count": 6,
+     "stats": {
+      "m": "10\"",
+      "t": "6",
+      "sv": "7+",
+      "w": "4",
+      "ld": "7+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "91d6-dd7e-e0cd-b04f",
+       "kind": "fixed",
+       "name": "Horns and talons",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "91d6-dd7e-e0cd-b04f:91d6-dd7e-e0cd-b04f",
+         "name": "Horns and talons",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "87c5-899f-6200-49c2",
+           "name": "Horns and talons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [],
+   "transport": [],
+   "pricing_tiers": []
+  }
+ ],
+ "detachments": [],
+ "enhancements": []
 }

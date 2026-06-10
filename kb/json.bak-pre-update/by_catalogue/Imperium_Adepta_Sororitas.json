@@ -1,0 +1,5728 @@
+{
+  "id": "b39e-4401-8f3e-fdf7",
+  "name": "Imperium - Adepta Sororitas",
+  "is_library": false,
+  "revision": "54",
+  "source_file": "Imperium - Adepta Sororitas.cat",
+  "categories": [
+    {
+      "id": "c8ba-2b2d-e47f-d7a6",
+      "name": "Aestred Thurga and Agathae Dolan"
+    },
+    {
+      "id": "63f8-3a5d-ef9c-d86e",
+      "name": "Arco-flagellants"
+    },
+    {
+      "id": "2a27-80d9-39c1-4944",
+      "name": "Battle Sisters Squad"
+    },
+    {
+      "id": "fef8-7c60-b716-cf27",
+      "name": "Canoness"
+    },
+    {
+      "id": "509a-e03c-2c8d-cb87",
+      "name": "Castigator"
+    },
+    {
+      "id": "4038-4f63-856e-fa4c",
+      "name": "Celestian Sacresants"
+    },
+    {
+      "id": "7623-c20e-f284-39d9",
+      "name": "Crusaders"
+    },
+    {
+      "id": "669e-53ad-e9a6-c970",
+      "name": "Daemonifuge"
+    },
+    {
+      "id": "bb32-4eb2-9e16-5c0",
+      "name": "Death Cult Assassins"
+    },
+    {
+      "id": "c22d-ed31-bda4-79d6",
+      "name": "Dialogus"
+    },
+    {
+      "id": "6b73-a2e7-f47-5af9",
+      "name": "Dogmata"
+    },
+    {
+      "id": "3024-3404-5bd0-713",
+      "name": "Dominion Squad"
+    },
+    {
+      "id": "2236-d428-61e-fa4f",
+      "name": "Exorcist"
+    },
+    {
+      "id": "3fd9-a95e-b442-9a77",
+      "name": "Hospitaller"
+    },
+    {
+      "id": "27a5-f3c8-a520-edd9",
+      "name": "Imagifier"
+    },
+    {
+      "id": "60e-96a-1211-8c55",
+      "name": "Immolator"
+    },
+    {
+      "id": "294-19a9-99bb-b883",
+      "name": "Junith Eruita"
+    },
+    {
+      "id": "cc6-3f2a-8a-ca72",
+      "name": "Mortifiers"
+    },
+    {
+      "id": "2e0b-2265-e00e-2516",
+      "name": "Morvenn Vahl"
+    },
+    {
+      "id": "c027-f44-1c7f-62f5",
+      "name": "Palatine"
+    },
+    {
+      "id": "a68f-bc56-3728-5533",
+      "name": "Paragon Warsuits"
+    },
+    {
+      "id": "2efb-4c49-d187-c87a",
+      "name": "Penitent Engines"
+    },
+    {
+      "id": "cc88-9467-86ac-4ca2",
+      "name": "Ministorum Priest"
+    },
+    {
+      "id": "8d7c-5e-e1f6-27e9",
+      "name": "Repentia Squad"
+    },
+    {
+      "id": "cf6-ceb9-5c73-2bb3",
+      "name": "Retributor Squad"
+    },
+    {
+      "id": "b49f-43b8-5fac-d769",
+      "name": "Saint Celestine"
+    },
+    {
+      "id": "40db-f0a8-b5fd-d21d",
+      "name": "Seraphim Squad"
+    },
+    {
+      "id": "e8c6-d8f4-2d01-2e7a",
+      "name": "Sisters Novitiate Squad"
+    },
+    {
+      "id": "57d4-7917-5095-e513",
+      "name": "Sororitas Rhino"
+    },
+    {
+      "id": "3c49-c2db-485e-fe2e",
+      "name": "Triumph of Saint Katherine"
+    },
+    {
+      "id": "7561-4439-4420-e104",
+      "name": "Zephyrim Squad"
+    },
+    {
+      "id": "8615-573f-681a-78e8",
+      "name": "Jump Pack"
+    },
+    {
+      "id": "7ed3-a1f4-c6f6-22c6",
+      "name": "Repressor"
+    },
+    {
+      "id": "e2c8-1479-a7c4-228e",
+      "name": "Penitent"
+    },
+    {
+      "id": "4b49-98f3-035c-23b0",
+      "name": "Battle Sanctum"
+    },
+    {
+      "id": "95ea-3d17-1b12-a7c1",
+      "name": "Celestian Sacresant Aveline"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "4b94-c22e-84f9-8d32",
+      "name": "Aestred Thurga and Agathae Dolan",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Aestred Thurga and Agathae Dolan",
+          "target_id": "c8ba-2b2d-e47f-d7a6",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9ae2-3070-9d6a-6c9c",
+          "name": "Aestred Thurga",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "2+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "c84b-d988-95ea-d3d5",
+              "kind": "fixed",
+              "name": "Blade of Vigil",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c84b-d988-95ea-d3d5:c84b-d988-95ea-d3d5",
+                  "name": "Blade of Vigil",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7d77-2c2-fcb9-15af",
+                      "name": "Blade of Vigil",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2ac6-3fa1-5a7e-73d8",
+          "name": "Agathae Dolan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4f76-e283-f5-664a",
+              "kind": "fixed",
+              "name": "Scribe's staff",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4f76-e283-f5-664a:4f76-e283-f5-664a",
+                  "name": "Scribe's staff",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d22a-b6d9-8f0d-faa5",
+                      "name": "Scribe's staff",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4ced-f030-661-af4c",
+          "name": "Auto-Tapestry of the Emperor's Judgement",
+          "type": "Abilities",
+          "description": "While this unit is leading a unit and contains an Aestred Thurga model, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability"
+        },
+        {
+          "id": "aa7c-b9b-2657-ddbd",
+          "name": "Recount the Deeds of the Saints",
+          "type": "Abilities",
+          "description": "While this unit is leading a unit and contains and Agathae Dolan model, each time that unit destroys an enemy unit, you gain 1 Miracle dice. When that Agathae Dolan model is destroyed, you gain D3 Miracle dice."
+        },
+        {
+          "id": "ed83-17a1-a012-95c3",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have an invulnerable save of 4+"
+        },
+        {
+          "id": "f272-c4ba-f40f-2de8",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units: \n- Battle Sisters Squad\n- Celestian Sacresants\n- Dominion Squad\n- Retributor Squad\n- Sisters Novitiate Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ca59-3760-5efc-9846",
+      "name": "Arco-Flagellants",
+      "type": "unit",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Penitent",
+          "target_id": "e2c8-1479-a7c4-228e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ca59-3760-5efc-9846",
+          "name": "Arco-Flagellants",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "7\"",
+            "t": "3",
+            "sv": "7+",
+            "w": "2",
+            "ld": "8+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4950-9b2a-c4de-5e",
+              "kind": "fixed",
+              "name": "Arco-Flagellant",
+              "min_select": 3,
+              "max_select": 10,
+              "options": [
+                {
+                  "id": "4950-9b2a-c4de-5e:4950-9b2a-c4de-5e",
+                  "name": "Arco-Flagellant",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "42a9-7f25-36e-6bda",
+                      "name": "Arco-flails",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b91b-e2eb-4678-72c7",
+          "name": "Extremis Trigger Word",
+          "type": "Abilities",
+          "description": "Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, then until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the HAZARDOUS ability."
+        },
+        {
+          "id": "828e-7f00-0d5d-7e9e",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 140,
+          "condition_text": "≥ 4 Arco-Flagellant",
+          "condition_type": "atLeast",
+          "condition_value": 4,
+          "target_name": "Arco-Flagellant",
+          "scope_id": "4950-9b2a-c4de-5e"
+        }
+      ]
+    },
+    {
+      "id": "f26d-450d-1c55-caeb",
+      "name": "Battle Sisters Squad",
+      "type": "unit",
+      "points": 105,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Battle Sisters Squad",
+          "target_id": "2a27-80d9-39c1-4944",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "f4b9-855b-cce7-f501",
+          "name": "Defenders of the Faith",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective markers remains under your control, even if you have no models within range of it, until you opponent controls it at the star or end of any turn."
+        },
+        {
+          "id": "7048-aade-fcf3-9011",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c338-14f9-4ee-f223",
+      "name": "Canoness",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Canoness",
+          "target_id": "fef8-7c60-b716-cf27",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c338-14f9-4ee-f223",
+          "name": "Canoness",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ae95-4b02-9e6e-420a",
+              "kind": "choice",
+              "name": "May have:",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ae95-4b02-9e6e-420a:d2a8-bd20-4ac1-4275",
+                  "name": "Brazier of Holy Fire",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ce02-40a9-a9f9-803",
+                      "name": "Brazier of Holy Fire",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, One Shot, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6ec1-c8bf-8990-eaad",
+              "kind": "choice",
+              "name": "Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6ec1-c8bf-8990-eaad:e39a-8e06-3ffc-147e",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "848f-9f22-fb2-ef07",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "6ec1-c8bf-8990-eaad:d13c-b64d-8e83-8837",
+                  "name": "Condemnor boltgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d78a-ed1b-6baf-b802",
+                      "name": "Condemnor boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "6ec1-c8bf-8990-eaad:fe69-9df4-3bc9-84fa",
+                  "name": "Inferno pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a2d7-3028-7b87-82fe",
+                      "name": "Inferno Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-4",
+                      "d": "D3",
+                      "keywords": "Melta 2, Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "6ec1-c8bf-8990-eaad:3e95-d35a-5189-9021",
+                  "name": "Plasma pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "960b-e163-afa5-d38d",
+                      "name": "➤ Plasma pistol - standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "373e-f2c4-91b5-61e8",
+                      "name": "➤ Plasma pistol - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "993b-f1fc-6c99-684c",
+              "kind": "choice",
+              "name": "Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "993b-f1fc-6c99-684c:9754-eb47-5f2c-c17",
+                  "name": "Blessed blade",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "43f8-6960-29ad-5847",
+                      "name": "Blessed blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                },
+                {
+                  "id": "993b-f1fc-6c99-684c:4ef1-dc81-763b-3ac3",
+                  "name": "Power weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "118-481d-149d-78ab",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "993b-f1fc-6c99-684c:e580-8335-3315-f716",
+                  "name": "Hallowed Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "688d-22c4-b7be-be16",
+                      "name": "Hallowed Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "3",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "327-b48b-848c-4390",
+          "name": "Rod of Office",
+          "type": "Abilities",
+          "description": "Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1."
+        },
+        {
+          "id": "77ff-2463-354-23fd",
+          "name": "Null Rod",
+          "type": "Abilities",
+          "description": "Models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+        },
+        {
+          "id": "603-dd8e-d3f3-6dc0",
+          "name": "The Emperor's Grace",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save."
+        },
+        {
+          "id": "e754-bda4-580f-5e56",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        },
+        {
+          "id": "aba-82be-3c51-e90d",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units: \n- Battle Sisters Squad\n- Celestian Sacresants\n- Dominion Squad\n- Retributor Squad\n- Sisters Novitiate Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "820-1e76-78cc-931a",
+      "name": "Castigator",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Castigator",
+          "target_id": "509a-e03c-2c8d-cb87",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "820-1e76-78cc-931a",
+          "name": "Castigator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "96c2-1d90-def-8f60",
+              "kind": "fixed",
+              "name": "Heavy bolter",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "96c2-1d90-def-8f60:96c2-1d90-def-8f60",
+                  "name": "Heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bb98-2e08-23c3-6dc7",
+                      "name": "Heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c132-47cf-763b-65be",
+              "kind": "choice",
+              "name": "Main gun",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c132-47cf-763b-65be:1111-1170-a699-900f",
+                  "name": "Castigator autocannons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e731-9f46-3e21-50c4",
+                      "name": "Castigator autocannons",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Twin-Linked, Rapid Fire 4"
+                    }
+                  ]
+                },
+                {
+                  "id": "c132-47cf-763b-65be:f05c-129e-712f-dd03",
+                  "name": "Castigator battle cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "83ed-56fb-4fc9-9725",
+                      "name": "Castigator battle cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Blast, Ignores Cover"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b548-d81f-aea6-26f8",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b548-d81f-aea6-26f8:c16b-804f-46cb-2256",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5179-e76b-7ddd-5d38",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "56dc-ead8-d1a8-9d4",
+          "name": "Rites of Castigation",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Adepta Sororitas unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn."
+        },
+        {
+          "id": "888-b727-daf1-e113",
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "25ab-15d5-7fa0-e25d",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d378-4bb7-d204-f8eb",
+      "name": "Celestian Sacresant (Anointed Halberd)",
+      "type": "model",
+      "points": null,
+      "keywords": [],
+      "models": [],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f1af-4984-1a52-c5",
+      "name": "Celestian Sacresants",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Celestian Sacresants",
+          "target_id": "4038-4f63-856e-fa4c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "932f-b171-4eea-76a1",
+          "name": "Sworn Protectors",
+          "type": "Abilities",
+          "description": "While and Adepta Sororitas Character is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll."
+        },
+        {
+          "id": "289a-1246-3dd7-677c",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have an Invulnerable save of 4+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 130,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "d420-94b9-b82b-73e5",
+      "name": "Celestian Sacresant (Hallowed Mace)",
+      "type": "model",
+      "points": null,
+      "keywords": [],
+      "models": [],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8569-2390-d4db-30fd",
+      "name": "Daemonifuge",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Daemonifuge",
+          "target_id": "669e-53ad-e9a6-c970",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "64ce-8752-3284-2c09",
+          "name": "Ephrael Stern",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "33c1-d13e-b8f6-6e96",
+              "kind": "fixed",
+              "name": "Sanctity",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "33c1-d13e-b8f6-6e96:33c1-d13e-b8f6-6e96",
+                  "name": "Sanctity",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "76d3-4d01-3b30-62c4",
+                      "name": "Sanctity",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Chaos 2+, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "40ba-9ef5-dbfb-4cab",
+          "name": "Kyganil of the Bloody Tears",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "84f7-b27a-f4d1-5d96",
+              "kind": "fixed",
+              "name": "The Outcast's Blades",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "84f7-b27a-f4d1-5d96:84f7-b27a-f4d1-5d96",
+                  "name": "The Outcast's Blades",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c12e-e65d-d748-7a97",
+                      "name": "The Outcast's Blades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4851-2e87-7de3-f265",
+          "name": "Holy Judgement",
+          "type": "Abilities",
+          "description": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this unit's Ephrael Stern model. That unit must take a Battle-shock test, subtracting 2 from the result if it is a Chaos unit. If the test is failed, that enemy unit suffers 3 mortal wounds."
+        },
+        {
+          "id": "6a83-9f06-f020-25bf",
+          "name": "Mysterious Savious",
+          "type": "Abilities",
+          "description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+        },
+        {
+          "id": "ee8f-866e-34f2-5704",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have an Invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "91b8-3ccb-de30-6e54",
+      "name": "Dialogus",
+      "type": "model",
+      "points": 40,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Dialogus",
+          "target_id": "c22d-ed31-bda4-79d6",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "91b8-3ccb-de30-6e54",
+          "name": "Dialogus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2db2-c598-2072-2881",
+              "kind": "fixed",
+              "name": "Dialogus Staff",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2db2-c598-2072-2881:2db2-c598-2072-2881",
+                  "name": "Dialogus Staff",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8cf3-327e-f17f-d0e2",
+                      "name": "Dialogus staff",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e5c8-ff8c-ad6a-1a31",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        },
+        {
+          "id": "857a-682e-d2bd-5943",
+          "name": "Laud Hailer",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, you can select one friendly Adepta Sororitas unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked."
+        },
+        {
+          "id": "c7dc-3ddb-ce59-3c1e",
+          "name": "Stirring Rhetoric",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6."
+        },
+        {
+          "id": "2c6b-cb4a-e7f9-3b6f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "76b1-f4d1-b2f0-6949",
+      "name": "Dogmata",
+      "type": "model",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Dogmata",
+          "target_id": "6b73-a2e7-f47-5af9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "76b1-f4d1-b2f0-6949",
+          "name": "Dogmata",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "3033-6da6-fb4a-66da",
+              "kind": "fixed",
+              "name": "Mace of the Righteous",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3033-6da6-fb4a-66da:3033-6da6-fb4a-66da",
+                  "name": "Mace of the Righteous",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1753-fc17-1197-41cd",
+                      "name": "Mace of the Righteous",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c25b-5648-cc0e-6916",
+          "name": "Executioner of Heretics (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1."
+        },
+        {
+          "id": "a7f7-40f-4d82-235d",
+          "name": "Unflinching Determination",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+        },
+        {
+          "id": "bd21-f700-849a-3d58",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        },
+        {
+          "id": "8665-1f52-179d-38e9",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d929-b22d-3040-9707",
+      "name": "Dominion Squad",
+      "type": "unit",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Dominion Squad",
+          "target_id": "3024-3404-5bd0-713",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "efb6-3f52-fbf1-4519",
+          "name": "Holy Vanguard",
+          "type": "Abilities",
+          "description": "If this unit has a Leader unit attached to it during the Declare Battle Formations step and this unit starts the battle embarked within a Transport, that Leader unit gains the Scouts 6\" ability."
+        },
+        {
+          "id": "7a52-508a-d0da-2099",
+          "name": "Righteous Awareness",
+          "type": "Abilities",
+          "description": "Once per turn, when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6\"."
+        },
+        {
+          "id": "7042-ea47-441c-57ca",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have an Invulnerable save of 6+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "684e-4dd3-340a-23ee",
+      "name": "Exorcist",
+      "type": "model",
+      "points": 210,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Exorcist",
+          "target_id": "2236-d428-61e-fa4f",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "684e-4dd3-340a-23ee",
+          "name": "Exorcist",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "7+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "1edd-4be8-7b6a-34e3",
+              "kind": "fixed",
+              "name": "Heavy Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1edd-4be8-7b6a-34e3:1edd-4be8-7b6a-34e3",
+                  "name": "Heavy Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "eb73-300c-1234-9cc7",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6948-a3ab-3ff6-dcff",
+              "kind": "choice",
+              "name": "Main Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6948-a3ab-3ff6-dcff:7276-fb9b-cb95-f1a9",
+                  "name": "Exorcist Missile Launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ce7d-c52a-dd48-555c",
+                      "name": "Exorcist Missile Launcher",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D6+2",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "6948-a3ab-3ff6-dcff:dd5e-3bc2-7c3-ec3c",
+                  "name": "Exorcist Conflagration Rockets",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c85d-6813-6ef3-e513",
+                      "name": "Exorcist Conflagration Rockets",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3D6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Blast, Ignores Cover, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7f86-b6ab-1e2c-8e5e",
+              "kind": "fixed",
+              "name": "Hunter-Killer Missile",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7f86-b6ab-1e2c-8e5e:1d2f-6fb-9587-2ef",
+                  "name": "Hunter-Killer Missile",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a98-ad7-fbd0-89bb",
+                      "name": "Hunter-killer missile",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "One Shot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "411a-2f57-4d45-7977",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "411a-2f57-4d45-7977:c16b-804f-46cb-2256",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5179-e76b-7ddd-5d38",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7e22-e24b-fe39-5f51",
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "62d8-4f1-3996-bcb9",
+          "name": "Devastating Refrain",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model's Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6."
+        },
+        {
+          "id": "ccbb-de3f-002d-9476",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "938e-1c24-4e63-4cf3",
+      "name": "Hospitaller",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Hospitaller",
+          "target_id": "3fd9-a95e-b442-9a77",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "938e-1c24-4e63-4cf3",
+          "name": "Hospitaller",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "99e6-8b69-f5fd-3632",
+              "kind": "fixed",
+              "name": "Chirugeon's tools",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "99e6-8b69-f5fd-3632:99e6-8b69-f5fd-3632",
+                  "name": "Chirugeon's tools",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7ffc-1e3d-a750-b8f7",
+                      "name": "Chirugeon's tools",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c40a-e524-693c-c23f",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        },
+        {
+          "id": "2ad4-2722-1059-760c",
+          "name": "Medicus Ministorum",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+        },
+        {
+          "id": "acf-9a6a-c5b4-93fe",
+          "name": "Sacred Healing",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding Character models) to that unit. If you wish, you first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding Character models) to that unit instead."
+        },
+        {
+          "id": "5d3-7240-b966-c4cc",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        },
+        {
+          "id": "3db1-c1a-9ee2-7664",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3ad3-558b-29f9-2e45",
+      "name": "Imagifier",
+      "type": "model",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Imagifier",
+          "target_id": "27a5-f3c8-a520-edd9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3ad3-558b-29f9-2e45",
+          "name": "Imagifier",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "6a6-ff36-2e3b-e6eb",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6a6-ff36-2e3b-e6eb:6a6-ff36-2e3b-e6eb",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7500-9e8-86a1-75cc",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f07b-fe47-9e33-339d",
+              "kind": "fixed",
+              "name": "Boltgun",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f07b-fe47-9e33-339d:9378-6ba3-6811-68a7",
+                  "name": "Boltgun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f772-8828-ae5e-80ca",
+                      "name": "Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "76a1-5a9f-64c5-19ed",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+        },
+        {
+          "id": "72b8-e076-cff5-2e74",
+          "name": "Litany of Deeds",
+          "type": "Abilities",
+          "description": "Each time you gain a Miracle dice as the result of a friendly ADEPTA SORORITAS unit or model being destroyed, if that unit or model was destroyed within 12\" of this model, you can re-roll the result of that Miracle dice before adding it to your Miracle dice pool."
+        },
+        {
+          "id": "ecf0-4fea-74c7-1091",
+          "name": "Stanchion of Holy Martyrs",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save."
+        },
+        {
+          "id": "e47a-617-31f5-8186",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1001-80ff-c9a8-5d9b",
+      "name": "Immolator",
+      "type": "model",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Immolator",
+          "target_id": "60e-96a-1211-8c55",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1001-80ff-c9a8-5d9b",
+          "name": "Immolator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "6d60-d6f-ef8c-ed7e",
+              "kind": "fixed",
+              "name": "Heavy Bolter",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6d60-d6f-ef8c-ed7e:6d60-d6f-ef8c-ed7e",
+                  "name": "Heavy Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9c67-cd11-29f0-1b5e",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "171a-7cfe-8ec4-49e5",
+              "kind": "choice",
+              "name": "Immolator Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "171a-7cfe-8ec4-49e5:3661-576a-2df7-506e",
+                  "name": "Immolation Flamers",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f061-12a-5d87-3418",
+                      "name": "Immolation Flamers",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "171a-7cfe-8ec4-49e5:cc59-dd80-4fde-aa6d",
+                  "name": "Twin Heavy Bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b59-e057-6cdf-fe5a",
+                      "name": "Twin Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 2, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "171a-7cfe-8ec4-49e5:fe9c-67db-68e4-45af",
+                  "name": "Twin Multi-melta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7fbf-ceb5-24d6-ff9f",
+                      "name": "Twin Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7488-6bc-5df8-7959",
+              "kind": "fixed",
+              "name": "Hunter-Killer Missile",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7488-6bc-5df8-7959:1d2f-6fb-9587-2ef",
+                  "name": "Hunter-Killer Missile",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a98-ad7-fbd0-89bb",
+                      "name": "Hunter-killer missile",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "One Shot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d0da-6c55-c440-7848",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d0da-6c55-c440-7848:c16b-804f-46cb-2256",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5179-e76b-7ddd-5d38",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "cf41-7ae4-6a73-5490",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.\n\nAt the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVIATIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit."
+        },
+        {
+          "id": "5def-c759-39f-94ca",
+          "name": "Purge and Cleanse",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+        },
+        {
+          "id": "eae-14c6-a34d-1d21",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8f9a-8a8b-2539-547f",
+      "name": "Junith Eruita",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Junith Eruita",
+          "target_id": "294-19a9-99bb-b883",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8f9a-8a8b-2539-547f",
+          "name": "Junith Eruita",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f43-8fcc-f22d-7c7f",
+              "kind": "fixed",
+              "name": "Twin Ministorum Heavy Flamer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f43-8fcc-f22d-7c7f:f43-8fcc-f22d-7c7f",
+                  "name": "Twin Ministorum Heavy Flamer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "69ff-b91f-9d0f-9f15",
+                      "name": "Twin Ministorum Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4407-1b5e-ae6-fc73",
+              "kind": "fixed",
+              "name": "Mace of Castigation",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4407-1b5e-ae6-fc73:4407-1b5e-ae6-fc73",
+                  "name": "Mace of Castigation",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dbe5-62a0-c549-db12",
+                      "name": "Mace of Castigation",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d642-3373-8e19-9571",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Noviatiate Squad"
+        },
+        {
+          "id": "e5c9-ce74-717b-4504",
+          "name": "The Pulpit of Saint Holline’s Basilica",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "588a-b45-3f30-e6c8",
+          "name": "Fiery Conviction",
+          "type": "Abilities",
+          "description": "If this model is on the battlefield at the start\nof your Command phase, you can choose one of the following:\n■ Discard 1 Miracle dice and gain 1CP.\n■ Take a Leadership test for this model, if that test is passed, gain 1CP."
+        },
+        {
+          "id": "dbf3-7183-63e4-e7bf",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3c3f-f02d-c05c-492a",
+      "name": "Mortifiers",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Mortifiers",
+          "target_id": "cc6-3f2a-8a-ca72",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Penitent",
+          "target_id": "e2c8-1479-a7c4-228e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f027-a14f-7bcb-90fd",
+          "name": "Mortifier",
+          "min_count": 1,
+          "max_count": 2,
+          "stats": {
+            "m": "8\"",
+            "t": "6",
+            "sv": "4+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "85c6-7089-1f30-9c69",
+              "kind": "choice",
+              "name": "Melee Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "85c6-7089-1f30-9c69:c4ed-6130-6765-c7d1",
+                  "name": "Twin Penitent Buzz-Blades",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ece-e35d-dd7f-e5a1",
+                      "name": "Twin Penitent Buzz-Blades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1,Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "85c6-7089-1f30-9c69:ecde-adc8-5ed7-af64",
+                  "name": "Twin Penitent Flails",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2a1f-78e0-3712-bf10",
+                      "name": "Twin Penitent Flails",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "85c6-7089-1f30-9c69:f4a4-1d47-923f-4a51",
+                  "name": "Penitent Buzz-Blade and Penitent Flail",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ed82-9e2d-74e0-61d7",
+                      "name": "Penitent Buzz-Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "b5b4-179c-f929-4eff",
+                      "name": "Penitent Flail",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1a3c-ae5-9114-2571",
+              "kind": "choice",
+              "name": "Ranged Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1a3c-ae5-9114-2571:3d82-2de6-94e9-10e0",
+                  "name": "2 Heavy Bolters",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a03b-6e58-a0f2-a574",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "1a3c-ae5-9114-2571:e051-7805-62df-3a82",
+                  "name": "2 Mortifier Flamers",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fb7-b143-3cca-fd51",
+                      "name": "Mortimer Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "n/a",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "1a3c-ae5-9114-2571:1705-57e1-332e-61aa",
+                  "name": "Heavy Bolter and Mortifier Flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cbfc-45bd-e979-aefb",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "bfc9-fe69-8219-a216",
+                      "name": "Mortimer Heavy Flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "n/a",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e650-bbf0-a74f-44c0",
+          "name": "Anchorite Sarcophagus",
+          "type": "Abilities",
+          "description": "The bearer has a Move characteristic of 7\" and a Save Characteristic of 3+."
+        },
+        {
+          "id": "b337-3b2d-d22b-9ca9",
+          "name": "Anguish of the Unredeemed",
+          "type": "Abilities",
+          "description": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. One a 2+, do not remove it from play; that destroyed model can fight after attacking unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "a6d5-54f2-962a-7371",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 140,
+          "condition_text": "≥ 2 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 2,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "7188-4d20-8216-c68a",
+      "name": "Morvenn Vahl",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Morvenn Vahl",
+          "target_id": "2e0b-2265-e00e-2516",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7188-4d20-8216-c68a",
+          "name": "Morvenn Vahl",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "7",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "37ac-417c-e161-e53",
+              "kind": "fixed",
+              "name": "Lance of Illumination",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "37ac-417c-e161-e53:37ac-417c-e161-e53",
+                  "name": "Lance of Illumination",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "41f9-eec9-615b-f38c",
+                      "name": "➤ Lance of Illumination - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Devastating Wounds"
+                    },
+                    {
+                      "profile_id": "49df-a8ae-2ade-4b2f",
+                      "name": "➤ Lance of Illumination - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "10",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "832a-a7bf-3055-f8e9",
+              "kind": "fixed",
+              "name": "Fidelis",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "832a-a7bf-3055-f8e9:832a-a7bf-3055-f8e9",
+                  "name": "Fidelis",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fae3-5707-246e-72b",
+                      "name": "Fidelis",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "11d5-d35d-4137-e395",
+              "kind": "fixed",
+              "name": "Paragon missile launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "11d5-d35d-4137-e395:11d5-d35d-4137-e395",
+                  "name": "Paragon missile launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cace-40e-bf83-8f17",
+                      "name": "➤ Paragon missile launcher - prioris",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "5582-956e-cb1b-3458",
+                      "name": "➤ Paragon missile launcher - sanctorum",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e943-656f-197b-b510",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n■ Paragon Warsuits"
+        },
+        {
+          "id": "5e86-cb68-9205-16c4",
+          "name": "Abbess Sanctorum",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        },
+        {
+          "id": "83e4-fab8-e77c-b285",
+          "name": "Righteous Repugnance",
+          "type": "Abilities",
+          "description": "Each time this model's unit is selected to shoot or fight, you can discard 1 Miracle dice. If you do, until the end of the phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination. Each time an enemy unit is destroyed by this model, you gain 1 Miracle dice."
+        },
+        {
+          "id": "f819-fb81-c42f-4295",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fbeb-1caf-8f5c-ff8e",
+      "name": "Palatine",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Palatine",
+          "target_id": "c027-f44-1c7f-62f5",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fbeb-1caf-8f5c-ff8e",
+          "name": "Palatine",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "781f-8857-1a01-b77e",
+              "kind": "fixed",
+              "name": "Palatine blade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "781f-8857-1a01-b77e:781f-8857-1a01-b77e",
+                  "name": "Palatine blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f39d-e382-22dc-8267",
+                      "name": "Palatine blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3be8-e600-f2d7-7629",
+              "kind": "choice",
+              "name": "Pistols",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3be8-e600-f2d7-7629:be96-9986-1a-dc66",
+                  "name": "Plasma pistol",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8b0f-a842-f8c4-af36",
+                      "name": "➤ Plasma pistol - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    },
+                    {
+                      "profile_id": "fe8c-f846-bb77-69d0",
+                      "name": "➤ Plasma pistol - standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1ea1-b3c-25f8-8533",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad"
+        },
+        {
+          "id": "7cb-2ac3-fef5-f533",
+          "name": "Fury of the Righteous",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+        },
+        {
+          "id": "d505-3475-8bdc-a018",
+          "name": "Rapturous Blows",
+          "type": "Abilities",
+          "description": "Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage."
+        },
+        {
+          "id": "20b3-dac6-46c2-361b",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e75d-a7ac-7fcc-d302",
+      "name": "Paragon Warsuits",
+      "type": "unit",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Paragon Warsuits",
+          "target_id": "a68f-bc56-3728-5533",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c0b0-33d2-1ba8-8f32",
+          "name": "Paragon Warsuit",
+          "min_count": 2,
+          "max_count": 2,
+          "stats": {
+            "m": "8\"",
+            "t": "7",
+            "sv": "2+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "27d3-c988-aed7-be23",
+              "kind": "choice",
+              "name": "Paragon Carapace Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "27d3-c988-aed7-be23:671a-fdb3-6322-de82",
+                  "name": "Paragon Storm Bolters",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "94bf-4c8a-7fea-bad2",
+                      "name": "Paragon Storm Bolters",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "27d3-c988-aed7-be23:9fbb-4f6c-d779-a755",
+                  "name": "Paragon Grenade Launchers",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b83b-f2dc-42d-63a7",
+                      "name": "Paragon Grenade Launchers",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7909-a949-6f08-456f",
+              "kind": "choice",
+              "name": "Paragon Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7909-a949-6f08-456f:8c0f-6bed-c04d-5589",
+                  "name": "Paragon War Blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3655-3d6d-d979-af19",
+                      "name": "Paragon War Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7909-a949-6f08-456f:2aef-15a6-3eba-bbfd",
+                  "name": "Paragon War Mace",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b95f-badf-7699-322a",
+                      "name": "Paragon War Mace",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e379-9828-807c-5c47",
+              "kind": "choice",
+              "name": "Paragon Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e379-9828-807c-5c47:681a-2391-184c-bbd2",
+                  "name": "Heavy Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "925f-7fde-6c75-94ee",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "e379-9828-807c-5c47:e50-ed9a-722a-e69",
+                  "name": "Multi-melta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "9aeb-2363-a0af-b37d",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d057-c494-3b31-d11e",
+          "name": "Paragon Superior",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "7",
+            "sv": "2+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f9c3-6cb-989f-4961",
+              "kind": "choice",
+              "name": "Paragon Carapace Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f9c3-6cb-989f-4961:a9b4-1765-d757-f846",
+                  "name": "Paragon Storm Bolters",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8cd6-b952-3b8e-12cc",
+                      "name": "Paragon Storm Bolters",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "f9c3-6cb-989f-4961:22fe-594c-7ff-1f57",
+                  "name": "Paragon Grenade Launchers",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c94a-44b4-29a4-8abb",
+                      "name": "Paragon Grenade Launchers",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7d4e-ad12-e676-8a3c",
+              "kind": "choice",
+              "name": "Paragon Melee Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7d4e-ad12-e676-8a3c:963e-770-5d54-fcce",
+                  "name": "Paragon War Blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b396-aa30-204-e2fc",
+                      "name": "Paragon War Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7d4e-ad12-e676-8a3c:54d7-c189-89d-3231",
+                  "name": "Paragon War Mace",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1d2a-350e-1b76-b11d",
+                      "name": "Paragon War Mace",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a6a5-15bc-b748-47c0",
+              "kind": "choice",
+              "name": "Paragon Ranged Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a6a5-15bc-b748-47c0:4ec4-554-a05e-9817",
+                  "name": "Heavy Bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ab3-4ef3-92a4-c3f0",
+                      "name": "Heavy Bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "a6a5-15bc-b748-47c0:9403-6ce4-fcc2-e5e8",
+                  "name": "Multi-melta",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fb85-f329-fd95-9834",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4a86-1713-528f-cf2a",
+          "name": "Righteous Paragons",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll and add 1 to the Wound roll."
+        },
+        {
+          "id": "290a-217e-2cfe-3b03",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have an Invulnerable save of 4+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "327d-a6df-26b-bb9b",
+      "name": "Penitent Engines",
+      "type": "unit",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Penitent Engines",
+          "target_id": "2efb-4c49-d187-c87a",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Penitent",
+          "target_id": "e2c8-1479-a7c4-228e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "bced-b951-c1dd-a33b",
+          "name": "Penitent Engine",
+          "min_count": 1,
+          "max_count": 2,
+          "stats": {
+            "m": "8\"",
+            "t": "6",
+            "sv": "4+",
+            "w": "5",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f418-4278-1585-98ed",
+              "kind": "fixed",
+              "name": "Penitent Flamers",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f418-4278-1585-98ed:f418-4278-1585-98ed",
+                  "name": "Penitent Flamers",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6a17-28c-9e0a-e561",
+                      "name": "Penitent Flamers",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Assault, Ignores Cover, Torrent, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e9c5-72a5-c0ce-bc84",
+              "kind": "choice",
+              "name": "Melee Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e9c5-72a5-c0ce-bc84:306-d054-aad8-ae63",
+                  "name": "Twin Penitent Buzz-Blades",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4237-5e1f-fb9f-a7ae",
+                      "name": "Twin Penitent Buzz-Blades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "e9c5-72a5-c0ce-bc84:a548-1641-cf1f-f538",
+                  "name": "Twin Penitent Flails",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3ce6-365a-9533-d823",
+                      "name": "Twin Penitent Flails",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1, Twin-Linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "e9c5-72a5-c0ce-bc84:fb72-668b-3b8e-ad9d",
+                  "name": "Penitent Buzz-Blade and Penitent Flail",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6e93-a932-2059-3049",
+                      "name": "Penitent Buzz-Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "c16e-a07e-925e-8e1f",
+                      "name": "Penitent Flail",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9b50-efe0-5300-a956",
+          "name": "Endless Suffering",
+          "type": "Abilities",
+          "description": "This unit is eligible to declare a charge in a turn in which it Advanced"
+        },
+        {
+          "id": "7dae-f442-e00e-7160",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 150,
+          "condition_text": "≥ 2 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 2,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "599d-1e2a-eb0e-430e",
+      "name": "Ministorum Priest",
+      "type": "model",
+      "points": 50,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Ministorum Priest",
+          "target_id": "cc88-9467-86ac-4ca2",
+          "primary": false
+        },
+        {
+          "name": "Penitent",
+          "target_id": "e2c8-1479-a7c4-228e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "599d-1e2a-eb0e-430e",
+          "name": "Ministorum Priest",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "1a2d-9cd3-ff31-59db",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1a2d-9cd3-ff31-59db:cea7-9258-8e9f-100e",
+                  "name": "Holy Pistol and Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bdd6-3e12-de13-e2a1",
+                      "name": "Holy Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "580b-e091-d754-9dad",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "1a2d-9cd3-ff31-59db:a05b-d778-f94b-51db",
+                  "name": "Zealot's vindictor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "87ba-2f44-194d-23d1",
+                      "name": "Zealot's vindictor",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    },
+                    {
+                      "profile_id": "419c-1e01-3a87-239e",
+                      "name": "Zealot's vindictor",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e631-ecf1-5c39-50da",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n■ Arco-flagellants\n■ Battle Sisters Squad\n■ Dominion Squad\n■ Sisters Novitiate Squad"
+        },
+        {
+          "id": "58d7-8724-689e-61f3",
+          "name": "Righteous Smiting",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+        },
+        {
+          "id": "cf7e-519e-c4e1-5abc",
+          "name": "Zealot",
+          "type": "Abilities",
+          "description": "Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3."
+        },
+        {
+          "id": "672b-2d5c-38af-1861",
+          "name": "Holy Mission",
+          "type": "Abilities",
+          "description": "If this model is attached to a Dominion Squad during the Declare Battle Formations step, it gains the Scouts 6\" ability. If this model is attached to a Sisters Novitiate Squad during the Declare Battle Formations step, it gains the Infiltrators ability."
+        },
+        {
+          "id": "50af-95f-288c-b59",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7d63-7b55-a632-6a10",
+      "name": "Repentia Squad",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Repentia Squad",
+          "target_id": "8d7c-5e-e1f6-27e9",
+          "primary": false
+        },
+        {
+          "name": "Penitent",
+          "target_id": "e2c8-1479-a7c4-228e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "367b-f75c-5fc9-8d6e",
+          "name": "Overseer of Redemption",
+          "type": "Abilities",
+          "description": "While this unit contains a Repentia Superior model, each time a Sisters Repentia model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        },
+        {
+          "id": "7d81-1d12-745c-1984",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 170,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "c49d-f150-4b3-c118",
+      "name": "Retributor Squad",
+      "type": "unit",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Retributor Squad",
+          "target_id": "cf6-ceb9-5c73-2bb3",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ef56-67fc-c2ec-1172",
+          "name": "Retributor Superior",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "ff4b-25f9-3317-d534",
+              "kind": "choice",
+              "name": "Sister Superior Ranged Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ff4b-25f9-3317-d534:c0b5-25a6-c928-1143",
+                  "name": "Condemnor boltgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4eba-4e13-f9ef-b856",
+                      "name": "Condemnor boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "ff4b-25f9-3317-d534:40f1-67e5-1c41-661",
+                  "name": "Combi-weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "e460-24a9-8d8-37be",
+                      "name": "Combi-weapon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bc8f-8543-2101-e545",
+              "kind": "choice",
+              "name": "Sister Superior Melee Weapons",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "bc8f-8543-2101-e545:5b2e-ff5c-61-96f6",
+                  "name": "Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ad23-704a-8225-bb37",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66ca-6f2c-75b7-756",
+          "name": "Retributor",
+          "min_count": 4,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e9c6-6fd8-b88e-39d1",
+          "name": "Cherubs",
+          "type": "Abilities",
+          "description": "Twice per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice."
+        },
+        {
+          "id": "8eef-f65c-7895-183f",
+          "name": "Storm of Retribution",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more Adepta Sororitas units from your army during the battle, you can re-roll the Wound roll instead."
+        },
+        {
+          "id": "4e02-e55f-a394-e326",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "21f1-8ed6-52c6-54c7",
+      "name": "Saint Celestine",
+      "type": "unit",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "8615-573f-681a-78e8",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        }
+      ],
+      "models": [
+        {
+          "id": "d554-ccc6-790-461",
+          "name": "Saint Celestine",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "11d9-3548-8ffd-f118",
+              "kind": "fixed",
+              "name": "The Ardent Blade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "11d9-3548-8ffd-f118:11d9-3548-8ffd-f118",
+                  "name": "The Ardent Blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5782-725c-b14a-2ac3",
+                      "name": "The Ardent Blade",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    },
+                    {
+                      "profile_id": "c203-7b5b-35fd-da3d",
+                      "name": "The Ardent Blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e7e5-76df-af3c-f545",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units:\n■ Seraphim Squad\n■ Zephyrim Squad"
+        },
+        {
+          "id": "2f-70aa-d0e5-a709",
+          "name": "Healing Tears",
+          "type": "Abilities",
+          "description": "While this unit contains a Celestine model, in your Command phase, if this unit is below its Starting Strength, either one destroyed Geminae Superia model or up to D3 other Bodyguard models are returned to this unit."
+        },
+        {
+          "id": "c06a-41c6-5749-25c0",
+          "name": "Lifewards",
+          "type": "Abilities",
+          "description": "While this unit contains one or more Geminae Superia models, Celestine has the Feel No Pain 4+ ability."
+        },
+        {
+          "id": "eee9-b689-1a73-742b",
+          "name": "Miraculous Intervention",
+          "type": "Abilities",
+          "description": "The first time this unit’s Celestine model is destroyed, roll one D6 at the end of the phase. On a 2+, set that Celestine model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+        },
+        {
+          "id": "3cae-8884-fe99-233f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have a 4+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "bee9-172b-7db7-f748",
+      "name": "Seraphim Squad",
+      "type": "unit",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "8615-573f-681a-78e8",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Seraphim Squad",
+          "target_id": "40db-f0a8-b5fd-d21d",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a871-b127-bde3-8616",
+          "name": "Seraphim Superior",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "bc47-a31c-bed2-c8cc",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bc47-a31c-bed2-c8cc:792e-2c25-dcd9-f9ee",
+                  "name": "Plasma Pistol and Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1156-bd38-a807-9186",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "bc47-a31c-bed2-c8cc:fe4f-aa85-2644-5578",
+                  "name": "Bolt Pistol and Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ce71-b434-ba43-b172",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "bc47-a31c-bed2-c8cc:91ae-88df-6a04-223f",
+                  "name": "Bolt Pistol and Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "76cb-6a13-b9a7-912f",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "bc47-a31c-bed2-c8cc:5787-254d-180a-1813",
+                  "name": "Plasma Pistol and Chainsword",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3d04-2c6-46f4-5e03",
+                      "name": "Chainsword",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "668f-c530-6843-389b",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "668f-c530-6843-389b:3837-30d2-fb43-9473",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b36b-d6a8-ddb1-fbcb",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1e39-cfcf-2756-5357",
+          "name": "Seraphim",
+          "min_count": 2,
+          "max_count": 9,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "f802-4ef4-667-3ba4",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f802-4ef4-667-3ba4:3837-30d2-fb43-9473",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b36b-d6a8-ddb1-fbcb",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ee1b-1ac8-3c19-6190",
+          "name": "Seraphim with Special Weapons",
+          "min_count": null,
+          "max_count": 2,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "4e65-98bb-f041-b59b",
+              "kind": "choice",
+              "name": "Special Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4e65-98bb-f041-b59b:de77-880d-31c2-fea2",
+                  "name": "2x Inferno Pistols",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3d8c-9fff-3b0b-b82",
+                      "name": "Inferno Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-4",
+                      "d": "D3",
+                      "keywords": "Melta 2, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7453-2395-100b-e3cf",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7453-2395-100b-e3cf:3837-30d2-fb43-9473",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b36b-d6a8-ddb1-fbcb",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "505c-e6aa-a712-a093",
+          "name": "Angelic Ascent",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
+        },
+        {
+          "id": "860d-8fcb-4b93-d871",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this units have an Invulnerable save of 5+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 170,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "4269-a229-1461-67d0",
+      "name": "Sisters Novitiate Squad",
+      "type": "unit",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sisters Novitiate Squad",
+          "target_id": "e8c6-d8f4-2d01-2e7a",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "a98b-c507-2078-b22",
+          "name": "Sacred Banner",
+          "type": "Abilities",
+          "description": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+        },
+        {
+          "id": "e35-588d-b21e-33d8",
+          "name": "Impetuous Fervour",
+          "type": "Abilities",
+          "description": "Impetuous Fervour: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead."
+        },
+        {
+          "id": "dbdc-2f28-490b-e918",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "52c7-3f6b-cece-8101",
+      "name": "Sororitas Rhino",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sororitas Rhino",
+          "target_id": "57d4-7917-5095-e513",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "52c7-3f6b-cece-8101",
+          "name": "Sororitas Rhino",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "9f67-ade9-3bbb-23f5",
+              "kind": "fixed",
+              "name": "Hunter-Killer Missile",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9f67-ade9-3bbb-23f5:1d2f-6fb-9587-2ef",
+                  "name": "Hunter-Killer Missile",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a98-ad7-fbd0-89bb",
+                      "name": "Hunter-killer missile",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "One Shot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8e9b-e6bf-e48b-7369",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "8e9b-e6bf-e48b-7369:c6fd-b98c-a3b7-5155",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1e2-c793-704d-623c",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c6e3-58f2-85c0-d46d",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c6e3-58f2-85c0-d46d:c16b-804f-46cb-2256",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5179-e76b-7ddd-5d38",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fb9d-4606-f887-5967",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE."
+        },
+        {
+          "id": "8f6c-1048-7b9b-e67e",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        },
+        {
+          "id": "e94b-d5c8-fb33-4f99",
+          "name": "Self Repair",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, this model regains 1 lost wound."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9f5f-d769-7900-c8a1",
+      "name": "Triumph of Saint Katherine",
+      "type": "model",
+      "points": 250,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Triumph of Saint Katherine",
+          "target_id": "3c49-c2db-485e-fe2e",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9f5f-d769-7900-c8a1",
+          "name": "Triumph of Saint Katherine",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "6"
+          },
+          "loadout": [
+            {
+              "id": "8012-d6d9-f0bd-81a9",
+              "kind": "fixed",
+              "name": "Bolt Pistols",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8012-d6d9-f0bd-81a9:8012-d6d9-f0bd-81a9",
+                  "name": "Bolt Pistols",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8e32-8166-7650-5382",
+                      "name": "Bolt Pistols",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9944-ed98-a1c2-54d2",
+              "kind": "fixed",
+              "name": "Relic Weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9944-ed98-a1c2-54d2:9944-ed98-a1c2-54d2",
+                  "name": "Relic Weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b2f7-ba05-56cc-9807",
+                      "name": "Relic Weapons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "18",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1c6e-8ff9-af2e-ffb9",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n■ Battle Sisters Squad"
+        },
+        {
+          "id": "c785-9209-5db8-d5e7",
+          "name": "Damaged: 1-6 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-6 wounds remaining, the Attacks characteristics of all of its weapons are halved, and you can only select one ability when using its Relics of the Matriarchs ability, instead of up to two."
+        },
+        {
+          "id": "a09c-e5cb-4ad9-8630",
+          "name": "Relics of the Matriarchs",
+          "type": "Abilities",
+          "description": "At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section. Until the start of the next battle round, this model has those abilities."
+        },
+        {
+          "id": "af36-63c-5792-332d",
+          "name": "Relic of the Matriarch - The Fiery Heart (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, add 2\" to that unit's Move characteristic and add 1 to the Advance and Charge rolls made for that unit."
+        },
+        {
+          "id": "bc2a-1efd-5bf1-16c7",
+          "name": "Relic of the Matriarch - Censer of the Sacred Rose (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, you can re-roll all Battle-shock tests taken for that unit."
+        },
+        {
+          "id": "7dfb-33ee-debe-bc02",
+          "name": "Relic of the Matriarch - Simulacrum of the Ebon Chalice (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, that unit can perform up to two Acts of Faith per phase, instead of only one."
+        },
+        {
+          "id": "ba51-e749-8362-b9af",
+          "name": "Relic of the Matriarch - Simulacrum of the Argent Shroud (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1."
+        },
+        {
+          "id": "79b6-f74e-253c-153f",
+          "name": "Relic of the Matriarch - Icon of the Valorous Heart (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability."
+        },
+        {
+          "id": "ee9f-15cc-2a69-8a31",
+          "name": "Relic of the Matriarch - Petals of the Bloody Rose (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly Adepta Sororitas unit is within 6\" of this model, improve the Armour Penetration characteristic of melee weapons equipped by model in that unit by 1."
+        },
+        {
+          "id": "3d31-2f99-c625-f047",
+          "name": "Solemn Procession",
+          "type": "Abilities",
+          "description": "Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6.’"
+        },
+        {
+          "id": "3eb6-8c59-3e85-181f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "22f0-a7d8-b2b6-e26",
+      "name": "Zephyrim Squad",
+      "type": "unit",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "8615-573f-681a-78e8",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Zephyrim Squad",
+          "target_id": "7561-4439-4420-e104",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "22f0-a7d8-b2b6-e26",
+          "name": "Zephyrim Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "37af-c9db-1ab0-50cb",
+              "kind": "fixed",
+              "name": "Zephyrim Superior",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "37af-c9db-1ab0-50cb:37af-c9db-1ab0-50cb",
+                  "name": "Zephyrim Superior",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "be9c-4d02-50d8-f79b",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "259f-4752-693d-eeb6",
+              "kind": "fixed",
+              "name": "Zephyrim",
+              "min_select": 4,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "259f-4752-693d-eeb6:259f-4752-693d-eeb6",
+                  "name": "Zephyrim",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d7c3-9562-eea6-d4a3",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9e87-6eab-3517-165d",
+          "name": "Sacred Banner",
+          "type": "Abilities",
+          "description": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+        },
+        {
+          "id": "e068-824b-2210-13c1",
+          "name": "Embodied Prophecy",
+          "type": "Abilities",
+          "description": "Each time this unit is selected to fight, select one of the following abilities to apply to power weapons equipped by models in this unit until the end of the phase:\n- Sustained Hits 1\n- Lethal Hits\nBefore making your selection, if this unit made a Charge move this turn, you can discard 1 Miracle dice. If you do, until the end of the phase, both of the abilities above apply to power weapons equipped by models in this unit."
+        },
+        {
+          "id": "5994-fa4a-62d9-d0d8",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have an Invulnerable save of 5+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 160,
+          "condition_text": "≥ 6 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 6,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9516-5ea3-ec42-dcfe",
+      "name": "Geminae Superia",
+      "type": "model",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "8615-573f-681a-78e8",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9516-5ea3-ec42-dcfe",
+          "name": "Geminae Superia",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "2",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b306-31d9-c005-b4",
+              "kind": "fixed",
+              "name": "Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b306-31d9-c005-b4:b306-31d9-c005-b4",
+                  "name": "Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fd72-8bc8-8e6d-5abf",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e74a-59f4-483d-d1fe",
+              "kind": "fixed",
+              "name": "Bolt Pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e74a-59f4-483d-d1fe:e74a-59f4-483d-d1fe",
+                  "name": "Bolt Pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8949-7d5b-2045-ef1c",
+                      "name": "Bolt Pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a6f5-9a5d-b4bb-9461",
+      "name": "Sister Novitiate (Melee Weapon)",
+      "type": "model",
+      "points": null,
+      "keywords": [],
+      "models": [],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4cde-9ef-5b92-9c64",
+      "name": "Sister Novitiate (Autogun)",
+      "type": "model",
+      "points": null,
+      "keywords": [],
+      "models": [],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d324-8119-7bf-d5e1",
+      "name": "Repressor [Legends]",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sororitas Rhino",
+          "target_id": "57d4-7917-5095-e513",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Repressor",
+          "target_id": "7ed3-a1f4-c6f6-22c6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d324-8119-7bf-d5e1",
+          "name": "Repressor [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "3cf6-498f-c163-ddc5",
+              "kind": "fixed",
+              "name": "Repressor twin heavy flamer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3cf6-498f-c163-ddc5:3cf6-498f-c163-ddc5",
+                  "name": "Repressor twin heavy flamer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5c8f-4727-31c9-c590",
+                      "name": "Repressor twin heavy flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-Linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d42b-3013-98ca-ced9",
+              "kind": "fixed",
+              "name": "Dozer Ram",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d42b-3013-98ca-ced9:d42b-3013-98ca-ced9",
+                  "name": "Dozer Ram",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "89b9-db4e-224f-961c",
+                      "name": "Dozer Ram",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "34d7-c320-5bbd-bd58",
+              "kind": "choice",
+              "name": "May be equipped with",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "34d7-c320-5bbd-bd58:cddd-e100-a61b-b5f5",
+                  "name": "Heavy flamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "214c-3b92-3367-a74e",
+                      "name": "Heavy flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cf3e-384e-1060-401a",
+              "kind": "fixed",
+              "name": "Hunter-Killer Missile",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cf3e-384e-1060-401a:1d2f-6fb-9587-2ef",
+                  "name": "Hunter-Killer Missile",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3a98-ad7-fbd0-89bb",
+                      "name": "Hunter-killer missile",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "One Shot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d6f3-b5d0-b9ef-ac6f",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d6f3-b5d0-b9ef-ac6f:c16b-804f-46cb-2256",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5179-e76b-7ddd-5d38",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cbb9-fd2c-9159-9eb1",
+              "kind": "fixed",
+              "name": "Storm bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "cbb9-fd2c-9159-9eb1:c6fd-b98c-a3b7-5155",
+                  "name": "Storm bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1e2-c793-704d-623c",
+                      "name": "Storm bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9627-db7d-202c-4bfb",
+          "name": "Transport",
+          "type": "Abilities",
+          "description": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine."
+        },
+        {
+          "id": "69f8-eb07-92c6-ee7a",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 6+"
+        },
+        {
+          "id": "2ef3-61bf-fe5-434c",
+          "name": "Emergency Combat Embarkation",
+          "type": "Abilities",
+          "description": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one ADEPTA SORORITAS unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this TRANSPORT, it can embark within this TRANSPORT."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e80a-4a97-2c3b-710e",
+      "name": "Canoness with Jump Pack",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Canoness",
+          "target_id": "fef8-7c60-b716-cf27",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e80a-4a97-2c3b-710e",
+          "name": "Canoness with Jump Pack",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "3",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "2833-389c-0abe-6312",
+              "kind": "choice",
+              "name": "May have:",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2833-389c-0abe-6312:fb6e-064f-ad86-d2d7",
+                  "name": "Blessed Halberd",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ee64-108f-ec59-9c81",
+                      "name": "Blessed Halberd",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "2833-389c-0abe-6312:3e57-1862-633f-637e",
+                  "name": "Ministorum Hand Flamer and Power Weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ecd0-d9ee-cb6c-ccc3",
+                      "name": "Power weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "2833-389c-0abe-6312:017d-40de-3a11-186c",
+                  "name": "Holy Eviscerator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b50f-d5dc-fb26-39c7",
+                      "name": "Holy Eviscerator",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d29e-6553-723c-5067",
+          "name": "Divine Deliverance",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the model and those weapons have the [DEVASTATING WOUNDS] ability"
+        },
+        {
+          "id": "7506-7743-d517-3826",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has an invulnerable save of 4+"
+        },
+        {
+          "id": "fbef-a9a2-d744-6ce0",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This unit can be attached to the following units: \n- Seraphim Squad\n- Zephyrim Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "325e-1297-4d00-1f75",
+      "name": "Death Cult Assassins [Legends]",
+      "type": "unit",
+      "points": 55,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Death Cult Assassins",
+          "target_id": "bb32-4eb2-9e16-5c0",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [],
+      "abilities": [
+        {
+          "id": "daf8-c48a-5832-741",
+          "name": "Death Cult",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack that targets a CHARACTER unit, you can re-roll the Wound roll."
+        },
+        {
+          "id": "4a62-1352-4db-d0d0",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have an invulnerable save of 5+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 110,
+          "condition_text": "≥ 3 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "5d01-db4e-c389-a0bc",
+      "name": "Crusaders [Legends]",
+      "type": "unit",
+      "points": 40,
+      "keywords": [
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Crusaders",
+          "target_id": "7623-c20e-f284-39d9",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "737d-f718-6f96-8146",
+          "name": "Crusader",
+          "min_count": 2,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "2",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "79f-b7c0-bde5-e473",
+              "kind": "fixed",
+              "name": "Power Weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "79f-b7c0-bde5-e473:79f-b7c0-bde5-e473",
+                  "name": "Power Weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ccee-7c1f-8c00-d9e9",
+                      "name": "Power Weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3a47-84c9-767e-fe13",
+          "name": "Spiritual Fortitude",
+          "type": "Abilities",
+          "description": "Models in this unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds."
+        },
+        {
+          "id": "ed35-bc75-d910-59f1",
+          "name": "Attached Unit",
+          "type": "Abilities",
+          "description": "If a model from your army with the Leader ability can be attached to a BATTLE SISTERS SQUAD, it can be attached to this unit instead."
+        },
+        {
+          "id": "3dc2-22d4-2748-a419",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have an Invulnerable save of 4+."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 80,
+          "condition_text": "≥ 3 个模型",
+          "condition_type": "atLeast",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "e15e-17fa-23ca-693e",
+      "name": "Battle Sanctum [Legends]",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Battle Sanctum",
+          "target_id": "4b49-98f3-035c-23b0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e15e-17fa-23ca-693e",
+          "name": "Battle Sanctum [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "11",
+            "sv": "3+",
+            "w": "20",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e082-93e0-86d5-1129",
+          "name": "Consecrated Ground",
+          "type": "Abilities",
+          "description": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. Friendly ADEPTA SORORITAS INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION. While an ADEPTA SORORITAS unit from your army is within 1\" of this FORTIFICATION, that unit can perform one additional Act of Faith per phase."
+        },
+        {
+          "id": "1e64-6be4-df39-120c",
+          "name": "Holy Cover",
+          "type": "Abilities",
+          "description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6227-8c95-0e8a-81de",
+      "name": "Celestian Sacresant Aveline [Legends]",
+      "type": "model",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Celestian Sacresant Aveline",
+          "target_id": "95ea-3d17-1b12-a7c1",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adepta Sororitas",
+          "target_id": "fd71-afa6-b13b-7fda",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6227-8c95-0e8a-81de",
+          "name": "Celestian Sacresant Aveline [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "3+",
+            "w": "4",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "a948-4c20-ebad-cffe",
+              "kind": "fixed",
+              "name": "The Thorn of the White Rose",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a948-4c20-ebad-cffe:a948-4c20-ebad-cffe",
+                  "name": "The Thorn of the White Rose",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8749-8e4f-7ad6-3adb",
+                      "name": "The Thorn of the White Rose",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0410-eb25-e630-b967",
+              "kind": "fixed",
+              "name": "Ministorum hand flamer",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "0410-eb25-e630-b967:c462-3995-88b0-200c",
+                  "name": "Ministorum hand flamer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1456-cb87-f320-1136",
+                      "name": "Ministorum hand flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Pistol, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2735-639c-b63b-bb44",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "946d-6991-50ea-72c1",
+          "name": "Instrument of the Emperor's Wrath",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+        },
+        {
+          "id": "758b-f18b-98a9-0fe4",
+          "name": "Daemonbreaker",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a DAEMON unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "8e26-78e2-10bd-6982",
+      "name": "Hallowed Martyrs"
+    },
+    {
+      "id": "a2f5-a466-96b6-d389",
+      "name": "Penitent Host"
+    },
+    {
+      "id": "575d-76f6-2edb-22c1",
+      "name": "Bringers of Flame"
+    },
+    {
+      "id": "6f81-1a3e-c84e-0954",
+      "name": "Army of Faith"
+    },
+    {
+      "id": "5c81-a47b-d3a0-31e8",
+      "name": "Champions of Faith"
+    }
+  ],
+  "enhancements": []
+}

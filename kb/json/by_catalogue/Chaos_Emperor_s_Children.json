@@ -1,0 +1,6663 @@
+{
+ "id": "03fe-a162-4c02-f07b",
+ "name": "Chaos - Emperor's Children",
+ "is_library": false,
+ "revision": "49",
+ "source_file": "Chaos - Emperor's Children.cat",
+ "categories": [
+  {
+   "id": "31bb-7d77-943e-94bd",
+   "name": "Faction: Emperor's Children"
+  },
+  {
+   "id": "7173-b746-135a-9179",
+   "name": "Lucius the Eternal"
+  },
+  {
+   "id": "2cd4-dec3-a94e-bca6",
+   "name": "Fulgrim"
+  },
+  {
+   "id": "6264-8211-3a47-31d6",
+   "name": "Lord Exultant"
+  },
+  {
+   "id": "5c22-0807-79af-03da",
+   "name": "Lord Kakophonist"
+  },
+  {
+   "id": "51c1-ec72-3088-dc2b",
+   "name": "Sorcerer"
+  },
+  {
+   "id": "227d-98ab-930c-3e7f",
+   "name": "Daemon Prince with Wings"
+  },
+  {
+   "id": "b950-835c-0fb7-9b47",
+   "name": "Tormentors"
+  },
+  {
+   "id": "ff6d-0152-7e0e-7e88",
+   "name": "Infractors"
+  },
+  {
+   "id": "1f5d-db57-16e1-8111",
+   "name": "Flawless Blades"
+  },
+  {
+   "id": "bca0-5ff4-61e3-e53b",
+   "name": "Terminator Squad"
+  },
+  {
+   "id": "e210-38b5-7634-516b",
+   "name": "Chaos Spawn"
+  },
+  {
+   "id": "d6e0-f0b0-5df4-71de",
+   "name": "Noise Marines"
+  },
+  {
+   "id": "49f7-c1dc-b98c-9aee",
+   "name": "Heldrake"
+  },
+  {
+   "id": "c37d-0ec5-9d7c-a853",
+   "name": "Maulerfiend"
+  },
+  {
+   "id": "4c25-d2f3-36bb-8067",
+   "name": "Faction: Legions of Excess"
+  },
+  {
+   "id": "7804-4d2f-c192-0621",
+   "name": "Keeper of Secrets"
+  },
+  {
+   "id": "d9a9-1282-076e-579b",
+   "name": "Shalaxi Helbane"
+  },
+  {
+   "id": "2b0a-9d0d-aa71-153e",
+   "name": "Daemonettes"
+  },
+  {
+   "id": "d16a-86a4-5880-3e94",
+   "name": "Fiends"
+  },
+  {
+   "id": "38a2-f283-606d-7a37",
+   "name": "Summoned"
+  },
+  {
+   "id": "15d7-63fa-2466-d392",
+   "name": "Seekers"
+  },
+  {
+   "id": "54bb-8fde-067b-3a2b",
+   "name": "meme"
+  },
+  {
+   "id": "1c72-7f65-e03d-8c7a",
+   "name": "Land Raider"
+  },
+  {
+   "id": "670f-3c53-1b50-9797",
+   "name": "Excruciator"
+  },
+  {
+   "id": "8307-eccc-e329-248a",
+   "name": "Champion of Excess"
+  },
+  {
+   "id": "599a-0ed1-d2aa-f016",
+   "name": "Flawless Champion"
+  },
+  {
+   "id": "3aa3-c975-5f5c-48c2",
+   "name": "Defiler"
+  }
+ ],
+ "rules": [],
+ "datasheets": [
+  {
+   "id": "e390-b58b-db9-816",
+   "name": "Lucius the Eternal",
+   "type": "model",
+   "points": 150,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    },
+    {
+     "name": "Epic Hero",
+     "target_id": "4f3a-f0f7-6647-348d",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Lucius the Eternal",
+     "target_id": "7173-b746-135a-9179",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "e390-b58b-db9-816",
+     "name": "Lucius the Eternal",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "8\"",
+      "t": "5",
+      "sv": "2+",
+      "w": "6",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "cd60-e6ca-4de4-bf07",
+       "kind": "fixed",
+       "name": "Blade of the Laer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "cd60-e6ca-4de4-bf07:cd60-e6ca-4de4-bf07",
+         "name": "Blade of the Laer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "24d6-16d2-8b67-e957",
+           "name": "Blade of the Laer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "3",
+           "keywords": "Precision"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "23e2-6d93-5012-304d",
+       "kind": "fixed",
+       "name": "Lash of Torment",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "23e2-6d93-5012-304d:23e2-6d93-5012-304d",
+         "name": "Lash of Torment",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "35f1-b84c-b0bf-0b06",
+           "name": "Lash of Torment",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "10",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "68a4-911a-c03c-2cf4",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units:\n- **^^Flawless Blades^^**"
+    },
+    {
+     "id": "5909-fd1b-aabd-8cf6",
+     "name": "Duellist’s Hubris",
+     "type": "Abilities",
+     "description": "At the start of the Fight phase, if this model is not leading a unit, until the end of the phase, it has the Fights First ability."
+    },
+    {
+     "id": "a7c1-b492-fe9-85eb",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "01a5-5e86-b905-a68c",
+     "name": "A Challenge Worthy of Skill",
+     "type": "Abilities",
+     "description": "Each time this model makes an attack that targets a **^^Character, Monster^^** or **^^Walker^^** unit, you can re-roll the Hit roll and re-roll the Wound roll."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "1e0a-cf2b-6602-2a34",
+   "name": "Fulgrim",
+   "type": "model",
+   "points": 340,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Fulgrim",
+     "target_id": "2cd4-dec3-a94e-bca6",
+     "primary": false
+    },
+    {
+     "name": "Primarch",
+     "target_id": "6474-0ce3-6b5a-120c",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Fly",
+     "target_id": "c619-2086-bbcf-69c9",
+     "primary": false
+    },
+    {
+     "name": "Epic Hero",
+     "target_id": "4f3a-f0f7-6647-348d",
+     "primary": true
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "1e0a-cf2b-6602-2a34",
+     "name": "Fulgrim",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "16\"",
+      "t": "11",
+      "sv": "2+",
+      "w": "16",
+      "ld": "5+",
+      "oc": "6"
+     },
+     "loadout": [
+      {
+       "id": "e6eb-4713-7a67-6a2d",
+       "kind": "fixed",
+       "name": "Malefic lash",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e6eb-4713-7a67-6a2d:e6eb-4713-7a67-6a2d",
+         "name": "Malefic lash",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "4153-f23f-a5d3-f974",
+           "name": "Malefic lash",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "37e2-d0fa-d7e5-b958",
+       "kind": "fixed",
+       "name": "Serpentine tail",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "37e2-d0fa-d7e5-b958:37e2-d0fa-d7e5-b958",
+         "name": "Serpentine tail",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "6e4e-baf5-f1da-96dc",
+           "name": "Serpentine tail",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "fb08-130a-eb0a-d9a9",
+       "kind": "fixed",
+       "name": "Daemonic blades",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "fb08-130a-eb0a-d9a9:fb08-130a-eb0a-d9a9",
+         "name": "Daemonic blades",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1831-479e-9455-6978",
+           "name": "➤ Daemonic blades - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "14",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Sustained Hits 1"
+          },
+          {
+           "profile_id": "cffd-10d9-9b22-e5f0",
+           "name": "➤ Daemonic blades - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "12",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Sustained Hits 1"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "93e3-f094-ef34-11e6",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "444e-1e09-a6c8-f8ec",
+     "name": "Daemonic Poisons",
+     "type": "Abilities",
+     "description": "In your Shooting phase and the Fight phase, after this model has finished making its attacks, select one enemy unit hit by one or more of those attacks. Until the end of the battle, that enemy unit is poisoned. At the start of each player's Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 4+, that enemy unit suffers D3 mortal wounds."
+    },
+    {
+     "id": "ca20-91b8-b9e8-c14d",
+     "name": "Daemon Prince of Slaanesh",
+     "type": "Abilities",
+     "description": "At the start of your opponent's Command phase, select one of the abilities in the Daemon Prince of Slaanesh section. Until the start of your opponent's next Command phase, this model has that ability."
+    },
+    {
+     "id": "af1c-9f7a-30bf-7eb0",
+     "name": "Damaged: 1-6 Wounds Remaining",
+     "type": "Abilities",
+     "description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+    },
+    {
+     "id": "498c-ad14-6e2b-bbfb",
+     "name": "Supreme Commander",
+     "type": "Abilities",
+     "description": "If this model is in your army, it must be your **^^Warlord^^**."
+    },
+    {
+     "id": "9842-31b9-4cb1-d821",
+     "name": "Serpentine",
+     "type": "Abilities",
+     "description": "Each time this model makes a Normal, Advance or Fall Back move, it can move over sections of terrain features that are 4\" or less in height."
+    },
+    {
+     "id": "3a41-f55f-c44f-9782",
+     "name": "Beguiling Form",
+     "type": "Abilities",
+     "description": "Each time a model makes an attack that targets this unit, subtract 1 from the Hit roll."
+    },
+    {
+     "id": "62c3-70df-90c4-5136",
+     "name": "Daemonic Speed",
+     "type": "Abilities",
+     "description": "This model has the Fights First ability."
+    },
+    {
+     "id": "24ce-3caf-5629-156e",
+     "name": "Enthralling Hypnosis (Aura)",
+     "type": "Abilities",
+     "description": "While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back, it must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "7b4c-dfe0-6a0a-304a",
+   "name": "Lord Exultant",
+   "type": "model",
+   "points": 80,
+   "keywords": [
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Lord Exultant",
+     "target_id": "6264-8211-3a47-31d6",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "7b4c-dfe0-6a0a-304a",
+     "name": "Lord Exultant",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "5",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "fab5-19a3-46fb-d77b",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "fab5-19a3-46fb-d77b:ca53-c39c-8291-16d1",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "fab5-19a3-46fb-d77b:d5fe-026f-1f46-e9c5",
+         "name": "Close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "39ec-7a10-b626-5d23",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "cdfd-857f-d981-a3b2",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "197e-a2ea-b468-48d9",
+     "name": "Perfectionists",
+     "type": "Abilities",
+     "description": "While this model is leading a unit, weapons equipped by models in that unit have the **^^[LETHAL HITS]^^** ability."
+    },
+    {
+     "id": "828a-cdf4-e64a-cf75",
+     "name": "Euphoric Strikes",
+     "type": "Abilities",
+     "description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does so, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1."
+    },
+    {
+     "id": "3cf5-ff3c-e78d-51c8",
+     "name": "Lord of the Host",
+     "type": "Abilities",
+     "description": "If this model is attached to an **^^Emperor's Children Battleline^^** unit during the Declare Battle Formations step, this model has the Infiltrators and Scouts 6\" ability."
+    },
+    {
+     "id": "8799-26c2-ca52-3969",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units: **^^Infractors; Tormentors^^**"
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "ee50-955a-0a81-41f1",
+   "name": "Lord Kakophonist",
+   "type": "model",
+   "points": 70,
+   "keywords": [
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Lord Kakophonist",
+     "target_id": "5c22-0807-79af-03da",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "ee50-955a-0a81-41f1",
+     "name": "Lord Kakophonist",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "6\"",
+      "t": "5",
+      "sv": "2+",
+      "w": "6",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "8e34-44fe-394c-cfb1",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "8e34-44fe-394c-cfb1:562a-fb52-8dc2-aa72",
+         "name": "Screamer pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ca52-3d8a-8fc5-e184",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "d91a-febf-366b-329d",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "7e47-d44e-0c0d-86d4",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units: **^^Emperor's Children Terminator Squad; Noise Marines^^**"
+    },
+    {
+     "id": "8fdb-0d21-37f4-ecca",
+     "name": "Obsessive Annunciation",
+     "type": "Abilities",
+     "description": "While this model is leading a unit, ranged weapons equipped by that unit have the [SUSTAINED HITS 1] ability."
+    },
+    {
+     "id": "f8bf-39ff-4779-40f2",
+     "name": "Doom Siren",
+     "type": "Abilities",
+     "description": "In your Shooting phase, after this model's unit has shot, select one enemy **^^Infantry^^** unit hit by one or more of those attacks and roll three D6: for each 4+, that enemy unit suffers 1 mortal wound. If an enemy suffers one or more mortal wounds as a result of this ability, it must take a Battle-shock test."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "2cd1-13f5-d59d-cc7f",
+   "name": "Sorcerer",
+   "type": "model",
+   "points": 60,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Psyker",
+     "target_id": "13bf-2bee-3ae0-b414",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Sorcerer",
+     "target_id": "51c1-ec72-3088-dc2b",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "2cd1-13f5-d59d-cc7f",
+     "name": "Sorcerer",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "2aad-c4e7-bd32-84d0",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "2aad-c4e7-bd32-84d0:f2f1-616b-c202-a071",
+         "name": "Agonising Energies",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5d75-5ae6-cf79-4360",
+           "name": "Agonising Energies - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          },
+          {
+           "profile_id": "b3ab-f8ad-dee3-6a37",
+           "name": "Agonising Energies - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "2aad-c4e7-bd32-84d0:76d8-2228-b6cb-2d36",
+         "name": "Force weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4824-0519-c888-7847",
+           "name": "Force weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Psychic"
+          }
+         ]
+        },
+        {
+         "id": "2aad-c4e7-bd32-84d0:716b-1905-82ba-917b",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "3d6e-dbc8-ccd2-cb3d",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units: **^^Infractors; Noise Marines; Tormentors^^**"
+    },
+    {
+     "id": "cefa-0b6a-caf2-7790",
+     "name": "Warped Interference (Psychic)",
+     "type": "Abilities",
+     "description": "While this model is leading a unit, each time a ranged attack targets that unit, models in it have the Benefit of Cover against that attack."
+    },
+    {
+     "id": "7485-ffb5-b729-f8b2",
+     "name": "Wracking Agonies (Psychic)",
+     "type": "Abilities",
+     "description": "In your Shooting phase, after this model has shot, select one INFANTRY unit hit by one or more of those attacks made with its Agonising Energies. Until the start of your next turn, that unit is wracked with agonies. While a unit is wracked with agonies, subtract 2\" from its Move characteristic and subtract 2 from charge rolls made for it."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "ad59-b823-900d-ee2d",
+   "name": "Daemon Prince of Slaanesh",
+   "type": "model",
+   "points": 180,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Daemon Prince",
+     "target_id": "4f09-0141-6c70-6c5a",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "ad59-b823-900d-ee2d",
+     "name": "Daemon Prince of Slaanesh",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "10\"",
+      "t": "10",
+      "sv": "2+",
+      "w": "10",
+      "ld": "6+",
+      "oc": "3"
+     },
+     "loadout": [
+      {
+       "id": "1672-83c5-eb04-4813",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "1672-83c5-eb04-4813:cd80-af32-8b71-8a3a",
+         "name": "Hellforged weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aea0-4808-c2b2-ee91",
+           "name": "➤ Hellforged weapons - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1fe5-c5c8-cd3f-2426",
+           "name": "➤ Hellforged weapons - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "14",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "1672-83c5-eb04-4813:b0d7-6f51-f278-85ae",
+         "name": "Infernal cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5fc1-af26-8fad-2a04",
+           "name": "Infernal cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "4e7c-c6d1-7cdf-36f8",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "e6ea-7b81-ac62-18b5",
+     "name": "Lord of Excess",
+     "type": "Abilities",
+     "description": "While this model is within 3\" of one or more friendly **^^Slaanesh Infantry^^**, this model has the Lone Operative ability."
+    },
+    {
+     "id": "222f-a01c-620b-a089",
+     "name": "Excessive Vigour (Aura)",
+     "type": "Abilities",
+     "description": "While a friendly **^^Slaanesh^^** unit is within 6\" of this model, if that unit made a Charge move this turn, improve the Armour Penetration characteristic of melee weapons equipped by that unit by 1."
+    },
+    {
+     "id": "9a99-ab28-dcc6-bc4c",
+     "name": "Ecstatic Death",
+     "type": "Abilities",
+     "description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "e452-08be-33e6-3864",
+   "name": "Daemon Prince of Slaanesh with Wings",
+   "type": "model",
+   "points": 215,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Fly",
+     "target_id": "c619-2086-bbcf-69c9",
+     "primary": false
+    },
+    {
+     "name": "Daemon Prince with Wings",
+     "target_id": "227d-98ab-930c-3e7f",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "e452-08be-33e6-3864",
+     "name": "Daemon Prince of Slaanesh with Wings",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "14\"",
+      "t": "9",
+      "sv": "2+",
+      "w": "10",
+      "ld": "6+",
+      "oc": "3"
+     },
+     "loadout": [
+      {
+       "id": "7c86-15e7-a294-800a",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "7c86-15e7-a294-800a:40c1-075d-238e-1f6a",
+         "name": "Hellforged weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "aea0-4808-c2b2-ee91",
+           "name": "➤ Hellforged weapons - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "1fe5-c5c8-cd3f-2426",
+           "name": "➤ Hellforged weapons - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "14",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7c86-15e7-a294-800a:b803-ca37-2e2c-c815",
+         "name": "Infernal cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5fc1-af26-8fad-2a04",
+           "name": "Infernal cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "f4c8-5276-aa27-6b2e",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "33de-9a37-baa6-5a99",
+     "name": "Daemonic Destruction",
+     "type": "Abilities",
+     "description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6 for each of this model's remaining wounds: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds)."
+    },
+    {
+     "id": "913e-136d-35d5-5c63",
+     "name": "Stimulated by Pain",
+     "type": "Abilities",
+     "description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "4494-dd7d-69f7-306c",
+   "name": "Tormentors",
+   "type": "unit",
+   "points": 85,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Battleline",
+     "target_id": "e338-111e-d0c6-b687",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Tormentors",
+     "target_id": "b950-835c-0fb7-9b47",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "4494-dd7d-69f7-306c",
+     "name": "Tormentors",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "2",
+      "ld": "6+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "2a06-5c5b-c129-27d7",
+       "kind": "fixed",
+       "name": "Obsessionist",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "2a06-5c5b-c129-27d7:2a06-5c5b-c129-27d7",
+         "name": "Obsessionist",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "65d3-9d25-d59b-cfa9",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "f4b9-1aa7-21d4-4736",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "e9cc-ca60-8917-fd5a",
+           "name": "Rapture lash",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "379c-cb9a-af6d-23be",
+           "name": "Power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e5de-0c54-e036-829d",
+       "kind": "choice",
+       "name": "4-9 Tormentors",
+       "min_select": 4,
+       "max_select": 9,
+       "options": [
+        {
+         "id": "e5de-0c54-e036-829d:d813-7c6b-1dfe-e99a",
+         "name": "Tormentor",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1bd0-b182-11c7-2f28",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Precision"
+          },
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e5de-0c54-e036-829d:4fc5-2f16-eba1-287c",
+         "name": "Tormentor w/ plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "466e-6db6-bcb9-2710",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Precision, Rapid Fire 1"
+          },
+          {
+           "profile_id": "6c77-e7a8-2e51-a4db",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Precision, Rapid Fire 1"
+          },
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "e5de-0c54-e036-829d:c6a8-0dbc-ab1b-38b5",
+         "name": "Tormentor w/ meltagun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "caa6-33de-d9d8-ac50",
+           "name": "Meltagun",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "9",
+           "ap": "-4",
+           "d": "D6",
+           "keywords": "Melta 2, Precision"
+          },
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "54b6-52b7-2959-e73b",
+     "name": "Icon of Excess",
+     "type": "Abilities",
+     "description": "At the end of your Shooting phase or the Fight phase, if the bearer's unit destroyed one or more enemy units this phase, the bearer's unit takes a Leadership test. If that test is passed, you gain 1CP."
+    },
+    {
+     "id": "b7d5-8896-8643-e2a9",
+     "name": "Objective Defiled",
+     "type": "Abilities",
+     "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 160,
+     "condition_text": "> 5 models",
+     "condition_type": "greaterThan",
+     "condition_value": 5,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "e456-0afc-9b42-226c",
+   "name": "Infractors",
+   "type": "unit",
+   "points": 85,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Battleline",
+     "target_id": "e338-111e-d0c6-b687",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Infractors",
+     "target_id": "ff6d-0152-7e0e-7e88",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "e456-0afc-9b42-226c",
+     "name": "Infractors",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "2",
+      "ld": "6+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "b59f-e25b-6248-8f90",
+       "kind": "fixed",
+       "name": "Obsessionist",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b59f-e25b-6248-8f90:b59f-e25b-6248-8f90",
+         "name": "Obsessionist",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "65d3-9d25-d59b-cfa9",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "f4b9-1aa7-21d4-4736",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          },
+          {
+           "profile_id": "e9cc-ca60-8917-fd5a",
+           "name": "Rapture lash",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "379c-cb9a-af6d-23be",
+           "name": "Power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "bca5-1eb4-b1eb-7a4e",
+       "kind": "choice",
+       "name": "4-9 Infractors",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "bca5-1eb4-b1eb-7a4e:ea82-9845-1b96-c57c",
+         "name": "Infractor",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "0b4a-235b-6bf1-7a9b",
+           "name": "Duelling sabre",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Precision"
+          },
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "c48a-62e2-8628-b37d",
+     "name": "Excessive Assault",
+     "type": "Abilities",
+     "description": "Each time a model in this unit targets an enemy unit with a melee attack, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead."
+    },
+    {
+     "id": "f61d-01f1-ace6-1243",
+     "name": "Icon of Excess",
+     "type": "Abilities",
+     "description": "At the end of your Shooting phase or the Fight phase, if the bearer's unit destroyed one or more enemy units this phase, the bearer's unit takes a Leadership test. If that test is passed, you gain 1CP."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 160,
+     "condition_text": "> 5 models",
+     "condition_type": "greaterThan",
+     "condition_value": 5,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "183e-f3bb-3ce6-7b55",
+   "name": "Flawless Blades",
+   "type": "unit",
+   "points": 100,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Flawless Blades",
+     "target_id": "1f5d-db57-16e1-8111",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "183e-f3bb-3ce6-7b55",
+     "name": "Flawless Blades",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "8\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "3",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "0567-0f45-90e8-d3f4",
+       "kind": "fixed",
+       "name": "Flawless Blade",
+       "min_select": 3,
+       "max_select": 6,
+       "options": [
+        {
+         "id": "0567-0f45-90e8-d3f4:0567-0f45-90e8-d3f4",
+         "name": "Flawless Blade",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a401-7dd2-62ab-639a",
+           "name": "Blissblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "5ec6-92a4-407a-f5a9",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "49c8-2d8a-5a03-49bb",
+     "name": "Daemonic Patrons",
+     "type": "Abilities",
+     "description": "Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack. an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed."
+    },
+    {
+     "id": "d841-9707-823f-515a",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "Models in this unit have a 5+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 200,
+     "condition_text": "> 3 models",
+     "condition_type": "greaterThan",
+     "condition_value": 3,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "5926-4deb-a85d-c73a",
+   "name": "Chaos Terminators",
+   "type": "unit",
+   "points": 145,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Terminator",
+     "target_id": "740a-892c-8958-defa",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Terminator Squad",
+     "target_id": "bca0-5ff4-61e3-e53b",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "5926-4deb-a85d-c73a",
+     "name": "Chaos Terminators",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "6\"",
+      "t": "5",
+      "sv": "2+",
+      "w": "3",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "72a1-b5b7-c3e8-9c1e",
+       "kind": "fixed",
+       "name": "Terminator Champion",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "72a1-b5b7-c3e8-9c1e:72a1-b5b7-c3e8-9c1e",
+         "name": "Terminator Champion",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3600-24e5-672c-60e6",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          },
+          {
+           "profile_id": "bec5-9e9c-b187-c1c0",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c2e7-7533-b572-eadb",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          },
+          {
+           "profile_id": "2e0a-95ea-8b23-1712",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-VEHICLE 3+"
+          },
+          {
+           "profile_id": "a6fe-508b-c73b-152f",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "9b7f-1370-e41c-3e5c",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7059-5f21-88e3-3c6b",
+       "kind": "choice",
+       "name": "4 Terminators",
+       "min_select": 4,
+       "max_select": 4,
+       "options": [
+        {
+         "id": "7059-5f21-88e3-3c6b:4a52-6694-b18b-54aa",
+         "name": "Accursed weapon and combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3600-24e5-672c-60e6",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          },
+          {
+           "profile_id": "bec5-9e9c-b187-c1c0",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:dcc8-aa7a-d2d8-3439",
+         "name": "Accursed weapon and combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "bec5-9e9c-b187-c1c0",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c2e7-7533-b572-eadb",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:b6be-5ffd-225e-84f0",
+         "name": "Power fist and combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "a6fe-508b-c73b-152f",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "c2e7-7533-b572-eadb",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:956e-421b-159a-4a41",
+         "name": "Chainfist and combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2e0a-95ea-8b23-1712",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-VEHICLE 3+"
+          },
+          {
+           "profile_id": "3600-24e5-672c-60e6",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:a6f3-e4f2-481d-7cf5",
+         "name": "Heavy weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cd0f-79ca-725e-bb5b",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          },
+          {
+           "profile_id": "00bd-d30d-1bf9-e96a",
+           "name": "Reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          },
+          {
+           "profile_id": "bec5-9e9c-b187-c1c0",
+           "name": "Accursed weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "2e0a-95ea-8b23-1712",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-VEHICLE 3+"
+          },
+          {
+           "profile_id": "a6fe-508b-c73b-152f",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:0008-11d1-562a-f3cb",
+         "name": "Power fist and combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3600-24e5-672c-60e6",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          },
+          {
+           "profile_id": "a6fe-508b-c73b-152f",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:a832-2d33-d1ee-ff41",
+         "name": "Chainfist and combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2e0a-95ea-8b23-1712",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-VEHICLE 3+"
+          },
+          {
+           "profile_id": "c2e7-7533-b572-eadb",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "7059-5f21-88e3-3c6b:5c7c-732c-3962-b336",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9b7f-1370-e41c-3e5c",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "9123-44f5-7680-f937",
+     "name": "Lethal Obsession",
+     "type": "Abilities",
+     "description": "In your Shooting phase, each time this unit is selected to shoot, if it makes one or more shooting attacks and all of those attacks target the same enemy unit, until the end of the turn, each time this unit declares a charge, if that enemy unit is a target of that charge, you can re-roll the Charge roll."
+    },
+    {
+     "id": "ef95-cb2b-c09f-06bc",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "Models in this unit have a 4+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 360,
+     "condition_text": "≥ 6 models",
+     "condition_type": "atLeast",
+     "condition_value": 6,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "896c-5816-3abd-5199",
+   "name": "Chaos Spawn",
+   "type": "unit",
+   "points": 70,
+   "keywords": [
+    {
+     "name": "Beast",
+     "target_id": "4c3e-9310-a516-3590",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Chaos Spawn",
+     "target_id": "e210-38b5-7634-516b",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "896c-5816-3abd-5199",
+     "name": "Chaos Spawn",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "10\"",
+      "t": "5",
+      "sv": "4+",
+      "w": "4",
+      "ld": "7+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "b978-5fcc-7930-41f7",
+       "kind": "fixed",
+       "name": "Chaos Spawn",
+       "min_select": 2,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "b978-5fcc-7930-41f7:b978-5fcc-7930-41f7",
+         "name": "Chaos Spawn",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "54d5-51ce-93e1-8a58",
+           "name": "Hideous Mutations",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "D6+2",
+           "bs_ws": "4+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "d63b-edb5-4839-ab4f",
+     "name": "Scuttling Horrors",
+     "type": "Abilities",
+     "description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, this unit can make a Normal move of up to 6\"."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "f10c-5f3e-c09d-0b12",
+   "name": "Chaos Land Raider",
+   "type": "model",
+   "points": 220,
+   "keywords": [
+    {
+     "name": "Vehicle",
+     "target_id": "dbd4-63-af05-998",
+     "primary": true
+    },
+    {
+     "name": "Transport",
+     "target_id": "75e8-57c4-40e3-1817",
+     "primary": false
+    },
+    {
+     "name": "Smoke",
+     "target_id": "6df-937-16bc-8c1a",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Land Raider",
+     "target_id": "1c72-7f65-e03d-8c7a",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "f10c-5f3e-c09d-0b12",
+     "name": "Chaos Land Raider",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "10\"",
+      "t": "12",
+      "sv": "2+",
+      "w": "16",
+      "ld": "6+",
+      "oc": "5"
+     },
+     "loadout": [
+      {
+       "id": "f68d-7873-207f-27ef",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "f68d-7873-207f-27ef:61b6-4d0d-039d-6efc",
+         "name": "Armoured tracks",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f2e2-5cf9-ec1d-c257",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "4+",
+           "s": "8",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f68d-7873-207f-27ef:2e62-00e4-8585-c884",
+         "name": "Soulshatter lascannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cf8f-c1a5-acfd-cf4d",
+           "name": "Soulshatter lascannon",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "f68d-7873-207f-27ef:30af-8a66-f8ab-21e0",
+         "name": "Havoc launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-1a06-65e0-2fc4",
+           "name": "Havoc launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        },
+        {
+         "id": "f68d-7873-207f-27ef:7216-974e-0908-05d9",
+         "name": "Twin heavy bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "e905-c7a5-3468-02f2",
+           "name": "Twin heavy bolter",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Sustained Hits 1, Twin-linked"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "1e99-a2be-7d7b-1972",
+     "name": "Assault Ramp",
+     "type": "Abilities",
+     "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+    },
+    {
+     "id": "b146-5f0b-e066-d4c4",
+     "name": "Damaged: 1-5 wounds remaining",
+     "type": "Abilities",
+     "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+    }
+   ],
+   "transport": [
+    {
+     "id": "6987-e064-d6d8-401f",
+     "name": "Chaos Land Raider",
+     "capacity": "This model has a transport capacity of 14 **^^Emperor's Children Infantry^^** models. Each **^^Terminator^^** and ^^**Flawless Blade^^** model takes up the space of 2 models."
+    }
+   ],
+   "pricing_tiers": []
+  },
+  {
+   "id": "5817-0d6c-973c-68f8",
+   "name": "Noise Marines",
+   "type": "unit",
+   "points": 145,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Noise Marines",
+     "target_id": "d6e0-f0b0-5df4-71de",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "19aa-1a3e-7140-3052",
+     "name": "Disharmonist",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "6\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "2",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "9d1b-cc9d-6c28-753d",
+       "kind": "choice",
+       "name": "Sonic Blaster",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "9d1b-cc9d-6c28-753d:629d-af39-6f25-d42c",
+         "name": "Screamer pistol and power sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "dd53-d890-4d8d-8511",
+           "name": "Power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          },
+          {
+           "profile_id": "7fc4-56d5-27ef-f285",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "9d1b-cc9d-6c28-753d:e474-b327-32bf-1c28",
+         "name": "Sonic blaster",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1b15-be7e-56dd-8e3f",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6e05-9043-c16d-5077",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "6e05-9043-c16d-5077:ab80-e71b-5a84-2852",
+         "name": "Close combat weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3dfa-a8d4-464a-ccf6",
+     "name": "Noise Marine w/ sonic blaster",
+     "min_count": 3,
+     "max_count": 5,
+     "stats": {
+      "m": "6\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "2",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "5a0a-5e8c-13f1-dfa7",
+       "kind": "fixed",
+       "name": "Sonic blaster",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "5a0a-5e8c-13f1-dfa7:5086-e851-0cbc-3762",
+         "name": "Sonic blaster",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1b15-be7e-56dd-8e3f",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d605-e00b-5b2f-0634",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d605-e00b-5b2f-0634:ab80-e71b-5a84-2852",
+         "name": "Close combat weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "f6c0-be94-3353-3376",
+     "name": "Noise Marine w/ blastmaster",
+     "min_count": null,
+     "max_count": 2,
+     "stats": {
+      "m": "6\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "2",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "bc5c-a180-faf7-1093",
+       "kind": "fixed",
+       "name": "Blastmaster",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "bc5c-a180-faf7-1093:bc5c-a180-faf7-1093",
+         "name": "Blastmaster",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "bb96-94bd-385b-ce3c",
+           "name": "➤ Blastmaster - varied frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Ignores Cover"
+          },
+          {
+           "profile_id": "6103-fb78-7335-41b3",
+           "name": "➤ Blastmaster - single frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "543d-3e7e-78c0-d3b1",
+       "kind": "fixed",
+       "name": "Close combat weapon",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "543d-3e7e-78c0-d3b1:ab80-e71b-5a84-2852",
+         "name": "Close combat weapon",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "bef4-4bde-0144-26d2",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "a254-9b52-cf64-eac2",
+     "name": "Terrifying Crescendo",
+     "type": "Abilities",
+     "description": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a Battle-shock or Leadership test is taken for that enemy unit, subtract 1 from that test."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "3750-df25-165d-d003",
+   "name": "Heldrake",
+   "type": "model",
+   "points": 195,
+   "keywords": [
+    {
+     "name": "Vehicle",
+     "target_id": "dbd4-63-af05-998",
+     "primary": true
+    },
+    {
+     "name": "Fly",
+     "target_id": "c619-2086-bbcf-69c9",
+     "primary": false
+    },
+    {
+     "name": "Aircraft",
+     "target_id": "63f1-e6e8-f6f6-a4f0",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Heldrake",
+     "target_id": "49f7-c1dc-b98c-9aee",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "3750-df25-165d-d003",
+     "name": "Heldrake",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "20\"+",
+      "t": "10",
+      "sv": "3+",
+      "w": "14",
+      "ld": "7+",
+      "oc": "0"
+     },
+     "loadout": [
+      {
+       "id": "8533-a9dd-cb7d-a50e",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "8533-a9dd-cb7d-a50e:7a65-4137-9c72-54b3",
+         "name": "Heldrake claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b432-0cc5-adca-240b",
+           "name": "Heldrake claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "7",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "fce6-a633-eb26-3405",
+     "name": "Airborne Predator",
+     "type": "Abilities",
+     "description": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll two D6, adding 1 to each result if that enemy unit can ^^FLY^^: for each 4+, that enemy unit suffers D3 mortal wounds."
+    },
+    {
+     "id": "4207-4a8e-73c2-9ffe",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 5+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "656c-8b78-8e59-0591",
+   "name": "Maulerfiend",
+   "type": "model",
+   "points": 130,
+   "keywords": [
+    {
+     "name": "Vehicle",
+     "target_id": "dbd4-63-af05-998",
+     "primary": true
+    },
+    {
+     "name": "Walker",
+     "target_id": "6dda-e157-334d-e93a",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Maulerfiend",
+     "target_id": "c37d-0ec5-9d7c-a853",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "656c-8b78-8e59-0591",
+     "name": "Maulerfiend",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "10\"",
+      "t": "10",
+      "sv": "3+",
+      "w": "12",
+      "ld": "6+",
+      "oc": "3"
+     },
+     "loadout": [
+      {
+       "id": "fa13-51d4-17ac-b0ca",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "fa13-51d4-17ac-b0ca:167f-5eee-fb7b-a9a9",
+         "name": "Maulerfiend fists",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "cd08-05ec-aa2a-1459",
+           "name": "Maulerfiend fists",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "3+",
+           "s": "14",
+           "ap": "-2",
+           "d": "D6+1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "c3f4-464b-3d82-f42f",
+     "name": "Glutton for Punishment",
+     "type": "Abilities",
+     "description": "Each time this model makes an attack, if it is below its Starting Strength, add 1 to the Hit roll. If this model is also Below Half-Strength, add 1 to the Wound roll as well."
+    },
+    {
+     "id": "bf88-bb12-1f57-4701",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 5+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "8ae1-aa47-e1d1-1b31",
+   "name": "Chaos Rhino",
+   "type": "model",
+   "points": 80,
+   "keywords": [
+    {
+     "name": "Vehicle",
+     "target_id": "dbd4-63-af05-998",
+     "primary": false
+    },
+    {
+     "name": "Transport",
+     "target_id": "75e8-57c4-40e3-1817",
+     "primary": false
+    },
+    {
+     "name": "Dedicated Transport",
+     "target_id": "ba07-411c-2832-1f79",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Rhino",
+     "target_id": "50a2-5557-84bb-ca4d",
+     "primary": false
+    },
+    {
+     "name": "Smoke",
+     "target_id": "6df-937-16bc-8c1a",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "8ae1-aa47-e1d1-1b31",
+     "name": "Chaos Rhino",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "12\"",
+      "t": "9",
+      "sv": "3+",
+      "w": "10",
+      "ld": "6+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "c41a-af34-ad5b-d11a",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c41a-af34-ad5b-d11a:661a-207c-a66d-8da0",
+         "name": "Armoured tracks",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "96b0-3354-e153-1f04",
+           "name": "Armoured tracks",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "4+",
+           "s": "6",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "c41a-af34-ad5b-d11a:cbe3-34f5-707a-a2ab",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "3600-24e5-672c-60e6",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "c41a-af34-ad5b-d11a:adb9-dbb1-e252-4c7e",
+         "name": "Havoc launcher",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2d43-1a06-65e0-2fc4",
+           "name": "Havoc launcher",
+           "weapon_type": "Ranged",
+           "range": "48\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Blast"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "629b-52e7-f21d-1c5f",
+     "name": "Assault Vehicle",
+     "type": "Abilities",
+     "description": "Units can disembark from this **^^Vehicle**^^ after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally."
+    }
+   ],
+   "transport": [
+    {
+     "id": "1ad0-2bd0-ba02-0db9",
+     "name": "Chaos Rhino",
+     "capacity": "This model has a transport capacity of 12 **^^Emperor's Children Infantry^^**models (excluding ^^**Terminator**^^ and ^^**Flawless Blade**^^ models)."
+    }
+   ],
+   "pricing_tiers": []
+  },
+  {
+   "id": "20df-143c-fc59-77e0",
+   "name": "Shalaxi Helbane",
+   "type": "model",
+   "points": 340,
+   "keywords": [
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    },
+    {
+     "name": "Epic Hero",
+     "target_id": "4f3a-f0f7-6647-348d",
+     "primary": true
+    },
+    {
+     "name": "Psyker",
+     "target_id": "13bf-2bee-3ae0-b414",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Legions of Excess",
+     "target_id": "4c25-d2f3-36bb-8067",
+     "primary": false
+    },
+    {
+     "name": "Shalaxi Helbane",
+     "target_id": "d9a9-1282-076e-579b",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "20df-143c-fc59-77e0",
+     "name": "Shalaxi Helbane",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "14\"",
+      "t": "10",
+      "sv": "3+",
+      "w": "20",
+      "ld": "6+",
+      "oc": "5"
+     },
+     "loadout": [
+      {
+       "id": "b960-1e12-d250-d541",
+       "kind": "fixed",
+       "name": "Lash of Slaanesh",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b960-1e12-d250-d541:b960-1e12-d250-d541",
+         "name": "Lash of Slaanesh",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8afd-66cf-c3a5-25e8",
+           "name": "Lash of Slaanesh",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e56e-9ed1-4bcb-94c6",
+       "kind": "fixed",
+       "name": "Pavane of Slaanesh",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "e56e-9ed1-4bcb-94c6:e56e-9ed1-4bcb-94c6",
+         "name": "Pavane of Slaanesh",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "7c3a-0a9b-ffbb-c126",
+           "name": "➤ Pavane of Slaanesh - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Devastating Wounds, Psychic"
+          },
+          {
+           "profile_id": "492c-7f74-5291-71f0",
+           "name": "➤ Pavane of Slaanesh - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "2+",
+           "s": "9",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Hazardous, Devastating Wounds, Psychic, Sustained Hits 3"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "560d-4036-f3ca-f320",
+       "kind": "fixed",
+       "name": "Snapping claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "560d-4036-f3ca-f320:560d-4036-f3ca-f320",
+         "name": "Snapping claws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "13b1-5bc9-3840-29bb",
+           "name": "Snapping claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Devastating Wounds, Extra Attacks"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "28ab-f405-9836-1cfc",
+       "kind": "fixed",
+       "name": "Soulpiercer",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "28ab-f405-9836-1cfc:28ab-f405-9836-1cfc",
+         "name": "Soulpiercer",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "2f68-ae81-bc14-628b",
+           "name": "Soulpiercer",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "12",
+           "ap": "-3",
+           "d": "D6+2",
+           "keywords": "Precision"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "800d-5ebc-fd66-97b0",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "3b35-7ada-515d-bafb",
+     "name": "No Prey Can Evade",
+     "type": "Abilities",
+     "description": "You can re-roll Advance and Charge rolls made for this model."
+    },
+    {
+     "id": "712d-b14d-a795-ba99",
+     "name": "Monarch of the Hunt",
+     "type": "Abilities",
+     "description": "At the start of the first battle round, select one enemy unit to be this model's quarry. Each time this model makes a melee attack that targets its quarry, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's quarry is destroyed, select one new enemy unit to be this model's quarry."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "7b2b-4508-263d-f20f",
+   "name": "Keeper of Secrets",
+   "type": "model",
+   "points": 240,
+   "keywords": [
+    {
+     "name": "Monster",
+     "target_id": "9693-cf84-fe69-37a9",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Psyker",
+     "target_id": "13bf-2bee-3ae0-b414",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Legions of Excess",
+     "target_id": "4c25-d2f3-36bb-8067",
+     "primary": false
+    },
+    {
+     "name": "Keeper of Secrets",
+     "target_id": "7804-4d2f-c192-0621",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "7b2b-4508-263d-f20f",
+     "name": "Keeper of Secrets",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "14\"",
+      "t": "10",
+      "sv": "5+",
+      "w": "18",
+      "ld": "6+",
+      "oc": "5"
+     },
+     "loadout": [
+      {
+       "id": "bbce-3e22-c0a3-4470",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "bbce-3e22-c0a3-4470:78c6-1318-40cb-c8b9",
+         "name": "Phantasmagoria",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7532-93ce-9b73-ff58",
+           "name": "➤ Phantasmagoria - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Devastating Wounds, Psychic"
+          },
+          {
+           "profile_id": "8b47-e93c-0821-c2f1",
+           "name": "➤ Phantasmagoria - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "9",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "bbce-3e22-c0a3-4470:9834-8ff1-3b29-8ea5",
+         "name": "Snapping claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d70c-ed54-1449-2ca4",
+           "name": "Snapping claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Devastating Wounds, Extra Attacks"
+          }
+         ]
+        },
+        {
+         "id": "bbce-3e22-c0a3-4470:3cce-7e30-b9a6-b807",
+         "name": "Witstealer sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1861-c442-1588-88b9",
+           "name": "Witstealer sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "0b08-8e41-f334-df67",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    },
+    {
+     "id": "30a1-8f15-f406-fa7b",
+     "name": "Daemon Lord of Slaanesh (Aura)",
+     "type": "Abilities",
+     "description": "While a friendly ^^**Legions of Excess**^^ unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1."
+    },
+    {
+     "id": "6b94-cd14-0032-418a",
+     "name": "Mesmerising Form",
+     "type": "Abilities",
+     "description": "Each time an attack targets this model, subtract 1 from the Hit roll."
+    },
+    {
+     "id": "7c36-30a7-b3c1-e8a8",
+     "name": "Shining aegis",
+     "type": "Abilities",
+     "description": "The bearer has a Save characteristic of 3+."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "06f6-b870-4e43-4ed9",
+   "name": "Daemonettes",
+   "type": "unit",
+   "points": 90,
+   "keywords": [
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Battleline",
+     "target_id": "e338-111e-d0c6-b687",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Daemonettes",
+     "target_id": "2b0a-9d0d-aa71-153e",
+     "primary": false
+    },
+    {
+     "name": "Faction: Legions of Excess",
+     "target_id": "4c25-d2f3-36bb-8067",
+     "primary": false
+    },
+    {
+     "name": "Summoned",
+     "target_id": "38a2-f283-606d-7a37",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "06f6-b870-4e43-4ed9",
+     "name": "Daemonettes",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "9\"",
+      "t": "3",
+      "sv": "7+",
+      "w": "1",
+      "ld": "7+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "db72-983b-fee2-2ba7",
+       "kind": "fixed",
+       "name": "Daemonette",
+       "min_select": 9,
+       "max_select": 9,
+       "options": [
+        {
+         "id": "db72-983b-fee2-2ba7:db72-983b-fee2-2ba7",
+         "name": "Daemonette",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3d2b-fd21-2f8d-a82f",
+           "name": "Slashing claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b0d3-3e77-0118-8260",
+       "kind": "fixed",
+       "name": "Alluress",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "b0d3-3e77-0118-8260:b0d3-3e77-0118-8260",
+         "name": "Alluress",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "a1b3-28d1-b378-409d",
+           "name": "Slashing claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "b21d-e2b2-9f2e-080f",
+     "name": "Horrifying Beauty",
+     "type": "Abilities",
+     "description": "At the start of the Fight phase, each enemy unit in Engagement Range of one or more units from your army with this ability must take a Battle-shock test, subtracting 1 from that test if that enemy unit is Below Half-strength."
+    },
+    {
+     "id": "1ba2-081f-65ac-4077",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "Models in this unit have a 5+ invulnerable save."
+    },
+    {
+     "id": "dacf-941e-a9f5-1af2",
+     "name": "Daemonic Icon",
+     "type": "Abilities",
+     "description": "Models in the bearer's unit have a Leadership characteristic of 6+."
+    },
+    {
+     "id": "8432-21e4-e194-f594",
+     "name": "Instrument of Chaos",
+     "type": "Abilities",
+     "description": "Add 1 to Charge rolls made for the bearer's unit."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "c2ca-f754-cc05-0743",
+   "name": "Fiends",
+   "type": "unit",
+   "points": 95,
+   "keywords": [
+    {
+     "name": "Beast",
+     "target_id": "4c3e-9310-a516-3590",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Fiends",
+     "target_id": "d16a-86a4-5880-3e94",
+     "primary": false
+    },
+    {
+     "name": "Faction: Legions of Excess",
+     "target_id": "4c25-d2f3-36bb-8067",
+     "primary": false
+    },
+    {
+     "name": "Summoned",
+     "target_id": "38a2-f283-606d-7a37",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "fcca-941b-5da4-f7ae",
+     "name": "Fiends",
+     "min_count": 2,
+     "max_count": 5,
+     "stats": {
+      "m": "12\"",
+      "t": "5",
+      "sv": "7+",
+      "w": "4",
+      "ld": "7+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "0bb8-ca33-2c66-8662",
+       "kind": "fixed",
+       "name": "Barbed tail and dissecting claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "0bb8-ca33-2c66-8662:0bb8-ca33-2c66-8662",
+         "name": "Barbed tail and dissecting claws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1866-301e-d361-3f05",
+           "name": "Barbed tail and dissecting claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "4db9-b0e0-9b76-cfbe",
+     "name": "Blissbringer",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "12\"",
+      "t": "5",
+      "sv": "7+",
+      "w": "4",
+      "ld": "7+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "8c9f-73da-a3c1-ef2a",
+       "kind": "fixed",
+       "name": "Barbed tail and dissecting claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "8c9f-73da-a3c1-ef2a:8c9f-73da-a3c1-ef2a",
+         "name": "Barbed tail and dissecting claws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "0f84-b7c4-3c72-f3ce",
+           "name": "Barbed tail and dissecting claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "f7ef-dbef-61e8-93b5",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "Models in this unit have a 5+ invulnerable save."
+    },
+    {
+     "id": "a4c2-5801-31fa-8504",
+     "name": "Soporific Musk",
+     "type": "Abilities",
+     "description": "Each time an enemy unit (excluding ^^**Monsters**^^ and **^^Vehicles**^^) within Engagement Range of one or more units from your army with this ability Falls Back, models in that unit must take Desperate Escape tests. When doing so, if that enemy unit is also Battle-shocked, subtract 1 from each of those Desperate Escape tests."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 190,
+     "condition_text": "≥ 4 models",
+     "condition_type": "atLeast",
+     "condition_value": 4,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "c9df-2c38-25e5-ffc7",
+   "name": "Seekers",
+   "type": "unit",
+   "points": 80,
+   "keywords": [
+    {
+     "name": "Mounted",
+     "target_id": "14a0-40c9-2748-ae6e",
+     "primary": true
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Seekers",
+     "target_id": "15d7-63fa-2466-d392",
+     "primary": false
+    },
+    {
+     "name": "Summoned",
+     "target_id": "38a2-f283-606d-7a37",
+     "primary": false
+    },
+    {
+     "name": "Faction: Legions of Excess",
+     "target_id": "4c25-d2f3-36bb-8067",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "5654-5f33-e6ee-3549",
+     "name": "Seeker",
+     "min_count": 4,
+     "max_count": 9,
+     "stats": {
+      "m": "14\"",
+      "t": "4",
+      "sv": "7+",
+      "w": "2",
+      "ld": "7+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "1431-4781-774e-471c",
+       "kind": "fixed",
+       "name": "Lashing tongues",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1431-4781-774e-471c:1431-4781-774e-471c",
+         "name": "Lashing tongues",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "8cee-f834-d667-c6d5",
+           "name": "Lashing tongues",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "2",
+           "bs_ws": "4+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Extra Attacks, Lethal Hits"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "d560-e258-97e3-87ee",
+       "kind": "fixed",
+       "name": "Slashing claws",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "d560-e258-97e3-87ee:d560-e258-97e3-87ee",
+         "name": "Slashing claws",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "1ab7-19a4-3e4f-c1e1",
+           "name": "Slashing claws",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "3",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "19ac-8b47-64c3-5543",
+     "name": "Unholy Speed",
+     "type": "Abilities",
+     "description": "You can re-roll Advance and Charge rolls made for this unit."
+    },
+    {
+     "id": "c360-e39c-4d09-0222",
+     "name": "Invulnerable Save",
+     "type": "Abilities",
+     "description": "Models in this unit have a 5+ invulnerable save."
+    },
+    {
+     "id": "2f44-0faf-9294-6a0d",
+     "name": "Daemonic Icon",
+     "type": "Abilities",
+     "description": "Models in the bearer's unit have a Leadership characteristic of 6+."
+    },
+    {
+     "id": "50c4-326e-7b28-e07f",
+     "name": "Instrument of Chaos",
+     "type": "Abilities",
+     "description": "Add 1 to Charge rolls made for the bearer's unit."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": [
+    {
+     "points": 160,
+     "condition_text": "≥ 6 models",
+     "condition_type": "atLeast",
+     "condition_value": 6,
+     "target_name": "",
+     "scope_id": "model"
+    }
+   ]
+  },
+  {
+   "id": "eeac-c9b8-3904-11a5",
+   "name": "Excruciator [Crucible]",
+   "type": "model",
+   "points": 60,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Psyker",
+     "target_id": "13bf-2bee-3ae0-b414",
+     "primary": false
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Excruciator",
+     "target_id": "670f-3c53-1b50-9797",
+     "primary": false
+    },
+    {
+     "name": "Crucible",
+     "target_id": "e2bc-fc0c-1099-3e75",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "eeac-c9b8-3904-11a5",
+     "name": "Excruciator [Crucible]",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "56ef-3465-f20b-ee7c",
+       "kind": "choice",
+       "name": "Ranged weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "56ef-3465-f20b-ee7c:8ba4-eb47-8ec7-6867",
+         "name": "Agonising Energies",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "873a-9f85-d5cb-d38b",
+           "name": "Agonising Energies - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          },
+          {
+           "profile_id": "7527-e670-6946-836c",
+           "name": "Agonising Energies - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:4fbe-201f-8e07-384d",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "121b-444b-1d6a-94c2",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:0ece-d77e-a561-6bed",
+         "name": "Blastmaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0454-1e79-5588-ae1c",
+           "name": "➤ Blastmaster - varied frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Ignores Cover"
+          },
+          {
+           "profile_id": "1e16-a276-5c74-90c6",
+           "name": "➤ Blastmaster - single frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:75ef-a668-28ca-d223",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "88a9-29dd-9bad-ba17",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:74af-5223-39f4-f544",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f83d-bb7d-9adb-6227",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:8829-33cc-2164-b847",
+         "name": "Heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f44-b2a2-dba9-61f7",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c1bd-d60b-9e60-4bc7",
+         "name": "Plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4fd3-ed30-e22f-de2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Precision, Rapid Fire 1"
+          },
+          {
+           "profile_id": "4752-d3fe-8b6f-b617",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Precision, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:5186-9ab0-738e-2bfb",
+         "name": "Reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7ec5-4c7c-d8d7-e1fa",
+           "name": "Reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c578-6eab-3e3b-2726",
+         "name": "Sonic blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a43-6aee-c54c-ac0d",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8c29-a3b7-41fe-d55d",
+       "kind": "choice",
+       "name": "Pistols",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "8c29-a3b7-41fe-d55d:f510-1876-4f29-0d23",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b541-2927-b485-b85d",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "4c64-6916-fd7f-f278",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:e5af-29ad-4f79-91f6",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c4cf-9bd4-a902-0bfa",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:555a-13c7-4bd9-71d7",
+         "name": "Screamer pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "89a1-557d-e667-f77f",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b537-a4bc-cb9d-ee92",
+       "kind": "choice",
+       "name": "Melee weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "b537-a4bc-cb9d-ee92:ae09-5f68-e072-0c1e",
+         "name": "Blissblade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2dff-0901-5372-554f",
+           "name": "Blissblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:425e-5413-ca52-5458",
+         "name": "Chainfist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7d2c-8683-a52f-ea9c",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-Vehicle 3+"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:9230-cc85-ef7f-d3a0",
+         "name": "Close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8dd-b1d4-a9e6-712b",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:02b3-e911-f9c5-25ab",
+         "name": "Dueling sabre",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1fc4-348f-e6b4-7e48",
+           "name": "Dueling sabre",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:378b-3524-c096-d426",
+         "name": "Force weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5a3c-bb1d-0fd0-9f92",
+           "name": "Force weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:a517-fe9d-edcf-1acb",
+         "name": "Master-crafted power sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ebb-1803-550f-356b",
+           "name": "Master-crafted power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:daa2-5738-69bf-f711",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d0bf-2ece-5c1e-ba75",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:31f5-a25f-d549-a9c2",
+         "name": "Phoenix power spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9444-381c-6690-402d",
+           "name": "Phoenix power spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:517b-a0c9-6e99-8f73",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ed6d-c5a7-813a-4125",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:8514-c50f-33d3-1ac9",
+         "name": "Power weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0abd-7b1d-2e42-4aa8",
+           "name": "Power weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:c4a9-38a7-9d2c-8ed1",
+         "name": "Rapture lash",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7925-0e35-a361-8927",
+           "name": "Rapture lash",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "ee60-c75c-21c7-cb6f",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This unit can be attached to the following units: ^^**Infractors, Noise Marines, Tormentors**^^"
+    },
+    {
+     "id": "2474-128e-5834-0962",
+     "name": "Warped Invigoration (Psychic)",
+     "type": "Abilities",
+     "description": "In your Shooting phase, after this model has shot, if an enemy unit was hit by one or more of those attacks, until the end of the turn, add 1 to Charge rolls made for this unit."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "cc4d-41d6-dfea-414f",
+   "name": "Champion of Excess [Crucible]",
+   "type": "model",
+   "points": 80,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Crucible",
+     "target_id": "e2bc-fc0c-1099-3e75",
+     "primary": false
+    },
+    {
+     "name": "Champion of Excess",
+     "target_id": "8307-eccc-e329-248a",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "cc4d-41d6-dfea-414f",
+     "name": "Champion of Excess [Crucible]",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "7\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "56ef-3465-f20b-ee7c",
+       "kind": "choice",
+       "name": "Ranged weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "56ef-3465-f20b-ee7c:8ba4-eb47-8ec7-6867",
+         "name": "Agonising Energies",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "873a-9f85-d5cb-d38b",
+           "name": "Agonising Energies - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          },
+          {
+           "profile_id": "7527-e670-6946-836c",
+           "name": "Agonising Energies - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:4fbe-201f-8e07-384d",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "121b-444b-1d6a-94c2",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:0ece-d77e-a561-6bed",
+         "name": "Blastmaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0454-1e79-5588-ae1c",
+           "name": "➤ Blastmaster - varied frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Ignores Cover"
+          },
+          {
+           "profile_id": "1e16-a276-5c74-90c6",
+           "name": "➤ Blastmaster - single frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:75ef-a668-28ca-d223",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "88a9-29dd-9bad-ba17",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:74af-5223-39f4-f544",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f83d-bb7d-9adb-6227",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:8829-33cc-2164-b847",
+         "name": "Heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f44-b2a2-dba9-61f7",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c1bd-d60b-9e60-4bc7",
+         "name": "Plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4fd3-ed30-e22f-de2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Precision, Rapid Fire 1"
+          },
+          {
+           "profile_id": "4752-d3fe-8b6f-b617",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Precision, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:5186-9ab0-738e-2bfb",
+         "name": "Reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7ec5-4c7c-d8d7-e1fa",
+           "name": "Reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c578-6eab-3e3b-2726",
+         "name": "Sonic blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a43-6aee-c54c-ac0d",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8c29-a3b7-41fe-d55d",
+       "kind": "choice",
+       "name": "Pistols",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "8c29-a3b7-41fe-d55d:f510-1876-4f29-0d23",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b541-2927-b485-b85d",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "4c64-6916-fd7f-f278",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:e5af-29ad-4f79-91f6",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c4cf-9bd4-a902-0bfa",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:555a-13c7-4bd9-71d7",
+         "name": "Screamer pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "89a1-557d-e667-f77f",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b537-a4bc-cb9d-ee92",
+       "kind": "choice",
+       "name": "Melee weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "b537-a4bc-cb9d-ee92:ae09-5f68-e072-0c1e",
+         "name": "Blissblade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2dff-0901-5372-554f",
+           "name": "Blissblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:425e-5413-ca52-5458",
+         "name": "Chainfist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7d2c-8683-a52f-ea9c",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-Vehicle 3+"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:9230-cc85-ef7f-d3a0",
+         "name": "Close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8dd-b1d4-a9e6-712b",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:02b3-e911-f9c5-25ab",
+         "name": "Dueling sabre",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1fc4-348f-e6b4-7e48",
+           "name": "Dueling sabre",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:378b-3524-c096-d426",
+         "name": "Force weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5a3c-bb1d-0fd0-9f92",
+           "name": "Force weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:a517-fe9d-edcf-1acb",
+         "name": "Master-crafted power sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ebb-1803-550f-356b",
+           "name": "Master-crafted power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:daa2-5738-69bf-f711",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d0bf-2ece-5c1e-ba75",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:31f5-a25f-d549-a9c2",
+         "name": "Phoenix power spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9444-381c-6690-402d",
+           "name": "Phoenix power spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:517b-a0c9-6e99-8f73",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ed6d-c5a7-813a-4125",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:8514-c50f-33d3-1ac9",
+         "name": "Power weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0abd-7b1d-2e42-4aa8",
+           "name": "Power weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:c4a9-38a7-9d2c-8ed1",
+         "name": "Rapture lash",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7925-0e35-a361-8927",
+           "name": "Rapture lash",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "cbba-50eb-67c2-f0e5",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This unit can be attached to the following units: ^^**Infractors, Noise Marines, Tormentors**^^"
+    },
+    {
+     "id": "ce51-709e-a750-e68e",
+     "name": "Euphoric Strikes",
+     "type": "Abilities",
+     "description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1."
+    },
+    {
+     "id": "e99d-3175-eb2b-2f00",
+     "name": "Invulnerable Save (4+)",
+     "type": "Abilities",
+     "description": "This model has a 4+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "2334-eccf-6ea5-562e",
+   "name": "Flawless Champion [Crucible]",
+   "type": "model",
+   "points": 100,
+   "keywords": [
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": true
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Crucible",
+     "target_id": "e2bc-fc0c-1099-3e75",
+     "primary": false
+    },
+    {
+     "name": "Flawless Champion",
+     "target_id": "599a-0ed1-d2aa-f016",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "2334-eccf-6ea5-562e",
+     "name": "Flawless Champion [Crucible]",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "8\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "5",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "56ef-3465-f20b-ee7c",
+       "kind": "choice",
+       "name": "Ranged weapons",
+       "min_select": null,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "56ef-3465-f20b-ee7c:8ba4-eb47-8ec7-6867",
+         "name": "Agonising Energies",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "873a-9f85-d5cb-d38b",
+           "name": "Agonising Energies - witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "5",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          },
+          {
+           "profile_id": "7527-e670-6946-836c",
+           "name": "Agonising Energies - focused witchfire",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "D6",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "D3",
+           "keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:4fbe-201f-8e07-384d",
+         "name": "Boltgun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "121b-444b-1d6a-94c2",
+           "name": "Boltgun",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:0ece-d77e-a561-6bed",
+         "name": "Blastmaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0454-1e79-5588-ae1c",
+           "name": "➤ Blastmaster - varied frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Ignores Cover"
+          },
+          {
+           "profile_id": "1e16-a276-5c74-90c6",
+           "name": "➤ Blastmaster - single frequency",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "10",
+           "ap": "-2",
+           "d": "3",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:75ef-a668-28ca-d223",
+         "name": "Combi-bolter",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "88a9-29dd-9bad-ba17",
+           "name": "Combi-bolter",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "2",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Rapid Fire 2"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:74af-5223-39f4-f544",
+         "name": "Combi-weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "f83d-bb7d-9adb-6227",
+           "name": "Combi-weapon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:8829-33cc-2164-b847",
+         "name": "Heavy flamer",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0f44-b2a2-dba9-61f7",
+           "name": "Heavy flamer",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "D6",
+           "bs_ws": "N/A",
+           "s": "5",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Ignores Cover, Torrent"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c1bd-d60b-9e60-4bc7",
+         "name": "Plasma gun",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4fd3-ed30-e22f-de2a",
+           "name": "➤ Plasma gun - standard",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Precision, Rapid Fire 1"
+          },
+          {
+           "profile_id": "4752-d3fe-8b6f-b617",
+           "name": "➤ Plasma gun - supercharge",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Precision, Rapid Fire 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:5186-9ab0-738e-2bfb",
+         "name": "Reaper autocannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7ec5-4c7c-d8d7-e1fa",
+           "name": "Reaper autocannon",
+           "weapon_type": "Ranged",
+           "range": "36\"",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+         ]
+        },
+        {
+         "id": "56ef-3465-f20b-ee7c:c578-6eab-3e3b-2726",
+         "name": "Sonic blaster",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "4a43-6aee-c54c-ac0d",
+           "name": "Sonic blaster",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "8c29-a3b7-41fe-d55d",
+       "kind": "choice",
+       "name": "Pistols",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "8c29-a3b7-41fe-d55d:f510-1876-4f29-0d23",
+         "name": "Plasma pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b541-2927-b485-b85d",
+           "name": "➤ Plasma pistol - standard",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Pistol"
+          },
+          {
+           "profile_id": "4c64-6916-fd7f-f278",
+           "name": "➤ Plasma pistol - supercharge",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "8",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "Hazardous, Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:e5af-29ad-4f79-91f6",
+         "name": "Bolt pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c4cf-9bd4-a902-0bfa",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "8c29-a3b7-41fe-d55d:555a-13c7-4bd9-71d7",
+         "name": "Screamer pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "89a1-557d-e667-f77f",
+           "name": "Screamer pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "3",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-1",
+           "d": "2",
+           "keywords": "Ignores Cover, Pistol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b537-a4bc-cb9d-ee92",
+       "kind": "choice",
+       "name": "Melee weapons",
+       "min_select": null,
+       "max_select": 2,
+       "options": [
+        {
+         "id": "b537-a4bc-cb9d-ee92:ae09-5f68-e072-0c1e",
+         "name": "Blissblade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2dff-0901-5372-554f",
+           "name": "Blissblade",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-3",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:425e-5413-ca52-5458",
+         "name": "Chainfist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7d2c-8683-a52f-ea9c",
+           "name": "Chainfist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Anti-Vehicle 3+"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:9230-cc85-ef7f-d3a0",
+         "name": "Close combat weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c8dd-b1d4-a9e6-712b",
+           "name": "Close combat weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:02b3-e911-f9c5-25ab",
+         "name": "Dueling sabre",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "1fc4-348f-e6b4-7e48",
+           "name": "Dueling sabre",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:378b-3524-c096-d426",
+         "name": "Force weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5a3c-bb1d-0fd0-9f92",
+           "name": "Force weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-1",
+           "d": "D3",
+           "keywords": "Psychic"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:a517-fe9d-edcf-1acb",
+         "name": "Master-crafted power sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2ebb-1803-550f-356b",
+           "name": "Master-crafted power sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Precision"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:daa2-5738-69bf-f711",
+         "name": "Paired accursed weapons",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "d0bf-2ece-5c1e-ba75",
+           "name": "Paired accursed weapons",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "Twin-linked"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:31f5-a25f-d549-a9c2",
+         "name": "Phoenix power spear",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9444-381c-6690-402d",
+           "name": "Phoenix power spear",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "2+",
+           "s": "7",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lance"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:517b-a0c9-6e99-8f73",
+         "name": "Power fist",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "ed6d-c5a7-813a-4125",
+           "name": "Power fist",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "8",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:8514-c50f-33d3-1ac9",
+         "name": "Power weapon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "0abd-7b1d-2e42-4aa8",
+           "name": "Power weapon",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        },
+        {
+         "id": "b537-a4bc-cb9d-ee92:c4a9-38a7-9d2c-8ed1",
+         "name": "Rapture lash",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "7925-0e35-a361-8927",
+           "name": "Rapture lash",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "4",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Extra Attacks"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "d326-df2a-80de-e788",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This unit can be attached to the following units: ^^**Flawless Blades**^^"
+    },
+    {
+     "id": "7abf-3fe8-dc7d-1522",
+     "name": "Obsessive Huntsman",
+     "type": "Abilities",
+     "description": "Melee weapons equipped by this model have the [Precision] ability."
+    },
+    {
+     "id": "64f2-6884-63ae-5886",
+     "name": "Invulnerable Save (5+)",
+     "type": "Abilities",
+     "description": "This model has a 5+ invulnerable save."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "b541-3292-a5cc-dbeb",
+   "name": "Defiler",
+   "type": "model",
+   "points": 250,
+   "keywords": [
+    {
+     "name": "Vehicle",
+     "target_id": "dbd4-63-af05-998",
+     "primary": true
+    },
+    {
+     "name": "Walker",
+     "target_id": "6dda-e157-334d-e93a",
+     "primary": false
+    },
+    {
+     "name": "Chaos",
+     "target_id": "4c00-2578-faf5-6918",
+     "primary": false
+    },
+    {
+     "name": "Daemon",
+     "target_id": "9c0e-7e25-4580-e439",
+     "primary": false
+    },
+    {
+     "name": "Slaanesh",
+     "target_id": "b2a9-ede5-7a83-4da8",
+     "primary": false
+    },
+    {
+     "name": "Faction: Emperor's Children",
+     "target_id": "31bb-7d77-943e-94bd",
+     "primary": false
+    },
+    {
+     "name": "Defiler",
+     "target_id": "3aa3-c975-5f5c-48c2",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "b541-3292-a5cc-dbeb",
+     "name": "Defiler",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "12\"",
+      "t": "11",
+      "sv": "3+",
+      "w": "18",
+      "ld": "6+",
+      "oc": "5"
+     },
+     "loadout": [
+      {
+       "id": "4800-3543-efe8-1bbb",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "4800-3543-efe8-1bbb:b77f-43c5-91b6-7da7",
+         "name": "Shearing claws",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "5137-9b35-12d5-5605",
+           "name": "Shearing claws - strike",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "5",
+           "bs_ws": "3+",
+           "s": "16",
+           "ap": "-3",
+           "d": "D6+1",
+           "keywords": "Precision"
+          },
+          {
+           "profile_id": "1cdd-7caa-3bf8-cff0",
+           "name": "Shearing claws - sweep",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "10",
+           "bs_ws": "3+",
+           "s": "6",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c1dc-8e46-fd08-8aba",
+       "kind": "choice",
+       "name": "Legendary Relics",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "c1dc-8e46-fd08-8aba:d0ad-c653-466e-a860",
+         "name": "Vortex Grenade",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "afcc-75f3-b4df-3302",
+           "name": "Vortex Grenade",
+           "weapon_type": "Ranged",
+           "range": "6\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "*",
+           "ap": "*",
+           "d": "*",
+           "keywords": "Assault"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "09a9-3808-cae7-a9ca",
+     "name": "Scuttling Walker",
+     "type": "Abilities",
+     "description": "Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding ^^**Titanic**^^ models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed."
+    },
+    {
+     "id": "bc7f-0ec2-0362-718e",
+     "name": "Revel in Desecration",
+     "type": "Abilities",
+     "description": "Each time this model makes an attack that targets an enemy unit that is not below Half-strength, add 1 to the Hit roll."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  }
+ ],
+ "detachments": [
+  {
+   "id": "8635-b1cc-e7bb-e8a1",
+   "name": "Slaanesh's Chosen"
+  },
+  {
+   "id": "faf3-053d-d290-a3d9",
+   "name": "Peerless Bladesmen"
+  },
+  {
+   "id": "26ff-306a-fca9-ebfd",
+   "name": "Rapid Evisceration"
+  },
+  {
+   "id": "9db8-cf55-983f-9671",
+   "name": "Coterie of the Conceited"
+  },
+  {
+   "id": "ae45-3e0d-eac7-7edb",
+   "name": "Mercurial Host"
+  },
+  {
+   "id": "3c9e-2156-254e-66e8",
+   "name": "Carnival of Excess"
+  },
+  {
+   "id": "12b9-2601-5150-66f4",
+   "name": "Court of the Phoenician"
+  }
+ ],
+ "enhancements": [
+  {
+   "id": "b846-443f-45e9-d2f4",
+   "name": "Eager to Prove",
+   "points": 15,
+   "description": "You can re-roll Charge rolls made for the bearer's unit. While the bearer's unit is your army's Favoured Champions, add 2\" to the Move characteristic of models in that unit."
+  },
+  {
+   "id": "0bd8-0ae9-8584-ecb4",
+   "name": "Repulsed by Weakness",
+   "points": 25,
+   "description": "Each time an enemy unit (excluding **^^Monster**^^ and ^^**Vehicle**^^ units) within Engagement Range of the bearer's unit Falls Back, models in that enemy unit must take Desperate Escape tests. When doing so, if the bearer's unit is your army's Favoured Champions, subtract 1 from each of those Desperate Escape tests."
+  },
+  {
+   "id": "9885-a9c2-6a2c-9da0",
+   "name": "Proud and Vainglorious",
+   "points": 20,
+   "description": "You can re-roll Battle-shock and Leadership tests taken for the bearer's unit. While the bearer's unit is your army's Favoured Champions, add 1 to the Objective Control characteristics of models in that unit."
+  },
+  {
+   "id": "5524-2326-c5c1-e188",
+   "name": "Slayer of Champions",
+   "points": 15,
+   "description": "The bearer's melee weapons have the [^^Precision^^] ability, and each time the bearer makes a melee attack that targets a ^^**Character**^^ unit, improve the Strength and Armour Penetration characteristics of that attack by 1."
+  },
+  {
+   "id": "ff3a-6be4-e450-7902",
+   "name": "Faultless Opportunist",
+   "points": 15,
+   "description": "You can target the bearer's unit with the Heroic Intervention Stratagem for 0CP; and can do so even if you have already targeted a different unit with that Stratagem this phase."
+  },
+  {
+   "id": "d2db-5680-3844-8286",
+   "name": "Blinding Speed",
+   "points": 25,
+   "description": "Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does so, until the end of the phase, models in the bearer's unit have the Fights First ability."
+  },
+  {
+   "id": "e83e-a805-5a10-df20",
+   "name": "Distortion",
+   "points": 25,
+   "description": "Add 1 to the Attacks and Damage characteristics of melee weapons equipped by the bearer."
+  },
+  {
+   "id": "63af-738c-632a-22ee",
+   "name": "Rise to the Challenge",
+   "points": 30,
+   "description": "Once per battle, at the end of the Fight phase, if the bearer is within Engagement Range of three or more enemy models, it can use this Enhancement. If it does, the bearer can fight one additional time. When doing so, you can select one ability using the Exquisite Swordsmanship Detachment rule to apply to those attacks."
+  },
+  {
+   "id": "336d-3ff2-42d5-e7d0",
+   "name": "Sublime Presence",
+   "points": 25,
+   "description": "Once per turn, in your Movement phase, the bearer can use this Enhancement. If it does, select one friendly **^^Emperor's Children Transport**^^ that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that **^^Transport**^^ on the battlefield, treat the current battle round number as being one higher than it actually is."
+  },
+  {
+   "id": "ec33-5c60-4896-f3a9",
+   "name": "Spearhead Striker",
+   "points": 20,
+   "description": "Each time the bearer disembarks from a **^^Transport**^^, until the end of the turn, you can re-roll Charge rolls made for the bearer's unit and enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit."
+  },
+  {
+   "id": "6ac4-b6b5-c72e-c6f0",
+   "name": "Accomplished Tactician",
+   "points": 35,
+   "description": "Once per turn, in your opponent's Shooting phase, just after an enemy unit has shot, you can select one friendly **^^Emperor's Children**^^ unit within 9\" of the bearer that was hit by one or more of those attacks, then select one friendly **^^Transport**^^ that unit is wholly within 6\" of and is able to embark within. That **^^Emperor's Children**^^ unit can embark in that **^^Transport**^^."
+  },
+  {
+   "id": "b7ae-e36a-f771-71ba",
+   "name": "Heretek Adept",
+   "points": 35,
+   "description": "Once per battle round, when a saving throw is failed for a friendly **^^Emperor's Children Vehicle**^^ model within 6\" of the bearer, you can change the Damage characteristic of that attack to 0."
+  },
+  {
+   "id": "481c-fd3f-f851-c1f4",
+   "name": "Pledge of Eternal Servitude",
+   "points": 25,
+   "description": "The first time the bearer is destroyed, take a Leadership test for the bearer at the end of the phase. if that test is passed, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining (up to its Wounds characteristic)."
+  },
+  {
+   "id": "96ce-821e-570d-4ed4",
+   "name": "Pledge of Dark Glory",
+   "points": 25,
+   "description": "While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1."
+  },
+  {
+   "id": "8033-d9bc-5e16-cc15",
+   "name": "Pledge of Mortal Pain",
+   "points": 15,
+   "description": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Leadership test, subtracting 2 from the result if it is Battle-shocked: if failed, that enemy unit suffers 3 mortal wounds."
+  },
+  {
+   "id": "88b7-8def-835d-259d",
+   "name": "Pledge of Unholy Fortune",
+   "points": 30,
+   "description": "Once per turn, after making a Hit roll, a Wound roll or a saving throw for a model in the bearer's unit, if the bearer is not Battle-shocked, it can use this Enhancement. If it does, treat the result as an unmodified roll of 6 instead."
+  },
+  {
+   "id": "eac7-57c3-db74-558b",
+   "name": "Steeped in Suffering",
+   "points": 20,
+   "description": "Each time a model in the bearer's unit makes an attack that targets an enemy unit below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half-Strength, add 1 to the Wound roll as well."
+  },
+  {
+   "id": "9019-ad76-2166-e240",
+   "name": "Intoxicating Musk",
+   "points": 20,
+   "description": "Each time a melee attack targets the bearer's unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll."
+  },
+  {
+   "id": "5e38-6ec6-6a34-ab23",
+   "name": "Tactical Perfection",
+   "points": 15,
+   "description": "After both players have deployed their armies, select up to two **^^Emperor's Children**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves."
+  },
+  {
+   "id": "c463-1bc6-623d-08fd",
+   "name": "Loathsome Dexterity",
+   "points": 10,
+   "description": "Each time a model in the bearer's unit makes a Normal, Advance or Fall Back move, it can move through enemy models. When doing so, it can move within Engagement Range of such models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed."
+  },
+  {
+   "id": "1336-bc76-85d0-11de",
+   "name": "Empyric Suffusion",
+   "points": 15,
+   "description": "Once per battle round, you can target one friendly **^^Slaanesh**^^ unit within 6\" of the bearer with the Heroic Intervention Stratagem for 0CP."
+  },
+  {
+   "id": "5e67-143c-4a82-df8a",
+   "name": "Dark Blessings",
+   "points": 10,
+   "description": "Once per battle, just after an enemy unit has selected its targets, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 3+ invulnerable save."
+  },
+  {
+   "id": "2f9f-6de5-bb22-815d",
+   "name": "Possessed Blade",
+   "points": 25,
+   "description": "At the start of the battle, select one melee weapon equipped by the bearer; add 1 to the Attacks characteristic of that weapon. In addition, each time the bearer is selected to fight, it can use this Enhancement. If it does, when resolving those attacks add 1 to the Damage characteristic of that weapon and that weapon has the [^^Devastating Wounds^^] and [^^Hazardous^^] abilities."
+  },
+  {
+   "id": "c1af-55bd-1303-dbb7",
+   "name": "Warp Walker",
+   "points": 30,
+   "description": "Each time the bearer's unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Movement characteristic of models in that unit. Each time a model in the bearer's unit makes a Normal, Advance or Fall Back move, it can move through enemy models. When doing so, it can move within Engagement Range of such models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed."
+  },
+  {
+   "id": "8cd3-11be-e902-d3cb",
+   "name": "Soulstain Made Manifest",
+   "points": 15,
+   "description": "At the start of the Fight phase, you can select one enemy unit within Engagement Range of the bearer; that unit must take a Battle‑shock test, subtracting 1 from the result."
+  },
+  {
+   "id": "f432-1ac7-b753-8f9b",
+   "name": "Exalted Patron",
+   "points": 15,
+   "description": "Add 1\" to the Move characteristic of the bearer.\nIn the Declare Battle Formations step, the bearer can be attached to a ^^**Flawless Blades^^** unit."
+  },
+  {
+   "id": "81b8-40c9-607b-379a",
+   "name": "Spiritsliver",
+   "points": 20,
+   "description": "Add 1 to the Strength and Attacks characteristics of the bearer’s melee weapons."
+  },
+  {
+   "id": "fcc0-7ead-c5b8-e6dd",
+   "name": "Tears of the Phoenix",
+   "points": 25,
+   "description": "Each time a model in the bearer’s unit makes a melee attack, you can ignore any or all modifiers to that attack’s Weapon Skill characteristic and any or all modifiers to the Hit roll and Wound roll."
+  }
+ ]
+}

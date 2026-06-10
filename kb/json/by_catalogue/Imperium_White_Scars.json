@@ -1,145 +1,355 @@
 {
-  "id": "67c1-fc13-f9a1-cbbf",
-  "name": "Imperium - Adeptus Astartes - White Scars",
-  "is_library": false,
-  "revision": "10",
-  "source_file": "Imperium - White Scars.cat",
-  "categories": [
+ "id": "67c1-fc13-f9a1-cbbf",
+ "name": "Imperium - Adeptus Astartes - White Scars",
+ "is_library": false,
+ "revision": "15",
+ "source_file": "Imperium - White Scars.cat",
+ "categories": [
+  {
+   "id": "ecaf-d9ca-6ab0-8dcb",
+   "name": "Kor'sarro Khan"
+  },
+  {
+   "id": "b20a-783c-0d41-7238",
+   "name": "Suboden Khan"
+  }
+ ],
+ "rules": [],
+ "datasheets": [
+  {
+   "id": "63f3-6aeb-c9ed-abfc",
+   "name": "Kor'sarro Khan",
+   "type": "model",
+   "points": 60,
+   "keywords": [
     {
-      "id": "ecaf-d9ca-6ab0-8dcb",
-      "name": "Kor'sarro Khan"
-    }
-  ],
-  "rules": [],
-  "datasheets": [
+     "name": "Epic Hero",
+     "target_id": "4f3a-f0f7-6647-348d",
+     "primary": true
+    },
     {
-      "id": "63f3-6aeb-c9ed-abfc",
-      "name": "Kor'sarro Khan",
-      "type": "model",
-      "points": 70,
-      "keywords": [
-        {
-          "name": "Epic Hero",
-          "target_id": "4f3a-f0f7-6647-348d",
-          "primary": true
-        },
-        {
-          "name": "Character",
-          "target_id": "9cfd-1c32-585f-7d5c",
-          "primary": false
-        },
-        {
-          "name": "Infantry",
-          "target_id": "cf47-a0d7-7207-29dc",
-          "primary": false
-        },
-        {
-          "name": "Captain",
-          "target_id": "2d7f-1892-2fd0-e29c",
-          "primary": false
-        },
-        {
-          "name": "Imperium",
-          "target_id": "aff3-d6a3-2a95-9dc",
-          "primary": false
-        },
-        {
-          "name": "Faction: Adeptus Astartes",
-          "target_id": "6e7-40c-58d9-e402",
-          "primary": false
-        },
-        {
-          "name": "Faction: White Scars",
-          "target_id": "5c0e-2250-dd3a-1df9",
-          "primary": false
-        },
-        {
-          "name": "Kor'sarro Khan",
-          "target_id": "ecaf-d9ca-6ab0-8dcb",
-          "primary": false
-        },
-        {
-          "name": "Tacticus",
-          "target_id": "5179-8ede-45e3-49a2",
-          "primary": false
-        }
-      ],
-      "models": [
-        {
-          "id": "63f3-6aeb-c9ed-abfc",
-          "name": "Kor'sarro Khan",
-          "min_count": 1,
-          "max_count": 1,
-          "stats": {
-            "m": "6\"",
-            "t": "4",
-            "sv": "3+",
-            "w": "5",
-            "ld": "6+",
-            "oc": "1"
-          },
-          "loadout": [
-            {
-              "id": "1d9c-e037-5d69-4b67",
-              "kind": "fixed",
-              "name": "Moonfang",
-              "min_select": 1,
-              "max_select": 1,
-              "options": [
-                {
-                  "id": "1d9c-e037-5d69-4b67:1d9c-e037-5d69-4b67",
-                  "name": "Moonfang",
-                  "is_default": true,
-                  "weapons": [
-                    {
-                      "profile_id": "51-8dfa-ba16-7fbe",
-                      "name": "Moonfang",
-                      "weapon_type": "Melee",
-                      "range": "Melee",
-                      "a": "6",
-                      "bs_ws": "2+",
-                      "s": "5",
-                      "ap": "-2",
-                      "d": "2",
-                      "keywords": "Devastating Wounds, Precision"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "abilities": [
-        {
-          "id": "143-1a21-8afb-16c4",
-          "name": "For the Khan!",
-          "type": "Abilities",
-          "description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability."
-        },
-        {
-          "id": "bbb5-617e-a254-8463",
-          "name": "Trophy Taker",
-          "type": "Abilities",
-          "description": "Each time this model destroys an enemy Character model, you gain 1CP"
-        },
-        {
-          "id": "90b4-a746-de9b-2df2",
-          "name": "Leader",
-          "type": "Abilities",
-          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Company Heroes"
-        },
-        {
-          "id": "8ecf-92ea-ef03-4b0b",
-          "name": "Inspiring Commander",
-          "type": "Abilities",
-          "description": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked."
-        }
-      ],
-      "transport": [],
-      "pricing_tiers": []
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    },
+    {
+     "name": "Infantry",
+     "target_id": "cf47-a0d7-7207-29dc",
+     "primary": false
+    },
+    {
+     "name": "Captain",
+     "target_id": "2d7f-1892-2fd0-e29c",
+     "primary": false
+    },
+    {
+     "name": "Imperium",
+     "target_id": "aff3-d6a3-2a95-9dc",
+     "primary": false
+    },
+    {
+     "name": "Faction: Adeptus Astartes",
+     "target_id": "6e7-40c-58d9-e402",
+     "primary": false
+    },
+    {
+     "name": "Faction: White Scars",
+     "target_id": "5c0e-2250-dd3a-1df9",
+     "primary": false
+    },
+    {
+     "name": "Kor'sarro Khan",
+     "target_id": "ecaf-d9ca-6ab0-8dcb",
+     "primary": false
+    },
+    {
+     "name": "Tacticus",
+     "target_id": "5179-8ede-45e3-49a2",
+     "primary": false
     }
-  ],
-  "detachments": [],
-  "enhancements": []
+   ],
+   "models": [
+    {
+     "id": "63f3-6aeb-c9ed-abfc",
+     "name": "Kor'sarro Khan",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "6\"",
+      "t": "4",
+      "sv": "3+",
+      "w": "5",
+      "ld": "6+",
+      "oc": "1"
+     },
+     "loadout": [
+      {
+       "id": "1d9c-e037-5d69-4b67",
+       "kind": "fixed",
+       "name": "Moonfang",
+       "min_select": 1,
+       "max_select": 1,
+       "options": [
+        {
+         "id": "1d9c-e037-5d69-4b67:1d9c-e037-5d69-4b67",
+         "name": "Moonfang",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "51-8dfa-ba16-7fbe",
+           "name": "Moonfang",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Devastating Wounds, Precision"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3ed4-a23e-f5a2-d32c",
+       "kind": "fixed",
+       "name": "Bolt pistol",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "3ed4-a23e-f5a2-d32c:b273-b85e-4018-a0cd",
+         "name": "Bolt pistol",
+         "is_default": true,
+         "weapons": [
+          {
+           "profile_id": "3104-8d29-e431-05d7",
+           "name": "Bolt pistol",
+           "weapon_type": "Ranged",
+           "range": "12\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "143-1a21-8afb-16c4",
+     "name": "For the Khan!",
+     "type": "Abilities",
+     "description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability."
+    },
+    {
+     "id": "bbb5-617e-a254-8463",
+     "name": "Trophy Taker",
+     "type": "Abilities",
+     "description": "Each time this model destroys an enemy Character model, you gain 1CP"
+    },
+    {
+     "id": "90b4-a746-de9b-2df2",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Company Heroes"
+    },
+    {
+     "id": "8ecf-92ea-ef03-4b0b",
+     "name": "Inspiring Commander",
+     "type": "Abilities",
+     "description": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked."
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  },
+  {
+   "id": "d72d-b930-9849-924e",
+   "name": "Suboden Khan",
+   "type": "model",
+   "points": 115,
+   "keywords": [
+    {
+     "name": "Mounted",
+     "target_id": "14a0-40c9-2748-ae6e",
+     "primary": false
+    },
+    {
+     "name": "Character",
+     "target_id": "9cfd-1c32-585f-7d5c",
+     "primary": false
+    },
+    {
+     "name": "Epic Hero",
+     "target_id": "4f3a-f0f7-6647-348d",
+     "primary": true
+    },
+    {
+     "name": "Imperium",
+     "target_id": "aff3-d6a3-2a95-9dc",
+     "primary": false
+    },
+    {
+     "name": "Grenades",
+     "target_id": "5a61-81ac-eb7c-a87e",
+     "primary": false
+    },
+    {
+     "name": "Captain",
+     "target_id": "2d7f-1892-2fd0-e29c",
+     "primary": false
+    },
+    {
+     "name": "Faction: Adeptus Astartes",
+     "target_id": "6e7-40c-58d9-e402",
+     "primary": false
+    },
+    {
+     "name": "Faction: White Scars",
+     "target_id": "5c0e-2250-dd3a-1df9",
+     "primary": false
+    },
+    {
+     "name": "Suboden Khan",
+     "target_id": "b20a-783c-0d41-7238",
+     "primary": false
+    }
+   ],
+   "models": [
+    {
+     "id": "d72d-b930-9849-924e",
+     "name": "Suboden Khan",
+     "min_count": 1,
+     "max_count": 1,
+     "stats": {
+      "m": "12\"",
+      "t": "5",
+      "sv": "3+",
+      "w": "8",
+      "ld": "6+",
+      "oc": "2"
+     },
+     "loadout": [
+      {
+       "id": "ae9b-6aa9-aa56-f220",
+       "kind": "choice",
+       "name": "Wargear",
+       "min_select": null,
+       "max_select": null,
+       "options": [
+        {
+         "id": "ae9b-6aa9-aa56-f220:4679-fcd5-ead9-7a4b",
+         "name": "Heavy Bolt Pistol",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "2cbe-10b2-3653-4b55",
+           "name": "Heavy Bolt Pistol",
+           "weapon_type": "Ranged",
+           "range": "18\"",
+           "a": "1",
+           "bs_ws": "2+",
+           "s": "4",
+           "ap": "-1",
+           "d": "1",
+           "keywords": "Pistol"
+          }
+         ]
+        },
+        {
+         "id": "ae9b-6aa9-aa56-f220:7faa-50ab-98d4-2fc7",
+         "name": "Onslaught Gatling Cannon",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "9c08-2084-dcaf-e1bb",
+           "name": "Onslaught Gatling Cannon",
+           "weapon_type": "Ranged",
+           "range": "24\"",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "0",
+           "d": "1",
+           "keywords": "Devastating Wounds"
+          }
+         ]
+        },
+        {
+         "id": "ae9b-6aa9-aa56-f220:ceb9-e596-79c1-8b34",
+         "name": "Stormtooth",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "b145-0fd3-a52a-85d6",
+           "name": "Stormtooth",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "6",
+           "bs_ws": "2+",
+           "s": "6",
+           "ap": "-2",
+           "d": "2",
+           "keywords": "Lance, Anti-monster 4+, Anti-vehicle 4+"
+          }
+         ]
+        },
+        {
+         "id": "ae9b-6aa9-aa56-f220:37d7-b142-21b0-63c5",
+         "name": "Power Sword",
+         "is_default": false,
+         "weapons": [
+          {
+           "profile_id": "c98a-50b1-63f7-0ea1",
+           "name": "Power Sword",
+           "weapon_type": "Melee",
+           "range": "Melee",
+           "a": "8",
+           "bs_ws": "2+",
+           "s": "5",
+           "ap": "-2",
+           "d": "1",
+           "keywords": "-"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "abilities": [
+    {
+     "id": "1336-8c9c-a513-990d",
+     "name": "Spear of Chogoris",
+     "type": "Abilities",
+     "description": "This model’s unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead."
+    },
+    {
+     "id": "886d-0aad-f792-2794",
+     "name": "Skilled Riders",
+     "type": "Abilities",
+     "description": "Each time a model in this model’s unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through terrain features."
+    },
+    {
+     "id": "fe8b-e1ef-ef3c-cced",
+     "name": "Leader",
+     "type": "Abilities",
+     "description": "This model can be attached to the following units: ^^**Outrider Squad^^**"
+    }
+   ],
+   "transport": [],
+   "pricing_tiers": []
+  }
+ ],
+ "detachments": [],
+ "enhancements": []
 }

@@ -1,0 +1,326 @@
+{
+  "id": "2261-79a5-19d9-1668",
+  "name": "Imperium - Adeptus Astartes - Salamanders",
+  "is_library": false,
+  "revision": "12",
+  "source_file": "Imperium - Salamanders.cat",
+  "categories": [
+    {
+      "id": "fca1-9ff0-bf21-b99f",
+      "name": "Adrax Agatone"
+    },
+    {
+      "id": "8425-f97a-408-9f8a",
+      "name": "Vulkan He'stan"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "98c-87ea-f51b-1475",
+      "name": "Adrax Agatone",
+      "type": "model",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Adrax Agatone",
+          "target_id": "fca1-9ff0-bf21-b99f",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Salamanders",
+          "target_id": "65e4-13-4fa8-b36c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tacticus",
+          "target_id": "5179-8ede-45e3-49a2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "98c-87ea-f51b-1475",
+          "name": "Adrax Agatone",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b529-1803-d893-87e5",
+              "kind": "fixed",
+              "name": "Drakkis",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b529-1803-d893-87e5:b529-1803-d893-87e5",
+                  "name": "Drakkis",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "415e-ed00-24ac-5c",
+                      "name": "Drakkis",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Pistol, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d249-ea36-1254-17cb",
+              "kind": "fixed",
+              "name": "Malleus Noctum",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d249-ea36-1254-17cb:d249-ea36-1254-17cb",
+                  "name": "Malleus Noctum",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f92a-9295-1bfb-2942",
+                      "name": "Malleus Noctum",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5a40-93b3-6c2a-f7cb",
+          "name": "Unto the Anvil",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll."
+        },
+        {
+          "id": "68e4-3da0-f6ab-8624",
+          "name": "Lord of the Pyroclasts",
+          "type": "Abilities",
+          "description": "While an enemy unit is within Engagement Range of this model, halve the Objective Control characteristic of models in that enemy unit"
+        },
+        {
+          "id": "f678-23f8-a491-c7d2",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Company Heroes\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b351-fccc-2121-1e1e",
+      "name": "Vulkan He'stan",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Vulkan He'stan",
+          "target_id": "8425-f97a-408-9f8a",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Salamanders",
+          "target_id": "65e4-13-4fa8-b36c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b351-fccc-2121-1e1e",
+          "name": "Vulkan He'stan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "76b1-5886-1825-8e3b",
+              "kind": "fixed",
+              "name": "Gauntlet of the Forge",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "76b1-5886-1825-8e3b:76b1-5886-1825-8e3b",
+                  "name": "Gauntlet of the Forge",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ff1f-1295-8a6d-5d8b",
+                      "name": "Gauntlet of the Forge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ee9-93ca-662-362b",
+              "kind": "fixed",
+              "name": "Spear of Vulkan",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ee9-93ca-662-362b:ee9-93ca-662-362b",
+                  "name": "Spear of Vulkan",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2c29-73e2-c601-b9ec",
+                      "name": "Spear of Vulkan",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b423-2ef4-b87c-b65d",
+          "name": "Forgefather",
+          "type": "Abilities",
+          "description": "In your Shooting phase, select one enemy unit within 24\" of and visible to this model. Until the end of the phase, each time a friendly Adeptus Astartes model makes a ranged attack with a Torrent or Melta weapon that targets that enemy unit, you can re-roll the Wound roll"
+        },
+        {
+          "id": "22fa-126d-31e4-6a5a",
+          "name": "Seeker of Lost Relics",
+          "type": "Abilities",
+          "description": "At the start of the battle, select one objective marker on the battlefield. While this model is within  range of that objective marker, it has an Objective Control characteristic of 10, a Leadership characteristic of 5+ and the Feel No Pain 4+ ability."
+        },
+        {
+          "id": "56bf-fb53-c81d-ff4a",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Company Heroes\n■ Infernus Squad\n■ Tactical Squad"
+        },
+        {
+          "id": "e0e5-8c3a-3455-4d30",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "If you include this model in your army, until the end of the battle, non-Character models in Infernus Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

@@ -1,0 +1,3829 @@
+{
+  "id": "ac3b-689c-4ad4-70cb",
+  "name": "Library - Astartes Heresy Legends",
+  "is_library": true,
+  "revision": "7",
+  "source_file": "Library - Astartes Heresy Legends.cat",
+  "categories": [
+    {
+      "id": "39b9-56da-6787-1880",
+      "name": "Kratos"
+    },
+    {
+      "id": "4091-3761-4405-49bc",
+      "name": "Deredeo Dreadnought"
+    },
+    {
+      "id": "c97c-376-e2e0-1dd2",
+      "name": "Dreadnought"
+    },
+    {
+      "id": "3847-7af4-207a-be61",
+      "name": "Relic Contemptor Dreadnought"
+    },
+    {
+      "id": "4610-30f4-126d-95f",
+      "name": "Leviathan Dreadnought"
+    },
+    {
+      "id": "8f99-5633-e6f3-970d",
+      "name": "Javelin Attack Speeder"
+    },
+    {
+      "id": "ea32-6c58-5ba8-1817",
+      "name": "Deathstorm Drop Pod"
+    },
+    {
+      "id": "d864-e0e3-a261-3096",
+      "name": "Land Raider Proteus"
+    },
+    {
+      "id": "ce2d-77e-6f94-cbc5",
+      "name": "Land Raider Achilles"
+    },
+    {
+      "id": "cd01-df65-c4bc-db47",
+      "name": "Sicaran Battle Tank"
+    },
+    {
+      "id": "9c51-4e01-bac0-7763",
+      "name": "Sicaran Arcus"
+    },
+    {
+      "id": "4f5-7a56-eb75-c9f5",
+      "name": "Sicaran Venator"
+    },
+    {
+      "id": "2850-d52-56db-75f9",
+      "name": "Sicaran Punisher"
+    },
+    {
+      "id": "3def-a3e5-91c0-68a9",
+      "name": "Sicaran Omega"
+    },
+    {
+      "id": "efe7-5d3d-c28b-bf6",
+      "name": "Rapier Carrier"
+    },
+    {
+      "id": "d71a-cb33-26eb-9b49",
+      "name": "Whirlwind Scorpius"
+    },
+    {
+      "id": "5e44-f9e3-7d42-e512",
+      "name": "Vindicator Laser Destroyer"
+    },
+    {
+      "id": "52a1-b7d1-d865-221e",
+      "name": "Dreadnought Drop Pod"
+    },
+    {
+      "id": "94dd-77ef-7000-6eae",
+      "name": "Terrax-pattern Termite"
+    },
+    {
+      "id": "4ad9-c3f1-cf62-4585",
+      "name": "Xiphon Interceptor"
+    },
+    {
+      "id": "3968-364d-4ae9-dff2",
+      "name": "Storm Eagle Gunship"
+    },
+    {
+      "id": "2f3c-b429-17fd-f5ea",
+      "name": "Fire Raptor Gunship"
+    },
+    {
+      "id": "4978-fad8-9324-6c8a",
+      "name": "Typhon"
+    },
+    {
+      "id": "d38b-c5f4-6414-19d4",
+      "name": "Cerberus"
+    },
+    {
+      "id": "d567-8f69-67c3-fd7f",
+      "name": "Spartan"
+    },
+    {
+      "id": "f7a9-bb57-5e7f-54b6",
+      "name": "Fellblade"
+    },
+    {
+      "id": "2423-750-51f-b957",
+      "name": "Falchion"
+    },
+    {
+      "id": "61a4-aefb-ed56-cd15",
+      "name": "Mastodon"
+    },
+    {
+      "id": "a3ba-39df-9ad1-abe4",
+      "name": "Sokar-pattern Stormbird"
+    },
+    {
+      "id": "54d-a72c-de79-525d",
+      "name": "Tarantula Sentry Battery"
+    },
+    {
+      "id": "8de0-cca6-1b8d-5e45",
+      "name": "Decimator"
+    },
+    {
+      "id": "310e-cc22-5fc5-54fe",
+      "name": "Greater Blight Drone"
+    },
+    {
+      "id": "a79d-1828-aa82-93a6",
+      "name": "Dreadclaw Drop Pod"
+    },
+    {
+      "id": "1470-3115-2bfe-95f4",
+      "name": "Blood Slaughterer"
+    },
+    {
+      "id": "691c-54b4-bfa5-be5c",
+      "name": "Greater Brass Scorpion"
+    },
+    {
+      "id": "aab2-bb8f-e2ce-fe90",
+      "name": "Kytan Ravager"
+    },
+    {
+      "id": "59cb-a2c2-114-4ce6",
+      "name": "Kharybdis Assault Claw"
+    },
+    {
+      "id": "50c4-4cd1-80b8-e85",
+      "name": "Thunderhawk"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "78aa-3f99-5fb7-7f83",
+      "name": "Kratos [Legends]",
+      "type": "model",
+      "points": 265,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Kratos",
+          "target_id": "39b9-56da-6787-1880",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "78aa-3f99-5fb7-7f83",
+          "name": "Kratos [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "6"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fb5-f6b1-80d6-70fd",
+          "name": "Line-breaker",
+          "type": "Abilities",
+          "description": "When making ranged attacks, this model can target enemy units within Engagement Range of it with Blast weapons (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d38d-c3a2-f753-efea",
+      "name": "Deredeo Dreadnought [Legends]",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "c97c-376-e2e0-1dd2",
+          "primary": false
+        },
+        {
+          "name": "Deredeo Dreadnought",
+          "target_id": "4091-3761-4405-49bc",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d38d-c3a2-f753-efea",
+          "name": "Deredeo Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f060-be4d-a86a-b1fe",
+          "name": "Deredeo Strike",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll."
+        },
+        {
+          "id": "94ae-19b0-b7b1-2b1e",
+          "name": "Invunerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "783a-1c02-b377-b169",
+      "name": "Relic Contemptor Dreadnought [Legends]",
+      "type": "model",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "c97c-376-e2e0-1dd2",
+          "primary": false
+        },
+        {
+          "name": "Relic Contemptor Dreadnought",
+          "target_id": "3847-7af4-207a-be61",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "783a-1c02-b377-b169",
+          "name": "Relic Contemptor Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "4d61-e042-9733-433c",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4d61-e042-9733-433c:cf37-f970-51f7-2c1e",
+                  "name": "Cyclone missile launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "162a-13a8-6d97-7bf8",
+                      "name": "➤ Cyclone missile launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "fb3d-8e49-889a-ddaa",
+                      "name": "➤ Cyclone missile launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d356-dfe7-6dfa-ade9",
+          "name": "Even In Death I Serve",
+          "type": "Abilities",
+          "description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+        },
+        {
+          "id": "b433-1117-b48-17c1",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "14d4-8062-f090-6719",
+      "name": "Leviathan Dreadnought [Legends]",
+      "type": "model",
+      "points": 215,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought",
+          "target_id": "c97c-376-e2e0-1dd2",
+          "primary": false
+        },
+        {
+          "name": "Leviathan Dreadnought",
+          "target_id": "4610-30f4-126d-95f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "14d4-8062-f090-6719",
+          "name": "Leviathan Dreadnought [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "2+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bf09-f457-24d5-9fb6",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "731d-26c2-a9e8-d336",
+          "name": "Duty Eternal",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1f26-fce8-bb2d-2c44",
+      "name": "Javelin Attack Speeder [Legends]",
+      "type": "model",
+      "points": 110,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Javelin Attack Speeder",
+          "target_id": "8f99-5633-e6f3-970d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1f26-fce8-bb2d-2c44",
+          "name": "Javelin Attack Speeder [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "9",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "bc90-4cf4-cda7-21a8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "bc90-4cf4-cda7-21a8:dea0-929f-f7f-3db8",
+                  "name": "Close combat weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3c87-619b-ea48-764a",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "98e6-37a7-3883-a9f3",
+          "name": "Fire and Redeploy",
+          "type": "Abilities",
+          "description": "In your Shooting phase, each time this model has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to D6\". If it does, until the end of the turn, this model is not eligible to declare a charge."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "68be-7090-1fbc-9021",
+      "name": "Deathstorm Drop Pod [Legends]",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Deathstorm Drop Pod",
+          "target_id": "ea32-6c58-5ba8-1817",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68be-7090-1fbc-9021",
+          "name": "Deathstorm Drop Pod [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "7",
+            "sv": "3+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "228c-afbe-cf0c-c8ff",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "228c-afbe-cf0c-c8ff:5528-13f6-846b-7e27",
+                  "name": "Deathstorm cannon array",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5ec4-d718-3ff2-131",
+                      "name": "Deathstorm cannon array",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "12",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "228c-afbe-cf0c-c8ff:3b66-ef74-cc22-f667",
+                  "name": "Deathstorm missile array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a911-5e56-bfed-af65",
+                      "name": "Deathstorm missile array",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2D6",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "44e2-e0aa-839c-e60a",
+          "name": "Deathstorm Assault",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but it is not counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "34c8-1025-33f7-baaf",
+      "name": "Land Raider Proteus [Legends]",
+      "type": "model",
+      "points": 250,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Land Raider Proteus",
+          "target_id": "d864-e0e3-a261-3096",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "34c8-1025-33f7-baaf",
+          "name": "Land Raider Proteus [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5709-d17d-218e-b7c5",
+          "name": "Explorator Augury Web",
+          "type": "Abilities",
+          "description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of the bearer, but the bearer must halve its Transport Capacity."
+        }
+      ],
+      "transport": [
+        {
+          "id": "36a3-c721-d402-fbd",
+          "name": "Land Raider Proteus",
+          "capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+        },
+        {
+          "id": "f53-ffc6-3321-6d2e",
+          "name": "Land Raider Proteus (Explorator augury web)",
+          "capacity": "This model has a transport capacity of 6 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3006-ffe-2b0c-6b1b",
+      "name": "Land Raider Achilles [Legends]",
+      "type": "model",
+      "points": 285,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Land Raider Achilles",
+          "target_id": "ce2d-77e-6f94-cbc5",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3006-ffe-2b0c-6b1b",
+          "name": "Land Raider Achilles [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "931f-a3e4-0662-8b0e",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "931f-a3e4-0662-8b0e:4709-be86-dece-75c8",
+                  "name": "Quad launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "498c-87b4-92c4-79f7",
+                      "name": "➤ Quad launcher - shatter shells",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "aba4-cdd7-badf-e5a4",
+                      "name": "➤ Quad launcher - thunderfire shells",
+                      "weapon_type": "Ranged",
+                      "range": "60\"",
+                      "a": "D6+4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f10e-18ea-1aa8-73ec",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        }
+      ],
+      "transport": [
+        {
+          "id": "4712-6a46-45d8-e9b1",
+          "name": "Land Raider Achilles",
+          "capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b2f1-197b-fb3b-687f",
+      "name": "Sicaran Battle Tank [Legends]",
+      "type": "model",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Sicaran Battle Tank",
+          "target_id": "cd01-df65-c4bc-db47",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b2f1-197b-fb3b-687f",
+          "name": "Sicaran Battle Tank [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "4be6-a7f7-b99d-7c9f",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4be6-a7f7-b99d-7c9f:6c5b-521e-2870-42de",
+                  "name": "Herakles-pattern autocannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a932-b660-70c9-cd89",
+                      "name": "Herakles-pattern autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "580-5564-9e3b-f24f",
+          "name": "Armoured Spearhead",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ca2a-69ca-dd3c-47",
+      "name": "Sicaran Arcus [Legends]",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Sicaran Arcus",
+          "target_id": "9c51-4e01-bac0-7763",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ca2a-69ca-dd3c-47",
+          "name": "Sicaran Arcus [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "ea08-1d06-ea63-dea7",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "ea08-1d06-ea63-dea7:dbb5-a709-23b-cdfa",
+                  "name": "Arcus multi-launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "93fe-a690-8669-3380",
+                      "name": "Arcus multi-launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4749-f1a9-a9a6-36c9",
+          "name": "Specialised Weapon System",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets the enemy unit you selected for the Oath of Moment ability, that attack has the [IGNORES COVER] ability and can ignore the penalty to their Hit rolls when making attacks with Indirect Fire weapons against targets that are not visible to them."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e63e-2aa6-f840-b54e",
+      "name": "Sicaran Venator [Legends]",
+      "type": "model",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Sicaran Venator",
+          "target_id": "4f5-7a56-eb75-c9f5",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e63e-2aa6-f840-b54e",
+          "name": "Sicaran Venator [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "6ee8-4fa5-d884-daa8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6ee8-4fa5-d884-daa8:17fc-29fd-a1bb-2fd6",
+                  "name": "Venator neutron laser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "395f-ddbc-2b31-81ab",
+                      "name": "Venator neutron laser",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D3+3",
+                      "keywords": "Heavy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f48-7960-4b45-401c",
+          "name": "Ferocious Assault",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets the closest eligible MONSTER or VEHICLE unit, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "68aa-28bf-bd73-3355",
+      "name": "Sicaran Punisher [Legends]",
+      "type": "model",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Sicaran Punisher",
+          "target_id": "2850-d52-56db-75f9",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "68aa-28bf-bd73-3355",
+          "name": "Sicaran Punisher [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "0c80-96c0-f086-2ed2",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "0c80-96c0-f086-2ed2:38bf-532f-8847-7daa",
+                  "name": "Punisher rotary cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "73f9-f3ad-db92-a087",
+                      "name": "Punisher rotary cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "18",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "796a-7701-6f9-7496",
+          "name": "Rotating Death",
+          "type": "Abilities",
+          "description": "This model’s Punisher rotary cannon has the [SUSTAINED HITS 1] ability when targeting INFANTRY units."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8b64-6aba-150d-27e4",
+      "name": "Sicaran Omega [Legends]",
+      "type": "model",
+      "points": 235,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Sicaran Omega",
+          "target_id": "3def-a3e5-91c0-68a9",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8b64-6aba-150d-27e4",
+          "name": "Sicaran Omega [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "fa0b-208b-3fe1-c97c",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "fa0b-208b-3fe1-c97c:a490-ac28-c26-ffe3",
+                  "name": "Omega plasma array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "485f-bb04-f483-1e3",
+                      "name": "➤ Omega plasma array - standard",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "ed86-ab19-4ef8-2f96",
+                      "name": "➤ Omega plasma array - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Hazardous"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "56dc-c61d-fed9-a85",
+          "name": "Overwhelming Short-range Firepower",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "2aee-e03c-836e-4c6e",
+      "name": "Rapier Carrier [Legends]",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Artillery",
+          "target_id": "8cab-448d-37b7-32bc",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Rapier Carrier",
+          "target_id": "efe7-5d3d-c28b-bf6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "2aee-e03c-836e-4c6e",
+          "name": "Rapier Carrier [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "3\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "dceb-5fe7-50b5-f582",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "dceb-5fe7-50b5-f582:6c36-26c6-468d-f706",
+                  "name": "Boltgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c0d2-d416-828c-9766",
+                      "name": "Boltgun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "dceb-5fe7-50b5-f582:b87b-8c71-97f6-11c8",
+                  "name": "Close combat weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5c17-85c7-9350-32e5",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "97b5-36db-6062-3092",
+          "name": "Powerful Volley",
+          "type": "Abilities",
+          "description": "Each time this model shoots in your Shooting phase, provided it Remained Stationary this turn, all [HEAVY] weapons equipped by models in this unit have the [LETHAL HITS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "97dc-f0c8-1354-88fb",
+      "name": "Whirlwind Scorpius [Legends]",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Whirlwind Scorpius",
+          "target_id": "d71a-cb33-26eb-9b49",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "97dc-f0c8-1354-88fb",
+          "name": "Whirlwind Scorpius [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "88b6-7a7b-f26d-5841",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "88b6-7a7b-f26d-5841:fbb0-60fa-108e-7f14",
+                  "name": "Scorpius multi-launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "68f4-7ff-b657-d97",
+                      "name": "Scorpius multi-launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2D3+3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2e8-f1bb-932a-476e",
+          "name": "Pinning Bombardment",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Scorpius multi-launcher scored a hit against an enemy INFANTRY unit, that unit must take a Battle-shock test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "128d-5011-8e6-45a6",
+      "name": "Vindicator Laser Destroyer [Legends]",
+      "type": "model",
+      "points": 175,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Vindicator Laser Destroyer",
+          "target_id": "5e44-f9e3-7d42-e512",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "128d-5011-8e6-45a6",
+          "name": "Vindicator Laser Destroyer [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "d9f9-5d3d-ad62-dd5b",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "d9f9-5d3d-ad62-dd5b:38d2-3b20-6d20-837e",
+                  "name": "Laservolley cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "65c3-c49d-51d1-6ee5",
+                      "name": "➤ Laservolley cannon - overcharge fire",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "D6+3",
+                      "keywords": "Hazardous"
+                    },
+                    {
+                      "profile_id": "7f59-f2d5-882f-b9b",
+                      "name": "➤ Laservolley cannon - volley fire",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D3+3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "eb5-4bb-8480-2166",
+          "name": "Annihilator",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a MONSTER or VEHICLE unit, re-roll a Damage roll of 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7fd0-d95d-d076-3472",
+      "name": "Dreadnought Drop Pod [Legends]",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Dreadnought Drop Pod",
+          "target_id": "52a1-b7d1-d865-221e",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7fd0-d95d-d076-3472",
+          "name": "Dreadnought Drop Pod [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "7",
+            "sv": "3+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9325-c7c7-eb34-f93d",
+          "name": "Drop Pod Assault",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it."
+        }
+      ],
+      "transport": [
+        {
+          "id": "abbc-353f-3514-e348",
+          "name": "Dreadnought Drop Pod",
+          "capacity": "This model has a transport capacity of 1 Dreadnought model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3d36-e9d7-54c5-deb7",
+      "name": "Terrax-pattern Termite [Legends]",
+      "type": "model",
+      "points": 200,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Terrax-pattern Termite",
+          "target_id": "94dd-77ef-7000-6eae",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3d36-e9d7-54c5-deb7",
+          "name": "Terrax-pattern Termite [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "f74f-f978-58c8-11cd",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f74f-f978-58c8-11cd:773e-f672-905b-f131",
+                  "name": "Termite drill",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1f91-9f07-f1fa-88f2",
+                      "name": "Termite drill",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D3+3",
+                      "keywords": "Anti-VEHICLE 3+"
+                    }
+                  ]
+                },
+                {
+                  "id": "f74f-f978-58c8-11cd:59a-f291-1d11-9f4b",
+                  "name": "Terrax melta cutter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a4e7-7e5a-5649-7d05",
+                      "name": "Terrax melta cutter",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b6bc-a4b4-7cc9-fdc3",
+          "name": "Termite Assault",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+        }
+      ],
+      "transport": [
+        {
+          "id": "8173-34eb-fcaf-2aa5",
+          "name": "Terrax-pattern Termite",
+          "capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. It cannot transport JUMP PACK, WULFEN, PHOBOS, GRAVIS, CENTURION, TERMINATOR, OBLITERATOR, POSSESSED or TACTICUS models (excluding TACTICUS CHARACTER models that began the battle attached to a non-TACTICUS unit)."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1aa5-d081-2442-4c37",
+      "name": "Xiphon Interceptor [Legends]",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Xiphon Interceptor",
+          "target_id": "4ad9-c3f1-cf62-4585",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1aa5-d081-2442-4c37",
+          "name": "Xiphon Interceptor [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+",
+            "t": "9",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "4930-ab4e-adcb-0558",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "4930-ab4e-adcb-0558:f043-6434-63a0-a906",
+                  "name": "Armoured hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8008-64d2-4cb2-ecfb",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "4930-ab4e-adcb-0558:a0-6c89-9642-47ad",
+                  "name": "Xiphon missile battery",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2b09-9eca-c413-3ee9",
+                      "name": "Xiphon missile battery",
+                      "weapon_type": "Ranged",
+                      "range": "60\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Anti-FLY 2+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e615-b2f4-20b6-85c3",
+          "name": "Interceptor",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3b7d-b14e-603-e1ad",
+      "name": "Storm Eagle Gunship [Legends]",
+      "type": "model",
+      "points": 255,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Storm Eagle Gunship",
+          "target_id": "3968-364d-4ae9-dff2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3b7d-b14e-603-e1ad",
+          "name": "Storm Eagle Gunship [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "9d24-7070-7a26-c569",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9d24-7070-7a26-c569:f80d-f7d7-96a7-d12e",
+                  "name": "Vengeance launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c5d0-38d-f579-e09e",
+                      "name": "Vengeance launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c11b-ccbd-83-ec10",
+          "name": "Armoured Resilience",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+        }
+      ],
+      "transport": [
+        {
+          "id": "f4af-eb57-83d8-8278",
+          "name": "Storm Eagle Gunship",
+          "capacity": "This model has a transport capacity of 22 <FACTION> INFANTRY models and 1 DREADNOUGHT model. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1fc7-7880-e4d4-acbf",
+      "name": "Fire Raptor Gunship [Legends]",
+      "type": "model",
+      "points": 290,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Storm Eagle Gunship",
+          "target_id": "3968-364d-4ae9-dff2",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1fc7-7880-e4d4-acbf",
+          "name": "Fire Raptor Gunship [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "117b-dee5-f271-2507",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "117b-dee5-f271-2507:db27-8efc-265a-ffda",
+                  "name": "Twin avenger bolt cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8406-8d54-4a51-97e9",
+                      "name": "Twin avenger bolt cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "10",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9b71-a898-4bdd-e80d",
+          "name": "Strafing Run",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that cannot FLY, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f60c-1b93-9ee8-59d2",
+      "name": "Typhon [Legends]",
+      "type": "model",
+      "points": 385,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Typhon",
+          "target_id": "4978-fad8-9324-6c8a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f60c-1b93-9ee8-59d2",
+          "name": "Typhon [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "6"
+          },
+          "loadout": [
+            {
+              "id": "6567-44a3-c2cf-9e5b",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6567-44a3-c2cf-9e5b:8ee3-4a12-7d5d-d230",
+                  "name": "Dreadhammer siege cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "832b-a0e1-d281-16d0",
+                      "name": "Dreadhammer siege cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1f13-359b-7cdb-283",
+          "name": "Sunderer of Fortresses",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristic of that attack by 1 (if that attack targets a FORTIFICATION unit, improve the Strength and Damage characteristics of that attack by 2 instead)."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4044-b458-fb4d-d05b",
+      "name": "Cerberus [Legends]",
+      "type": "model",
+      "points": 285,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Cerberus",
+          "target_id": "d38b-c5f4-6414-19d4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4044-b458-fb4d-d05b",
+          "name": "Cerberus [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "6"
+          },
+          "loadout": [
+            {
+              "id": "7ca8-38f2-5c81-7a2d",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7ca8-38f2-5c81-7a2d:8ff7-1212-4026-bf48",
+                  "name": "Cerberus neutron pulse array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2b3b-811b-d320-a61f",
+                      "name": "Cerberus neutron pulse array",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5c3d-27e8-be23-15c3",
+          "name": "Atomantic Arc-reactor",
+          "type": "Abilities",
+          "description": "Each time this unit shoots its Cerberus neutron pulse array in your Shooting phase, provided it Remained Stationary this turn, that weapon has the [LETHAL HITS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7b3a-9a63-6200-ec7",
+      "name": "Spartan [Legends]",
+      "type": "model",
+      "points": 315,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Spartan",
+          "target_id": "d567-8f69-67c3-fd7f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7b3a-9a63-6200-ec7",
+          "name": "Spartan [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "18",
+            "ld": "6+",
+            "oc": "6"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [
+        {
+          "id": "5f9c-18f6-edd2-35f4",
+          "name": "Spartan",
+          "capacity": "This model has a transport capacity of 28 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "585d-722b-4304-2f63",
+      "name": "Fellblade [Legends]",
+      "type": "model",
+      "points": 535,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Fellblade",
+          "target_id": "f7a9-bb57-5e7f-54b6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "585d-722b-4304-2f63",
+          "name": "Fellblade [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "071e-5f60-b67e-2d99",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "071e-5f60-b67e-2d99:302b-2d1b-2037-b2e2",
+                  "name": "Demolisher cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fd6a-3185-9f9d-3347",
+                      "name": "Demolisher cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "071e-5f60-b67e-2d99:940a-face-3536-dc88",
+                  "name": "Fellblade accelerator cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bb4d-7647-c3f-ccf5",
+                      "name": "➤ Fellblade accelerator cannon - AP shells",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "ca9d-6f4a-9763-42fc",
+                      "name": "➤ Fellblade accelerator cannon - HE shells",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d704-af71-da93-83ae",
+          "name": "Rolling Fortress",
+          "type": "Abilities",
+          "description": "Each time a ranged attack is allocated to a model from your army, if that model is not fully visible to every model in the attacking unit because of this Fellblade model, that model has the Benefit of Cover against that attack."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "625b-29e4-7be7-db5a",
+      "name": "Falchion [Legends]",
+      "type": "model",
+      "points": 515,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Falchion",
+          "target_id": "2423-750-51f-b957",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "625b-29e4-7be7-db5a",
+          "name": "Falchion [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "5876-2a74-17b5-19a8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5876-2a74-17b5-19a8:be4a-1ec1-f4d5-f88",
+                  "name": "Twin Falchion volcano cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "69df-eb4e-1e06-d713",
+                      "name": "Twin Falchion volcano cannon",
+                      "weapon_type": "Ranged",
+                      "range": "120\"",
+                      "a": "D3+1",
+                      "bs_ws": "3+",
+                      "s": "24",
+                      "ap": "-5",
+                      "d": "12",
+                      "keywords": "Blast, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b97d-4870-fc6a-48de",
+          "name": "Titan-killer",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack with its twin Falchion volcano cannon that targets a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e337-7f05-f1b3-d64e",
+      "name": "Mastodon [Legends]",
+      "type": "model",
+      "points": 610,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Mastodon",
+          "target_id": "61a4-aefb-ed56-cd15",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e337-7f05-f1b3-d64e",
+          "name": "Mastodon [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "14",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "12"
+          },
+          "loadout": [
+            {
+              "id": "add2-9d27-f808-dcc2",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "add2-9d27-f808-dcc2:8460-d306-cb15-35be",
+                  "name": "Siege melta array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "683a-df87-f264-c1ab",
+                      "name": "Siege melta array",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "add2-9d27-f808-dcc2:c64f-3fda-5129-e338",
+                  "name": "Skyreaper battery",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "602d-f5c3-6af7-40b5",
+                      "name": "Skyreaper battery",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-FLY 4+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6a33-178-237b-66f2",
+          "name": "Damaged: 1-10 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "7403-4ad3-f2b0-cf99",
+          "name": "Inviolable Transport",
+          "type": "Abilities",
+          "description": "Once per battle round, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0."
+        }
+      ],
+      "transport": [
+        {
+          "id": "249a-bc7e-1789-17e9",
+          "name": "Mastodon",
+          "capacity": "This model has a transport capacity of 45 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 2 DREADNOUGHT or HELBRUTE models (these models take up the space of a number of models equal to their Wounds characteristic e.g. A DREADNOUGHT with a Wounds characteristic of 8 would take up the space of 8  models)."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a80f-8343-85f3-716a",
+      "name": "Sokar-pattern Stormbird [Legends]",
+      "type": "model",
+      "points": 1100,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Sokar-pattern Stormbird",
+          "target_id": "a3ba-39df-9ad1-abe4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a80f-8343-85f3-716a",
+          "name": "Sokar-pattern Stormbird [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20\"+",
+            "t": "13",
+            "sv": "2+",
+            "w": "40",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "c6ae-5aa0-0432-6c72",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c6ae-5aa0-0432-6c72:93b0-215d-c6c7-c486",
+                  "name": "Armoured hull",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "101a-b533-7edf-3c39",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "9",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "c6ae-5aa0-0432-6c72:8c2f-4857-d961-b4d3",
+                  "name": "Hellstrike missile battery",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d8c5-f080-b53e-a285",
+                      "name": "Hellstrike missile battery",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Anti-FLY 3+"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c54c-1d21-f4bf-a9c7",
+          "name": "Damaged: 1-13 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-13 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "cef1-1b4f-32ca-5acf",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks"
+        },
+        {
+          "id": "d437-ac14-5e9-b201",
+          "name": "Aerial Assault",
+          "type": "Abilities",
+          "description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        }
+      ],
+      "transport": [
+        {
+          "id": "2227-a175-e719-f0b6",
+          "name": "Sokar-pattern Stormbird",
+          "capacity": "This model has a transport capacity of 55 <FACTION> Infantry or <FACTION> MOUNTED models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each MOUNTED, CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 1 RHINO model (this model – and any models embarked within it – take up the space of 25 models)."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "d298-eb55-5779-f90e",
+      "name": "Tarantula Sentry Battery [Legends]",
+      "type": "model",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Artillery",
+          "target_id": "8cab-448d-37b7-32bc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Tarantula Sentry Battery",
+          "target_id": "54d-a72c-de79-525d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "d298-eb55-5779-f90e",
+          "name": "Tarantula Sentry Battery [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "6",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2de0-4b8c-56c2-e909",
+          "name": "Sentinel Protocols",
+          "type": "Abilities",
+          "description": "Each time you select this unit for the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7e7a-96f6-cad0-50ec",
+      "name": "Decimator [Legends]",
+      "type": "model",
+      "points": 170,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Decimator",
+          "target_id": "8de0-cca6-1b8d-5e45",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7e7a-96f6-cad0-50ec",
+          "name": "Decimator [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "97b3-fcee-34f0-6257",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "97b3-fcee-34f0-6257:5ae6-2c26-117e-8a32",
+                  "name": "Decimator butcher cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4754-78ca-50db-bfce",
+                      "name": "Decimator butcher cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "97b3-fcee-34f0-6257:7b6b-9435-bb38-51ee",
+                  "name": "Decimator conversion beamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "884e-54e0-6efe-7c76",
+                      "name": "Decimator conversion beamer",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Conversion, Sustained Hits D3"
+                    }
+                  ]
+                },
+                {
+                  "id": "97b3-fcee-34f0-6257:4998-ae39-3bd5-add6",
+                  "name": "Soulburner petard",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8bff-846c-3b50-f833",
+                      "name": "Soulburner petard",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "2",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Anti-INFANTRY 3+, Devastating Wounds, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "97b3-fcee-34f0-6257:dd7f-beb3-c302-34d9",
+                  "name": "Storm laser",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "273e-a680-172f-9dc2",
+                      "name": "Storm laser",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "97b3-fcee-34f0-6257:d411-517e-a040-101c",
+                  "name": "Decimator claw and hellflamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "960e-b1a8-9e44-e04",
+                      "name": "Decimator claw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "97b3-fcee-34f0-6257:da2d-eb79-dbff-59f9",
+                  "name": "Twin decimator claws and two hellflamers",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f735-7e10-ce4c-6a12",
+                      "name": "Twin decimator claw",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "526d-cb42-6de3-e52",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "ca78-324c-cd18-5966",
+          "name": "Infernal Regeneration",
+          "type": "Abilities",
+          "description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "412c-3499-8275-2637",
+      "name": "Greater Blight Drone [Legends]",
+      "type": "model",
+      "points": 150,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Nurgle",
+          "target_id": "ed0d-8e2a-225c-2340",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Greater Blight Drone",
+          "target_id": "310e-cc22-5fc5-54fe",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "412c-3499-8275-2637",
+          "name": "Greater Blight Drone [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "03ff-8432-7c65-faeb",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "03ff-8432-7c65-faeb:e54b-f403-3788-6de3",
+                  "name": "Bile maw",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ee14-e72c-d95a-f8c7",
+                      "name": "Bile maw",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                },
+                {
+                  "id": "03ff-8432-7c65-faeb:e03c-97dc-9a86-4c5",
+                  "name": "Blightreaper cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a489-f89a-cde3-b540",
+                      "name": "Blightreaper cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                },
+                {
+                  "id": "03ff-8432-7c65-faeb:b35f-1891-cd05-1602",
+                  "name": "Greater plague probe",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "45db-1d49-44fa-9c5b",
+                      "name": "Greater plague probe",
+                      "weapon_type": "Ranged",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Lethal Hits"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ac68-7e59-b773-4e90",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "4cc3-1fa5-29c8-5c0b",
+          "name": "Hovering Death",
+          "type": "Abilities",
+          "description": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9401-616b-6e9e-10e5",
+      "name": "Dreadclaw Drop Pod [Legends]",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Dreadclaw Drop Pod",
+          "target_id": "a79d-1828-aa82-93a6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9401-616b-6e9e-10e5",
+          "name": "Dreadclaw Drop Pod [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "9",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "9c6e-74e1-eadb-7ab5",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9c6e-74e1-eadb-7ab5:1f1d-e62c-449c-16a0",
+                  "name": "Blade struts",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1af2-e131-8a62-868d",
+                      "name": "Blade struts",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ed9f-5e9a-29d7-6a5",
+          "name": "Dreadclaw Assault",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+        }
+      ],
+      "transport": [
+        {
+          "id": "12e6-1df5-48fa-d6f1",
+          "name": "Dreadclaw Drop Pod",
+          "capacity": "This model has a transport capacity of 12 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "fdad-1104-a934-3812",
+      "name": "Blood Slaughterer [Legends]",
+      "type": "model",
+      "points": 160,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Blood Slaughterer",
+          "target_id": "1470-3115-2bfe-95f4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "fdad-1104-a934-3812",
+          "name": "Blood Slaughterer [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "4a39-217c-ed67-6a58",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4a39-217c-ed67-6a58:c84d-86d9-a7d4-e160",
+                  "name": "Impaler harpoon and slaughter blade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d3c9-c163-fa57-4a5a",
+                      "name": "Impaler harpoon",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Anti-MONSTER 2+, Anti-VEHICLE 2+, Impaled"
+                    },
+                    {
+                      "profile_id": "a7ed-2a8-3190-f8dd",
+                      "name": "Slaughter blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "4a39-217c-ed67-6a58:4f5e-bdcf-ebf4-3a24",
+                  "name": "Twin slaughter blade",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cce6-cc4e-e49d-2f94",
+                      "name": "Twin slaughter blade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d732-63b7-352b-e723",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "a85d-54dc-a0a3-5625",
+          "name": "Scuttling Gait",
+          "type": "Abilities",
+          "description": "Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f564-7bc-21a6-7796",
+      "name": "Greater Brass Scorpion [Legends]",
+      "type": "model",
+      "points": 560,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Greater Brass Scorpion",
+          "target_id": "691c-54b4-bfa5-be5c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f564-7bc-21a6-7796",
+          "name": "Greater Brass Scorpion [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "26",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "612f-8004-49ec-ebc1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "612f-8004-49ec-ebc1:de58-7a7e-d447-a4b0",
+                  "name": "Demolisher cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "bf44-c4f5-d4ec-a53e",
+                      "name": "Demolisher cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "612f-8004-49ec-ebc1:fb5a-ea0c-4bf6-1438",
+                  "name": "Hellcrusher claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4bb8-9487-b9ec-93d6",
+                      "name": "➤ Hellcrusher claws - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "f28f-d390-c6c6-f70b",
+                      "name": "➤ Hellcrusher claws - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "18",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "612f-8004-49ec-ebc1:5e28-c455-d6b-5acb",
+                  "name": "Hellmaw flame cannons",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "352-8efc-9678-ecd3",
+                      "name": "Hellmaw flame cannons",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "2D6",
+                      "bs_ws": "N/A",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "612f-8004-49ec-ebc1:28ea-a344-3fdd-7858",
+                  "name": "Scorpion cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f13a-b73f-c07f-dd38",
+                      "name": "Scorpion cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "15",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7a21-d7fb-1f83-f292",
+          "name": "Runes of the Blood God",
+          "type": "Abilities",
+          "description": "This model has the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+        },
+        {
+          "id": "9554-75c1-895-c090",
+          "name": "Damaged: 1-9 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "c528-23c3-69ac-a738",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6c76-b4e-4437-27e2",
+      "name": "Kytan Ravager [Legends]",
+      "type": "model",
+      "points": 425,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Kytan Ravager",
+          "target_id": "aab2-bb8f-e2ce-fe90",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6c76-b4e-4437-27e2",
+          "name": "Kytan Ravager [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "3+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "10"
+          },
+          "loadout": [
+            {
+              "id": "c950-99a3-2a50-0afd",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "c950-99a3-2a50-0afd:c47c-2920-3179-fdfb",
+                  "name": "Kytan cleaver",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cc4f-c19b-f2a9-9fcb",
+                      "name": "➤ Kytan cleaver - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "cb5a-e52a-1d87-831d",
+                      "name": "➤ Kytan cleaver - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "c950-99a3-2a50-0afd:a83f-f3a4-d2f9-84f9",
+                  "name": "Kytan gatling cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "311a-c99d-3feb-cbf4",
+                      "name": "Kytan gatling cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "18",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e230-1d28-9fc8-572a",
+          "name": "Damaged: 1-8 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "e04a-bafe-cc4a-6992",
+          "name": "Bloodlust",
+          "type": "Abilities",
+          "description": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [SUSTAINED HITS 1] ability. In addition, once per battle, this model is eligible to declare a charge in a turn in which it Advanced."
+        },
+        {
+          "id": "b7be-e1c0-79b-182e",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5bb7-ac8-4448-a4d8",
+      "name": "Kharybdis Assault Claw [Legends]",
+      "type": "model",
+      "points": 325,
+      "keywords": [
+        {
+          "name": "Faction: Heretic Astartes",
+          "target_id": "1e42-dfae-cbdd-207d",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Kharybdis Assault Claw",
+          "target_id": "59cb-a2c2-114-4ce6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5bb7-ac8-4448-a4d8",
+          "name": "Kharybdis Assault Claw [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "11",
+            "sv": "3+",
+            "w": "20",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "6284-6898-f14b-50e1",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "6284-6898-f14b-50e1:b91f-a404-cf14-c76f",
+                  "name": "Blade struts",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1a3a-fb93-7cf0-bf91",
+                      "name": "Blade struts",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6284-6898-f14b-50e1:5ad1-4925-b948-c452",
+                  "name": "Kharybdis storm launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6b35-af24-2b29-9048",
+                      "name": "➤ Kharybdis storm launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "5b1b-cf17-44f5-f3fa",
+                      "name": "➤ Kharybdis storm launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "6284-6898-f14b-50e1:c92a-b6ad-9a-de95",
+                  "name": "Melta array",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3275-f9cb-401-eab7",
+                      "name": "Melta array",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-4",
+                      "d": "D6+2",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2d23-1cc3-1a59-96c4",
+          "name": "Kharybdis Assault",
+          "type": "Abilities",
+          "description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+        },
+        {
+          "id": "f8d9-cce3-8f18-f4e3",
+          "name": "Damaged: 1-7 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "a510-9d3d-adf2-4459",
+          "name": "Kharybdis Assault Claw",
+          "capacity": "This model has a transport capacity of 22 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "6844-986c-b0ea-6dd5",
+      "name": "Chaos Thunderhawk [Legends]",
+      "type": "model",
+      "points": 840,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Thunderhawk",
+          "target_id": "50c4-4cd1-80b8-e85",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6844-986c-b0ea-6dd5",
+          "name": "Chaos Thunderhawk [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20\"+",
+            "t": "12",
+            "sv": "2+",
+            "w": "30",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fae8-e36f-bb91-c7ec",
+          "name": "Damaged: 1-10 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "c6bf-fc6c-319e-b88d",
+          "name": "Aerial Assault",
+          "type": "Abilities",
+          "description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        },
+        {
+          "id": "60fa-c1c8-cc2-6e3f",
+          "name": "Thunderhawk cluster bombs",
+          "type": "Abilities",
+          "description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+        }
+      ],
+      "transport": [
+        {
+          "id": "71d3-2168-473e-b649",
+          "name": "Chaos Thunderhawk",
+          "capacity": "This model has a transport capacity of 30 <FACTION> INFANTRY or <FACTION> MOUNTED models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. Each MOUNTED model takes up the space of 4 models."
+        }
+      ],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

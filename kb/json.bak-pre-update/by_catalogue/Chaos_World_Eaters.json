@@ -1,0 +1,4098 @@
+{
+  "id": "df9a-59b2-f464-59ad",
+  "name": "Chaos - World Eaters",
+  "is_library": false,
+  "revision": "39",
+  "source_file": "Chaos - World Eaters.cat",
+  "categories": [
+    {
+      "id": "8a1c-5832-fe04-fd64",
+      "name": "Angron"
+    },
+    {
+      "id": "096b-6376-97e0-b82f",
+      "name": "Khârn the Betrayer"
+    },
+    {
+      "id": "59a2-5bf7-970b-4720",
+      "name": "Lord Invocatus"
+    },
+    {
+      "id": "e531-2b12-c56c-aa51",
+      "name": "Lord on Juggernaut"
+    },
+    {
+      "id": "11bd-04b2-ef68-f7b7",
+      "name": "Master of Executions"
+    },
+    {
+      "id": "802c-f8e1-e339-84b3",
+      "name": "Berserkers"
+    },
+    {
+      "id": "f05b-e25f-cda0-4669",
+      "name": "Jakhals"
+    },
+    {
+      "id": "de05-aa6e-fc97-c400",
+      "name": "Terminator"
+    },
+    {
+      "id": "bed2-a2a1-caf3-d9d7",
+      "name": "Terminator Squad"
+    },
+    {
+      "id": "aa38-6b43-3c3e-3ed9",
+      "name": "Eightbound"
+    },
+    {
+      "id": "b8d9-6a4b-fd6b-e82d",
+      "name": "Exalted Eightbound"
+    },
+    {
+      "id": "8419-8f54-c5b0-8f76",
+      "name": "Land Raider"
+    },
+    {
+      "id": "a510-da27-1450-e28c",
+      "name": "Predator Annihilator"
+    },
+    {
+      "id": "a2a0-c04e-a958-afed",
+      "name": "Predator Destructor"
+    },
+    {
+      "id": "271b-ea4c-8319-1dea",
+      "name": "Defiler"
+    },
+    {
+      "id": "67ee-e549-a0de-413b",
+      "name": "Forgefiend"
+    },
+    {
+      "id": "f4f2-8000-3586-26f6",
+      "name": "Helbrute"
+    },
+    {
+      "id": "6d5b-9e47-e038-6871",
+      "name": "Heldrake"
+    },
+    {
+      "id": "ed41-36cc-6e01-1084",
+      "name": "Maulerfiend"
+    },
+    {
+      "id": "7683-9a29-39d9-ae31",
+      "name": "Rhino"
+    },
+    {
+      "id": "8596-9508-212e-9628",
+      "name": "Spawn"
+    },
+    {
+      "id": "ad21-8e29-c122-9cbb",
+      "name": "Lord of Skulls"
+    },
+    {
+      "id": "4f9b-f5a5-ad88-6e14",
+      "name": "Hell Talon"
+    },
+    {
+      "id": "17dd-7d43-376b-664e",
+      "name": "Hellblade"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "f4b8-1179-de57-4d69",
+      "name": "Angron",
+      "type": "model",
+      "points": 435,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Primarch",
+          "target_id": "6474-0ce3-6b5a-120c",
+          "primary": false
+        },
+        {
+          "name": "Angron",
+          "target_id": "8a1c-5832-fe04-fd64",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f4b8-1179-de57-4d69",
+          "name": "Angron",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "11",
+            "sv": "2+",
+            "w": "16",
+            "ld": "5+",
+            "oc": "6"
+          },
+          "loadout": [
+            {
+              "id": "3f1f-49de-78f6-e59e",
+              "kind": "fixed",
+              "name": "Samni’arius and Spinegrinder",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3f1f-49de-78f6-e59e:3f1f-49de-78f6-e59e",
+                  "name": "Samni’arius and Spinegrinder",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c2d5-0bee-869e-fb77",
+                      "name": "➤ Samni’arius and Spinegrinder - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+2",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "be4d-fdfc-bae7-1387",
+                      "name": "➤ Samni’arius and Spinegrinder - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "18",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1bc6-f5af-5413-b734",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "c119-e343-c7ef-bd4c",
+          "name": "Reborn in Blood",
+          "type": "Abilities",
+          "description": "Each time you make a Blessings of Khorne roll, if this model is destroyed, you can use a triple 6 from that roll to use this ability. If you do, this model is no longer destroyed and is placed into Reserves with its full wounds remaining."
+        },
+        {
+          "id": "0d65-4434-1179-25f7",
+          "name": "Wrathful Presence",
+          "type": "Abilities",
+          "description": "At the start of your Charge phase, select one Wrathful Presence ability. Until the start of your next Charge phase, this model has that ability."
+        },
+        {
+          "id": "6bc9-7ca7-a2f6-aa83",
+          "name": "Glorious Bloodletting (Aura)",
+          "type": "Wrathful Presence",
+          "description": ""
+        },
+        {
+          "id": "30f4-54de-d45c-aa7d",
+          "name": "Infectious Rage (Aura)",
+          "type": "Wrathful Presence",
+          "description": ""
+        },
+        {
+          "id": "6ae8-099a-2349-6f8b",
+          "name": "Righteous Slaughter (Aura)",
+          "type": "Wrathful Presence",
+          "description": ""
+        },
+        {
+          "id": "e84c-e5e3-3819-db1e",
+          "name": "Damaged: 1-6 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3449-7dac-6ac8-5d51",
+      "name": "Khârn the Betrayer",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Khârn the Betrayer",
+          "target_id": "096b-6376-97e0-b82f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3449-7dac-6ac8-5d51",
+          "name": "Khârn the Betrayer",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "fd97-20ca-0273-58e5",
+              "kind": "fixed",
+              "name": "Khârn's plasma pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "fd97-20ca-0273-58e5:fd97-20ca-0273-58e5",
+                  "name": "Khârn's plasma pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "dec7-e785-39a9-fed1",
+                      "name": "Khârn's plasma pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ee6b-763b-5885-19da",
+              "kind": "fixed",
+              "name": "Gorechild",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ee6b-763b-5885-19da:ee6b-763b-5885-19da",
+                  "name": "Gorechild",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "3502-ed85-d1bb-0bb8",
+                      "name": "Gorechild",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bf3d-552f-3273-5bad",
+          "name": "Legendary Killer",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+        },
+        {
+          "id": "f98c-6c6c-2f6b-4626",
+          "name": "The Betrayer",
+          "type": "Abilities",
+          "description": "At the end of your Charge phase, if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model of your choice in that unit is destroyed."
+        },
+        {
+          "id": "72fe-bca8-a252-eeb2",
+          "name": "Berserker Frenzy",
+          "type": "Abilities",
+          "description": "If this model is destroyed by a melee attack, if it has not fought this phase, do not remove it from play. It can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+        },
+        {
+          "id": "3b96-842a-f4c2-2859",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "dbdd-7b38-8b6c-6969",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- KHORNE BERSERKERS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3b15-b424-2059-71fa",
+      "name": "Lord Invocatus",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Lord Invocatus",
+          "target_id": "59a2-5bf7-970b-4720",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3b15-b424-2059-71fa",
+          "name": "Lord Invocatus",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "e702-66b4-58f7-d28a",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e702-66b4-58f7-d28a:e702-66b4-58f7-d28a",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2ff9-bedf-f94e-fc5a",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9513-0551-c14b-aa72",
+              "kind": "fixed",
+              "name": "Coward's Bane",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9513-0551-c14b-aa72:9513-0551-c14b-aa72",
+                  "name": "Coward's Bane",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2202-3d94-7e68-b4ed",
+                      "name": "Coward's Bane",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "7",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ce5b-231f-75d2-7b53",
+              "kind": "fixed",
+              "name": "Juggernaught's bladed horn",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "ce5b-231f-75d2-7b53:ce5b-231f-75d2-7b53",
+                  "name": "Juggernaught's bladed horn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "db5a-fbd0-f818-56ce",
+                      "name": "Juggernaught's bladed horn",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Extra Attacks, Lance"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "352d-93b6-7b8e-95d3",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "38d4-2193-b71b-9cca",
+          "name": "Counter-attacks",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+        },
+        {
+          "id": "de14-2f26-263d-2047",
+          "name": "Road of Eight Bloody Steps",
+          "type": "Abilities",
+          "description": "At the start of the battle, before any moves are made using the Scouts ability, you can select up to two friendly WORLD EATERS INFANTRY units within 6\" of this model. Until the end of the battle, all models in the selected units have the Scouts 6\" ability."
+        },
+        {
+          "id": "06e3-9b06-7daf-0eb6",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- EIGHTBOUND\n- EXALTED EIGHTBOUND\n- KHORNE BERSERKERS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "40c5-9ebd-6d42-2855",
+      "name": "World Eaters Daemon Prince",
+      "type": "model",
+      "points": 185,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Daemon Prince",
+          "target_id": "4f09-0141-6c70-6c5a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "40c5-9ebd-6d42-2855",
+          "name": "World Eaters Daemon Prince",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "2+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "f132-71e1-81e2-5074",
+              "kind": "fixed",
+              "name": "Infernal cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f132-71e1-81e2-5074:f132-71e1-81e2-5074",
+                  "name": "Infernal cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2bf6-041e-92d4-6556",
+                      "name": "Infernal cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3e4b-1a3a-8473-578c",
+              "kind": "fixed",
+              "name": "Hellforged weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3e4b-1a3a-8473-578c:3e4b-1a3a-8473-578c",
+                  "name": "Hellforged weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d413-1b95-3ce2-4ad0",
+                      "name": "➤ Hellforged weapons - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "f0d9-8a72-8332-d447",
+                      "name": "➤ Hellforged weapons - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "14",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "dcc5-fc35-0f80-4c3f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "cc39-46f4-3101-c4f0",
+          "name": "Infernal Fortitude (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WORLD EATERS INFANTRY unit is within 6\" of this model, models in that unit have a 5+ invulnerable save, unless they already have an invulnerable save, in which case they have a 4+ invulnerable save."
+        },
+        {
+          "id": "9fd3-61f8-95ae-118a",
+          "name": "Devastating Assault",
+          "type": "Abilities",
+          "description": "Each time this model makes a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "0294-61a4-c6ed-b2e8",
+      "name": "World Eaters Daemon Prince with wings",
+      "type": "model",
+      "points": 155,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Daemon Prince",
+          "target_id": "4f09-0141-6c70-6c5a",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "0294-61a4-c6ed-b2e8",
+          "name": "World Eaters Daemon Prince with wings",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "4755-fc43-f6a4-8c1f",
+              "kind": "fixed",
+              "name": "Infernal cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4755-fc43-f6a4-8c1f:4755-fc43-f6a4-8c1f",
+                  "name": "Infernal cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0b04-ec38-bb4e-7439",
+                      "name": "Infernal cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3f51-baf4-2e6a-21f2",
+              "kind": "fixed",
+              "name": "Hellforged weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3f51-baf4-2e6a-21f2:3f51-baf4-2e6a-21f2",
+                  "name": "Hellforged weapons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "06ab-c72c-416a-7058",
+                      "name": "➤ Hellforged weapons - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "dbe0-61f3-9be9-1cad",
+                      "name": "➤ Hellforged weapons - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "14",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7454-7044-5a27-f927",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "ef20-bc48-20c9-6af6",
+          "name": "Bloodied Terror",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test."
+        },
+        {
+          "id": "8d55-b620-1f13-577b",
+          "name": "Oath to Khorne",
+          "type": "Abilities",
+          "description": "At the start of the battle, select one unit from your opponent’s army to be this model’s sworn foe. Each time this model makes an attack that targets that sworn foe, you can re-roll the Hit roll and you can re-roll the Wound roll. If, at the end of the battle, that sworn foe has not been destroyed, this model is destroyed."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ec72-f024-4283-0558",
+      "name": "World Eaters Lord on Juggernaut",
+      "type": "model",
+      "points": 80,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Mounted",
+          "target_id": "14a0-40c9-2748-ae6e",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Lord on Juggernaut",
+          "target_id": "e531-2b12-c56c-aa51",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ec72-f024-4283-0558",
+          "name": "World Eaters Lord on Juggernaut",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "1673-a61f-d5a2-b17c",
+              "kind": "fixed",
+              "name": "Juggernaught's bladed horn",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "1673-a61f-d5a2-b17c:1673-a61f-d5a2-b17c",
+                  "name": "Juggernaught's bladed horn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "397c-8964-ff37-ba08",
+                      "name": "Juggernaught's bladed horn",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Extra Attacks, Lance"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4292-1471-4fd6-7dac",
+              "kind": "fixed",
+              "name": "Exalted chainblade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4292-1471-4fd6-7dac:4292-1471-4fd6-7dac",
+                  "name": "Exalted chainblade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0b21-5f8d-a56a-a792",
+                      "name": "Exalted chainblade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "7",
+                      "bs_ws": "2+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "16dd-abd7-4de7-e8cc",
+              "kind": "fixed",
+              "name": "Plasma pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "16dd-abd7-4de7-e8cc:16dd-abd7-4de7-e8cc",
+                  "name": "Plasma pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8283-c4c4-2f26-5438",
+                      "name": "➤ Plasma pistol - standard",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    },
+                    {
+                      "profile_id": "d3d4-6f9d-4d0e-0cac",
+                      "name": "➤ Plasma pistol - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Hazardous, Pistol"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b991-fcac-8127-89f9",
+          "name": "Aggressive Advance",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, you can re-roll any or all of the following rolls made for that unit: Advance rolls; Charge rolls; Blood Surge rolls (see Khorne Berzerkers)."
+        },
+        {
+          "id": "4bcb-02c4-0b6c-f6b9",
+          "name": "Bloody Stampede",
+          "type": "Abilities",
+          "description": "Each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+        },
+        {
+          "id": "5566-3e94-2fd4-8f61",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save."
+        },
+        {
+          "id": "2714-1342-291d-9505",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n- EIGHTBOUND\n- EXALTED EIGHTBOUND\n- KHORNE BERSERKERS"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "1b56-682c-ac33-bc5f",
+      "name": "World Eaters Master of Executions",
+      "type": "model",
+      "points": 110,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Master of Executions",
+          "target_id": "11bd-04b2-ef68-f7b7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "1b56-682c-ac33-bc5f",
+          "name": "World Eaters Master of Executions",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "4",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "c41d-61c0-3e59-01b5",
+              "kind": "fixed",
+              "name": "Bolt pistol",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "c41d-61c0-3e59-01b5:c41d-61c0-3e59-01b5",
+                  "name": "Bolt pistol",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2682-33c5-c4f5-4bf9",
+                      "name": "Bolt pistol",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6105-a18c-fcd1-a9da",
+              "kind": "fixed",
+              "name": "Axe of dismemberment",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6105-a18c-fcd1-a9da:6105-a18c-fcd1-a9da",
+                  "name": "Axe of dismemberment",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d596-29c4-bf15-c7e1",
+                      "name": "Axe of dismemberment",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Devastating Wounds, Precision"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c217-2971-b9ed-1cb1",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following unit:\n- KHORNE BERSERKERS"
+        },
+        {
+          "id": "4f7f-4559-76e4-b73a",
+          "name": "Trophy Taker",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Fights First ability."
+        },
+        {
+          "id": "22df-03a4-7b94-437f",
+          "name": "Murderous Swing",
+          "type": "Abilities",
+          "description": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f909-00c7-8ba4-018a",
+      "name": "Khorne Berserkers",
+      "type": "unit",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Berserkers",
+          "target_id": "802c-f8e1-e339-84b3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "38fb-1df5-8eb6-fdf6",
+          "name": "Khorne Berserker Champion",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "91f1-dd1d-f3c7-3be4",
+              "kind": "fixed",
+              "name": "Berserker chainblade",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "91f1-dd1d-f3c7-3be4:44b0-1947-ea4a-3005",
+                  "name": "Berserker chainblade",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "48a1-4f35-83be-3220",
+                      "name": "Berserker chainblade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "98dc-e20d-8ee7-882c",
+          "name": "Blood Surge",
+          "type": "Abilities",
+          "description": "Each time an enemy unit is selected to shoot, after that unit has finished making its attacks, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6: this unit can be moved a number of inches up to the result, but this unit must finish that move as close as possible to the closest enemy unit (excluding Aircraft). When doing so, those models can be moved within Engagement Range of that enemy unit. A unit cannot make a Blood Surge move while it is Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 180,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "45f6-8429-a1d9-2a51",
+      "name": "World Eaters Terminator Squad",
+      "type": "unit",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "de05-aa6e-fc97-c400",
+          "primary": false
+        },
+        {
+          "name": "Terminator Squad",
+          "target_id": "bed2-a2a1-caf3-d9d7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "45f6-8429-a1d9-2a51",
+          "name": "World Eaters Terminator Squad",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "ad01-52b6-735a-8b6b",
+              "kind": "choice",
+              "name": "4 - 9 Terminators",
+              "min_select": 4,
+              "max_select": 9,
+              "options": [
+                {
+                  "id": "ad01-52b6-735a-8b6b:5f1f-f3bb-d6dd-6714",
+                  "name": "Heavy weapon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2db4-7c20-3e1d-77ff",
+                      "name": "Reaper autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5fb8-d528-d2e2-fce0",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Model in this unit have a 4+ invulnerable save."
+        },
+        {
+          "id": "cabc-c518-5262-d65e",
+          "name": "Bloody Fury",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 360,
+          "condition_text": "> 5 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 5,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "6f81-4538-a414-251e",
+      "name": "Jakhals",
+      "type": "unit",
+      "points": 65,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Battleline",
+          "target_id": "e338-111e-d0c6-b687",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Jakhals",
+          "target_id": "f05b-e25f-cda0-4669",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6f81-4538-a414-251e",
+          "name": "Jakhals",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "3",
+            "sv": "6+",
+            "w": "1",
+            "ld": "7+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "15ae-08e7-af32-b54c",
+              "kind": "choice",
+              "name": "Jakhals",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "15ae-08e7-af32-b54c:1df0-c0d9-ec6a-0413",
+                  "name": "E: 2 mauler chainblades, 15 chainblades",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fcfe-8d81-f5d4-8d1e",
+                      "name": "Mauler chainblade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "15ae-08e7-af32-b54c:5b7f-e6b5-15e6-fbd8",
+                  "name": "B: 1 mauler chainblade, 7 chainblades",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c75c-6f52-8160-7262",
+                      "name": "Mauler chainblade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "15ae-08e7-af32-b54c:4f71-8659-e477-ef8f",
+                  "name": "D: 1 mauler chainblade, 16 chainblades",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a169-c8f1-1786-140b",
+                      "name": "Mauler chainblade",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "5+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "972c-1a7a-a57a-aa0c",
+              "kind": "choice",
+              "name": "1 or 2 Dishonoured",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "972c-1a7a-a57a-aa0c:440a-eb98-5c6d-e8b1",
+                  "name": "Dishonoured w/ skullsmasher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ab0e-4569-3ddc-3e81",
+                      "name": "Skullsmasher",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "972c-1a7a-a57a-aa0c:307d-0ce0-fcf0-9100",
+                  "name": "Dishonoured w/ chainblades",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f17b-1665-be9a-b2c6",
+                      "name": "Dishonoured chainblades",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d6c1-e4e6-d70f-7ee7",
+          "name": "Objective Ravaged",
+          "type": "Abilities",
+          "description": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 130,
+          "condition_text": "> 10 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 10,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9435-1f44-7e5b-d510",
+      "name": "Eightbound",
+      "type": "unit",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Eightbound",
+          "target_id": "aa38-6b43-3c3e-3ed9",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9435-1f44-7e5b-d510",
+          "name": "Eightbound",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7e60-1733-57d1-71f3",
+              "kind": "fixed",
+              "name": "Eightbound",
+              "min_select": 2,
+              "max_select": 5,
+              "options": [
+                {
+                  "id": "7e60-1733-57d1-71f3:7e60-1733-57d1-71f3",
+                  "name": "Eightbound",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f9d1-690a-50dc-2d08",
+                      "name": "Eightbound eviscerators",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6f2c-fc26-53bc-34bd",
+              "kind": "fixed",
+              "name": "Eightbound Champion",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6f2c-fc26-53bc-34bd:6f2c-fc26-53bc-34bd",
+                  "name": "Eightbound Champion",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a809-d6ea-88f1-e495",
+                      "name": "Lacerators",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "e216-94e8-82c5-b49e",
+                      "name": "Heavy chainglaive",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-3",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3070-b510-7093-db8f",
+          "name": "Beacons of Rage (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly WORLD EATERS unit is within 6\" of this unit, each time a model in that unit makes a melee attack, re-roll a Wound roll of 1. If that attack targets a unit that is Below Half-strength, you can re-roll the Wound roll instead."
+        },
+        {
+          "id": "4ff0-adf5-fa03-f884",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 280,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "9932-3d2b-1e47-d53b",
+      "name": "Exalted Eightbound",
+      "type": "unit",
+      "points": 155,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Exalted Eightbound",
+          "target_id": "b8d9-6a4b-fd6b-e82d",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9932-3d2b-1e47-d53b",
+          "name": "Exalted Eightbound",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "9\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "3",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "d009-9bd9-59a1-9119",
+              "kind": "fixed",
+              "name": "Exalted Eightbound Champion",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d009-9bd9-59a1-9119:d009-9bd9-59a1-9119",
+                  "name": "Exalted Eightbound Champion",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6de9-6907-8136-7e3b",
+                      "name": "Paired Eightbound chainfists",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "2",
+                      "keywords": "Twin-linked"
+                    },
+                    {
+                      "profile_id": "b7f7-502e-7087-c965",
+                      "name": "Heavy chainglaive",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6dfe-fb8a-bb6b-fd88",
+          "name": "Overwhelming Wrath (Aura)",
+          "type": "Abilities",
+          "description": "Each time an enemy unit within 6\" of this unit is selected to Fall Back, that unit must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+        },
+        {
+          "id": "d799-5c41-f976-13bd",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "Models in this unit have a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": [
+        {
+          "points": 310,
+          "condition_text": "> 3 个模型",
+          "condition_type": "greaterThan",
+          "condition_value": 3,
+          "target_name": "",
+          "scope_id": "model"
+        }
+      ]
+    },
+    {
+      "id": "4251-bd4f-f7ac-9487",
+      "name": "World Eaters Land Raider",
+      "type": "model",
+      "points": 240,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Land Raider",
+          "target_id": "8419-8f54-c5b0-8f76",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4251-bd4f-f7ac-9487",
+          "name": "World Eaters Land Raider",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "12",
+            "sv": "2+",
+            "w": "16",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "7ee7-b40e-1886-3b33",
+              "kind": "fixed",
+              "name": "Soulshatter lascannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "7ee7-b40e-1886-3b33:7ee7-b40e-1886-3b33",
+                  "name": "Soulshatter lascannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9db2-8b92-7474-97a2",
+                      "name": "Soulshatter lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0850-43da-8b31-3161",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0850-43da-8b31-3161:0850-43da-8b31-3161",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8efb-db7e-56ba-febc",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "29d6-5565-efeb-935b",
+              "kind": "fixed",
+              "name": "Twin heavy bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "29d6-5565-efeb-935b:caa8-634e-b7e4-a286",
+                  "name": "Twin heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fc72-9f62-b714-d195",
+                      "name": "Twin heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4a8f-1b1a-1ad4-c547",
+              "kind": "fixed",
+              "name": "Havoc launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "4a8f-1b1a-1ad4-c547:5df1-0d33-8cea-a191",
+                  "name": "Havoc launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0bbc-60b7-e869-01a8",
+                      "name": "Havoc launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "aaa2-11dc-59f5-89ad",
+          "name": "Assault Ramp",
+          "type": "Abilities",
+          "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+        }
+      ],
+      "transport": [
+        {
+          "id": "c1b4-eec2-24ec-30dd",
+          "name": "World Eaters Land Raider",
+          "capacity": "This model has a transport capacity of 12 WORLD EATERS INFANTRY models. Each EIGHTBOUND, EXALTED EIGHTBOUND and TERMINATOR model takes up the space of 2 models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "497c-f787-5a7e-1020",
+      "name": "World Eaters Predator Annihilator",
+      "type": "model",
+      "points": 135,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Predator Annihilator",
+          "target_id": "a510-da27-1450-e28c",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "497c-f787-5a7e-1020",
+          "name": "World Eaters Predator Annihilator",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "dadc-2c8c-6a2e-e9d2",
+              "kind": "fixed",
+              "name": "Predator twin lascannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "dadc-2c8c-6a2e-e9d2:dadc-2c8c-6a2e-e9d2",
+                  "name": "Predator twin lascannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4335-d27e-ac60-6b32",
+                      "name": "Predator twin lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e6d3-8cca-69a0-fe55",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e6d3-8cca-69a0-fe55:f76c-0f51-ad33-c118",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1c01-242b-864f-6a0f",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7a7b-a3f9-68d5-a91b",
+              "kind": "fixed",
+              "name": "Havoc launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7a7b-a3f9-68d5-a91b:5df1-0d33-8cea-a191",
+                  "name": "Havoc launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0bbc-60b7-e869-01a8",
+                      "name": "Havoc launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b946-1c12-5192-5d2f",
+          "name": "Annihilator",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a MONSTER or VEHICLE unit, you can re-roll the Damage roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "04a0-269e-3bab-2c61",
+      "name": "World Eaters Predator Destructor",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Predator Destructor",
+          "target_id": "a2a0-c04e-a958-afed",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "04a0-269e-3bab-2c61",
+          "name": "World Eaters Predator Destructor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "11",
+            "ld": "6+",
+            "oc": "4"
+          },
+          "loadout": [
+            {
+              "id": "0fbc-05e5-596c-ac82",
+              "kind": "fixed",
+              "name": "Predator autocannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0fbc-05e5-596c-ac82:0fbc-05e5-596c-ac82",
+                  "name": "Predator autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4429-83d9-ae30-87cb",
+                      "name": "Predator autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0c7b-7427-dcc6-6198",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0c7b-7427-dcc6-6198:f76c-0f51-ad33-c118",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1c01-242b-864f-6a0f",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0396-585a-5830-0f21",
+              "kind": "fixed",
+              "name": "Havoc launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "0396-585a-5830-0f21:5df1-0d33-8cea-a191",
+                  "name": "Havoc launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0bbc-60b7-e869-01a8",
+                      "name": "Havoc launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "307f-af7c-e7b6-a4b0",
+          "name": "Destructor",
+          "type": "Abilities",
+          "description": "Each time a ranged attack made by this model targets an enemy INFANTRY unit, improve the Armour Penetration characteristic of that attack by 1."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "ea51-5575-9e74-9346",
+      "name": "World Eaters Defiler",
+      "type": "model",
+      "points": 190,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Defiler",
+          "target_id": "271b-ea4c-8319-1dea",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "ea51-5575-9e74-9346",
+          "name": "World Eaters Defiler",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "5"
+          },
+          "loadout": [
+            {
+              "id": "93ce-bbcf-a32b-577b",
+              "kind": "fixed",
+              "name": "Defiler cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "93ce-bbcf-a32b-577b:93ce-bbcf-a32b-577b",
+                  "name": "Defiler cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "da64-6fb7-6c1e-ff19",
+                      "name": "Defiler cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b39c-92d1-f763-74a1",
+              "kind": "fixed",
+              "name": "Defiler claws",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b39c-92d1-f763-74a1:b39c-92d1-f763-74a1",
+                  "name": "Defiler claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1ca4-387f-a06e-b111",
+                      "name": "Defiler claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bc8c-8049-6630-4444",
+              "kind": "choice",
+              "name": "Replace autocannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bc8c-8049-6630-4444:993b-77f9-5bac-398d",
+                  "name": "Reaper autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6c3f-12b9-e585-5c19",
+                      "name": "Reaper autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Devastating Wounds, Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "624c-9f4c-72e5-0988",
+              "kind": "choice",
+              "name": "Replace twin heavy flamer",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "624c-9f4c-72e5-0988:73c1-d5a3-2532-0890",
+                  "name": "Twin heavy flamer",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4bee-5f42-d2d6-4f23",
+                      "name": "Twin heavy flamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6",
+                      "bs_ws": "N/A",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Ignores Cover, Torrent, Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "624c-9f4c-72e5-0988:83df-83e5-da14-2111",
+                  "name": "Defiler scourge",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7773-9477-a450-db6d",
+                      "name": "Defiler scourge",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "e583-f1bd-c70f-f66e",
+          "name": "Scuttling Walker",
+          "type": "Abilities",
+          "description": "Each time this model makes a Normal, Advance or Fall Back move, it can be moved over friendly MONSTER and VEHICLE models as if they were not there. This model can move over terrain features that are 4\" or less in height as if they were not there."
+        },
+        {
+          "id": "b3e1-6c76-c87a-b540",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "81e1-b212-69c1-308f",
+      "name": "World Eaters Forgefiend",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Forgefiend",
+          "target_id": "67ee-e549-a0de-413b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "81e1-b212-69c1-308f",
+          "name": "World Eaters Forgefiend",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "7bc0-ca63-e7a0-c80f",
+              "kind": "choice",
+              "name": "Head weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7bc0-ca63-e7a0-c80f:54ca-fec8-f0c6-2c77",
+                  "name": "Ectoplasma cannon and claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ed63-295b-eaeb-eae2",
+                      "name": "Forgefiend claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "7bc0-ca63-e7a0-c80f:8f32-a7d0-3951-188d",
+                  "name": "Forgefiend jaws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "920d-8acd-13f5-48af",
+                      "name": "Forgefiend jaws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "0",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d4f7-face-042b-a10d",
+          "name": "Furious Onslaught",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has finished making its attacks, if one or more of those attacks scored a hit against an enemy INFANTRY unit, that INFANTRY unit must take a Battle-shock test."
+        },
+        {
+          "id": "a5f1-9bbd-0363-9733",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "273a-db24-3f7c-b977",
+      "name": "World Eaters Helbrute",
+      "type": "model",
+      "points": 130,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Helbrute",
+          "target_id": "f4f2-8000-3586-26f6",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "273a-db24-3f7c-b977",
+          "name": "World Eaters Helbrute",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "9",
+            "sv": "2+",
+            "w": "8",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "70b-bdff-5001-4b21",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "70b-bdff-5001-4b21:70b-bdff-5001-4b21",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6abd-b956-2a51-241",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9e0f-923b-62b7-958b",
+              "kind": "choice",
+              "name": "Replace multi-melta",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9e0f-923b-62b7-958b:3ad1-17dc-4185-e273",
+                  "name": "Multi-melta",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "74ad-f155-27a9-3e54",
+                      "name": "Multi-melta",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "9e0f-923b-62b7-958b:6e8b-0b2d-0438-f572",
+                  "name": "Twin autocannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d49f-822-633e-12e",
+                      "name": "Twin autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "9e0f-923b-62b7-958b:1cc2-ec19-93cd-5374",
+                  "name": "Helbrute plasma cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "55df-3e4e-7496-90c5",
+                      "name": "Helbrute plasma cannon",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "D3",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8049-1102-1ce1-98e7",
+              "kind": "choice",
+              "name": "Replace missile launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8049-1102-1ce1-98e7:4b78-28cf-7dee-c426",
+                  "name": "Missile launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "c383-ed5a-fdf2-7a4f",
+                      "name": "➤ Missile launcher - frag",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "9296-f12a-ad7f-30c4",
+                      "name": "➤ Missile launcher - krak",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "D6",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8049-1102-1ce1-98e7:a9cc-73a1-144c-0d11",
+                  "name": "Helbrute hammer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "fc6f-24af-e553-0c3d",
+                      "name": "Helbrute hammer",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "4+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "8049-1102-1ce1-98e7:3532-2abd-0b96-4bf4",
+                  "name": "Power scourge",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "b7a2-e159-fe07-db5d",
+                      "name": "Power scourge",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2f94-5892-1327-89f6",
+          "name": "Frenzy",
+          "type": "Abilities",
+          "description": "Each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot as if it were your Shooting phase or fight as if it were the Fight phase."
+        },
+        {
+          "id": "95b1-3a4a-5a80-8bd5",
+          "name": "Helbrute fists",
+          "type": "Abilities",
+          "description": "If this model is equipped with two Helbrute fists, those weapons have the [TWIN-LINKED] ability."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "de2e-8fae-9d22-24a4",
+      "name": "World Eaters Heldrake",
+      "type": "model",
+      "points": 210,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Heldrake",
+          "target_id": "6d5b-9e47-e038-6871",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "de2e-8fae-9d22-24a4",
+          "name": "World Eaters Heldrake",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20\"+",
+            "t": "9",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "cac7-3a37-c963-8dfa",
+              "kind": "fixed",
+              "name": "Heldrake claws",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "cac7-3a37-c963-8dfa:cac7-3a37-c963-8dfa",
+                  "name": "Heldrake claws",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "22d7-4caa-1838-1c3f",
+                      "name": "Heldrake claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-FLY 2+, Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3037-ed3b-29aa-6c83",
+              "kind": "choice",
+              "name": "Mouth weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3037-ed3b-29aa-6c83:6b8f-4996-bee7-5c3d",
+                  "name": "Baleflamer",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a649-2296-8c56-08cd",
+                      "name": "Baleflamer",
+                      "weapon_type": "Ranged",
+                      "range": "12\"",
+                      "a": "D6+3",
+                      "bs_ws": "N/A",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3ebe-135b-8cb0-76f5",
+          "name": "Swooping Predator",
+          "type": "Abilities",
+          "description": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll two D6: for each 4+, that enemy unit suffers D3 mortal wounds."
+        },
+        {
+          "id": "af84-fe8c-7d08-4370",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "a619-8a52-be03-3bd5",
+      "name": "World Eaters Maulerfiend",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Maulerfiend",
+          "target_id": "ed41-36cc-6e01-1084",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "a619-8a52-be03-3bd5",
+          "name": "World Eaters Maulerfiend",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "10",
+            "sv": "3+",
+            "w": "12",
+            "ld": "6+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "b6ea-b414-4386-e416",
+              "kind": "fixed",
+              "name": "Maulerfiend fists",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b6ea-b414-4386-e416:b6ea-b414-4386-e416",
+                  "name": "Maulerfiend fists",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e721-bc30-a7c5-cce9",
+                      "name": "Maulerfiend fists",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6f14-0332-55ac-9643",
+              "kind": "choice",
+              "name": "Head weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "6f14-0332-55ac-9643:1e09-7721-1a1f-7ced",
+                  "name": "2 magma cutters",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "4dab-f908-07a4-8d2d",
+                      "name": "Magma cutter",
+                      "weapon_type": "Ranged",
+                      "range": "6\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Melta 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "6f14-0332-55ac-9643:e3ea-0c3d-1c03-ac0a",
+                  "name": "Lasher tendrils",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2d57-1a54-028b-fd77",
+                      "name": "Lasher tendrils",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8084-c2ca-004e-c463",
+          "name": "The Scent of Blood",
+          "type": "Abilities",
+          "description": "Each time you make a Charge roll for this model, if one or more of the targets of that charge are below their Starting Strength, add 2 to that roll. Each time this model makes a melee attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll."
+        },
+        {
+          "id": "eb5d-a656-b952-25c4",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e849-ce40-ee43-7623",
+      "name": "World Eaters Rhino",
+      "type": "model",
+      "points": 75,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Dedicated Transport",
+          "target_id": "ba07-411c-2832-1f79",
+          "primary": true
+        },
+        {
+          "name": "Smoke",
+          "target_id": "6df-937-16bc-8c1a",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Rhino",
+          "target_id": "7683-9a29-39d9-ae31",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e849-ce40-ee43-7623",
+          "name": "World Eaters Rhino",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "3837-6b0a-9a8c-011e",
+              "kind": "fixed",
+              "name": "Armoured tracks",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3837-6b0a-9a8c-011e:f76c-0f51-ad33-c118",
+                  "name": "Armoured tracks",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1c01-242b-864f-6a0f",
+                      "name": "Armoured tracks",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "39ae-e537-ab68-108f",
+              "kind": "fixed",
+              "name": "Combi-bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "39ae-e537-ab68-108f:9cc3-1188-9678-0ee1",
+                  "name": "Combi-bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "5005-6b6a-dd38-4f11",
+                      "name": "Combi-bolter",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Rapid Fire 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e245-00af-d40f-697e",
+              "kind": "fixed",
+              "name": "Havoc launcher",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e245-00af-d40f-697e:5df1-0d33-8cea-a191",
+                  "name": "Havoc launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "0bbc-60b7-e869-01a8",
+                      "name": "Havoc launcher",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d170-6fa7-f88c-f888",
+          "name": "Self-repair",
+          "type": "Abilities",
+          "description": "At the start of your Command phase, this model regains 1 lost wound."
+        }
+      ],
+      "transport": [
+        {
+          "id": "7526-3b9f-33ca-b410",
+          "name": "World Eaters Rhino",
+          "capacity": "This model has a transport capacity of 12 WORLD EATERS INFANTRY models. It cannot transport EIGHTBOUND, EXALTED EIGHTBOUND or TERMINATOR models."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "edde-57bf-bccc-d8b2",
+      "name": "World Eaters Chaos Spawn",
+      "type": "unit",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Beast",
+          "target_id": "4c3e-9310-a516-3590",
+          "primary": true
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Spawn",
+          "target_id": "8596-9508-212e-9628",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "edde-57bf-bccc-d8b2",
+          "name": "World Eaters Chaos Spawn",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "5",
+            "sv": "4+",
+            "w": "4",
+            "ld": "7",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "a1f0-3ef8-0f56-b54c",
+              "kind": "fixed",
+              "name": "Chaos Spawn",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "a1f0-3ef8-0f56-b54c:a1f0-3ef8-0f56-b54c",
+                  "name": "Chaos Spawn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "afd7-2e16-7ac6-ef7d",
+                      "name": "Hideous Mutations",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "D6+2",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "912b-28b7-8f46-10a6",
+          "name": "Regenerating Monstrosities",
+          "type": "Abilities",
+          "description": "At the start of each player’s Command phase, one model in this unit regains up to D3 lost wounds."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "836c-f65b-6bcb-9663",
+      "name": "Khorne Lord of Skulls",
+      "type": "model",
+      "points": 450,
+      "keywords": [
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Daemon",
+          "target_id": "9c0e-7e25-4580-e439",
+          "primary": false
+        },
+        {
+          "name": "Lord of Skulls",
+          "target_id": "ad21-8e29-c122-9cbb",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "836c-f65b-6bcb-9663",
+          "name": "Khorne Lord of Skulls",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "8\"",
+            "t": "13",
+            "sv": "3+",
+            "w": "24",
+            "ld": "6+",
+            "oc": "8"
+          },
+          "loadout": [
+            {
+              "id": "a267-97a0-25b1-8036",
+              "kind": "fixed",
+              "name": "Great cleaver of Khorne",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a267-97a0-25b1-8036:a267-97a0-25b1-8036",
+                  "name": "Great cleaver of Khorne",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d303-1eb7-b9d0-af6b",
+                      "name": "➤ Great cleaver of Khorne - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "8",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "baf1-a42c-aa52-ac27",
+                      "name": "➤ Great cleaver of Khorne - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "15",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "66f3-ae18-220d-ffb6",
+              "kind": "choice",
+              "name": "Replace gorestorm cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "66f3-ae18-220d-ffb6:87f0-f2de-a092-a2ea",
+                  "name": "Gorestorm cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2291-6ae2-5a0c-0026",
+                      "name": "Gorestorm cannon",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6+3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "66f3-ae18-220d-ffb6:bce4-e2c7-43cb-fe44",
+                  "name": "Daemongore cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "046f-8be9-131b-0ed8",
+                      "name": "Daemongore cannon",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "D6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-4",
+                      "d": "D6+2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "66f3-ae18-220d-ffb6:8f95-98be-d46d-a76a",
+                  "name": "Ichor cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "624a-be29-77f2-203b",
+                      "name": "Ichor cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "df53-9a55-796f-00b4",
+              "kind": "choice",
+              "name": "Replace gatling cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "df53-9a55-796f-00b4:810b-c236-e372-377f",
+                  "name": "Hades gatling cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4f13-7818-f020-fe32",
+                      "name": "Hades gatling cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "df53-9a55-796f-00b4:fea5-da94-7ffe-8bbd",
+                  "name": "Skullhurler",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1f29-6965-2404-190c",
+                      "name": "Skullhurler",
+                      "weapon_type": "Ranged",
+                      "range": "60\"",
+                      "a": "2D6",
+                      "bs_ws": "3+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "1273-7c5a-b059-a2ba",
+          "name": "Blessed Slaughter",
+          "type": "Abilities",
+          "description": "Each time you make a Blessings of Khorne roll, for each enemy unit destroyed by this model in the previous battle round, you can add 1 to or subtract 1 from one of the dice rolled (each dice can only be modified in this way once, and a dice cannot be modified below 1 or above 6)."
+        },
+        {
+          "id": "e2d3-e68e-870e-1355",
+          "name": "Damaged: 1-8 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-8 wounds remaining, subtract 4 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "4c1c-e0c4-129a-6b90",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4e04-74aa-2c2f-66d0",
+      "name": "Hell Talon [Legends]",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        },
+        {
+          "name": "Hell Talon",
+          "target_id": "4f9b-f5a5-ad88-6e14",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4e04-74aa-2c2f-66d0",
+          "name": "Hell Talon [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "9",
+            "sv": "3+",
+            "w": "14",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "aef8-9b52-bf69-3eb5",
+              "kind": "fixed",
+              "name": "Armoured hull",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "aef8-9b52-bf69-3eb5:aef8-9b52-bf69-3eb5",
+                  "name": "Armoured hull",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4ebb-36f9-5f9a-a86a",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2d94-8a70-49c0-5fe4",
+              "kind": "choice",
+              "name": "Replace autocannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "2d94-8a70-49c0-5fe4:acc6-6ac7-6327-d4d3",
+                  "name": "Autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "bf25-83ac-da0d-8a91",
+                      "name": "Autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7614-c823-9385-7127",
+              "kind": "fixed",
+              "name": "Twin lascannon",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "7614-c823-9385-7127:0fc2-382a-b387-9634",
+                  "name": "Twin lascannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9eb6-d9a7-c754-c1a6",
+                      "name": "Twin lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "b457-fb1b-487c-6658",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "bb08-8a31-b8d8-22fc",
+          "name": "Bomb Rack",
+          "type": "Abilities",
+          "description": "Each time this model ends a Normal move, you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "7320-3dba-703c-b3f0",
+      "name": "Hellblade [Legends]",
+      "type": "model",
+      "points": 115,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Aircraft",
+          "target_id": "63f1-e6e8-f6f6-a4f0",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Chaos",
+          "target_id": "4c00-2578-faf5-6918",
+          "primary": false
+        },
+        {
+          "name": "Khorne",
+          "target_id": "4bd-5ee0-f179-2fc5",
+          "primary": false
+        },
+        {
+          "name": "Hellblade",
+          "target_id": "17dd-7d43-376b-664e",
+          "primary": false
+        },
+        {
+          "name": "Faction: World Eaters",
+          "target_id": "bd1d-c1a5-6ca2-c791",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "7320-3dba-703c-b3f0",
+          "name": "Hellblade [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "20+\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "10",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "dad5-cead-c326-813d",
+              "kind": "fixed",
+              "name": "Armoured hull",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "dad5-cead-c326-813d:dad5-cead-c326-813d",
+                  "name": "Armoured hull",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "1368-27f7-bc8a-e50f",
+                      "name": "Armoured hull",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "59e1-1c2c-8c1-c9fa",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save."
+        },
+        {
+          "id": "b8d7-10fe-72ed-72bc",
+          "name": "Interceptor",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "0620-25eb-4da2-5dae",
+      "name": "Jakhal",
+      "type": "model",
+      "points": 0,
+      "keywords": [],
+      "models": [],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [
+    {
+      "id": "3490-ec82-70b3-c5cf",
+      "name": "Berzerker Warband"
+    },
+    {
+      "id": "70d9-0c7a-6b46-65fa",
+      "name": "Vessels of Wrath"
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2c4c-5aac-b510-28ef",
+      "name": "Berzerker Glaive",
+      "points": 25,
+      "description": "WORLD EATERS model only. Add 1 to the Attacks and Damage characteristics of melee weapons equipped by the bearer."
+    },
+    {
+      "id": "33e2-4ee8-2e10-3e47",
+      "name": "Battle-lust",
+      "points": 15,
+      "description": "WORLD EATERS model only. You can select the bearer’s unit for the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+    },
+    {
+      "id": "6836-5818-2135-a8aa",
+      "name": "Helm of Brazen Ire",
+      "points": 25,
+      "description": "WORLD EATERS model only. Each time an attack is allocated to the bearer, halve the Damage characteristic of that attack."
+    },
+    {
+      "id": "9ecf-cc71-16df-c473",
+      "name": "Favoured of Khorne",
+      "points": 20,
+      "description": "WORLD EATERS model only. Once per battle, when you make a Blessings of Khorne roll, before doing anything else, the bearer can use this Enhancement. If it does, discard all of the dice from that roll and make a new Blessings of Khorne roll. This new roll does not count as a re-roll, so any rules that enable you to re-roll or manipulate individual dice (e.g. Icon of Khorne) can still be used."
+    },
+    {
+      "id": "5b76-3e1c-8801-1e4b",
+      "name": "Archslaughterer",
+      "points": 25,
+      "description": "Improve the Armour Penetration characteristic of melee weapons equipped by the bearer by 1. While the bearer is a VESSEL OF WRATH, improve the Damage characteristic of those weapons by 1 as well."
+    },
+    {
+      "id": "4548-4f87-97e8-fc14",
+      "name": "Vox-Diabolus",
+      "points": 20,
+      "description": "Each time the bearer’s unit destroys an enemy unit with a melee attack, roll one D6, adding 1 to the result if the bearer is a VESSEL OF WRATH: on a 4+, you gain 1CP."
+    },
+    {
+      "id": "ebe6-5a5b-cdf3-815f",
+      "name": "Avenger's Crown",
+      "points": 15,
+      "description": "If the bearer is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    },
+    {
+      "id": "0986-e2aa-a2d9-f0db",
+      "name": "Gateways to Glory",
+      "points": 10,
+      "description": "Each time the bearer makes a Normal, Advance or Charge move, it can move horizontally through models and terrain features. When doing so, it can move within Engagement Range of such models but cannot end a Normal or Advance move within Engagement Range of them."
+    }
+  ]
+}

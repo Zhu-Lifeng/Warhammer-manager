@@ -1,0 +1,457 @@
+{
+  "id": "5d6e-fd3-330a-11dd",
+  "name": "Imperium - Adeptus Astartes - Imperial Fists",
+  "is_library": false,
+  "revision": "9",
+  "source_file": "Imperium - Imperial Fists.cat",
+  "categories": [
+    {
+      "id": "f797-f718-df7d-8545",
+      "name": "Darnath Lysander"
+    },
+    {
+      "id": "3d09-3368-9c3c-9009",
+      "name": "Tor Garadon"
+    },
+    {
+      "id": "7709-796b-3022-31fe",
+      "name": "Pedro Kantor"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "eecd-6976-6410-1e42",
+      "name": "Darnath Lysander",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Terminator",
+          "target_id": "740a-892c-8958-defa",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Fists",
+          "target_id": "97aa-d0e4-71c7-96c3",
+          "primary": false
+        },
+        {
+          "name": "Darnath Lysander",
+          "target_id": "f797-f718-df7d-8545",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "eecd-6976-6410-1e42",
+          "name": "Darnath Lysander",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "5",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "7560-433a-b4aa-94ca",
+              "kind": "fixed",
+              "name": "Fist of Dorn",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "7560-433a-b4aa-94ca:7560-433a-b4aa-94ca",
+                  "name": "Fist of Dorn",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2ac6-e240-55c0-1e34",
+                      "name": "Fist of Dorn",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Devastating Wounds"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "fd8a-2e51-e8c6-b34d",
+          "name": "Icon of Obstinacy",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time an attack targets that unit, if the Strength characteristic of that attack is greater than or equal to the Toughness characteristic of that unit, subtract 1 from the Wound roll."
+        },
+        {
+          "id": "d463-8c1e-f1ef-ce55",
+          "name": "Rampart",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save."
+        },
+        {
+          "id": "e9c8-e6ff-83d4-afee",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+        },
+        {
+          "id": "f384-d8fa-760e-cc30",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "‘If you include this model in your army, until the end of the battle, non-Character models in Terminator Assault Squad and Terminator Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5936-83d6-4e30-915c",
+      "name": "Tor Garadon",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Captain",
+          "target_id": "2d7f-1892-2fd0-e29c",
+          "primary": false
+        },
+        {
+          "name": "Gravis",
+          "target_id": "81f0-f40e-c36c-5a30",
+          "primary": false
+        },
+        {
+          "name": "Tor Garadon",
+          "target_id": "3d09-3368-9c3c-9009",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Fists",
+          "target_id": "97aa-d0e4-71c7-96c3",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5936-83d6-4e30-915c",
+          "name": "Tor Garadon",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "660a-455b-8476-3f5d",
+              "kind": "fixed",
+              "name": "Aritficer Grav Gun",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "660a-455b-8476-3f5d:660a-455b-8476-3f5d",
+                  "name": "Aritficer Grav Gun",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7dfb-44c4-1d55-3e2f",
+                      "name": "Aritficer Grav Gun",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-vehicle 2+"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a5c3-5888-85cf-8686",
+              "kind": "fixed",
+              "name": "Hand of Defiance",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a5c3-5888-85cf-8686:a5c3-5888-85cf-8686",
+                  "name": "Hand of Defiance",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "870d-a10c-b215-1395",
+                      "name": "Hand of Defiance",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "dee6-67e8-9a8b-f5cd",
+          "name": "Signum Array",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability."
+        },
+        {
+          "id": "653d-148d-7c06-2436",
+          "name": "Siege Captain",
+          "type": "Abilities",
+          "description": "Each time this model makes an attack that targets a Monster, Vehicle, or Fortification unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 2."
+        },
+        {
+          "id": "60a-b484-e0d7-43b7",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Aggressor Squad\n■ Eradicator Squad\n■ Heavy Intercessor Squad"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "59e3-5a97-f36d-5b94",
+      "name": "Pedro Kantor",
+      "type": "model",
+      "points": 90,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Grenades",
+          "target_id": "5a61-81ac-eb7c-a87e",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Imperial Fists",
+          "target_id": "97aa-d0e4-71c7-96c3",
+          "primary": false
+        },
+        {
+          "name": "Pedro Kantor",
+          "target_id": "7709-796b-3022-31fe",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "59e3-5a97-f36d-5b94",
+          "name": "Pedro Kantor",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "2+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "16e9-568f-de53-22e1",
+              "kind": "fixed",
+              "name": "Dorn's Arrow",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "16e9-568f-de53-22e1:16e9-568f-de53-22e1",
+                  "name": "Dorn's Arrow",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "49c3-48e8-5856-65d3",
+                      "name": "Dorn's Arrow",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Rapid Fire 2, Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3bd3-d7d9-3f22-6ce9",
+              "kind": "fixed",
+              "name": "Fist of Retribution",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "3bd3-d7d9-3f22-6ce9:3bd3-d7d9-3f22-6ce9",
+                  "name": "Fist of Retribution",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "faba-867d-75d6-3747",
+                      "name": "Fist of Retribution",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "5",
+                      "bs_ws": "2+",
+                      "s": "8",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "5324-763c-61f5-9e4b",
+          "name": "Oath of Rynn",
+          "type": "Abilities",
+          "description": "Once per battle, at the start of either player’s Command phase, this model can use this ability. When it does, until the end of the turn, add 1 to the Attacks characteristic of weapons equipped by models in this model’s unit."
+        },
+        {
+          "id": "b20-ca96-c186-27dc",
+          "name": "To the Last",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength."
+        },
+        {
+          "id": "39c9-ff24-66c5-c3aa",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Company Heroes\n■ Bladeguard Veteran Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+        },
+        {
+          "id": "1544-468d-6b7c-a26b",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "If you include this model in your army, until the end of the battle, non-Character models in Sternguard\nVeteran Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

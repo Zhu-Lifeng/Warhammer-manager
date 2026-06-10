@@ -1,0 +1,1148 @@
+{
+  "id": "7481-280e-b55e-7867",
+  "name": "Library - Titans",
+  "is_library": true,
+  "revision": "3",
+  "source_file": "Library - Titans.cat",
+  "categories": [
+    {
+      "id": "169a-d3f4-23b5-ba7",
+      "name": "Faction: Adeptus Titanicus"
+    },
+    {
+      "id": "fe43-3689-1f33-b408",
+      "name": "Faction: Titanicus Traitoris"
+    },
+    {
+      "id": "6999-afed-25ac-617b",
+      "name": "Warhound Titan"
+    },
+    {
+      "id": "8823-94b2-dd20-1242",
+      "name": "Reaver Titan"
+    },
+    {
+      "id": "72ab-6dc9-1f0d-5624",
+      "name": "Warbringer Nemesis Titan"
+    },
+    {
+      "id": "ffaf-5045-d128-b402",
+      "name": "Warlord Titan"
+    },
+    {
+      "id": "c4de-48cd-335f-8a7f",
+      "name": "Titanic Support"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "8eb5-a990-6eb0-9b41",
+      "name": "Warhound Titan",
+      "type": "model",
+      "points": 1100,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Warhound Titan",
+          "target_id": "6999-afed-25ac-617b",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8eb5-a990-6eb0-9b41",
+          "name": "Warhound Titan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "14\"",
+            "t": "13",
+            "sv": "2+",
+            "w": "40",
+            "ld": "6+",
+            "oc": "16"
+          },
+          "loadout": [
+            {
+              "id": "f263-a026-6b8a-9ccb",
+              "kind": "fixed",
+              "name": "Warhound feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "f263-a026-6b8a-9ccb:f263-a026-6b8a-9ccb",
+                  "name": "Warhound feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "b201-9a8d-9bfc-6264",
+                      "name": "Warhound feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "67aa-cbe0-95c0-673f",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "67aa-cbe0-95c0-673f:6b81-c1fe-9fec-803f",
+                  "name": "Warhound vulcan mega-bolter",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "ad2e-6186-c20d-b9ea",
+                      "name": "Warhound vulcan mega-bolter",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "20",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "67aa-cbe0-95c0-673f:5f9e-bc47-6590-f83a",
+                  "name": "Warhound inferno gun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2e69-d363-6e05-dc18",
+                      "name": "Warhound inferno gun",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "3D6",
+                      "bs_ws": "N/A",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Ignores Cover, Torrent"
+                    }
+                  ]
+                },
+                {
+                  "id": "67aa-cbe0-95c0-673f:ad16-60c0-a420-4295",
+                  "name": "Warhound plasma blastgun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "5091-8855-7c63-d524",
+                      "name": "➤ Warhound plasma blastgun - standard",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2D6+3",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "4",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "aea-d0ef-2554-ce09",
+                      "name": "➤ Warhound plasma blastgun - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2D6+3",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "5",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                },
+                {
+                  "id": "67aa-cbe0-95c0-673f:edca-c231-b8ed-93ff",
+                  "name": "Warhound turbo-laser destructor",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "dcc0-df85-fd06-a1ab",
+                      "name": "Warhound turbo-laser destructor",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D3+3",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "2D6",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "bd21-6f2e-3403-b96c",
+          "name": "Flank Speed",
+          "type": "Abilities",
+          "description": "Each time this model Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 8\" to the Move characteristic of this model."
+        },
+        {
+          "id": "9eb2-afd9-2ff6-ccb",
+          "name": "Damaged: 1-13 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-13 wounds remaining, subtract 8 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "ccd3-9673-d196-29d1",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks only."
+        },
+        {
+          "id": "5c94-3166-58ec-6f3f",
+          "name": "Striding Colossus",
+          "type": "Abilities",
+          "description": "Each time you target this model with a Stratagem, you must spend twice that Stratagem’s stated CP cost to do so."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "b7e8-f3ae-be53-9ba5",
+      "name": "Reaver Titan",
+      "type": "model",
+      "points": 2200,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Reaver Titan",
+          "target_id": "8823-94b2-dd20-1242",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "b7e8-f3ae-be53-9ba5",
+          "name": "Reaver Titan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "14",
+            "sv": "2+",
+            "w": "60",
+            "ld": "6+",
+            "oc": "20"
+          },
+          "loadout": [
+            {
+              "id": "775-8e7f-a4eb-e4e",
+              "kind": "fixed",
+              "name": "Reaver feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "775-8e7f-a4eb-e4e:775-8e7f-a4eb-e4e",
+                  "name": "Reaver feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fb2e-d145-d0bc-9c21",
+                      "name": "Reaver feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "8",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "4",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8abb-ddaf-f190-e721",
+              "kind": "fixed",
+              "name": "Reaver apocalypse launcher",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8abb-ddaf-f190-e721:8abb-ddaf-f190-e721",
+                  "name": "Reaver apocalypse launcher",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "d57c-ce4c-b0e9-49df",
+                      "name": "Reaver apocalypse launcher",
+                      "weapon_type": "Ranged",
+                      "range": "200\"",
+                      "a": "3D6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c009-c6dd-bfe2-f61f",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "c009-c6dd-bfe2-f61f:2545-b5ae-cee8-9563",
+                  "name": "Reaver gatling blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3c27-a886-132b-d09f",
+                      "name": "Reaver gatling blaster",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "c009-c6dd-bfe2-f61f:2017-e76f-d8fe-434e",
+                  "name": "Reaver laser blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d40e-e51b-83a7-7177",
+                      "name": "Reaver laser blaster",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "D6+2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "c009-c6dd-bfe2-f61f:fce9-1859-d02-e0b6",
+                  "name": "Reaver melta cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "967c-c9f2-8e17-10f7",
+                      "name": "Reaver melta cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+2",
+                      "bs_ws": "3+",
+                      "s": "13",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "Blast, Melta 4"
+                    }
+                  ]
+                },
+                {
+                  "id": "c009-c6dd-bfe2-f61f:8cec-19a1-6e8d-90d2",
+                  "name": "Reaver volcano cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a6fd-e778-466a-c7bb",
+                      "name": "Reaver volcano cannon",
+                      "weapon_type": "Ranged",
+                      "range": "120\"",
+                      "a": "D3+1",
+                      "bs_ws": "3+",
+                      "s": "24",
+                      "ap": "-5",
+                      "d": "14",
+                      "keywords": "Blast, Heavy"
+                    }
+                  ]
+                },
+                {
+                  "id": "c009-c6dd-bfe2-f61f:1f9c-1176-b34c-540e",
+                  "name": "Reaver power fist",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "49c1-cdec-3a34-fb5a",
+                      "name": "➤ Reaver power fist - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "20",
+                      "ap": "-4",
+                      "d": "14",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "78b-2fcb-29c7-38e5",
+                      "name": "➤ Reaver power fist - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "6",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "3832-c8f7-c7b2-2bd9",
+          "name": "Damaged: 1-20 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-20 wounds remaining, subtract 10 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "1408-c280-38d2-b842",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks only."
+        },
+        {
+          "id": "3c14-ab53-c7f7-a07e",
+          "name": "God-machine",
+          "type": "Abilities",
+          "description": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
+        },
+        {
+          "id": "6c35-830c-5afe-7127",
+          "name": "Striding Colossus",
+          "type": "Abilities",
+          "description": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8e6f-4e09-12d5-fafd",
+      "name": "Warbringer Nemesis Titan",
+      "type": "model",
+      "points": 2600,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Warbringer Nemesis Titan",
+          "target_id": "72ab-6dc9-1f0d-5624",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8e6f-4e09-12d5-fafd",
+          "name": "Warbringer Nemesis Titan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "14",
+            "sv": "2+",
+            "w": "80",
+            "ld": "6+",
+            "oc": "20"
+          },
+          "loadout": [
+            {
+              "id": "d768-cb23-5cf0-b58",
+              "kind": "fixed",
+              "name": "Nemesis feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "d768-cb23-5cf0-b58:d768-cb23-5cf0-b58",
+                  "name": "Nemesis feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f327-662a-29f7-bfe3",
+                      "name": "Nemesis feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "4",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "53a4-e5ee-1fcd-b185",
+              "kind": "fixed",
+              "name": "Anvillus defence battery",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "53a4-e5ee-1fcd-b185:53a4-e5ee-1fcd-b185",
+                  "name": "Anvillus defence battery",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "7990-e07f-ed35-236",
+                      "name": "Anvillus defence battery",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Anti-FLY 4+"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a867-ddd1-9352-ffe5",
+              "kind": "fixed",
+              "name": "Ardex-defensor mauler",
+              "min_select": 3,
+              "max_select": 3,
+              "options": [
+                {
+                  "id": "a867-ddd1-9352-ffe5:a867-ddd1-9352-ffe5",
+                  "name": "Ardex-defensor mauler",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e907-a69a-1695-87f6",
+                      "name": "Ardex-defensor mauler",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8273-ddc7-1bea-6028",
+              "kind": "choice",
+              "name": "Nemesis weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8273-ddc7-1bea-6028:63ef-9709-7202-59a2",
+                  "name": "Nemesis quake cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2b70-1350-f1df-821d",
+                      "name": "Nemesis quake cannon",
+                      "weapon_type": "Ranged",
+                      "range": "480\"",
+                      "a": "D6+6",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "4",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "8273-ddc7-1bea-6028:ef9a-353f-e5d7-9b42",
+                  "name": "Nemesis volcano cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "482a-6316-a1f4-793c",
+                      "name": "Nemesis volcano cannon",
+                      "weapon_type": "Ranged",
+                      "range": "120\"",
+                      "a": "D3+3",
+                      "bs_ws": "3+",
+                      "s": "24",
+                      "ap": "-5",
+                      "d": "14",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b8fa-acab-2bbd-df6d",
+              "kind": "choice",
+              "name": "Weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "b8fa-acab-2bbd-df6d:beb7-2dd8-7fe5-aef4",
+                  "name": "Reaver gatling blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d548-1d30-501c-d136",
+                      "name": "Reaver gatling blaster",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "12",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "b8fa-acab-2bbd-df6d:4e4a-a537-9256-1fce",
+                  "name": "Reaver laser blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d4f5-9c22-5109-57d6",
+                      "name": "Reaver laser blaster",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "8",
+                      "bs_ws": "3+",
+                      "s": "20",
+                      "ap": "-3",
+                      "d": "D6+2",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "b8fa-acab-2bbd-df6d:5543-60ce-38f2-fd21",
+                  "name": "Reaver melta cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "2691-bdc4-d017-dcd3",
+                      "name": "Reaver melta cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+2",
+                      "bs_ws": "3+",
+                      "s": "13",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "Blast, Melta 4"
+                    }
+                  ]
+                },
+                {
+                  "id": "b8fa-acab-2bbd-df6d:dfbf-f81d-55a4-58d6",
+                  "name": "Reaver volcano cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "cbd3-f49b-df00-8e16",
+                      "name": "Reaver volcano cannon",
+                      "weapon_type": "Ranged",
+                      "range": "120\"",
+                      "a": "D3+1",
+                      "bs_ws": "3+",
+                      "s": "24",
+                      "ap": "-5",
+                      "d": "14",
+                      "keywords": "Blast, Heavy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "d4dc-52c7-2eda-ae83",
+          "name": "Damaged: 1-26 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-26 wounds remaining, subtract 10 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "67b7-d3fa-b713-b17f",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks only."
+        },
+        {
+          "id": "dd8e-2c98-72cd-1a06",
+          "name": "Titanic Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly IMPERIUM model makes an attack that targets that enemy unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1."
+        },
+        {
+          "id": "efce-899b-2abc-f846",
+          "name": "Titanic Fire Support",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly CHAOS model makes an attack that targets that enemy unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1."
+        },
+        {
+          "id": "994c-cee5-cbac-bb41",
+          "name": "Striding Colossus",
+          "type": "Abilities",
+          "description": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "eafa-cd47-1c2f-61ee",
+      "name": "Warlord Titan",
+      "type": "model",
+      "points": 3500,
+      "keywords": [
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": true
+        },
+        {
+          "name": "Walker",
+          "target_id": "6dda-e157-334d-e93a",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Warlord Titan",
+          "target_id": "ffaf-5045-d128-b402",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "eafa-cd47-1c2f-61ee",
+          "name": "Warlord Titan",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "10\"",
+            "t": "16",
+            "sv": "2+",
+            "w": "100",
+            "ld": "6+",
+            "oc": "30"
+          },
+          "loadout": [
+            {
+              "id": "b401-e028-679b-7db3",
+              "kind": "fixed",
+              "name": "Ardex-defensor mauler",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "b401-e028-679b-7db3:b401-e028-679b-7db3",
+                  "name": "Ardex-defensor mauler",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "fa51-af45-1835-18fa",
+                      "name": "Ardex-defensor mauler",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a9c2-75a5-2fa0-3931",
+              "kind": "fixed",
+              "name": "Ardex-defensor lascannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "a9c2-75a5-2fa0-3931:a9c2-75a5-2fa0-3931",
+                  "name": "Ardex-defensor lascannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9d6d-bff3-268a-91ef",
+                      "name": "Ardex-defensor lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "24ac-fd65-ee84-8e72",
+              "kind": "fixed",
+              "name": "Warlord feet",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "24ac-fd65-ee84-8e72:24ac-fd65-ee84-8e72",
+                  "name": "Warlord feet",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a805-2afa-b485-799a",
+                      "name": "Warlord feet",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-2",
+                      "d": "4",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9428-40c9-d286-72ea",
+              "kind": "choice",
+              "name": "Carapace weapons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9428-40c9-d286-72ea:e409-db1a-6a8-8b52",
+                  "name": "Two apocalypse launchers",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4f75-2389-88b1-6b97",
+                      "name": "Apocalypse launcher",
+                      "weapon_type": "Ranged",
+                      "range": "200\"",
+                      "a": "20",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "9428-40c9-d286-72ea:e628-d98c-6924-a2f3",
+                  "name": "Two laser blasters",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "3f90-f05-82dc-3e4d",
+                      "name": "Laser blaster",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6+3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bebc-1c05-79ee-864",
+              "kind": "choice",
+              "name": "Main weapons",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "bebc-1c05-79ee-864:49e4-a425-ec23-ec3d",
+                  "name": "Arioch power claw",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9fb0-d2ea-fafd-c506",
+                      "name": "Arioch power claw",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "20",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    },
+                    {
+                      "profile_id": "3021-1c41-57d7-3c04",
+                      "name": "➤ Arioch power claw - strike",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "4+",
+                      "s": "20",
+                      "ap": "-4",
+                      "d": "24",
+                      "keywords": "-"
+                    },
+                    {
+                      "profile_id": "248e-ee6f-f8d-a5ee",
+                      "name": "➤ Arioch power claw - sweep",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "12",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "bebc-1c05-79ee-864:3fdd-684e-3fd3-f143",
+                  "name": "Belicosa volcano cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "dc30-1328-9963-3be3",
+                      "name": "Belicosa volcano cannon",
+                      "weapon_type": "Ranged",
+                      "range": "120\"",
+                      "a": "D3+3",
+                      "bs_ws": "3+",
+                      "s": "32",
+                      "ap": "-5",
+                      "d": "18",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "bebc-1c05-79ee-864:ab37-e894-cd2c-7c7e",
+                  "name": "Macro gatling blaster",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "7c79-98b4-a724-302b",
+                      "name": "Macro gatling blaster",
+                      "weapon_type": "Ranged",
+                      "range": "100\"",
+                      "a": "30",
+                      "bs_ws": "3+",
+                      "s": "9",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "bebc-1c05-79ee-864:8844-c4a-80cc-2acc",
+                  "name": "Mori quake cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a20f-70e1-b1ca-7efe",
+                      "name": "Mori quake cannon",
+                      "weapon_type": "Ranged",
+                      "range": "280\"",
+                      "a": "3D6",
+                      "bs_ws": "3+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "6",
+                      "keywords": "Blast, Ignores Cover"
+                    }
+                  ]
+                },
+                {
+                  "id": "bebc-1c05-79ee-864:403d-7cf-5147-cdb2",
+                  "name": "Sunfury plasma annihilator",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "1285-4c83-c26f-2b75",
+                      "name": "➤ Sunfury plasma annihilator - standard",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2D6+6",
+                      "bs_ws": "3+",
+                      "s": "10",
+                      "ap": "-3",
+                      "d": "5",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "45b5-516d-d92-daa0",
+                      "name": "➤ Sunfury plasma annihilator - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "2D6+6",
+                      "bs_ws": "3+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "8",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "9f23-3fd5-f454-7a2d",
+          "name": "Invulnerable Save",
+          "type": "Abilities",
+          "description": "This model has a 5+ invulnerable save against ranged attacks only."
+        },
+        {
+          "id": "e646-46a8-6c93-eb83",
+          "name": "Damaged: 1-33 wounds remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-33 wounds remaining, subtract 15 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "6f4-dec8-e-8c72",
+          "name": "Wrath of the Omnissiah",
+          "type": "Abilities",
+          "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test."
+        },
+        {
+          "id": "a218-707c-e948-f5fb",
+          "name": "Striding Colossus",
+          "type": "Abilities",
+          "description": "Each time you target this model with a Stratagem, you must spend four times that Stratagem’s stated CP cost to do so."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

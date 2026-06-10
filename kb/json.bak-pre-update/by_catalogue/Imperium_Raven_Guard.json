@@ -1,0 +1,183 @@
+{
+  "id": "6e59-e1ee-47ad-6ce5",
+  "name": "Imperium - Adeptus Astartes - Raven Guard",
+  "is_library": false,
+  "revision": "8",
+  "source_file": "Imperium - Raven Guard.cat",
+  "categories": [
+    {
+      "id": "a4c3-fdb-4d12-e303",
+      "name": "Kayvaan Shrike"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "339f-9776-243d-69a6",
+      "name": "Kayvaan Shrike",
+      "type": "model",
+      "points": 100,
+      "keywords": [
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Fly",
+          "target_id": "c619-2086-bbcf-69c9",
+          "primary": false
+        },
+        {
+          "name": "Jump Pack",
+          "target_id": "dda2-bb0a-215e-ad9c",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Raven Guard",
+          "target_id": "84b7-7194-3b84-1b0c",
+          "primary": false
+        },
+        {
+          "name": "Chapter Master",
+          "target_id": "5bd8-882d-302b-48f3",
+          "primary": false
+        },
+        {
+          "name": "Kayvaan Shrike",
+          "target_id": "a4c3-fdb-4d12-e303",
+          "primary": false
+        },
+        {
+          "name": "Phobos",
+          "target_id": "7295-ed65-8ff4-7a5f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "339f-9776-243d-69a6",
+          "name": "Kayvaan Shrike",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "12\"",
+            "t": "4",
+            "sv": "3+",
+            "w": "5",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "b2d0-b85d-3880-3efe",
+              "kind": "fixed",
+              "name": "Blackout",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b2d0-b85d-3880-3efe:b2d0-b85d-3880-3efe",
+                  "name": "Blackout",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "6521-4333-c221-6c5b",
+                      "name": "Blackout",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "2",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Pistol, Precision"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e4fe-9ddc-4e91-c960",
+              "kind": "fixed",
+              "name": "The Raven's Talons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "e4fe-9ddc-4e91-c960:e4fe-9ddc-4e91-c960",
+                  "name": "The Raven's Talons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "2ebd-2e8d-801c-45a6",
+                      "name": "The Raven's Talons",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "7",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Precision, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f688-b597-c9de-b5ac",
+          "name": "Trifold Path of Shadow",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models  in this unit cannot be targeted by ranged attacks unless the attacking model is within 12\"."
+        },
+        {
+          "id": "b769-af88-7e44-e386",
+          "name": "Echo of the Ravenspire",
+          "type": "Abilities",
+          "description": "At the end of your opponent’s turn, if this model’s unit is not within Engagement Range of any enemy models, you can remove it from the battlefield and place it into Strategic Reserves."
+        },
+        {
+          "id": "babb-fe84-e1d4-1012",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Assault Intercessors with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs"
+        },
+        {
+          "id": "ed25-707a-ee0b-6b2f",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "If you include this model in your army, until the end of the battle, non-Character models in Assault\nIntercessors with Jump Packs units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

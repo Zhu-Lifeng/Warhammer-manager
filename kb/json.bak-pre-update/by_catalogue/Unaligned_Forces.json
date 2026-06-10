@@ -1,0 +1,2048 @@
+{
+  "id": "581a-46b9-5b86-44b7",
+  "name": "Unaligned Forces",
+  "is_library": true,
+  "revision": "10",
+  "source_file": "Unaligned Forces.cat",
+  "categories": [
+    {
+      "id": "e1ff-c0fa-2ca7-3466",
+      "name": "Faction: Unaligned Forces"
+    },
+    {
+      "id": "fc43-1a6a-44bd-4350",
+      "name": "Wall of Martyrs"
+    },
+    {
+      "id": "4f49-11ac-ce05-5a31",
+      "name": "Bunker"
+    },
+    {
+      "id": "c5e3-117a-a679-a415",
+      "name": "Skyshield Landing Pad"
+    },
+    {
+      "id": "62e0-9a0b-b965-9df1",
+      "name": "Primaris Redoubt"
+    },
+    {
+      "id": "bd6f-cfc-c88-9f95",
+      "name": "Firestorm Redoubt"
+    },
+    {
+      "id": "9278-7145-847f-3cac",
+      "name": "Plasma Obliterator"
+    },
+    {
+      "id": "97a9-7f06-f2e0-84fa",
+      "name": "Macro-cannon Aquila Strongpoint"
+    },
+    {
+      "id": "cc17-b0ac-fdc9-4672",
+      "name": "Vortex Missile Strongpoint"
+    },
+    {
+      "id": "7d2a-37ff-a5ac-15e4",
+      "name": "Ambull"
+    },
+    {
+      "id": "c2ad-1025-acf0-324f",
+      "name": "The Archivist"
+    },
+    {
+      "id": "393a-5707-47ac-8a47",
+      "name": "Guardian Drone"
+    },
+    {
+      "id": "5c5f-5977-50b8-9ae1",
+      "name": "Vengeance Weapon Battery"
+    },
+    {
+      "id": "c1aa-8ee-2a60-ecf4",
+      "name": "Aegis Defence Line with Weapon Emplacement"
+    },
+    {
+      "id": "8f18-8c8b-3d82-6e18",
+      "name": "Fortress of Redemption"
+    },
+    {
+      "id": "8888-fb01-3ef-63d0",
+      "name": "Bastion"
+    },
+    {
+      "id": "ccb3-6116-5cf1-62b7",
+      "name": "Void Shield Generator"
+    },
+    {
+      "id": "5207-4f15-f3e-c6ff",
+      "name": "Defence Line"
+    },
+    {
+      "id": "a7ed-6216-ee97-5b7a",
+      "name": "Imperial Fortress Walls"
+    },
+    {
+      "id": "cade-8bdc-1e52-e011",
+      "name": "Spindle Drones"
+    },
+    {
+      "id": "5d7b-c048-8c24-5043",
+      "name": "Defence Emplacement"
+    },
+    {
+      "id": "10ec-c57f-1acc-6db7",
+      "name": "Castellum Stronghold"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "e85b-17c7-1ad9-8375",
+      "name": "Ambull [Legends]",
+      "type": "model",
+      "points": 85,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Allied Units",
+          "target_id": "887b-ab87-92a2-20f5",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Ambull",
+          "target_id": "7d2a-37ff-a5ac-15e4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e85b-17c7-1ad9-8375",
+          "name": "Ambull [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "6\"",
+            "t": "8",
+            "sv": "3+",
+            "w": "8",
+            "ld": "8+",
+            "oc": "3"
+          },
+          "loadout": [
+            {
+              "id": "9946-824b-f220-11be",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "9946-824b-f220-11be:e5b0-1627-ba3b-841e",
+                  "name": "Enormous claws",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "af45-70fa-c712-2c49",
+                      "name": "Enormous claws",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "3+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "D3",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f481-16a8-9242-1441",
+          "name": "Frenzy",
+          "type": "Abilities",
+          "description": "Each time an enemy unit is selected to shoot or fight, after it has finished making its attacks, if one or more of those attacks targeted this model and this model is not destroyed, this model can fight as if it were the Fight phase"
+        },
+        {
+          "id": "c551-a719-4c3-93f5",
+          "name": "Borewyrm Infestation",
+          "type": "Abilities",
+          "description": "Twice per battle, at the end of your opponent’s turn, if this model is not within Engagement Range of one or more enemy units, you can remove this model from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that\nis more than 9\" horizontally away from all enemy models. If the battle ends and this unit is not on the battlefield, it is destroyed. \n\nDesigner’s Note: Place two Borewyrm Infestation tokens next to this model, removing one each time this ability has been used."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5b1d-134a-9996-b634",
+      "name": "Aegis Defence Line with Weapon Emplacement [Legends]",
+      "type": "model",
+      "points": 145,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Aegis Defence Line with Weapon Emplacement",
+          "target_id": "c1aa-8ee-2a60-ecf4",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5b1d-134a-9996-b634",
+          "name": "Aegis Defence Line with Weapon Emplacement [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5134-5fe9-e489-43c4",
+      "name": "Bastion [Legends]",
+      "type": "model",
+      "points": 275,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Bastion",
+          "target_id": "8888-fb01-3ef-63d0",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5134-5fe9-e489-43c4",
+          "name": "Bastion [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "18",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "5db6-55c1-807b-6be",
+              "kind": "fixed",
+              "name": "Heavy bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "5db6-55c1-807b-6be:9772-d936-9e34-8549",
+                  "name": "Heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ae44-5e76-8f9d-b613",
+                      "name": "Heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [],
+      "transport": [
+        {
+          "id": "252a-f4bd-bf4-c66f",
+          "name": "Bastion",
+          "capacity": "This FORTIFICATION has a transport capacity of 15 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "71b0-77b9-522c-17d6",
+      "name": "Firestorm Redoubt [Legends]",
+      "type": "model",
+      "points": 260,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Firestorm Redoubt",
+          "target_id": "bd6f-cfc-c88-9f95",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "71b0-77b9-522c-17d6",
+          "name": "Firestorm Redoubt [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "18",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [
+        {
+          "id": "7656-106-5438-9066",
+          "name": "Firestorm Redoubt",
+          "capacity": "This Fortification has a transport capacity of 15 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "c4d1-c85a-a20e-6c94",
+      "name": "Fortress of Redemption [Legends]",
+      "type": "model",
+      "points": 480,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Fortress of Redemption",
+          "target_id": "8f18-8c8b-3d82-6e18",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "c4d1-c85a-a20e-6c94",
+          "name": "Fortress of Redemption [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "db95-3509-494e-5358",
+              "kind": "fixed",
+              "name": "Redemptor lascannons",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "db95-3509-494e-5358:db95-3509-494e-5358",
+                  "name": "Redemptor lascannons",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "e05c-7eb5-ea6b-7c40",
+                      "name": "Redemptor lascannons",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "14",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Anti-Fly 2+"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "988-2a33-6cbd-4020",
+              "kind": "fixed",
+              "name": "Redemptor missile silo",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "988-2a33-6cbd-4020:988-2a33-6cbd-4020",
+                  "name": "Redemptor missile silo",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "f441-a86c-9936-ee58",
+                      "name": "➤ Redemptor missile silo - superfrag",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2D6+2",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "cd89-3984-98d0-a1f7",
+                      "name": "➤ Redemptor missile silo - superkrak",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-2",
+                      "d": "D6+1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "7205-6740-8868-3492",
+          "name": "Vantage Point",
+          "type": "Abilities",
+          "description": "While a model is on top of the tower roof of this FORTIFICATION, improve the Armour Penetration characteristic of ranged weapons equipped by that model by 1."
+        }
+      ],
+      "transport": [
+        {
+          "id": "91a0-8fb2-8ca0-171a",
+          "name": "Fortress of Redemption",
+          "capacity": "This FORTIFICATION has a transport capacity of 20 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "e3ba-7f87-c32-229",
+      "name": "Guardian Drone [Legends]",
+      "type": "model",
+      "points": 45,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Allied Units",
+          "target_id": "887b-ab87-92a2-20f5",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Guardian Drone",
+          "target_id": "393a-5707-47ac-8a47",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e3ba-7f87-c32-229",
+          "name": "Guardian Drone [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "7",
+            "sv": "3+",
+            "w": "7",
+            "ld": "6+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "58fa-ec3e-e1a3-4ba8",
+              "kind": "choice",
+              "name": "Wargear",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "58fa-ec3e-e1a3-4ba8:1ab6-25ac-947b-bf5f",
+                  "name": "Destroyer pulse",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6468-f7a-cf-1f16",
+                      "name": "Destroyer pulse",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                },
+                {
+                  "id": "58fa-ec3e-e1a3-4ba8:3200-448d-b069-ce9b",
+                  "name": "Guardian salvo launchers",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6317-ed6f-87cc-a6b4",
+                      "name": "Guardian salvo launchers",
+                      "weapon_type": "Ranged",
+                      "range": "24\"",
+                      "a": "D6",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "1",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "58fa-ec3e-e1a3-4ba8:7291-ec92-1fd4-75ad",
+                  "name": "Manipulator limbs",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "8c32-7c4d-8e22-d07d",
+                      "name": "Manipulator limbs",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "6177-edd5-89f8-10f0",
+          "name": "Drone Commander (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly SPINDLE DRONES unit is within 6 of this model, each time a model in that unit makes an attack, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "3b75-e314-ecd5-cd63",
+      "name": "Macro-cannon Aquila Strongpoint [Legends]",
+      "type": "model",
+      "points": 550,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Macro-cannon Aquila Strongpoint",
+          "target_id": "97a9-7f06-f2e0-84fa",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "3b75-e314-ecd5-cd63",
+          "name": "Macro-cannon Aquila Strongpoint [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "dc0f-e233-7c7c-18e7",
+              "kind": "fixed",
+              "name": "Aquila macro-cannon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "dc0f-e233-7c7c-18e7:dc0f-e233-7c7c-18e7",
+                  "name": "Aquila macro-cannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "700c-9476-95d1-4339",
+                      "name": "Aquila macro-cannon",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6+6",
+                      "bs_ws": "5+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "4",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "421e-7675-b24f-751e",
+          "name": "Tremor Quake",
+          "type": "Abilities",
+          "description": "In your Shooting phase, just after selecting a target for this model’s Aquila macro-cannon, the target unit and every other enemy INFANTRY unit within 3\" of that unit must take a Battle-shock test."
+        }
+      ],
+      "transport": [
+        {
+          "id": "8001-aa9-ae8e-391d",
+          "name": "Macro-cannon Aquila Strongpoint",
+          "capacity": "This FORTIFICATION has a transport capacity of 30 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "cabe-2c66-c8b6-de6c",
+      "name": "Plasma Obliterator [Legends]",
+      "type": "model",
+      "points": 225,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Plasma Obliterator",
+          "target_id": "9278-7145-847f-3cac",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "cabe-2c66-c8b6-de6c",
+          "name": "Plasma Obliterator [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "18",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "a72b-27ca-d431-cf98",
+              "kind": "fixed",
+              "name": "Plasma obliterator",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "a72b-27ca-d431-cf98:a72b-27ca-d431-cf98",
+                  "name": "Plasma obliterator",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "8ea2-bb1e-22b5-1356",
+                      "name": "➤ Plasma obliterator - standard",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "5+",
+                      "s": "9",
+                      "ap": "-3",
+                      "d": "3",
+                      "keywords": "Blast"
+                    },
+                    {
+                      "profile_id": "e558-4d62-5827-b2a7",
+                      "name": "➤ Plasma obliterator - supercharge",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "5+",
+                      "s": "10",
+                      "ap": "-4",
+                      "d": "4",
+                      "keywords": "Blast, Hazardous"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "4034-de56-e788-8d72",
+          "name": "Emergency Plasma Vents",
+          "type": "Abilities",
+          "description": "Each time this FORTIFICATION suffers a mortal wound as the result of a failed Hazardous test, roll one D6: on a 4+, that wound is not lost."
+        }
+      ],
+      "transport": [
+        {
+          "id": "a295-5135-b36-9f11",
+          "name": "Plasma Obliterator",
+          "capacity": "This FORTIFICATION has a transport capacity of 20 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f39-fc54-f95a-8395",
+      "name": "Primaris Redoubt [Legends]",
+      "type": "model",
+      "points": 220,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Primaris Redoubt",
+          "target_id": "62e0-9a0b-b965-9df1",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f39-fc54-f95a-8395",
+          "name": "Primaris Redoubt [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "3+",
+            "w": "18",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "b6ab-e70d-f8f3-731a",
+              "kind": "fixed",
+              "name": "Primaris Redoubt turbo-laser destructor",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "b6ab-e70d-f8f3-731a:b6ab-e70d-f8f3-731a",
+                  "name": "Primaris Redoubt turbo-laser destructor",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9b49-efd7-71e3-762a",
+                      "name": "Primaris Redoubt turbo-laser destructor",
+                      "weapon_type": "Ranged",
+                      "range": "96\"",
+                      "a": "D3+1",
+                      "bs_ws": "4+",
+                      "s": "16",
+                      "ap": "-3",
+                      "d": "D6+3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bca0-9eff-5e78-5f16",
+              "kind": "choice",
+              "name": "Seconday Weapon",
+              "min_select": null,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bca0-9eff-5e78-5f16:2b2d-2d80-c99a-50bc",
+                  "name": "Primaris air defence missiles",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "d0f1-59-950-988b",
+                      "name": "Primaris air defence missiles",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Anti-Fly 2+"
+                    }
+                  ]
+                },
+                {
+                  "id": "bca0-9eff-5e78-5f16:82f9-177b-779e-7780",
+                  "name": "Primaris Icarus lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6ad2-3453-8b7a-1b14",
+                      "name": "Primaris Icarus lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Anti-Fly 2+"
+                    }
+                  ]
+                },
+                {
+                  "id": "bca0-9eff-5e78-5f16:663c-1233-84a9-8909",
+                  "name": "Primaris Icarus quad lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "6824-7bc4-f903-ae56",
+                      "name": "Primaris Icarus quad lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Anti-Fly 2+, Twin-linked"
+                    }
+                  ]
+                },
+                {
+                  "id": "bca0-9eff-5e78-5f16:6f21-792e-17c6-c9dc",
+                  "name": "Primaris quad-gun",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "a2c8-8592-c8f1-f4ca",
+                      "name": "Primaris quad-gun",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                },
+                {
+                  "id": "bca0-9eff-5e78-5f16:2cde-a0ef-d7e0-53b3",
+                  "name": "Primaris castellan launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "23cc-baa3-860-9a55",
+                      "name": "Primaris castellan launcher",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6+1",
+                      "bs_ws": "4+",
+                      "s": "6",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "bca0-9eff-5e78-5f16:e500-1c20-8d3d-e4c5",
+                  "name": "Primaris vengeance launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "aa0d-fbea-c259-1e13",
+                      "name": "Primaris vengeance launcher",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D3+1",
+                      "bs_ws": "4+",
+                      "s": "7",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f271-c70e-dbf1-bb1c",
+              "kind": "fixed",
+              "name": "Heavy bolter",
+              "min_select": null,
+              "max_select": null,
+              "options": [
+                {
+                  "id": "f271-c70e-dbf1-bb1c:9772-d936-9e34-8549",
+                  "name": "Heavy bolter",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ae44-5e76-8f9d-b613",
+                      "name": "Heavy bolter",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "4+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "54c-8b9f-b1d8-93c3",
+      "name": "Skyshield Landing Pad [Legends]",
+      "type": "model",
+      "points": 125,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Skyshield Landing Pad",
+          "target_id": "c5e3-117a-a679-a415",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "54c-8b9f-b1d8-93c3",
+          "name": "Skyshield Landing Pad [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "3+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ac7c-2faf-a4ba-1a7b",
+          "name": "Skyshield",
+          "type": "Abilities",
+          "description": "Friendly Infantry models and friendly units that can Fly can be set up or end any type of move on top of the platform section of this Fortification. While such a model is on the platform section of this Fortification, that model has a 5+ invulnerable save against ranged attacks"
+        },
+        {
+          "id": "de21-5f57-8fd9-3c1a",
+          "name": "Repair Aircraft",
+          "type": "Abilities",
+          "description": "At the end of your Movement phase, if there is a friendly Aircraft model on top of this Fortification, that Aircraft regains up to D3 lost wounds"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "da76-e18f-523e-d45a",
+      "name": "Spindle Drones [Legends]",
+      "type": "unit",
+      "points": 35,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Allied Units",
+          "target_id": "887b-ab87-92a2-20f5",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Spindle Drones",
+          "target_id": "cade-8bdc-1e52-e011",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "e32d-ae0a-732f-5864",
+          "name": "Spindle Drone",
+          "min_count": 4,
+          "max_count": 4,
+          "stats": {
+            "m": "6\"",
+            "t": "4",
+            "sv": "4+",
+            "w": "2",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "8e88-801b-56-a3d4",
+              "kind": "fixed",
+              "name": "Drone pulse",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8e88-801b-56-a3d4:8e88-801b-56-a3d4",
+                  "name": "Drone pulse",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "eeef-d2e4-8b2-da34",
+                      "name": "Drone pulse",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "4",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9370-323f-758e-f4b4",
+              "kind": "fixed",
+              "name": "Close combat weapon",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9370-323f-758e-f4b4:9370-323f-758e-f4b4",
+                  "name": "Close combat weapon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "a43f-c689-eb14-49c2",
+                      "name": "Close combat weapon",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "1",
+                      "bs_ws": "4+",
+                      "s": "3",
+                      "ap": "0",
+                      "d": "1",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "839a-dbe6-f30a-20a1",
+          "name": "Threat Level Rising",
+          "type": "Abilities",
+          "description": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength"
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "11b2-8348-ae67-fa98",
+      "name": "The Archivist [Legends]",
+      "type": "model",
+      "points": 70,
+      "keywords": [
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Allied Units",
+          "target_id": "887b-ab87-92a2-20f5",
+          "primary": true
+        },
+        {
+          "name": "Monster",
+          "target_id": "9693-cf84-fe69-37a9",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": false
+        },
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "The Archivist",
+          "target_id": "c2ad-1025-acf0-324f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "11b2-8348-ae67-fa98",
+          "name": "The Archivist [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "3+",
+            "w": "6",
+            "ld": "7+",
+            "oc": "2"
+          },
+          "loadout": [
+            {
+              "id": "368e-12b2-f6f7-b37b",
+              "kind": "fixed",
+              "name": "Atomic disassembler",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "368e-12b2-f6f7-b37b:368e-12b2-f6f7-b37b",
+                  "name": "Atomic disassembler",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "ccfb-da5f-6573-19a8",
+                      "name": "Atomic disassembler",
+                      "weapon_type": "Ranged",
+                      "range": "18\"",
+                      "a": "1",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Ignores Cover, Pistol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "29a1-6633-a564-40e2",
+              "kind": "fixed",
+              "name": "Eradicator glove",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "29a1-6633-a564-40e2:29a1-6633-a564-40e2",
+                  "name": "Eradicator glove",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9a27-5f9b-48bb-f529",
+                      "name": "Eradicator glove",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "4",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "128a-9f8e-e659-fa7e",
+          "name": "Fearsome Assault",
+          "type": "Abilities",
+          "description": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test."
+        },
+        {
+          "id": "6e34-22d9-a4ab-22ad",
+          "name": "Disruptive Influence (Aura)",
+          "type": "Abilities",
+          "description": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "14fe-18ed-9c25-189c",
+      "name": "Vengeance Weapon Battery [Legends]",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Vengeance Weapon Battery",
+          "target_id": "5c5f-5977-50b8-9ae1",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "14fe-18ed-9c25-189c",
+          "name": "Vengeance Weapon Battery [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "8d74-c7e8-9992-a0b0",
+          "name": "Automated Defences",
+          "type": "Abilities",
+          "description": "Each time this model makes a ranged attack that targets the closest enemy unit:\n- If that attack is made with a Punisher gatling cannon and the target is not a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a battle cannon and the target is a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a quad-lascannon and the target can FLY, add 1 to the Hit roll."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "4501-646d-e705-9dca",
+      "name": "Void Shield Generator [Legends]",
+      "type": "model",
+      "points": 155,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Void Shield Generator",
+          "target_id": "ccb3-6116-5cf1-62b7",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "4501-646d-e705-9dca",
+          "name": "Void Shield Generator [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "3+",
+            "w": "16",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "ebe4-e271-269c-ac83",
+          "name": "Invulnerable Save (4+)",
+          "type": "Abilities",
+          "description": "This model has a 4+ invulnerable save"
+        },
+        {
+          "id": "37d7-4c6f-14e0-42c0",
+          "name": "Projected Void Shields (Aura)",
+          "type": "Abilities",
+          "description": "While a friendly model is wholly within 6\" of this FORTIFICATION, that model has a 4+ invulnerable save against ranged attacks."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "5c81-92c5-e20b-edf1",
+      "name": "Vortex Missile Strongpoint [Legends]",
+      "type": "model",
+      "points": 525,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Vortex Missile Strongpoint",
+          "target_id": "cc17-b0ac-fdc9-4672",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "5c81-92c5-e20b-edf1",
+          "name": "Vortex Missile Strongpoint [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "30",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "8190-92a3-5cd1-26e8",
+              "kind": "fixed",
+              "name": "Vortex missile battery",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "8190-92a3-5cd1-26e8:8190-92a3-5cd1-26e8",
+                  "name": "Vortex missile battery",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "258f-6186-726f-3617",
+                      "name": "Vortex missile battery",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6+3",
+                      "bs_ws": "5+",
+                      "s": "16",
+                      "ap": "-4",
+                      "d": "D6",
+                      "keywords": "Blast, Devastating Wounds, Hazardous, Indirect Fire"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "2c0e-c408-e9a-75b7",
+          "name": "Vortex",
+          "type": "Abilities",
+          "description": "In your Shooting phase, each time you select a target for this model’s vortex missile battery, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 4+, the unit being rolled for is struck by the vortex; after resolving all of this model’s attacks against the target unit, each unit struck by the vortex suffers D3 mortal wounds."
+        }
+      ],
+      "transport": [
+        {
+          "id": "5fb1-6829-5142-c3f3",
+          "name": "Vortex Missile Strongpoint",
+          "capacity": "This FORTIFICATION has a transport capacity of 30 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "9698-2e0-15ac-1193",
+      "name": "Wall of Martyrs Bunker [Legends]",
+      "type": "model",
+      "points": 180,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Bunker",
+          "target_id": "4f49-11ac-ce05-5a31",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "9698-2e0-15ac-1193",
+          "name": "Wall of Martyrs Bunker [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f194-faba-c927-ba75",
+          "name": "Inviolable Bastion",
+          "type": "Abilities",
+          "description": "Each time an attack is allocated to this Fortification, subtract 1 from the Damage characteristic of that attack."
+        }
+      ],
+      "transport": [
+        {
+          "id": "f3b0-c322-3ef3-e396",
+          "name": "Wall of Martyrs Bunker",
+          "capacity": "This Fortification has a transport capacity of 11 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more"
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "8419-8133-33f3-e0a4",
+      "name": "Wall of Martyrs Defence Emplacement [Legends]",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Defence Emplacement",
+          "target_id": "5d7b-c048-8c24-5043",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "8419-8133-33f3-e0a4",
+          "name": "Wall of Martyrs Defence Emplacement [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "64b7-a2df-416a-9963",
+      "name": "Wall of Martyrs Defence Line [Legends]",
+      "type": "model",
+      "points": 140,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Wall of Martyrs",
+          "target_id": "fc43-1a6a-44bd-4350",
+          "primary": false
+        },
+        {
+          "name": "Defence Line",
+          "target_id": "5207-4f15-f3e-c6ff",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "64b7-a2df-416a-9963",
+          "name": "Wall of Martyrs Defence Line [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "12",
+            "sv": "2+",
+            "w": "10",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": []
+        }
+      ],
+      "abilities": [],
+      "transport": [],
+      "pricing_tiers": []
+    },
+    {
+      "id": "f6f8-8759-3282-2ab",
+      "name": "Imperial Fortress Walls [Legends]",
+      "type": "model",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Towering",
+          "target_id": "d666-e2c9-b6cc-5716",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Imperial Fortress Walls",
+          "target_id": "a7ed-6216-ee97-5b7a",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "f6f8-8759-3282-2ab",
+          "name": "Imperial Fortress Walls [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "14",
+            "sv": "2+",
+            "w": "80",
+            "ld": "7+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "412e-da68-5020-dd05",
+              "kind": "fixed",
+              "name": "Twin long-barrelled autocannon",
+              "min_select": 2,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "412e-da68-5020-dd05:412e-da68-5020-dd05",
+                  "name": "Twin long-barrelled autocannon",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "eb03-dac6-7559-14c2",
+                      "name": "Twin long-barrelled autocannon",
+                      "weapon_type": "Ranged",
+                      "range": "60\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "9",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "c5f7-4215-d959-3e2",
+          "name": "Damaged: 1-30 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-30 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        },
+        {
+          "id": "c617-394d-4b52-1b98",
+          "name": "Fortress",
+          "type": "Abilities",
+          "description": "When this FORTIFICATION is set up, all parts of it must be set up in contact with another part."
+        }
+      ],
+      "transport": [
+        {
+          "id": "f63c-5860-c081-cd1e",
+          "name": "Imperial Fortress Walls",
+          "capacity": "This FORTIFICATION has a transport capacity of 65 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    },
+    {
+      "id": "20c8-d2-586d-623",
+      "name": "Castellum Stronghold [Legends]",
+      "type": "model",
+      "points": null,
+      "keywords": [
+        {
+          "name": "Castellum Stronghold",
+          "target_id": "10ec-c57f-1acc-6db7",
+          "primary": false
+        },
+        {
+          "name": "Fortification",
+          "target_id": "19d7-9c74-2140-5851",
+          "primary": true
+        },
+        {
+          "name": "Titanic",
+          "target_id": "5929-ad51-d006-e008",
+          "primary": false
+        },
+        {
+          "name": "Vehicle",
+          "target_id": "dbd4-63-af05-998",
+          "primary": false
+        },
+        {
+          "name": "Transport",
+          "target_id": "75e8-57c4-40e3-1817",
+          "primary": false
+        },
+        {
+          "name": "Faction: Unaligned Forces",
+          "target_id": "e1ff-c0fa-2ca7-3466",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "20c8-d2-586d-623",
+          "name": "Castellum Stronghold [Legends]",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "-",
+            "t": "13",
+            "sv": "2+",
+            "w": "50",
+            "ld": "6+",
+            "oc": "0"
+          },
+          "loadout": [
+            {
+              "id": "63b4-a4b0-6cb-8f4d",
+              "kind": "choice",
+              "name": "Main Turrets",
+              "min_select": null,
+              "max_select": 2,
+              "options": [
+                {
+                  "id": "63b4-a4b0-6cb-8f4d:9c9d-e47b-7f4-92cf",
+                  "name": "Castellum battle cannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "c4a4-5c42-92f9-265",
+                      "name": "Castellum battle cannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "10",
+                      "ap": "-1",
+                      "d": "3",
+                      "keywords": "Blast"
+                    }
+                  ]
+                },
+                {
+                  "id": "63b4-a4b0-6cb-8f4d:74fa-24db-eb7d-f115",
+                  "name": "Whirlwind castellan launcher",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "71a3-9dff-a1b8-7316",
+                      "name": "Whirlwind castellan launcher",
+                      "weapon_type": "Ranged",
+                      "range": "72\"",
+                      "a": "D6+3",
+                      "bs_ws": "4+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "Blast, Indirect Fire"
+                    }
+                  ]
+                },
+                {
+                  "id": "63b4-a4b0-6cb-8f4d:e26a-8cf8-9d1d-7917",
+                  "name": "Castellum Icarus quad lascannon",
+                  "is_default": false,
+                  "weapons": [
+                    {
+                      "profile_id": "f84b-8fa5-d8cc-2e7",
+                      "name": "Castellum Icarus quad lascannon",
+                      "weapon_type": "Ranged",
+                      "range": "48\"",
+                      "a": "2",
+                      "bs_ws": "4+",
+                      "s": "12",
+                      "ap": "-3",
+                      "d": "D6+1",
+                      "keywords": "Anti-Fly 2+, Twin-linked"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "f18-b2ff-845e-48a5",
+          "name": "Stronghold",
+          "type": "Abilities",
+          "description": "Friendly INFANTRY models can be set up or end any type of move on top of the roof section of this FORTIFICATION. Any friendly model can be set up or end any type of move on the ramp or platform section of this FORTIFICATION."
+        },
+        {
+          "id": "b20f-73b0-988b-c053",
+          "name": "Damaged: 1-15 Wounds Remaining",
+          "type": "Abilities",
+          "description": "While this model has 1-15 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+        }
+      ],
+      "transport": [
+        {
+          "id": "336c-6b4e-b000-8b02",
+          "name": "Castellum Stronghold",
+          "capacity": "This FORTIFICATION has a transport capacity of 60 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more."
+        }
+      ],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}

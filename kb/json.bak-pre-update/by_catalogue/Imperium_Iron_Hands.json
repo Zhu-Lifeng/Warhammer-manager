@@ -1,0 +1,202 @@
+{
+  "id": "f27e-18c0-b73e-748e",
+  "name": "Imperium - Adeptus Astartes - Iron Hands",
+  "is_library": false,
+  "revision": "8",
+  "source_file": "Imperium - Iron Hands.cat",
+  "categories": [
+    {
+      "id": "ccae-25d8-84c1-913f",
+      "name": "Iron Father Ferrios"
+    }
+  ],
+  "rules": [],
+  "datasheets": [
+    {
+      "id": "6c9d-4ec3-69dd-90b2",
+      "name": "Iron Father Feirros",
+      "type": "model",
+      "points": 95,
+      "keywords": [
+        {
+          "name": "Character",
+          "target_id": "9cfd-1c32-585f-7d5c",
+          "primary": false
+        },
+        {
+          "name": "Epic Hero",
+          "target_id": "4f3a-f0f7-6647-348d",
+          "primary": true
+        },
+        {
+          "name": "Infantry",
+          "target_id": "cf47-a0d7-7207-29dc",
+          "primary": false
+        },
+        {
+          "name": "Imperium",
+          "target_id": "aff3-d6a3-2a95-9dc",
+          "primary": false
+        },
+        {
+          "name": "Gravis",
+          "target_id": "81f0-f40e-c36c-5a30",
+          "primary": false
+        },
+        {
+          "name": "Faction: Adeptus Astartes",
+          "target_id": "6e7-40c-58d9-e402",
+          "primary": false
+        },
+        {
+          "name": "Faction: Iron Hands",
+          "target_id": "b88e-1b0c-b79f-5cdf",
+          "primary": false
+        },
+        {
+          "name": "Iron Father Ferrios",
+          "target_id": "ccae-25d8-84c1-913f",
+          "primary": false
+        }
+      ],
+      "models": [
+        {
+          "id": "6c9d-4ec3-69dd-90b2",
+          "name": "Iron Father Feirros",
+          "min_count": 1,
+          "max_count": 1,
+          "stats": {
+            "m": "5\"",
+            "t": "6",
+            "sv": "2+",
+            "w": "6",
+            "ld": "6+",
+            "oc": "1"
+          },
+          "loadout": [
+            {
+              "id": "aca-2239-5f93-85ab",
+              "kind": "fixed",
+              "name": "Gorgon's Wrath",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "aca-2239-5f93-85ab:aca-2239-5f93-85ab",
+                  "name": "Gorgon's Wrath",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "9d7b-c00c-41ff-87f",
+                      "name": "Gorgon's Wrath",
+                      "weapon_type": "Ranged",
+                      "range": "36\"",
+                      "a": "3",
+                      "bs_ws": "2+",
+                      "s": "5",
+                      "ap": "-1",
+                      "d": "2",
+                      "keywords": "Sustained Hits 2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9953-a38d-1b9e-7ab2",
+              "kind": "fixed",
+              "name": "Harrowhand",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "9953-a38d-1b9e-7ab2:9953-a38d-1b9e-7ab2",
+                  "name": "Harrowhand",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "4bf3-994f-1703-47c2",
+                      "name": "Harrowhand",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "6",
+                      "bs_ws": "3+",
+                      "s": "7",
+                      "ap": "-2",
+                      "d": "2",
+                      "keywords": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bc62-41a7-d344-e4c8",
+              "kind": "fixed",
+              "name": "Medusan Manipuli",
+              "min_select": 1,
+              "max_select": 1,
+              "options": [
+                {
+                  "id": "bc62-41a7-d344-e4c8:bc62-41a7-d344-e4c8",
+                  "name": "Medusan Manipuli",
+                  "is_default": true,
+                  "weapons": [
+                    {
+                      "profile_id": "cc4d-3452-c86d-9ffb",
+                      "name": "Medusan Manipuli",
+                      "weapon_type": "Melee",
+                      "range": "Melee",
+                      "a": "2",
+                      "bs_ws": "3+",
+                      "s": "8",
+                      "ap": "-2",
+                      "d": "3",
+                      "keywords": "Extra Attacks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "219d-340d-6681-ab1",
+          "name": "Rites of Tempering",
+          "type": "Abilities",
+          "description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+        },
+        {
+          "id": "2095-1be1-e5cc-1cee",
+          "name": "Iron Father",
+          "type": "Abilities",
+          "description": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, it has the Lone Operative ability."
+        },
+        {
+          "id": "c393-649d-7810-bcae",
+          "name": "Master of the Forge",
+          "type": "Abilities",
+          "description": "In your Command phase, select one friendly Adeptus Astartes Vehicle model within 3\" of this model. That model regains up to 3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. You cannot select a unit for this ability that has already been selected for the Blessing of the Omnissiah ability this phase, and vice versa."
+        },
+        {
+          "id": "b3b3-c43c-41b1-a086",
+          "name": "Leader",
+          "type": "Abilities",
+          "description": "This model can be attached to the following units:\n\n■ Aggressor Squad\n■ Eradicator Squad\n■ Heavy Intercessor Squad"
+        },
+        {
+          "id": "1d65-986b-9266-a544",
+          "name": "Inspiring Commander",
+          "type": "Abilities",
+          "description": "If you include this model in your army, until the end of the battle, non-Character models in Heavy\nIntercessor Squad units from your army have an Objective Control characteristic of 3 while they are\nnot Battle-shocked."
+        }
+      ],
+      "transport": [],
+      "pricing_tiers": []
+    }
+  ],
+  "detachments": [],
+  "enhancements": []
+}
