@@ -580,6 +580,18 @@ def inject_user():
     return {"me": current_user()}
 
 
+@app.context_processor
+def inject_asset_version():
+    """Expose `asset_version` (style.css mtime) so the stylesheet link can be
+    cache-busted — otherwise browsers keep serving a stale style.css after a
+    redeploy and CSS fixes appear not to take effect."""
+    try:
+        v = int(os.path.getmtime(ROOT / "static" / "style.css"))
+    except OSError:
+        v = 0
+    return {"asset_version": v}
+
+
 # ---------------------------------------------------------------------------- #
 # Shared lookups
 # ---------------------------------------------------------------------------- #

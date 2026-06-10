@@ -153,14 +153,18 @@ nav.admin-nav a.active { background: #5a4d1f; color: #fff2c0; }
 .unit-tabs .tab-panel { display: none; }
 .unit-tabs .tab-panel.active { display: block; }
 
-/* Datasheet picker on model_new: each tab panel scrolls vertically so a
-   big faction (Blood Angels w/ inheritance ≈ 150 units) doesn't blow the
-   layout. Items are touch-friendly rows. */
-/* As a grid item in .form-grid, this defaults to min-width:auto and would
-   refuse to shrink below the tab row's intrinsic width — so the row expands
-   the cell instead of letting .tab-headers overflow-x scroll. min-width:0
-   lets it shrink so the horizontal scroll actually engages. */
-.datasheet-picker { min-width: 0; }
+/* Datasheet picker on model_new: a self-contained, fixed-size box. It never
+   grows past its grid cell (min-width:0 + max-width:100% + overflow-x hidden),
+   so its tab row scrolls left/right and its panels scroll up/down internally
+   instead of pushing the page layout sideways. */
+.datasheet-picker {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Inner wrapper must also be allowed to shrink so the flex tab row inside it
+   actually hits its overflow-x:auto boundary. */
+.datasheet-picker .unit-tabs { min-width: 0; max-width: 100%; }
 .datasheet-picker .empty-state { padding: 0.8rem; font-style: italic; }
 .datasheet-picker .unit-tabs .tab-panel {
   max-height: 360px;
@@ -243,6 +247,12 @@ h3 { font-size: 1rem; }
   gap: 0.6rem 1rem;
   margin-bottom: 1rem;
 }
+/* Grid items default to min-width:auto and refuse to shrink below their
+   content. A wide child (e.g. the datasheet picker's non-wrapping tab row)
+   would otherwise stretch the whole grid past the viewport and shove every
+   field box off the right edge. min-width:0 lets items shrink and contain
+   their own overflow instead. */
+.form-grid > * { min-width: 0; }
 .form-grid label { display: block; font-size: 0.85rem; color: #aaa; }
 .form-grid input, .form-grid select, .form-grid textarea {
   width: 100%;
